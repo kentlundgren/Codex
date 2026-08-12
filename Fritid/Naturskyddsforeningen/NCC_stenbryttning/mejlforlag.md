@@ -23,7 +23,7 @@ Vi bör också be om en seriös jämförelse med alternativ: mindre täkt, korta
 
 Den delningsbara sammanfattningen finns i `index.html`, och det mer detaljerade sakunderlaget i `samrad.md`. Kontrollera gärna sista svarsdatum i samrådsutskicket; jag har inte kunnat hitta datumet utskrivet i NCC:s webbdokument.
 
-Referenser enligt Harvardstil med länkar och källnotiser finns i `samrad.md`.
+Fullständig referenslista finns i `samrad.md`.
 
 Vänliga hälsningar,
 
