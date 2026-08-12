@@ -1,0 +1,3 @@
+#!/bin/sh
+# Versionerad spärr för privata filer. Körs av Git före varje push.
+exec powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$(git rev-parse --show-toplevel)/.githooks/pre-push.ps1" "$@"

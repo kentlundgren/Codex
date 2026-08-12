@@ -48,4 +48,15 @@ h3 { margin:9px 0; font-size:1.3rem; }
 .source-note { color:var(--muted); }
 a { color:#234f38; text-underline-offset:3px; }
 footer { padding:35px 0; color:#dce7d7; background:#16291e; font:14px Arial,sans-serif; }
+.repo-link,.tech-button { position:fixed; bottom:14px; z-index:2; padding:7px 10px; border:1px solid rgba(255,255,255,.5); border-radius:3px; color:#fff; background:rgba(22,41,30,.88); font:12px Arial,sans-serif; text-decoration:none; }
+.repo-link { left:14px; }
+.tech-button { right:14px; cursor:pointer; }
+.repo-link:hover,.repo-link:focus,.tech-button:hover,.tech-button:focus { color:var(--ink); background:#fff; }
+dialog { width:min(100% - 36px, 580px); border:0; box-shadow:0 18px 60px rgba(0,0,0,.34); color:var(--ink); background:var(--white); }
+dialog::backdrop { background:rgba(15,31,22,.66); }
+.dialog__content { position:relative; padding:32px; }
+.dialog__content h2 { padding-right:32px; font-size:2rem; }
+.dialog__close { position:absolute; top:16px; right:16px; width:34px; height:34px; border:0; color:var(--ink); background:#e5eadf; cursor:pointer; font:28px/28px Arial,sans-serif; }
+.dialog__content li { margin:.4em 0; }
+.dialog__content pre { overflow:auto; padding:16px; color:#dce7d7; background:#16291e; font:13px/1.45 Consolas,monospace; }
 @media (max-width:700px) { body { font-size:17px; } .hero__content { min-height:390px; padding:65px 0; } .facts,.cards,.split { grid-template-columns:1fr; } .section { padding:52px 0; } .stance { padding:46px 26px; } }

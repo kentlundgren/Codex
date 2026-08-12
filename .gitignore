@@ -1,0 +1,9 @@
+# Privat eller ej publicerbart arbetsmaterial. Behålls lokalt men får inte läggas i Git.
+mejlforlag.md
+privat/
+private/
+*_privat.*
+*_private.*
+*_kanslig.*
+*_känslig.*
+*_sensitive.*

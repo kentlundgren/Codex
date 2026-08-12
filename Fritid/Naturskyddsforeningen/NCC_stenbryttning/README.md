@@ -12,6 +12,5 @@ En saklig och delningsbar sammanfattning av NCC:s samråd om planerad täkt- och
 - `styles.css` – sidans utseende och tillgängliga layout.
 - `script.js` – utfällbara avsnitt på webbsidan.
 - `samrad.md` – fördjupat sakunderlag med referenser.
-- `mejlforlag.md` – separat utkast till mejl.
 
 Materialet innehåller inga personnamn eller kontaktuppgifter. Referenser och källnotiser finns i respektive underlag.
