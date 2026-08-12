@@ -1,6 +1,8 @@
-# NCC:s samråd om täkt- och vattenverksamhet vid Södra Sandby / Skrylle
+# Utkast till sammanställning: NCC:s samråd vid Södra Sandby / Skrylle
 
-*Underlag för Lunds Naturskyddsförenings plangrupp. Upprättat 12 augusti 2026.*
+Detta är ett AI-assisterat utkast till sammanställning av NCC:s samrådsunderlag. Det är ett bidrag till fortsatt diskussion och ska inte läsas som ett fullständigt underlag eller som ett gemensamt ställningstagande.
+
+> **Fullständigt samrådsunderlag:** [NCC Industry AB och Sweco (2026a), *Samrådsunderlag* (PDF)](https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf).
 
 > **Kortare översikt:** [Läs den lättlästa webbsidan om samrådet](https://kentlundgren.github.io/Codex/Fritid/Naturskyddsforeningen/NCC_stenbryttning/).
 

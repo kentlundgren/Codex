@@ -21,6 +21,11 @@
 
 - När en extern källa första gången hänvisas till i löpande text ska Harvardhänvisningen också vara en direktlänk till källan. Senare hänvisningar kan vara olänkade när det ger en lugnare läsning.
 
+## AI-assisterade utkast
+
+- Beskriv AI-assisterade sammanställningar och analyser som utkast eller bidrag till fortsatt diskussion när de inte har beslutats, kvalitetssäkrats eller antagits av en grupp.
+- Gör inte anspråk på att ett sådant utkast är ett fullständigt underlag, ett gemensamt ställningstagande eller att det företräder en grupp. Länka i stället till det ursprungliga, fullständiga underlaget när det finns tillgängligt.
+
 ## Samarbete
 
 Projektet kan samtidigt öppnas och ändras i Cursor av användaren. Kontrollera därför berörda filer före ändring, bevara externa ändringar och skriv aldrig över eller återställ ändringar som inte är mina utan uttryckligt klartecken.
