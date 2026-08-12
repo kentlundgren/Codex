@@ -70,7 +70,9 @@ NCC hänvisar till regional materialförsörjning och riksintresse för mineralu
 
 Ett riksintresse för mineralutvinning innebär att fyndigheten ska skyddas mot åtgärder som kan försvåra utvinning; det är inte ett automatiskt tillstånd för varje föreslagen täktutformning. Samtidigt finns riksintressen för naturvård och friluftsliv som måste vägas konkret mot projektet.
 
-## Exempel på linje i samrådet
+## Möjlig preliminär linje i samrådet
+
+Detta avsnitt är ett förslag för fortsatt diskussion, inte ett beslutat ställningstagande från organisationen.
 
 ### Huvudyrkande
 
@@ -105,10 +107,11 @@ Detta huvudyrkande är proportionerligt på samrådsstadiet. Om den som yttrar s
 ## Referenser
 
 - NCC Industry AB (2026) *Samråd Södra Sandby*. Tillgänglig på: <https://www.ncc.se/ballast/hitta/skane/samrad-sodrasandby/> (Hämtad: 12 augusti 2026). *(NCC:s officiella samrådssida; ingång till aktuella handlingar.)*
-- NCC Industry AB och Sweco (2026a) *Samrådsunderlag: underlag för samråd inför ansökan om tillstånd till täkt- och vattenverksamhet, Södra Sandby, Lunds kommun*, 21 april. Tillgänglig på: <https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf> (Hämtad: 12 augusti 2026). *(Primärkälla till NCC:s förslag, omfattning, vattenhantering och trafikprognoser.)*
+- NCC Industry AB och Sweco (2026a) *Samrådsunderlag: underlag för samråd inför ansökan om tillstånd till täkt- och vattenverksamhet, Södra Sandby, Lunds kommun*, 21 april. Tillgänglig på: <https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf> (Hämtad: 12 augusti 2026). *(**Samrådsunderlaget** – huvudkälla och primärkälla till NCC:s förslag, omfattning, vattenhantering och trafikprognoser.)*
 - NCC Industry AB och Sweco (2026b) *Bilaga 1: preliminär situationsplan*. Tillgänglig på: <https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/bilaga-1.-preliminar-situationsplan.pdf> (Hämtad: 12 augusti 2026). *(Kartkälla för den preliminära verksamhetsytan och dess delar.)*
 - Länsstyrelsen Skåne (2018) *Bevarandeplan för Natura 2000-området Måryd–Hällestad, SE0430026*, 20 december. Tillgänglig på: <https://www.lansstyrelsen.se/download/18.51340eae1864b7149a8e63b/1676556391372/M%C3%A5ryd-H%C3%A4llestad%20bevarandeplan.pdf> (Hämtad: 12 augusti 2026). *(Myndighetskälla om områdets bevarandevärden, hydrologi och hotbild.)*
-- Lunds kommun (2025) *Lunds kommuns översiktsplan 2025*. Tillgänglig på: <https://lund.se/stadsutveckling-och-trafik/detaljplaner-och-oversiktlig-planering/ny-oversiktsplan-2025> (Hämtad: 12 augusti 2026). *(Kommunens övergripande mark- och vattenplanering samt avvägning mellan utveckling och platsens kvaliteter.)*
+- SLU Artdatabanken (2026) *Artportalen*. Tillgänglig på: <https://www.artportalen.se/> (Hämtad: 12 augusti 2026). *(Rapporteringsdatabas som kan användas som underlag för inventeringsfrågor.)*
+- Lunds kommun (2025) *Ny översiktsplan 2025*. Tillgänglig på: <https://lund.se/stadsutveckling-och-trafik/detaljplaner-och-oversiktlig-planering/ny-oversiktsplan-2025> (Hämtad: 12 augusti 2026). *(Kommunens information om den antagna, överklagade översiktsplanen och gällande planläge.)*
 
 ## Avgränsning
 
