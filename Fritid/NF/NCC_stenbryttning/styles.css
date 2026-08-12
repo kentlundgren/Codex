@@ -53,6 +53,9 @@ h3 { margin:9px 0; font-size:1.3rem; }
 .accordion__toggle { flex:none; color:var(--moss); font:1.65rem Arial,sans-serif; }
 .accordion div { padding:0 32px 20px 0; color:var(--muted); }
 .accordion div p { margin:0; }
+.accordion div p + p { margin-top:12px; }
+.accordion div ul { margin:12px 0 0; padding-left:1.2em; }
+.accordion div li + li { margin-top:6px; }
 .sources { border-bottom:0; }
 .references { max-width:900px; padding-left:25px; }
 .references li { margin:1.15em 0; padding-left:.25em; }

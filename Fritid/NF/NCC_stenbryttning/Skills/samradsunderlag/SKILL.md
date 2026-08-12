@@ -38,6 +38,13 @@ Gör en tydlig åtskillnad mellan vad källorna säger, vad som behöver klargö
    - Använd rubriker, korta stycken och punktlistor. Låt översiktsområden och fördjupningspunkter ha samma ordning.
    - Om en publik webbsida behövs, gör den neutral, saklig och kort. Länka till det fullständiga samrådsunderlaget.
 
+## Omstrukturering av interna utkast
+
+- När ett internt arbetsutkast ska få ny struktur eller layout, bygg först en spårbar mappning mellan utkastets sakblock och den nya dispositionen.
+- Bevara igenkännbara rubriker, nyckelfraser, konkreta frågor och relevanta hänvisningar så att skribenterna kan känna igen sitt innehåll, även när ordning och form ändras.
+- Kortare inte bort substans utan att tydligt redovisa vad som har flyttats, slagits ihop eller lämnats utanför.
+- För en publik version: för aldrig över interna kommentarer, namn, spekulationer eller arbetskommunikation. Verifiera sakpåståenden mot offentliga originalkällor och behåll direkta källänkar.
+
 ## Källor och juridik
 
 - Använd primärkällor: samrådsunderlag, MKB, domar, myndighetsbeslut, planer och officiell lagtext.
