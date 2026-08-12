@@ -9,6 +9,9 @@
 
 ## Källor och referenser
 
+- I käll- och referensförteckningar ska hela den kanoniska URL:en synas som klickbar länktext; använd inte kortformer som "PDF", ett domännamn eller "läs mer" där.
+- Före överlämning ska varje extern länk som är ny, ändrad eller berörs av ändringen kontrolleras: den ska öppna rätt sida eller dokument, och avsändare, titel och innehåll ska stödja hänvisningen. Ersätt eller markera en länk som inte går att verifiera.
+
 - Använd Harvardstil för alla referenser och källförteckningar i projektets material.
 - Varje webbaserad referens ska innehålla en fungerande direktlänk och hämtdatum.
 - Varje referens ska avslutas med en kort källnotis inom parentes som beskriver källtypen och/eller varför den är relevant.

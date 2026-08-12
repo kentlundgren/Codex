@@ -47,6 +47,9 @@ Gör en tydlig åtskillnad mellan vad källorna säger, vad som behöver klargö
 
 ## Källor och juridik
 
+- Kontrollera att varje extern länk öppnar rätt sida eller dokument och faktiskt stöder påståendet genom att kontrollera avsändare, titel och innehåll. Ersätt eller markera länkar som inte kan verifieras.
+- I käll- och referensförteckningar ska hela den kanoniska URL:en synas som klickbar länktext, inte kortformer som "PDF", ett domännamn eller "läs mer".
+
 - Använd primärkällor: samrådsunderlag, MKB, domar, myndighetsbeslut, planer och officiell lagtext.
 - Kontrollera att varje länk fungerar och faktiskt stödjer påståendet.
 - Använd Harvardhänvisning i löpande text. Första hänvisningen till en extern källa ska vara en direktlänk.

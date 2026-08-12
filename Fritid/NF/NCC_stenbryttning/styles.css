@@ -59,6 +59,7 @@ h3 { margin:9px 0; font-size:1.3rem; }
 .sources { border-bottom:0; }
 .references { max-width:900px; padding-left:25px; }
 .references li { margin:1.15em 0; padding-left:.25em; }
+.references a { overflow-wrap:anywhere; word-break:break-word; }
 .source-note { color:var(--muted); }
 .reading-link { max-width:760px; margin:28px 0; padding:17px 20px; border-left:4px solid var(--fern); background:#edf3e6; }
 a { color:#234f38; text-underline-offset:3px; }
