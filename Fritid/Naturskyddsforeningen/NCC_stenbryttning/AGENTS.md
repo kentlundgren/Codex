@@ -14,6 +14,7 @@
 - Varje referens ska avslutas med en kort källnotis inom parentes som beskriver källtypen och/eller varför den är relevant.
 - Kontrollera att nya eller ändrade länkar fungerar och stödjer det påstående de används för innan materialet lämnas över.
 - Använd löpande Harvardhänvisningar i texten när sakpåståenden bygger på en extern källa.
+- Skriv inte ut i det färdiga materialet att referenserna följer Harvardstil eller att källnotiserna förklarar källans relevans; formatet ska vara självbärande.
 
 ## Samarbete
 

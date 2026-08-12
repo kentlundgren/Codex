@@ -100,8 +100,6 @@ Detta huvudyrkande är proportionerligt på samrådsstadiet. Om gruppen inte vil
 
 ## Referenser
 
-Referenserna följer Harvardstil. Källnotisen inom parentes förklarar varför respektive källa används.
-
 - NCC Industry AB (2026) *Samråd Södra Sandby*. Tillgänglig på: <https://www.ncc.se/ballast/hitta/skane/samrad-sodrasandby/> (Hämtad: 12 augusti 2026). *(NCC:s officiella samrådssida; ingång till aktuella handlingar.)*
 - NCC Industry AB och Sweco (2026a) *Samrådsunderlag: underlag för samråd inför ansökan om tillstånd till täkt- och vattenverksamhet, Södra Sandby, Lunds kommun*, 21 april. Tillgänglig på: <https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf> (Hämtad: 12 augusti 2026). *(Primärkälla till NCC:s förslag, omfattning, vattenhantering och trafikprognoser.)*
 - NCC Industry AB och Sweco (2026b) *Bilaga 1: preliminär situationsplan*. Tillgänglig på: <https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/bilaga-1.-preliminar-situationsplan.pdf> (Hämtad: 12 augusti 2026). *(Kartkälla för den preliminära verksamhetsytan och dess delar.)*
