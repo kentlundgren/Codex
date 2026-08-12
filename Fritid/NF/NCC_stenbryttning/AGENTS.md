@@ -9,6 +9,7 @@
 
 ## Källor och referenser
 
+- När ett material bygger på ett huvuddokument ska det dokumentet tydligt markeras i källförteckningen som huvudkälla. Skriv dokumentets roll först i källnotisen, gärna med fetstil, till exempel: "Samrådsunderlaget – primärkälla till verksamhetsförslaget".
 - I käll- och referensförteckningar ska hela den kanoniska URL:en synas som klickbar länktext; använd inte kortformer som "PDF", ett domännamn eller "läs mer" där.
 - Före överlämning ska varje extern länk som är ny, ändrad eller berörs av ändringen kontrolleras: den ska öppna rätt sida eller dokument, och avsändare, titel och innehåll ska stödja hänvisningen. Ersätt eller markera en länk som inte går att verifiera.
 

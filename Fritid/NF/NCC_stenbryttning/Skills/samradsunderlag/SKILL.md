@@ -47,6 +47,7 @@ Gör en tydlig åtskillnad mellan vad källorna säger, vad som behöver klargö
 
 ## Källor och juridik
 
+- När materialet bygger på ett huvuddokument ska det markeras tydligt i källförteckningen som huvudkälla. Skriv dokumentets roll först i källnotisen, gärna med fetstil, till exempel: "Samrådsunderlaget – primärkälla till verksamhetsförslaget".
 - Kontrollera att varje extern länk öppnar rätt sida eller dokument och faktiskt stöder påståendet genom att kontrollera avsändare, titel och innehåll. Ersätt eller markera länkar som inte kan verifieras.
 - I käll- och referensförteckningar ska hela den kanoniska URL:en synas som klickbar länktext, inte kortformer som "PDF", ett domännamn eller "läs mer".
 
