@@ -19,3 +19,10 @@
 ## Samarbete
 
 Projektet kan samtidigt öppnas och ändras i Cursor av användaren. Kontrollera därför berörda filer före ändring, bevara externa ändringar och skriv aldrig över eller återställ ändringar som inte är mina utan uttryckligt klartecken.
+
+## Delade skills
+
+- Projektets synliga kopia av skillen för samrådsunderlag finns i `Skills/samradsunderlag/`.
+- Den installerade Codex-kopian finns i `C:\Users\kentl\.codex\skills\samradsunderlag\`.
+- När någon fil i någon av dessa två skillmappar ändras ska motsvarande fil i den andra mappen uppdateras i samma arbetsuppgift. Jämför därefter filinnehållet så att kopiorna är identiska.
+- Projektkopian är avsedd att vara lätt att upptäcka för användaren och andra AI-verktyg. Den installerade kopian används av Codex.

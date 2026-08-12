@@ -1,0 +1,4 @@
+interface:
+  display_name: "Samrådsunderlag"
+  short_description: "Strukturera sakliga samrådsunderlag"
+  default_prompt: "Use $samradsunderlag to structure a source-backed consultation response from the supplied documents."

@@ -12,5 +12,6 @@ En saklig och delningsbar sammanfattning av NCC:s samråd om planerad täkt- och
 - `styles.css` – sidans utseende och tillgängliga layout.
 - `script.js` – utfällbara avsnitt på webbsidan.
 - `samrad.md` – fördjupat sakunderlag med referenser.
+- `Skills/samradsunderlag/` – återanvändbar skill för att strukturera samrådshandlingar och samrådsyttranden. Kopian synkroniseras med den installerade Codex-skillen.
 
 Materialet innehåller inga personnamn eller kontaktuppgifter. Referenser och källnotiser finns i respektive underlag.
