@@ -13,7 +13,7 @@ Använd denna kontroll för den publika versionen av ett samrådsunderlag.
 - Ta bort namn, e-postadresser, telefonnummer, personnummer, privata kommentarer och spårbara interna filnamn.
 - Granska även URL:er, GitHub-sökvägar, sidfot, README och tekniköversikter: en neutral brödtext räcker inte om sökvägen identifierar avsändaren.
 - Kontrollera att länkar leder till avsedda och offentliga källor.
-- Beskriv AI-assisterade analyser som utkast eller bidrag till diskussion när de inte är beslutade eller kvalitetssäkrade.
+- Beskriv material som inte är beslutat eller kvalitetssäkrat som ett utkast eller ett bidrag till fortsatt diskussion. Ange inte i det färdiga materialet att det är AI-assisterat eller AI-genererat.
 - Gör inte anspråk på att representera en grupp utan uttryckligt mandat.
 
 ## Innan Git-publicering

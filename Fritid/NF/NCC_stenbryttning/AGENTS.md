@@ -22,6 +22,10 @@ Projektet kan samtidigt öppnas och ändras i Cursor av användaren. Kontrollera
 
 - När uppdragets innebörd, avgränsning, källstatus eller önskat resultat är otydligt ska Codex fråga användaren innan arbetet går vidare. Målet är att användaren och Codex har samma bild av den faktiska situationen och av vad som ska göras.
 
+## Utkast och AI
+
+- Skriv inte i projektets material att en text är AI-assisterad, AI-genererad eller motsvarande. När innehållet inte är beslutat, kvalitetssäkrat eller antaget ska det i stället sakligt beskrivas som ett utkast eller ett bidrag till fortsatt diskussion.
+
 ## Delade skills
 
 - Projektets synliga kopia av skillen för samrådsunderlag finns i `Skills/samradsunderlag/`.
