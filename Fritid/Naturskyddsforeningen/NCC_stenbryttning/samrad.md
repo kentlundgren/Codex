@@ -8,7 +8,7 @@ Detta är ett AI-assisterat utkast till sammanställning av NCC:s samrådsunderl
 
 ## Sammanfattning
 
-Det pågående samrådet gäller inte en enkel förlängning av den nuvarande bergtäkten. NCC Industry AB förbereder en ansökan om en **ny täkt väster om väg 952 (Dalbyvägen)**, mellan Södra Sandby och Dalby, med 30 års tillståndstid. Samtidigt vill bolaget under högst tre år bryta i två begränsade delar av den nuvarande täkten öster om vägen. Den gamla täkten ska därefter vattenfyllas, delvis med vatten från den nya täkten ([NCC Industry AB och Sweco, 2026a, s. 6–10](https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf)).
+Det pågående samrådet gäller inte en enkel förlängning av den nuvarande bergtäkten. NCC Industry AB förbereder en ansökan om en **ny täkt väster om väg 952 (Dalbyvägen)**, mellan Södra Sandby och Dalby, med 30 års tillståndstid. Samtidigt vill bolaget under högst tre år bryta i två begränsade delar av den nuvarande täkten öster om vägen. Den gamla täkten ska därefter vattenfyllas, delvis med vatten från den nya täkten. Läs mer i [samrådsunderlaget](https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf) (NCC Industry AB och Sweco, 2026a, s. 6–10).
 
 Frågan för föreningen bör därför vara både:
 
