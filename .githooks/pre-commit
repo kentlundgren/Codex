@@ -1,6 +1,6 @@
 #!/bin/sh
 # Stoppa interna underlag även om någon försöker lägga till dem med git add -f.
-if git diff --cached --name-only | grep -E '(^|/)underlag_internt(/|$)' >/dev/null; then
+if git diff --cached --diff-filter=AMRC --name-only | grep -E '(^|/)underlag_internt(/|$)' >/dev/null; then
   echo "COMMIT STOPPAD: underlag_internt innehåller internt material och får aldrig publiceras i Git." >&2
   exit 1
 fi
