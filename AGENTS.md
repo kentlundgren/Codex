@@ -17,6 +17,10 @@
 - Innan material publiceras, committas eller pushas ska publicerade huvuddokument kontrolleras för personnamn, kontaktuppgifter, personnummer, privata arbetsanteckningar och annan information som inte är avsedd för offentlig spridning.
 - För projektet NCC_stenbryttning ska `index.html` och `samrad.md` alltid granskas med projektets Git-kontroll före commit och push. Automatisk kontroll fångar e-postadresser, telefonnummer, personnummer och privata markeringar; en manuell rimlighetskontroll krävs också för sådant som inte säkert kan upptäckas automatiskt, exempelvis namn i löpande text.
 
+## Löpande källhänvisningar
+
+- När en extern källa första gången hänvisas till i löpande text ska Harvardhänvisningen också vara en direktlänk till källan. Senare hänvisningar kan vara olänkade när det ger en lugnare läsning.
+
 ## Samarbete
 
 Projektet kan samtidigt öppnas och ändras i Cursor av användaren. Kontrollera därför berörda filer före ändring, bevara externa ändringar och skriv aldrig över eller återställ ändringar som inte är mina utan uttryckligt klartecken.

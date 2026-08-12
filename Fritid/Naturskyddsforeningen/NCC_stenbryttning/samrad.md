@@ -6,7 +6,7 @@
 
 ## Sammanfattning
 
-Det pågående samrådet gäller inte en enkel förlängning av den nuvarande bergtäkten. NCC Industry AB förbereder en ansökan om en **ny täkt väster om väg 952 (Dalbyvägen)**, mellan Södra Sandby och Dalby, med 30 års tillståndstid. Samtidigt vill bolaget under högst tre år bryta i två begränsade delar av den nuvarande täkten öster om vägen. Den gamla täkten ska därefter vattenfyllas, delvis med vatten från den nya täkten (NCC Industry AB och Sweco, 2026a, s. 6–10).
+Det pågående samrådet gäller inte en enkel förlängning av den nuvarande bergtäkten. NCC Industry AB förbereder en ansökan om en **ny täkt väster om väg 952 (Dalbyvägen)**, mellan Södra Sandby och Dalby, med 30 års tillståndstid. Samtidigt vill bolaget under högst tre år bryta i två begränsade delar av den nuvarande täkten öster om vägen. Den gamla täkten ska därefter vattenfyllas, delvis med vatten från den nya täkten ([NCC Industry AB och Sweco, 2026a, s. 6–10](https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf)).
 
 Frågan för föreningen bör därför vara både:
 
@@ -34,7 +34,7 @@ NCC uppger att den tidigare ansökan om utvidgning av den befintliga täkten mot
 
 ### 1. Grundvatten och Måryd–Hällestad måste vara huvudfrågan
 
-Länsstyrelsens bevarandeplan anger att den befintliga täkten har avvattnat närområdet och bidragit till uttorkning i västra Måryd–Hällestad, med påverkan på bland annat rikkärr och fuktängar. Vatten pumpas redan från täkten till reservatet för att motverka effekten. Bevarandeplanen anger att våtmarkernas hydrologi ska vara ostörd och att grundvattenytan ska vara naturligt varierande och hög under större delen av året (Länsstyrelsen Skåne, 2018, s. 6 och 10–11).
+Länsstyrelsens bevarandeplan anger att den befintliga täkten har avvattnat närområdet och bidragit till uttorkning i västra Måryd–Hällestad, med påverkan på bland annat rikkärr och fuktängar. Vatten pumpas redan från täkten till reservatet för att motverka effekten. Bevarandeplanen anger att våtmarkernas hydrologi ska vara ostörd och att grundvattenytan ska vara naturligt varierande och hög under större delen av året ([Länsstyrelsen Skåne, 2018, s. 6 och 10–11](https://www.lansstyrelsen.se/download/18.51340eae1864b7149a8e63b/1676556391372/M%C3%A5ryd-H%C3%A4llestad%20bevarandeplan.pdf)).
 
 NCC beskriver själv att den nya täkten behöver länshållas och att grundvattenpåverkan kan påverka brunnar, grundvattenberoende naturvärden, ytvattenavrinning och orsaka marksättningar. Den preliminära påverkansavgränsningen bygger på en torrperiod och är jämförd med ett nollalternativ där den befintliga täkten vattenfylls. Den slutliga jämförelsen med dagens situation och detaljerade modeller återstår alltså (NCC Industry AB och Sweco, 2026a, s. 27–28).
 
