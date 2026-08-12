@@ -50,6 +50,7 @@ h3 { margin:9px 0; font-size:1.3rem; }
 .accordion__label { display:flex; align-items:center; gap:8px; }
 .accordion__number { min-width:2.1em; color:var(--area-color); font:700 12px/1 Arial,sans-serif; letter-spacing:.08em; }
 .area-tag { width:max-content; max-width:100%; padding:3px 7px; border-radius:2px; color:var(--area-color); background:var(--area-pale); font:700 10px/1.2 Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+.text-type-tag { width:max-content; max-width:100%; padding:3px 7px; border:1px solid #bbbdb4; border-radius:2px; color:#39453d; background:#efeee8; font:700 10px/1.2 Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
 .accordion__toggle { flex:none; color:var(--moss); font:1.65rem Arial,sans-serif; }
 .accordion div { padding:0 32px 20px 0; color:var(--muted); }
 .accordion div p { margin:0; }
@@ -62,6 +63,9 @@ h3 { margin:9px 0; font-size:1.3rem; }
 .references a { overflow-wrap:anywhere; word-break:break-word; }
 .source-note { color:var(--muted); }
 .reading-link { max-width:760px; margin:28px 0; padding:17px 20px; border-left:4px solid var(--fern); background:#edf3e6; }
+.method-note { max-width:800px; margin:22px 0 0; color:var(--muted); font-size:.94rem; }
+.stance .method-note { color:#edf3e8; }
+.stance .method-note a { color:#f5d77f; }
 a { color:#234f38; text-underline-offset:3px; }
 footer { padding:35px 0; color:#dce7d7; background:#16291e; font:14px Arial,sans-serif; }
 .repo-link,.tech-button { position:fixed; bottom:14px; z-index:2; padding:7px 10px; border:1px solid rgba(255,255,255,.5); border-radius:3px; color:#fff; background:rgba(22,41,30,.88); font:12px Arial,sans-serif; text-decoration:none; }
