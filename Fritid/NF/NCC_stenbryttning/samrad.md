@@ -4,18 +4,18 @@ Detta är ett AI-assisterat utkast till sammanställning av NCC:s samrådsunderl
 
 > **Fullständigt samrådsunderlag:** [NCC Industry AB och Sweco (2026a), *Samrådsunderlag* (PDF)](https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf).
 
-> **Kortare översikt:** [Läs den lättlästa webbsidan om samrådet](https://kentlundgren.github.io/Codex/Fritid/Naturskyddsforeningen/NCC_stenbryttning/).
+> **Kortare översikt:** [Läs den lättlästa webbsidan om samrådet](https://kentlundgren.github.io/Codex/Fritid/NF/NCC_stenbryttning/).
 
 ## Sammanfattning
 
 Det pågående samrådet gäller inte en enkel förlängning av den nuvarande bergtäkten. NCC Industry AB förbereder en ansökan om en **ny täkt väster om väg 952 (Dalbyvägen)**, mellan Södra Sandby och Dalby, med 30 års tillståndstid. Samtidigt vill bolaget under högst tre år bryta i två begränsade delar av den nuvarande täkten öster om vägen. Den gamla täkten ska därefter vattenfyllas, delvis med vatten från den nya täkten. Läs mer i [samrådsunderlaget](https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf) (NCC Industry AB och Sweco, 2026a, s. 6–10).
 
-Frågan för föreningen bör därför vara både:
+Bedömningen i samrådet bör därför omfatta både:
 
 1. om en ny, 30-årig täkt på denna plats över huvud taget är förenlig med skyddade naturvärden, grundvatten, friluftsliv och kommunens inriktning för området, och
 2. vilka bindande krav som minst måste uppfyllas om en ansökan ändå lämnas in och prövas.
 
-Det är sakligt välgrundat att **avstyrka den nya täkten** i samrådet, eller åtminstone ange att föreningen inte kan tillstyrka den förrän NCC har visat att projektet är tillåtligt. Skälen är särskilt den redan dokumenterade hydrologiska påverkan på Natura 2000-området Måryd–Hällestad, den nya täktens långvariga markanspråk väster om väg 952 och den stora transportbelastningen. Detta är inte ett påstående om att tillstånd nödvändigtvis måste nekas; det är en rimlig ståndpunkt när underlag om alternativ, kumulativa effekter och skyddsåtgärdernas funktion ännu saknas.
+Det är sakligt välgrundat att **avstyrka den nya täkten** i samrådet, eller åtminstone ange att den inte kan tillstyrkas förrän NCC har visat att projektet är tillåtligt. Skälen är särskilt den redan dokumenterade hydrologiska påverkan på Natura 2000-området Måryd–Hällestad, den nya täktens långvariga markanspråk väster om väg 952 och den stora transportbelastningen. Detta är inte ett påstående om att tillstånd nödvändigtvis måste nekas; det är en rimlig ståndpunkt när underlag om alternativ, kumulativa effekter och skyddsåtgärdernas funktion ännu saknas.
 
 > **Viktigt om tid:** NCC:s publicerade samrådssida innehåller handlingarna, men jag har inte kunnat verifiera sista svarsdag den 31 augusti 2026 i den publicerade PDF:en. Kontrollera datumet i samrådsbrevet/annonsen och skicka yttrandet i god tid.
 
@@ -60,7 +60,7 @@ NCC anger att vatten från verksamheten kan innehålla suspenderat material och 
 
 ### 5. Behovet av bergmaterial måste prövas mot alternativ
 
-NCC hänvisar till regional materialförsörjning och riksintresse för mineralutvinning. Det är relevant, men är inte ensamt avgörande. En ansökan ska redovisa alternativa lokaliseringar och utformningar samt nollalternativet. Föreningen bör begära en transparent jämförelse av:
+NCC hänvisar till regional materialförsörjning och riksintresse för mineralutvinning. Det är relevant, men är inte ensamt avgörande. En ansökan ska redovisa alternativa lokaliseringar och utformningar samt nollalternativet. Ett yttrande bör begära en transparent jämförelse av:
 
 - verkligt behov, tidshorisont och kundmarknad för den sökta mängden,
 - andra täkter och redan tillståndsgivna resurser,
@@ -70,13 +70,13 @@ NCC hänvisar till regional materialförsörjning och riksintresse för mineralu
 
 Ett riksintresse för mineralutvinning innebär att fyndigheten ska skyddas mot åtgärder som kan försvåra utvinning; det är inte ett automatiskt tillstånd för varje föreslagen täktutformning. Samtidigt finns riksintressen för naturvård och friluftsliv som måste vägas konkret mot projektet.
 
-## Rekommenderad linje i samrådet
+## Exempel på linje i samrådet
 
 ### Huvudyrkande
 
-> Lunds Naturskyddsförening avstyrker den planerade nya täkten väster om väg 952. Föreningen anser att NCC i detta samrådsunderlag inte har visat att en ny 30-årig täkt är förenlig med kraven på skydd av Natura 2000-området Måryd–Hällestad, vattenmiljöerna nedströms, natur- och kulturmiljön samt riksintresset för friluftsliv. Den fortsatta prövningen måste utgå från nollalternativet — avveckling och vattenfyllnad av den befintliga täkten — och från en transparent redovisning av mindre skadliga alternativ.
+> Den planerade nya täkten väster om väg 952 bör avstyrkas. NCC har i detta samrådsunderlag inte visat att en ny 30-årig täkt är förenlig med kraven på skydd av Natura 2000-området Måryd–Hällestad, vattenmiljöerna nedströms, natur- och kulturmiljön samt riksintresset för friluftsliv. Den fortsatta prövningen bör utgå från nollalternativet — avveckling och vattenfyllnad av den befintliga täkten — och från en transparent redovisning av mindre skadliga alternativ.
 
-Detta huvudyrkande är proportionerligt på samrådsstadiet. Om gruppen inte vill avstyrka redan nu kan formuleringen ändras till: *“Föreningen kan inte tillstyrka den planerade nya täkten på föreliggande underlag.”*
+Detta huvudyrkande är proportionerligt på samrådsstadiet. Om den som yttrar sig inte vill avstyrka redan nu kan formuleringen ändras till: *“Den planerade nya täkten kan inte tillstyrkas på föreliggande underlag.”*
 
 ### Minimikrav om NCC går vidare med ansökan
 

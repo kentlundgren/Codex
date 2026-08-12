@@ -7,8 +7,8 @@ $ErrorActionPreference = 'Stop'
 $blockedPath = '(?i)(^|/)(underlag_internt(/|$)|mejlforlag|.*(?:privat|private|sensitive|kanslig|känslig|utkast).*)\.(md|txt|pdf|doc|docx)$'
 $blockedContent = '(?im)^\s*(privat|private|konfidentiellt|confidential|inte för publicering|do not publish)\b'
 $publicDocuments = @(
-  'Fritid/Naturskyddsforeningen/NCC_stenbryttning/index.html',
-  'Fritid/Naturskyddsforeningen/NCC_stenbryttning/samrad.md'
+  'Fritid/NF/NCC_stenbryttning/index.html',
+  'Fritid/NF/NCC_stenbryttning/samrad.md'
 )
 $publicSensitiveContent = '(?i)\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b|\b(?:19|20)?\d{6}[-+]?\d{4}\b|(?<!\d)(?:\+46\s?|0)\d{1,3}[\s-]?\d{2,3}[\s-]?\d{2}[\s-]?\d{2}(?!\d)'
 $updates = [Console]::In.ReadToEnd().Trim() -split "`r?`n" | Where-Object { $_ }

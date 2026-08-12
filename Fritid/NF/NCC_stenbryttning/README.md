@@ -4,7 +4,7 @@ En saklig och delningsbar sammanfattning av NCC:s samråd om planerad täkt- och
 
 ## Live-sida
 
-[Öppna sammanfattningen](https://kentlundgren.github.io/Codex/Fritid/Naturskyddsforeningen/NCC_stenbryttning/)
+[Öppna sammanfattningen](https://kentlundgren.github.io/Codex/Fritid/NF/NCC_stenbryttning/)
 
 ## Innehåll
 

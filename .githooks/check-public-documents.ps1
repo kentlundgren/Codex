@@ -4,8 +4,8 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $publicDocuments = @(
-  'Fritid/Naturskyddsforeningen/NCC_stenbryttning/index.html',
-  'Fritid/Naturskyddsforeningen/NCC_stenbryttning/samrad.md'
+  'Fritid/NF/NCC_stenbryttning/index.html',
+  'Fritid/NF/NCC_stenbryttning/samrad.md'
 )
 $patterns = @(
   @{ Label = 'e-postadress'; Pattern = '(?i)\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b' },
