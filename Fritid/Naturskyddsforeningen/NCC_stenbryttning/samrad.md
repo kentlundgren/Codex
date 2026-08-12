@@ -4,7 +4,7 @@
 
 ## Sammanfattning
 
-Det pågående samrådet gäller inte en enkel förlängning av den nuvarande bergtäkten. NCC Industry AB förbereder en ansökan om en **ny täkt väster om väg 952 (Dalbyvägen)**, mellan Södra Sandby och Dalby, med 30 års tillståndstid. Samtidigt vill bolaget under högst tre år bryta i två begränsade delar av den nuvarande täkten öster om vägen. Den gamla täkten ska därefter vattenfyllas, delvis med vatten från den nya täkten.
+Det pågående samrådet gäller inte en enkel förlängning av den nuvarande bergtäkten. NCC Industry AB förbereder en ansökan om en **ny täkt väster om väg 952 (Dalbyvägen)**, mellan Södra Sandby och Dalby, med 30 års tillståndstid. Samtidigt vill bolaget under högst tre år bryta i två begränsade delar av den nuvarande täkten öster om vägen. Den gamla täkten ska därefter vattenfyllas, delvis med vatten från den nya täkten (NCC Industry AB och Sweco, 2026a, s. 6–10).
 
 Frågan för föreningen bör därför vara både:
 
@@ -32,9 +32,9 @@ NCC uppger att den tidigare ansökan om utvidgning av den befintliga täkten mot
 
 ### 1. Grundvatten och Måryd–Hällestad måste vara huvudfrågan
 
-Länsstyrelsens bevarandeplan anger att den befintliga täkten har avvattnat närområdet och bidragit till uttorkning i västra Måryd–Hällestad, med påverkan på bland annat rikkärr och fuktängar. Vatten pumpas redan från täkten till reservatet för att motverka effekten. Bevarandeplanen anger att våtmarkernas hydrologi ska vara ostörd och att grundvattenytan ska vara naturligt varierande och hög under större delen av året.
+Länsstyrelsens bevarandeplan anger att den befintliga täkten har avvattnat närområdet och bidragit till uttorkning i västra Måryd–Hällestad, med påverkan på bland annat rikkärr och fuktängar. Vatten pumpas redan från täkten till reservatet för att motverka effekten. Bevarandeplanen anger att våtmarkernas hydrologi ska vara ostörd och att grundvattenytan ska vara naturligt varierande och hög under större delen av året (Länsstyrelsen Skåne, 2018, s. 6 och 10–11).
 
-NCC beskriver själv att den nya täkten behöver länshållas och att grundvattenpåverkan kan påverka brunnar, grundvattenberoende naturvärden, ytvattenavrinning och orsaka marksättningar. Den preliminära påverkansavgränsningen bygger på en torrperiod och är jämförd med ett nollalternativ där den befintliga täkten vattenfylls. Den slutliga jämförelsen med dagens situation och detaljerade modeller återstår alltså.
+NCC beskriver själv att den nya täkten behöver länshållas och att grundvattenpåverkan kan påverka brunnar, grundvattenberoende naturvärden, ytvattenavrinning och orsaka marksättningar. Den preliminära påverkansavgränsningen bygger på en torrperiod och är jämförd med ett nollalternativ där den befintliga täkten vattenfylls. Den slutliga jämförelsen med dagens situation och detaljerade modeller återstår alltså (NCC Industry AB och Sweco, 2026a, s. 27–28).
 
 Att NCC avser återföra vatten är positivt som möjlig skyddsåtgärd, men det ersätter inte kravet att visa att Natura 2000-värdena inte skadas. Återpumpat vatten kan skilja sig från naturlig tillrinning i mängd, kemi, temperatur och tidpunkt. Att beroendet av teknisk pumpning fortsätter i decennier är i sig en risk som måste bedömas, inklusive driftstopp, torka och ansvar efter avslutad täkt.
 
@@ -98,13 +98,15 @@ Detta huvudyrkande är proportionerligt på samrådsstadiet. Om gruppen inte vil
 7. Vilka alternativa materialkällor och återvinningsvolymer har jämförts, med vilka antaganden om efterfrågan, avstånd, utsläpp och kostnader?
 8. Varför är 30 år nödvändigt, i stället för en kortare och etappvis prövad tillståndstid?
 
-## Primärkällor och läsning
+## Referenser
 
-- [NCC: samrådssida för Södra Sandby](https://www.ncc.se/ballast/hitta/skane/samrad-sodrasandby/)
-- [NCC/Sweco: Samrådsunderlag, 21 april 2026 (PDF)](https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf)
-- [NCC/Sweco: Preliminär situationsplan (PDF)](https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/bilaga-1.-preliminar-situationsplan.pdf)
-- [Länsstyrelsen Skåne: Bevarandeplan för Natura 2000-området Måryd–Hällestad (PDF)](https://www.lansstyrelsen.se/download/18.51340eae1864b7149a8e63b/1676556391372/M%C3%A5ryd-H%C3%A4llestad%20bevarandeplan.pdf)
-- [Lunds kommun: Översiktsplan 2025](https://lund.se/stadsutveckling-och-trafik/detaljplaner-och-oversiktlig-planering/ny-oversiktsplan-2025)
+Referenserna följer Harvardstil. Källnotisen inom parentes förklarar varför respektive källa används.
+
+- NCC Industry AB (2026) *Samråd Södra Sandby*. Tillgänglig på: <https://www.ncc.se/ballast/hitta/skane/samrad-sodrasandby/> (Hämtad: 12 augusti 2026). *(NCC:s officiella samrådssida; ingång till aktuella handlingar.)*
+- NCC Industry AB och Sweco (2026a) *Samrådsunderlag: underlag för samråd inför ansökan om tillstånd till täkt- och vattenverksamhet, Södra Sandby, Lunds kommun*, 21 april. Tillgänglig på: <https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/sodra-sandby-samradsunderlag-2026.pdf> (Hämtad: 12 augusti 2026). *(Primärkälla till NCC:s förslag, omfattning, vattenhantering och trafikprognoser.)*
+- NCC Industry AB och Sweco (2026b) *Bilaga 1: preliminär situationsplan*. Tillgänglig på: <https://www.ncc.se/contentassets/66342e943d9b4347991a2053767622f1/bilaga-1.-preliminar-situationsplan.pdf> (Hämtad: 12 augusti 2026). *(Kartkälla för den preliminära verksamhetsytan och dess delar.)*
+- Länsstyrelsen Skåne (2018) *Bevarandeplan för Natura 2000-området Måryd–Hällestad, SE0430026*, 20 december. Tillgänglig på: <https://www.lansstyrelsen.se/download/18.51340eae1864b7149a8e63b/1676556391372/M%C3%A5ryd-H%C3%A4llestad%20bevarandeplan.pdf> (Hämtad: 12 augusti 2026). *(Myndighetskälla om områdets bevarandevärden, hydrologi och hotbild.)*
+- Lunds kommun (2025) *Lunds kommuns översiktsplan 2025*. Tillgänglig på: <https://lund.se/stadsutveckling-och-trafik/detaljplaner-och-oversiktlig-planering/ny-oversiktsplan-2025> (Hämtad: 12 augusti 2026). *(Kommunens övergripande mark- och vattenplanering samt avvägning mellan utveckling och platsens kvaliteter.)*
 
 ## Avgränsning
 
