@@ -1,4 +1,4 @@
-:root { --ink:#1c2b25; --muted:#526159; --paper:#f7f5ef; --white:#fffefa; --moss:#365b46; --fern:#b9d0a5; --gold:#e7b958; --line:#d8ddd2; --alert:#fff3d5; --area-law:#91622a; --area-law-pale:#f6ead6; --area-resources:#79536d; --area-resources-pale:#f0e1eb; --area-water:#236f82; --area-water-pale:#dceef1; --area-nature:#467a42; --area-nature-pale:#e1eddb; --area-people:#a34b3f; --area-people-pale:#f7e2dc; }
+:root { --ink:#1c2b25; --muted:#526159; --paper:#f7f5ef; --white:#fffefa; --moss:#365b46; --fern:#b9d0a5; --gold:#e7b958; --line:#d8ddd2; --alert:#fff3d5; --area-law:#91622a; --area-law-pale:#f6ead6; --area-resources:#79536d; --area-resources-pale:#f0e1eb; --area-water:#236f82; --area-water-pale:#dceef1; --area-nature:#467a42; --area-nature-pale:#e1eddb; --area-people:#a34b3f; --area-people-pale:#f7e2dc; --area-method:#4a5560; --area-method-pale:#e4e8ec; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; color:var(--ink); background:var(--paper); font:18px/1.58 Georgia, "Times New Roman", serif; }
@@ -39,10 +39,16 @@ h3 { margin:9px 0; font-size:1.3rem; }
 .area-water { --area-color:var(--area-water); --area-pale:var(--area-water-pale); }
 .area-nature { --area-color:var(--area-nature); --area-pale:var(--area-nature-pale); }
 .area-people { --area-color:var(--area-people); --area-pale:var(--area-people-pale); }
-.card.area-law,.card.area-resources,.card.area-water,.card.area-nature,.card.area-people { border-top-color:var(--area-color); }
-.card.area-law .card__number,.card.area-resources .card__number,.card.area-water .card__number,.card.area-nature .card__number,.card.area-people .card__number { color:var(--area-color); }
+/* Här skedde en uppdatering: ett sjätte områdesfärgpar lades till när dispositionen
+   utökades till sex avsnitt som följer samrådsunderlagets kapitelindelning. */
+.area-method { --area-color:var(--area-method); --area-pale:var(--area-method-pale); }
+.card.area-law,.card.area-resources,.card.area-water,.card.area-nature,.card.area-people,.card.area-method { border-top-color:var(--area-color); }
+.card.area-law .card__number,.card.area-resources .card__number,.card.area-water .card__number,.card.area-nature .card__number,.card.area-people .card__number,.card.area-method .card__number { color:var(--area-color); }
 .stance { padding:60px min(8vw,82px); border-bottom:0; color:#fff; background:var(--moss); }
 .stance .eyebrow { color:#d6e9be; }
+.stance ol { max-width:750px; padding-left:1.15em; }
+.stance li + li { margin-top:10px; }
+.section-intro { max-width:750px; color:var(--muted); font-size:.96rem; }
 .accordion-section { padding-bottom:84px; }
 .accordion { max-width:800px; border-top:1px solid var(--line); }
 .accordion button { width:100%; padding:16px 0; display:flex; justify-content:space-between; align-items:center; gap:18px; border:0; border-bottom:1px solid var(--line); color:var(--ink); background:transparent; text-align:left; cursor:pointer; font:700 1.12rem Georgia,serif; }
@@ -50,7 +56,9 @@ h3 { margin:9px 0; font-size:1.3rem; }
 .accordion__label { display:flex; align-items:center; gap:8px; }
 .accordion__number { min-width:2.1em; color:var(--area-color); font:700 12px/1 Arial,sans-serif; letter-spacing:.08em; }
 .area-tag { width:max-content; max-width:100%; padding:3px 7px; border-radius:2px; color:var(--area-color); background:var(--area-pale); font:700 10px/1.2 Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
-.text-type-tag { width:max-content; max-width:100%; padding:3px 7px; border:1px solid #bbbdb4; border-radius:2px; color:#39453d; background:#efeee8; font:700 10px/1.2 Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+/* Här skedde en uppdatering: texttypsmärkningen används nu inline i löpande text och
+   behöver därför display:inline-block för att ramen ska hamna rätt. */
+.text-type-tag { display:inline-block; width:max-content; max-width:100%; margin-right:.4em; padding:3px 7px; border:1px solid #bbbdb4; border-radius:2px; color:#39453d; background:#efeee8; font:700 10px/1.2 Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; vertical-align:.08em; }
 .accordion__toggle { flex:none; color:var(--moss); font:1.65rem Arial,sans-serif; }
 .accordion div { padding:0 32px 20px 0; color:var(--muted); }
 .accordion div p { margin:0; }
