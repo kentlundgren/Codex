@@ -3,7 +3,7 @@ document.querySelectorAll("[data-accordion] button").forEach((button) => {
     const panel = button.nextElementSibling;
     const expanded = button.getAttribute("aria-expanded") === "true";
     button.setAttribute("aria-expanded", String(!expanded));
-    button.querySelector("span").textContent = expanded ? "+" : "–";
+    button.querySelector(".accordion__toggle").textContent = expanded ? "+" : "–";
     panel.hidden = expanded;
   });
 });
