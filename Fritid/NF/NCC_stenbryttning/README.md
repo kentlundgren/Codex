@@ -9,6 +9,8 @@ En saklig och delningsbar sammanfattning av NCC:s samråd om planerad täkt- och
 ## Innehåll
 
 - `index.html` – läsvänlig webbsida med sammanfattning, centrala frågor och referenser.
+- `index copy.html` – manuellt bevarad jämförelseversion av `index.html`. Den används när olika struktur- och dispositionsförslag ska kunna jämföras sida vid sida och ändras inte automatiskt.
+- `struktur.html` – öppen metodförklaring till den alternativa dispositionen för samråds- och remissyttranden.
 - `styles.css` – sidans utseende och tillgängliga layout.
 - `script.js` – utfällbara avsnitt på webbsidan.
 - `samrad.md` – fördjupat sakunderlag med referenser.
