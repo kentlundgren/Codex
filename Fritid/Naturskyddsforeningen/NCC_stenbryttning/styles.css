@@ -46,6 +46,7 @@ h3 { margin:9px 0; font-size:1.3rem; }
 .references { max-width:900px; padding-left:25px; }
 .references li { margin:1.15em 0; padding-left:.25em; }
 .source-note { color:var(--muted); }
+.reading-link { max-width:760px; margin:28px 0; padding:17px 20px; border-left:4px solid var(--fern); background:#edf3e6; }
 a { color:#234f38; text-underline-offset:3px; }
 footer { padding:35px 0; color:#dce7d7; background:#16291e; font:14px Arial,sans-serif; }
 .repo-link,.tech-button { position:fixed; bottom:14px; z-index:2; padding:7px 10px; border:1px solid rgba(255,255,255,.5); border-radius:3px; color:#fff; background:rgba(22,41,30,.88); font:12px Arial,sans-serif; text-decoration:none; }

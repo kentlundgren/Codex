@@ -1,0 +1,3 @@
+#!/bin/sh
+# Kontrollera de två publicerade huvuddokumenten innan en commit skapas.
+exec powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$(git rev-parse --show-toplevel)/.githooks/check-public-documents.ps1"

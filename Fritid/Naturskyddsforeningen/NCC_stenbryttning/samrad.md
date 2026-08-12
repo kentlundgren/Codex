@@ -2,6 +2,8 @@
 
 *Underlag för Lunds Naturskyddsförenings plangrupp. Upprättat 12 augusti 2026.*
 
+> **Kortare översikt:** [Läs den lättlästa webbsidan om samrådet](https://kentlundgren.github.io/Codex/Fritid/Naturskyddsforeningen/NCC_stenbryttning/).
+
 ## Sammanfattning
 
 Det pågående samrådet gäller inte en enkel förlängning av den nuvarande bergtäkten. NCC Industry AB förbereder en ansökan om en **ny täkt väster om väg 952 (Dalbyvägen)**, mellan Södra Sandby och Dalby, med 30 års tillståndstid. Samtidigt vill bolaget under högst tre år bryta i två begränsade delar av den nuvarande täkten öster om vägen. Den gamla täkten ska därefter vattenfyllas, delvis med vatten från den nya täkten (NCC Industry AB och Sweco, 2026a, s. 6–10).

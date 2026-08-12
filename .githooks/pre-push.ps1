@@ -9,6 +9,9 @@ $blockedContent = '(?im)^\s*(privat|private|konfidentiellt|confidential|inte fö
 $updates = [Console]::In.ReadToEnd().Trim() -split "`r?`n" | Where-Object { $_ }
 $blocked = [System.Collections.Generic.List[string]]::new()
 
+& "$(git rev-parse --show-toplevel)/.githooks/check-public-documents.ps1"
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
 foreach ($update in $updates) {
   $parts = $update -split '\s+'
   if ($parts.Count -lt 4) { continue }
