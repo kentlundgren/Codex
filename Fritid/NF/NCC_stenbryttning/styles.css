@@ -48,6 +48,8 @@ h3 { margin:9px 0; font-size:1.3rem; }
 .stance .eyebrow { color:#d6e9be; }
 .stance ol { max-width:750px; padding-left:1.15em; }
 .stance li + li { margin-top:10px; }
+.stance h3 { max-width:750px; margin:34px 0 6px; color:#e2f0d4; }
+.stance h3 + p { margin-top:0; }
 .section-intro { max-width:750px; color:var(--muted); font-size:.96rem; }
 .accordion-section { padding-bottom:84px; }
 .accordion { max-width:800px; border-top:1px solid var(--line); }
