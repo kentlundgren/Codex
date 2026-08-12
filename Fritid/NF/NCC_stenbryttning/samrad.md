@@ -19,6 +19,8 @@ Fyra typer av text hålls isär genom hela dokumentet:
 | **Bedömning** | Hur underlagets tillräcklighet värderas här. |
 | **Förslag** | Vad prövningen eller villkoren bör leda till. |
 
+Uppdelningen i just fyra märkta typer är ett eget redaktionellt arbetssätt och inte föreskriven av någon myndighet. Principen bakom den har däremot stöd: referat ska gå att skilja från egna ställningstaganden och skälen för dem (Statsrådsberedningen, 2026, avsnitt 3.4; Boverket, 2026). Att kategorin *Fråga* finns följer av att ett avgränsningssamråd enligt 6 kap. 29 § miljöbalken bland annat gäller vilket underlag miljökonsekvensbeskrivningen ska innehålla.
+
 ## Sammanfattning
 
 Samrådet gäller inte en förlängning av den nuvarande bergtäkten. NCC Industry AB förbereder en ansökan om en **ny täkt väster om väg 952 (Dalbyvägen)** mellan Södra Sandby och Dalby, med 30 års tillståndstid, samtidigt som brytning under högst tre år ska fortsätta i två begränsade delar av den nuvarande täkten öster om vägen. Den gamla täkten ska därefter vattenfyllas, delvis med vatten från den nya (NCC Industry AB och Sweco, 2026a, s. 6–10).
