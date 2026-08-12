@@ -20,6 +20,8 @@
 
 Projektet kan samtidigt öppnas och ändras i Cursor av användaren. Kontrollera därför berörda filer före ändring, bevara externa ändringar och skriv aldrig över eller återställ ändringar som inte är mina utan uttryckligt klartecken.
 
+- När uppdragets innebörd, avgränsning, källstatus eller önskat resultat är otydligt ska Codex fråga användaren innan arbetet går vidare. Målet är att användaren och Codex har samma bild av den faktiska situationen och av vad som ska göras.
+
 ## Delade skills
 
 - Projektets synliga kopia av skillen för samrådsunderlag finns i `Skills/samradsunderlag/`.
