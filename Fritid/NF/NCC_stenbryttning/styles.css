@@ -67,6 +67,22 @@ h3 { margin:9px 0; font-size:1.3rem; }
 .accordion div p + p { margin-top:12px; }
 .accordion div ul { margin:12px 0 0; padding-left:1.2em; }
 .accordion div li + li { margin-top:6px; }
+/* Här skedde en uppdatering: en förklaringsruta som visas vid hover och vid
+   tangentbordsfokus. Texten ligger i dokumentet, inte i ett title-attribut, så att den
+   även går att nå med skärmläsare och på pekskärm. */
+.tip { position:relative; border-bottom:1px dotted currentColor; cursor:help; }
+.tip__box { position:absolute; left:0; bottom:calc(100% + 12px); z-index:4; width:max(280px, min(360px, 78vw)); padding:14px 16px; visibility:hidden; opacity:0; transition:opacity .13s ease; color:var(--ink); background:var(--white); border:1px solid var(--line); border-left:4px solid var(--moss); box-shadow:0 12px 34px rgba(15,31,22,.26); font:400 14px/1.5 Arial,sans-serif; letter-spacing:0; text-transform:none; }
+.tip__box strong { display:block; margin-bottom:4px; color:var(--moss); }
+.tip:hover .tip__box,.tip:focus .tip__box,.tip:focus-within .tip__box { visibility:visible; opacity:1; }
+.tip--end .tip__box { left:auto; right:0; }
+@media (max-width:700px) { .tip__box { width:min(300px, 84vw); } }
+.subhead { max-width:750px; margin:44px 0 4px; }
+.subhead + p { margin-top:0; }
+.definitions { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; max-width:800px; margin:26px 0 0; }
+.definitions article { padding:20px 22px; background:var(--white); border-top:4px solid var(--fern); }
+.definitions h3 { margin:0 0 8px; font-size:1.12rem; }
+.definitions p { margin:0; color:var(--muted); font-size:.95rem; }
+@media (max-width:700px) { .definitions { grid-template-columns:1fr; } }
 .sources { border-bottom:0; }
 .references { max-width:900px; padding-left:25px; }
 .references li { margin:1.15em 0; padding-left:.25em; }

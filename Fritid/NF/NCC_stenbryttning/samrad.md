@@ -21,6 +21,21 @@ Fyra typer av text hålls isär genom hela dokumentet:
 
 Uppdelningen i just fyra märkta typer är ett eget redaktionellt arbetssätt och inte föreskriven av någon myndighet. Principen bakom den har däremot stöd: referat ska gå att skilja från egna ställningstaganden och skälen för dem (Statsrådsberedningen, 2026, avsnitt 3.4; Boverket, 2026). Att kategorin *Fråga* finns följer av att ett avgränsningssamråd enligt 6 kap. 29 § miljöbalken bland annat gäller vilket underlag miljökonsekvensbeskrivningen ska innehålla.
 
+### Sammanfattningen och begäran är inte samma sak
+
+*Här skedde en uppdatering: dokumentet inleds och avslutas med varsin kort lista, och de är lätta att förväxla. Skillnaden förklaras nu uttryckligen.*
+
+| | Sammanfattningen (först) | Vad som begärs (sist) |
+| --- | --- | --- |
+| Besvarar frågan | Vad är problemet? | Vad ska ni göra? |
+| Riktar sig till | Alla som läser texten | Den som handlägger ärendet |
+| Form | Får vara resonerande | Varje punkt ska gå att bifalla eller avslå |
+| Läsaren behöver | Bara förstå | Ta ställning, punkt för punkt |
+
+Sammanfattningen **beskriver** vad som brister i underlaget, så att den som bara läser den ändå har förstått huvudinnehållet. Den avslutande delen **begär** något bestämt, och graderas: begäran om underlag är något annat än förslag till villkor, som i sin tur är något annat än ett till- eller avstyrkande.
+
+**Om ordet yrkande.** I ett samråd finns formellt inga yrkanden. Samrådet är ett kunskapsutbyte inför en ansökan, och det som lämnas är synpunkter och önskemål. Yrkanden hör hemma i den senare prövningen, när ansökan har lämnats in och ärendet kommuniceras. Det avslutande avsnittet heter därför "Vad som begärs" och inte "Yrkanden". Punkterna bör ändå formuleras lika precist som yrkanden, eftersom samma frågor ofta återkommer i just den formen när ansökan prövas.
+
 ## Sammanfattning
 
 Samrådet gäller inte en förlängning av den nuvarande bergtäkten. NCC Industry AB förbereder en ansökan om en **ny täkt väster om väg 952 (Dalbyvägen)** mellan Södra Sandby och Dalby, med 30 års tillståndstid, samtidigt som brytning under högst tre år ska fortsätta i två begränsade delar av den nuvarande täkten öster om vägen. Den gamla täkten ska därefter vattenfyllas, delvis med vatten från den nya (NCC Industry AB och Sweco, 2026a, s. 6–10).
@@ -299,6 +314,43 @@ NCC uppger att en tidigare ansökan från 2017 om utvidgning mot nordost avslogs
 **Förslag.** Villkoren bör innehålla öppen och löpande redovisning av mätdata, kontrollprogram och avvikelser, samt stopp- eller omprövningsmekanismer om hydrologi, vattenkvalitet eller naturvärden utvecklas sämre än prognostiserat.
 
 **Förslag.** Miljökonsekvensbeskrivningen ska enligt 6 kap. 36 § miljöbalken innehålla en beskrivning av verksamhetens konsekvenser för syftet med att bevara Natura 2000-området, en redogörelse för de alternativ som övervägts och en motivering till varför ett visst alternativ valts. Den redogörelsen bör vara utformad så att den går att granska mot bevarandeplanens bevarandemål.
+
+---
+
+## Vad som begärs
+
+*Här skedde en uppdatering: dokumentet saknade tidigare en samlad avslutning och gick direkt från synpunkterna till referenserna. Avsnittet nedan följer samma disposition som webbsidan och metodsidan.*
+
+Punkterna nedan är hämtade ur avsnitten ovan och sammanförda här, graderade i tre nivåer så att det framgår vad som är en begäran om underlag, vad som är ett förslag till villkor och vad som är ett ställningstagande.
+
+### 1. Begäran om komplettering av underlaget
+
+Detta är huvudsaken i ett avgränsningssamråd, eftersom samrådet enligt 6 kap. 29 § miljöbalken bland annat gäller vad miljökonsekvensbeskrivningen ska innehålla.
+
+1. En samlad redovisning av tidigare tillstånd, villkor, domar, tillsynsbeslut, kontrollprogram, årsrapporter och mätdata för både täkten och asfaltverket.
+2. Tätningen utredd som flera alternativ, vart och ett med förväntat inläckage, kostnad, genomförandetid och effekt på grundvattennivån i rikkärren.
+3. Det återförda vattnets kalcium- och kvävehalter jämförda med ett grundvatten som försörjer ett rikkärr, samt vilka reningssteg som är möjliga och vad de kostar.
+4. Naturvärdena jämförda med dokumenterade förhållanden före 2006, i hela påverkansområdet och för samtliga artgrupper, inklusive mossor, fladdermöss, groddjur, fåglar och insekter.
+5. Nollalternativ, alternativa lokaliseringar, mindre täktområde och kortare tillståndstid redovisade med jämförbar detaljeringsgrad.
+6. Miljökonsekvensbeskrivningens disposition kompletterad med verksamhetens och transporternas egen klimatpåverkan.
+7. En förklaring av de motstridiga uppgifterna om drivmedel på s. 23 och s. 29, och av vad som avses med begränsad hydraulisk kontakt respektive kärnvärden.
+
+### 2. Förslag till villkor om tillstånd ändå ges
+
+Dessa förslag förutsätter inte att tillstånd bör lämnas. De anger vad som minst behöver regleras om prövningen leder dit.
+
+1. Besiktning av varje fastighet inom ett definierat område innan tillståndet tas i anspråk, omfattande fasader, brunnar, buller och trafikpåverkan.
+2. Ett utpekat och väldefinierat område för sprickor, buller och vibrationer, med angivet sätt att bestämma gränserna och hur ersättning hanteras.
+3. Bindande villkor för nivåer, flöden och vattenkvalitet i berörda våtmarker, dammar och vattendrag, med reservkraft, larm och åtgärdstider.
+4. Öppen och löpande redovisning av mätdata, kontrollprogram och avvikelser, samt omprövning om hydrologi, vattenkvalitet eller naturvärden utvecklas sämre än prognostiserat.
+5. Ekonomisk säkerhet enligt 9 kap. 6 e § miljöbalken dimensionerad så att den täcker tätning, återställning och fortsatt vattenhållning även efter att verksamheten upphört.
+6. Tidsbegränsning även för asfalttillverkningen.
+
+### 3. Ställningstagande
+
+Något ställningstagande är inte fattat. Detta utkast varken tillstyrker eller avstyrker den planerade verksamheten, och företräder ingen organisation. Frågan om till- eller avstyrkande bör avgöras först när underlaget enligt punkt 1 finns och kan bedömas — särskilt redovisningen av alternativ, av tätningens möjligheter och av hur de naturvärden som redan påverkats ska hanteras.
+
+Statsrådsberedningen anger att den som är tveksam till ett förslag uttryckligen bör ange det, i stället för att låta tveksamheten komma till uttryck genom svårtolkade formuleringar (Statsrådsberedningen, 2026, avsnitt 3.2). Att skriva ut att ställningstagandet inte är fattat är därför tydligare än att förbigå frågan.
 
 ---
 

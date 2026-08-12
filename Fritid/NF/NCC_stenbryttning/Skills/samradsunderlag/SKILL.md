@@ -51,8 +51,15 @@ Den fasta ramen är sex delar. Del fyra hämtar sin indelning från underlaget:
 2. **Sammanfattning.** De viktigaste synpunkterna, och ett tydligt ställningstagande när ett sådant är beslutat.
 3. **Referat, hållet åtskilt.** Endast om underlaget behöver återges, och då under egen rubrik.
 4. **Synpunkter i underlagets ordning**, med dess rubriker och avsnittsnummer. Inled varje punkt med ställningstagandet och ge sedan skälen.
-5. **Yrkanden, graderade.** Skilj på begäran om komplettering, förslag till villkor och till- eller avstyrkande.
+5. **Vad som begärs, graderat.** Skilj på begäran om komplettering, förslag till villkor och till- eller avstyrkande.
 6. **Källförteckning** med huvudkällan markerad.
+
+Del 2 och del 5 förväxlas lätt, eftersom båda är korta listor i varsin ände av texten. Håll isär dem, och förklara skillnaden för läsaren i själva dokumentet:
+
+- **Sammanfattningen beskriver.** Den besvarar frågan *vad är problemet?*, riktar sig till alla som läser texten, får vara resonerande och kräver inte att någon tar ställning punkt för punkt.
+- **Begäran begär.** Den besvarar frågan *vad ska ni göra?*, riktar sig till den som handlägger ärendet, och varje punkt ska vara så preciserad att den går att bifalla eller avslå.
+
+Använd inte rubriken "Yrkanden" om texten avser ett samråd. I ett samråd finns formellt inga yrkanden — samrådet är ett kunskapsutbyte inför en ansökan, och det som lämnas är synpunkter och önskemål. Yrkanden hör hemma i den senare prövningen, när ansökan har lämnats in och ärendet kommuniceras. Formulera ändå punkterna lika precist som yrkanden, eftersom samma frågor ofta återkommer i den formen när ansökan prövas.
 
 Källstöd:
 
