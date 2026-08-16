@@ -47,7 +47,7 @@ closeTechDialog.addEventListener("click", () => techDialog.close());
   document.addEventListener("touchstart", (e) => {
     if (e.touches.length !== 1) { startTime = 0; return; }
     if (document.querySelector("dialog[open]")) { startTime = 0; return; }
-    const scrollable = e.target.closest(".table-scroll, pre");
+    const scrollable = e.target instanceof Element ? e.target.closest(".table-scroll, pre") : null;
     if (scrollable && scrollable.scrollWidth > scrollable.clientWidth) { startTime = 0; return; }
     startX = e.touches[0].clientX;
     startY = e.touches[0].clientY;
