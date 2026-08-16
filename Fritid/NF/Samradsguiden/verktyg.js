@@ -54,8 +54,39 @@ function stepHasValue() {
   return false;
 }
 
+// Ger ett konkret felmeddelande för exakt det fält som saknas, i stället för
+// att knappen tyst inte gör något (se bugg upptäckt på den publicerade sidan).
+function saknatFaltMeddelande() {
+  if (currentStep === 1) return "Välj om du skriver som privatperson eller på uppdrag av en förening.";
+  if (currentStep === 2) return "Välj vilket lagrum som gäller.";
+  if (currentStep === 3) return "Välj vilket skede samrådet är i.";
+  if (currentStep === 4) {
+    if (!state.mottagare) return "Välj mottagare.";
+    if (state.mottagare === "annan" && state.mottagareAnnanText.trim() === "") return "Skriv in vilken mottagare det gäller.";
+  }
+  if (currentStep === 5) {
+    if (state.kompensation.onskas === null) return "Ange om kompensationsåtgärder ska tas med (Ja eller Nej).";
+    if (state.kompensation.onskas === true) {
+      if (!state.kompensation.sparValt) return "Välj ett rättsligt spår.";
+      if (!state.kompensation.lage) return "Välj ett läge — Begäran eller Konstruktivt förslag.";
+    }
+  }
+  return "Fyll i valet ovan innan du går vidare.";
+}
+
+function visaStegVarning() {
+  const el = document.getElementById("step-warning");
+  el.textContent = saknatFaltMeddelande();
+  el.hidden = false;
+}
+
+function doljStegVarning() {
+  document.getElementById("step-warning").hidden = true;
+}
+
 function goNext() {
-  if (!stepHasValue()) return;
+  if (!stepHasValue()) { visaStegVarning(); return; }
+  doljStegVarning();
   if (currentStep === totalSteg) return;
   currentStep += 1;
   if (currentStep === 3) populateSkedeOptions();
@@ -66,13 +97,14 @@ function goNext() {
 
 function goBack() {
   if (currentStep === 1) return;
+  doljStegVarning();
   currentStep -= 1;
   renderStepVisibility();
 }
 
 // --- Steg 1: avsändarroll ---
 document.querySelectorAll('input[name="avsandarroll"]').forEach((el) => {
-  el.addEventListener("change", () => { state.avsandarroll = el.value; });
+  el.addEventListener("change", () => { state.avsandarroll = el.value; doljStegVarning(); });
 });
 
 // --- Steg 2: lagrum ---
@@ -82,6 +114,7 @@ document.querySelectorAll('input[name="lagrum"]').forEach((el) => {
     state.skede = null;
     state.mottagare = null;
     state.kompensation = { onskas: null, berorNatura2000: null, sparValt: null, lage: null };
+    doljStegVarning();
   });
 });
 
@@ -101,6 +134,7 @@ function populateSkedeOptions() {
     input.addEventListener("change", () => {
       state.skede = key;
       state.mottagare = null;
+      doljStegVarning();
     });
     const span = document.createElement("span");
     const strong = document.createElement("span");
@@ -134,6 +168,7 @@ function populateMottagareOptions() {
     input.addEventListener("change", () => {
       state.mottagare = key;
       document.getElementById("mottagare-annan-field").hidden = key !== "annan";
+      doljStegVarning();
     });
     const span = document.createElement("span");
     const strong = document.createElement("span");
@@ -154,6 +189,7 @@ function populateMottagareOptions() {
 
 document.getElementById("mottagare-annan-text").addEventListener("input", (e) => {
   state.mottagareAnnanText = e.target.value;
+  doljStegVarning();
 });
 
 // --- Steg 5: kompensation ---
@@ -200,7 +236,7 @@ function populateKompensationSparOptions() {
     input.name = "kompSpar";
     input.value = key;
     if (state.lagrum === "pbl") input.checked = true;
-    input.addEventListener("change", () => { state.kompensation.sparValt = key; });
+    input.addEventListener("change", () => { state.kompensation.sparValt = key; doljStegVarning(); });
     const span = document.createElement("span");
     const strong = document.createElement("span");
     strong.className = "option__label";
@@ -224,12 +260,19 @@ document.querySelectorAll('input[name="kompLage"]').forEach((el) => {
 document.getElementById("btn-next").addEventListener("click", goNext);
 document.getElementById("btn-back").addEventListener("click", goBack);
 document.getElementById("btn-generate").addEventListener("click", () => {
-  if (!stepHasValue()) return;
+  if (!stepHasValue()) { visaStegVarning(); return; }
+  doljStegVarning();
   if (state.malGenererad) {
     const bekrafta = window.confirm("Du har redan skrivit text. Vill du skriva över den ifyllda mallen?");
     if (!bekrafta) return;
   }
   genereraMall();
+});
+
+// Dölj varningen så fort användaren gör ett nytt val i steg 5 — annars
+// hänger felmeddelandet kvar även efter att det är åtgärdat.
+document.querySelectorAll('#step-5 input').forEach((el) => {
+  el.addEventListener("change", doljStegVarning);
 });
 
 // --- Mallgenerering (SPEC avsnitt 2.3) ---
