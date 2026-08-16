@@ -133,12 +133,29 @@ const DISPOSITIONER = {
     }
   },
   mb: {
+    undersokningssamrad: {
+      id: "mb-undersokningssamrad",
+      label: "MB — Undersökningssamråd (villkorat, förekommer inte alltid)",
+      lagrum: "MB",
+      status: "villkorat",
+      mottagareForslag: "lansstyrelsen",
+      lagrumshanvisning: "MB 6 kap. 23–26 §§. Förekommer bara när det är oklart om verksamheten kan antas medföra en betydande miljöpåverkan. Skippas helt om verksamheten enligt miljöbedömningsförordningen alltid anses medföra det (vanligt för större täkter) eller om sökanden själv redan utgår från det — då går processen direkt till avgränsningssamrådet nedan. Länsstyrelsen beslutar efter undersökningen om betydande miljöpåverkan föreligger (26 §).",
+      delar: {
+        arendetsRam: { hjalptext: DELBASHJALP.arendetsRam },
+        sammanfattning: { hjalptext: DELBASHJALP.sammanfattning },
+        referat: { hjalptext: DELBASHJALP.referat, valfri: true },
+        synpunkter: { hjalptext: "Följ samrådsunderlagets egen disposition. Fokusera på om betydande miljöpåverkan föreligger, inte på sakfrågor som hör hemma i ett senare skede.", rubrikKalla: "Samrådsunderlagets egna avsnitt kring frågan om betydande miljöpåverkan." },
+        vadSomBegars: { hjalptext: DELBASHJALP.vadSomBegars + " T.ex. en motiverad begäran om att länsstyrelsen ska bedöma att betydande miljöpåverkan föreligger." },
+        kallforteckning: { hjalptext: DELBASHJALP.kallforteckning }
+      }
+    },
     avgransningssamrad: {
       id: "mb-avgransningssamrad",
-      label: "MB — Avgränsningssamråd",
+      label: "MB — Avgränsningssamråd (det ordinarie, lagstadgade samrådet)",
       lagrum: "MB",
+      status: "ordinarie",
       mottagareForslag: "lansstyrelsen",
-      lagrumshanvisning: "MB 6 kap. 29 §. Gäller verksamhetens lokalisering, omfattning och utformning, de miljöeffekter som kan antas uppstå, samt miljökonsekvensbeskrivningens (MKB) innehåll och utformning — inte ansökans slutliga utfall.",
+      lagrumshanvisning: "MB 6 kap. 29–32 §§. Det enda samråd i kedjan som alltid genomförs inför en specifik miljöbedömning, oavsett om ett undersökningssamråd föregått det. Gäller verksamhetens lokalisering, omfattning och utformning, de miljöeffekter som kan antas uppstå, samt miljökonsekvensbeskrivningens (MKB) innehåll och utformning — det avgör alltså var och hur ärendet ska utredas, inte om tillstånd till slut ges. Den frågan avgörs först senare, av mark- och miljödomstolen, sedan hela ansökan och MKB:n lämnats in och kungjorts.",
       delar: {
         arendetsRam: { hjalptext: DELBASHJALP.arendetsRam },
         sammanfattning: { hjalptext: DELBASHJALP.sammanfattning },
@@ -150,10 +167,11 @@ const DISPOSITIONER = {
     },
     kompletterandeSamrad: {
       id: "mb-kompletterande-samrad",
-      label: "MB — Kompletterande/utökat samråd",
+      label: "MB — Kompletterande/utökat samråd (villkorat, inte ett andra ordinarie samråd)",
       lagrum: "MB",
+      status: "villkorat",
       mottagareForslag: "lansstyrelsen",
-      lagrumshanvisning: "Inget eget lagrum. Genomförs när förutsättningarna ändrats väsentligt mellan avgränsningssamrådet och den slutliga ansökan.",
+      lagrumshanvisning: "Inget eget lagrum — inte ett andra ordinarie samråd av samma dignitet som avgränsningssamrådet, utan en möjlighet som utnyttjas om förutsättningarna ändrats väsentligt mellan avgränsningssamrådet och den slutliga ansökan.",
       delar: {
         arendetsRam: { hjalptext: DELBASHJALP.arendetsRam },
         sammanfattning: { hjalptext: DELBASHJALP.sammanfattning },
@@ -165,10 +183,11 @@ const DISPOSITIONER = {
     },
     yttrandeVidKungorelse: {
       id: "mb-yttrande-vid-kungorelse",
-      label: "MB — Yttrande vid kungörelse av ansökan",
+      label: "MB — Yttrande vid kungörelse av ansökan (formellt inte ett samråd)",
       lagrum: "MB",
+      status: "ejSamrad",
       mottagareForslag: "markOchMiljodomstolen",
-      lagrumshanvisning: "Formellt inte längre ett samråd, utan ett yttrande i ett pågående mål hos mark- och miljödomstolen.",
+      lagrumshanvisning: "Formellt inte ett samråd utan ett yttrande i ett pågående mål hos mark- och miljödomstolen — tillfället då frågan om tillstånd ska ges eller inte till slut avgörs.",
       delar: {
         arendetsRam: { hjalptext: DELBASHJALP.arendetsRam },
         sammanfattning: { hjalptext: DELBASHJALP.sammanfattning },

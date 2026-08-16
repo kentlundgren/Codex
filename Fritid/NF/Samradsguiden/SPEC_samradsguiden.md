@@ -32,6 +32,8 @@ All text i detta avsnitt är **placeholder-nivå** — exakt sakinnehåll (hjäl
 
 **Tillägg (version 1.2):** varje PBL-post har ett `plantyp`-fält, `"detaljplan"` eller `"oversiktsplan"`, och två nya poster tillkom under `pbl`: `oversiktsplanSamrad` och `oversiktsplanGranskning`. `verktyg.js` kräver inga ändringar för detta — `populateSkedeOptions()` itererar redan generiskt över `Object.keys(DISPOSITIONER[state.lagrum])`.
 
+**Tillägg (version 1.3):** varje MB-post har nu ett `status`-fält — `"ordinarie"` (bara `avgransningssamrad`, det enda alltid lagstadgade samrådet), `"villkorat"` (`undersokningssamrad`, `kompletterandeSamrad` — förekommer bara under vissa förutsättningar) eller `"ejSamrad"` (`yttrandeVidKungorelse` — formellt inte ett samråd). En ny post, `undersokningssamrad` (MB 6 kap. 23–26 §§), tillkom under `mb`, före `avgransningssamrad` i objektordningen. Bakgrund: en tidigare version av verktyget visade avgränsningssamråd, kompletterande samråd och yttrande vid kungörelse med samma visuella vikt, vilket gav intryck av att MB har lika många ordinarie samrådstillfällen som PBL (tre). Det stämmer inte — MB har bara ett. `status`-fältet används inte av `verktyg.js` i nuläget (etiketterna i `label` gör skillnaden tydlig utan kod-ändring), men finns tillgängligt om en framtida version vill rendera en visuell badge per status.
+
 ```js
 // En dispositionsmall = de sex delarna från struktur.html, med
 // lagrum/skede-specifikt innehåll i respektive del.
@@ -121,12 +123,29 @@ const DISPOSITIONER = {
     }
   },
   mb: {
+    undersokningssamrad: {
+      id: "mb-undersokningssamrad",
+      label: "MB — Undersökningssamråd (villkorat)",
+      lagrum: "MB",
+      status: "villkorat",
+      mottagareForslag: "Länsstyrelsen",
+      lagrumshanvisning: "MB 6 kap. 23–26 §§ — förekommer bara om det är oklart om betydande miljöpåverkan föreligger; skippas om verksamheten kategoriskt klassas som sådan.",
+      delar: {
+        arendetsRam:      { hjalptext: "STRING" },
+        sammanfattning:    { hjalptext: "STRING" },
+        referat:            { hjalptext: "STRING", valfri: true },
+        synpunkter:          { hjalptext: "STRING", rubrikKalla: "Samrådsunderlagets avsnitt om betydande miljöpåverkan" },
+        vadSomBegars:         { hjalptext: "STRING", kravtyperTillatna: ["begaran_om_betydande_miljopaverkan"] },
+        kallforteckning:       { hjalptext: "STRING" }
+      }
+    },
     avgransningssamrad: {
       id: "mb-avgransningssamrad",
-      label: "MB — Avgränsningssamråd",
+      label: "MB — Avgränsningssamråd (det ordinarie samrådet)",
       lagrum: "MB",
+      status: "ordinarie",
       mottagareForslag: "Länsstyrelsen",
-      lagrumshanvisning: "MB 6 kap. 29 §",
+      lagrumshanvisning: "MB 6 kap. 29–32 §§. Det enda samråd i kedjan som alltid genomförs; avgör var/hur ärendet utreds, inte om tillstånd ges.",
       delar: {
         arendetsRam:      { hjalptext: "STRING" },
         sammanfattning:    { hjalptext: "STRING" },
@@ -138,10 +157,11 @@ const DISPOSITIONER = {
     },
     kompletterandeSamrad: {
       id: "mb-kompletterande-samrad",
-      label: "MB — Kompletterande/utökat samråd",
+      label: "MB — Kompletterande/utökat samråd (villkorat)",
       lagrum: "MB",
+      status: "villkorat",
       mottagareForslag: "Länsstyrelsen",
-      lagrumshanvisning: "Inget eget lagrum — genomförs när förutsättningarna ändrats väsentligt sedan avgränsningssamrådet.",
+      lagrumshanvisning: "Inget eget lagrum — inte ett andra ordinarie samråd, genomförs bara när förutsättningarna ändrats väsentligt sedan avgränsningssamrådet.",
       delar: {
         arendetsRam:      { hjalptext: "STRING" },
         sammanfattning:    { hjalptext: "STRING" },
@@ -153,8 +173,9 @@ const DISPOSITIONER = {
     },
     yttrandeVidKungorelse: {
       id: "mb-yttrande-vid-kungorelse",
-      label: "MB — Yttrande vid kungörelse av ansökan",
+      label: "MB — Yttrande vid kungörelse av ansökan (inte ett samråd)",
       lagrum: "MB",
+      status: "ejSamrad",
       mottagareForslag: "Mark- och miljödomstolen",
       lagrumshanvisning: "Formellt inte ett samråd — yttrande i pågående mål.",
       delar: {
@@ -396,7 +417,7 @@ function exporteraSomFil(text, filnamn) {
 
 ## 6. Manuell verifieringschecklista (innan leverans)
 
-- [ ] Alla sex kombinationer av lagrum × skede går att välja och genererar rätt mall.
+- [ ] Alla nio kombinationer av lagrum/plantyp × skede går att välja och genererar rätt mall.
 - [ ] Kompensationssteget visar rätt spår i alla tre fall i sanningstabellen (2.2).
 - [ ] `mb7kap29` går **inte** att välja om `berorNatura2000` inte är `true`.
 - [ ] Tomt `referat`-fält utelämnas korrekt ur både sammanställningsvy och export.
