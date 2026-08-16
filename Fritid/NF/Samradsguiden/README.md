@@ -6,22 +6,21 @@ Ett verktyg för hur privatpersoner och miljöorganisationer kan disponera och l
 
 [Öppna Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/)
 
-Den interaktiva guiden finns direkt på [verktyg.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/verktyg.html), och fördjupningen på [fordjupning.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/fordjupning.html).
-
-**Observera:** `index.html` — sidan länken ovan pekar mot — är under uppbyggnad. Fram tills den är klar är `verktyg.html` den enda sidan som säkert fungerar live.
+Fördjupningen finns på [fordjupning.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/fordjupning.html), och den interaktiva guiden på [verktyg.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/verktyg.html).
 
 ## Status
 
-PRD och SPEC.md är klara. Den interaktiva guiden (`verktyg.html`) är byggd och testad. `index.html` (kort översikt) och `fordjupning.html` (fullständigt sakinnehåll) återstår.
+PRD, SPEC.md och samtliga tre sidor är byggda och testade lokalt (formulärflöde, alla villkorliga fält, kopiera- och nedladdningsfunktion, accordion-komponenter). Innehållsproduktionen har några kvarvarande öppna frågor, se `PRD_samradsguiden.md`, avsnitt 13 — bland annat en fungerande länk till Naturvårdsverkets Handbok 2016:1 och en genomgång av fler fall i Miljösamverkan Sveriges erfarenhetsbank.
 
 ## Innehåll
 
 - `PRD_samradsguiden.md` — planeringsdokument: mål, avgränsning, innehållslig utgångspunkt (skillnaden mellan PBL och MB), dispositioner per samrådssteg, kompensationsåtgärder-modulen, funktionella och tekniska krav, öppna frågor och källor.
 - `SPEC_samradsguiden.md` — teknisk specifikation för genomförande: datamodell för dispositionsmallarna och kompensationsmodulen, formulärlogik, exportlogik, gränsfall och en verifieringschecklista.
+- `index.html` — kort översikt: grundprincipen, jämförelsetabell PBL/MB, de tre skedena, och en introduktion till kompensationsmodulen.
+- `fordjupning.html` — fullständigt sakinnehåll: alla sex dispositionsmallar, hela kompensationsmodulen (rättsligt läge, skadelindringshierarkin, svenska och internationella exempel, metoden för konstruktiva förslag), de två konkreta exemplen, och källförteckning.
 - `verktyg.html` — den interaktiva guiden: fem steg (avsändarroll, lagrum, skede, mottagare, kompensationsåtgärder) som genererar en ifyllningsbar mall med sex delar, en sammanställningsvy, samt kopiera- och nedladdningsfunktion.
 - `data.js` — all sakdata verktyget använder: de sex dispositionsmallarna (PBL × 3 skeden, MB × 3 skeden) och kompensationsmodulens tre rättsliga spår × två lägen.
 - `verktyg.js` — formulärlogiken och exportlogiken bakom `verktyg.html`.
-- `index.html`, `fordjupning.html` — under uppbyggnad.
 - `styles.css`, `script.js` — delad formgivning och delade komponenter (utfällbara avsnitt, teknikmodal).
 
 ## Relation till NCC_stenbryttning
