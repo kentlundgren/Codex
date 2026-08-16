@@ -48,7 +48,7 @@ Delvis. Det är viktigt att verktyget inte överdriver skillnaden, eftersom den 
 | Vad "vad som begärs" kan innehålla | Begäran om ändrad planbestämmelse, ändrad plankarta, kompletterande utredning, eller att planen inte antas i föreslagen form | Begäran om komplettering av MKB, förslag till villkor, eller till-/avstyrkande av ansökan |
 | Mottagare i normalfallet | Kommunen (stadsbyggnadskontor/motsvarande) | Länsstyrelsen (i tidiga samråd) och mark- och miljödomstolen (i den slutliga prövningen) |
 | Skedesindelning | Program (frivilligt) → samråd → granskning → antagande → ev. överklagan | (Ev. undersökningssamråd) → avgränsningssamråd → ev. kompletterande samråd → ansökan/kungörelse → yttrande i målet |
-| Lagrum för själva samrådsskyldigheten | PBL 5 kap., främst 11–19 §§ | MB 6 kap., främst 29–36 §§ |
+| Lagrum för själva samrådsskyldigheten | PBL 5 kap. 11–13 §§ (samråd), 18, 21, 23 och 25 §§ (granskning) | MB 6 kap., främst 29–36 §§ |
 
 Verktyget ska bygga på denna nyanserade bild: **en gemensam disposition, olika innehåll i två av dess sex delar, och olika skedesindelning.** Detta är den bärande pedagogiska poängen och bör förklaras tydligt innan de konkreta dispositionsmallarna visas (sex stycken totalt, tre per lagrum, se avsnitt 6), så att användaren förstår att hen inte lär sig två helt olika system.
 
@@ -61,8 +61,8 @@ Per beslut ska varje steg ha sin egen mall, eftersom stegen har olika syfte och 
 ### 6.1 PBL — detaljplaneprocessen
 
 1. **Programsamråd** (frivilligt, tidigt skede — förekommer inte i alla planer). Yttrandet är på idé-/inriktningsnivå: vilka alternativ bör utredas, vilka värden bör vägas in.
-2. **Samråd** (PBL 5 kap., preliminärt 11–17 §§). Yttrandet gäller ett konkret planförslag. Kommunen sammanställer inkomna synpunkter i en samrådsredogörelse.
-3. **Granskning** (PBL 5 kap., preliminärt 18–19 §§, kallas ibland "utställning"). Sista tillfället att lämna synpunkter innan planen antas. Yttrandet bör vara skarpare formulerat — den som inte yttrar sig i granskningen riskerar att förlora rätten att överklaga planen senare. Kommunen sammanställer ett granskningsutlåtande.
+2. **Samråd** (PBL 5 kap. 11–13 §§). Kommunen ska samråda med länsstyrelsen, lantmäterimyndigheten, berörda kommuner, kända sakägare och boende, samt myndigheter och organisationer med väsentligt intresse (5 kap. 11 §). Syftet är uttryckligen "att få fram ett så bra beslutsunderlag som möjligt" (5 kap. 12 §). Kommunen sammanställer inkomna synpunkter i en samrådsredogörelse.
+3. **Granskning** (PBL 5 kap. 18, 21 och 23 §§, kallas ibland "utställning"). Planförslaget ska granskas under minst två veckor (5 kap. 18 §) och hållas tillgängligt tillsammans med samrådsredogörelsen (5 kap. 21 §). Sista ordinarie tillfället att lämna synpunkter innan planen antas — den som inte yttrar sig i granskningen riskerar att förlora rätten att överklaga planen senare. Kommunen sammanställer ett granskningsutlåtande (5 kap. 23 §). Om kommunen ändrar planförslaget väsentligt efter granskningen ska det ändrade förslaget granskas på nytt (5 kap. 25 §) — ett fjärde, villkorat tillfälle att yttra sig, värt att nämna i verktyget men inte en egen mall.
 
 ### 6.2 MB — tillståndsprocessen
 
@@ -85,7 +85,7 @@ Varje lagrum ska illustreras med ett verkligt, genomarbetat exempel — inte bar
 
 NCC-ärendet används alltså som det konkreta MB-exemplet genomgående i verktyget, med länk till `../NCC_stenbryttning/`.
 
-**PBL-exemplet saknas ännu.** Per beslut ska ett verkligt, offentligt yttrande från en privatperson eller förening i ett detaljplanesamråd sökas upp och användas på motsvarande sätt (se leveransplanen, avsnitt 12). Utan ett sådant blir PBL-sidan av verktyget mer abstrakt än MB-sidan, vilket bryter mot principen att båda lagrummen ska vara lika konkret illustrerade.
+**PBL-exemplet är nu hittat: Naturskyddsföreningen Norrköpings yttrande om detaljplanen för Södra Björkalund.** Ett publicerat, offentligt yttrande vid samråd över en utställd detaljplan för nya bostäder (Naturskyddsföreningen Norrköping, 2026) — samma typ av avsändare (en lokal naturskyddsförening) som i NCC/Skrylle-exemplet, vilket gör de två exemplen pedagogiskt jämförbara. Yttrandet bör läsas i sin helhet och sammanfattas på samma sätt som NCC-ärendet gjordes (jfr avsnitt 6.3 ovan) innan det används som färdigt sidinnehåll — se leveransplanen, avsnitt 12. Alternativa exempel hittades också från Naturskyddsföreningen i Uppsala, Göteborg, Ängelholm, Huddinge och Motala, om Norrköpings exempel visar sig mindre lämpligt vid närmare läsning.
 
 ## 7. Mottagare: kommun eller länsstyrelse
 
@@ -107,7 +107,7 @@ Fördjupad källkontroll mot Miljösamverkan Sveriges handläggarstöd (Miljösa
 - **MB 16 kap. 9 § — det generella, fakultativa spåret.** Ger prövningsmyndigheten rätt att villkora ett **tillstånd eller en dispens** med krav på kompensation för intrång i allmänna intressen. Bestämmelsen är fakultativ — myndigheten *får*, men *måste* inte — och omfattningen avgörs genom en rimlighetsavvägning (Miljösamverkan Sverige, 2021, s. 20–21). Gäller bara vid faktisk tillstånds- eller dispensprövning; vid ren tillsyn (t.ex. en anmälan enligt 12 kap. 6 §) saknas lagstöd helt.
 - **MB 7 kap. 29 § — det obligatoriska Natura 2000-spåret, ett undantagsfall.** Om en verksamhet skadar eller stör de utpekade värdena i ett Natura 2000-område kan tillstånd normalt inte ges (7 kap. 28 § MB). I det undantagsfall då regeringen ändå lämnar tillåtlighet, av tvingande orsaker som har ett väsentligt allmänintresse, är kompensation en **förutsättning** för att tillåtligheten över huvud taget ska kunna ges — inte en möjlighet myndigheten kan välja bort (Miljösamverkan Sverige, 2021, s. 62–63). Det är alltså inte samma sak som 16 kap. 9 §, och det gäller bara i detta specifika, ovanliga skede av en Natura 2000-prövning — inte automatiskt i varje ärende som berör ett Natura 2000-område. Verktyget ska vara tydligt med att detta spår sällan är aktuellt, men att det är viktigt att känna till eftersom det är just den situationen ett ärende som NCC/Skrylle skulle kunna hamna i om domstolen bedömer att skada på Måryd-Hällestad inte går att undvika.
 
-Utanför dessa tre spår är kompensation ett rent frivilligt åtagande — antingen för att verksamhetsutövaren själv föreslår det, eller för att kommunen har egna riktlinjer. Det är där Göteborgs stad (beslut i flera nämnder 2008/09, utökat till ekosystemtjänster 2017), Lomma kommun (arbetat med kompensation sedan slutet av 1990-talet) och Helsingborgs stad (balanseringsprincipens fyra steg) hör hemma (Boverket, u.å.; Ekoplankompassen, u.å.). Uppgiften om Solna kommun kunde inte bekräftas och behöver verifieras separat (se leveransplanen, avsnitt 12).
+Utanför dessa tre spår är kompensation ett rent frivilligt åtagande — antingen för att verksamhetsutövaren själv föreslår det, eller för att kommunen har egna riktlinjer. Det är där Göteborgs stad (beslut i flera nämnder 2008/09, utökat till ekosystemtjänster 2017), Lomma kommun (arbetat med kompensation sedan slutet av 1990-talet) och Helsingborgs stad (balanseringsprincipens fyra steg) hör hemma (Boverket, u.å.; Ekoplankompassen, u.å.). **Uppgiften om Solna kommun är nu bekräftad:** Solna stad har flera egna utredningar och riktlinjedokument om skyddsåtgärder och ekologisk kompensation, bland annat kopplade till specifika detaljplaner (Solna stad, 2019; Solna stad, 2020; Solna stad, 2024) — ett fjärde kommunexempel att ta med, och till skillnad från de tre andra ett exempel där kompensationen är knuten direkt till enskilda planärenden snarare än en övergripande policy.
 
 ### 8.2 Skadelindringshierarkin — ramen som gör förslag trovärdiga
 
@@ -117,22 +117,23 @@ En central regel att lära ut uttryckligen: **kompensationsåtgärder får inte 
 
 ### 8.3 Svenska exempel att lära av och hänvisa till
 
-Miljösamverkan Sveriges handläggarstöd innehåller en "erfarenhetsbank" med ett tiotal verkliga, genomförda fall (Miljösamverkan Sverige, 2021, s. 98–121). Två är särskilt värdefulla att lyfta i verktyget:
+Miljösamverkan Sveriges handläggarstöd innehåller en "erfarenhetsbank" med ett tiotal verkliga, genomförda fall (Miljösamverkan Sverige, 2021, s. 98–121). Tre är särskilt värdefulla att lyfta i verktyget:
 
 - **Utökad bergtäkt i Falköping, habitat för mindre blåvinge** (s. 109) — en nästan identisk situation som NCC/Skrylle: en bergtäkt prövad enligt 9 kap. MB, där utökningen skulle förstöra livsmiljön för en rödlistad fjärilsart. Lösningen blev ett skötselprogram i ett angränsande delområde (röjning, ökad markstörning för att gynna arten), villkorat enligt 16 kap. 9 § punkt 3 MB, med uppföljning genom inventering vart femte till tionde år. Detta är det bästa konkreta referensfallet för föreningen att peka på gentemot NCC, eftersom det är samma verksamhetstyp.
 - **Gruva i Mertainen** (s. 115) — bolaget presenterade självmant, redan innan samrådet, ett frivilligt kompensationsförslag med den internationella standarden **BBOP** (Business and Biodiversity Offsets Programme) som utgångspunkt och målet "no net loss". Området delades in i habitattyper, och en beräkningsmodell vägde samman area och habitatkvalitet för att kvantifiera förlust respektive vinst. Länsstyrelsen ställde därefter krav enligt 16 kap. 9 § MB, och bolaget invände inte. Bra exempel på hur ett kvantifierat, metodiskt upplägg gör kompensationskrav lättare att acceptera för motparten.
-- Ytterligare fall i samma erfarenhetsbank (Göteborgs hamn på ålgräsängar, gruva i Kaunisvaara, väg genom naturreservatet Sörmon, m.fl.) bör gås igenom under innehållsproduktionen och tas med där de är relevanta för PBL- respektive MB-sidan.
+- **Utbyggnad av Göteborgs hamn på ålgräsängar** (s. 106) — ett tredje, nyttigt exempel just för att det inte (ännu) är en succéhistoria: verksamhetsutövaren åtog sig att kompensera bortfallet av ålgräs genom transplantation, men vid handläggarstödets skrivande hade "ingen positiv tillväxt" kunnat redovisas på någon av de fyra återplanteringslokalerna. Bra motvikt till Falköping och Mertainen i verktyget — visar att kompensation kräver uppföljning och inte är en garanterad lösning, vilket är viktigt för föreningen att förstå innan den föreslår det till en exploatör.
+- Ytterligare fall i samma erfarenhetsbank (gruva i Kaunisvaara, väg genom naturreservatet Sörmon, m.fl.) bör gås igenom under innehållsproduktionen och tas med där de är relevanta för PBL- respektive MB-sidan.
 - Kompletterande vägledning: Naturvårdsverkets rapport om ekologisk kompensation (Naturvårdsverket, 2021) och den senare syntesrapporten om kompensation som verktyg i miljömålsarbetet (Naturvårdsverket, 2023). Miljösamverkan Sveriges handläggarstöd nämner även en tidigare handbok från Naturvårdsverket (Handbok 2016:1) som en föregångare — en fungerande direktlänk till den kunde inte hittas under denna research och behöver sökas fram separat innan den citeras (se öppna frågor, avsnitt 13).
 
 ### 8.4 Internationell utblick — länder och organisationer som arbetar mycket med kompensation
 
-Verifierat genom sökning, men detaljnivån (exakta procentsatser, paragrafer, årtal) bör kontrolleras ytterligare innan den skrivs in som färdigt sidinnehåll (se leveransplanen, avsnitt 12):
+Verifierat genom sökning, med källor för varje punkt. Exakta procentsatser och de svenska rättsföljderna av utländsk lagstiftning bör ändå läsas en gång till i sin helhet innan de skrivs in som färdigt sidinnehåll:
 
 - **Storbritannien** tillämpar sedan 2024 obligatorisk **Biodiversity Net Gain (BNG)**: i princip alla bygglov i England måste visa minst 10 procents nettoförbättring av biologisk mångfald jämfört med utgångsläget, med skötsel säkrad i minst 30 år (GOV.UK, u.å.a; GOV.UK, u.å.b). Ett skarpt kontrastexempel till Sveriges fakultativa system — här är kompensation regel, inte undantag.
-- **Tyskland** har haft ett kompensationssystem, *Eingriffsregelung*, i den federala naturvårdslagen (Bundesnaturschutzgesetz) sedan 1976 — ett av Europas äldsta. Det bygger på samma skadelindringshierarki som den svenska modellen och en princip om fullständig kompensation för bestående skada (IEEP, u.å.).
+- **Tyskland** har haft ett kompensationssystem, *Eingriffsregelung*, i den federala naturvårdslagen (Bundesnaturschutzgesetz, BNatSchG) sedan 1976 — ett av Europas äldsta. Grundprincipen i **§ 13 BNatSchG** är densamma som den svenska skadelindringshierarkin: undvik i första hand, kompensera det som blir kvar. **§ 14** definierar vad som räknas som ett ingrepp, och **§ 15** lägger ansvaret på den som orsakar ingreppet — i första hand genom Ausgleichsmaßnahmen (återställande åtgärder som är funktionellt likvärdiga) eller Ersatzmaßnahmen (ersättande åtgärder), i sista hand genom en avgift (IEEP, u.å.; sakuppgifterna om §§ 13–15 dessutom korsverifierade mot tysk juridisk litteratur).
 - **USA** har sedan 1980-talet ett marknadsbaserat system, *wetland mitigation banking*, enligt Clean Water Act Section 404, administrerat gemensamt av U.S. Army Corps of Engineers och EPA, med målet "no net loss" av våtmarkers värden och funktioner (US EPA, u.å.a; US EPA, u.å.b).
 - **EU** kräver enligt **artikel 6.4 i art- och habitatdirektivet** kompensationsåtgärder när ett projekt ändå tillåts trots skada på ett Natura 2000-område, av tvingande orsaker med ett väsentligt allmänintresse, och enligt principen att den som orsakar skadan även bekostar kompensationen (Europeiska kommissionen, u.å.). Detta är EU-rättens grund för Sveriges eget 7 kap. 29 § MB (se 8.1).
-- **BBOP** (Business and Biodiversity Offsets Programme) är den internationella standard som refererades i Mertainen-fallet ovan (8.3) — ett konkret exempel på hur ett internationellt ramverk kan användas av ett svenskt bolag i praktiken.
+- **BBOP** (Business and Biodiversity Offsets Programme), den internationella standard som refererades i Mertainen-fallet ovan (8.3), grundades 2004 av den amerikanska organisationen Forest Trends tillsammans med Wildlife Conservation Society. Programmet drivs numera vidare inom Forest Trends bredare Biodiversity Initiative snarare än som ett eget fristående märke, men principerna — mitigation hierarchy, no net loss/net gain — lever kvar och är fortfarande det som internationellt brukar refereras till (Forest Trends, u.å.). Bra konkret exempel på hur ett internationellt ramverk används av ett svenskt bolag i praktiken.
 
 ### 8.5 Från kritik till konstruktivt förslag — så ger föreningen exploatören idéer
 
@@ -199,9 +200,11 @@ Samradsguiden/
 
 Enligt den stående regeln om att varje PRD ska ta ställning till om ett SPEC.md-steg behövs: **ja, ett SPEC.md rekommenderas här**, ännu tydligare efter utökningen av avsnitt 8. Skälet är att verktyget har flera samverkande tekniska delar som en genomförande-AI annars måste gissa sig till: det stegvisa formulärets tillståndshantering, exakt vilka fält som visas vid varje kombination av lagrum/skede/mottagare, den exakta datastrukturen för de sex dispositionsmallarna (PBL × 3 skeden, MB × 3 skeden), **kompensationsmodulens tre rättsliga spår kombinerat med två lägen ("begäran"/"konstruktivt förslag") — sex möjliga kombinationer, var och en med egen mall- och hjälptext**, samt export-logikens gränsfall (tomma fält, specialtecken vid nedladdning). Ett SPEC.md bör beskriva denna datastruktur och formulärlogik i detalj innan kodning påbörjas.
 
+Detta arbetssätt — PRD, med ett uttalat ställningstagande till om SPEC.md behövs, som grund innan kod skrivs — följer den arbetsprocess Kent själv dokumenterat i Claude-kompassen, där PRD och SPEC.md beskrivs som "kravdokumenten som föregår" allt annat arbete (Fas 0) (Lundgren, 2026). Sidan kontrollerades 16 augusti 2026 och stämmer med hur detta dokument är upplagt; bilden kan ha hunnit ändras sedan dess.
+
 ## 12. Leveransplan (förslag)
 
-1. **Research och källkontroll** — lös öppna frågor i avsnitt 13: PBL-paragraferna, PBL-yttrandeexemplet (avsnitt 6.3), Solna-uppgiften, Naturvårdsverkets Handbok 2016:1, samt fördjupad kontroll av de internationella exemplen och fler fall ur Miljösamverkan Sveriges erfarenhetsbank (avsnitt 8.3–8.4).
+1. **Research och källkontroll** — genomförd i ett första varv (se avsnitt 13 för vad som återstår): PBL-paragraferna är fastställda, ett PBL-yttrandeexempel är hittat (avsnitt 6.3), Solna-uppgiften är bekräftad, och de internationella exemplen samt ett tredje svenskt fall (Göteborgs hamn) är tillagda (avsnitt 8.3–8.4). Kvarstår: Handbok 2016:1, fler fall ur erfarenhetsbanken, och en fullständig läsning av PBL-yttrandeexemplet.
 2. **SPEC.md** — datastruktur för dispositionsmallar (inklusive avsändarroll och kompensationsmodulens tre spår × två lägen), formulärlogik, exportformat.
 3. **Förklarande del** — `index.html` och `fordjupning.html` enligt avsnitt 9.1.
 4. **Interaktiv del** — formulär, sammanställning, export enligt avsnitt 9.2–9.3.
@@ -209,17 +212,15 @@ Enligt den stående regeln om att varje PRD ska ta ställning till om ett SPEC.m
 
 ## 13. Öppna frågor att lösa under innehållsproduktionen
 
-Dessa ska besvaras innan sidorna skrivs färdigt, inte i denna PRD:
+Ett första researchvarv (leveransplanens steg 1) löste flertalet av de ursprungliga frågorna. Dessa kvarstår innan sidorna skrivs färdigt, inte i denna PRD:
 
-1. Exakta paragrafhänvisningar i PBL 5 kap. för samråd respektive granskning — behöver verifieras sida för sida mot Boverkets PBL kunskapsbank eller lagtexten direkt, eftersom flera sidförsök under research gav ofullständiga träffar.
-2. Hitta ett verkligt, offentligt PBL-yttrande från en privatperson eller förening i ett detaljplanesamråd, att använda som konkret exempel motsvarande NCC för MB-sidan (se avsnitt 6.3).
-3. Bekräfta eller stryk uppgiften om Solna kommuns arbete med frivillig kompensation — kunde inte styrkas mot de källor som kontrollerats hittills.
-4. Om fler kommunexempel utöver Göteborg, Lomma och Helsingborg ska tas med, och i så fall vilka, med verifierad källa för var och en.
-5. Hitta en fungerande direktlänk till Naturvårdsverkets Handbok 2016:1 om ekologisk kompensation, eller bekräfta att den ersatts av senare vägledning (se avsnitt 8.3).
-6. Fördjupa och precisera de internationella exemplen i avsnitt 8.4 (exakta lagrum/årtal för Tysklands Eingriffsregelung, aktuell status för BBOP som organisation) innan de skrivs in som färdigt sidinnehåll.
-7. Gå igenom fler fall i Miljösamverkan Sveriges erfarenhetsbank (avsnitt 8.3) och avgöra vilka fler som är värda att ta med.
-8. Exakt namn/URL-struktur för den nya mappen — förslaget `Samradsguiden` i denna PRD är en utgångspunkt, inte ett beslut.
-9. Om en gemensam CSS-grund mellan `NCC_stenbryttning` och `Samradsguiden` är önskvärd på sikt, eller om de ska förbli helt oberoende som föreslaget i avsnitt 10.
+1. Läsa Naturskyddsföreningen Norrköpings yttrande om Södra Björkalund i sin helhet och sammanfatta det på samma strukturerade sätt som NCC-ärendet i avsnitt 6.3 — hittills bara identifierat, inte genomarbetat.
+2. Hitta en fungerande direktlänk till Naturvårdsverkets Handbok 2016:1 om ekologisk kompensation — den fullständiga titeln är bekräftad (*Ekologisk kompensation: en vägledning om kompensation vid förlust av naturvärden*), men ingen fungerande PDF-länk hittades under denna research.
+3. Gå igenom fler fall i Miljösamverkan Sveriges erfarenhetsbank (t.ex. gruvan i Kaunisvaara, vägen genom naturreservatet Sörmon) och avgöra vilka som är värda att ta med utöver Falköping, Mertainen och Göteborgs hamn.
+4. Om fler kommunexempel utöver Göteborg, Lomma, Helsingborg och Solna ska tas med.
+5. Exakta paragrafer i tysk lagtext (BNatSchG §§ 13–15) och EU:s art- och habitatdirektiv är sourcade mot sekundärkällor (IEEP respektive Europeiska kommissionen) — en direktkontroll mot primärkällan (själva lagtexten/direktivtexten) rekommenderas innan de citeras ordagrant.
+6. Exakt namn/URL-struktur för den nya mappen — förslaget `Samradsguiden` i denna PRD är en utgångspunkt, inte ett beslut.
+7. Om en gemensam CSS-grund mellan `NCC_stenbryttning` och `Samradsguiden` är önskvärd på sikt, eller om de ska förbli helt oberoende som föreslaget i avsnitt 10.
 
 ## 14. Källor
 
@@ -231,23 +232,35 @@ Ekoplankompassen (u.å.) *Ekoplankompassen — verktyg för ekologisk kompensati
 
 Europeiska kommissionen (u.å.) *Permitting procedure*, Natura 2000, Environment. Tillgänglig på: https://environment.ec.europa.eu/topics/nature-and-biodiversity/natura-2000/permitting-procedure_en (Hämtad: 13 augusti 2026). *(Beskriver artikel 6.4 i art- och habitatdirektivet (92/43/EEG): kompensationsåtgärder som villkor för att ändå tillåta ett projekt som skadar ett Natura 2000-område, samt att kostnaden bärs av den som orsakar skadan. EU-rättslig grund för avsnitt 8.1 och 8.4.)*
 
+Forest Trends (u.å.) *Biodiversity Initiative*. Tillgänglig på: https://www.forest-trends.org/initiatives/biodiversity-initiative/ (Hämtad: 16 augusti 2026). *(Forest Trends grundade BBOP 2004 tillsammans med Wildlife Conservation Society och driver dess principer vidare inom detta initiativ. Grund för avsnitt 8.4:s uppdaterade beskrivning av BBOP:s nuvarande status.)*
+
 GOV.UK (u.å.a) *Understanding biodiversity net gain*. Tillgänglig på: https://www.gov.uk/guidance/understanding-biodiversity-net-gain (Hämtad: 13 augusti 2026). *(Brittiska regeringens egen vägledning om det obligatoriska kravet på minst 10 procents nettoförbättring av biologisk mångfald vid bygglov i England, grund för avsnitt 8.4:s kontrastexempel.)*
 
 GOV.UK (u.å.b) *Biodiversity net gain*. Tillgänglig på: https://www.gov.uk/guidance/biodiversity-net-gain (Hämtad: 13 augusti 2026). *(Kompletterande officiell vägledning om hur kravet tillämpas i praktiken, inklusive kravet på 30 års säkrad skötsel.)*
 
 IEEP (u.å.) *Biodiversity offsetting in Germany*, Institute for European Environmental Policy. Tillgänglig på: https://ieep.eu/wp-content/uploads/2022/12/DE-Biodiversity-Offsetting-final.pdf (Hämtad: 13 augusti 2026). *(Oberoende policyinstituts genomgång av Tysklands Eingriffsregelung enligt Bundesnaturschutzgesetz, i kraft sedan 1976. Exakta paragrafhänvisningar bör kontrolleras ytterligare mot tysk lagtext innan de citeras, se avsnitt 13.)*
 
+Lundgren, K. (2026) *Claude-kompassen: olika Claude-modeller och ytor*. Tillgänglig på: https://kentlundgren.github.io/AI-teknik/AI_modeller/Claude/olika_Claude_modeller/ (Hämtad: 16 augusti 2026). *(Kents egen dokumenterade arbetsprocess för AI-understödd kodning. Fas 0 beskriver PRD och SPEC.md som kravdokumenten som föregår allt annat arbete — grunden för arbetssättet i avsnitt 11.)*
+
 Miljösamverkan Sverige (2021) *Ekologisk kompensation: Handläggarstöd för en ökad användning och samsyn*, 1 juli. Tillgänglig på: https://www.miljosamverkansverige.se/wp-content/uploads/Handlaggarstod-ekologisk-kompensation.pdf (Hämtad: 13 augusti 2026). *(Huvudkälla för hela avsnitt 8: den rättsliga distinktionen mellan PBL, MB 16 kap. 9 § och MB 7 kap. 29 §, skadelindringshierarkin, samt erfarenhetsbankens svenska fall — bland annat bergtäkten i Falköping och gruvan i Mertainen.)*
+
+Naturskyddsföreningen Norrköping (2026) *Yttrande vid samråd över utställd detaljplan för Södra Björkalund*, 23 februari. Tillgänglig på: https://norrkoping.naturskyddsforeningen.se/wp-content/uploads/sites/17/2026/02/260223-Sodra-Bjorkalund-yttrande-ang.-detaljplan-vid-samrad.pdf (Hämtad: 16 augusti 2026). *(PBL-motsvarigheten till NCC-exemplet: en lokal naturskyddsförenings yttrande vid samråd över en detaljplan. Ännu inte läst i sin helhet, se öppna frågor, avsnitt 13.)*
 
 Naturvårdsverket (2021) *Ekologisk kompensation*, Rapport 7008, september. Tillgänglig på: https://www.naturvardsverket.se/globalassets/media/publikationer-pdf/7000/978-91-620-7008-3.pdf (Hämtad: 13 augusti 2026). *(Nationell vägledning om ekologisk kompensations rättsliga status och tillämpning i Sverige.)*
 
 Naturvårdsverket (2023) *Ekologisk kompensation som verktyg i miljömålsarbetet*, Rapport 7103, mars. Tillgänglig på: https://www.naturvardsverket.se/4acd37/globalassets/media/publikationer-pdf/7100/978-91-620-7103-5.pdf (Hämtad: 13 augusti 2026). *(Senare syntesrapport, kompletterar Rapport 7008. Länken verifierad som nåbar; det fullständiga textinnehållet kunde inte extraheras automatiskt och bör läsas i sin helhet innan det citeras i detalj, se avsnitt 13.)*
 
+Solna stad (2019) *Utredning skyddsåtgärder och ekologisk kompensation*, 26 augusti. Tillgänglig på: https://www.solna.se/download/18.1af131d916e45020f6bff6a/1573569803419/Utredning%20skydds%C3%A5tg%C3%A4rder%20och%20ekologisk%20kompensation.pdf (Hämtad: 16 augusti 2026). *(Ett av flera Solna-dokument som bekräftar uppgiften i uppdraget om att kommunen arbetar med frivillig kompensation, kopplat till konkreta planärenden snarare än en övergripande policy.)*
+
+Solna stad (2020) *Skyddsåtgärder och ekologisk kompensation för detaljplan*, 18 november. Tillgänglig på: https://www.solna.se/download/18.38ce9db217623e5214c9c5fd/1607091681559/Skydds%C3%A5tg%C3%A4rder%20och%20ekologisk%20kompensation.pdf (Hämtad: 16 augusti 2026). *(Uppföljande dokument för ett specifikt planärende, samma serie som Solna stad, 2019 och 2024.)*
+
+Solna stad (2024) *Skyddsåtgärder och ekologisk kompensation*. Tillgänglig på: https://www.solna.se/download/18.545c5e4f18ec65d36fe3082d/1713792057679/Ekologisk%20kompensation.pdf (Hämtad: 16 augusti 2026). *(Senaste dokumentet i samma serie; underlag för avsnitt 8.1:s bekräftelse av Solna som kommunexempel.)*
+
 Statsrådsberedningen (2026) *Svara på remiss: om remisser av betänkanden och andra förslag från Regeringskansliet*, SB PM 2021:1 (rev. 2026). Tillgänglig på: https://www.regeringen.se/rapporter/2021/09/svara-pa-remiss/ (Hämtad: 13 augusti 2026). *(Huvudkälla för den gemensamma sexdelsmodellen, redan etablerad i `struktur.html`.)*
 
 Sveriges riksdag (1998) *Miljöbalk (1998:808)*. Tillgänglig på: https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808/ (Hämtad: 13 augusti 2026). *(Lagtext för MB-sidan av verktyget, redan använd i `struktur.html`. Innehåller även 16 kap. 9 § och 7 kap. 29 § som avsnitt 8.1 bygger på.)*
 
-Sveriges riksdag (2010) *Plan- och bygglag (2010:900)*. Tillgänglig på: https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/ (Hämtad: 13 augusti 2026). *(Lagtext för PBL-sidan av verktyget. Exakta paragrafhänvisningar för samråd/granskning i 5 kap. behöver kontrolleras mot denna text innan innehållet skrivs färdigt, se avsnitt 13.)*
+Sveriges riksdag (2010) *Plan- och bygglag (2010:900)*. Tillgänglig på: https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/ (Hämtad: 16 augusti 2026). *(Lagtext för PBL-sidan av verktyget. 5 kap. 11–13, 18, 21, 23 och 25 §§ är nu fastställda och används i avsnitt 5 och 6.1; en direktläsning av paragraftexten, inte bara en AI-sammanfattning av den, rekommenderas ändå innan de citeras ordagrant i färdigt innehåll.)*
 
 US EPA (u.å.a) *Mitigation Banks under CWA Section 404*. Tillgänglig på: https://www.epa.gov/cwa-404/mitigation-banks-under-cwa-section-404 (Hämtad: 13 augusti 2026). *(Amerikanska miljömyndighetens beskrivning av mitigation banking som föredraget kompensationsverktyg för våtmarksintrång.)*
 
