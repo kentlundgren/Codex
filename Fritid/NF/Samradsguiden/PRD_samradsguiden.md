@@ -18,7 +18,7 @@ Ett verktyg (webbsida i HTML/CSS/JS) som:
 2. Visar konkret hur dispositionen fylls olika beroende på om yttrandet gäller ett samråd enligt PBL eller enligt MB.
 3. Förklarar hur mottagare (kommun respektive länsstyrelse/mark- och miljödomstol) påverkar yttrandets ärenderam och krav-nivåer.
 4. Visar separata dispositionsmallar för första, andra och (i förekommande fall) tredje samrådstillfället, för respektive lagrum.
-5. Erbjuder en aktiv modul för kompensationsåtgärder, uppdelad i MB:s fakultativa lagstöd (16 kap. 9 §) och PBL:s frivilliga kommunala praxis, med färdiga formuleringsförslag och kommunexempel, som användaren kan välja att ta med i sitt yttrande.
+5. Gör läsaren kunnig om kompensationsåtgärder — inte bara medveten om att de finns — genom att förklara det rättsliga läget i tre spår (PBL, MB 16 kap. 9 §, MB 7 kap. 29 §), visa verkliga svenska fall och internationell praxis, och lära ut hur synpunkterna kan innehålla konstruktiva förslag till exploatören, inte bara kritiska frågor.
 6. Anpassar ärendets ram efter om användaren skriver som privatperson eller på uppdrag av en förening/organisation.
 7. Låter användaren bygga ett eget utkast interaktivt och få ut resultatet som kopierbar text eller nedladdningsbar fil.
 8. Hämtar konkreta exempel från NCC/Skrylle-ärendet för MB-sidan, och ett motsvarande verkligt exempel för PBL-sidan, utan att verktyget i övrigt handlar om enskilda ärenden.
@@ -33,6 +33,8 @@ Ett verktyg (webbsida i HTML/CSS/JS) som:
 ## 4. Målgrupp
 
 Privatpersoner och ideella miljöorganisationer (t.ex. en naturskyddsförening) som vill lämna synpunkter i ett samråd, utan att nödvändigtvis ha juridisk bakgrund. Verktyget ska vara begripligt utan förkunskaper men hålla en presicionsnivå som håller för att citeras i en formell process.
+
+Kompensationsmodulen (avsnitt 8) är skriven med en särskild delmålgrupp i åtanke: styrelseledamöter i en ideell naturskyddsförening som vill bli genuint skickliga på att skriva välgrundade yttranden över tid, inte bara lösa ett enskilt ärende. Den delen av verktyget får därför gärna vara djupare och mer tidskrävande att ta till sig än resten — fördjupningen (`fordjupning.html`, avsnitt 9.1) är den naturliga platsen för den, medan kortversionen (`index.html`) bara introducerar att modulen finns.
 
 ## 5. Innehållslig utgångspunkt — är PBL och MB verkligen olika dispositioner?
 
@@ -95,18 +97,59 @@ En egen, kort sektion som förklarar att detta påverkar framför allt del 1 (ä
 
 ## 8. Kompensationsåtgärder — modulen
 
-**Rättsligt läge, korrigerat efter fördjupad källkontroll.** Bilden är inte "frivilligt i båda lagrummen" — den skiljer sig åt på ett sätt som är värt att visa tydligt i verktyget, bekräftat mot Miljösamverkan Sveriges handläggarstöd (Miljösamverkan Sverige, 2021):
+**Ambitionsnivå, per beslut.** Det räcker inte att verktyget nämner att kompensationsåtgärder finns. Målet är att läsaren — typiskt en styrelseledamot i en ideell naturskyddsförening som vill bli skicklig på att skriva välgrundade yttranden — ska bli **kunnig nog att både begära och föreslå** kompensationsåtgärder: känna till det rättsliga läget, kunna peka på verkliga svenska fall, känna till hur andra länder och organisationer arbetar med frågan, och kunna omvandla detta till **konstruktiva förslag riktade till exploatören** (t.ex. NCC) — inte bara kritiska frågor. Modulen är därför uppbyggd i sex delar (8.1–8.6) i stället för en kort sammanfattning.
 
-- **MB har ett uttryckligt lagrum:** 16 kap. 9 § miljöbalken ger prövningsmyndigheten rätt att villkora ett **tillstånd eller en dispens** med krav på kompensation för intrång i allmänna intressen (naturvård, i vissa fall kulturmiljö och rennäring). Bestämmelsen är **fakultativ** — myndigheten *får* ställa kravet, men *måste* inte — och kravets omfattning avgörs genom en rimlighetsavvägning (Miljösamverkan Sverige, 2021, s. 20–21). Det förutsätter att ärendet faktiskt är en tillstånds- eller dispensprövning enligt MB; vid ren tillsyn (t.ex. en anmälan enligt 12 kap. 6 §) saknas lagstöd helt.
-- **PBL saknar egen möjlighet:** "I plan- och bygglagen finns inte möjlighet att ställa krav på kompensation i till exempel en detaljplan" (Miljösamverkan Sverige, 2021, s. 22). Krav på kompensation kan ändå uppstå i en planprocess, men då via miljöbalken — t.ex. om detaljplanen berör ett biotopskyddsområde eller riskerar bevarandemålen för ett Natura 2000-område, eller genom att länsstyrelsen under samrådet bevakar riksintressen enligt 3–4 kap. MB.
-- **Utanför dessa fall är kompensation ett rent frivilligt åtagande** — antingen för att verksamhetsutövaren själv föreslår det, eller för att kommunen har egna riktlinjer den tillämpar i plan- och exploateringsprojekt. Det är i den frivilliga, kommunala kategorin som Göteborgs stad (beslut i flera nämnder 2008/09, utökat till ekosystemtjänster 2017) och Lomma kommun (arbetat med kompensation sedan slutet av 1990-talet) hör hemma, liksom Helsingborgs stads tillämpning av balanseringsprincipens fyra steg (Boverket, u.å.; Ekoplankompassen, u.å.; Miljösamverkan Sverige, 2021, s. 100 f.). Uppgiften om Solna kommun kunde inte bekräftas mot de källor som kontrollerats hittills och behöver verifieras separat (se leveransplanen, avsnitt 12).
+### 8.1 Rättsligt läge — tre spår, inte två
 
-**Modulens funktion i verktyget — två tydligt åtskilda spår, inte ett gemensamt:**
+Fördjupad källkontroll mot Miljösamverkan Sveriges handläggarstöd (Miljösamverkan Sverige, 2021) visar att bilden från föregående utkast var ofullständig. Det finns ett tredje spår, specifikt för Natura 2000:
 
-- **MB-spåret ("möjligt villkor"):** för ärenden som är en tillstånds- eller dispensprövning enligt MB. Formuleringsförslag riktas mot 16 kap. 9 §, t.ex.: *"Om tillstånd ändå ges bör prövningsmyndigheten pröva om villkor om kompensation enligt 16 kap. 9 § miljöbalken är motiverat för [naturvärde], och i så fall av vilken omfattning."* Verktyget ska markera att detta är en möjlighet myndigheten *kan* använda, inte ett resultat sökanden kan tvingas till annat än genom myndighetens egen bedömning.
-- **PBL-spåret ("föreslå kommunal praxis"):** för detaljplaneärenden utan koppling till biotopskydd eller Natura 2000. Formuleringsförslag är mjukare och riktas mot kommunens egna riktlinjer, t.ex.: *"Kommunen uppmanas att, i linje med hur t.ex. Lomma och Göteborg tillämpar frivillig ekologisk kompensation, överväga motsvarande åtgärder för de naturvärden som tas i anspråk genom planen."*
-- Kommunexempel med korta beskrivningar och källhänvisning (Göteborg, Lomma, Helsingborg som verifierade; eventuellt fler efter kontroll).
-- Tydlig, gemensam markering i båda spåren att kompensation inte är en rättighet för den som yttrar sig, utan i bästa fall en möjlighet myndigheten kan använda (MB) eller kommunen kan välja (PBL).
+- **PBL saknar egen möjlighet.** "I plan- och bygglagen finns inte möjlighet att ställa krav på kompensation i till exempel en detaljplan" (Miljösamverkan Sverige, 2021, s. 22). Krav kan ändå uppstå i en planprocess, men då via miljöbalken — om detaljplanen berör ett biotopskyddsområde eller riskerar bevarandemålen för ett Natura 2000-område, eller genom att länsstyrelsen under samrådet bevakar riksintressen enligt 3–4 kap. MB.
+- **MB 16 kap. 9 § — det generella, fakultativa spåret.** Ger prövningsmyndigheten rätt att villkora ett **tillstånd eller en dispens** med krav på kompensation för intrång i allmänna intressen. Bestämmelsen är fakultativ — myndigheten *får*, men *måste* inte — och omfattningen avgörs genom en rimlighetsavvägning (Miljösamverkan Sverige, 2021, s. 20–21). Gäller bara vid faktisk tillstånds- eller dispensprövning; vid ren tillsyn (t.ex. en anmälan enligt 12 kap. 6 §) saknas lagstöd helt.
+- **MB 7 kap. 29 § — det obligatoriska Natura 2000-spåret, ett undantagsfall.** Om en verksamhet skadar eller stör de utpekade värdena i ett Natura 2000-område kan tillstånd normalt inte ges (7 kap. 28 § MB). I det undantagsfall då regeringen ändå lämnar tillåtlighet, av tvingande orsaker som har ett väsentligt allmänintresse, är kompensation en **förutsättning** för att tillåtligheten över huvud taget ska kunna ges — inte en möjlighet myndigheten kan välja bort (Miljösamverkan Sverige, 2021, s. 62–63). Det är alltså inte samma sak som 16 kap. 9 §, och det gäller bara i detta specifika, ovanliga skede av en Natura 2000-prövning — inte automatiskt i varje ärende som berör ett Natura 2000-område. Verktyget ska vara tydligt med att detta spår sällan är aktuellt, men viktigt att känna till eftersom det är just den situationen ett ärende som NCC/Skrylle skulle kunna hamna i om domstolen bedömer att skada på Måryd-Hällestad inte går att undvika.
+
+Utanför dessa tre spår är kompensation ett rent frivilligt åtagande — antingen för att verksamhetsutövaren själv föreslår det, eller för att kommunen har egna riktlinjer. Det är där Göteborgs stad, Lomma kommun och Helsingborgs stad hör hemma (se 8.3). Uppgiften om Solna kommun kunde inte bekräftas och behöver verifieras separat (se leveransplanen, avsnitt 12).
+
+### 8.2 Skadelindringshierarkin — ramen som gör förslag trovärdiga
+
+Alla tre rättsliga spår bygger på samma princip, och verktyget ska lära ut den innan det lär ut formuleringar: skador ska **i första hand undvikas, i andra hand begränsas, i tredje hand återställas, och först i sista hand kompenseras** (Miljösamverkan Sverige, 2021, s. 63). Ett yttrande som föreslår kompensation utan att först ha efterfrågat undvikande och begränsning är svagare än ett som visar att hierarkin är genomtänkt.
+
+En central regel att lära ut uttryckligen: **kompensationsåtgärder får inte påverka själva tillståndsbedömningen.** Myndigheten får inte bevilja ett tillstånd som annars skulle avslås med hänvisning till nyttan av en föreslagen kompensationsåtgärd (Miljösamverkan Sverige, 2021, s. 63). Konsekvensen för hur föreningen bör skriva: kompensationsförslag ska alltid formuleras som *"om tillstånd ändå ges …"*, aldrig som ett skäl att bevilja tillståndet.
+
+### 8.3 Svenska exempel att lära av och hänvisa till
+
+Miljösamverkan Sveriges handläggarstöd innehåller en "erfarenhetsbank" med ett tiotal verkliga, genomförda fall (Miljösamverkan Sverige, 2021, s. 98–121). Två är särskilt värdefulla att lyfta i verktyget:
+
+- **Utökad bergtäkt i Falköping, habitat för mindre blåvinge** (s. 109) — en nästan identisk situation som NCC/Skrylle: en bergtäkt prövad enligt 9 kap. MB, där utökningen skulle förstöra livsmiljön för en rödlistad fjärilsart. Lösningen blev ett skötselprogram i ett angränsande delområde (röjning, ökad markstörning för att gynna arten), villkorat enligt 16 kap. 9 § punkt 3 MB, med uppföljning genom inventering vart femte till tionde år. Detta är det bästa konkreta referensfallet för föreningen att peka på gentemot NCC, eftersom det är samma verksamhetstyp.
+- **Gruva i Mertainen** (s. 102) — bolaget presenterade självmant, redan innan samrådet, ett frivilligt kompensationsförslag med den internationella standarden **BBOP** (Business and Biodiversity Offsets Programme) som utgångspunkt och målet "no net loss". Området delades in i habitattyper, och en beräkningsmodell vägde samman area och habitatkvalitet för att kvantifiera förlust respektive vinst. Länsstyrelsen ställde därefter krav enligt 16 kap. 9 § MB, och bolaget invände inte. Bra exempel på hur ett kvantifierat, metodiskt upplägg gör kompensationskrav lättare att acceptera för motparten.
+- Ytterligare fall i samma erfarenhetsbank (Göteborgs hamn på ålgräsängar, gruva i Kaunisvaara, väg genom naturreservatet Sörmon, m.fl.) bör gås igenom under innehållsproduktionen och tas med där de är relevanta för PBL- respektive MB-sidan.
+- Kompletterande vägledning: Naturvårdsverkets handbok om ekologisk kompensation (Naturvårdsverket, 2016) och den senare syntesrapporten om ekologisk kompensation som verktyg i miljömålsarbetet (Naturvårdsverket, 2023).
+
+### 8.4 Internationell utblick — länder och organisationer som arbetar mycket med kompensation
+
+Verifierat genom sökning, men detaljnivån (exakta procentsatser, paragrafer, årtal) bör kontrolleras ytterligare innan den skrivs in som färdigt sidinnehåll (se leveransplanen, avsnitt 12):
+
+- **Storbritannien** tillämpar sedan 2024 obligatorisk **Biodiversity Net Gain (BNG)**: i princip alla bygglov i England måste visa minst 10 procents nettoförbättring av biologisk mångfald jämfört med utgångsläget, med skötsel säkrad i minst 30 år (GOV.UK, u.å.a; GOV.UK, u.å.b). Ett skarpt kontrastexempel till Sveriges fakultativa system — här är kompensation regel, inte undantag.
+- **Tyskland** har haft ett kompensationssystem, *Eingriffsregelung*, i den federala naturvårdslagen (Bundesnaturschutzgesetz) sedan 1976 — ett av Europas äldsta. Det bygger på samma skadelindringshierarki som den svenska modellen och en princip om fullständig kompensation för bestående skada (IEEP, u.å.).
+- **USA** har sedan 1980-talet ett marknadsbaserat system, *wetland mitigation banking*, enligt Clean Water Act Section 404, administrerat gemensamt av U.S. Army Corps of Engineers och EPA, med målet "no net loss" av våtmarkers värden och funktioner (US EPA, u.å.a; US EPA, u.å.b).
+- **EU** kräver enligt **artikel 6.4 i art- och habitatdirektivet** kompensationsåtgärder när ett projekt ändå tillåts trots skada på ett Natura 2000-område, av tvingande orsaker med ett väsentligt allmänintresse, och enligt principen att den som orsakar skadan även bekostar kompensationen (Europeiska kommissionen, u.å.). Detta är EU-rättens grund för Sveriges eget 7 kap. 29 § MB (se 8.1).
+- **BBOP** (Business and Biodiversity Offsets Programme) är den internationella standard som refererades i Mertainen-fallet ovan (8.3) — ett konkret exempel på hur ett internationellt ramverk kan användas av ett svenskt bolag i praktiken.
+
+### 8.5 Från kritik till konstruktivt förslag — så ger föreningen exploatören idéer
+
+Detta är kärnan i vad uppdraget efterfrågar: verktyget ska inte bara lära ut att *fråga* om kompensation, utan att *föreslå* den, på ett sätt som är svårt för exploatören att avfärda. Metod att lära ut, byggd på 8.1–8.4:
+
+1. Identifiera vilket naturvärde som går förlorat och vilket rättsligt spår som är tillämpligt (8.1).
+2. Visa att skadelindringshierarkin beaktats — fråga först om undvikande/begränsning, föreslå kompensation sist (8.2).
+3. Peka på ett konkret, jämförbart svenskt fall som förebild (8.3), t.ex.: *"I linje med hur kompensationen för mindre blåvinge löstes vid den utökade bergtäkten i Falköping (Miljösamverkan Sverige, 2021, s. 109) — genom ett villkorat skötselprogram i ett angränsande delområde, med uppföljning genom återkommande inventering — uppmanas NCC att redan i ansökan redovisa motsvarande möjligheter för de naturvärden som går förlorade i rikkärret."*
+4. Föreslå ett mätbart upplägg, inspirerat av Mertainen-fallets metod (8.3) och internationell praxis (8.4): habitatklassificering, en modell som väger samman area och kvalitet, och en uppföljningsplan med angivna intervall.
+5. Formulera alltid förslaget som ett villkor för det fall tillstånd ändå ges (8.2) — aldrig som ett skäl att bevilja det.
+
+### 8.6 Modulens funktion i verktyget
+
+- Tre valbara spår, styrda av lagrum och skede (avsnitt 9.2): PBL/frivilligt, MB/16 kap. 9 § (fakultativt), MB/7 kap. 29 § (Natura 2000, undantagsfall).
+- Två lägen inom varje spår: **"begäran"** (fråga om kompensation övervägts) och **"konstruktivt förslag"** (färdig text enligt mallen i 8.5, med plats för användaren att fylla i eget naturvärde, jämförbart fall och förslagen åtgärd).
+- Kommun- och fallexempel med korta beskrivningar och källhänvisning, hämtade från 8.3–8.4.
+- Genomgående markering av vad som är rättsligt bindande (7 kap. 29 §), vad som är en möjlighet myndigheten kan använda (16 kap. 9 §), och vad som är rent frivilligt (PBL-praxis, internationella exempel som inspiration) — så att verktyget aldrig ger intryck av att kompensation är en rättighet för den som yttrar sig.
 
 ## 9. Funktionella krav
 
@@ -114,14 +157,15 @@ En egen, kort sektion som förklarar att detta påverkar framför allt del 1 (ä
 
 Följer samma princip som `NCC_stenbryttning` (kort publik version + fördjupning), men med en skillnad: **båda lagren byggs som egna, formgivna HTML-sidor** (inte som markdown), så att även fördjupningen får samma layout, typografi och läsbarhet som resten av verktyget.
 
-- `index.html` — kort version. Grundprincipen (avsnitt 5), en översiktlig jämförelsetabell PBL/MB, och en kort introduktion till de tre skedena per lagrum och till kompensationsmodulen. Tänkt att kunna läsas fristående på några minuter.
-- `fordjupning.html` — fördjupad version. Fullständiga dispositionsmallar för samtliga sex skeden (3 PBL + 3 MB), den fullständiga genomgången av kompensationsspåren (MB:s 16 kap. 9 § respektive PBL:s frivilliga praxis), de konkreta exemplen (NCC för MB, det PBL-exempel som ska tas fram), och en fullständig källförteckning i samma stil som `struktur.html`.
+- `index.html` — kort version. Grundprincipen (avsnitt 5), en översiktlig jämförelsetabell PBL/MB, och en kort introduktion till de tre skedena per lagrum och till att kompensationsmodulen finns. Tänkt att kunna läsas fristående på några minuter.
+- `fordjupning.html` — fördjupad version. Fullständiga dispositionsmallar för samtliga sex skeden (3 PBL + 3 MB), hela kompensationsmodulen (avsnitt 8.1–8.6: de tre rättsliga spåren, skadelindringshierarkin, svenska fall, internationell utblick och metoden för konstruktiva förslag), de konkreta exemplen (NCC för MB, det PBL-exempel som ska tas fram), och en fullständig källförteckning i samma stil som `struktur.html`.
 - Genomgående länkning mellan de två sidorna och till `../NCC_stenbryttning/struktur.html`, i linje med tidigare beslut om fristående men länkade sidor.
 
 ### 9.2 Interaktiv del
 
-- Ett stegvis formulär: användaren väljer (1) **avsändarroll** — privatperson eller på uppdrag av en förening/organisation, (2) lagrum (PBL/MB), (3) skede (samråd/granskning/etc., anpassat efter valt lagrum), (4) mottagare, (5) om kompensationsåtgärder ska tas med och i så fall vilket spår (MB:s 16 kap. 9 § eller PBL:s frivilliga praxis, styrt av valet i steg 2).
+- Ett stegvis formulär: användaren väljer (1) **avsändarroll** — privatperson eller på uppdrag av en förening/organisation, (2) lagrum (PBL/MB), (3) skede (samråd/granskning/etc., anpassat efter valt lagrum), (4) mottagare, (5) om kompensationsåtgärder ska tas med, och i så fall vilket av de tre spåren (PBL/frivilligt, MB/16 kap. 9 § fakultativt, MB/7 kap. 29 § Natura 2000 — styrt av valet i steg 2 och, för MB, om ärendet berör ett Natura 2000-område) samt vilket läge inom spåret (8.6): "begäran" eller "konstruktivt förslag".
 - Avsändarrollen (steg 1) påverkar hjälptexten och de förifyllda fälten i del 1, "Ärendets ram" — särskilt vad gäller mandat och undertecknare: en förening behöver ange vem som för dess talan och med vilket mandat, en privatperson behöver det inte. Detta är direkt kopplat till bristen som noterades i den tidigare NCC-analysen, där avsändare och mandat saknades i ett av utkasten.
+- Väljer användaren läget "konstruktivt förslag" (steg 5) fylls textfältet i del 5 ("vad som begärs") med en mall byggd på metoden i avsnitt 8.5: naturvärde, jämförbart fall, föreslagen åtgärd och uppföljning, med platshållartext att ersätta — inte bara en tom ruta.
 - Baserat på valen genereras en strukturerad mall med de sex delarna, förifyllda med rätt rubriker för del 4 (hämtade från ett användarangivet underlags egna avsnitt, inmatat som fritext av användaren) och rätt kravtyper för del 5.
 - Varje del har ett textfält där användaren kan skriva sin egen text, med korta hjälptexter (samma innehåll som den förklarande delen, kondenserat).
 - En sammanställningsvy som visar hela yttrandet i sin helhet.
