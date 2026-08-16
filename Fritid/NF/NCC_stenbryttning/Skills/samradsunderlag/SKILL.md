@@ -16,7 +16,7 @@ Gör en tydlig åtskillnad mellan vad källorna säger, vad som behöver klargö
 
 2. Bygg en spårbar frågebild
    - Ange kort vad sökanden vill göra: plats, omfattning, tid, vattenhantering, transporter och efterbehandling.
-   - Ordna synpunkterna efter underlagets egen disposition och använd dess rubriker och avsnittsnummer. Hitta inte på en egen tematisk indelning. Se avsnittet Disposition nedan för källstöd.
+   - Ordna synpunkterna enligt ett av de tre dokumenterade dispositionssätten — normalt efter underlagets egen disposition och dess rubriker och avsnittsnummer, om inget annat är bättre motiverat. Se avsnittet Disposition nedan för alla tre sätten, när vart och ett passar, och källstöd.
    - Lägg varje fråga under det avsnitt den gäller. När en fråga återkommer i flera avsnitt, ta upp den i vart och ett med den vinkel som hör dit, i stället för att samla den på ett ställe.
    - Om underlaget saknar disposition, eller om flera underlag ska besvaras samtidigt, använd denna ordning:
      1. rättslig grund och insyn,
@@ -43,15 +43,19 @@ Gör en tydlig åtskillnad mellan vad källorna säger, vad som behöver klargö
 
 ## Disposition
 
-Följ underlagets egen disposition. Det är den etablerade svenska ordningen, och den bygger på att mottagaren ska kunna hitta, bemöta och sammanställa synpunkter från flera avsändare.
+Del fyra (synpunkterna) kan ordnas på minst tre dokumenterade sätt. Ingen av källorna nedan säger att bara ett av dem är rätt — välj efter ärendet, men fråga användaren innan valet låses om inget redan är bestämt:
 
-Den fasta ramen är sex delar. Del fyra hämtar sin indelning från underlaget:
+1. **Efter underlagets egen disposition** — synpunkternas rubriker och numrering speglar underlagets. Bygger på att mottagaren ska kunna hitta, bemöta och sammanställa synpunkter från flera avsändare. Förvalet i detta skill för en heltäckande, systematisk genomgång av ett helt underlag, och den ordning `struktur.html` och Samrådsguiden (se Källstöd) tillämpar på NCC/Skrylle-ärendet.
+2. **Tematisk disposition** — egna sakrubriker (juridik, vatten, biologisk mångfald, resursförbrukning …) oavsett var i underlaget frågan hör hemma. Passar när avsändaren vill driva en sammanhållen argumentationslinje, eller när målgruppen främst är allmänheten. Nackdel: en sakfråga som återkommer flerstans i underlaget måste sökas upp av mottagaren.
+3. **Sakfråge- eller ståndpunktsbaserad disposition** — rubriken är själva ståndpunkten, med en kort hänvisning till var i underlaget frågan hör hemma. Passar när yttrandet bara gäller ett fåtal, väl avgränsade frågor.
+
+Den fasta ramen är sex delar, oavsett vilket av de tre sätten som väljs. Del fyra hämtar sin indelning från valt sätt ovan:
 
 1. **Ärendets ram.** Vad yttrandet avser, diarienummer, mottagare, sista svarsdag, vem som står bakom texten och vilket mandat den har.
 2. **Sammanfattning.** De viktigaste synpunkterna, och ett tydligt ställningstagande när ett sådant är beslutat.
 3. **Referat, hållet åtskilt.** Endast om underlaget behöver återges, och då under egen rubrik.
 4. **Synpunkter i underlagets ordning**, med dess rubriker och avsnittsnummer. Inled varje punkt med ställningstagandet och ge sedan skälen.
-5. **Vad som begärs, graderat.** Skilj på begäran om komplettering, förslag till villkor och till- eller avstyrkande.
+5. **Vad som begärs, graderat.** Skilj på begäran om komplettering, förslag till villkor, kompensationsåtgärder (se nedan) och till- eller avstyrkande.
 6. **Källförteckning** med huvudkällan markerad.
 
 Del 2 och del 5 förväxlas lätt, eftersom båda är korta listor i varsin ände av texten. Håll isär dem, och förklara skillnaden för läsaren i själva dokumentet:
@@ -63,12 +67,13 @@ Använd inte rubriken "Yrkanden" om texten avser ett samråd. I ett samråd finn
 
 Källstöd:
 
-- Statsrådsberedningen (2026) *Svara på remiss*, SB PM 2021:1 (rev. 2026). <https://www.regeringen.se/rapporter/2021/09/svara-pa-remiss/> *(Huvudkälla. Avsnitt 3.1–3.5 anger sammanfattning först, tydliga ställningstaganden, underlagets disposition och numrering som rubriker, referat åtskilt från synpunkter, samt klarspråk utan onödiga förkortningar. Promemorian innehåller ett komplett exempel på ett yttrande.)*
+- Statsrådsberedningen (2026) *Svara på remiss*, SB PM 2021:1 (rev. 2026). <https://www.regeringen.se/rapporter/2021/09/svara-pa-remiss/> *(Huvudkälla. Avsnitt 3.1–3.5 anger sammanfattning först, tydliga ställningstaganden, underlagets disposition och numrering som rubriker, referat åtskilt från synpunkter, samt klarspråk utan onödiga förkortningar. Promemorian innehåller ett komplett exempel på ett yttrande — och visar själv, i sitt avslutande exempel, mönstret för sätt 3 ovan.)*
 - Boverket (2026) *Att svara på Boverkets remiss*. <https://www.boverket.se/sv/lag--ratt/boverkets-remisser/att-svara-pa-boverkets-remiss/> *(En myndighet inom plan- och byggområdet som tillämpar samma ordning och uttryckligen begär hänvisning till underlagets avsnitt och underrubriker.)*
 - Friluftsfrämjandet (2024) *Att svara på remiss – hur och varför*. <https://www.friluftsframjandet.se/contentassets/f51b02ffb96d42728dfd7a39f1f6e4cc/guide-att-svara-pa-remiss-2024.pdf> *(Ideell organisations handledning; visar att samma struktur tillämpas utanför myndighetssfären och lägger till råd om hänvisning till stycken, paragrafer och sidor.)*
 - Sveriges riksdag (1998) *Miljöbalk (1998:808)*. <https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808/> *(6 kap. 29 § avgränsar vad ett avgränsningssamråd får handla om och därmed vad ett yttrande kan omfatta; 35 § anger miljökonsekvensbeskrivningens innehåll och 36 § tillägget för Natura 2000-områden.)*
+- Samrådsguiden (2026). <https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/> *(Generaliserad, fristående fördjupning byggd på den här skillen: fullständig genomgång av alla tre dispositionssätten, motsvarande dispositioner för PBL, och kompensationsåtgärder i tre rättsliga spår med metod för att gå från kritisk fråga till konstruktivt förslag. Länka hit när ett ärende kräver mer djup än detta skill ger, eller när ärendet är PBL-baserat snarare än MB-baserat.)*
 
-Genomgående ställs tre frågor inom varje avsnitt, i stället för som egna avsnitt: är alternativ och nollalternativ tillräckligt belysta; hur hanteras osäkerhet, kontroll och uppföljning; och vem bär det långsiktiga ansvaret och finansieringen.
+Genomgående ställs fyra frågor inom varje avsnitt, i stället för som egna avsnitt: är alternativ och nollalternativ tillräckligt belysta; hur hanteras osäkerhet, kontroll och uppföljning; vem bär det långsiktiga ansvaret och finansieringen; och om kompensationsåtgärder är rättsligt möjliga eller värda att föreslå frivilligt — se Samrådsguidens kompensationsmodul för det fullständiga rättsliga läget (MB 16 kap. 9 §, MB 7 kap. 29 § vid Natura 2000, eller helt frivilligt under PBL) och en metod för att formulera ett konstruktivt förslag i stället för bara en kritisk fråga.
 
 ## Omstrukturering av interna utkast
 
@@ -98,7 +103,7 @@ Läs [references/publikationskontroll.md](references/publikationskontroll.md) in
 ## Leveranskontroll
 
 - Är det tydligt vad som är faktauppgift, fråga, bedömning och förslag?
-- Följer alla dokument i projektet samma disposition, hämtad från underlaget?
+- Följer alla dokument i projektet samma dispositionssätt, konsekvent tillämpat?
 - Går varje betydelsefullt påstående att spåra till en relevant källa?
 - Är samrådsfrågorna konkreta, prioriterade och möjliga att följa upp?
 - Är tonen proportionerlig för samrådsstadiet?
