@@ -4,11 +4,12 @@ Ett planerat verktyg för hur privatpersoner och miljöorganisationer kan dispon
 
 ## Status
 
-Endast en PRD finns ännu. Inget program är byggt.
+PRD och SPEC.md finns. Inget program är byggt än.
 
 ## Innehåll
 
 - `PRD_samradsguiden.md` — planeringsdokument: mål, avgränsning, innehållslig utgångspunkt (skillnaden mellan PBL och MB), dispositioner per samrådssteg, kompensationsåtgärder-modulen, funktionella och tekniska krav, öppna frågor och källor.
+- `SPEC_samradsguiden.md` — teknisk specifikation för genomförande: datamodell för dispositionsmallarna och kompensationsmodulen, formulärlogik, exportlogik, gränsfall och en verifieringschecklista.
 
 ## Relation till NCC_stenbryttning
 

@@ -205,7 +205,7 @@ Detta arbetssätt — PRD, med ett uttalat ställningstagande till om SPEC.md be
 ## 12. Leveransplan (förslag)
 
 1. **Research och källkontroll** — genomförd i ett första varv (se avsnitt 13 för vad som återstår): PBL-paragraferna är fastställda, ett PBL-yttrandeexempel är hittat (avsnitt 6.3), Solna-uppgiften är bekräftad, och de internationella exemplen samt ett tredje svenskt fall (Göteborgs hamn) är tillagda (avsnitt 8.3–8.4). Kvarstår: Handbok 2016:1, fler fall ur erfarenhetsbanken, och en fullständig läsning av PBL-yttrandeexemplet.
-2. **SPEC.md** — datastruktur för dispositionsmallar (inklusive avsändarroll och kompensationsmodulens tre spår × två lägen), formulärlogik, exportformat.
+2. **SPEC.md** — klart, se `SPEC_samradsguiden.md`: datastruktur för dispositionsmallar (inklusive avsändarroll och kompensationsmodulens tre spår × två lägen), formulärlogik, exportformat och gränsfall.
 3. **Förklarande del** — `index.html` och `fordjupning.html` enligt avsnitt 9.1.
 4. **Interaktiv del** — formulär, sammanställning, export enligt avsnitt 9.2–9.3.
 5. **Publicering** — enligt avsnitt 10, med README och länkar till/från `struktur.html`.
