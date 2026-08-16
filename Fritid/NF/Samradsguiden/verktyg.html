@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bygg ett eget yttrande steg för steg — välj lagrum, skede och mottagare, och få en strukturerad mall att fylla i och exportera.">
+    <title>Bygg ditt yttrande — Samrådsguiden</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+
+    <header class="hero">
+      <div class="wrap hero__content">
+        <p class="eyebrow">Interaktiv guide</p>
+        <h1>Bygg ditt yttrande</h1>
+        <p class="lead">Svara på fem korta frågor. Du får en strukturerad mall med sex delar att fylla i med egen text, och kan sedan kopiera eller ladda ner resultatet.</p>
+      </div>
+    </header>
+
+    <main id="innehall" class="wrap">
+      <section class="section">
+        <form id="wizard" class="wizard" novalidate>
+
+          <div class="wizard-step" id="step-1">
+            <h2>1. Vem skriver du som?</h2>
+            <div class="field-group" role="radiogroup" aria-label="Avsändarroll">
+              <label class="option">
+                <input type="radio" name="avsandarroll" value="privatperson">
+                <span><span class="option__label">Privatperson</span><span class="option__hint">Du skriver i eget namn.</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="avsandarroll" value="forening">
+                <span><span class="option__label">På uppdrag av en förening eller organisation</span><span class="option__hint">T.ex. en naturskyddsförening. Kräver angivet mandat.</span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="wizard-step" id="step-2" hidden>
+            <h2>2. Vilket lagrum gäller samrådet?</h2>
+            <div class="field-group" role="radiogroup" aria-label="Lagrum">
+              <label class="option">
+                <input type="radio" name="lagrum" value="pbl">
+                <span><span class="option__label">Plan- och bygglagen (PBL)</span><span class="option__hint">T.ex. en detaljplan. Mottagare: kommunen.</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="lagrum" value="mb">
+                <span><span class="option__label">Miljöbalken (MB)</span><span class="option__hint">T.ex. ett täkt- eller verksamhetstillstånd. Mottagare: länsstyrelsen eller mark- och miljödomstolen.</span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="wizard-step" id="step-3" hidden>
+            <h2>3. Vilket skede är samrådet i?</h2>
+            <div id="skede-options" class="field-group" role="radiogroup" aria-label="Skede"></div>
+          </div>
+
+          <div class="wizard-step" id="step-4" hidden>
+            <h2>4. Vem är mottagare?</h2>
+            <div id="mottagare-options" class="field-group" role="radiogroup" aria-label="Mottagare"></div>
+            <div class="text-field" id="mottagare-annan-field" hidden>
+              <label for="mottagare-annan-text">Ange mottagare</label>
+              <input type="text" id="mottagare-annan-text">
+            </div>
+          </div>
+
+          <div class="wizard-step" id="step-5" hidden>
+            <h2>5. Ska kompensationsåtgärder tas med?</h2>
+            <p class="section-intro">Frivilligt eller möjligt beroende på lagrum — se fördjupningen för det fullständiga rättsliga läget.</p>
+            <div class="field-group" role="radiogroup" aria-label="Kompensationsåtgärder önskas">
+              <label class="option">
+                <input type="radio" name="kompOnskas" value="nej">
+                <span class="option__label">Nej, inte den här gången</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="kompOnskas" value="ja">
+                <span class="option__label">Ja</span>
+              </label>
+            </div>
+            <div id="komp-natura-field" hidden>
+              <label class="option">
+                <input type="checkbox" id="berorNatura2000">
+                <span><span class="option__label">Ärendet berör ett Natura 2000-område</span><span class="option__hint">Avgör om det obligatoriska spåret enligt 7 kap. 29 § MB ska visas som alternativ.</span></span>
+              </label>
+            </div>
+            <div id="komp-spar-options" class="field-group" hidden role="radiogroup" aria-label="Rättsligt spår"></div>
+            <div id="komp-lage-options" class="field-group" hidden role="radiogroup" aria-label="Läge">
+              <label class="option">
+                <input type="radio" name="kompLage" value="begaran">
+                <span><span class="option__label">Begäran</span><span class="option__hint">En fråga om kompensation har övervägts.</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="kompLage" value="konstruktivtForslag">
+                <span><span class="option__label">Konstruktivt förslag</span><span class="option__hint">En färdig mall att komplettera med eget naturvärde, jämförbart fall och åtgärd.</span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step-nav">
+            <button type="button" class="button" id="btn-back" hidden>Tillbaka</button>
+            <button type="button" class="button button--primary" id="btn-next">Nästa</button>
+            <button type="button" class="button button--primary" id="btn-generate" hidden>Generera mall</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="section" id="mall-section" hidden>
+        <p class="eyebrow">Ditt yttrande</p>
+        <h2>Fyll i de sex delarna</h2>
+        <div id="disposition-parts"></div>
+
+        <h2 style="margin-top:40px">Sammanställning</h2>
+        <p class="section-intro">Uppdateras automatiskt medan du skriver.</p>
+        <div class="summary-box" id="summary-box"></div>
+
+        <div class="button-row">
+          <button type="button" class="button" id="btn-copy">Kopiera text</button>
+          <button type="button" class="button" id="btn-download">Ladda ner som fil</button>
+          <button type="button" class="button" id="btn-regenerate">Börja om från steg 1</button>
+        </div>
+        <p class="status-message" id="copy-status" role="status" aria-live="polite" hidden></p>
+        <p class="warning-message" id="placeholder-warning" role="status" aria-live="polite" hidden>Texten innehåller fortfarande platshållare inom klamrar, t.ex. <code>{naturvarde}</code> — ersätt dem innan du skickar in yttrandet.</p>
+      </section>
+    </main>
+
+    <footer><div class="wrap">Verktyg under fortsatt diskussion · augusti 2026 · <a href="index.html" style="color:#f5d77f">Om Samrådsguiden</a> · <a href="fordjupning.html" style="color:#f5d77f">Fördjupning</a></div></footer>
+
+    <a class="repo-link" href="https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Samradsguiden">GitHub</a>
+    <button class="tech-button" type="button" aria-haspopup="dialog" aria-controls="tech-dialog" aria-expanded="false">Teknik</button>
+    <dialog id="tech-dialog" aria-labelledby="tech-title">
+      <div class="dialog__content">
+        <button class="dialog__close" type="button" aria-label="Stäng tekniköversikt">×</button>
+        <p class="eyebrow">Tekniköversikt</p>
+        <h2 id="tech-title">En enkel, statisk webbsida</h2>
+        <ul>
+          <li>HTML för innehåll och struktur</li>
+          <li>CSS för formgivning och responsiv layout</li>
+          <li>JavaScript för formulärlogik och export (ingen server, ingen lagring)</li>
+        </ul>
+        <pre aria-label="Förenklad filstruktur"><code>Samradsguiden/
+├── index.html
+├── fordjupning.html
+├── verktyg.html
+├── data.js
+├── verktyg.js
+├── styles.css
+├── script.js
+└── README.md</code></pre>
+      </div>
+    </dialog>
+
+    <script src="data.js"></script>
+    <script src="verktyg.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
