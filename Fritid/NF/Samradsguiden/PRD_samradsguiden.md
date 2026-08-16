@@ -27,7 +27,7 @@ Ett verktyg (webbsida i HTML/CSS/JS) som:
 
 - Verktyget ger inte juridisk rådgivning och tar inte ställning i enskilda ärenden. Det är ett metod- och strukturstöd, inte en juristtjänst.
 - Verktyget skriver inte sakinnehållet åt användaren (vilka miljöeffekter, vilka planbestämmelser) — det strukturerar och ger formuleringsstöd för sådant användaren själv tar fram.
-- Bygglovssamråd och andra PBL-processer utanför detaljplaneläggning (t.ex. rena bygglovsärenden utan planprocess) hanteras inte i version 1, men nämns kort som avgränsning så att användaren inte tror att verktyget täcker allt inom PBL.
+- Bygglovssamråd och andra PBL-processer utanför detaljplaneläggning (t.ex. rena bygglovsärenden utan planprocess) hanteras inte i version 1, men nämns kort som avgränsning så att användaren inte tror att verktyget täcker allt inom PBL. (Översiktsplanen, PBL 3 kap., byggdes in fullt ut i version 1.2 — se avsnitt 6.1 — och är alltså inte längre en avgränsning.)
 - Inloggning, delning mellan användare eller lagring på server ingår inte. Allt sker i webbläsaren.
 
 ## 4. Målgrupp
@@ -50,7 +50,11 @@ Delvis. Det är viktigt att verktyget inte överdriver skillnaden, eftersom den 
 | Skedesindelning | Program (frivilligt) → samråd → granskning → antagande → ev. överklagan | (Ev. undersökningssamråd) → avgränsningssamråd → ev. kompletterande samråd → ansökan/kungörelse → yttrande i målet |
 | Lagrum för själva samrådsskyldigheten | PBL 5 kap. 11–13 §§ (samråd), 18, 21, 23 och 25 §§ (granskning) | MB 6 kap., främst 29–36 §§ |
 
-Verktyget ska bygga på denna nyanserade bild: **en gemensam disposition, olika innehåll i två av dess sex delar, och olika skedesindelning.** Detta är den bärande pedagogiska poängen och bör förklaras tydligt innan de konkreta dispositionsmallarna visas (sex stycken totalt, tre per lagrum, se avsnitt 6), så att användaren förstår att hen inte lär sig två helt olika system.
+Verktyget ska bygga på denna nyanserade bild: **en gemensam disposition, olika innehåll i två av dess sex delar, och olika skedesindelning.** Detta är den bärande pedagogiska poängen och bör förklaras tydligt innan de konkreta dispositionsmallarna visas (åtta stycken totalt: fem för PBL — tre för detaljplan, två för översiktsplan — och tre för MB, se avsnitt 6), så att användaren förstår att hen inte lär sig två helt olika system.
+
+**Tillägg (version 1.2): PBL har två planinstrument, inte ett.** Tabellen ovan gäller specifikt detaljplan. Översiktsplanen (PBL 3 kap.) är kommunens övergripande, vägledande men inte juridiskt bindande plan för hela kommunen, med egna lagrum för samråd (3 kap. 8 §) och granskning/utställning (3 kap. 12 §, minst två månader — betydligt längre än detaljplanens minst två veckor). Se avsnitt 6.1 för den fullständiga genomgången.
+
+**Tillägg (version 1.2): miljöbedömning respektive miljökonsekvensbeskrivning är inte samma sak.** "Miljöbedömning" (MB 6 kap. 1 §) är processen; "miljökonsekvensbeskrivning" (MKB) är dokumentet som tas fram inom den. MB 6 kap. skiljer dessutom mellan strategisk miljöbedömning (planer/program, §§ 3–18) och specifik miljöbedömning (verksamheter/åtgärder, §§ 20–47) — med skilda lagrum även för avgränsningssamrådet: 6 kap. 9–10 §§ för planer (t.ex. en översiktsplan), 6 kap. 29 § för verksamheter (NCC/Skrylle-exemplet). Fullständig jämförelsetabell i `fordjupning.html`.
 
 *Att kontrollera under innehållsproduktionen: Boverkets PBL kunskapsbanken har sidor om samråd och granskning vid detaljplaneläggning, men ingen fungerande direktlänk till dem kunde fastställas under denna research (skiljs här från källförteckningens övriga Boverket-poster, som gäller andra sidor). Exakta paragrafhänvisningar för 5 kap. behöver verifieras sida för sida mot lagtexten direkt innan publicering, se öppna frågor, avsnitt 13.*
 
@@ -58,11 +62,18 @@ Verktyget ska bygga på denna nyanserade bild: **en gemensam disposition, olika 
 
 Per beslut ska varje steg ha sin egen mall, eftersom stegen har olika syfte och olika juridisk tyngd.
 
-### 6.1 PBL — detaljplaneprocessen
+### 6.1 PBL — två planinstrument, fem skeden totalt
+
+**Detaljplan** (ett avgränsat område, juridiskt bindande):
 
 1. **Programsamråd** (frivilligt, tidigt skede — förekommer inte i alla planer). Yttrandet är på idé-/inriktningsnivå: vilka alternativ bör utredas, vilka värden bör vägas in.
 2. **Samråd** (PBL 5 kap. 11–13 §§). Kommunen ska samråda med länsstyrelsen, lantmäterimyndigheten, berörda kommuner, kända sakägare och boende, samt myndigheter och organisationer med väsentligt intresse (5 kap. 11 §). Syftet är uttryckligen "att få fram ett så bra beslutsunderlag som möjligt" (5 kap. 12 §). Kommunen sammanställer inkomna synpunkter i en samrådsredogörelse.
 3. **Granskning** (PBL 5 kap. 18, 21 och 23 §§, kallas ibland "utställning"). Planförslaget ska granskas under minst två veckor (5 kap. 18 §) och hållas tillgängligt tillsammans med samrådsredogörelsen (5 kap. 21 §). Sista ordinarie tillfället att lämna synpunkter innan planen antas — den som inte yttrar sig i granskningen riskerar att förlora rätten att överklaga planen senare. Kommunen sammanställer ett granskningsutlåtande (5 kap. 23 §). Om kommunen ändrar planförslaget väsentligt efter granskningen ska det ändrade förslaget granskas på nytt (5 kap. 25 §) — ett fjärde, villkorat tillfälle att yttra sig, värt att nämna i verktyget men inte en egen mall.
+
+**Översiktsplan** (hela kommunen, vägledande men inte juridiskt bindande — byggdes in fullt ut i version 1.2):
+
+4. **Samråd** (PBL 3 kap. 8 §). Kommunen ska samråda med länsstyrelsen, regionen, berörda kommuner samt medlemmar och andra som har ett väsentligt intresse. Länsstyrelsen ska enligt 3 kap. 10 § särskilt ta till vara och samordna statens intressen. Vid betydande miljöpåverkan tillkommer ett avgränsningssamråd enligt MB 6 kap. 9–10 §§ (PBL 3 kap. 9 a §) — en annan paragraf än det avgränsningssamråd (MB 6 kap. 29 §) som gäller verksamheter, se tillägget i avsnitt 5.
+5. **Granskning/utställning** (PBL 3 kap. 12 §). Planförslaget ska hållas tillgängligt under minst två månader — betydligt längre än detaljplanens minst två veckor. Kommunfullmäktige antar därefter planen (3 kap. 19 §), som vinner laga kraft enligt 3 kap. 21 §. Sista tillfället att lämna synpunkter innan antagandet. Planen ska hållas aktuell och prövas varje mandatperiod (3 kap. 23 och 25 §§).
 
 ### 6.2 MB — tillståndsprocessen
 

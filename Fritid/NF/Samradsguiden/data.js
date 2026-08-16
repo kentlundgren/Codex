@@ -47,10 +47,12 @@ const DELBASHJALP = {
 
 const DISPOSITIONER = {
   pbl: {
+    // -- Detaljplan (PBL 5 kap.) — ett avgränsat område, juridiskt bindande --
     programsamrad: {
       id: "pbl-programsamrad",
-      label: "PBL — Programsamråd",
+      label: "PBL — Detaljplan — Programsamråd",
       lagrum: "PBL",
+      plantyp: "detaljplan",
       mottagareForslag: "kommun",
       lagrumshanvisning: "Frivilligt skede. Inget eget lagrum i PBL 5 kap. — förekommer inte i alla planer.",
       delar: {
@@ -64,10 +66,11 @@ const DISPOSITIONER = {
     },
     samrad: {
       id: "pbl-samrad",
-      label: "PBL — Samråd",
+      label: "PBL — Detaljplan — Samråd",
       lagrum: "PBL",
+      plantyp: "detaljplan",
       mottagareForslag: "kommun",
-      lagrumshanvisning: "PBL 5 kap. 11–13 §§. Kommunen ska samråda med länsstyrelsen, lantmäterimyndigheten, berörda kommuner, kända sakägare och boende, samt myndigheter och organisationer med väsentligt intresse (5 kap. 11 §). Syftet är enligt lagtexten “att få fram ett så bra beslutsunderlag som möjligt” (5 kap. 12 §).",
+      lagrumshanvisning: "PBL 5 kap. 11–13 §§. Kommunen ska samråda med länsstyrelsen, lantmäterimyndigheten, berörda kommuner, kända sakägare och boende, samt myndigheter och organisationer med väsentligt intresse (5 kap. 11 §). Syftet är enligt lagtexten “att få fram ett så bra beslutsunderlag som möjligt” (5 kap. 12 §). Vid betydande miljöpåverkan tillkommer krav enligt miljöbalken 6 kap. via PBL 4 kap. 34 § och 5 kap. 11 a §.",
       delar: {
         arendetsRam: { hjalptext: DELBASHJALP.arendetsRam },
         sammanfattning: { hjalptext: DELBASHJALP.sammanfattning },
@@ -79,8 +82,9 @@ const DISPOSITIONER = {
     },
     granskning: {
       id: "pbl-granskning",
-      label: "PBL — Granskning",
+      label: "PBL — Detaljplan — Granskning",
       lagrum: "PBL",
+      plantyp: "detaljplan",
       mottagareForslag: "kommun",
       lagrumshanvisning: "PBL 5 kap. 18, 21 och 23 §§ (25 § vid ny granskning om kommunen ändrar förslaget väsentligt efteråt). Planförslaget granskas under minst två veckor (5 kap. 18 §) och hålls tillgängligt tillsammans med samrådsredogörelsen (5 kap. 21 §). Kommunen sammanställer ett granskningsutlåtande (5 kap. 23 §).",
       varningVidRisk: "Sista ordinarie tillfället att lämna synpunkter innan planen antas. Den som inte yttrar sig i granskningen riskerar att förlora rätten att överklaga planen senare.",
@@ -90,6 +94,40 @@ const DISPOSITIONER = {
         referat: { hjalptext: DELBASHJALP.referat, valfri: true },
         synpunkter: { hjalptext: "Kallas ibland “utställning”. Formulera synpunkterna skarpare än i samrådet — detta är sista ordinarie chansen.", rubrikKalla: "Planbeskrivningens och plankartans egna avsnitt." },
         vadSomBegars: { hjalptext: DELBASHJALP.vadSomBegars + " Skarpare formulering rekommenderas här än i samrådsskedet." },
+        kallforteckning: { hjalptext: DELBASHJALP.kallforteckning }
+      }
+    },
+    // -- Översiktsplan (PBL 3 kap.) — hela kommunen, vägledande, inte bindande --
+    oversiktsplanSamrad: {
+      id: "pbl-oversiktsplan-samrad",
+      label: "PBL — Översiktsplan — Samråd",
+      lagrum: "PBL",
+      plantyp: "oversiktsplan",
+      mottagareForslag: "kommun",
+      lagrumshanvisning: "PBL 3 kap. 8 §. Kommunen ska samråda med länsstyrelsen, regionen, berörda kommuner samt medlemmar och andra som har ett väsentligt intresse. Länsstyrelsen ska enligt 3 kap. 10 § särskilt ta till vara och samordna statens intressen. Vid betydande miljöpåverkan tillkommer ett avgränsningssamråd enligt miljöbalken 6 kap. 9–10 §§ (PBL 3 kap. 9 a §) — en annan paragraf än det avgränsningssamråd (MB 6 kap. 29 §) som gäller verksamheter, se avsnittet om miljöbedömning i fördjupningen.",
+      delar: {
+        arendetsRam: { hjalptext: DELBASHJALP.arendetsRam },
+        sammanfattning: { hjalptext: DELBASHJALP.sammanfattning },
+        referat: { hjalptext: DELBASHJALP.referat, valfri: true },
+        synpunkter: { hjalptext: "Gäller hela kommunens långsiktiga mark- och vattenanvändning, inte ett avgränsat område. En synpunkt på ett enskilt utpekat delområde är lika relevant som en synpunkt på planens övergripande inriktning.", rubrikKalla: "Översiktsplaneförslagets egna avsnitt och numrering." },
+        vadSomBegars: { hjalptext: DELBASHJALP.vadSomBegars + " Eftersom planen inte är juridiskt bindande handlar begäran ofta om ändrad inriktning eller kompletterande utredning, snarare än ett villkor som kan regleras i ett enskilt beslut." },
+        kallforteckning: { hjalptext: DELBASHJALP.kallforteckning }
+      }
+    },
+    oversiktsplanGranskning: {
+      id: "pbl-oversiktsplan-granskning",
+      label: "PBL — Översiktsplan — Granskning/utställning",
+      lagrum: "PBL",
+      plantyp: "oversiktsplan",
+      mottagareForslag: "kommun",
+      lagrumshanvisning: "PBL 3 kap. 12 §. Planförslaget ska hållas tillgängligt för granskning under minst två månader — betydligt längre än detaljplanens minst två veckor. Kommunfullmäktige antar därefter planen (3 kap. 19 §), som vinner laga kraft enligt 3 kap. 21 §.",
+      varningVidRisk: "Sista tillfället att lämna synpunkter innan kommunfullmäktige antar planen.",
+      delar: {
+        arendetsRam: { hjalptext: DELBASHJALP.arendetsRam },
+        sammanfattning: { hjalptext: DELBASHJALP.sammanfattning },
+        referat: { hjalptext: DELBASHJALP.referat, valfri: true },
+        synpunkter: { hjalptext: "Formulera synpunkterna skarpare än i samrådet — detta är sista tillfället innan antagande, och planen ska annars gälla i minst en mandatperiod innan den nästa gång aktualitetsprövas (PBL 3 kap. 23 och 25 §§).", rubrikKalla: "Översiktsplaneförslagets egna avsnitt och numrering." },
+        vadSomBegars: { hjalptext: DELBASHJALP.vadSomBegars },
         kallforteckning: { hjalptext: DELBASHJALP.kallforteckning }
       }
     }

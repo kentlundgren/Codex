@@ -30,6 +30,8 @@ All text i detta avsnitt är **placeholder-nivå** — exakt sakinnehåll (hjäl
 
 ### 1.1 Dispositionsmallar
 
+**Tillägg (version 1.2):** varje PBL-post har ett `plantyp`-fält, `"detaljplan"` eller `"oversiktsplan"`, och två nya poster tillkom under `pbl`: `oversiktsplanSamrad` och `oversiktsplanGranskning`. `verktyg.js` kräver inga ändringar för detta — `populateSkedeOptions()` itererar redan generiskt över `Object.keys(DISPOSITIONER[state.lagrum])`.
+
 ```js
 // En dispositionsmall = de sex delarna från struktur.html, med
 // lagrum/skede-specifikt innehåll i respektive del.
@@ -37,8 +39,9 @@ const DISPOSITIONER = {
   pbl: {
     programsamrad: {
       id: "pbl-programsamrad",
-      label: "PBL — Programsamråd",
+      label: "PBL — Detaljplan — Programsamråd",
       lagrum: "PBL",
+      plantyp: "detaljplan",
       mottagareForslag: "Kommunen (stadsbyggnadskontor eller motsvarande)",
       lagrumshanvisning: "Frivilligt skede, inget bestämt lagrum i PBL 5 kap.",
       delar: {
@@ -52,8 +55,9 @@ const DISPOSITIONER = {
     },
     samrad: {
       id: "pbl-samrad",
-      label: "PBL — Samråd",
+      label: "PBL — Detaljplan — Samråd",
       lagrum: "PBL",
+      plantyp: "detaljplan",
       mottagareForslag: "Kommunen (stadsbyggnadskontor eller motsvarande)",
       lagrumshanvisning: "PBL 5 kap. 11–13 §§",
       delar: {
@@ -67,8 +71,9 @@ const DISPOSITIONER = {
     },
     granskning: {
       id: "pbl-granskning",
-      label: "PBL — Granskning",
+      label: "PBL — Detaljplan — Granskning",
       lagrum: "PBL",
+      plantyp: "detaljplan",
       mottagareForslag: "Kommunen (stadsbyggnadskontor eller motsvarande)",
       lagrumshanvisning: "PBL 5 kap. 18, 21, 23 §§ (25 § vid ny granskning efter väsentlig ändring)",
       varningVidRisk: "Den som inte yttrar sig i granskningen riskerar att förlora rätten att överklaga planen senare.",
@@ -78,6 +83,39 @@ const DISPOSITIONER = {
         referat:            { hjalptext: "STRING", valfri: true },
         synpunkter:          { hjalptext: "STRING", rubrikKalla: "Planbeskrivningens och plankartans egna avsnitt" },
         vadSomBegars:         { hjalptext: "STRING", kravtyperTillatna: ["andrad_planbestammelse", "andrad_plankarta", "kompletterande_utredning", "planen_bor_ej_antas"], tonNotis: "Skarpare formulering rekommenderas — sista ordinarie tillfället." },
+        kallforteckning:       { hjalptext: "STRING" }
+      }
+    },
+    oversiktsplanSamrad: {
+      id: "pbl-oversiktsplan-samrad",
+      label: "PBL — Översiktsplan — Samråd",
+      lagrum: "PBL",
+      plantyp: "oversiktsplan",
+      mottagareForslag: "Kommunen (stadsbyggnadskontor eller motsvarande)",
+      lagrumshanvisning: "PBL 3 kap. 8 §. Vid betydande miljöpåverkan tillkommer avgränsningssamråd enligt MB 6 kap. 9–10 §§ (PBL 3 kap. 9 a §).",
+      delar: {
+        arendetsRam:      { hjalptext: "STRING" },
+        sammanfattning:    { hjalptext: "STRING" },
+        referat:            { hjalptext: "STRING", valfri: true },
+        synpunkter:          { hjalptext: "STRING", rubrikKalla: "Översiktsplanens egna avsnitt" },
+        vadSomBegars:         { hjalptext: "STRING", kravtyperTillatna: ["andrad_inriktning", "kompletterande_utredning", "vardering_att_beakta"] },
+        kallforteckning:       { hjalptext: "STRING" }
+      }
+    },
+    oversiktsplanGranskning: {
+      id: "pbl-oversiktsplan-granskning",
+      label: "PBL — Översiktsplan — Granskning/utställning",
+      lagrum: "PBL",
+      plantyp: "oversiktsplan",
+      mottagareForslag: "Kommunen (stadsbyggnadskontor eller motsvarande)",
+      lagrumshanvisning: "PBL 3 kap. 12 §. Minst två månaders granskningstid. Kommunfullmäktige antar planen (3 kap. 19 §).",
+      varningVidRisk: "Sista tillfället att lämna synpunkter innan kommunfullmäktige antar planen.",
+      delar: {
+        arendetsRam:      { hjalptext: "STRING" },
+        sammanfattning:    { hjalptext: "STRING" },
+        referat:            { hjalptext: "STRING", valfri: true },
+        synpunkter:          { hjalptext: "STRING", rubrikKalla: "Översiktsplanens egna avsnitt" },
+        vadSomBegars:         { hjalptext: "STRING", kravtyperTillatna: ["andrad_inriktning", "kompletterande_utredning", "planen_bor_ej_antas"], tonNotis: "Skarpare formulering rekommenderas — sista ordinarie tillfället." },
         kallforteckning:       { hjalptext: "STRING" }
       }
     }
