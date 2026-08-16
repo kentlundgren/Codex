@@ -158,7 +158,7 @@ document.getElementById("mottagare-annan-text").addEventListener("input", (e) =>
 
 // --- Steg 5: kompensation ---
 function resetKompensationUI() {
-  document.getElementById("komp-natura-field").hidden = state.lagrum !== "mb";
+  document.getElementById("komp-natura-field").hidden = true;
   document.getElementById("komp-spar-options").hidden = true;
   document.getElementById("komp-lage-options").hidden = true;
   document.querySelectorAll('input[name="kompOnskas"]').forEach((el) => { el.checked = false; });
