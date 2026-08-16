@@ -86,6 +86,10 @@ NCC uppger att en tidigare ansökan från 2017 om utvidgning mot nordost avslogs
 
 **Bedömning.** Eftersom 2017 års avslag gällde verksamhetens påverkan på Natura 2000-området behöver det redovisas varför skyddsåtgärder av samma slag nu bedöms ge avsedd effekt. Utan den redovisningen går det inte att avgöra om den nya lokaliseringen löser problemet eller flyttar det.
 
+**Fråga.** Enligt 2 kap. 8 § miljöbalken ansvarar den som bedriver eller har bedrivit en verksamhet som medfört skada på miljön för att skadan avhjälps i skälig omfattning. Vilka kostnader för åtgärder och återställning i Natura 2000-området Måryd–Hällestad har bolaget hittills burit, vilka har burits av det allmänna, och på vilken grund har fördelningen skett? Redovisa detta samlat och per år.
+
+**Fråga.** Enligt uppgift har boende i Ryds by tidigare nekats bygglov för hus närmare stenbrottet än 500 meter, och bolaget ska i en tidigare ansökan ha begärt ett motsvarande avstånd på högst 300 meter till den egna verksamheten. Uppgifterna är inte verifierade mot samrådsunderlaget eller mot kommunens beslut och behöver kontrolleras innan de åberopas. Om de stämmer: hur motiveras att olika skyddsavstånd skulle tillämpas för bolagets verksamhet och för boende i närheten?
+
 **Verifierat.** Ansökan kan komma att avse ett tillstånd utan tidsbegränsning för asfalttillverkning och liknande verksamhet (NCC Industry AB och Sweco, 2026a, s. 9). **Fråga.** Hur motiveras en tillståndstid utan slutdatum, och varifrån ska asfaltverket få bergmaterial om ansökan om ny täkt avslås?
 
 **Förslag.** Resultat och slutsatser från samtliga undersökningar bör redovisas öppet och fullständigt i det kommande målet, så att alla remissinstanser får tillgång till samma information.
@@ -97,6 +101,8 @@ NCC uppger att en tidigare ansökan från 2017 om utvidgning mot nordost avslogs
 ### 5.1 Verksamhetsområdet och dess omgivningar
 
 **Fråga.** Omgivningsbeskrivningen nämner inte klosterverksamheten väster om verksamhetsområdet. Varför, och hur bedöms påverkan på en verksamhet som bedrivits på platsen under lång tid och som är beroende av lugn under dygnets alla timmar?
+
+**Fråga.** Omgivningsbeskrivningen nämner inte heller den före detta avfallsdeponin vid Rögle. Vilken kännedom finns om deponins utbredning, innehåll, tätskikt och nuvarande status? Hur påverkas den av ändrade grundvattennivåer, och finns risk för att föroreningar mobiliseras?
 
 ### 5.2 Planförhållanden
 
@@ -125,6 +131,8 @@ NCC uppger att en tidigare ansökan från 2017 om utvidgning mot nordost avslogs
 **Fråga.** Verksamhetsområdet berörs samtidigt av riksintressen för mineralutvinning, naturvård och friluftsliv. Hur sker avvägningen enligt 3 kap. 10 § miljöbalken, som anger att företräde ska ges åt det eller de ändamål som på lämpligaste sätt främjar en långsiktig hushållning med marken, vattnet och den fysiska miljön i övrigt?
 
 **Bedömning.** Ett riksintresse för mineralutvinning innebär att fyndigheten ska skyddas mot åtgärder som försvårar utvinning. Det är inte i sig ett godkännande av varje föreslagen täktutformning, omfattning eller tillståndstid (Sveriges geologiska undersökning, 2026).
+
+**Fråga.** Enligt 3 kap. 6 § miljöbalken ska områden av riksintresse för naturvården, kulturmiljövården och friluftslivet skyddas mot åtgärder som påtagligt kan skada natur- eller kulturmiljön. Hur avser bolaget att skydda dessa riksintressen?
 
 ### 5.7 Skyddade områden
 
@@ -168,6 +176,8 @@ NCC uppger att en tidigare ansökan från 2017 om utvidgning mot nordost avslogs
 
 **Fråga.** Hur stora vattenmängder har pumpats upp från stenbrottet och letts österut från år 2000 och årsvis sedan dess? Hur stora regnmängder har årsvis fallit över stenbrottet under samma tid? En trovärdig redovisning behövs av hur vatten kan transporteras utmed och genom diabasgångar av olika bredd.
 
+**Fråga.** I tidigare underlag har bolaget angett att diabasgångarna är täta, samtidigt som minst fyra diabasgångar har inneslutits i det praktiska influensområdet, och de bortpumpade vattenmängderna ska tidigare ha ökat kraftigt när den stora diabasgången bröts igenom omkring 2006 utan att en motsvarande ökning skedde när brytningen fortsatte norrut. Om detta stämmer: innebär det att bergväggen mot Natura 2000-området inte läcker lika mycket vatten överallt? Miljökonsekvensbeskrivningen behöver under alla omständigheter innehålla en trovärdig, verifierbar redovisning av hur vatten kan transporteras utmed och genom diabasgångar av olika bredd och täthet, med angivna mätdata och källor.
+
 **Fråga.** Tätningen behöver utredas som flera alternativ. För vart och ett behövs förväntat inläckage, kostnad, genomförandetid och effekt på grundvattennivån i det största rikkärret, inklusive hur lång tid det tar innan nivån motsvarar den som rådde när aktiva källor ledde ut grundvatten till kärret:
 
 1. tätning enbart kring den stora diabasgången,
@@ -182,6 +192,14 @@ NCC uppger att en tidigare ansökan från 2017 om utvidgning mot nordost avslogs
 **Fråga.** Eftersom osäkerheterna om grundvattennivåerna är stora behöver alternativens effekter klarläggas med ett professionellt modelleringsverktyg, med redovisade ingångsvärden, metod, osäkerheter och scenarier för normalår, flerårig torka, skyfall och driftstopp. Redovisa både förändring från dagens situation och från nollalternativet.
 
 **Fråga.** Vilka halter av kalcium- och kväveinnehållande salter finns i det återförda vattnet jämfört med ett typiskt grundvatten som försörjer ett rikkärr? Vilken betydelse har kalciumhalten för rikkärrsflorans sammansättning, och blir nitrathalterna tillräckligt låga för att igenväxning inte ska ske? Klarar det bortpumpade vattnet gällande kvalitetskrav för dricksvatten? Om kraven på dricksvatten, på vattenkvalitet för gynnsam bevarandestatus i rikkärr och på att förhindra igenväxning inte klaras i dag: vilka reningsmetoder kan tillämpas, vilka resultat kan förväntas, och vad kostar respektive reningssteg?
+
+**Verifierat.** Bedömningsgrunder för nitrat i grundvatten förvaltas av Sveriges geologiska undersökning, med generella tröskelvärden i SGU:s föreskrifter SGU-FS 2023:1 (Sveriges geologiska undersökning, 2023).
+
+**Bedömning.** En halt motsvarande 2,5 mg totalkväve per liter har tidigare, i ett annat mål, framförts som hög med hänvisning till Naturvårdsverket, särskilt i ett område med näringsfattiga förhållanden. Uppgiften saknar här en fullständig, kontrollerbar källhänvisning (publikation eller målnummer) och bör inte återges som fastslagen förrän en sådan finns.
+
+**Bedömning.** Underlaget anger att det bortpumpade vattnet först renas från sprängämnesrester, främst nitrater, med hjälp av sedimentationsdammar. Nitrat är vattenlösligt och sedimenterar inte, vilket innebär att sedimentationsdammar i sig inte kan förklara en sådan reningseffekt.
+
+**Fråga.** Redovisa hur reningen är avsedd att fungera, vilken reningsgrad som uppnås och hur den har verifierats.
 
 **Verifierat.** Länsstyrelsen anger att stor igelknopp och bredkaveldun har expanderat på rikkärrsytan, troligen som en konsekvens av det återpumpade vattnet, och att de kan konkurrera ut mer konkurrenssvaga rikkärrsarter om de inte reduceras (Länsstyrelsen Skåne, 2018, s. 14). Bevarandeplanen anger vidare att hydrokemin ska vara utan betydande antropogen påverkan, och att naturligt näringsrika sjöar, rikkärr, svämlövskog och lövsumpskog är särskilt känsliga för förändringar i grundvattnets nivå, temperatur och kemiska egenskaper (s. 10–11).
 
@@ -208,6 +226,10 @@ NCC uppger att en tidigare ansökan från 2017 om utvidgning mot nordost avslogs
 **Verifierat.** Målbilden anges vara sjöar med öppen vattenspegel, och viss vattenverksamhet kan behöva fortsätta efter avslutad brytning (NCC Industry AB och Sweco, 2026a, s. 9 och 26).
 
 **Fråga.** Vilka återställningsåtgärder ska genomföras, var och när? Det gäller bland annat återställning av rikkärr, tätning av bergväggen mot Natura 2000-området och realistiska planer för sjön och dess omgivningar. Vilka konkreta planer finns för fortsatt pumpning österut efter avslutad verksamhet, vem ansvarar och vem finansierar?
+
+**Bedömning.** Om den nu planerade brytningen genomförs men ingen förlängning kommer till stånd dröjer det uppskattningsvis omkring 40 år innan den planerade badsjön är fylld.
+
+**Fråga.** Vad händer med rikkärren i Natura 2000-området och med den blivande sjön om inget vatten tillförs under den tiden? Redovisa förloppet år för år, eller i tydliga etapper.
 
 **Förslag.** Alternativa efterbehandlingsmål bör redovisas jämsides med en badsjö. En efterbehandling som syftar till att återställa hydrologi och naturvärden kan ge ett annat resultat än en som enbart skapar en ny vattenyta.
 
@@ -363,6 +385,7 @@ Statsrådsberedningen anger att den som är tveksam till ett förslag uttrycklig
 - SLU Artdatabanken (2026) *Artportalen*. Tillgänglig på: <https://www.artportalen.se/> (Hämtad: 12 augusti 2026). *(Rapporteringsdatabas för artfynd; underlag för jämförelser bakåt i tiden.)*
 - Lunds kommun (2025) *Ny översiktsplan 2025*. Tillgänglig på: <https://lund.se/stadsutveckling-och-trafik/detaljplaner-och-oversiktlig-planering/ny-oversiktsplan-2025> (Hämtad: 12 augusti 2026). *(Kommunens information om den antagna, överklagade översiktsplanen och gällande planläge.)*
 - Sveriges geologiska undersökning (2026) *Riksintressen*. Tillgänglig på: <https://www.sgu.se/samhallsplanering/planering-och-markanvandning/riksintressen/> (Hämtad: 12 augusti 2026). *(Myndigheten som pekar ut riksintressen för mineralutvinning; beskriver utpekandets innebörd och avvägningen mellan oförenliga ändamål.)*
+- Sveriges geologiska undersökning (2023) *Föreskrifter om kartläggning, riskbedömning och klassificering av status för grundvatten (SGU-FS 2023:1)*. Tillgänglig på: <https://www.sgu.se/anvandarstod-for-geologiska-fragor/vattenforvaltning-av-grundvatten/sgus-foreskrifter-om-kartlaggning-och-analys-sgu-fs-2013-1/> (Hämtad: 16 augusti 2026). *(Generella tröskelvärden för grundvatten, bland annat för nitrat.)*
 - Biosfärområde Storkriket (2026) *Storkriket*. Tillgänglig på: <https://www.storkriket.se/> (Hämtad: 12 augusti 2026). *(Det av Unesco utsedda biosfärområde som verksamhetsområdet ligger inom.)*
 - Sveriges riksdag (1998) *Miljöbalk (1998:808)*. Tillgänglig på: <https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808/> (Hämtad: 12 augusti 2026). *(Gällande lagtext. Här används 2 kap. om hänsynsregler, 3 kap. 10 § om avvägning mellan oförenliga riksintressen, 6 kap. 29–36 §§ om avgränsningssamråd och miljökonsekvensbeskrivning, 7 kap. 28 a § om Natura 2000-tillstånd, 9 kap. 6 e § om säkerhet vid täkttillstånd, 11 kap. 5 § om vattenöverledning samt 16 kap. 3 § om ställande av säkerhet.)*
 - Naturvårdsverket (2026) *Vägledning om täkter*. Tillgänglig på: <https://www.naturvardsverket.se/vagledning-och-stod/branscher-och-verksamheter/takter/> (Hämtad: 12 augusti 2026). *(Myndighetsvägledning om prövning och tillsyn av täkter.)*
