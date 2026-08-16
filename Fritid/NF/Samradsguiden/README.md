@@ -12,6 +12,8 @@ Fördjupningen finns på [fordjupning.html](https://kentlundgren.github.io/Codex
 
 PRD, SPEC.md och samtliga tre sidor är byggda och testade lokalt (formulärflöde, alla villkorliga fält, kopiera- och nedladdningsfunktion, accordion-komponenter). Innehållsproduktionen har några kvarvarande öppna frågor, se `PRD_samradsguiden.md`, avsnitt 13 — bland annat en fungerande länk till Naturvårdsverkets Handbok 2016:1 och en genomgång av fler fall i Miljösamverkan Sveriges erfarenhetsbank.
 
+Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.1**, senast ändrad 16 augusti 2026. v1.0 var den första publicerade versionen (grunddispositionen, kompensationsmodulens tre spår, det interaktiva verktyget); v1.1 lade till jämförelsen av de tre sätten att disponera ett yttrande och de fyra kommunexemplen. Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
+
 ## Innehåll
 
 - `PRD_samradsguiden.md` — planeringsdokument: mål, avgränsning, innehållslig utgångspunkt (skillnaden mellan PBL och MB), dispositioner per samrådssteg, kompensationsåtgärder-modulen, funktionella och tekniska krav, öppna frågor och källor.
