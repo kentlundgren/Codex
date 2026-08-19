@@ -181,6 +181,122 @@ figcaption {
   margin-top: 1.2rem;
 }
 
+/* ---------- hover-term tooltips ---------- */
+
+.term {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--accent);
+  cursor: help;
+  font-weight: 600;
+  color: var(--forest);
+}
+
+.term .tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 0;
+  width: 260px;
+  max-width: min(80vw, 260px);
+  background: var(--forest);
+  color: #F3F7F1;
+  font-weight: 400;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  z-index: 5;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.term .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 1rem;
+  border: 6px solid transparent;
+  border-top-color: var(--forest);
+}
+
+.term:hover .tooltip,
+.term:focus .tooltip,
+.term:focus-visible .tooltip {
+  display: block;
+}
+
+/* ---------- link boxes (iCal / webcal) ---------- */
+
+.link-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.link-box {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+
+.link-label {
+  margin: 0 0 0.55rem;
+  font-size: 0.9rem;
+}
+
+.link-value {
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  word-break: break-all;
+  background: var(--bg);
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+  padding: 0.6rem 0.7rem;
+  color: var(--forest);
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.link-value:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* ---------- CTA button ---------- */
+
+.cta-row {
+  margin: 1.2rem 0 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--accent);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.98rem;
+  text-decoration: none;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.cta-button:hover {
+  background: var(--forest);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.cta-hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0.3rem 0 0;
+}
+
 /* ---------- footer links ---------- */
 
 /* ---------- corner buttons + tech modal ---------- */
@@ -298,4 +414,5 @@ figcaption {
   .tech-grid { grid-template-columns: 1fr; }
   .modal { padding: 1.4rem; }
   .stat-row { flex-direction: column; }
+  .link-grid { grid-template-columns: 1fr; }
 }
