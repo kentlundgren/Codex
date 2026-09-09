@@ -71,6 +71,7 @@ h2:hover .anchor, h3:hover .anchor, .anchor:focus { opacity:1; }
 .mainnav a { color:#cfe0d2; font:700 13px/1.4 Arial,sans-serif; letter-spacing:.03em; text-decoration:none; }
 .mainnav a:hover, .mainnav a:focus { color:#fff; text-decoration:underline; }
 .mainnav a[aria-current="page"] { color:#f5d77f; text-decoration:underline; }
+.ver { text-decoration:underline dotted; text-underline-offset:2px; cursor:help; }
 
 /* Lagtexter (v1.7) */
 .lagtext-post { padding:38px 0; border-bottom:1px solid var(--line); }
