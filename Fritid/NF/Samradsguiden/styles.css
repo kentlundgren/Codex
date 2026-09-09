@@ -60,6 +60,10 @@ h3 { margin:9px 0; font-size:1.25rem; }
 .reading-link { max-width:760px; margin:26px 0; padding:17px 20px; border-left:4px solid var(--fern); background:#edf3e6; }
 .method-note { max-width:800px; margin:20px 0 0; color:var(--muted); font-size:.94rem; }
 a { color:#234f38; text-underline-offset:3px; }
+h2, h3.subhead, .lagtext-post { scroll-margin-top:16px; }
+.anchor { opacity:0; margin-left:.3em; font:400 .6em/1 Arial,sans-serif; color:var(--moss); text-decoration:none; vertical-align:middle; transition:opacity .12s; }
+h2:hover .anchor, h3:hover .anchor, .anchor:focus { opacity:1; }
+@media (hover:none) { .anchor { opacity:.5; } }
 table { border-collapse:collapse; max-width:100%; margin:20px 0; }
 th,td { padding:10px 14px; border:1px solid var(--line); text-align:left; vertical-align:top; font-size:.94rem; }
 th { background:var(--white); }
