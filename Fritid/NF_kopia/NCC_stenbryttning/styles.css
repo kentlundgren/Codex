@@ -1,0 +1,110 @@
+:root { --ink:#1c2b25; --muted:#526159; --paper:#f7f5ef; --white:#fffefa; --moss:#365b46; --fern:#b9d0a5; --gold:#e7b958; --line:#d8ddd2; --alert:#fff3d5; --area-law:#91622a; --area-law-pale:#f6ead6; --area-resources:#79536d; --area-resources-pale:#f0e1eb; --area-water:#236f82; --area-water-pale:#dceef1; --area-nature:#467a42; --area-nature-pale:#e1eddb; --area-people:#a34b3f; --area-people-pale:#f7e2dc; --area-method:#4a5560; --area-method-pale:#e4e8ec; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--paper); font:18px/1.58 Georgia, "Times New Roman", serif; }
+.wrap { width:min(100% - 40px, 1020px); margin-inline:auto; }
+.skip-link { position:absolute; left:-999px; }
+.skip-link:focus { left:16px; top:16px; z-index:5; padding:8px 12px; color:#fff; background:var(--ink); }
+.hero { color:#fff; background:radial-gradient(circle at 78% 22%, #6f9c65 0, #365b46 28%, transparent 29%), linear-gradient(120deg, #132d20, #315e43); }
+.hero__content { min-height:455px; padding:85px 0 72px; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; }
+.eyebrow { margin:0 0 8px; color:var(--moss); font:700 13px/1.2 Arial, sans-serif; letter-spacing:.13em; text-transform:uppercase; }
+.hero .eyebrow { color:#d9ebcf; }
+h1,h2,h3 { line-height:1.12; }
+h1 { max-width:760px; margin:0; font-size:clamp(2.8rem, 8vw, 5.7rem); letter-spacing:-.045em; }
+h2 { margin:0 0 18px; font-size:clamp(1.8rem, 4vw, 3rem); letter-spacing:-.035em; }
+h3 { margin:9px 0; font-size:1.3rem; }
+.lead { max-width:650px; margin:20px 0 28px; font-size:clamp(1.12rem, 2vw, 1.35rem); }
+.button { padding:12px 18px; border-radius:2px; color:var(--ink); background:#e1eacb; font:700 15px Arial,sans-serif; text-decoration:none; }
+.button:hover,.button:focus { background:#fff; }
+.notice { margin:42px 0 12px; padding:18px 20px; display:flex; gap:15px; background:var(--alert); border-left:5px solid var(--gold); }
+.notice h2 { margin:0; font-size:1.15rem; }
+.notice p { margin:3px 0 0; font-size:.96rem; }
+.notice__icon { flex:none; width:28px; height:28px; border-radius:50%; color:#5d4618; background:var(--gold); text-align:center; font:bold 20px/28px Arial,sans-serif; }
+.section { padding:70px 0; border-bottom:1px solid var(--line); }
+.section > p:not(.eyebrow) { max-width:750px; }
+.facts,.cards { display:grid; gap:14px; margin-top:30px; }
+.facts { grid-template-columns:repeat(3,1fr); }
+.facts article { padding:22px; background:var(--white); border-top:4px solid var(--fern); }
+.facts strong { display:block; font:700 1.75rem/1.1 Arial,sans-serif; }
+.facts span { display:block; margin-top:8px; color:var(--muted); font:15px/1.35 Arial,sans-serif; }
+.split { display:grid; grid-template-columns:1.3fr .7fr; gap:55px; align-items:center; }
+.quote { padding:28px; color:var(--moss); background:#e3eed8; font-size:1.45rem; line-height:1.3; }
+.quote span { display:block; margin-top:14px; font:700 12px Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+.cards { grid-template-columns:repeat(2,1fr); }
+.card { min-height:205px; padding:22px 24px 24px; border:1px solid var(--area-color); border-top:8px solid var(--moss); background:linear-gradient(to bottom, var(--area-pale) 0 68px, var(--white) 68px); }
+.card p { margin:0; color:var(--muted); font-size:.96rem; }
+.card__number { display:inline-block; padding:4px 7px; color:var(--moss); background:var(--white); font:700 11px Arial,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+.area-law { --area-color:var(--area-law); --area-pale:var(--area-law-pale); }
+.area-resources { --area-color:var(--area-resources); --area-pale:var(--area-resources-pale); }
+.area-water { --area-color:var(--area-water); --area-pale:var(--area-water-pale); }
+.area-nature { --area-color:var(--area-nature); --area-pale:var(--area-nature-pale); }
+.area-people { --area-color:var(--area-people); --area-pale:var(--area-people-pale); }
+/* Här skedde en uppdatering: ett sjätte områdesfärgpar lades till när dispositionen
+   utökades till sex avsnitt som följer samrådsunderlagets kapitelindelning. */
+.area-method { --area-color:var(--area-method); --area-pale:var(--area-method-pale); }
+.card.area-law,.card.area-resources,.card.area-water,.card.area-nature,.card.area-people,.card.area-method { border-top-color:var(--area-color); }
+.card.area-law .card__number,.card.area-resources .card__number,.card.area-water .card__number,.card.area-nature .card__number,.card.area-people .card__number,.card.area-method .card__number { color:var(--area-color); }
+.stance { padding:60px min(8vw,82px); border-bottom:0; color:#fff; background:var(--moss); }
+.stance .eyebrow { color:#d6e9be; }
+.stance ol { max-width:750px; padding-left:1.15em; }
+.stance li + li { margin-top:10px; }
+.stance h3 { max-width:750px; margin:34px 0 6px; color:#e2f0d4; }
+.stance h3 + p { margin-top:0; }
+.section-intro { max-width:750px; color:var(--muted); font-size:.96rem; }
+.accordion-section { padding-bottom:84px; }
+.accordion { max-width:800px; border-top:1px solid var(--line); }
+.accordion button { width:100%; padding:16px 0; display:flex; justify-content:space-between; align-items:center; gap:18px; border:0; border-bottom:1px solid var(--line); color:var(--ink); background:transparent; text-align:left; cursor:pointer; font:700 1.12rem Georgia,serif; }
+.accordion__title { display:grid; gap:6px; }
+.accordion__label { display:flex; align-items:center; gap:8px; }
+.accordion__number { min-width:2.1em; color:var(--area-color); font:700 12px/1 Arial,sans-serif; letter-spacing:.08em; }
+.area-tag { width:max-content; max-width:100%; padding:3px 7px; border-radius:2px; color:var(--area-color); background:var(--area-pale); font:700 10px/1.2 Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+/* Här skedde en uppdatering: texttypsmärkningen används nu inline i löpande text och
+   behöver därför display:inline-block för att ramen ska hamna rätt. */
+.text-type-tag { display:inline-block; width:max-content; max-width:100%; margin-right:.4em; padding:3px 7px; border:1px solid #bbbdb4; border-radius:2px; color:#39453d; background:#efeee8; font:700 10px/1.2 Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; vertical-align:.08em; }
+.accordion__toggle { flex:none; color:var(--moss); font:1.65rem Arial,sans-serif; }
+.accordion div { padding:0 32px 20px 0; color:var(--muted); }
+.accordion div p { margin:0; }
+.accordion div p + p { margin-top:12px; }
+.accordion div ul { margin:12px 0 0; padding-left:1.2em; }
+.accordion div li + li { margin-top:6px; }
+/* Här skedde en uppdatering: en förklaringsruta som visas vid hover och vid
+   tangentbordsfokus. Texten ligger i dokumentet, inte i ett title-attribut, så att den
+   även går att nå med skärmläsare och på pekskärm. */
+.tip { position:relative; border-bottom:1px dotted currentColor; cursor:help; }
+.tip__box { position:absolute; left:0; bottom:calc(100% + 12px); z-index:4; width:max(280px, min(360px, 78vw)); padding:14px 16px; visibility:hidden; opacity:0; transition:opacity .13s ease; color:var(--ink); background:var(--white); border:1px solid var(--line); border-left:4px solid var(--moss); box-shadow:0 12px 34px rgba(15,31,22,.26); font:400 14px/1.5 Arial,sans-serif; letter-spacing:0; text-transform:none; }
+.tip__box strong { display:block; margin-bottom:4px; color:var(--moss); }
+.tip:hover .tip__box,.tip:focus .tip__box,.tip:focus-within .tip__box { visibility:visible; opacity:1; }
+.tip--end .tip__box { left:auto; right:0; }
+@media (max-width:700px) { .tip__box { width:min(300px, 84vw); } }
+.subhead { max-width:750px; margin:44px 0 4px; }
+.subhead + p { margin-top:0; }
+.definitions { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; max-width:800px; margin:26px 0 0; }
+.definitions article { padding:20px 22px; background:var(--white); border-top:4px solid var(--fern); }
+.definitions h3 { margin:0 0 8px; font-size:1.12rem; }
+.definitions p { margin:0; color:var(--muted); font-size:.95rem; }
+@media (max-width:700px) { .definitions { grid-template-columns:1fr; } }
+.sources { border-bottom:0; }
+.references { max-width:900px; padding-left:25px; }
+.references li { margin:1.15em 0; padding-left:.25em; }
+.references a { overflow-wrap:anywhere; word-break:break-word; }
+.source-note { color:var(--muted); }
+.reading-link { max-width:760px; margin:28px 0; padding:17px 20px; border-left:4px solid var(--fern); background:#edf3e6; }
+.method-note { max-width:800px; margin:22px 0 0; color:var(--muted); font-size:.94rem; }
+.stance .method-note { color:#edf3e8; }
+.stance .method-note a { color:#f5d77f; }
+a { color:#234f38; text-underline-offset:3px; }
+footer { padding:35px 0; color:#dce7d7; background:#16291e; font:14px Arial,sans-serif; }
+.repo-link,.tech-button { position:fixed; bottom:14px; z-index:2; padding:7px 10px; border:1px solid rgba(255,255,255,.5); border-radius:3px; color:#fff; background:rgba(22,41,30,.88); font:12px Arial,sans-serif; text-decoration:none; }
+.repo-link { left:14px; }
+.tech-button { right:14px; cursor:pointer; }
+.repo-link:hover,.repo-link:focus,.tech-button:hover,.tech-button:focus { color:var(--ink); background:#fff; }
+dialog { width:min(100% - 36px, 580px); max-height:min(100% - 36px, 720px); overflow-y:auto; border:0; box-shadow:0 18px 60px rgba(0,0,0,.34); color:var(--ink); background:var(--white); }
+dialog::backdrop { background:rgba(15,31,22,.66); }
+.dialog__content { position:relative; padding:32px; }
+.dialog__content h2 { padding-right:32px; font-size:2rem; }
+.dialog__content h3 { margin-top:28px; font-size:1.2rem; }
+.dialog__close { position:absolute; top:16px; right:16px; width:34px; height:34px; border:0; color:var(--ink); background:#e5eadf; cursor:pointer; font:28px/28px Arial,sans-serif; }
+.dialog__content li { margin:.4em 0; }
+.dialog__content pre { overflow:auto; padding:16px; color:#dce7d7; background:#16291e; font:13px/1.45 Consolas,monospace; }
+.dialog__content blockquote { margin:12px 0; padding:10px 16px; border-left:3px solid #4a7c59; color:#3c4a3f; font-style:italic; background:#f3f5ef; }
+@media (max-width:700px) { body { font-size:17px; } .hero__content { min-height:390px; padding:65px 0; } .facts,.cards,.split { grid-template-columns:1fr; } .section { padding:52px 0; } .stance { padding:46px 26px; } }
