@@ -66,3 +66,27 @@ closeTechDialog.addEventListener("click", () => techDialog.close());
     else if (dx > 0 && targets.right) window.location.href = targets.right;
   }, { passive: true });
 })();
+
+// Direktlänk till en lagtextpost på lagtexter.html: öppna postens förklaring
+// och flytta fokus till rubriken. Utan JS syns lagtexten ändå; bara den
+// utfällbara förklaringen förblir stängd tills läsaren klickar.
+(function () {
+  function revealFromHash() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (!id) return;
+    const el = document.getElementById(id);
+    if (!el) return;
+    const post = el.closest(".lagtext-post");
+    if (post) {
+      const btn = post.querySelector("[data-accordion] button[aria-expanded='false']");
+      if (btn) btn.click();
+    }
+    const heading = post ? post.querySelector("h2") : (/^H[1-6]$/.test(el.tagName) ? el : null);
+    if (heading) {
+      heading.setAttribute("tabindex", "-1");
+      heading.focus({ preventScroll: true });
+    }
+  }
+  window.addEventListener("hashchange", revealFromHash);
+  if (location.hash) setTimeout(revealFromHash, 0);
+})();
