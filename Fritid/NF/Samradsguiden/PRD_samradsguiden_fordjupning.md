@@ -339,6 +339,17 @@ Folkrätt: **Århuskonventionen** (UNECE / regeringen.se).
 
 ## Uppdateringslogg
 
+- 2026-09-10 (byggt): Version 1.7 byggd och testad lokalt. `paverka.html` och
+  `lagtexter.html` skapade enligt `SPEC_lagtexter.md`; gemensam toppmeny på alla fem
+  sidor; rubrikankare på `index.html` och `fordjupning.html`; `README.md` uppdaterad med
+  versionsrad, innehållslista, djuplänkstabell och lokal sökväg. De tio lagtexterna
+  primärverifierades ord för ord mot riksdagen.se och Regeringskansliets rättsdatabas;
+  frister mot Boverkets PBL kunskapsbank; processbilden mot lund.se. Öppna frågorna 1–7
+  i avsnitt 13 besvarades av Kent i två dialogrundor 2026-09-09: ny sida `paverka.html`
+  (ja), de tio posterna enligt SPEC:ens tabell (MB 2 kap. som kluster + 2:6 solo,
+  13:11+13:12 ihop, 6:3+6:20 ihop), Århus som bakgrundsruta, förklaringar på 5 meningar
+  bakom ett klick, lekmannaregister + ordlista, version 1.7. Nytt utöver PRD:n: en
+  vertikal tidslinje i tre spår och en anknytning till Lunds kommuns process.
 - 2026-09-09 (v0.1): Skapad. Bygger på en läsning av den publika Samrådsguiden
   (v1.6), av `PRD_samradsguiden.md` och `README.md`, samt webbresearch om
   MB 6 kap. (miljöbedömning), PBL:s detaljplaneprocess och tidsfrister,

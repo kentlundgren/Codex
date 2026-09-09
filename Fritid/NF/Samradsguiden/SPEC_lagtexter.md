@@ -6,9 +6,12 @@ Teknisk specifikation för genomförande. Beskriver exakt **hur**, inte **vad** 
 [`PRD_samradsguiden.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/PRD_samradsguiden.md)
 (v1.6) för det verktyget redan gör.
 
-**Status:** UTKAST v0.1 — för Kent att läsa igenom. Inget är byggt. Primärverifieringen
-av lagtexterna mot riksdagen.se är **inte** gjord ännu — den är nästa steg efter att
-denna SPEC är godkänd.
+**Status:** BYGGD 2026-09-10. `lagtexter.html` och `paverka.html` är skapade, toppmenyn
+ligger på alla fem sidor, `index.html`/`fordjupning.html` har fått rubrikankare,
+`README.md` är uppdaterad. Alla tio posternas lagtexter är primärverifierade ord för ord
+mot riksdagen.se och Regeringskansliets rättsdatabas 2026-09-10; frister och Lund-uppgifter
+mot Boverkets PBL kunskapsbank och lund.se samma dag. Testat lokalt i webbläsare
+(länkkontroll, accordion, direktlänkar, mobilvy, wizard oförändrad).
 
 **Skapad:** 2026-09-09. **Uppdaterad:** 2026-09-09 efter andra dialogrundan (accordion
 för förklaringarna, tidslinjen som tre spår, anknytning till Lunds kommun).
@@ -643,8 +646,21 @@ så den läses som *ett exempel*, inte som en del av den generella beskrivningen
 - **Tidslinjen:** vertikal, tre spår (översiktsplan, detaljplan, MB-verksamhet),
   anknyter till Lunds kommuns process och statusetiketter. ✔
 
-## 12b. Kvarstående öppen punkt
+## 12b. Avgjort 2026-09-10
 
-1. **Ankar-retrofit** av `index.html` / `fordjupning.html` / `verktyg.html` — nu i samma
-   omgång, eller som senare uppgift? SPEC:en utgår från "senare" (de tre får bara
-   toppmeny + versionsrad 1.7 nu).
+- **Ankar-retrofit:** gjord för `index.html` och `fordjupning.html` (alla H2 och
+  `.subhead`-H3). `verktyg.html` är en JS-guide vars steg har egna div-id:n och behöver
+  inga rubrikankare — den fick bara toppmeny + versionsrad.
+
+## 13. Noterat vid verifieringen (2026-09-10)
+
+- **MB 16 kap. 13 § och PBL 13 kap. 12 §** har båda en ändring som träder i kraft
+  2027-01-01 (SFS 2026:1238 respektive 2026:1583). Villkoren för en förenings talerätt
+  är oförändrade; sidan citerar gällande lydelse och har en `.lagtext-andras`-rad på
+  respektive post.
+- **MB 2 kap. 3 §** innehåller ett mjukt bindestreck i källan ("verksam­heten") som vissa
+  textutdrag renderar som "verksam- heten". Sidan skriver "verksamheten".
+- **Lunds kommun:** bekräftat att "Granskning" finns i kommunens processbild men inte
+  bland de sex sökbara statusarna (ryms under "Bearbetas"). Lund-rutan säger det.
+- **Boverket** var tvunget att läsas i webbläsare (sidorna är JS-renderade; WebFetch gav
+  bara menyskalet).
