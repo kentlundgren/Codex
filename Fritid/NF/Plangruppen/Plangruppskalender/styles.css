@@ -313,8 +313,8 @@ code {
   position: absolute;
   bottom: calc(100% + 10px);
   left: 0;
-  width: 340px;
-  max-width: min(85vw, 340px);
+  width: 360px;
+  max-width: min(85vw, 360px);
   background: var(--forest);
   color: #F3F7F1;
   font-weight: 400;
