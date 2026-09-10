@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Plangruppens kalender</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Möten i plangruppen, Lunds Naturskyddsförening. Lista, månadsvy och ICS-fil att lägga till i Google Kalender.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+
+<header id="top">
+  <div class="wrap">
+    <p class="eyebrow">Plangruppen · Lunds Naturskyddsförening</p>
+    <h1>Plangruppens kalender</h1>
+    <p>Möten i gruppen som arbetar med planer under samråd. Första posten är mötet den 9 september 2026 på stadsbiblioteket i Lund.</p>
+  </div>
+</header>
+
+<main id="innehall" class="wrap">
+
+  <section id="moten">
+    <h2>Möten <a class="anchor" href="#moten" aria-label="Länk till avsnittet">#</a></h2>
+    <p>Listan hämtas från <code>moten.js</code>. Nya möten läggs in där, och speglas i <code>plangrupp.ics</code> så att en prenumeration i Google Kalender följer med.</p>
+    <div id="moten-lista" class="moten-lista"></div>
+  </section>
+
+  <section id="manad">
+    <h2>Månadsvy <a class="anchor" href="#manad" aria-label="Länk till avsnittet">#</a></h2>
+    <p id="manad-rubrik" class="manad-rubrik"></p>
+    <div id="manad-rutnat" class="manad-rutnat" aria-label="Kalenderrutnät"></div>
+  </section>
+
+  <section id="google">
+    <h2>Google Kalender <a class="anchor" href="#google" aria-label="Länk till avsnittet">#</a></h2>
+    <p>Den här sidan kan inte skriva direkt i ditt Google-konto. Tvåvägssynk kräver Googles API och inloggning, och det hör inte hemma på en statisk GitHub Pages-sida.</p>
+    <p>Det som går att göra härifrån är en prenumeration: Google hämtar <code>plangrupp.ics</code> med jämna mellanrum. När filen uppdateras och publiceras syns ändringen i kalendern du prenumererar på.</p>
+    <h3 class="subhead" id="lagg-till-google">Lägg till ett möte med ett klick <a class="anchor" href="#lagg-till-google" aria-label="Länk till avsnittet">#</a></h3>
+    <p>Knappen på varje möteskort öppnar Googles mall för en ny händelse. Den skapar en kopia i din kalender. Den ersätter inte prenumerationen.</p>
+    <h3 class="subhead" id="prenumerera">Prenumerera på hela kalendern <a class="anchor" href="#prenumerera" aria-label="Länk till avsnittet">#</a></h3>
+    <p>När sidan ligger på GitHub Pages: i Google Kalender, plus tecknet vid <strong>Andra kalendrar</strong> → <strong>Från URL</strong>, och klistra in adressen till ICS-filen.</p>
+    <p class="link-box">
+      <span class="link-label">ICS-adress efter publicering</span>
+      <a class="link-value" href="https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Plangruppskalender/plangrupp.ics">https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Plangruppskalender/plangrupp.ics</a>
+    </p>
+    <p class="cta-row">
+      <a class="cta-button" href="plangrupp.ics" download="plangrupp.ics">Ladda ner plangrupp.ics</a>
+    </p>
+    <p class="cta-hint">Före publicering: öppna filen i Google Kalender via Importera, eller vänta tills ICS-adressen ovan svarar efter din push.</p>
+  </section>
+
+</main>
+
+<a class="corner corner-left" href="https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Plangruppen/Plangruppskalender" target="_blank" rel="noopener">{ } GitHub</a>
+<button type="button" class="corner corner-right" id="techBtn" aria-label="Tekniköversikt">&lt;/&gt; teknik</button>
+
+<div class="modal-overlay" id="techModal">
+  <div class="modal" role="dialog" aria-labelledby="techTitle" aria-modal="true">
+    <button type="button" class="modal-close" id="techClose" aria-label="Stäng">&times;</button>
+    <h2 id="techTitle">Hur den här sidan är byggd</h2>
+    <p>Två delar: tekniken i sidan, och hur första mötet hamnade här. Inget påhittat.</p>
+
+    <h3 class="tech-section-title">Tekniken</h3>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3>HTML, CSS och JavaScript</h3>
+        <p>Tre filer plus <code>moten.js</code> och <code>plangrupp.ics</code>. Inget ramverk, inget byggsteg, ingen server.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Ingen Google-inloggning</h3>
+        <p>Sidan skickar ingen data till Google. Prenumeration sker genom att Google själv hämtar ICS-filen.</p>
+      </div>
+      <div class="tech-card">
+        <h3>En källa för möten</h3>
+        <p>Listan och månadsvyn läses från <code>MOTEN</code> i <code>moten.js</code>. ICS-filen är samma uppgifter i kalenderformat.</p>
+      </div>
+      <div class="tech-card">
+        <h3>GitHub-hörna och teknikknapp</h3>
+        <p>Samma hörn-mönster som övriga sidor i Codex: länk till mappen till vänster, teknikmodal till höger.</p>
+      </div>
+    </div>
+
+    <h3 class="tech-section-title">Metoden</h3>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3>Första mötet från en skärmdump</h3>
+        <p>Posten den 9 september 2026, klockan 17–19 på Lunds stadsbibliotek, är tagen från Kents Google Kalender den 10 september 2026.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Kent publicerar själv</h3>
+        <p>Filerna lämnas ocommittade. Commit och push till GitHub görs i Cursor av Kent.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="moten.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

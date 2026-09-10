@@ -6,3 +6,4 @@ En samling projekt för arbete, ekonomi, familj, fritid och privata initiativ.
 
 - [Kent Lundgrens hemsida — test1](https://kentlundgren.github.io/Codex/Privat/Hemsida/test1/)
 - [NCC:s samråd vid Södra Sandby](https://kentlundgren.github.io/Codex/Fritid/NF/NCC_stenbryttning/)
+- [Plangruppens kalender](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Plangruppskalender/)
