@@ -27,7 +27,7 @@ På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Plangrupp
 
 Sidan synkar inte tvåvägs med Google. Den kan inte skriva i Kents Google-konto.
 
-Efter publicering: Google Kalender → plus vid Andra kalendrar → Från URL, och klistra in:
+Efter publicering: klicka Kopiera vid ICS-adressen på sidan. I Google Kalender: plus vid Andra kalendrar → Från URL, klistra in adressen. Adressen är:
 
 https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Plangruppskalender/plangrupp.ics
 

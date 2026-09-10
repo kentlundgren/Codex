@@ -40,10 +40,13 @@
     <h3 class="subhead" id="lagg-till-google">Lägg till ett möte med ett klick <a class="anchor" href="#lagg-till-google" aria-label="Länk till avsnittet">#</a></h3>
     <p>Knappen på varje möteskort öppnar Googles mall för en ny händelse. Den skapar en kopia i din kalender. Den ersätter inte prenumerationen.</p>
     <h3 class="subhead" id="prenumerera">Prenumerera på hela kalendern <a class="anchor" href="#prenumerera" aria-label="Länk till avsnittet">#</a></h3>
-    <p>När sidan ligger på GitHub Pages: i Google Kalender, plus tecknet vid <strong>Andra kalendrar</strong> → <strong>Från URL</strong>, och klistra in adressen till ICS-filen.</p>
+    <p>Ja: klicka på plusstecknet vid <strong>Andra kalendrar</strong>. Välj sedan <strong>Från URL</strong>. Inte Skapa ny kalender, och inte en av de andra kalendrarna i listan. Klistra in ICS-adressen och lägg till kalendern.</p>
     <p class="link-box">
-      <span class="link-label">ICS-adress efter publicering</span>
-      <a class="link-value" href="https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Plangruppskalender/plangrupp.ics">https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Plangruppskalender/plangrupp.ics</a>
+      <span class="term link-label" tabindex="0">ICS-adress efter publicering<span class="tooltip">Klicka på Kopiera. Öppna Google Kalender. Klicka på plusstecknet vid Andra kalendrar. Välj Från URL. Klistra in adressen (Ctrl+V på Windows) och klicka på Lägg till kalender. Google hämtar då plangruppens möten till din egen kalender. Adressen fungerar först när sidan är pushad till GitHub Pages.</span></span>
+      <span class="ics-rad">
+        <a class="link-value" id="icsAdress" href="https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Plangruppskalender/plangrupp.ics">https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Plangruppskalender/plangrupp.ics</a>
+        <button type="button" class="kopiera-knapp" id="kopieraIcs">Kopiera</button>
+      </span>
     </p>
     <p class="cta-row">
       <a class="cta-button" href="plangrupp.ics" download="plangrupp.ics">Ladda ner plangrupp.ics</a>

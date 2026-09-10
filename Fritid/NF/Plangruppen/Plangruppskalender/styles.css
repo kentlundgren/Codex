@@ -228,14 +228,21 @@ code {
 }
 
 .link-label {
-  display: block;
+  display: inline-block;
   margin: 0 0 0.55rem;
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--forest);
 }
 
+.ics-rad {
+  display: flex;
+  gap: 0.6rem;
+  align-items: stretch;
+}
+
 .link-value {
+  flex: 1 1 auto;
   display: block;
   font-size: 0.78rem;
   line-height: 1.5;
@@ -252,6 +259,62 @@ code {
 .link-value:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.kopiera-knapp {
+  flex: 0 0 auto;
+  align-self: center;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+}
+
+.kopiera-knapp:hover {
+  background: var(--forest);
+}
+
+.term {
+  position: relative;
+  border-bottom: 1px dotted var(--accent);
+  cursor: help;
+}
+
+.term .tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 0;
+  width: 340px;
+  max-width: min(85vw, 340px);
+  background: var(--forest);
+  color: #F3F7F1;
+  font-weight: 400;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  z-index: 5;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.term .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 1rem;
+  border: 6px solid transparent;
+  border-top-color: var(--forest);
+}
+
+.term:hover .tooltip,
+.term:focus .tooltip,
+.term:focus-visible .tooltip {
+  display: block;
 }
 
 .cta-row {
@@ -383,4 +446,5 @@ code {
 @media (max-width: 640px) {
   .tech-grid { grid-template-columns: 1fr; }
   .modal { padding: 1.4rem; }
+  .ics-rad { flex-direction: column; }
 }

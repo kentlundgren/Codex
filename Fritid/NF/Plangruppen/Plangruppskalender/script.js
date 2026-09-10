@@ -123,6 +123,28 @@ function ritaManad() {
   }
 }
 
+// Här skedde en uppdatering 10 september 2026: kopieraknapp för ICS-adressen.
+function kopplaKopieraIcs() {
+  const knapp = document.getElementById("kopieraIcs");
+  const länk = document.getElementById("icsAdress");
+  if (!knapp || !länk) return;
+
+  knapp.addEventListener("click", async () => {
+    const adress = länk.href;
+    try {
+      await navigator.clipboard.writeText(adress);
+      knapp.textContent = "Kopierad";
+    } catch (fel) {
+      // Fallback om webbläsaren inte tillåter clipboard API (t.ex. file://).
+      window.getSelection().selectAllChildren(länk);
+      knapp.textContent = "Markera och kopiera";
+    }
+    window.setTimeout(() => {
+      knapp.textContent = "Kopiera";
+    }, 2000);
+  });
+}
+
 function kopplaTeknikModal() {
   const techBtn = document.getElementById("techBtn");
   const techModal = document.getElementById("techModal");
@@ -144,4 +166,5 @@ document.addEventListener("DOMContentLoaded", () => {
   ritaMoten();
   ritaManad();
   kopplaTeknikModal();
+  kopplaKopieraIcs();
 });
