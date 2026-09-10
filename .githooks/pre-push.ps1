@@ -4,7 +4,8 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$blockedPath = '(?i)(^|/)(underlag_internt(/|$)|mejlforlag|.*(?:privat|private|sensitive|kanslig|känslig|utkast).*)\.(md|txt|pdf|doc|docx)$'
+$blockedPath = '(?i)(^|/)(underlag_internt(/|$)|Plangruppen/Mail(/|$)|mejlforlag|.*(?:privat|private|sensitive|kanslig|känslig|utkast).*)\.(md|txt|pdf|doc|docx)$'
+$blockedMail = '(?i)(^|/)Plangruppen/Mail(/|$)'
 $blockedContent = '(?im)^\s*(privat|private|konfidentiellt|confidential|inte för publicering|do not publish)\b'
 $publicDocuments = @(
   'Fritid/NF/NCC_stenbryttning/index.html',
@@ -43,7 +44,7 @@ foreach ($update in $updates) {
       if ($isDocument -or $isPublicDocument) {
         $content = git --no-pager show "${commit}:$file" 2>$null
       }
-      if ($file -match $blockedPath -or ($isDocument -and $content -match $blockedContent) -or ($isPublicDocument -and $content -match $publicSensitiveContent)) {
+      if ($file -match $blockedPath -or $file -match $blockedMail -or ($isDocument -and $content -match $blockedContent) -or ($isPublicDocument -and $content -match $publicSensitiveContent)) {
         $blocked.Add("$file ($commit)")
       }
     }

@@ -1,6 +1,8 @@
-# Privat eller ej publicerbart arbetsmaterial. Behålls lokalt men får inte läggas i Git.
+# Privat eller ej publicerbart arbetsmaterial. Får inte läggas i Codex-repot eller pushas till GitHub.
+# underlag_internt och Plangruppen/Mail har egna lokala Git-repon utan fjärranslutning.
 mejlforlag.md
 /Fritid/NF/NCC_stenbryttning/underlag_internt/
+/Fritid/NF/Plangruppen/Mail/
 /Fritid/NF/Utslapp_vid_AI_anv/bakgrund_from_Tomas.md
 /Fritid/NF/Utslapp_vid_AI_anv/bakgrund_from_Tomas.txt
 /Fritid/Naturskyddsforeningen/NCC_stenbryttning/underlag_internt/
