@@ -51,56 +51,7 @@ Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkt
 
 ## Djuplänkar
 
-Varje avsnitt på de fem sidorna går att länka till direkt med `URL#ankare`. Ankar-id:n är oföränderliga efter publicering.
-
-### paverka.html
-
-| Ankare | URL |
-|---|---|
-| `#sa-paverkar-vi` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#sa-paverkar-vi |
-| `#vilken-lag` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#vilken-lag |
-| `#kommunen-antar-en-plan` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#kommunen-antar-en-plan |
-| `#bolag-soker-tillstand` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#bolag-soker-tillstand |
-| `#beslutsstod` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#beslutsstod |
-| `#verkningsfull-synpunkt` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#verkningsfull-synpunkt |
-| `#ratt-tid` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#ratt-tid |
-| `#tl-oversiktsplan` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#tl-oversiktsplan |
-| `#tl-detaljplan` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#tl-detaljplan |
-| `#tl-verksamhet` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#tl-verksamhet |
-| `#lund` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#lund |
-| `#klagoratt` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#klagoratt |
-| `#taleratt` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#taleratt |
-| `#miljobedomning-kort` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#miljobedomning-kort |
-| `#kallor` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html#kallor |
-
-### lagtexter.html
-
-| Ankare | URL |
-|---|---|
-| `#om-sidan` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#om-sidan |
-| `#tva-slags-miljobedomning` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#tva-slags-miljobedomning |
-| `#ordlista` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#ordlista |
-| `#snabbnav` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#snabbnav |
-| `#mb-1-1` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#mb-1-1 |
-| `#mb-2` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#mb-2 |
-| `#mb-2-6` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#mb-2-6 |
-| `#mb-3-6` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#mb-3-6 |
-| `#mb-6-3` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#mb-6-3 |
-| `#mb-7-28a` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#mb-7-28a |
-| `#mb-16-13` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#mb-16-13 |
-| `#pbl-2-1` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#pbl-2-1 |
-| `#pbl-5-18` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#pbl-5-18 |
-| `#pbl-13-11` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#pbl-13-11 |
-| `#arhus` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#arhus |
-| `#kallor` | https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html#kallor |
-
-### index.html
-
-`#gemensam-grundstruktur` · `#pbl-och-mb` · `#skeden-oversikt` · `#kompensation-intro` · `#exempel` · `#till-verktyget`
-
-### fordjupning.html
-
-`#tre-satt` · `#pbl-mb-delvis` · `#terminologi-mb` · `#dispositionsmallar` · `#pbl-detaljplan` · `#pbl-oversiktsplan` · `#mb-skeden` · `#mottagare` · `#kompensation` · `#tre-spar` · `#kommunexempel` · `#skadelindringshierarkin` · `#svenska-fall` · `#internationellt` · `#konstruktivt-forslag` · `#praktiken` · `#kallor`
+Varje H2 och H3 på sidorna har ett stabilt `#`-ankare. Hovra över en rubrik och klicka på `#` för att kopiera länken till just det avsnittet. Ankar-id:n är oföränderliga efter publicering och listas inte här.
 
 ## Relation till NCC_stenbryttning
 

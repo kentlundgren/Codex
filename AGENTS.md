@@ -5,6 +5,7 @@
 - Varje publicerad live-sida ska ha en diskret GitHub-länk nere till vänster som leder tillbaka till det repo där sidan finns.
 - Varje publicerad live-sida ska ha en diskret teknikknapp nere till höger. Den öppnar en tangentbordsanpassad modal med teknikval och en förenklad filstruktur för det aktuella projektet.
 - README-filen för varje publicerat sidprojekt ska innehålla en tydlig länk till sidans live-URL.
+- Sidor ska ha djuplänkbara `#`-ankare på H2 och H3. Lista inte alla ankare i README som standard. Fråga först. Ett fåtal kan vara ok.
 - Använd GitHub Pages-URL enligt mönstret `https://kentlundgren.github.io/Codex/<sökväg>/` när sidan ligger i detta repo.
 
 ## README-filer
