@@ -4,6 +4,8 @@ Möten i plangruppen, Lunds Naturskyddsförening. En liten statisk sida med möt
 
 **Live-sida:** https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Plangruppskalender/
 
+Överordnade mappar: [Fritid](https://kentlundgren.github.io/Codex/Fritid/) · [NF](https://kentlundgren.github.io/Codex/Fritid/NF/) · [Plangruppen](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/)
+
 ## Lokalt repo
 
 Repo-rot lokalt:

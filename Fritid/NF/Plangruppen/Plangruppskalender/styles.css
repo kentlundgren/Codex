@@ -50,7 +50,31 @@ a:hover { color: var(--accent); }
 header#top {
   background: var(--forest);
   color: #F3F7F1;
-  padding: 2.6rem 0 2.2rem;
+  padding: 1.6rem 0 2.2rem;
+}
+
+.breadcrumbs {
+  margin: 0 0 1.1rem;
+  font-size: 0.82rem;
+}
+
+.breadcrumbs a {
+  color: #A7D7B2;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.breadcrumbs .sep {
+  color: #7eaa88;
+  margin: 0 0.35rem;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: #F3F7F1;
 }
 
 header#top .eyebrow {

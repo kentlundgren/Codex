@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Plangruppen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Plangruppen i Lunds Naturskyddsförening. Ingång till möteskalendern.">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<header id="top">
+  <div class="wrap">
+    <nav class="breadcrumbs" aria-label="Sökväg">
+      <a href="https://github.com/kentlundgren/Codex">Codex</a>
+      <span class="sep">/</span>
+      <a href="../../">Fritid</a>
+      <span class="sep">/</span>
+      <a href="../">NF</a>
+      <span class="sep">/</span>
+      <span aria-current="page">Plangruppen</span>
+    </nav>
+    <h1>Plangruppen</h1>
+    <p>Gruppen som arbetar med planer under samråd. Den publika sidan här är möteskalendern.</p>
+  </div>
+</header>
+<main class="wrap">
+  <ul class="lista">
+    <li>
+      <a href="Plangruppskalender/">Plangruppskalender</a>
+      <p>Möten, månadsvy och ICS-fil att lägga till i Google Kalender.</p>
+    </li>
+  </ul>
+</main>
+<a class="corner corner-left" href="https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Plangruppen" target="_blank" rel="noopener">{ } GitHub</a>
+<button type="button" class="corner corner-right" id="techBtn" aria-label="Tekniköversikt">&lt;/&gt; teknik</button>
+<div class="modal-overlay" id="techModal">
+  <div class="modal" role="dialog" aria-labelledby="techTitle" aria-modal="true">
+    <button type="button" class="modal-close" id="techClose" aria-label="Stäng">&times;</button>
+    <h2 id="techTitle">Hur den här sidan är byggd</h2>
+    <p>En kort mappöversikt. Intern mejl i Mail publiceras inte.</p>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3>index.html i mappen</h3>
+        <p>Så att brödsmulorna till Plangruppen inte landar på en tom github.io-adress.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Mail är lokalt</h3>
+        <p>Mappen Mail ignoreras av Codex-repot och länkas inte härifrån.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../script.js"></script>
+</body>
+</html>

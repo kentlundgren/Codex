@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Fritid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Fritidsprojekt i Codex. Ingång till Lunds Naturskyddsförening.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="top">
+  <div class="wrap">
+    <nav class="breadcrumbs" aria-label="Sökväg">
+      <a href="https://github.com/kentlundgren/Codex">Codex</a>
+      <span class="sep">/</span>
+      <span aria-current="page">Fritid</span>
+    </nav>
+    <h1>Fritid</h1>
+    <p>Projekt under fritid i Codex. Just nu är den publika live-sidan här Lunds Naturskyddsförening.</p>
+  </div>
+</header>
+<main class="wrap">
+  <ul class="lista">
+    <li>
+      <a href="NF/">NF</a>
+      <p>Lunds Naturskyddsförening: samråd, kalendrar och plangrupp.</p>
+    </li>
+  </ul>
+</main>
+<a class="corner corner-left" href="https://github.com/kentlundgren/Codex/tree/main/Fritid" target="_blank" rel="noopener">{ } GitHub</a>
+<button type="button" class="corner corner-right" id="techBtn" aria-label="Tekniköversikt">&lt;/&gt; teknik</button>
+<div class="modal-overlay" id="techModal">
+  <div class="modal" role="dialog" aria-labelledby="techTitle" aria-modal="true">
+    <button type="button" class="modal-close" id="techClose" aria-label="Stäng">&times;</button>
+    <h2 id="techTitle">Hur den här sidan är byggd</h2>
+    <p>En kort mappöversikt så GitHub Pages har något att visa. En README ensam syns på GitHub, inte på github.io.</p>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3>index.html i mappen</h3>
+        <p>Utan den blir adressen <code>/Fritid/</code> tom. Samma lista står i README.md.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Ingen server</h3>
+        <p>Statiska filer. Inget ramverk och ingen inloggning.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
