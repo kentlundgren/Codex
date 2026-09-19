@@ -1,0 +1,4 @@
+interface:
+  display_name: "Samrådsguiden"
+  short_description: "Strukturera samrådsunderlag och samrådsyttranden enligt PBL och MB"
+  default_prompt: "Use $samradsguiden to structure a source-backed consultation response, under either PBL or MB, from the supplied documents."

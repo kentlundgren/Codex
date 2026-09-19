@@ -19,7 +19,7 @@ Synpunkterna är ordnade efter samrådsunderlagets egna avsnitt, inte efter en e
 - `samrad.md` – fördjupat sakunderlag med samma disposition och fullständiga referenser.
 - `styles.css` – sidornas utseende och responsiva layout.
 - `script.js` – utfällbara avsnitt och teknikmodal.
-- `Skills/samradsunderlag/` – återanvändbar skill för att strukturera samrådshandlingar och samrådsyttranden. Kopian synkroniseras med den installerade Codex-skillen.
+- `Skills/samradsunderlag/` – innehöll tidigare den återanvändbara skillen för att strukturera samrådshandlingar och samrådsyttranden. Flyttad och vidareutvecklad till [`Samradsguiden/Skills/samradsguiden/`](../Samradsguiden/Skills/samradsguiden/), som nu täcker både PBL och MB.
 
 Filerna `index copy1.html` och `index copy2.html` är manuellt bevarade jämförelseversioner. De ändras inte automatiskt och ingår inte i den publicerade sidans navigation.
 

@@ -94,7 +94,7 @@ PBL 2 kap. hänvisar uttryckligen till MB 3, 4 och 5 kap. En detaljplan kan inte
   och stadgeenligt syfte (bäddar för talerätt, se Tillägg B), samordning med
   andra föreningar.
 - Knyt till Samrådsguidens befintliga sexdelsmodell och till metoden i
-  `../NCC_stenbryttning/Skills/samradsunderlag/`.
+  `Skills/samradsguiden/` (sedan september 2026; flyttad från `../NCC_stenbryttning/Skills/samradsunderlag/`).
 
 ## 5. Tillägg B — "Rätt tid, och rätten att överklaga"
 

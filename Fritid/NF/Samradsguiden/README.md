@@ -57,4 +57,4 @@ Varje H2 och H3 på sidorna har ett stabilt `#`-ankare. Hovra över en rubrik oc
 
 ## Relation till NCC_stenbryttning
 
-Det här verktyget är fristående och generellt, men bygger vidare på metoden som redan etablerats i `../NCC_stenbryttning/struktur.html` och skillen `../NCC_stenbryttning/Skills/samradsunderlag/`. NCC/Skrylle-ärendet används som konkret exempel där det är pedagogiskt användbart.
+Det här verktyget är fristående och generellt, men bygger vidare på metoden som redan etablerats i `../NCC_stenbryttning/struktur.html`. Sedan september 2026 bor den delade skillen som metoden vilar på här i projektet, i [`Skills/samradsguiden/`](Skills/samradsguiden/) — den täcker både PBL och MB, och NCC/Skrylle-ärendet används som konkret exempel där det är pedagogiskt användbart.

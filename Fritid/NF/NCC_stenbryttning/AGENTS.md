@@ -32,7 +32,7 @@ Projektet kan samtidigt öppnas och ändras i Cursor av användaren. Kontrollera
 
 ## Delade skills
 
-- Projektets synliga kopia av skillen för samrådsunderlag finns i `Skills/samradsunderlag/`.
-- Den installerade Codex-kopian finns i `C:\Users\kentl\.codex\skills\samradsunderlag\`.
-- När någon fil i någon av dessa två skillmappar ändras ska motsvarande fil i den andra mappen uppdateras i samma arbetsuppgift. Jämför därefter filinnehållet så att kopiorna är identiska.
-- Projektkopian är avsedd att vara lätt att upptäcka för användaren och andra AI-verktyg. Den installerade kopian används av Codex.
+- Skillen för samrådsunderlag flyttades i september 2026 till `../Samradsguiden/Skills/samradsguiden/` och heter nu `samradsguiden` — den täcker både PBL och MB, och används både för yttranden i det här ärendet och för webbverktyget Samrådsguiden.
+- `Skills/samradsunderlag/` i den här mappen är kvar bara som en kort hänvisning dit och uppdateras inte längre.
+- Installerade kopior: Claude Code i `../.claude/skills/samradsguiden/` (projektscope för hela `Fritid/NF/`), Codex i `C:\Users\kentl\.codex\skills\samradsguiden\`.
+- När någon fil i den synliga projektkopian (`Samradsguiden/Skills/samradsguiden/`) ändras ska båda installerade kopior uppdateras i samma arbetsuppgift, och innehållet jämföras så att alla tre är identiska.

@@ -319,7 +319,7 @@ Vid "Generera mall":
 1. För varje del i `DISPOSITIONER[lagrum][skede].delar`, sätt `state.text[del] = ""` (tom, redo för användarens egen text) och visa `hjalptext` som platshållartext i respektive `<textarea>` (HTML `placeholder`-attribut, inte förifyllt värde — placeholder får aldrig hamna i exportet, se 3.3).
 2. Del 1 (`arendetsRam`): förifyll **verkligt värde** (inte placeholder) baserat på `AVSANDARROLL[state.avsandarroll].arendetsRamFalt` och vald `MOTTAGARE`-post, som redigerbara fält snarare än fri text.
 3. Om `state.kompensation.onskas === true`: sätt `state.text.vadSomBegars` till resultatet av `renderKompensationsmall(state)` (se nedan) som **förifyllt värde** i textarean (inte placeholder) — detta är avsiktligt annorlunda än övriga delar, eftersom kompensationsmallen redan är färdig text att redigera, inte en tom yta.
-4. Del `referat`: om användaren inte skriver något i den, ska den **uteslutas helt** ur den sammanställda texten (ingen tom rubrik) — matchar principen i PRD 6/`Skills/samradsunderlag` att referat bara tas med "om underlaget behöver återges".
+4. Del `referat`: om användaren inte skriver något i den, ska den **uteslutas helt** ur den sammanställda texten (ingen tom rubrik) — matchar principen i PRD 6/`Skills/samradsguiden` att referat bara tas med "om underlaget behöver återges".
 
 ```js
 function renderKompensationsmall(state) {

@@ -4,9 +4,11 @@ Ett generellt verktyg för hur privatpersoner och miljöorganisationer kan dispo
 
 Status: utkast till PRD, inte beslutad. Material under fortsatt diskussion.
 
+**Uppdatering (september 2026):** den skill som avsnittet nedan beskriver som `Skills/samradsunderlag/` i `NCC_stenbryttning/` har sedan dess flyttats och vidareutvecklats till `Skills/samradsguiden/` i den här mappen — se `Skills/samradsguiden/SKILL.md`. Den täcker nu både PBL och MB, inte bara miljöbalken. Bakgrundstexten nedan är kvar oförändrad som historik.
+
 ## 1. Bakgrund
 
-Arbetet med NCC:s samråd om täkt- och vattenverksamhet vid Södra Sandby (`NCC_stenbryttning/`) gav upphov till en etablerad metod för hur ett yttrande i ett **avgränsningssamråd enligt miljöbalken** kan struktureras — dokumenterad i `struktur.html` och i skillen `Skills/samradsunderlag/`. Den metoden bygger på Statsrådsberedningens generella anvisningar för remissvar (Statsrådsberedningen, 2026) och är i grunden inte begränsad till miljöbalken — Boverket, en myndighet inom plan- och byggområdet, tillämpar uttryckligen samma ordning (Boverket, 2026).
+Arbetet med NCC:s samråd om täkt- och vattenverksamhet vid Södra Sandby (`NCC_stenbryttning/`) gav upphov till en etablerad metod för hur ett yttrande i ett **avgränsningssamråd enligt miljöbalken** kan struktureras — dokumenterad i `struktur.html` och i skillen `Skills/samradsunderlag/` (nu `Skills/samradsguiden/`, se uppdateringen ovan). Den metoden bygger på Statsrådsberedningens generella anvisningar för remissvar (Statsrådsberedningen, 2026) och är i grunden inte begränsad till miljöbalken — Boverket, en myndighet inom plan- och byggområdet, tillämpar uttryckligen samma ordning (Boverket, 2026).
 
 Det som saknas är en **generell, fristående** beskrivning som visar hur samma grundprincip tillämpas dels vid samråd enligt **plan- och bygglagen (PBL)**, dels vid samråd enligt **miljöbalken (MB)** — vad som är gemensamt, vad som skiljer, och vad som skiljer beroende på mottagare (kommun eller länsstyrelse) och skede i processen. Verktyget ska också göra läsaren genuint kunnig om **kompensationsåtgärder** — inte bara att de kan nämnas frivilligt, utan det rättsliga läget i sin helhet, verkliga svenska fall, internationell praxis, och hur synpunkterna kan omfatta konstruktiva förslag till exploatören (se avsnitt 8).
 
@@ -84,7 +86,7 @@ Per beslut ska varje steg ha sin egen mall, eftersom stegen har olika syfte och 
 2. **Kompletterande/utökat samråd** (villkorat, inget eget lagrum), om förutsättningarna ändras väsentligt mellan avgränsningssamrådet och ansökan. Inte ett andra ordinarie samråd av samma dignitet som avgränsningssamrådet. Yttrandet kan här fokusera på vad som förändrats sedan avgränsningssamrådet.
 3. **Yttrande vid kungörelse av ansökan** hos mark- och miljödomstolen. Formellt inte ett "samråd" utan ett yttrande i ett pågående mål — men i praktiken den möjlighet allmänheten/organisationer har att till slut uttala sig om utfallet, och därför medtagen enligt uppdraget. Här är det första tillfället då ett tydligt tillstyrkande eller avstyrkande är juridiskt meningsfullt att uttala, och det tillfälle då frågan om tillstånd faktiskt avgörs.
 
-**Genomgående princip för alla nio mallarna:** tonen och kravnivån ska vara proportionerlig mot skedet (jfr `Skills/samradsunderlag/SKILL.md`, steg 4). Ett tidigt skede efterfrågar och föreslår; ett sent skede kan formulera skarpare ställningstaganden eftersom förslaget då är låst i detalj.
+**Genomgående princip för alla nio mallarna:** tonen och kravnivån ska vara proportionerlig mot skedet (jfr `Skills/samradsguiden/SKILL.md`, steg 4). Ett tidigt skede efterfrågar och föreslår; ett sent skede kan formulera skarpare ställningstaganden eftersom förslaget då är låst i detalj.
 
 ### 6.3 Konkreta exempel per lagrum
 
