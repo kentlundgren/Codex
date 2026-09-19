@@ -1,6 +1,6 @@
 # Samrådsguiden
 
-Ett verktyg för hur privatpersoner och miljöorganisationer kan disponera och lägga upp yttranden och synpunkter under ett samråd — enligt både plan- och bygglagen (PBL) och miljöbalken (MB), med en fördjupad modul om kompensationsåtgärder, ett strategilager om hur man påverkar i rätt tid, och de tio viktigaste lagtexterna ordagrant. Materialet är ett bidrag till fortsatt diskussion, inte ett beslutat ställningstagande, och företräder inte någon organisation.
+Ett verktyg för hur privatpersoner och miljöorganisationer kan disponera och lägga upp yttranden och synpunkter under ett samråd — enligt både plan- och bygglagen (PBL) och miljöbalken (MB), med en fördjupad modul om betydande miljöpåverkan, en om kompensationsåtgärder, ett strategilager om hur man påverkar i rätt tid, och de tio viktigaste lagtexterna ordagrant. Materialet är ett bidrag till fortsatt diskussion, inte ett beslutat ställningstagande, och företräder inte någon organisation.
 
 ## Live-sida
 
@@ -21,7 +21,7 @@ PRD, SPEC och samtliga fem sidor är byggda och testade lokalt (formulärflöde,
 
 Ankar-retrofit av `index.html` och `fordjupning.html` är gjord (varje H2 och `.subhead`-H3 har ett stabilt `#`-ankare). `verktyg.html` är en JS-guide där stegen har egna div-id:n och behöver inga rubrikankare.
 
-Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.10**, senast ändrad 11 september 2026.
+Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.11**, senast ändrad 19 september 2026.
 
 - **v1.0** — första publicerade versionen: grunddispositionen, kompensationsmodulens tre spår, det interaktiva verktyget.
 - **v1.1** — jämförelsen av de tre sätten att disponera ett yttrande; de fyra kommunexemplen.
@@ -34,6 +34,7 @@ Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en.
 - **v1.8** — förtydligade översiktens jämförelse av PBL och MB: miljöbalkens 6 kapitel styr miljöbedömningen även för kommunala planer, och MKB:n är dokumentet.
 - **v1.9** — lagrummen i jämförelsetabellen på Dispositionerna länkar till miljöbalkens lydelse.
 - **v1.10** — rubriken för avsnittet om vad som händer innan vi yttrar oss förtydligad.
+- **v1.11** — ny fördjupning: *Betydande miljöpåverkan — när gränsen är omtvistad*. Tre nivåer (kategoriskt, osäkert/undersökningssamråd, kopplat till en plan), de fyra kriteriegrupperna i miljöbedömningsförordningens 10–13 §§, en argumentationsmetod, och NCC/Skrylle som exempel på den kategoriska (inte omtvistade) vägen.
 
 Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
 
@@ -45,7 +46,7 @@ Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkt
 - `SPEC_lagtexter.md` — teknisk specifikation för `lagtexter.html` och `paverka.html`: urval av de tio posterna, HTML-mallar, CSS-tillägg, tidslinjernas innehåll, Lund-anknytningen, källhantering.
 - `index.html` — kort översikt: grundprincipen, jämförelsetabell PBL/MB, de tre skedena, introduktion till kompensationsmodulen.
 - `paverka.html` — strategilagret: vilken lag som styr när kommunen antar en plan respektive när ett bolag söker tillstånd, tre vertikala tidslinjer över när synpunkter kan lämnas, klagorättsregeln, miljöorganisationers talerätt, och en ruta om hur Lunds kommun beskriver processen.
-- `fordjupning.html` — fullständigt sakinnehåll: alla dispositionsmallar, hela kompensationsmodulen, de två konkreta exemplen, källförteckning.
+- `fordjupning.html` — fullständigt sakinnehåll: alla dispositionsmallar, modulen om betydande miljöpåverkan, hela kompensationsmodulen, de två konkreta exemplen, källförteckning.
 - `lagtexter.html` — de tio viktigaste lagtexterna ordagrant, med källa och datum, en förklaring i klartext bakom ett klick per post, en ordlista och en bakgrundsruta om Århuskonventionen.
 - `verktyg.html` — den interaktiva guiden: fem steg som genererar en ifyllningsbar mall med sex delar, sammanställningsvy, kopiera- och nedladdningsfunktion.
 - `data.js` — all sakdata verktyget använder: dispositionsmallarna och kompensationsmodulens spår.

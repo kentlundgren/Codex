@@ -92,6 +92,22 @@ Del 2 och del 5 förväxlas lätt, eftersom båda är korta listor i varsin änd
 
 Genomgående ställs fyra frågor inom varje avsnitt, i stället för som egna avsnitt: är alternativ och nollalternativ tillräckligt belysta; hur hanteras osäkerhet, kontroll och uppföljning; vem bär det långsiktiga ansvaret och finansieringen; och om kompensationsåtgärder är rättsligt möjliga eller värda att föreslå frivilligt (se nedan).
 
+## Betydande miljöpåverkan — när gränsen är omtvistad
+
+Målet är att göra läsaren kunnig nog att **argumentera för** att en verksamhet eller åtgärd medför betydande miljöpåverkan, inte bara känna till att begreppet finns. Det är ofta här den första reella dragkampen står: en exploatör vill hellre gå den enklare vägen utan fullständig miljöbedömning, medan en miljöorganisation kan behöva visa att tröskeln faktiskt är nådd.
+
+**Tre nivåer:**
+
+- **Kategoriskt.** Miljöbedömningsförordningen (2017:966) 6 § listar verksamhetstyper som alltid ska anses medföra betydande miljöpåverkan, bland annat vissa täkter över angivna tröskelvärden. Ingen argumentation krävs eller är möjlig — processen går direkt till avgränsningssamrådet. NCC/Skrylle hör hit.
+- **Osäkert.** När verksamheten inte är kategoriskt listad och sökanden inte själv utgår från betydande miljöpåverkan, avgörs frågan genom ett undersökningssamråd (MB 6 kap. 23–26 §§). Länsstyrelsen beslutar utifrån kriterierna i förordningens 10–13 §§ (26 §).
+- **Kopplat till en plan.** För en översiktsplan eller detaljplan avgörs motsvarande fråga enligt MB 6 kap. 3 §, med ett eget avgränsningssamråd enligt 6 kap. 9–10 §§ — en annan paragraf än verksamheters avgränsningssamråd (6 kap. 29 §), även om båda fyller samma funktion.
+
+**De fyra kriteriegrupperna** (miljöbedömningsförordningen 10–13 §§) som en synpunkt i ett undersökningssamråd bör knytas till uttryckligen: verksamhetens utmärkande egenskaper och lokalisering (10 §); omfattning, kumulativa effekter, resursanvändning, avfall, föroreningar och olycksrisker (11 §); plats och tålighet, särskilt i eller nära skyddade områden (12 §); effekternas storlek, räckvidd, sannolikhet, varaktighet och reversibilitet (13 §).
+
+**Metod:** (1) kontrollera först om 6 §:s kategoriska lista gäller — då är frågan redan avgjord, (2) om ett undersökningssamråd hålls, knyt varje synpunkt uttryckligen till en av de fyra kriteriegrupperna i stället för en allmän oro, (3) lyft kumulativa effekter särskilt — en verksamhet kan verka liten isolerad men inte tillsammans med andra i området, (4) lämna synpunkterna skriftligt i undersökningssamrådet, eftersom de utgör direkt underlag för länsstyrelsens beslut, (5) om inget undersökningssamråd alls planeras trots att verksamheten inte är kategoriskt listad, är det svårare att angripa i efterhand — en tidig skriftlig markering är ändå värd att lämna.
+
+**Var noga med att skilja på kategoriskt och omtvistat i exempel:** NCC/Skrylle illustrerar den kategoriska vägen (täkten är av en storlek som gör att betydande miljöpåverkan alltid ska antas föreligga), inte den omtvistade — inget undersökningssamråd hölls där, och frågan var aldrig uppe för argumentation. Metoden ovan gör mest nytta i mindre ärenden där frågan faktiskt är öppen.
+
 ## Kompensationsåtgärder
 
 Målet är att göra läsaren kunnig nog att både **begära och föreslå** kompensationsåtgärder — inte bara medveten om att de finns.
@@ -144,6 +160,7 @@ Källstöd för dispositionsmetoden:
 - Friluftsfrämjandet (2024) *Att svara på remiss – hur och varför*. <https://www.friluftsframjandet.se/contentassets/f51b02ffb96d42728dfd7a39f1f6e4cc/guide-att-svara-pa-remiss-2024.pdf> *(Ideell organisations handledning, samma struktur utanför myndighetssfären.)*
 - Sveriges riksdag (1998) *Miljöbalk (1998:808)*. <https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808/> *(6 kap. 23–32 §§ för samrådsstegen, 16 kap. 9 § och 7 kap. 29 § för kompensationsåtgärder.)*
 - Sveriges riksdag (2010) *Plan- och bygglag (2010:900)*. <https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/> *(5 kap. 11–13, 18, 21, 23, 25 §§ för detaljplan; 3 kap. 8, 12 §§ för översiktsplan.)*
+- Sveriges riksdag (2017) *Miljöbedömningsförordning (2017:966)*. <https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/miljobedomningsforordning-2017966_sfs-2017-966/> *(Huvudkälla för avsnittet om betydande miljöpåverkan: 6 § kategoriska listan, 10–13 §§ kriterierna vid ett undersökningssamråd.)*
 - Miljösamverkan Sverige (2021) *Ekologisk kompensation: Handläggarstöd för en ökad användning och samsyn*, 1 juli. <https://www.miljosamverkansverige.se/wp-content/uploads/Handlaggarstod-ekologisk-kompensation.pdf> *(Huvudkälla för kompensationsavsnittet: den rättsliga distinktionen mellan PBL, MB 16 kap. 9 § och MB 7 kap. 29 §, skadelindringshierarkin, svenska fall.)*
 - Samrådsguiden (2026). <https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/> *(Den publicerade, generaliserade fördjupningen som bygger på den här skillen: fullständig genomgång av alla tre dispositionssätten, motsvarande dispositioner för PBL och MB, och kompensationsåtgärder med svenska fall och internationell utblick.)*
 - `../PRD_samradsguiden.md` — det fullständiga käll- och beslutsunderlaget bakom denna skill, inklusive öppna frågor som ännu inte är lösta.
