@@ -6,7 +6,7 @@
 
 Lunds kommun har höga miljöambitioner men saknar ett redskap för att omsätta dem i praktiken vid exploatering: ett systematiskt sätt att se till att ingrepp i naturen balanseras, så att skadan blir minimal — eller till och med att miljön blir bättre efteråt än innan.
 
-**Lunds Naturskyddsförening bör verka för att Lunds kommun inför balanseringsprincipen som generell policy i alla planärenden** — inte bara i de fall miljöbalken redan kräver kompensation.
+**Lunds Naturskyddsförening föreslår att Lunds kommun inför balanseringsprincipen som generell policy i alla planärenden** — inte bara i de fall miljöbalken redan kräver kompensation.
 
 ## Vad balanseringsprincipen innebär
 
