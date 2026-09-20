@@ -23,6 +23,7 @@ När en fil i skillen ändras, uppdatera de andra två kopiorna i samma arbetsup
 - Varje publicerad live-sida ska ha en diskret GitHub-länk nere till vänster som leder tillbaka till det repo där sidan finns.
 - Varje publicerad live-sida ska ha en diskret teknikknapp nere till höger, med en tangentbordsanpassad modal och en förenklad filstruktur för projektet.
 - README-filen ska innehålla en tydlig länk till sidans live-URL: `https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/`.
+- Länka till `.md`-filer i repot (t.ex. i `Underlag/`) via GitHub:s blob-vy (`https://github.com/kentlundgren/Codex/blob/main/<sökväg>`), inte via GitHub Pages-URL:en. Pages visar filen som oformaterad rå text; blob-vyn renderar Markdown-formateringen och blir lättare att läsa. Gäller bara `.md`-filer — publicerade `.html`-sidor länkas fortfarande via Pages-URL:en.
 
 ## Källor och referenser
 

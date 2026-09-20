@@ -152,6 +152,7 @@ Fullständig genomgång med svenska fall och internationell utblick (Storbritann
 - När materialet bygger på ett huvuddokument ska det markeras tydligt i källförteckningen som huvudkälla. Skriv dokumentets roll först i källnotisen, gärna med fetstil, till exempel: "Samrådsunderlaget – primärkälla till verksamhetsförslaget".
 - Kontrollera att varje extern länk öppnar rätt sida eller dokument och faktiskt stöder påståendet genom att kontrollera avsändare, titel och innehåll. Ersätt eller markera länkar som inte kan verifieras.
 - I käll- och referensförteckningar ska hela den kanoniska URL:en synas som klickbar länktext, inte kortformer som "PDF", ett domännamn eller "läs mer".
+- Länka till `.md`-filer i repot via GitHub:s blob-vy (`https://github.com/kentlundgren/Codex/blob/main/<sökväg>`), inte via GitHub Pages-URL:en — Pages visar filen som oformaterad rå text, blob-vyn renderar Markdown-formateringen.
 - Använd primärkällor: samrådsunderlag/planhandlingar, MKB, domar, myndighetsbeslut, planer och officiell lagtext.
 - Använd Harvardhänvisning i löpande text. Första hänvisningen till en extern källa ska vara en direktlänk.
 - Skriv referenser med författare/organisation, år, titel, direktlänk, hämtdatum och en kort källnotis inom parentes.

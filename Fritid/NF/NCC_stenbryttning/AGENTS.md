@@ -6,6 +6,7 @@
 - Varje publicerad live-sida ska ha en diskret teknikknapp nere till höger. Den öppnar en tangentbordsanpassad modal med teknikval och en förenklad filstruktur för det aktuella projektet.
 - README-filen för varje publicerat sidprojekt ska innehålla en tydlig länk till sidans live-URL.
 - Använd GitHub Pages-URL enligt mönstret `https://kentlundgren.github.io/Codex/<sökväg>/` när sidan ligger i detta repo.
+- Länka till `.md`-filer i repot via GitHub:s blob-vy (`https://github.com/kentlundgren/Codex/blob/main/<sökväg>`), inte via GitHub Pages-URL:en. Pages visar filen som oformaterad rå text; blob-vyn renderar Markdown-formateringen och blir lättare att läsa. Gäller bara `.md`-filer — publicerade `.html`-sidor länkas fortfarande via Pages-URL:en.
 
 ## Källor och referenser
 
