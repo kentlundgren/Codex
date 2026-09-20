@@ -46,9 +46,7 @@ Balanseringsprincipen har tillämpats i flera europeiska länder under lång tid
 
 Innan ett beslut om kompensation tas måste en utredning göras av vilka värden som finns på platsen och hur betydelsefulla de är — något som redan görs normalt i planärenden idag. Det som saknas är att komplettera detta med **konkreta förslag på kompensationsåtgärder**. Kommunen har i grunden kompetensen för detta, men kan i vissa fall behöva köpa in konsultstöd.
 
-## Slutsats
 
-Lunds Naturskyddsförening bör verka för att Lunds kommun inspireras av Lomma och Helsingborg och inför balanseringsprincipen — som generell policy, i alla planärenden, inte bara punktvis.
 
 ## Källförteckning
 
