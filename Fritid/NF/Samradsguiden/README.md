@@ -21,7 +21,7 @@ PRD, SPEC och samtliga fem sidor är byggda och testade lokalt (formulärflöde,
 
 Ankar-retrofit av `index.html` och `fordjupning.html` är gjord (varje H2 och `.subhead`-H3 har ett stabilt `#`-ankare). `verktyg.html` är en JS-guide där stegen har egna div-id:n och behöver inga rubrikankare.
 
-Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.12**, senast ändrad 20 september 2026.
+Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.13**, senast ändrad 20 september 2026.
 
 - **v1.0** — första publicerade versionen: grunddispositionen, kompensationsmodulens tre spår, det interaktiva verktyget.
 - **v1.1** — jämförelsen av de tre sätten att disponera ett yttrande; de fyra kommunexemplen.
@@ -36,6 +36,7 @@ Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en.
 - **v1.10** — rubriken för avsnittet om vad som händer innan vi yttrar oss förtydligad.
 - **v1.11** — ny fördjupning: *Betydande miljöpåverkan — när gränsen är omtvistad*. Tre nivåer (kategoriskt, osäkert/undersökningssamråd, kopplat till en plan), de fyra kriteriegrupperna i miljöbedömningsförordningens 10–13 §§, en argumentationsmetod, och NCC/Skrylle som exempel på den kategoriska (inte omtvistade) vägen.
 - **v1.12** — balanseringsprincipen: kompensationsmodulen i `fordjupning.html` fick SOU 2017:34 (statlig utredning som föreslog kompensationskrav i både MB och PBL) och det tyska Ökokonto/Ökopunkte-systemet. `paverka.html` fick ett nytt avsnitt om proaktivt påverkansarbete, med Lunds Naturskyddsförenings (Per Blomberg) begäran om balanseringsprincip i Lunds kommun som exempel, källhänvisat till `Underlag/Balanseringsprincipen_260913.docx` — presenterat som föreningens egen ståndpunkt, inte Samrådsguidens.
+- **v1.13** — ny terminologiruta i `fordjupning.html`: hur balanseringsprincipen och kompensationsåtgärder hänger ihop (policyåtagande om hela skadelindringshierarkin, kontra det sista, konkreta steget i den). Texten om Per Blombergs förslag i `paverka.html` mjukades till för att göra tydligt att det är ett utkast, ännu inte behandlat av föreningens styrelse — inte en beslutad ståndpunkt. `fordjupning.html` och `paverka.html` fick var sin innehållsförteckning (samma `.snabbnav`-mönster som redan fanns på `lagtexter.html`), och hero-ingresserna kortades ner i motsvarande grad.
 
 Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
 

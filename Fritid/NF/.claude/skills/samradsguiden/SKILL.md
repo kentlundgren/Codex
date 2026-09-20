@@ -122,6 +122,8 @@ Utanför dessa tre spår är kompensation ett rent frivilligt åtagande, antinge
 
 **Skadelindringshierarkin**, som gäller oavsett spår: skador ska i första hand undvikas, i andra hand begränsas, i tredje hand återställas, och först i sista hand kompenseras (Miljösamverkan Sverige, 2021, s. 63).
 
+**Balanseringsprincipen vs. kompensationsåtgärder — håll isär dem i text.** Kompensationsåtgärder är det sista, konkreta steget i skadelindringshierarkin. Balanseringsprincipen är i stället ett policyåtagande att systematiskt tillämpa *hela* hierarkin i alla ärenden av en viss typ, inte bara punktvis. En kommun kan alltså besluta om kompensationsåtgärder i ett enskilt ärende utan att ha antagit balanseringsprincipen som generell policy (så arbetar t.ex. Solna); att anta balanseringsprincipen är ett bredare, generellt åtagande som gäller i förväg. Termen har tyskt ursprung; Helsingborgs stad använder den uttryckligen som namn på sitt arbetssätt.
+
 **Central regel:** kompensationsåtgärder får aldrig påverka själva tillståndsbedömningen. Myndigheten får inte bevilja ett tillstånd som annars skulle avslås, med hänvisning till nyttan av en föreslagen kompensationsåtgärd. Formulera därför kompensationsförslag alltid som *"om tillstånd ändå ges …"*, aldrig som ett skäl att bevilja det.
 
 **Metod: från kritisk fråga till konstruktivt förslag**
