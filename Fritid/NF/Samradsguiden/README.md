@@ -21,7 +21,7 @@ PRD, SPEC och samtliga fem sidor är byggda och testade lokalt (formulärflöde,
 
 Ankar-retrofit av `index.html` och `fordjupning.html` är gjord (varje H2 och `.subhead`-H3 har ett stabilt `#`-ankare). `verktyg.html` är en JS-guide där stegen har egna div-id:n och behöver inga rubrikankare.
 
-Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.11**, senast ändrad 19 september 2026.
+Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.12**, senast ändrad 20 september 2026.
 
 - **v1.0** — första publicerade versionen: grunddispositionen, kompensationsmodulens tre spår, det interaktiva verktyget.
 - **v1.1** — jämförelsen av de tre sätten att disponera ett yttrande; de fyra kommunexemplen.
@@ -35,6 +35,7 @@ Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en.
 - **v1.9** — lagrummen i jämförelsetabellen på Dispositionerna länkar till miljöbalkens lydelse.
 - **v1.10** — rubriken för avsnittet om vad som händer innan vi yttrar oss förtydligad.
 - **v1.11** — ny fördjupning: *Betydande miljöpåverkan — när gränsen är omtvistad*. Tre nivåer (kategoriskt, osäkert/undersökningssamråd, kopplat till en plan), de fyra kriteriegrupperna i miljöbedömningsförordningens 10–13 §§, en argumentationsmetod, och NCC/Skrylle som exempel på den kategoriska (inte omtvistade) vägen.
+- **v1.12** — balanseringsprincipen: kompensationsmodulen i `fordjupning.html` fick SOU 2017:34 (statlig utredning som föreslog kompensationskrav i både MB och PBL) och det tyska Ökokonto/Ökopunkte-systemet. `paverka.html` fick ett nytt avsnitt om proaktivt påverkansarbete, med Lunds Naturskyddsförenings (Per Blomberg) begäran om balanseringsprincip i Lunds kommun som exempel, källhänvisat till `Underlag/Balanseringsprincipen_260913.docx` — presenterat som föreningens egen ståndpunkt, inte Samrådsguidens.
 
 Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
 
@@ -45,13 +46,14 @@ Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkt
 - `SPEC_samradsguiden.md` — teknisk specifikation för grundverktyget: datamodell, formulärlogik, exportlogik, gränsfall, verifieringschecklista.
 - `SPEC_lagtexter.md` — teknisk specifikation för `lagtexter.html` och `paverka.html`: urval av de tio posterna, HTML-mallar, CSS-tillägg, tidslinjernas innehåll, Lund-anknytningen, källhantering.
 - `index.html` — kort översikt: grundprincipen, jämförelsetabell PBL/MB, de tre skedena, introduktion till kompensationsmodulen.
-- `paverka.html` — strategilagret: vilken lag som styr när kommunen antar en plan respektive när ett bolag söker tillstånd, tre vertikala tidslinjer över när synpunkter kan lämnas, klagorättsregeln, miljöorganisationers talerätt, och en ruta om hur Lunds kommun beskriver processen.
+- `paverka.html` — strategilagret: vilken lag som styr när kommunen antar en plan respektive när ett bolag söker tillstånd, tre vertikala tidslinjer över när synpunkter kan lämnas, klagorättsregeln, miljöorganisationers talerätt, en ruta om hur Lunds kommun beskriver processen, och ett exempel på proaktivt påverkansarbete (LNF:s begäran om balanseringsprincip).
 - `fordjupning.html` — fullständigt sakinnehåll: alla dispositionsmallar, modulen om betydande miljöpåverkan, hela kompensationsmodulen, de två konkreta exemplen, källförteckning.
 - `lagtexter.html` — de tio viktigaste lagtexterna ordagrant, med källa och datum, en förklaring i klartext bakom ett klick per post, en ordlista och en bakgrundsruta om Århuskonventionen.
 - `verktyg.html` — den interaktiva guiden: fem steg som genererar en ifyllningsbar mall med sex delar, sammanställningsvy, kopiera- och nedladdningsfunktion.
 - `data.js` — all sakdata verktyget använder: dispositionsmallarna och kompensationsmodulens spår.
 - `verktyg.js` — formulärlogiken och exportlogiken bakom `verktyg.html`.
 - `styles.css`, `script.js` — delad formgivning och delade komponenter (toppmeny, utfällbara avsnitt, teknikmodal, tidslinjer, direktlänkshantering).
+- `Underlag/` — bakgrundsmaterial som länkas som källa från sidorna, t.ex. `Balanseringsprincipen_260913.docx` (Per Blomberg, Lunds Naturskyddsförening).
 
 ## Djuplänkar
 
