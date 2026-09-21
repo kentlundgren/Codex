@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talepunkter – Försäkringskassan 2026-09-22</title>
+<style>
+  :root {
+    --navy: #1a3a5c;
+    --blue: #2e75b6;
+    --lightblue: #eaf2fa;
+    --ink: #1f2430;
+    --muted: #6b7280;
+    --paper: #ffffff;
+    --bg: #eef1f5;
+    --hint-border: #b8860b;
+    --hint-bg: #fff8e1;
+    --warn: #a3184e;
+    --reserve: #8a8f98;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, 'Charter', 'Times New Roman', serif;
+    line-height: 1.65;
+  }
+  .ui, button, .tp-num, .tp-title, .doc-head h1, .doc-head .meta, .toolbar {
+    font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  /* ---------- toolbar ---------- */
+  .toolbar {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--navy);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    display: flex; gap: 0.6rem; align-items: center; justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  .toolbar .label { font-size: 0.85rem; opacity: 0.85; }
+  .toolbar-buttons { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .toolbar button {
+    background: var(--blue); color: white; border: none;
+    padding: 0.5rem 0.9rem; border-radius: 6px; font-size: 0.85rem;
+    cursor: pointer; font-weight: 600;
+    transition: background 0.15s ease;
+  }
+  .toolbar button:hover { background: #3d8ad6; }
+  .toolbar button.secondary { background: rgba(255,255,255,0.15); }
+  .toolbar button.secondary:hover { background: rgba(255,255,255,0.28); }
+
+  /* ---------- page/layout ---------- */
+  .page { max-width: 780px; margin: 0 auto; padding: 1.5rem 1.5rem 4rem; }
+  header.doc-head {
+    text-align: center; margin: 1.5rem 0 2rem;
+    padding-bottom: 1.2rem; border-bottom: 3px solid var(--navy);
+  }
+  header.doc-head h1 { color: var(--navy); font-size: 1.6rem; margin: 0 0 0.3rem; }
+  header.doc-head .meta { color: var(--muted); font-size: 0.95rem; }
+  .instructions {
+    background: var(--lightblue); border-left: 4px solid var(--blue);
+    padding: 0.9rem 1.1rem; border-radius: 6px; font-size: 0.9rem;
+    color: var(--navy); margin-bottom: 1.8rem;
+  }
+  .instructions strong { color: var(--navy); }
+
+  /* ---------- talepunkt card ---------- */
+  .talepunkt {
+    background: var(--paper);
+    border-left: 5px solid var(--blue);
+    border-radius: 8px;
+    padding: 1.3rem 1.6rem 1.5rem;
+    margin-bottom: 1.4rem;
+    box-shadow: 0 1px 4px rgba(20,30,50,0.08);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .talepunkt.reserve { border-left-color: var(--reserve); background: #fafbfc; }
+  .tp-head { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.3rem; }
+  .tp-num {
+    background: var(--navy); color: white; font-weight: 700;
+    width: 1.8rem; height: 1.8rem; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.95rem; flex-shrink: 0;
+  }
+  .reserve .tp-num { background: var(--reserve); }
+  .tp-title { margin: 0; font-size: 1.08rem; color: var(--navy); font-weight: 700; }
+  .tp-trigger { font-size: 0.82rem; color: var(--muted); font-style: italic; margin: 0.15rem 0 0.8rem 2.5rem; }
+  .subhead {
+    font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); font-weight: 700; margin: 1rem 0 0.35rem;
+  }
+  blockquote.quote {
+    margin: 0; padding: 0.2rem 0 0.2rem 1rem;
+    border-left: 3px solid var(--lightblue);
+    font-size: 1.08rem;
+  }
+  .source-line { font-size: 0.82rem; color: var(--muted); margin-top: 0.6rem; }
+  .source-line a { color: var(--blue); }
+
+  .bridge-note {
+    font-size: 0.85rem; color: var(--navy); background: var(--lightblue);
+    border-left: 3px solid var(--blue); padding: 0.5rem 0.8rem;
+    border-radius: 4px; margin: 0.6rem 0 1rem;
+  }
+  .sas-figure {
+    margin: 1rem 0; text-align: center;
+    background: #fafbfc; border: 1px solid #e2e6ec; border-radius: 8px;
+    padding: 0.9rem;
+  }
+  .sas-figure img { max-width: 100%; height: auto; border-radius: 4px; }
+  .sas-figure figcaption {
+    font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem;
+  }
+
+  /* ---------- hint mechanism ---------- */
+  .hint {
+    border-bottom: 2px dotted var(--hint-border);
+    cursor: help;
+    font-weight: 700;
+    padding: 0 1px;
+    border-radius: 2px;
+    transition: background 0.15s ease;
+  }
+  .hint:hover, .hint:focus, .hint.open {
+    background: var(--hint-bg);
+    outline: none;
+  }
+  .hint.icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 1.15rem; height: 1.15rem; border-radius: 50%;
+    background: var(--hint-border); color: white;
+    font-size: 0.7rem; font-weight: 700; line-height: 1;
+    border-bottom: none; vertical-align: middle; margin: 0 2px;
+  }
+  .hint.icon:hover, .hint.icon:focus, .hint.icon.open { background: #96700a; }
+  #tooltip {
+    position: fixed;
+    max-width: 300px;
+    background: var(--navy);
+    color: white;
+    padding: 0.65rem 0.85rem;
+    border-radius: 8px;
+    font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(4px);
+    pointer-events: none;
+    transition: opacity 0.12s ease, transform 0.12s ease;
+  }
+  #tooltip.visible { opacity: 1; transform: translateY(0); }
+  #tooltip::after {
+    content: "";
+    position: absolute;
+    border: 6px solid transparent;
+  }
+  #tooltip.arrow-top::after { border-bottom-color: var(--navy); top: -12px; left: 16px; }
+  #tooltip.arrow-bottom::after { border-top-color: var(--navy); bottom: -12px; left: 16px; }
+
+  /* ---------- reveal-all mode ---------- */
+  .hint-list {
+    display: none;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0.8rem 1rem;
+    background: var(--hint-bg);
+    border: 1px solid #f0dfa0;
+    border-radius: 6px;
+    font-size: 0.85rem;
+  }
+  body.reveal .hint-list { display: block; }
+  .hint-list li { margin-bottom: 0.4rem; }
+  .hint-list li:last-child { margin-bottom: 0; }
+  .hint-list strong { color: var(--hint-border); }
+  body.reveal .hint { background: #fdf4d8; }
+
+  footer.doc-foot {
+    text-align: center; font-size: 0.78rem; color: var(--muted);
+    margin-top: 2.5rem;
+  }
+
+  /* ---------- print ---------- */
+  @media print {
+    @page { margin: 1.6cm; }
+    body { background: white; }
+    .toolbar, #tooltip, .hint-list, .instructions, .no-print { display: none !important; }
+    .page { max-width: 100%; padding: 0; }
+    .talepunkt {
+      box-shadow: none; border: 1px solid #ccc; border-left: 4px solid #888;
+      margin-bottom: 0.9rem; padding: 0.9rem 1.1rem;
+    }
+    .talepunkt.reserve { border-left: 4px solid #aaa; }
+    .hint {
+      border-bottom: none; background: none !important;
+      color: inherit; font-weight: 700;
+    }
+    .hint.icon { display: none !important; }
+    header.doc-head { margin: 0 0 1rem; padding-bottom: 0.6rem; }
+    a { color: inherit; text-decoration: underline; }
+    .tp-trigger { color: #444; }
+    .sas-figure {
+      break-inside: avoid; page-break-inside: avoid;
+      max-width: 75%; margin: 0.7rem auto; padding: 0.5rem;
+    }
+    .sas-figure figcaption { color: #444; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <span class="label">Souffleursidan &middot; hovra/klicka på markerade ord för ledtrådar</span>
+  <div class="toolbar-buttons">
+    <button id="toggleHints" class="secondary">Visa alla ledtrådar</button>
+    <button onclick="window.print()">Skriv ut / Spara som PDF</button>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="doc-head">
+    <h1>Talepunkter – Försäkringskassan</h1>
+    <div class="meta">Controller till Bidragsbrottsavdelningens stab &middot; Intervju 2026-09-22, kl. 12:30</div>
+  </header>
+
+  <div class="instructions no-print">
+    <strong>Så funkar sidan:</strong> ord med prickad understrykning har en dold coaching-kommentar
+    – hovra (eller klicka, om du är på mobil/platta) för att läsa den. Vid utskrift försvinner alla
+    ledtrådar automatiskt, kvar blir bara den rena texten du faktiskt ska säga. Tanken: om du repeterar
+    på skärmen och hovrar över orden, minns du ledtråden ändå när du senare bara har den tysta
+    utskriften framför dig.
+  </div>
+
+  <!-- ============ TALEPUNKT 1 ============ -->
+  <section class="talepunkt" data-tp="1">
+    <div class="tp-head"><span class="tp-num">1</span><h2 class="tp-title">Om din egen bakgrund kopplat till produktionsstyrning</h2></div>
+    <p class="tp-trigger">Trigger: "vilken erfarenhet har du av produktionsstyrning?" – eller för att öppna talepunkt 2 med en personlig brygga.</p>
+    <blockquote class="quote">
+      "Jag jobbade som gymnasieingenjör på Kalmar Verkstad, först som trainee, sedan som
+      <span class="hint" tabindex="0" data-tip="Du VAR det själv – inte bara 'mötte' andra som var det. Säg det med den självklarheten.">produktionsingenjör</span>.
+      Där fick jag tidigt med mig vikten av att förstå flaskhalsar, ställtid, och att bygga rutiner kring
+      produktionsflödet. Hos Försäkringskassan är principen densamma, fast med ärenden i stället för produkter
+      – flödet ska vara effektivt, men framför allt
+      <span class="hint" tabindex="0" data-tip="Kärnpoängen i hela svaret. En personlig, skarpare formulering av Riksrevisionens målkonflikt skyndsamhet vs. rättslig kvalitet.">rättvist</span>:
+      samma typ av fall ska behandlas lika, oavsett handläggare eller tidpunkt. Och om ett fel inträffar tror
+      jag inte att lärdom och förbättring uppstår genom att
+      <span class="hint" tabindex="0" data-tip="VIKTIGT: gäller interna handläggningsfel/rutinbrister – INTE överseende med faktiskt bidragsbrott hos de granskade. Var tydlig med skillnaden.">skälla på den enskilda handläggaren</span>
+      – det är i stället bättre att titta på vad som kan förbättras, och kommunicera rutiner och regler på ett
+      sätt som gör att samma fel undviks i framtiden."
+    </blockquote>
+    <ul class="hint-list no-print">
+      <li><strong>produktionsingenjör:</strong> du VAR det själv – inte bara mötte andra som var det.</li>
+      <li><strong>rättvist:</strong> kärnpoängen – samma fall, samma behandling, oavsett handläggare/tidpunkt.</li>
+      <li><strong>skälla på handläggaren:</strong> gäller interna fel, INTE bidragsbrott hos de granskade.</li>
+      <li>Ärlig, inte överdriven – du har inte arbetat med produktionsstyrning som controller. Poängen är ursprunget (ingenjör) + den parallella disciplinen (controller).</li>
+      <li>Cirka 30–40 sekunder högt uppläst.</li>
+      <li>Reserv om de frågar mer: talepunkt 4b (kalkyltidslinje, Bjärred).</li>
+    </ul>
+  </section>
+
+  <!-- ============ TALEPUNKT 2 ============ -->
+  <section class="talepunkt" data-tp="2">
+    <div class="tp-head"><span class="tp-num">2</span><h2 class="tp-title">Om produktionsstyrning</h2></div>
+    <p class="tp-trigger">Trigger: frågor om rollen, om produktionsstyrning, om vad du kan bidra med. Mest sannolikt att komma upp – det är kärnan i tjänsten.</p>
+    <blockquote class="quote">
+      "Gränsvärdena i de här besluten är egentligen
+      <span class="hint" tabindex="0" data-tip="Viktig ram: gränsvärden bestäms av politiken, inte av dig eller FK:s tjänstemän – du styr INTE reglerna, du styr hur de slår igenom.">politiska ställningstaganden</span>
+      – vad som gäller just nu bestäms av politiken, inte av mig. Därför behöver de gå att uppdatera enkelt,
+      som parametrar, i stället för att vara hårdkodade.
+      <span class="hint" tabindex="0" data-tip="Boundary-mening – central. Ta aldrig bort den, den håller dig i rätt roll (styra/följa upp, inte bygga).">Jag bygger inte beslutsflödena själv</span>
+      – min roll som controller är att följa hur en sådan förändring slår igenom i handläggningen, att
+      övergången blir kort, lite som
+      <span class="hint" tabindex="0" data-tip="Medvetet eko av talepunkt 1! Säg ordet 'ställtid' rakt ut – det knyter ihop din ingenjörs- och controllerbakgrund till EN sammanhållen världsbild.">ställtid</span>
+      i en fabrik, och att följa upp i efterhand att resultatet faktiskt blev det som var tänkt."
+    </blockquote>
+    <ul class="hint-list no-print">
+      <li><strong>politiska ställningstaganden:</strong> gränsvärden styrs av politiken – inte något du eller FK äger själva.</li>
+      <li><strong>bygger inte beslutsflödena själv:</strong> boundary-meningen – central, ta aldrig bort den.</li>
+      <li><strong>ställtid:</strong> medvetet eko av talepunkt 1 – säg det rakt ut, sammanhållen världsbild.</li>
+    </ul>
+  </section>
+
+  <!-- ============ TALEPUNKT 3 ============ -->
+  <section class="talepunkt" data-tp="3">
+    <div class="tp-head"><span class="tp-num">3</span><h2 class="tp-title">Om teknikskiftet till SAS Viya</h2></div>
+    <p class="tp-trigger">Trigger: frågor om SAS Viya, teknikskiftet, digitalisering, din egen roll i det.</p>
+    <blockquote class="quote">
+      "Försäkringskassan har använt SAS länge – Viya är den nuvarande generationen av samma plattform,
+      inte ett byte av leverantör. Jag ser min roll i det SAS själva kallar
+      <span class="hint" tabindex="0" data-tip="SAS egen term ur deras 'Data and AI Life Cycle'-modell (Access/Prepare/Govern → Develop Models → Automate/Monitor/Retrain = Deploy Insights). Du hör hemma till höger: tolka och agera, inte bygga.">'Deploy Insights'</span>
+      – att tolka utfallet av modellerna, inte bygga dem. Det är samma förmåga jag redan har som controller:
+      att se mönster när utfall jämförs mot förväntan. Med SAS Viya handlar det om samma sak, fast i en helt
+      annan skala –
+      <span class="hint" tabindex="0" data-tip="Verifierat direkt mot annonstexten på vakanser.se (kollad 2026-09-21). Säg 'beslut' – INTE 'ärenden' – när du citerar just den här siffran, det är deras eget ord.">21 miljoner beslut</span>
+      om året."
+    </blockquote>
+    <ul class="hint-list no-print">
+      <li><strong>Deploy Insights:</strong> SAS egen term – höger sida i deras modell, tolka/agera, inte bygga modellen.</li>
+      <li><strong>21 miljoner beslut:</strong> verifierat från annonsen. Säg "beslut", inte "ärenden".</li>
+      <li>Reserv om de frågar "hur konkret?": taggning av beslut för att följa flöden, extra uppföljning efter regelverksändringar (kopplar till talepunkt 2).</li>
+    </ul>
+  </section>
+
+  <!-- ============ TALEPUNKT 4 ============ -->
+  <section class="talepunkt" data-tp="4">
+    <div class="tp-head"><span class="tp-num">4</span><h2 class="tp-title">Om avhandlingen</h2></div>
+    <p class="tp-trigger">Trigger: frågor om utbildning, forskningsbakgrund, licentiaten. Endast om den kommer upp.</p>
+    <blockquote class="quote">
+      "Min licentiatavhandling handlar om föreställningar om konkurrenskraft inom förnybar energi. Vi tittade
+      på olika former av konkurrenskraft – bland annat pris, men också hur man är positionerad på marknaden.
+      Jag räknade också på kostnader för energibolag, men
+      <span class="hint" tabindex="0" data-tip="Den viktigaste meningen i svaret. SÄG ALDRIG 'kvantitativ metod' om avhandlingen som helhet – det är fel. Forskningsmetoden var kvalitativ/aktörsorienterad; bara bilaga 4 (systemkostnadskalkylen) var kvantitativ.">huvudpoängen var kvalitativ</span>:
+      vi såg att det inte alltid var priset som styrde hur medborgare valde och köpte sin elenergi."
+    </blockquote>
+    <ul class="hint-list no-print">
+      <li><strong>huvudpoängen var kvalitativ:</strong> den viktigaste meningen i hela svaret. Säg ALDRIG "kvantitativ metod" om avhandlingen som helhet – bara bilaga 4 var kvantitativ.</li>
+    </ul>
+  </section>
+
+  <!-- ============ TALEPUNKT 4b (RESERV) ============ -->
+  <section class="talepunkt reserve" data-tp="4b">
+    <div class="tp-head"><span class="tp-num">4b</span><h2 class="tp-title">Reserv – kalkyltidslinjen och Bjärred-exemplet</h2></div>
+    <p class="tp-trigger">Trigger: ANNAN fråga – "hur håller du dig aktuell med AI/kalkyler?", "berätta om ditt ideella engagemang". Inte samma fråga som talepunkt 4.</p>
+    <blockquote class="quote">
+      "Den kalkylkompetensen har jag hållit vid liv genom hela karriären – jag räknade på vindkraft redan som
+      civilingenjörsstudent, och gör det fortfarande ideellt i Skånes vindkraftsakademi. Ett annat exempel: i
+      <span class="hint" tabindex="0" data-tip="Det HÄR exemplet är guld: oplanerat och äkta – bevisar att produktionsflödestänket är genuint, inte inövat för just den här intervjun. Behåll det ordagrant.">Bjärreds Saltsjöbad</span>,
+      en kallbadsförening jag är aktiv i, följer jag upp både energianvändning och hur många medlemmar som
+      passerar grinden varje dag – i grunden samma produktionsflödestänk, fast i en helt annan kontext. Först
+      i Excel, på senare tid med hjälp av generativ AI för bättre diagram."
+    </blockquote>
+    <ul class="hint-list no-print">
+      <li><strong>Bjärreds Saltsjöbad:</strong> oplanerat, äkta exempel – ingen kunde ha coachat fram det. Bevisar genuint produktionsflödestänk.</li>
+    </ul>
+  </section>
+
+  <!-- ============ TALEPUNKT 5 ============ -->
+  <section class="talepunkt" data-tp="5">
+    <div class="tp-head"><span class="tp-num">5</span><h2 class="tp-title">Om generativ AI</h2></div>
+    <p class="tp-trigger">Trigger: frågor om AI, Copilot, hur AI påverkar arbetet.</p>
+    <blockquote class="quote">
+      "Generativ AI är ett kraftfullt verktyg som utvecklas snabbt. I min roll som controller använder jag det
+      för att granska och analysera budgetsiffror och text –
+      <span class="hint" tabindex="0" data-tip="Säg detta PROAKTIVT, vänta inte på att bli frågad. Visar säkerhetsmedvetande – exakt det annonsen efterfrågar explicit.">aldrig personuppgifter</span>,
+      det är en gräns jag är noga med, särskilt i en roll som den här på Försäkringskassan. På fritiden har
+      jag byggt egna analysverktyg i sammanhang som medvetet inte rör känslig information – till exempel
+      diagram över elanvändning och medlemsantal i en kallbadsförening, och underlag till yttranden i
+      <span class="hint" tabindex="0" data-tip="Rätt namn: Lunds Naturskyddsförening. INTE 'naturskyddsförbund' – lätt att slinta på i tal, dubbelkolla.">Lunds Naturskyddsförening</span>.
+      Som produktionsstyrnings-controller ser jag min roll som att hitta mönster i aggregerade utfall, inte
+      att hantera enskilda ärenden – det gör att jag kan dra nytta av AI-verktyg utan att det någonsin handlar
+      om persondata."
+      <span class="hint icon" tabindex="0" data-tip="Säg ALDRIG: 'jag ser fram emot...' (förbjuden fras, gäller även muntligt) eller kalla felaktiga utbetalningar 'en stöld' (för laddat, krockar med talepunkt 1:s 'fel som lärdom').">!</span>
+    </blockquote>
+    <ul class="hint-list no-print">
+      <li><strong>aldrig personuppgifter:</strong> säg det proaktivt – säkerhetsmedvetande är ett plus, inte en ursäkt.</li>
+      <li><strong>Lunds Naturskyddsförening:</strong> rätt namn, inte "naturskyddsförbund".</li>
+      <li><strong>Säg ALDRIG:</strong> "jag ser fram emot..." eller kalla något "en stöld" – för laddat, krockar med talepunkt 1.</li>
+    </ul>
+  </section>
+
+  <!-- ============ TALEPUNKT 6 ============ -->
+  <section class="talepunkt" data-tp="6">
+    <div class="tp-head"><span class="tp-num">6</span><h2 class="tp-title">Om du blir tillfrågad vad du konkret undersökt/testat</h2></div>
+    <p class="tp-trigger">Trigger: "har du kollat upp oss/tekniken innan intervjun?"</p>
+    <blockquote class="quote">
+      "Ja, jag har lagt ner tid på det – bland annat sett en del av SAS Users egna videor på YouTube, för att
+      få en konkret känsla för plattformen. Till exempel
+      <span class="hint" tabindex="0" data-tip="Verifierad källa (2026-09-21): SAS Users på YouTube (@SASUsers), 2:26 min. URL finns i källraden nedan om du vill dubbelkolla innan imorgon.">'SAS Viya and the Data and AI Life Cycle'</span>
+      – den visar en bra bild, Data to Decision, där jag ser min roll som controller: att tolka utfallet av de
+      modeller som implementerats i SAS Viya. Jag har också testat plattformen själv i en gratis trial och
+      tittat på hur Intelligent Decisioning fungerar konkret, bland annat ett exempel med lånebeslut."
+    </blockquote>
+    <p class="source-line">Källa: <a href="https://www.youtube.com/watch?v=K39rUwJil8c" target="_blank" rel="noopener">youtube.com/watch?v=K39rUwJil8c</a> – SAS Users (@SASUsers)</p>
+  </section>
+
+  <!-- ============ TALEPUNKT 7 ============ -->
+  <section class="talepunkt" data-tp="7">
+    <div class="tp-head"><span class="tp-num">7</span><h2 class="tp-title">Fråga att ställa tillbaka</h2></div>
+    <p class="tp-trigger">Huvudfråga om du bara hinner en. Back-up om samtalet redan är tekniskt/analytiskt. Praktisk följdfråga sist, inte som huvudfråga.</p>
+
+    <p class="subhead">Huvudfråga – bygg upp med bilden</p>
+
+    <p class="bridge-note no-print">Säg detta, visa bilden, säg sedan huvudfrågan. Fråga om lov kort innan du delar skärm: <em>"Får jag visa en bild jag hittade på er egen kanal, som ligger till grund för min fråga?"</em></p>
+
+    <blockquote class="quote">
+      "Det jag ser till höger i den här bilden – <span class="hint" tabindex="0" data-tip="Samma Deploy Insights-positionering som talepunkt 3. Att upprepa den här, med konkreta egna exempel, gör den till ett genomgående mönster i hela intervjun, inte bara ett engångscitat.">Deploy Insights</span>
+      – är faktiskt hur jag genomgående jobbar med analys. Jag analyserar data för att hitta vad som kan leda
+      till ett beslut, och avslutar alltid med att publicera resultatet – diagram, visualiseringar, tabeller.
+      Två exempel från mitt eget ideella arbete:
+      <span class="hint" tabindex="0" data-tip="kentlundgren.github.io/Bjerred-el – uppföljning av elförbrukning och kostnad för Bjärreds Saltsjöbad, publicerad öppet.">uppföljning av elanvändning i Bjärreds Saltsjöbad</span>,
+      och
+      <span class="hint" tabindex="0" data-tip="kentlundgren.github.io/foreningar/BjerredsSaltsjobad/inpasseringar – medlemsstatistik per månad, flerårsjämförelse.">hur många medlemmar som passerar grinden varje månad</span>
+      – båda publicerade öppet på GitHub. Jag kallar mitt eget arbetssätt med generativ AI för
+      <span class="hint" tabindex="0" data-tip="kentlundgren.github.io/AI-teknik/AI_modeller/Claude/olika_Claude_modeller – fyra faser (PRD, styrfiler, arbetsyta, version/publicering). Fas 3 är just visualisering och publicering via GitHub Pages.">Claude-kompassen</span>,
+      och även där slutar processen med samma sak: ett steg som handlar om att visualisera och publicera
+      resultatet."
+    </blockquote>
+
+    <figure class="sas-figure">
+      <img src="Bilder/manage_data_develop_models__Deploy_insights.jpg" alt="SAS Viya: Data and AI Life Cycle – Manage Data, Develop Models, Deploy Insights, från Question till Decision">
+      <figcaption>SAS egen modell – "Data to Decisions". Källa: SAS Viya Quick Start Tutorial, se talepunkt 6.</figcaption>
+    </figure>
+
+    <blockquote class="quote">
+      "Hur tänker ni att övergången till SAS Viya förändrar vardagen för er produktionsstyrning – är det
+      främst nya datakällor och analysmöjligheter, eller förändras också själva sättet ni planerar kapacitet
+      mot ärendeflöden?"
+    </blockquote>
+
+    <p class="subhead">Skarpare back-up</p>
+    <blockquote class="quote">
+      "Ser ni att bättre dataanalys via SAS Viya kan hjälpa till att hantera balansen mellan snabb
+      handläggning och rättslig kvalitet i produktionsstyrningen, eller är det två separata spår?"
+    </blockquote>
+
+    <p class="subhead">Praktisk följdfråga (om utrymme finns)</p>
+    <blockquote class="quote">
+      "En praktisk fråga också, eftersom jag skulle sitta i Malmö: hur ser samarbetet ut mellan orter i
+      vardagen? Sitter de som jobbar direkt med data och modeller i SAS Viya främst i Stockholm, och hur
+      vanligt är det med distansmöten via Teams?"
+    </blockquote>
+
+    <ul class="hint-list no-print">
+      <li><strong>Bryggan innan bilden:</strong> visar att Deploy Insights inte bara är ett citat från SAS utan ett genomgående mönster i hur du faktiskt jobbar – konkret bevisat med egna, publicerade projekt.</li>
+      <li><strong>Bjärred-el / inpasseringar:</strong> egna GitHub-publicerade exempel – nämn dem kort, inga URL:er behöver sägas högt.</li>
+      <li><strong>Claude-kompassen:</strong> ditt eget ramverk för AI-arbete – fas 3 är publicering/visualisering, samma mönster igen.</li>
+      <li>Fråga om lov innan du delar skärm för att visa bilden. Ha ett verbalt backup-läge redo om skärmdelning krånglar.</li>
+    </ul>
+  </section>
+
+  <footer class="doc-foot">
+    Källa för allt innehåll: <code>Talepunkter_260922.md</code>, <code>SAS-produktionsstyrning.md</code> och
+    <code>Underlag_intervjuforberedelse_260916.md</code> i samma mapp. Muntligt tränat 2026-09-21.
+  </footer>
+
+</div>
+
+<div id="tooltip" class="no-print" role="tooltip"></div>
+
+<script>
+(function () {
+  var tooltip = document.getElementById('tooltip');
+  var openHint = null;
+
+  function positionTooltip(target) {
+    var rect = target.getBoundingClientRect();
+    var ttRect = tooltip.getBoundingClientRect();
+    var top = rect.top - ttRect.height - 12;
+    var arrowClass = 'arrow-bottom';
+    if (top < 8) {
+      top = rect.bottom + 12;
+      arrowClass = 'arrow-top';
+    }
+    var left = rect.left;
+    var maxLeft = window.innerWidth - ttRect.width - 12;
+    if (left > maxLeft) left = Math.max(8, maxLeft);
+    if (left < 8) left = 8;
+    tooltip.style.top = top + 'px';
+    tooltip.style.left = left + 'px';
+    tooltip.classList.remove('arrow-top', 'arrow-bottom');
+    tooltip.classList.add(arrowClass);
+  }
+
+  function showTip(el) {
+    tooltip.textContent = el.getAttribute('data-tip');
+    tooltip.classList.add('visible');
+    el.classList.add('open');
+    openHint = el;
+    // Position after content is set so size is correct
+    requestAnimationFrame(function () { positionTooltip(el); });
+  }
+
+  function hideTip() {
+    tooltip.classList.remove('visible');
+    if (openHint) openHint.classList.remove('open');
+    openHint = null;
+  }
+
+  document.querySelectorAll('.hint').forEach(function (el) {
+    el.addEventListener('mouseenter', function () { showTip(el); });
+    el.addEventListener('mouseleave', hideTip);
+    el.addEventListener('focus', function () { showTip(el); });
+    el.addEventListener('blur', hideTip);
+    // touch / click support
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (openHint === el) { hideTip(); }
+      else { showTip(el); }
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (openHint && !e.target.classList.contains('hint')) hideTip();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') hideTip();
+  });
+  window.addEventListener('scroll', function () {
+    if (openHint) positionTooltip(openHint);
+  }, true);
+
+  var toggleBtn = document.getElementById('toggleHints');
+  toggleBtn.addEventListener('click', function () {
+    var revealed = document.body.classList.toggle('reveal');
+    toggleBtn.textContent = revealed ? 'Dölj ledtrådar' : 'Visa alla ledtrådar';
+    if (revealed) hideTip();
+  });
+})();
+</script>
+
+</body>
+</html>
