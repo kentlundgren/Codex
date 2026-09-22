@@ -171,4 +171,14 @@ textarea { width:100%; min-height:130px; padding:12px 14px; border:1px solid var
 .warning-message { margin-top:12px; padding:10px 14px; color:#6b4a12; background:var(--alert); border-left:4px solid var(--gold); font:15px Arial,sans-serif; }
 .warning-message[hidden] { display:none; }
 .step-nav { display:flex; gap:12px; margin-top:20px; }
+
+/* Här skedde en uppdatering 23 september 2026: kryssrader för Granska planen. */
+.check-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:12px 18px; max-width:760px; margin:16px 0 0; }
+.check-progress { margin:0; color:var(--muted); font:15px Arial,sans-serif; }
+.check-list { max-width:760px; margin:18px 0 0; padding:0; list-style:none; }
+.check-item { display:flex; align-items:flex-start; gap:12px; padding:10px 12px; border-bottom:1px solid var(--line); cursor:pointer; }
+.check-item:has(input:checked) { background:#eef4e7; }
+.check-item input { margin-top:6px; flex:none; }
+.check-item span { flex:1; }
+
 @media (max-width:700px) { body { font-size:17px; } .hero__content { min-height:340px; padding:55px 0; } .cards,.definitions { grid-template-columns:1fr; } .section { padding:44px 0; } }

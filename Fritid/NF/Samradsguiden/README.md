@@ -1,12 +1,13 @@
 # Samrådsguiden
 
-Ett verktyg för hur privatpersoner och miljöorganisationer kan disponera och lägga upp yttranden och synpunkter under ett samråd — enligt både plan- och bygglagen (PBL) och miljöbalken (MB), med en fördjupad modul om betydande miljöpåverkan, en om kompensationsåtgärder, ett strategilager om hur man påverkar i rätt tid, och de tio viktigaste lagtexterna ordagrant. Materialet är ett bidrag till fortsatt diskussion, inte ett beslutat ställningstagande, och företräder inte någon organisation.
+Ett verktyg för hur privatpersoner och miljöorganisationer kan disponera och lägga upp yttranden och synpunkter under ett samråd — enligt både plan- och bygglagen (PBL) och miljöbalken (MB), med en fördjupad modul om betydande miljöpåverkan, en om kompensationsåtgärder, ett strategilager om hur man påverkar i rätt tid, en granskningschecklista för sakfrågor, och de tio viktigaste lagtexterna ordagrant. Materialet är ett bidrag till fortsatt diskussion, inte ett beslutat ställningstagande, och företräder inte någon organisation.
 
 ## Live-sida
 
 [Öppna Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/)
 
 - Så påverkar vi: [paverka.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html)
+- Granska planen (checklista): [checklista.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/checklista.html)
 - Dispositionerna (fördjupning): [fordjupning.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/fordjupning.html)
 - Lagtexterna: [lagtexter.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html)
 - Bygg ditt yttrande (interaktiv guide): [verktyg.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/verktyg.html)
@@ -17,11 +18,11 @@ Ett verktyg för hur privatpersoner och miljöorganisationer kan disponera och l
 
 ## Status
 
-PRD, SPEC och samtliga fem sidor är byggda och testade lokalt (formulärflöde, alla villkorliga fält, kopiera- och nedladdningsfunktion, accordion-komponenter, toppmeny, tidslinjer). Innehållsproduktionen har några kvarvarande öppna frågor för kompensationsmodulen, se `PRD_samradsguiden.md`, avsnitt 13.
+PRD, SPEC och samtliga sex sidor är byggda och testade lokalt (formulärflöde, alla villkorliga fält, kopiera- och nedladdningsfunktion, accordion-komponenter, toppmeny, tidslinjer, granskningschecklista). Innehållsproduktionen har några kvarvarande öppna frågor för kompensationsmodulen, se `PRD_samradsguiden.md`, avsnitt 13.
 
 Ankar-retrofit av `index.html` och `fordjupning.html` är gjord (varje H2 och `.subhead`-H3 har ett stabilt `#`-ankare). `verktyg.html` är en JS-guide där stegen har egna div-id:n och behöver inga rubrikankare.
 
-Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.15**, senast ändrad 20 september 2026.
+Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.16**, senast ändrad 23 september 2026.
 
 - **v1.0** — första publicerade versionen: grunddispositionen, kompensationsmodulens tre spår, det interaktiva verktyget.
 - **v1.1** — jämförelsen av de tre sätten att disponera ett yttrande; de fyra kommunexemplen.
@@ -39,6 +40,7 @@ Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en.
 - **v1.13** — ny terminologiruta i `fordjupning.html`: hur balanseringsprincipen och kompensationsåtgärder hänger ihop (policyåtagande om hela skadelindringshierarkin, kontra det sista, konkreta steget i den). Texten om Per Blombergs förslag i `paverka.html` mjukades till för att göra tydligt att det är ett utkast, ännu inte behandlat av föreningens styrelse — inte en beslutad ståndpunkt. `fordjupning.html` och `paverka.html` fick var sin innehållsförteckning (samma `.snabbnav`-mönster som redan fanns på `lagtexter.html`), och hero-ingresserna kortades ner i motsvarande grad.
 - **v1.14** — kompensationsavsnittets inledning i `fordjupning.html` förtydligar redan från början att det är verkningsfullt att verka för en generell policy enligt skadelindringshierarkin, inte bara agera i enskilda ärenden. Tre verifierade internationella motsvarigheter till balanseringsprincipen tillagda: No Net Loss (NNL), IFC Performance Standard 6 (2012) och EU:s naturrestaureringsförordning ((EU) 2024/1991, kräver no net loss av grönyta/trädtäckning i städer till 2030).
 - **v1.15** — `paverka.html` länkar nu även till `Underlag/Balanseringsprincip_260913B.md` (en omstrukturerad version av Per Blombergs utkast, med fullständig källförteckning) bredvid originalutkastet, både i "Ett exempel"-avsnittet och i källförteckningen.
+- **v1.16** — ny sida *Granska planen* (`checklista.html`): sakfrågor från kapitel 9 i Naturskyddsföreningens preliminära vägledning för hållbar stadsutveckling, som kryssbar arbetschecklista. Originalet ligger kvar i `Plangruppen/Vagledning/`; en avskrift av just kapitel 9 finns i `Underlag/Vagledning_kap9_260830.md`.
 
 Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
 
@@ -48,15 +50,17 @@ Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkt
 - `PRD_samradsguiden_fordjupning.md` — planeringsdokument för tillägget i v1.7 (strategilagret och lagtexterna).
 - `SPEC_samradsguiden.md` — teknisk specifikation för grundverktyget: datamodell, formulärlogik, exportlogik, gränsfall, verifieringschecklista.
 - `SPEC_lagtexter.md` — teknisk specifikation för `lagtexter.html` och `paverka.html`: urval av de tio posterna, HTML-mallar, CSS-tillägg, tidslinjernas innehåll, Lund-anknytningen, källhantering.
-- `index.html` — kort översikt: grundprincipen, jämförelsetabell PBL/MB, de tre skedena, introduktion till kompensationsmodulen.
+- `index.html` — kort översikt: grundprincipen, jämförelsetabell PBL/MB, de tre skedena, introduktion till granskningschecklistan och kompensationsmodulen.
 - `paverka.html` — strategilagret: vilken lag som styr när kommunen antar en plan respektive när ett bolag söker tillstånd, tre vertikala tidslinjer över när synpunkter kan lämnas, klagorättsregeln, miljöorganisationers talerätt, en ruta om hur Lunds kommun beskriver processen, och ett exempel på proaktivt påverkansarbete (LNF:s begäran om balanseringsprincip).
+- `checklista.html` — arbetschecklista vid granskning av planer och byggprojekt, hämtad ur kapitel 9 i Naturskyddsföreningens preliminära vägledning. Kryss sparas i webbläsaren.
 - `fordjupning.html` — fullständigt sakinnehåll: alla dispositionsmallar, modulen om betydande miljöpåverkan, hela kompensationsmodulen, de två konkreta exemplen, källförteckning.
 - `lagtexter.html` — de tio viktigaste lagtexterna ordagrant, med källa och datum, en förklaring i klartext bakom ett klick per post, en ordlista och en bakgrundsruta om Århuskonventionen.
 - `verktyg.html` — den interaktiva guiden: fem steg som genererar en ifyllningsbar mall med sex delar, sammanställningsvy, kopiera- och nedladdningsfunktion.
 - `data.js` — all sakdata verktyget använder: dispositionsmallarna och kompensationsmodulens spår.
 - `verktyg.js` — formulärlogiken och exportlogiken bakom `verktyg.html`.
+- `checklista.js` — kryss och rensning på `checklista.html`, sparade i webbläsarens `localStorage`.
 - `styles.css`, `script.js` — delad formgivning och delade komponenter (toppmeny, utfällbara avsnitt, teknikmodal, tidslinjer, direktlänkshantering).
-- `Underlag/` — bakgrundsmaterial som länkas som källa från sidorna, t.ex. `Balanseringsprincipen_260913.docx` (Per Blomberg, Lunds Naturskyddsförening).
+- `Underlag/` — bakgrundsmaterial som länkas som källa från sidorna, t.ex. `Balanseringsprincipen_260913.docx` (Per Blomberg, Lunds Naturskyddsförening) och `Vagledning_kap9_260830.md` (avskrift av kapitel 9 ur den nationella vägledningen).
 
 ## Djuplänkar
 
