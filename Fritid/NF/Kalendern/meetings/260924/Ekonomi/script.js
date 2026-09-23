@@ -1,0 +1,194 @@
+const MONTHS = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"];
+
+function formatSwedishDate(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return `${d} ${MONTHS[m - 1]} ${y}`;
+}
+
+function formatSEK(amount, { forceSign = false } = {}) {
+  const abs = Math.abs(amount);
+  const formatted = abs.toLocaleString("sv-SE", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  let sign = "";
+  if (amount < 0) sign = "−";
+  else if (forceSign && amount > 0) sign = "+";
+  return `${sign}${formatted} kr`;
+}
+
+function sum(items) {
+  return items.reduce((acc, item) => acc + item.belopp, 0);
+}
+
+function renderStats(data) {
+  const income = sum(data.intakter);
+  const cost = sum(data.kostnader);
+  const result = income + cost;
+
+  document.getElementById("statIncome").textContent = formatSEK(income);
+  document.getElementById("statCost").textContent = formatSEK(cost);
+  document.getElementById("statResult").textContent = formatSEK(result, { forceSign: true });
+
+  const tile = document.getElementById("statResultTile");
+  tile.classList.remove("is-good", "is-bad");
+  tile.classList.add(result >= 0 ? "is-good" : "is-bad");
+}
+
+function renderProjects(data) {
+  const container = document.getElementById("projectsContainer");
+  container.innerHTML = "";
+
+  const projekt = data.projekt || [];
+  if (projekt.length === 0) {
+    container.innerHTML = '<p class="lede">Inga projekt med både kostnad och riktad intäkt i den här perioden.</p>';
+    return;
+  }
+
+  // Gemensam skala så staplarna går att jämföra mellan projekten.
+  const relevant = [...data.intakter, ...data.kostnader].filter((item) => item.projekt);
+  const maxScale = Math.max(1, ...relevant.map((item) => Math.abs(item.belopp)));
+
+  projekt.forEach((p) => {
+    const incomeItem = data.intakter.find((i) => i.projekt === p.id);
+    const costItem = data.kostnader.find((i) => i.projekt === p.id);
+    const incomeAmt = incomeItem ? incomeItem.belopp : 0;
+    const costAmt = costItem ? costItem.belopp : 0;
+    const net = incomeAmt + costAmt;
+
+    const costPct = (Math.abs(costAmt) / maxScale) * 100;
+    const incomePct = (Math.abs(incomeAmt) / maxScale) * 100;
+
+    const card = document.createElement("div");
+    card.className = "project-card";
+    card.innerHTML = `
+      <h3>${p.namn}</h3>
+      <p class="project-net">Netto: <strong class="${net >= 0 ? "is-good" : "is-bad"}">${formatSEK(net, { forceSign: true })}</strong>
+        (${costItem ? costItem.namn : "ingen kostnad"} mot ${incomeItem ? incomeItem.namn : "ingen intäkt"})</p>
+      <div class="diverge">
+        <span class="side-label left">${costItem ? costItem.namn : ""}</span>
+        <span class="value cost-value">${costItem ? formatSEK(costAmt) : ""}</span>
+        <span></span>
+      </div>
+      <div class="diverge">
+        <div class="track left-track"><div class="bar bar-cost" style="width:${costPct}%"></div></div>
+        <div class="zero-line"></div>
+        <div class="track"><div class="bar bar-income" style="width:${incomePct}%"></div></div>
+      </div>
+      <div class="diverge">
+        <span></span>
+        <span class="value income-value">${incomeItem ? formatSEK(incomeAmt) : ""}</span>
+        <span class="side-label right">${incomeItem ? incomeItem.namn : ""}</span>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function renderList(elementId, items, markClass) {
+  const list = document.getElementById(elementId);
+  list.innerHTML = "";
+  items
+    .filter((item) => !item.projekt)
+    .forEach((item) => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <span class="mark ${markClass}"></span>
+        <span class="name">${item.namn}</span>
+        <span class="amount">${formatSEK(item.belopp)}</span>
+      `;
+      list.appendChild(li);
+    });
+}
+
+function renderFullTable(data) {
+  const tbody = document.getElementById("fullTableBody");
+  tbody.innerHTML = "";
+
+  const rows = [
+    ...data.intakter.map((item) => ({ ...item, typ: "income", typLabel: "Intäkt" })),
+    ...data.kostnader.map((item) => ({ ...item, typ: "cost", typLabel: "Kostnad" })),
+  ];
+
+  rows.forEach((item) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${item.namn}</td>
+      <td><span class="type-tag ${item.typ}">${item.typLabel}</span></td>
+      <td class="amount">${formatSEK(item.belopp)}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  const result = sum(data.intakter) + sum(data.kostnader);
+  const totalRow = document.createElement("tr");
+  totalRow.className = "row-total";
+  totalRow.innerHTML = `
+    <td>Resultat</td>
+    <td></td>
+    <td class="amount">${formatSEK(result, { forceSign: true })}</td>
+  `;
+  tbody.appendChild(totalRow);
+}
+
+function renderSourceNote(data) {
+  const from = formatSwedishDate(data.period.fran);
+  const to = formatSwedishDate(data.period.till);
+  document.getElementById("sourceNote").textContent =
+    `Period: ${from}–${to}. Källa: ${data.kalla}.`;
+}
+
+function renderAll(data) {
+  renderStats(data);
+  renderProjects(data);
+  renderList("otherIncomeList", data.intakter, "income");
+  renderList("otherCostList", data.kostnader, "cost");
+  renderFullTable(data);
+  renderSourceNote(data);
+}
+
+async function loadPeriod(dateStr) {
+  const res = await fetch(`data/${dateStr}.json`);
+  const data = await res.json();
+  renderAll(data);
+}
+
+async function init() {
+  try {
+    const manifestRes = await fetch("data/manifest.json");
+    if (!manifestRes.ok) throw new Error(`manifest.json: ${manifestRes.status}`);
+    const dates = await manifestRes.json();
+    const sorted = [...dates].sort().reverse(); // senaste perioden först
+
+    const select = document.getElementById("periodSelect");
+    select.innerHTML = "";
+    sorted.forEach((dateStr) => {
+      const opt = document.createElement("option");
+      opt.value = dateStr;
+      opt.textContent = formatSwedishDate(dateStr);
+      select.appendChild(opt);
+    });
+
+    select.addEventListener("change", () => loadPeriod(select.value));
+    await loadPeriod(sorted[0]);
+  } catch (err) {
+    document.getElementById("fetchWarning").hidden = false;
+    document.querySelector(".period-row").hidden = true;
+    console.error("Kunde inte läsa in resultaträkningens data:", err);
+  }
+
+  const techBtn = document.getElementById("techBtn");
+  const techModal = document.getElementById("techModal");
+  const techClose = document.getElementById("techClose");
+
+  const openModal = () => techModal.classList.add("show");
+  const closeModal = () => techModal.classList.remove("show");
+
+  techBtn.addEventListener("click", openModal);
+  techClose.addEventListener("click", closeModal);
+  techModal.addEventListener("click", (e) => {
+    if (e.target === techModal) closeModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && techModal.classList.contains("show")) closeModal();
+  });
+}
+
+document.addEventListener("DOMContentLoaded", init);

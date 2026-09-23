@@ -1,0 +1,527 @@
+:root {
+  --forest: #1B4332;
+  --ink: #1C1F1B;
+  --muted: #5B6358;
+  --accent: #2F9E44;
+  --accent-soft: #E5F3E7;
+  --hairline: #DCE5DC;
+  --bg: #FFFFFF;
+  --panel: #F3F7F1;
+  --font-head: Georgia, "Times New Roman", serif;
+  --font-body: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Ekonomisk polaritet: diverging blue<->red (dataviz-paletten), aldrig temat i övrigt */
+  --income: #2a78d6;
+  --income-soft: #eaf2fb;
+  --cost: #e34948;
+  --cost-soft: #fcecec;
+
+  /* Status (fast skala, aldrig temafärg) */
+  --good-ink: #006300;
+  --critical-ink: #b3261e;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+a { color: var(--forest); }
+a:hover { color: var(--accent); }
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- header ---------- */
+
+header#top {
+  background: var(--forest);
+  color: #F3F7F1;
+  padding: 2.6rem 0 2.2rem;
+}
+
+header#top .eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #A7D7B2;
+  margin: 0 0 0.6rem;
+}
+
+header#top h1 {
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  margin: 0 0 0.7rem;
+  line-height: 1.25;
+}
+
+header#top p {
+  margin: 0;
+  max-width: 640px;
+  color: #DCEEDF;
+  font-size: 1rem;
+}
+
+.period-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.period-row label {
+  font-size: 0.85rem;
+  color: #DCEEDF;
+}
+
+#periodSelect {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.08);
+  color: #FFFFFF;
+}
+
+#periodSelect option { color: var(--ink); }
+
+/* ---------- sections ---------- */
+
+main {
+  padding: 2.6rem 0 5rem;
+}
+
+section {
+  margin-bottom: 3.2rem;
+}
+
+section h2 {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  color: var(--forest);
+  margin: 0 0 1rem;
+}
+
+section h3 {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  color: var(--forest);
+  margin: 1.6rem 0 0.6rem;
+}
+
+.fetch-warning {
+  background: var(--cost-soft);
+  border: 1px solid var(--cost);
+  color: var(--critical-ink);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.9rem;
+  margin: 1.8rem 0 0;
+}
+
+.fetch-warning code {
+  background: rgba(0,0,0,0.06);
+  border-radius: 4px;
+  padding: 0.05rem 0.35rem;
+}
+
+.lede {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 680px;
+}
+
+/* Djuplänk-ankare på H2/H3 */
+.anchor {
+  opacity: 0;
+  margin-left: 0.45em;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.85em;
+  transition: opacity 0.15s ease;
+}
+
+h2:hover .anchor,
+h3:hover .anchor,
+.anchor:focus {
+  opacity: 1;
+}
+
+/* ---------- stat tiles ---------- */
+
+.stat-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.6rem 0 0;
+}
+
+.stat {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-top: 4px solid var(--hairline);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  flex: 1 1 200px;
+}
+
+.stat.stat-income { border-top-color: var(--income); }
+.stat.stat-cost { border-top-color: var(--cost); }
+.stat.stat-result.is-good { border-top-color: var(--good-ink); }
+.stat.stat-result.is-bad { border-top-color: var(--critical-ink); }
+
+.stat .num {
+  font-family: var(--font-head);
+  font-size: 1.7rem;
+  color: var(--forest);
+  display: block;
+  font-variant-numeric: proportional-nums;
+}
+
+.stat.stat-result.is-good .num { color: var(--good-ink); }
+.stat.stat-result.is-bad .num { color: var(--critical-ink); }
+
+.stat .label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ---------- projekt: kostnad möter intäkt ---------- */
+
+.project-card {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  padding: 1.1rem 1.3rem 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+}
+
+.project-net {
+  font-size: 0.86rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.project-net strong.is-good { color: var(--good-ink); }
+.project-net strong.is-bad { color: var(--critical-ink); }
+
+.diverge {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.55rem;
+}
+
+.diverge .side-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.diverge .side-label.right { text-align: left; }
+.diverge .side-label.left { text-align: right; }
+
+.diverge .track {
+  position: relative;
+  height: 24px;
+  background: transparent;
+}
+
+.diverge .track.left-track {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.diverge .bar {
+  height: 24px;
+  min-width: 2px;
+}
+
+.diverge .bar-cost {
+  background: var(--cost);
+  border-radius: 4px 0 0 4px;
+}
+
+.diverge .bar-income {
+  background: var(--income);
+  border-radius: 0 4px 4px 0;
+}
+
+.diverge .zero-line {
+  width: 2px;
+  height: 32px;
+  background: var(--hairline);
+}
+
+.diverge .value {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.diverge .value.cost-value { color: var(--cost); text-align: right; }
+.diverge .value.income-value { color: var(--income); }
+
+.legend-row {
+  display: flex;
+  gap: 1.4rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.8rem;
+}
+
+.legend-row .swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin-right: 0.4rem;
+}
+
+.legend-row .swatch.income { background: var(--income); }
+.legend-row .swatch.cost { background: var(--cost); }
+
+/* ---------- enkla listor (övriga intäkter/kostnader) ---------- */
+
+.line-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.line-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  padding: 0.7rem 0.95rem;
+}
+
+.line-list .mark {
+  width: 4px;
+  align-self: stretch;
+  border-radius: 3px;
+  flex: 0 0 auto;
+}
+
+.line-list .mark.income { background: var(--income); }
+.line-list .mark.cost { background: var(--cost); }
+
+.line-list .name {
+  flex: 1 1 auto;
+  font-size: 0.94rem;
+}
+
+.line-list .amount {
+  font-family: var(--font-body);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* ---------- fullständig tabell ---------- */
+
+.data-table-wrap {
+  overflow-x: auto;
+}
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+table.data-table caption {
+  text-align: left;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+table.data-table th,
+table.data-table td {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+table.data-table th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+table.data-table td.amount,
+table.data-table th.amount {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+table.data-table tr.row-total td {
+  border-top: 2px solid var(--forest);
+  border-bottom: none;
+  font-weight: 700;
+}
+
+table.data-table .type-tag {
+  font-size: 0.78rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+table.data-table .type-tag.income { background: var(--income-soft); color: var(--income); }
+table.data-table .type-tag.cost { background: var(--cost-soft); color: var(--cost); }
+
+.source-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.8rem;
+}
+
+/* ---------- corner buttons + tech modal (samma mönster som Kalendern) ---------- */
+
+.corner {
+  position: fixed;
+  bottom: 14px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+  background: var(--bg);
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 0.2s ease, color 0.2s ease;
+  z-index: 10;
+}
+
+.corner:hover { opacity: 1; color: var(--forest); }
+
+.corner-left { left: 14px; }
+.corner-right { right: 14px; }
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(27, 67, 50, 0.55);
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  padding: 1rem;
+}
+
+.modal-overlay.show { display: flex; }
+
+.modal {
+  position: relative;
+  background: var(--bg);
+  border-radius: 16px;
+  max-width: 640px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.modal h2 {
+  font-family: var(--font-head);
+  color: var(--forest);
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.modal > p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 1.4rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.tech-section-title {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 1.4rem 0 0.7rem;
+}
+
+.tech-section-title:first-of-type { margin-top: 0.4rem; }
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tech-card h3 {
+  font-size: 0.95rem;
+  color: var(--forest);
+  margin: 0 0 0.3rem;
+}
+
+.tech-card p {
+  font-size: 0.85rem;
+  color: var(--ink);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.tech-card code {
+  background: var(--panel);
+  border-radius: 4px;
+  padding: 0.05rem 0.3rem;
+  font-size: 0.82em;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 640px) {
+  .tech-grid { grid-template-columns: 1fr; }
+  .modal { padding: 1.4rem; }
+  .stat-row { flex-direction: column; }
+  .diverge { grid-template-columns: 1fr; }
+  .diverge .side-label.left { text-align: left; }
+  .diverge .track.left-track { justify-content: flex-start; }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Resultaträkning – Lunds Naturskyddsförening</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Resultaträkning för Lunds Naturskyddsförening, med cykelkartan och fotoutställningen visade som egna finansierade projekt.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap">
+    <p class="eyebrow">Internt arbetsmaterial · styrelsen, Lunds Naturskyddsförening</p>
+    <h1>Resultaträkning</h1>
+    <p id="periodDescription">Intäkter och kostnader sammanställda ur föreningens huvudbok, med cykelkartan och fotoutställningen visade som egna finansierade projekt.</p>
+    <div class="period-row">
+      <label for="periodSelect">Visar:</label>
+      <select id="periodSelect"></select>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div id="fetchWarning" class="fetch-warning" hidden>
+    <strong>Sidan kunde inte läsa in resultaträkningen.</strong>
+    Det händer om filen öppnas direkt i Utforskaren (dubbelklick) – webbläsaren blockerar då datafilerna av säkerhetsskäl.
+    Öppna sidan i stället via en lokal webbserver (t.ex. <code>python -m http.server</code> i den här mappen) eller via GitHub Pages när sidan är publicerad.
+  </div>
+
+  <section id="sammanfattning">
+    <h2>Sammanfattning<a class="anchor" href="#sammanfattning" aria-label="Länk till Sammanfattning">#</a></h2>
+    <p class="lede">Totalsumman för intäkter och kostnader under perioden, samt periodens resultat.</p>
+    <div class="stat-row">
+      <div class="stat stat-income">
+        <span class="num" id="statIncome">–</span>
+        <span class="label">Summa intäkter</span>
+      </div>
+      <div class="stat stat-cost">
+        <span class="num" id="statCost">–</span>
+        <span class="label">Summa kostnader</span>
+      </div>
+      <div class="stat stat-result" id="statResultTile">
+        <span class="num" id="statResult">–</span>
+        <span class="label">Resultat</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="egenfinansierade">
+    <h2>Cykelkarta och fotoutställning – kostnad möter intäkt<a class="anchor" href="#egenfinansierade" aria-label="Länk till Cykelkarta och fotoutställning">#</a></h2>
+    <p class="lede">De här två projekten har både en egen kostnad och en riktad intäkt (ersättning respektive miljöanslag) i huvudboken. Ställda mot varandra syns det att båda i praktiken är nära nog självfinansierade.</p>
+    <div id="projectsContainer"></div>
+    <div class="legend-row">
+      <span><span class="swatch cost"></span>Kostnad</span>
+      <span><span class="swatch income"></span>Intäkt</span>
+    </div>
+  </section>
+
+  <section id="ovriga-intakter">
+    <h2>Övriga intäkter<a class="anchor" href="#ovriga-intakter" aria-label="Länk till Övriga intäkter">#</a></h2>
+    <p class="lede">Intäkter som inte är kopplade till cykelkartan eller fotoutställningen.</p>
+    <ul class="line-list" id="otherIncomeList"></ul>
+  </section>
+
+  <section id="ovriga-kostnader">
+    <h2>Övriga kostnader<a class="anchor" href="#ovriga-kostnader" aria-label="Länk till Övriga kostnader">#</a></h2>
+    <p class="lede">Kostnader som inte är kopplade till cykelkartan eller fotoutställningen – föreningens löpande verksamhet.</p>
+    <ul class="line-list" id="otherCostList"></ul>
+  </section>
+
+  <section id="fullstandig-tabell">
+    <h2>Fullständig sammanställning<a class="anchor" href="#fullstandig-tabell" aria-label="Länk till Fullständig sammanställning">#</a></h2>
+    <p class="lede">Samma siffror som ovan, samlade i en tabell.</p>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <caption>Alla intäkts- och kostnadsposter samt periodens resultat</caption>
+        <thead>
+          <tr>
+            <th scope="col">Kategori</th>
+            <th scope="col">Typ</th>
+            <th scope="col" class="amount">Belopp (kr)</th>
+          </tr>
+        </thead>
+        <tbody id="fullTableBody"></tbody>
+      </table>
+    </div>
+    <p class="source-note" id="sourceNote"></p>
+  </section>
+
+</main>
+
+<a class="corner corner-left" href="https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Kalendern/meetings/260924/Ekonomi" target="_blank" rel="noopener">{ } GitHub</a>
+<button type="button" class="corner corner-right" id="techBtn" aria-label="Tekniköversikt">&lt;/&gt; teknik</button>
+
+<div class="modal-overlay" id="techModal">
+  <div class="modal">
+    <button type="button" class="modal-close" id="techClose" aria-label="Stäng">&times;</button>
+    <h2>Hur den här sidan är byggd</h2>
+    <p>Två delar: tekniken i sidan, och metoden som faktiskt användes för att ta fram den. Inget påhittat, bara det som är sant.</p>
+
+    <h3 class="tech-section-title">Tekniken</h3>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3>Vanilla HTML/CSS/JS</h3>
+        <p>Ingen ramverk, inget byggsteg. Statiska filer som körs direkt på GitHub Pages.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Data ligger i egna JSON-filer</h3>
+        <p>Varje resultaträkning är en egen fil i <code>data/</code> (t.ex. <code>2026-09-23.json</code>), listad i <code>data/manifest.json</code>. Sidan hämtar filerna med <code>fetch</code> och bygger om innehållet när du byter period i väljaren.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Ingen data skickas någonstans</h3>
+        <p>Sidan pratar inte med någon server utöver att läsa sina egna JSON-filer, och skickar ingenting vidare.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Färgerna kodar polaritet, inte tycke</h3>
+        <p>Blått för intäkt och rött för kostnad är samma diverging-par som används för positivt/negativt i övriga Claude-byggda sidor – inte gissade hex-värden.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Samma hörn-mönster som Kalendern-sidan</h3>
+        <p>GitHub-länken och teknik-knappen (<code>.corner</code>, <code>.modal-overlay</code>) återanvänder mekaniken och den gröna paletten från <code>Kalendern/index.html</code> en nivå upp.</p>
+      </div>
+    </div>
+
+    <h3 class="tech-section-title">Metoden</h3>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3>Beloppen är avstämda mot huvudboken</h3>
+        <p>Varje delsumma i huvudboken (<code>Huvudbok_260923.docx</code>) är omräknad rad för rad innan den fördes in här, och sluttotalen stämmer mot periodens bokförda resultat.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Cykelkarta/fotoutställning valdes ut på Kents begäran</h3>
+        <p>Kent bad uttryckligen om att synliggöra att de här två projekten har både en kostnad och en riktad intäkt (ersättning respektive miljöanslag) i samma underlag.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Byggd för att uppdateras, inte skrivas om</h3>
+        <p>Sidan är förberedd för att en ny resultaträkning bara lägger till en ny datafil, så tidigare perioder går att växla tillbaka till.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Byggd lokalt, inte publicerad ännu</h3>
+        <p>Sidan skapades och testades i webbläsarförhandsvisning; commit och push till GitHub sker bara när Kent ber om det.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
