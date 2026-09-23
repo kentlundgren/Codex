@@ -30,62 +30,27 @@
   </div>
 
   <section id="sammanfattning">
-    <h2>Sammanfattning<a class="anchor" href="#sammanfattning" aria-label="Länk till Sammanfattning">#</a></h2>
-    <p class="lede">Totalsumman för intäkter och kostnader under perioden, samt periodens resultat.</p>
-    <div class="stat-row">
-      <div class="stat stat-income">
-        <span class="num" id="statIncome">–</span>
-        <span class="label">Summa intäkter</span>
-      </div>
-      <div class="stat stat-cost">
-        <span class="num" id="statCost">–</span>
-        <span class="label">Summa kostnader</span>
-      </div>
-      <div class="stat stat-result" id="statResultTile">
-        <span class="num" id="statResult">–</span>
-        <span class="label">Resultat</span>
-      </div>
-    </div>
-  </section>
+    <h2>Sammanfattning: intäkter, kostnader och resultat<a class="anchor" href="#sammanfattning" aria-label="Länk till Sammanfattning">#</a></h2>
+    <p class="lede" id="ledeText"></p>
 
-  <section id="egenfinansierade">
-    <h2>Cykelkarta och fotoutställning – kostnad möter intäkt<a class="anchor" href="#egenfinansierade" aria-label="Länk till Cykelkarta och fotoutställning">#</a></h2>
-    <p class="lede">De här två projekten har både en egen kostnad och en riktad intäkt (ersättning respektive miljöanslag) i huvudboken. Ställda mot varandra syns det att båda i praktiken är nära nog självfinansierade.</p>
-    <div id="projectsContainer"></div>
-    <div class="legend-row">
-      <span><span class="swatch cost"></span>Kostnad</span>
-      <span><span class="swatch income"></span>Intäkt</span>
-    </div>
-  </section>
-
-  <section id="ovriga-intakter">
-    <h2>Övriga intäkter<a class="anchor" href="#ovriga-intakter" aria-label="Länk till Övriga intäkter">#</a></h2>
-    <p class="lede">Intäkter som inte är kopplade till cykelkartan eller fotoutställningen.</p>
-    <ul class="line-list" id="otherIncomeList"></ul>
-  </section>
-
-  <section id="ovriga-kostnader">
-    <h2>Övriga kostnader<a class="anchor" href="#ovriga-kostnader" aria-label="Länk till Övriga kostnader">#</a></h2>
-    <p class="lede">Kostnader som inte är kopplade till cykelkartan eller fotoutställningen – föreningens löpande verksamhet.</p>
-    <ul class="line-list" id="otherCostList"></ul>
-  </section>
-
-  <section id="fullstandig-tabell">
-    <h2>Fullständig sammanställning<a class="anchor" href="#fullstandig-tabell" aria-label="Länk till Fullständig sammanställning">#</a></h2>
-    <p class="lede">Samma siffror som ovan, samlade i en tabell.</p>
     <div class="data-table-wrap">
       <table class="data-table">
-        <caption>Alla intäkts- och kostnadsposter samt periodens resultat</caption>
         <thead>
           <tr>
-            <th scope="col">Kategori</th>
-            <th scope="col">Typ</th>
+            <th scope="col"></th>
             <th scope="col" class="amount">Belopp (kr)</th>
           </tr>
         </thead>
-        <tbody id="fullTableBody"></tbody>
+        <tbody id="tableBody"></tbody>
       </table>
     </div>
+
+    <div class="commentary">
+      <p class="commentary-lead">Per projekt, kostnad mot riktad intäkt:</p>
+      <ul id="projectNetList"></ul>
+      <p id="closingText"></p>
+    </div>
+
     <p class="source-note" id="sourceNote"></p>
   </section>
 
@@ -115,8 +80,8 @@
         <p>Sidan pratar inte med någon server utöver att läsa sina egna JSON-filer, och skickar ingenting vidare.</p>
       </div>
       <div class="tech-card">
-        <h3>Färgerna kodar polaritet, inte tycke</h3>
-        <p>Blått för intäkt och rött för kostnad är samma diverging-par som används för positivt/negativt i övriga Claude-byggda sidor – inte gissade hex-värden.</p>
+        <h3>Radmarkeringen kodar projekt, inte tycke</h3>
+        <p>Cykelkartans och fotoutställningens rader får varsin färg för att markera att de hör ihop (kostnad + riktad intäkt) – samma två rader oavsett vilken period som visas.</p>
       </div>
       <div class="tech-card">
         <h3>Samma hörn-mönster som Kalendern-sidan</h3>
@@ -131,8 +96,8 @@
         <p>Varje delsumma i huvudboken (<code>Huvudbok_260923.docx</code>) är omräknad rad för rad innan den fördes in här, och sluttotalen stämmer mot periodens bokförda resultat.</p>
       </div>
       <div class="tech-card">
-        <h3>Cykelkarta/fotoutställning valdes ut på Kents begäran</h3>
-        <p>Kent bad uttryckligen om att synliggöra att de här två projekten har både en kostnad och en riktad intäkt (ersättning respektive miljöanslag) i samma underlag.</p>
+        <h3>Förenklad efter en första, för ambitiös version</h3>
+        <p>Den första versionen hade separata statistikkort och stapeldiagram per projekt. Kent bad om att gå tillbaka till en enda tabell, liknande hans egen bifogade sammanfattning.</p>
       </div>
       <div class="tech-card">
         <h3>Byggd för att uppdateras, inte skrivas om</h3>

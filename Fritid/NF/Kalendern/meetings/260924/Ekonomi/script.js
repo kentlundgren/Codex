@@ -1,4 +1,5 @@
 const MONTHS = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"];
+const PROJECT_CLASSES = ["proj-a", "proj-b", "proj-c"]; // fast, kategorisk ordning – inte gissade per period
 
 function formatSwedishDate(iso) {
   const [y, m, d] = iso.split("-").map(Number);
@@ -18,114 +19,83 @@ function sum(items) {
   return items.reduce((acc, item) => acc + item.belopp, 0);
 }
 
-function renderStats(data) {
+function projectClassFor(data, projektId) {
+  if (!projektId) return "";
+  const idx = (data.projekt || []).findIndex((p) => p.id === projektId);
+  return idx >= 0 ? PROJECT_CLASSES[idx % PROJECT_CLASSES.length] : "";
+}
+
+function dataRow(data, item) {
+  const cls = projectClassFor(data, item.projekt);
+  return `
+    <tr class="${cls}">
+      <td>${item.namn}</td>
+      <td class="amount">${formatSEK(item.belopp)}</td>
+    </tr>
+  `;
+}
+
+function sectionRow(label) {
+  return `<tr class="row-section"><td colspan="2">${label}</td></tr>`;
+}
+
+function totalRow(label, amount) {
+  return `
+    <tr class="row-total">
+      <td>${label}</td>
+      <td class="amount">${formatSEK(amount, { forceSign: true })}</td>
+    </tr>
+  `;
+}
+
+function renderTable(data) {
   const income = sum(data.intakter);
   const cost = sum(data.kostnader);
   const result = income + cost;
 
-  document.getElementById("statIncome").textContent = formatSEK(income);
-  document.getElementById("statCost").textContent = formatSEK(cost);
-  document.getElementById("statResult").textContent = formatSEK(result, { forceSign: true });
+  const rows = [
+    sectionRow("Intäkter"),
+    ...data.intakter.map((item) => dataRow(data, item)),
+    totalRow("Summa intäkter", income),
+    sectionRow("Kostnader"),
+    ...data.kostnader.map((item) => dataRow(data, item)),
+    totalRow("Summa kostnader", cost),
+    totalRow("Resultat", result),
+  ];
 
-  const tile = document.getElementById("statResultTile");
-  tile.classList.remove("is-good", "is-bad");
-  tile.classList.add(result >= 0 ? "is-good" : "is-bad");
+  document.getElementById("tableBody").innerHTML = rows.join("");
 }
 
-function renderProjects(data) {
-  const container = document.getElementById("projectsContainer");
-  container.innerHTML = "";
-
+function renderCommentary(data) {
   const projekt = data.projekt || [];
+  const list = document.getElementById("projectNetList");
+  const closing = document.getElementById("closingText");
+
   if (projekt.length === 0) {
-    container.innerHTML = '<p class="lede">Inga projekt med både kostnad och riktad intäkt i den här perioden.</p>';
+    list.innerHTML = "";
+    closing.textContent = "";
     return;
   }
 
-  // Gemensam skala så staplarna går att jämföra mellan projekten.
-  const relevant = [...data.intakter, ...data.kostnader].filter((item) => item.projekt);
-  const maxScale = Math.max(1, ...relevant.map((item) => Math.abs(item.belopp)));
+  list.innerHTML = projekt
+    .map((p) => {
+      const incomeItem = data.intakter.find((i) => i.projekt === p.id);
+      const costItem = data.kostnader.find((i) => i.projekt === p.id);
+      const incomeAmt = incomeItem ? incomeItem.belopp : 0;
+      const costAmt = costItem ? costItem.belopp : 0;
+      const net = incomeAmt + costAmt;
+      const nollsummespel = Math.abs(net) < 100 ? " (i praktiken nollsummespel)" : "";
+      return `<li>${p.namn}: ${formatSEK(costAmt)} kostnad mot ${formatSEK(incomeAmt)} intäkt (${incomeItem ? incomeItem.namn : "–"}) → <strong>${formatSEK(net, { forceSign: true })} netto</strong>${nollsummespel}</li>`;
+    })
+    .join("");
 
-  projekt.forEach((p) => {
-    const incomeItem = data.intakter.find((i) => i.projekt === p.id);
-    const costItem = data.kostnader.find((i) => i.projekt === p.id);
-    const incomeAmt = incomeItem ? incomeItem.belopp : 0;
-    const costAmt = costItem ? costItem.belopp : 0;
-    const net = incomeAmt + costAmt;
+  const projectIds = new Set(projekt.map((p) => p.id));
+  const ownItems = [...data.intakter, ...data.kostnader].filter((item) => !projectIds.has(item.projekt));
+  const ownResult = sum(ownItems);
+  const projectNet = sum(data.intakter) + sum(data.kostnader) - ownResult;
+  const total = ownResult + projectNet;
 
-    const costPct = (Math.abs(costAmt) / maxScale) * 100;
-    const incomePct = (Math.abs(incomeAmt) / maxScale) * 100;
-
-    const card = document.createElement("div");
-    card.className = "project-card";
-    card.innerHTML = `
-      <h3>${p.namn}</h3>
-      <p class="project-net">Netto: <strong class="${net >= 0 ? "is-good" : "is-bad"}">${formatSEK(net, { forceSign: true })}</strong>
-        (${costItem ? costItem.namn : "ingen kostnad"} mot ${incomeItem ? incomeItem.namn : "ingen intäkt"})</p>
-      <div class="diverge">
-        <span class="side-label left">${costItem ? costItem.namn : ""}</span>
-        <span class="value cost-value">${costItem ? formatSEK(costAmt) : ""}</span>
-        <span></span>
-      </div>
-      <div class="diverge">
-        <div class="track left-track"><div class="bar bar-cost" style="width:${costPct}%"></div></div>
-        <div class="zero-line"></div>
-        <div class="track"><div class="bar bar-income" style="width:${incomePct}%"></div></div>
-      </div>
-      <div class="diverge">
-        <span></span>
-        <span class="value income-value">${incomeItem ? formatSEK(incomeAmt) : ""}</span>
-        <span class="side-label right">${incomeItem ? incomeItem.namn : ""}</span>
-      </div>
-    `;
-    container.appendChild(card);
-  });
-}
-
-function renderList(elementId, items, markClass) {
-  const list = document.getElementById(elementId);
-  list.innerHTML = "";
-  items
-    .filter((item) => !item.projekt)
-    .forEach((item) => {
-      const li = document.createElement("li");
-      li.innerHTML = `
-        <span class="mark ${markClass}"></span>
-        <span class="name">${item.namn}</span>
-        <span class="amount">${formatSEK(item.belopp)}</span>
-      `;
-      list.appendChild(li);
-    });
-}
-
-function renderFullTable(data) {
-  const tbody = document.getElementById("fullTableBody");
-  tbody.innerHTML = "";
-
-  const rows = [
-    ...data.intakter.map((item) => ({ ...item, typ: "income", typLabel: "Intäkt" })),
-    ...data.kostnader.map((item) => ({ ...item, typ: "cost", typLabel: "Kostnad" })),
-  ];
-
-  rows.forEach((item) => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${item.namn}</td>
-      <td><span class="type-tag ${item.typ}">${item.typLabel}</span></td>
-      <td class="amount">${formatSEK(item.belopp)}</td>
-    `;
-    tbody.appendChild(tr);
-  });
-
-  const result = sum(data.intakter) + sum(data.kostnader);
-  const totalRow = document.createElement("tr");
-  totalRow.className = "row-total";
-  totalRow.innerHTML = `
-    <td>Resultat</td>
-    <td></td>
-    <td class="amount">${formatSEK(result, { forceSign: true })}</td>
-  `;
-  tbody.appendChild(totalRow);
+  closing.textContent = `Det betyder att periodens resultat (${formatSEK(total, { forceSign: true })}) i praktiken kommer från den löpande verksamheten (${formatSEK(ownResult, { forceSign: true })}) – cykelkartan och fotoutställningen bidrar tillsammans med ${formatSEK(projectNet, { forceSign: true })} netto.`;
 }
 
 function renderSourceNote(data) {
@@ -135,12 +105,18 @@ function renderSourceNote(data) {
     `Period: ${from}–${to}. Källa: ${data.kalla}.`;
 }
 
+function renderLede(data) {
+  const projekt = data.projekt || [];
+  document.getElementById("ledeText").textContent =
+    projekt.length > 0
+      ? "Cykelkartan och fotoutställningen är markerade nedan eftersom de har både en egen kostnad och en riktad intäkt (ersättning respektive miljöanslag) i huvudboken – ställda mot varandra syns det att de i praktiken är nära nog självfinansierade."
+      : "Intäkter och kostnader sammanställda ur föreningens huvudbok.";
+}
+
 function renderAll(data) {
-  renderStats(data);
-  renderProjects(data);
-  renderList("otherIncomeList", data.intakter, "income");
-  renderList("otherCostList", data.kostnader, "cost");
-  renderFullTable(data);
+  renderLede(data);
+  renderTable(data);
+  renderCommentary(data);
   renderSourceNote(data);
 }
 

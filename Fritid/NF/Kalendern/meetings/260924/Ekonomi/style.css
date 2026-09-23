@@ -10,15 +10,14 @@
   --font-head: Georgia, "Times New Roman", serif;
   --font-body: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-  /* Ekonomisk polaritet: diverging blue<->red (dataviz-paletten), aldrig temat i övrigt */
-  --income: #2a78d6;
-  --income-soft: #eaf2fb;
   --cost: #e34948;
   --cost-soft: #fcecec;
-
-  /* Status (fast skala, aldrig temafärg) */
-  --good-ink: #006300;
   --critical-ink: #b3261e;
+
+  /* Radmarkering per projekt (kategorisk identitet, fast ordning) */
+  --proj-a: #fbe28f;
+  --proj-b: #bfe6c8;
+  --proj-c: #cfd8f5;
 }
 
 * { box-sizing: border-box; }
@@ -158,192 +157,7 @@ h3:hover .anchor,
   opacity: 1;
 }
 
-/* ---------- stat tiles ---------- */
-
-.stat-row {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin: 1.6rem 0 0;
-}
-
-.stat {
-  background: var(--panel);
-  border: 1px solid var(--hairline);
-  border-top: 4px solid var(--hairline);
-  border-radius: 12px;
-  padding: 1rem 1.2rem;
-  flex: 1 1 200px;
-}
-
-.stat.stat-income { border-top-color: var(--income); }
-.stat.stat-cost { border-top-color: var(--cost); }
-.stat.stat-result.is-good { border-top-color: var(--good-ink); }
-.stat.stat-result.is-bad { border-top-color: var(--critical-ink); }
-
-.stat .num {
-  font-family: var(--font-head);
-  font-size: 1.7rem;
-  color: var(--forest);
-  display: block;
-  font-variant-numeric: proportional-nums;
-}
-
-.stat.stat-result.is-good .num { color: var(--good-ink); }
-.stat.stat-result.is-bad .num { color: var(--critical-ink); }
-
-.stat .label {
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-/* ---------- projekt: kostnad möter intäkt ---------- */
-
-.project-card {
-  background: var(--panel);
-  border: 1px solid var(--hairline);
-  border-radius: 12px;
-  padding: 1.1rem 1.3rem 1.3rem;
-  margin-bottom: 1rem;
-}
-
-.project-card h3 {
-  margin: 0 0 0.2rem;
-  font-size: 1.05rem;
-}
-
-.project-net {
-  font-size: 0.86rem;
-  color: var(--muted);
-  margin: 0 0 1rem;
-}
-
-.project-net strong.is-good { color: var(--good-ink); }
-.project-net strong.is-bad { color: var(--critical-ink); }
-
-.diverge {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 0.55rem;
-}
-
-.diverge .side-label {
-  font-size: 0.78rem;
-  color: var(--muted);
-  white-space: nowrap;
-}
-
-.diverge .side-label.right { text-align: left; }
-.diverge .side-label.left { text-align: right; }
-
-.diverge .track {
-  position: relative;
-  height: 24px;
-  background: transparent;
-}
-
-.diverge .track.left-track {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.diverge .bar {
-  height: 24px;
-  min-width: 2px;
-}
-
-.diverge .bar-cost {
-  background: var(--cost);
-  border-radius: 4px 0 0 4px;
-}
-
-.diverge .bar-income {
-  background: var(--income);
-  border-radius: 0 4px 4px 0;
-}
-
-.diverge .zero-line {
-  width: 2px;
-  height: 32px;
-  background: var(--hairline);
-}
-
-.diverge .value {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--ink);
-  white-space: nowrap;
-}
-
-.diverge .value.cost-value { color: var(--cost); text-align: right; }
-.diverge .value.income-value { color: var(--income); }
-
-.legend-row {
-  display: flex;
-  gap: 1.4rem;
-  font-size: 0.82rem;
-  color: var(--muted);
-  margin-top: 0.8rem;
-}
-
-.legend-row .swatch {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-  margin-right: 0.4rem;
-}
-
-.legend-row .swatch.income { background: var(--income); }
-.legend-row .swatch.cost { background: var(--cost); }
-
-/* ---------- enkla listor (övriga intäkter/kostnader) ---------- */
-
-.line-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.55rem;
-}
-
-.line-list li {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  background: var(--panel);
-  border: 1px solid var(--hairline);
-  border-radius: 10px;
-  padding: 0.7rem 0.95rem;
-}
-
-.line-list .mark {
-  width: 4px;
-  align-self: stretch;
-  border-radius: 3px;
-  flex: 0 0 auto;
-}
-
-.line-list .mark.income { background: var(--income); }
-.line-list .mark.cost { background: var(--cost); }
-
-.line-list .name {
-  flex: 1 1 auto;
-  font-size: 0.94rem;
-}
-
-.line-list .amount {
-  font-family: var(--font-body);
-  font-variant-numeric: tabular-nums;
-  font-size: 0.94rem;
-  font-weight: 600;
-  color: var(--ink);
-  white-space: nowrap;
-}
-
-/* ---------- fullständig tabell ---------- */
+/* ---------- resultattabell ---------- */
 
 .data-table-wrap {
   overflow-x: auto;
@@ -353,13 +167,6 @@ table.data-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
-}
-
-table.data-table caption {
-  text-align: left;
-  font-size: 0.82rem;
-  color: var(--muted);
-  margin-bottom: 0.5rem;
 }
 
 table.data-table th,
@@ -384,21 +191,42 @@ table.data-table th.amount {
   white-space: nowrap;
 }
 
+table.data-table tr.row-section td {
+  font-weight: 700;
+  color: var(--forest);
+  border-bottom: none;
+  padding-top: 1.1rem;
+}
+
+table.data-table tr.row-section:first-child td { padding-top: 0.55rem; }
+
 table.data-table tr.row-total td {
   border-top: 2px solid var(--forest);
   border-bottom: none;
   font-weight: 700;
 }
 
-table.data-table .type-tag {
-  font-size: 0.78rem;
-  padding: 0.1rem 0.5rem;
-  border-radius: 999px;
-  display: inline-block;
+table.data-table tr.proj-a td { background: var(--proj-a); }
+table.data-table tr.proj-b td { background: var(--proj-b); }
+table.data-table tr.proj-c td { background: var(--proj-c); }
+
+.commentary {
+  margin-top: 1.4rem;
+  font-size: 0.94rem;
 }
 
-table.data-table .type-tag.income { background: var(--income-soft); color: var(--income); }
-table.data-table .type-tag.cost { background: var(--cost-soft); color: var(--cost); }
+.commentary-lead {
+  font-weight: 700;
+  color: var(--forest);
+  margin: 0 0 0.5rem;
+}
+
+.commentary ul {
+  margin: 0 0 0.9rem;
+  padding-left: 1.2rem;
+}
+
+.commentary li { margin-bottom: 0.35rem; }
 
 .source-note {
   font-size: 0.82rem;
@@ -520,8 +348,4 @@ table.data-table .type-tag.cost { background: var(--cost-soft); color: var(--cos
 @media (max-width: 640px) {
   .tech-grid { grid-template-columns: 1fr; }
   .modal { padding: 1.4rem; }
-  .stat-row { flex-direction: column; }
-  .diverge { grid-template-columns: 1fr; }
-  .diverge .side-label.left { text-align: left; }
-  .diverge .track.left-track { justify-content: flex-start; }
 }
