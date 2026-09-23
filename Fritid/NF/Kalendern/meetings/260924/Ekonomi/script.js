@@ -21,7 +21,11 @@ function sum(items) {
 
 function projectClassFor(data, projektId) {
   if (!projektId) return "";
-  const idx = (data.projekt || []).findIndex((p) => p.id === projektId);
+  // Färgidentiteten ska inte bero på i vilken ordning raderna listas i JSON:en
+  // (den ordningen ändras för att styra läsordningen i tabellen) – sortera
+  // projekt-id:na alfabetiskt så samma projekt alltid får samma färg.
+  const ids = [...new Set((data.projekt || []).map((p) => p.id))].sort();
+  const idx = ids.indexOf(projektId);
   return idx >= 0 ? PROJECT_CLASSES[idx % PROJECT_CLASSES.length] : "";
 }
 

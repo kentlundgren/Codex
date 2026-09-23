@@ -66,16 +66,27 @@ Kalendern/meetings/260924/Ekonomi/
    }
    ```
    - `belopp` för kostnader är alltid **negativt**.
-   - `projekt`-nyckeln (på både en intäkts- och en kostnadsrad) parar ihop dem i
-     sidans särskilda "kostnad möter intäkt"-sektion, med två staplar som möts vid en
-     nollinje. Använd samma `projekt`-id (`cykelkarta`, `fotoutstallning`) om samma
-     projekt återkommer. Om en **ny** typ av självfinansierat projekt dyker upp i
-     underlaget (en kostnad med en tydligt riktad, egen intäkt/anslag/ersättning):
-     fråga Kent om den ska visas i samma sektion, i stället för att anta det.
+   - `projekt`-nyckeln (på både en intäkts- och en kostnadsrad) parar ihop dem: sidan
+     markerar båda raderna med samma bakgrundsfärg i tabellen, och radar upp dem i
+     kommentarslistan under tabellen ("Per projekt, kostnad mot riktad intäkt"). Använd
+     samma `projekt`-id (`cykelkarta`, `fotoutstallning`) om samma projekt återkommer.
+     Om en **ny** typ av självfinansierat projekt dyker upp i underlaget (en kostnad med
+     en tydligt riktad, egen intäkt/anslag/ersättning): fråga Kent om den ska markeras
+     på samma sätt, i stället för att anta det.
+   - **Ordningen inom `intakter` och `kostnader` styr läsordningen i tabellen**, och bör
+     hållas konsekvent mellan de två listorna: om ett projekts intäktsrad ligger före ett
+     annat projekts i `intakter`, lägg kostnadsraderna i samma inbördes ordning i
+     `kostnader` (Kent bad uttryckligen om detta 2026-09-23, så ögat lättare kopplar ihop
+     rätt par rad för rad). Färgen (`proj-a`/`proj-b`/`proj-c` i CSS) sätts alfabetiskt på
+     `projekt`-id:t, inte av listordningen, så att ändra läsordningen aldrig byter färg på
+     ett projekt.
    - Kategorinamn (`namn`) hamnar direkt på en publik sida — använd bara
      kategori-/delsummenivå, aldrig enskilda verifikationsraders fritext (som kan
      innehålla personnamn, se `AGENTS.md` → Publiceringskontroll). Sidan är byggd för
      att aldrig visa den detaljnivån, och det ska förbli så.
+   - Om en intäktsrad är riktad till ett specifikt projekt, säg det i `namn` (t.ex.
+     "Miljöanslag till fotoutställningen"), inte bara via färgmarkeringen — Kent bad
+     uttryckligen om att kopplingen ska gå att läsa i klartext, inte bara synas i färg.
 
 4. **Uppdatera manifestet.** Lägg till det nya datumet i `data/manifest.json` (lägg
    till, skriv inte över befintliga poster). Sidans JS sorterar själv, senaste period
@@ -86,7 +97,8 @@ Kalendern/meetings/260924/Ekonomi/
    `Kalendern/meetings/260924/Ekonomi/index.html`, och kontrollera att:
    - båda/alla perioder syns i väljaren,
    - den nya periodens summor stämmer mot källdokumentet,
-   - "kostnad möter intäkt"-sektionen visar rätt par om nya `projekt`-kopplingar lagts till.
+   - radmarkeringarna och kommentarslistan under tabellen visar rätt par och rätt
+     färger om nya `projekt`-kopplingar lagts till.
 
 6. **Rör aldrig git.** Lämna ändringarna ocommittade och opushade om inte Kent
    uttryckligen ber om det (Regel 11, `kent-meta-regler-for-code`). Redovisa vilka

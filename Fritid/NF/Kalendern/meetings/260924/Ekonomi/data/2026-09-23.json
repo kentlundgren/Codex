@@ -8,7 +8,7 @@
   "kalla": "Huvudbok 2026-09-23 (verifikat 1–37, t.o.m. 2026-09-21)",
   "intakter": [
     { "id": "medlemsavgifter", "namn": "Medlemsavgifter", "belopp": 66156.00 },
-    { "id": "miljoanslag", "namn": "Miljöanslag", "belopp": 54000.00, "projekt": "fotoutstallning" },
+    { "id": "miljoanslag", "namn": "Miljöanslag till fotoutställningen", "belopp": 54000.00, "projekt": "fotoutstallning" },
     { "id": "ersattning-cykelkarta", "namn": "Ersättning cykelkartor", "belopp": 97000.00, "projekt": "cykelkarta" },
     { "id": "bokforsaljning", "namn": "Bokförsäljning (“Cykelturer i Lundabygden”)", "belopp": 2000.00 }
   ],
@@ -16,11 +16,11 @@
     { "id": "administration", "namn": "Administration", "belopp": -6365.00 },
     { "id": "programblad", "namn": "Programblad", "belopp": -75258.00 },
     { "id": "arrangemang", "namn": "Arrangemang", "belopp": -1208.85 },
-    { "id": "cykelkarta", "namn": "Cykelkarta", "belopp": -91655.91, "projekt": "cykelkarta" },
-    { "id": "fotoutstallning", "namn": "Fotoutställning", "belopp": -54024.56, "projekt": "fotoutstallning" }
+    { "id": "fotoutstallning", "namn": "Fotoutställning", "belopp": -54024.56, "projekt": "fotoutstallning" },
+    { "id": "cykelkarta", "namn": "Cykelkarta", "belopp": -91655.91, "projekt": "cykelkarta" }
   ],
   "projekt": [
-    { "id": "cykelkarta", "namn": "Cykelkarta" },
-    { "id": "fotoutstallning", "namn": "Fotoutställning" }
+    { "id": "fotoutstallning", "namn": "Fotoutställning" },
+    { "id": "cykelkarta", "namn": "Cykelkarta" }
   ]
 }
