@@ -4,11 +4,11 @@
 
 ## Balanseringsprincipen
 
-Frågan togs upp. Den ska skrivas om till en **insändare i Sydsvenskan**, undertecknad av Per Blomberg, ordförande. Ett utkast till insändartext finns i [insandare_balanseringsprincipen.md](insandare_balanseringsprincipen.md). Underlaget är utkastet [Balanseringsprincip_260913B](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md), ett bidrag till diskussion.
+Frågan togs upp. Den ska skrivas om till en **insändare i Sydsvenskan**, undertecknad av PB, ordförande. Ett utkast till insändartext finns i [insandare_balanseringsprincipen.md](insandare_balanseringsprincipen.md). Underlaget är utkastet [Balanseringsprincip_260913B](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md), ett bidrag till diskussion.
 
 ## Hej lundabo
 
-Brevet från 16 augusti 2026, undertecknat av Per Blomberg, delades ut till cirka 50 000 personer i Lund: [Hej-lundabo-2026-08-16.pdf](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Material/Hej-lundabo-2026-08-16.pdf).
+Brevet från 16 augusti 2026, undertecknat av PB, delades ut till cirka 50 000 personer i Lund: [Hej-lundabo-2026-08-16.pdf](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Material/Hej-lundabo-2026-08-16.pdf).
 
 ## Ekonomin
 

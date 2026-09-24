@@ -1,6 +1,6 @@
 # Insändare till Sydsvenskan — balanseringsprincipen (utkast)
 
-*Utkast, cirka 1 600 tecken. Undertecknas av Per Blomberg. Kontrollera Sydsvenskans aktuella regler för insändare (längd, signering) innan den skickas.*
+*Utkast, cirka 1 600 tecken. Undertecknas av PB. Kontrollera Sydsvenskans aktuella regler för insändare (längd, signering) innan den skickas.*
 
 ---
 
