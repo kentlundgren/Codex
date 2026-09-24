@@ -12,9 +12,7 @@ Lunds Naturskyddsförening föreslår att kommunen inför balanseringsprincipen 
 
 Det är ingen ny idé. Tyskland har haft regler av det här slaget sedan 1976, och England kräver sedan 2024 att de flesta bygglov ger en mätbar förbättring för naturen. I Skåne har Helsingborg och Lomma valt att arbeta så utan att lagen kräver det. Miljöbalken har verktyg för skyddade områden, men plan- och bygglagen saknar krav. En statlig utredning föreslog det redan 2017, men förslaget blev aldrig lag.
 
-Kompensationen kan vara konkret: blomsterrika ängar och död ved för insekterna, nya stigar och rastplatser där friluftsliv försvinner, nya vattenmiljöer där gamla påverkas. Helst nära platsen där skadan sker.
-
-Förslaget innebär att varje planärende kompletteras med konkreta förslag på hur det som går förlorat ska ersättas.
+Förslaget innebär att varje planärende kompletteras med konkreta förslag på hur det som går förlorat ska ersättas. Det kan vara blomsterrika ängar och död ved för insekterna, nya stigar och rastplatser där friluftsliv försvinner, nya vattenmiljöer där gamla påverkas. Helst nära platsen där skadan sker.
 
 Efter valet har Lund ett nytt fullmäktige. Vi uppmanar de partier som ska styra kommunen att skriva in balanseringsprincipen i sin överenskommelse.
 
@@ -55,7 +53,7 @@ Tumregel: skulle en granne som inte arbetar med det här förstå ordet utan fö
 
 ### 6. Ett enda huvudbudskap, en tanke per stycke
 
-Originalet innehåller flera sidospår. Insändaren behåller de som stöder kravet och stryker resten. Stycken på 2 till 4 meningar, och en tanke i varje: problemet, förslaget, förebilderna, exemplen, det som saknas, uppmaningen.
+Originalet innehåller flera sidospår. Insändaren behåller de som stöder kravet och stryker resten. Stycken på 2 till 4 meningar, och en tanke i varje: problemet, förslaget, förebilderna, vad förslaget innebär i praktiken (med exempel), uppmaningen.
 
 ### 7. Vad som togs bort eller kortades, och varför
 
