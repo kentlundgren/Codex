@@ -18,5 +18,4 @@ Kommunen utreder redan naturvärden i planarbetet. Det som saknas är nästa ste
 
 Efter valet har Lund ett nytt fullmäktige. Vi uppmanar de partier som ska styra kommunen att skriva in balanseringsprincipen i sin överenskommelse.
 
-PB
-Ordförande, Lunds Naturskyddsförening
+Underskrift
