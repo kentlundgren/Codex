@@ -10,7 +10,7 @@ Lund vill vara en klimatsmart kommun med rik natur. Men när nya bostäder, väg
 
 Lunds Naturskyddsförening föreslår att kommunen inför balanseringsprincipen som policy i alla planärenden. Den bygger på fyra steg i en bestämd ordning: undvik skadan, begränsa den, återställ det som ändå skadats och kompensera först till sist det som återstår. Målet är att naturen ska vara minst lika värdefull efter ett bygge som före.
 
-Det är ingen ny idé. Tyskland har haft regler av det här slaget sedan 1976, och England kräver sedan 2024 att nya bygglov ger en mätbar förbättring för naturen. I Skåne har Helsingborg och Lomma valt att arbeta så utan att lagen kräver det. Miljöbalken har verktyg för skyddade områden, men plan- och bygglagen saknar krav. En statlig utredning föreslog det redan 2017, men förslaget blev aldrig lag.
+Det är ingen ny idé. Tyskland har haft regler av det här slaget sedan 1976, och England kräver sedan 2024 att de flesta bygglov ger en mätbar förbättring för naturen. I Skåne har Helsingborg och Lomma valt att arbeta så utan att lagen kräver det. Miljöbalken har verktyg för skyddade områden, men plan- och bygglagen saknar krav. En statlig utredning föreslog det redan 2017, men förslaget blev aldrig lag.
 
 Kompensationen kan vara konkret: blomsterrika ängar och död ved för insekterna, nya stigar och rastplatser där friluftsliv försvinner, nya vattenmiljöer där gamla påverkas. Helst nära platsen där skadan sker.
 
@@ -67,7 +67,7 @@ Originalet innehåller flera sidospår. Insändaren behåller de som stöder kra
 ### 8. Vad som lades till
 
 - **Aktualiteten:** "efter valet har Lund ett nytt fullmäktige". Tidningar värderar vanligen inlägg som hänger ihop med det som händer nu, och det ger en anledning att skriva just nu.
-- **Två internationella exempel** (Tyskland sedan 1976 och England sedan 2024). De finns inte i originalet, utan hämtades från källförteckningen i den omstrukturerade versionen (B). Jag har inte kontrollerat dem mot primärkällorna på nytt, så gör det innan en skarp text skickas.
+- **Två internationella exempel** (Tyskland sedan 1976 och England sedan 2024). De finns inte i originalet, utan hämtades från den omstrukturerade versionen (B). De är därefter kontrollerade mot källorna sist i filen (24 september 2026).
 
 ### 9. En ändring i tonen som du bör ta ställning till
 
@@ -86,3 +86,12 @@ Originalet **kräver** att den nya majoriteten inför principen. Insändaren **f
 3. Har jag förklarat eller bytt ut varje ord som en utomstående inte kan?
 4. Kan tidningen korta slutet utan att förlora något viktigt?
 5. Går varje sakuppgift att belägga om någon ifrågasätter den?
+
+---
+
+## Källor till de två internationella exemplen
+
+*Hör inte till insändaren. Kontrollerade 24 september 2026.*
+
+- GOV.UK (u.å.) *Understanding biodiversity net gain*. Tillgänglig på: <https://www.gov.uk/guidance/understanding-biodiversity-net-gain> (Hämtad: 24 september 2026). *(Officiell brittisk vägledning. Anger att kravet på biodiversity net gain blev obligatoriskt för större byggprojekt i England den 12 februari 2024, med en nettoförbättring på 10 procent. Kravet gäller de flesta bygglov men inte alla: från 6 augusti 2026 undantas projekt på 0,2 hektar eller mindre. Ger stöd för "England sedan 2024", men "de flesta bygglov" är mer exakt än "nya bygglov".)*
+- Reisert, J. och Köppel, J. (2018) 'Eingriffsregelung', i Akademie für Raumforschung und Landesplanung (ARL) (red.) *Handwörterbuch der Stadt- und Raumentwicklung*. Hannover: ARL, s. 475–488. Tillgänglig på: <https://www.arl-net.de/system/files/media-shop/pdf/HWB%202018/Eingriffsregelung.pdf> (Hämtad: 24 september 2026). *(Uppslagsverksartikel som anger att Eingriffsregelung togs in i förbundsnaturskyddslagen (Bundesnaturschutzgesetz) 1976. Steget vidtas i ordningen undvika, minska och kompensera. Anger också att vissa delstater hade liknande regler före 1976, så "sedan 1976" gäller förbundsnivå.)*
