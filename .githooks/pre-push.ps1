@@ -4,6 +4,12 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+# Här skedde en uppdatering 2026-09-28: PowerShell 5.1 läste git-utdata med
+# konsolens OEM-kodning (ibm850). Filnamn med å/ä/ö blev då fel, git show
+# kraschade och hela pushen avbröts. UTF-8 gör att sökvägen går att läsa.
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+[Console]::InputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.Encoding]::UTF8
 $blockedPath = '(?i)(^|/)(underlag_internt(/|$)|Plangruppen/Mail(/|$)|mejlforlag|.*(?:privat|private|sensitive|kanslig|känslig|utkast).*)\.(md|txt|pdf|doc|docx)$'
 $blockedMail = '(?i)(^|/)Plangruppen/Mail(/|$)'
 $blockedContent = '(?im)^\s*(privat|private|konfidentiellt|confidential|inte för publicering|do not publish)\b'
@@ -36,13 +42,24 @@ foreach ($update in $updates) {
     # privat fil måste kunna pushas för att ta bort den från den publicerade grenen.
     # quotepath=false så att å/ä/ö i filnamn inte kommer som \303\245 och
     # får git show att krascha i PowerShell (ErrorActionPreference Stop).
-    $files = git -c core.quotepath=false diff-tree --no-commit-id --diff-filter=AMRC --name-only -r $commit
+    $files = git -c core.quotepath=false -c i18n.logOutputEncoding=utf-8 diff-tree --no-commit-id --diff-filter=AMRC --name-only -r $commit
     foreach ($file in $files) {
       $isDocument = $file -match '(?i)\.(md|txt|pdf|doc|docx)$'
       $isPublicDocument = $file -in $publicDocuments
       $content = $null
       if ($isDocument -or $isPublicDocument) {
-        $content = git --no-pager show "${commit}:$file" 2>$null
+        # Fortsätt även om git skriver till felströmmen, så en sökväg med å/ä/ö
+        # inte avbryter skriptet innan spärren hunnit bedöma filen.
+        $previousErrorAction = $ErrorActionPreference
+        $ErrorActionPreference = 'Continue'
+        $content = git --no-pager -c core.quotepath=false show "${commit}:$file" 2>$null
+        $showExit = $LASTEXITCODE
+        $ErrorActionPreference = $previousErrorAction
+        if ($showExit -ne 0) {
+          Write-Host ''
+          Write-Host "PUSH STOPPAD: kunde inte läsa '$file' i $commit." -ForegroundColor Red
+          exit 1
+        }
       }
       if ($file -match $blockedPath -or $file -match $blockedMail -or ($isDocument -and $content -match $blockedContent) -or ($isPublicDocument -and $content -match $publicSensitiveContent)) {
         $blocked.Add("$file ($commit)")
