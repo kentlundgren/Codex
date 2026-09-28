@@ -1,6 +1,6 @@
 # Energiplan för Lunds kommun 2027–2029
 
-Arbetsmaterial om Lunds kommuns remissförslag till energiplan för 2027–2029, och om Lunds Naturskyddsförenings synpunkter på det. Texterna som är märkta som utkast är inte antagna av föreningen.
+Arbetsmaterial om Lunds kommuns remissförslag till energiplan för 2027–2029, och om Lunds Naturskyddsförenings synpunkter på det. Texterna som är märkta som utkast är AI-assisterade förslag till fortsatt diskussion och är inte antagna av föreningen.
 
 Markdown-filerna är länkade till GitHubs blob-vy, där formateringen visas.
 
@@ -15,6 +15,8 @@ Markdown-filerna är länkade till GitHubs blob-vy, där formateringen visas.
 [synpunkter_pa_LNFs_synpunkter.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/synpunkter_pa_LNFs_synpunkter.md) går igenom det underlaget: vad som håller, och vad som kan skrivas tydligare.
 
 [LNFs synpunkter pa Lunds Energiplan 2027-2029_ver2.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/LNFs%20synpunkter%20pa%20Lunds%20Energiplan%202027-2029_ver2.md) är ett förslag till omskrivet yttrande. Originalet ovan ligger kvar.
+
+[LNFs synpunkter pa Lunds Energiplan 2027-2029_ver3.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/LNFs%20synpunkter%20pa%20Lunds%20Energiplan%202027-2029_ver3.md) är det senaste förslaget. Det bygger på version 2 och på synpunkter från två medlemmar i plangruppen. Fem huvudsynpunkter kommer först: avståndet till målen, ansvar och uppföljning av åtgärderna, rådighet och styrmedel, restvärmen från ESS och biogasen när Källby stängs. Därefter följer kortare övriga synpunkter.
 
 ## Insändare
 
