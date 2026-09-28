@@ -1,6 +1,6 @@
 # Yttrande över förslag till energiplan för Lunds kommun 2027–2029, version 3
 
-*AI-assisterat utkast, 2026-09-28. Bygger på version 2 och på synpunkter som två medlemmar har lämnat i plangruppen. Omarbetat samma dag så att fem huvudsynpunkter kommer först och övriga synpunkter hålls korta. Det är ett förslag till fortsatt diskussion och är inte antaget av Lunds Naturskyddsförening. Texten mellan strecken är det som kan skickas, efter att föreningen strukit det den inte står för.*
+*Utkast, 2026-09-28. Bygger på version 2 och på synpunkter som två medlemmar har lämnat i plangruppen. Omarbetat samma dag så att fem huvudsynpunkter kommer först och övriga synpunkter hålls korta. Det är ett förslag till fortsatt diskussion och är inte antaget av Lunds Naturskyddsförening. Texten mellan strecken är det som kan skickas, efter att föreningen strukit det den inte står för.*
 
 ---
 
