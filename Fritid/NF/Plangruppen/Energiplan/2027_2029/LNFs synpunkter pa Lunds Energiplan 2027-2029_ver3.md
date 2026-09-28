@@ -60,7 +60,7 @@ LNF begär att planen anger hur långt elektrifieringen av kommunens egna fordon
 
 ## Fjärrvärme, restvärme och effektivisering
 
-Energitrappan sätter restvärme före ny värmeproduktion. Restvärme från en kraftvärmeturbin är inte alltid det bästa valet. Att tappa av ånga för värme kan ge mindre el än att ta ut mer el och använda den i en värmepump. LNF begär att prioriteringen av restvärme bedöms också utifrån hur mycket el som går förlorad, alltså energins kvalitet och inte bara mängden.
+Energitrappan sätter restvärme före ny värmeproduktion. Planen bör skilja mellan verklig restvärme, som annars går förlorad, och värme från kraftvärme, som är en samprodukt med elproduktionen. Kraftvärme är i regel ett effektivt sätt att ta vara på bränslet. Elutbytet blir dock högre ju lägre temperatur fjärrvärmenätet har. LNF begär att planen anger mål för sänkta temperaturer i fjärrvärmenätet och att ren värmeproduktion utan elproduktion undviks. Lägre temperaturer gör det också lättare att ta vara på lågtempererad restvärme, till exempel från ESS.
 
 Det finns en motsättning mellan att effektivisera byggnader och att sälja fjärrvärme. Kraftringen är kommunägt, och bolagets intäkter minskar när kunderna använder mindre värme. LNF begär att planen redovisar hur ägardirektivet hanterar den motsättningen, så att effektivisering inte motverkas.
 
