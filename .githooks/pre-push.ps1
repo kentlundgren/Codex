@@ -12,6 +12,9 @@ $ErrorActionPreference = 'Stop'
 $OutputEncoding = [System.Text.Encoding]::UTF8
 $blockedPath = '(?i)(^|/)(underlag_internt(/|$)|Plangruppen/Mail(/|$)|mejlforlag|.*(?:privat|private|sensitive|kanslig|känslig|utkast).*)\.(md|txt|pdf|doc|docx)$'
 $blockedMail = '(?i)(^|/)Plangruppen/Mail(/|$)'
+# Här skedde en uppdatering 2026-09-28: personliga inlägg och synpunkter från
+# enskilda medlemmar spärras för alla filtyper, inte bara dokument.
+$blockedPersonal = '(?i)(^|/)Underlag_synpunkter/|_inl(a|ä)gg\.[^/]+$'
 $blockedContent = '(?im)^\s*(privat|private|konfidentiellt|confidential|inte för publicering|do not publish)\b'
 $publicDocuments = @(
   'Fritid/NF/NCC_stenbryttning/index.html',
@@ -61,7 +64,7 @@ foreach ($update in $updates) {
           exit 1
         }
       }
-      if ($file -match $blockedPath -or $file -match $blockedMail -or ($isDocument -and $content -match $blockedContent) -or ($isPublicDocument -and $content -match $publicSensitiveContent)) {
+      if ($file -match $blockedPath -or $file -match $blockedMail -or $file -match $blockedPersonal -or ($isDocument -and $content -match $blockedContent) -or ($isPublicDocument -and $content -match $publicSensitiveContent)) {
         $blocked.Add("$file ($commit)")
       }
     }

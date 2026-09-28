@@ -1,7 +1,13 @@
 #!/bin/sh
 # Stoppa interna underlag även om någon försöker lägga till dem med git add -f.
-if ! git diff --cached --diff-filter=AMRC --name-only | while IFS= read -r path; do
+if ! git -c core.quotepath=false diff --cached --diff-filter=AMRC --name-only | while IFS= read -r path; do
   case "$path" in
+    # Här skedde en uppdatering 2026-09-28: personliga inlägg och synpunkter
+    # från enskilda medlemmar spärras, oavsett filtyp.
+    Underlag_synpunkter|Underlag_synpunkter/*|*/Underlag_synpunkter|*/Underlag_synpunkter/*|*_inlagg.*|*_inlägg.*)
+      echo "COMMIT STOPPAD: $path är ett personligt inlägg eller en personlig synpunkt och får inte läggas i Codex-repot." >&2
+      exit 1
+      ;;
     underlag_internt|underlag_internt/*|*/underlag_internt|*/underlag_internt/*)
       echo "COMMIT STOPPAD: underlag_internt innehåller internt material och får aldrig publiceras i Git." >&2
       exit 1

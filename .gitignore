@@ -13,3 +13,7 @@ private/
 *_kanslig.*
 *_känslig.*
 *_sensitive.*
+# Personliga inlägg och synpunkter från enskilda medlemmar. Spärras även i pre-commit och pre-push.
+Underlag_synpunkter/
+*_inlagg.*
+*_inlägg.*

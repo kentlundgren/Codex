@@ -19,6 +19,7 @@
 - Innan material publiceras, committas eller pushas ska publicerade huvuddokument kontrolleras för personnamn, kontaktuppgifter, personnummer, privata arbetsanteckningar och annan information som inte är avsedd för offentlig spridning.
 - För projektet NCC_stenbryttning ska `index.html` och `samrad.md` alltid granskas med projektets Git-kontroll före commit och push. Automatisk kontroll fångar e-postadresser, telefonnummer, personnummer och privata markeringar; en manuell rimlighetskontroll krävs också för sådant som inte säkert kan upptäckas automatiskt, exempelvis namn i löpande text.
 - Mappen `Fritid/NF/NCC_stenbryttning/underlag_internt/` innehåller internt arbetsmaterial och får aldrig committas eller pushas. Den ska vara ignorerad av Git och spärrad både vid commit och push.
+- Personliga inlägg och synpunkter från enskilda medlemmar läggs i en mapp som heter `Underlag_synpunkter/`, eller får ett filnamn som slutar på `_inlagg`. De får aldrig committas eller pushas. Mappnamnet och filnamnet är ignorerade av Git och spärrade både vid commit och push, för alla filtyper.
 - Mappen `Fritid/NF/Plangruppen/Mail/` innehåller intern mejlväxling. Den committas bara i ett eget lokalt Git-repo utan fjärranslutning, och får aldrig pushas till GitHub. Moderrepot ignorerar mappen; commit- och push-hooks spärrar publicering.
 
 ## Löpande källhänvisningar
