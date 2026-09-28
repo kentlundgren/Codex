@@ -37,6 +37,12 @@ Projektet kan samtidigt öppnas och ändras i Cursor av användaren. Kontrollera
 
 ## Git och publicering
 
-- Användaren committar och pushar normalt själv till GitHub.
-- Commit, push, skapande av pull request eller annan publicering till GitHub får endast göras när användaren uttryckligen ber om det i den aktuella konversationen.
-- Efter lokala ändringar ska ändringsomfång och relevanta kontroller redovisas, men materialet ska lämnas ocommittat och opushat om inte användaren uttryckligen har bett om publicering.
+Kent committar och pushar själv i Cursor. Det är huvudregeln.
+
+Ett AI-verktyg får köra `git commit` eller `git push` bara när Kent i den aktuella konversationen uttryckligen ber om just den handlingen, till exempel "committa och pusha". Då ska det göras. Bara commit om han bara ber om commit. Bara push om committen redan finns och han bara ber om push. Båda när han ber om båda. Detsamma gäller pull request och annan publicering till GitHub.
+
+En GitHub-adress, en blob-länk eller en uppmaning att lägga en fil i repot är en platsangivelse. Den är inte en begäran om commit eller push. Ord som "publicera", "lägg upp" eller "in på GitHub" räcker inte heller, om Kent inte samtidigt ber om commit eller push.
+
+Read-only git (`status`, `diff`, `log`, `remote -v`, `fetch`) är tillåtet.
+
+Efter lokala ändringar ska ändringsomfång och relevanta kontroller redovisas. Materialet lämnas ocommittat och opushat, så att Kent själv kan committa och pusha i Cursor.
