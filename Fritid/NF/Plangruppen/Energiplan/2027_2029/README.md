@@ -8,6 +8,10 @@ Markdown-filerna är länkade till GitHubs blob-vy, där formateringen visas.
 
 [sammanfattning_energiplan_2027-2029.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/sammanfattning_energiplan_2027-2029.md) är ett utkast som återger remissförslaget: målen, läget 2023, de framtida satsningarna och de 40 åtgärderna. Själva förslaget ligger hos kommunen: [Energiplan för Lunds kommun 2027–2029 (pdf)](https://lund.se/download/18.27a83861a04205000a14cf/1788860628694/Energiplan%20f%C3%B6r%20Lunds%20kommun%202027-2029.pdf).
 
+## Bakgrund: värmeverk, kondenskraftverk och kraftvärmeverk
+
+[Värmeverk, kondenskraftverk och kraftvärmeverk](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/kraftvarmeverk.html) är en lättfattlig introduktion för den som inte arbetar med energifrågor. Den förklarar hur de tre sorternas verk fungerar och vilka verkningsgrader de har, jämför kraftvärme med värmepumpar och använder Örtoftaverket som lokalt exempel. Källfilen är `kraftvarmeverk.html`.
+
 ## Synpunkter från Lunds Naturskyddsförening
 
 [Synpunkter på Lunds kommuns energiplan 2027-2029_260927.docx](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/Synpunkter%20pa%CC%8A%20Lunds%20kommuns%20energiplan%202027-2029_260927.docx) är det inlämnade underlaget från 2026-09-27.
