@@ -19,5 +19,6 @@ På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Plangrupp
 ## Innehåll
 
 - [Plangruppskalender](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Plangruppskalender/) — möten, månadsvy och ICS-fil till Google Kalender.
+- [Skryllerådet och stormötet 2026](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Skrylleradet/) — källbelagt bakgrundsunderlag.
 
 Intern mejlväxling ligger i `Mail/` och publiceras inte.
