@@ -4,6 +4,7 @@
 
 - Varje publicerad live-sida ska ha en diskret GitHub-länk nere till vänster som leder tillbaka till det repo där sidan finns.
 - Varje publicerad live-sida ska ha en diskret teknikknapp nere till höger. Den öppnar en tangentbordsanpassad modal med teknikval och en förenklad filstruktur för det aktuella projektet.
+- Länkar till pdf:er och andra dokument ska öppnas direkt i webbläsaren, inte laddas ned. Ta därför bort nedladdningsparametrar som `?downloadMode=download` eller `?downloadMode=open` (och motsvarande `download=`, `attachment`) från webbadressen. Exempel: `https://moten.lund.se/.../agenda/lundaeko-2021-2030pdf` och inte `.../lundaeko-2021-2030pdf?downloadMode=download`. Gäller både länken och den utskrivna adressen i källförteckningen. Kontrollera att adressen utan parameter fortfarande fungerar.
 - README-filen för varje publicerat sidprojekt ska innehålla en tydlig länk till sidans live-URL.
 - Sidor ska ha djuplänkbara `#`-ankare på H2 och H3. Lista inte alla ankare i README som standard. Fråga först. Ett fåtal kan vara ok.
 - På nya sidor, och på sidor som ändras väsentligt, ska ankaret (`#`-länken) alltid vara synligt i eller direkt efter rubriken, inte bara framträda vid hover. Det gör att en besökare kan se och kopiera direktlänken. Äldre sidor ändras inte retroaktivt utan att Kent ber om det.
