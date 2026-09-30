@@ -6,6 +6,7 @@
 - Varje publicerad live-sida ska ha en diskret teknikknapp nere till höger. Den öppnar en tangentbordsanpassad modal med teknikval och en förenklad filstruktur för det aktuella projektet.
 - README-filen för varje publicerat sidprojekt ska innehålla en tydlig länk till sidans live-URL.
 - Sidor ska ha djuplänkbara `#`-ankare på H2 och H3. Lista inte alla ankare i README som standard. Fråga först. Ett fåtal kan vara ok.
+- På nya sidor, och på sidor som ändras väsentligt, ska ankaret (`#`-länken) alltid vara synligt i eller direkt efter rubriken, inte bara framträda vid hover. Det gör att en besökare kan se och kopiera direktlänken. Äldre sidor ändras inte retroaktivt utan att Kent ber om det.
 - Använd GitHub Pages-URL enligt mönstret `https://kentlundgren.github.io/Codex/<sökväg>/` när sidan ligger i detta repo.
 - Länka till `.md`-filer i repot via GitHub:s blob-vy (`https://github.com/kentlundgren/Codex/blob/main/<sökväg>`), inte via GitHub Pages-URL:en. Pages visar filen som oformaterad rå text; GitHub:s blob-vy renderar Markdown-formateringen och blir lättare att läsa. Gäller specifikt `.md`-filer — publicerade `.html`-sidor länkas fortfarande via Pages-URL:en enligt regeln ovan.
 

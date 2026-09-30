@@ -13,6 +13,10 @@ h1,h2,h3 { line-height:1.12; }
 h1 { max-width:760px; margin:0; font-size:clamp(2.8rem, 8vw, 5.7rem); letter-spacing:-.045em; }
 h2 { margin:0 0 18px; font-size:clamp(1.8rem, 4vw, 3rem); letter-spacing:-.035em; }
 h3 { margin:9px 0; font-size:1.3rem; }
+/* Här skedde en uppdatering: synligt #-ankare efter rubriker (alltid synligt, inte bara vid hover), så att direktlänken går att fånga upp. Används hittills på struktur.html. */
+h2[id], h3[id] { scroll-margin-top:16px; }
+.anchor { margin-left:.35em; font:400 .6em/1 Arial,sans-serif; color:var(--moss); text-decoration:none; vertical-align:middle; opacity:.75; }
+.anchor:hover, .anchor:focus-visible { opacity:1; text-decoration:underline; }
 .lead { max-width:650px; margin:20px 0 28px; font-size:clamp(1.12rem, 2vw, 1.35rem); }
 .button { padding:12px 18px; border-radius:2px; color:var(--ink); background:#e1eacb; font:700 15px Arial,sans-serif; text-decoration:none; }
 .button:hover,.button:focus { background:#fff; }
