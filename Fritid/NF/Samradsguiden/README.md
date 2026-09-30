@@ -11,7 +11,7 @@ Ett verktyg för hur privatpersoner och miljöorganisationer kan disponera och l
 - Dispositionerna (fördjupning): [fordjupning.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/fordjupning.html)
 - Lagtexterna: [lagtexter.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html)
 - Bygg ditt yttrande (interaktiv guide): [verktyg.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/verktyg.html)
-- Ett yttrande att lära av: Lunds kommun och NCC:s samråd: [lund-ncc.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lund-ncc.html) (fristående sida, inte i toppmenyn)
+- NCC:s samråd i Lund, två yttranden att lära av (Lunds kommun och Lunds Naturskyddsförening): [lund-ncc.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lund-ncc.html) (fristående sida, inte i toppmenyn)
 
 ## Lokal sökväg
 
@@ -42,7 +42,7 @@ Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en.
 - **v1.14** — kompensationsavsnittets inledning i `fordjupning.html` förtydligar redan från början att det är verkningsfullt att verka för en generell policy enligt skadelindringshierarkin, inte bara agera i enskilda ärenden. Tre verifierade internationella motsvarigheter till balanseringsprincipen tillagda: No Net Loss (NNL), IFC Performance Standard 6 (2012) och EU:s naturrestaureringsförordning ((EU) 2024/1991, kräver no net loss av grönyta/trädtäckning i städer till 2030).
 - **v1.15** — `paverka.html` länkar nu även till `Underlag/Balanseringsprincip_260913B.md` (en omstrukturerad version av Per Blombergs utkast, med fullständig källförteckning) bredvid originalutkastet, både i "Ett exempel"-avsnittet och i källförteckningen.
 - **v1.16** — ny sida *Granska planen* (`checklista.html`): sakfrågor från kapitel 9 i Naturskyddsföreningens preliminära vägledning för hållbar stadsutveckling, som kryssbar arbetschecklista. Originalet ligger kvar i `Plangruppen/Vagledning/`; en avskrift av just kapitel 9 finns i `Underlag/Vagledning_kap9_260830.md`.
-- **v1.17** — ny exempelsida *Lunds kommun och NCC:s samråd* (`lund-ncc.html`): en genomgång av hur Lunds kommunkontor har byggt upp sitt förslag till yttrande (tjänsteskrivelse KS 2026/0700) jämfört med sexdelsmodellen, med fyra saker att låna och en diskussion om vad en förening kan hämta från en kommun. Sidan är ett utkast till fortsatt diskussion, bygger bara på tjänsteskrivelsen (bilagan "Förslag till yttrande" är inte granskad) och ligger medvetet inte i toppmenyn. Nås via ett nytt kort i `fordjupning.html` (Så ser det ut i praktiken) och via direktlänk. Versionsnumret höjt på alla sidor.
+- **v1.17** — ny exempelsida *NCC:s samråd i Lund: två yttranden att lära av* (`lund-ncc.html`): en genomgång av hur Lunds kommunkontor (tjänsteskrivelse KS 2026/0700) och Lunds Naturskyddsförening (avsända samrådssynpunkter 2026-09-04) har byggt upp sina yttranden, jämförda med sexdelsmodellen och med varandra, med fyra saker att låna och en diskussion om vad en förening kan hämta från en kommun. Sidan är ett utkast till fortsatt diskussion, kommunens del bygger bara på tjänsteskrivelsen (bilagan "Förslag till yttrande" är inte granskad) och sidan ligger medvetet inte i toppmenyn. Nås via ett nytt kort i `fordjupning.html` (Så ser det ut i praktiken) och via direktlänk. Versionsnumret höjt på alla sidor.
 
 Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
 
@@ -55,7 +55,7 @@ Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkt
 - `index.html` — kort översikt: grundprincipen, jämförelsetabell PBL/MB, de tre skedena, introduktion till granskningschecklistan och kompensationsmodulen.
 - `paverka.html` — strategilagret: vilken lag som styr när kommunen antar en plan respektive när ett bolag söker tillstånd, tre vertikala tidslinjer över när synpunkter kan lämnas, klagorättsregeln, miljöorganisationers talerätt, en ruta om hur Lunds kommun beskriver processen, och ett exempel på proaktivt påverkansarbete (LNF:s begäran om balanseringsprincip).
 - `checklista.html` — arbetschecklista vid granskning av planer och byggprojekt, hämtad ur kapitel 9 i Naturskyddsföreningens preliminära vägledning. Kryss sparas i webbläsaren.
-- `lund-ncc.html` — exempelsida: Lunds kommunkontors tjänsteskrivelse om NCC:s samråd analyserad mot sexdelsmodellen. Första sidan i en tänkt serie av exempel, en sida per exempel.
+- `lund-ncc.html` — exempelsida: Lunds kommunkontors tjänsteskrivelse och Lunds Naturskyddsförenings yttrande över NCC:s samråd, analyserade mot sexdelsmodellen och mot varandra. Första sidan i en tänkt serie av exempel.
 - `fordjupning.html` — fullständigt sakinnehåll: alla dispositionsmallar, modulen om betydande miljöpåverkan, hela kompensationsmodulen, de två konkreta exemplen, källförteckning.
 - `lagtexter.html` — de tio viktigaste lagtexterna ordagrant, med källa och datum, en förklaring i klartext bakom ett klick per post, en ordlista och en bakgrundsruta om Århuskonventionen.
 - `verktyg.html` — den interaktiva guiden: fem steg som genererar en ifyllningsbar mall med sex delar, sammanställningsvy, kopiera- och nedladdningsfunktion.
