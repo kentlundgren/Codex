@@ -26,6 +26,7 @@
 
 ## Löpande källhänvisningar
 
+- Varje utskriven webbadress i en källförteckning, i löpande text eller i en parentes ska vara en klickbar länk (`<a href>` i HTML, Markdown-länk i `.md`), inte ren text. Kontrollera efter bygget att inga adresser står som ren text och att varje länk svarar och leder till rätt sida.
 - När en extern källa första gången hänvisas till i löpande text ska Harvardhänvisningen också vara en direktlänk till källan. Senare hänvisningar kan vara olänkade när det ger en lugnare läsning.
 - När en källa är det centrala dokumentet för materialet — till exempel ett samrådsunderlag, en rapport eller ett beslutsunderlag — får länken i löpande text ges en tydlig och beskrivande länktext, såsom “samrådsunderlaget”. Behåll samtidigt en formell Harvardhänvisning i anslutning till länken.
 
