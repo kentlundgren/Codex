@@ -1,6 +1,6 @@
 # Tankar kring det inskickade yttrandet över Lunds energiplan
 
-**Kent Lundgren, 2026-10-01.** *Utkast med AI-stöd. Det här är tankar att reflektera kring, inte något som Lunds Naturskyddsförening har beslutat. Siffrorna är hämtade ur källorna längst ned.*
+**Kent Lundgren, 2026-10-01.** *Det här är tankar att reflektera kring, inte något som Lunds Naturskyddsförening har beslutat. Siffrorna är hämtade ur källorna längst ned och är inte kvalitetssäkrade. Kontrollera mot källan innan något återges.*
 
 - **Diagram:** [Energin i Lund i siffror](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat_diagram.html) (samma tal i sex diagram, med tabell under varje).
 

@@ -16,7 +16,7 @@ Yttrandet innehåller:
 
 ## Så kom yttrandet till
 
-Det inskickade yttrandet bygger i huvudsak på version 3 nedan, med tillägg. Utkasten är AI-assisterade förslag till fortsatt diskussion och inte antagna av föreningen. Stegen före inskickandet:
+Det inskickade yttrandet bygger i huvudsak på version 3 nedan, med tillägg. Utkasten är förslag till fortsatt diskussion och inte antagna av föreningen. Stegen före inskickandet:
 
 1. [Synpunkter på Lunds kommuns energiplan 2027-2029_260927.docx](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/Synpunkter%20pa%CC%8A%20Lunds%20kommuns%20energiplan%202027-2029_260927.docx) är det första underlaget från 2026-09-27.
 2. [synpunkter_pa_LNFs_synpunkter.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/synpunkter_pa_LNFs_synpunkter.md) går igenom det underlaget: vad som håller, och vad som kan skrivas tydligare.
@@ -42,4 +42,4 @@ Det inskickade yttrandet bygger i huvudsak på version 3 nedan, med tillägg. Ut
 
 ## Efteranalys
 
-Efter inskickandet har ett utkast med AI-stöd tagits fram med tankar kring yttrandet: [tankar_kring_inskickat.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat.md), med diagram i [Energin i Lund i siffror](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat_diagram.html) (källfil `tankar_kring_inskickat_diagram.html`). Det är reflektioner och inte något som föreningen har beslutat.
+Efter inskickandet har tankar kring yttrandet samlats i en text: [tankar_kring_inskickat.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat.md), med diagram i [Energin i Lund i siffror](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat_diagram.html) (källfil `tankar_kring_inskickat_diagram.html`). Det är reflektioner och inte något som föreningen har beslutat.
