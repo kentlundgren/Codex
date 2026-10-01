@@ -46,9 +46,9 @@ Läser man det så betyder "rådighet" i yttrandet något ganska konkret: kommun
 
 Det här är ingen kritik. Yttrandet skulle vara kort och skrevs på några dagar. Fem saker kom ändå inte med, och kan vara värda att ta med nästa gång.
 
-- **Gapet i tal.** Yttrandet ber planen redovisa avståndet till målen. Siffrorna finns att hämta (tabellen ovan). Störst är gapet för transportutsläppen, −33 procent mot −90, och användningen, −8 mot −15. Yttrandet säger att planen saknar transportsiffran, men nämner inte avståndet själv.
+- **Gapet i tal.** Yttrandet ber planen redovisa avståndet till målen. Siffrorna finns att hämta (tabellen ovan). Störst är gapet för transportutsläppen, −33 procent mot −90, och användningen, −8 mot −15.
 - **Kommunkoncernens egen användning.** Ingen begäran om ett basvärde i GWh, trots att planen bara tar ansvar för just den delen.
-- **Källor och Malmö.** Källhänvisningarna och Malmö stads liknande synpunkt fanns i utkast 3 men inte i det som skickades. En läsare kan inte följa upp siffrorna.
+- **Källor och Malmö.** Källhänvisningarna och Malmö stads liknande synpunkt fanns i utkast 3 men inte i det som skickades.
 - **Närnatur och datacenter.** En medlems förslag om 3-30-300 vid nybyggnad och om att undvika energislukande datacenter (åtgärd 4.1) finns inte med som krav.
 - **Tillförsel mot användning.** Yttrandet noterar att måtten skiljer sig, men inte att SCB ger −8 procent där planen skriver −12.
 
