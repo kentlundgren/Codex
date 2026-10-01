@@ -1,5 +1,7 @@
 # Energiplan för Lunds kommun 2027–2029
 
+- **Live:** [https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat_diagram.html](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat_diagram.html)
+
 Arbetsmaterial om Lunds kommuns remissförslag till energiplan för 2027–2029, och om Lunds Naturskyddsförenings synpunkter på det. Texterna som är märkta som utkast är AI-assisterade förslag till fortsatt diskussion och är inte antagna av föreningen.
 
 Markdown-filerna är länkade till GitHubs blob-vy, där formateringen visas.
@@ -21,6 +23,12 @@ Markdown-filerna är länkade till GitHubs blob-vy, där formateringen visas.
 [LNFs synpunkter pa Lunds Energiplan 2027-2029_ver2.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/LNFs%20synpunkter%20pa%20Lunds%20Energiplan%202027-2029_ver2.md) är ett förslag till omskrivet yttrande. Originalet ovan ligger kvar.
 
 [LNFs synpunkter pa Lunds Energiplan 2027-2029_ver3.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/LNFs%20synpunkter%20pa%20Lunds%20Energiplan%202027-2029_ver3.md) är det senaste förslaget. Det bygger på version 2 och på synpunkter från två medlemmar i plangruppen. Fem huvudsynpunkter kommer först: avståndet till målen, ansvar och uppföljning av åtgärderna, rådighet och styrmedel, restvärmen från ESS och biogasen när Källby stängs. Därefter följer kortare övriga synpunkter.
+
+## Tankar kring det inskickade yttrandet
+
+[tankar_kring_inskickat.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat.md) är ett utkast med AI-stöd, skrivet av Kent Lundgren efter att yttrandet skickats in den 1 oktober 2026. Det samlar siffror ur planen och SCB:s statistik mot målen, vad kommunen har rådighet över, yttrandets huvudpunkter och vad som inte kom med denna gång. Texten är tankar att reflektera kring och inte något som föreningen har beslutat.
+
+[Energin i Lund i siffror](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat_diagram.html) är sidan med diagram till texten: slutanvändning, tillförsel, energibärare, utsläpp samt sol och vind mot målen. Källfilen är `tankar_kring_inskickat_diagram.html`.
 
 ## Insändare
 
