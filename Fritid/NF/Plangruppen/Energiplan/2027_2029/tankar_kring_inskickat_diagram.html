@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Energin i Lund i siffror</title>
+<meta name="description" content="Diagram till tankar kring det inskickade yttrandet över Lunds energiplan 2027–2029: energianvändning, energibärare, utsläpp och sol/vind mot målen. Utkast.">
+<style>
+:root{
+  --bg:#faf9f6; --card:#ffffff; --ink:#1d2327; --muted:#5b646b; --line:#d9d6cf; --grid:#e8e5de;
+  --link:#0b5aa3; --accent:#0b5aa3; --warn:#9a4a00; --warn-bg:#fff4e5;
+  --c-total:#1d2327; --c-el:#0072B2; --c-fv:#E69F00; --c-tra:#7a7f85; --c-fos:#8a5a3c; --c-forn:#009E73;
+  --c-ovr:#b9b4a8; --c-mal:#D55E00; --c-sol:#E69F00; --c-vind:#56B4E9; --c-off:#CC79A7;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15181b; --card:#1d2125; --ink:#e8e6e1; --muted:#a3abb2; --line:#343a40; --grid:#2a3036;
+    --link:#7db8f0; --accent:#7db8f0; --warn:#f0b36a; --warn-bg:#2c2418;
+    --c-total:#e8e6e1; --c-el:#56B4E9; --c-fv:#F0B84A; --c-tra:#a3abb2; --c-fos:#c58e6a; --c-forn:#2fc79a;
+    --c-ovr:#6f6a60; --c-mal:#f08a4b; --c-sol:#F0B84A; --c-vind:#56B4E9; --c-off:#e39bc4;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15181b; --card:#1d2125; --ink:#e8e6e1; --muted:#a3abb2; --line:#343a40; --grid:#2a3036;
+  --link:#7db8f0; --accent:#7db8f0; --warn:#f0b36a; --warn-bg:#2c2418;
+  --c-total:#e8e6e1; --c-el:#56B4E9; --c-fv:#F0B84A; --c-tra:#a3abb2; --c-fos:#c58e6a; --c-forn:#2fc79a;
+  --c-ovr:#6f6a60; --c-mal:#f08a4b; --c-sol:#F0B84A; --c-vind:#56B4E9; --c-off:#e39bc4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Georgia,"Times New Roman",serif}
+main{max-width:760px;margin:0 auto;padding:28px 16px 90px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.3rem;line-height:1.3;margin:2.2em 0 .5em;scroll-margin-top:16px}
+h3{font-size:1.05rem;margin:1.6em 0 .4em;scroll-margin-top:16px}
+.anchor{margin-left:.45em;font:.8em/1 system-ui,sans-serif;color:var(--link);text-decoration:none;opacity:.85}
+.anchor:hover,.anchor:focus{opacity:1;text-decoration:underline}
+a{color:var(--link)}
+.meta{color:var(--muted);font:.9rem/1.5 system-ui,sans-serif}
+.draft{background:var(--warn-bg);color:var(--warn);border:1px solid var(--warn);border-radius:8px;padding:.6em .8em;font:.92rem/1.5 system-ui,sans-serif;margin:1em 0}
+figure{margin:1em 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 10px 4px}
+figure svg{display:block;width:100%;height:auto}
+figcaption{font:.9rem/1.45 system-ui,sans-serif;color:var(--muted);padding:6px 4px 8px}
+.read{font:1rem/1.55 Georgia,serif}
+.read li{margin:.25em 0}
+details{font:.9rem/1.4 system-ui,sans-serif;margin:0 4px 10px}
+summary{cursor:pointer;color:var(--link)}
+table{border-collapse:collapse;width:100%;margin:.5em 0;font:.85rem/1.35 system-ui,sans-serif}
+th,td{border-bottom:1px solid var(--line);padding:3px 6px;text-align:right}
+th:first-child,td:first-child{text-align:left}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font:.85rem/1.3 system-ui,sans-serif;padding:2px 6px 6px}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--sw)}
+svg text{fill:var(--ink);font-family:system-ui,sans-serif}
+svg .muted{fill:var(--muted)}
+svg .grid{stroke:var(--grid);stroke-width:1}
+svg .axis{stroke:var(--line);stroke-width:1}
+.sources p{font:.88rem/1.45 system-ui,sans-serif;margin:.6em 0;overflow-wrap:anywhere}
+.sources em{color:var(--muted)}
+/* hörn + modal */
+.corner{position:fixed;bottom:14px;z-index:20;font:.78rem/1 system-ui,sans-serif;color:var(--muted);opacity:.6;background:none;border:0;padding:6px 8px;cursor:pointer;text-decoration:none;border-radius:6px}
+.corner:hover,.corner:focus-visible{opacity:1;color:var(--ink);outline:2px solid var(--accent)}
+.corner-left{left:14px}.corner-right{right:14px}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:30;padding:16px}
+.modal-overlay.show{display:flex}
+.modal{background:var(--card);color:var(--ink);border-radius:12px;max-width:640px;width:100%;max-height:86vh;overflow:auto;padding:18px 20px;position:relative;font:.95rem/1.5 system-ui,sans-serif}
+.modal h2{margin:.1em 0 .3em;font-size:1.2rem}
+.modal .close{position:absolute;top:8px;right:10px;font-size:1.5rem;background:none;border:0;color:var(--muted);cursor:pointer;line-height:1}
+.tech-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:.8em 0}
+.tech-card{border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.tech-card h3{margin:0 0 .2em;font-size:.95rem}
+.tech-card p{margin:0;font-size:.88rem}
+.modal pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:.8rem;overflow:auto}
+@media (max-width:560px){.tech-grid{grid-template-columns:1fr}h1{font-size:1.55rem}}
+</style>
+</head>
+<body>
+<main>
+<p class="meta">Plangruppen · Lunds Naturskyddsförening · Energiplan 2027–2029</p>
+<h1 id="Start">Energin i Lund i siffror</h1>
+<p class="meta">Diagram till <a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat.md">Tankar kring det inskickade yttrandet</a>. Avsändare: Kent Lundgren. Utkast 2026-10-01.</p>
+<p class="draft"><strong>Utkast med AI-stöd.</strong> Siffrorna är hämtade ur källorna längst ned och är inte beslutade eller kvalitetssäkrade av föreningen. Kontrollera mot källan innan något återges.</p>
+
+<p class="read">Sex diagram. Tre mått hålls isär hela vägen: <strong>slutanvändning</strong> (vad som förbrukas i Lund), <strong>tillförsel</strong> (vad planen redovisar som tillfört kommunen) och <strong>utsläpp</strong>. Under varje diagram finns en tabell med samma tal.</p>
+
+<h2 id="Anvandning">1. Slutanvändningen har minskat med 8 procent sedan 2015<a class="anchor" href="#Anvandning" aria-label="Länk till avsnittet">#</a></h2>
+<figure id="fig-a"><div class="svgbox"></div>
+<div class="legend"></div>
+<figcaption></figcaption><details><summary>Visa som tabell</summary><div class="tbl"></div></details></figure>
+
+<h2 id="TvaMatt">2. Tillförsel och användning är två olika mått<a class="anchor" href="#TvaMatt" aria-label="Länk till avsnittet">#</a></h2>
+<figure id="fig-g"><div class="svgbox"></div>
+<div class="legend"></div>
+<figcaption></figcaption><details><summary>Visa som tabell</summary><div class="tbl"></div></details></figure>
+
+<h2 id="Barare">3. Det är de fossila bränslena som har minskat<a class="anchor" href="#Barare" aria-label="Länk till avsnittet">#</a></h2>
+<figure id="fig-c"><div class="svgbox"></div>
+<div class="legend"></div>
+<figcaption></figcaption><details><summary>Visa som tabell</summary><div class="tbl"></div></details></figure>
+
+<h2 id="Sektorer">4. Vad energin används till, och vad kommunen styr över<a class="anchor" href="#Sektorer" aria-label="Länk till avsnittet">#</a></h2>
+<figure id="fig-b"><div class="svgbox"></div>
+<div class="legend"></div>
+<figcaption></figcaption><details><summary>Visa som tabell</summary><div class="tbl"></div></details></figure>
+
+<h2 id="Utslapp">5. Utsläppen: transporterna ligger längst från målet<a class="anchor" href="#Utslapp" aria-label="Länk till avsnittet">#</a></h2>
+<figure id="fig-d"><div class="svgbox"></div>
+<div class="legend"></div>
+<figcaption></figcaption><details><summary>Visa som tabell</summary><div class="tbl"></div></details></figure>
+
+<h2 id="SolVind">6. Sol och vind mot målet för 2025 och 2030<a class="anchor" href="#SolVind" aria-label="Länk till avsnittet">#</a></h2>
+<figure id="fig-e"><div class="svgbox"></div>
+<div class="legend"></div>
+<figcaption></figcaption><details><summary>Visa som tabell</summary><div class="tbl"></div></details></figure>
+
+<h2 id="Kallor">Källor<a class="anchor" href="#Kallor" aria-label="Länk till avsnittet">#</a></h2>
+<div class="sources">
+<p>Kolada (2026) <em>Utsläpp till luft av växthusgaser totalt, ton CO2-ekv (N07702); Utsläpp till luft av växthusgaser, transporter, ton CO2e (N85533)</em>, Lund (1281). Hämtad 2026-10-01 via API. Tillgänglig på: https://api.kolada.se/v3/data/kpi/N07702/municipality/1281 och https://api.kolada.se/v3/data/kpi/N85533/municipality/1281. <em>(Utsläpp inom kommunens geografiska område, med Nationella emissionsdatabasen (SMHI) som underlag. Alla territoriella utsläpp, inte planens avgränsning scope 1 och 2 för energianvändning.)</em></p>
+<p>Kraftringen (2019) <em>VA SYD tar över driften av biogasanläggningen på Källby avloppsreningsverk</em>. Tillgänglig på: https://www.mynewsdesk.com/se/kraftringen/pressreleases/va-syd-tar-oever-driften-av-biogasanlaeggningen-paa-kaellby-avloppsreningsverk-2954618. <em>(Ger omkring 7 GWh biogas per år i full drift.)</em></p>
+<p>Lunds kommun (2026a) <em>Energiplan för Lunds kommun 2027–2029. Förslag, diarienummer KS 2025/0811</em>. Tillgänglig på: https://lund.se/download/18.27a83861a04205000a14cf/1788860628694/Energiplan%20f%C3%B6r%20Lunds%20kommun%202027-2029.pdf. Läst 2026-10-01. <em>(Tillförsel 1 990 och 1 760 GWh, utsläppsmål, delmål för sol, vind och biogas, uppgiften om kommunorganisationens fossilbränslefrihet.)</em></p>
+<p>Lunds kommun (2026b) <em>Mål: klimat och energi</em>. Tillgänglig på: https://lund.se/kommun-och-politik/hallbara-lund/ekologisk-hallbarhet/mal-klimat-och-energi. Hämtad 2026-10-01. <em>(Kommunens egen statusbedömning per mål.)</em></p>
+<p>SCB (2026) <em>Kommunal och regional energistatistik, tabellerna Slutanvändning (MWh) efter förbrukarkategori och bränsletyp samt Elproduktion och bränsleanvändning</em>, Lund (1281), 2009–2024. Hämtad 2026-10-01 via SCB:s API. Tillgänglig på: https://www.scb.se/hitta-statistik/statistik-efter-amne/energi/energibalanser/kommunal-och-regional-energistatistik/. <em>(Tidsserie för slutanvändning per sektor och bränsle, och för sol och vind. 2023 stämmer med planens sektorssiffror.)</em></p>
+</div>
+</main>
+
+<a class="corner corner-left" href="https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Plangruppen/Energiplan/2027_2029" target="_blank" rel="noopener">{ } GitHub</a>
+<button type="button" class="corner corner-right" id="techBtn" aria-label="Tekniköversikt">&lt;/&gt; teknik</button>
+
+<div class="modal-overlay" id="techOverlay" role="dialog" aria-modal="true" aria-labelledby="techTitle">
+  <div class="modal">
+    <button type="button" class="close" id="techClose" aria-label="Stäng">×</button>
+    <h2 id="techTitle">Hur den här sidan är byggd</h2>
+    <p>En enda HTML-fil. Tekniken är enkel med avsikt, så att den går att läsa och ändra.</p>
+    <h3>Tekniken</h3>
+    <div class="tech-grid">
+      <div class="tech-card"><h3>Inga bibliotek</h3><p>Diagrammen ritas som inbyggd SVG av JavaScript i samma fil. Inget laddas från nätet och ingen data skickas någonstans.</p></div>
+      <div class="tech-card"><h3>Data i filen</h3><p>Talen ligger som ett JSON-objekt i sidan. De hämtades 2026-10-01 från SCB:s och Koladas öppna API:er och ligger kvar som de var då.</p></div>
+      <div class="tech-card"><h3>Tabell till varje diagram</h3><p>Samma tal visas i en tabell under diagrammet, så att innehållet inte hänger på färg eller syn.</p></div>
+      <div class="tech-card"><h3>Ljust och mörkt läge</h3><p>Färgerna är CSS-variabler. De följer webbläsarens inställning. Serierna skiljs också åt med direkta etiketter, inte bara med färg.</p></div>
+    </div>
+    <h3>Metoden</h3>
+    <div class="tech-grid">
+      <div class="tech-card"><h3>Planen som facit</h3><p>Planens egna siffror för 2015 och 2023 lästes ur kommunens PDF. SCB:s tabell valdes som jämförelse, och sektorssiffrorna för 2023 stämmer med planen.</p></div>
+      <div class="tech-card"><h3>Mått hålls isär</h3><p>Tillförsel, slutanvändning och utsläpp blandas aldrig i samma serie. Utsläppsmålen räknas om från basåret 2010.</p></div>
+      <div class="tech-card"><h3>Öppna frågor</h3><p>Siffrorna för 2024 hoppar uppåt i flera serier. Jag har inte hittat förklaringen och tolkar dem därför inte. De är markerade med ring.</p></div>
+      <div class="tech-card"><h3>Utkast</h3><p>Sidan togs fram i dialog med Claude Code och är ett utkast som granskas innan det delas.</p></div>
+    </div>
+    <h3>Filer i mappen (förenklat)</h3>
+    <pre>Energiplan/2027_2029/
+  tankar_kring_inskickat.md            texten
+  tankar_kring_inskickat_diagram.html  den här sidan
+  LNF Synpunkter på ... 20261001.pdf   det inskickade yttrandet
+  LNFs synpunkter ..._ver3.md          senaste utkastet före inskick
+  Malmo_kommun/                        Malmö stads handlingar</pre>
+  </div>
+</div>
+
+<script>
+const D = {"years": [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "total": [2907218, 2866580, null, 2532622, 2700843, 2428649, 2517033, null, 2481156, 2444565, null, 2193371, 2336026, 2330971, 2309977, 2557545], "el": [1420756, 1190697, 924877, 956471, 1198613, 1011306, 1054398, 1014833, 1012646, 1015253, 1020655, 954799, 1023182, 1058547, 1023220, 1040937], "fv": [646692, 883210, 825818, 807013, 728583, 636336, 667498, 646961, 688517, 680223, 650890, 631721, 704900, 705147, 659712, 655548], "transport": [null, 628496, 630370, 630175, 643300, 650517, 681650, 643390, 657183, 639104, 547718, null, 517395, 475849, 527544, 557264], "offentlig": [477408, 499614, 449259, 307405, 550581, 291571, 274640, 206550, 226273, 242139, 256839, 231703, 243754, 296875, 304201, 290280], "barer": {"2015": {"el": 1054398, "fv": 667498, "fossil": 705773, "fornybart": 89363, "ovrigt": 1, "total": 2517033}, "2023": {"el": 1023220, "fv": 659712, "fossil": 489865, "fornybart": 124740, "ovrigt": 12440, "total": 2309977}}, "sektorer2023": {"Bostäder och fritidshus": 704745, "Övriga tjänster": 606263, "Transporter": 527544, "Offentlig verksamhet": 304201, "Industri": 133661, "Jord- och skogsbruk": 33563}, "vind": [null, null, null, 23678, 20703, 23820, 25530, 34554, 44198, 36650, 38631, 47853, 39444, 43001, 44333, 41962], "sol": [null, null, null, null, null, null, null, null, null, null, null, null, 8028, 20480, 33464, 44808], "ghg_total": {"1990": 326573.92564, "2000": 358120.01494, "2005": 376846.25812, "2010": 344456.89171, "2015": 240429.81382, "2016": 232351.91129, "2017": 226771.57726, "2018": 219413.10948, "2019": 218538.3463, "2020": 207268.01443, "2021": 198776.7002, "2022": 182071.50602, "2023": 180677.74145, "2024": 209790.70228}, "ghg_transport": {"2005": 143732.34506, "2010": 144053.97308, "2015": 132532.2752, "2016": 128188.68113, "2017": 123008.62113, "2018": 120377.97989, "2019": 119015.52313, "2020": 108084.91738, "2021": 107963.54585, "2022": 96727.65694, "2023": 95885.85322, "2024": 118033.90282}};
+const NS = "http://www.w3.org/2000/svg";
+const G = v => v == null ? null : v/1000;           // MWh -> GWh
+const fmt = (v, d=0) => v == null ? "saknas" : v.toLocaleString("sv-SE", {minimumFractionDigits:d, maximumFractionDigits:d});
+const css = n => "var(--" + n + ")";
+
+function svg(w,h,label){
+  const s = document.createElementNS(NS,"svg");
+  s.setAttribute("viewBox","0 0 "+w+" "+h);
+  s.setAttribute("role","img"); s.setAttribute("aria-label",label);
+  return s;
+}
+function el(parent,tag,attrs,text){
+  const e = document.createElementNS(NS,tag);
+  for (const k in attrs) e.setAttribute(k,attrs[k]);
+  if (text != null) e.textContent = text;
+  parent.appendChild(e); return e;
+}
+function legend(fig,items){
+  const L = fig.querySelector(".legend");
+  items.forEach(i => { const s = document.createElement("span"); s.style.setProperty("--sw", css(i[1])); s.textContent = i[0]; L.appendChild(s); });
+}
+function caption(fig,html){ fig.querySelector("figcaption").innerHTML = html; }
+function table(fig,head,rows){
+  let h = "<table><thead><tr>"+head.map(x=>"<th>"+x+"</th>").join("")+"</tr></thead><tbody>";
+  rows.forEach(r => h += "<tr>"+r.map(x=>"<td>"+x+"</td>").join("")+"</tr>");
+  fig.querySelector(".tbl").innerHTML = h+"</tbody></table>";
+}
+
+/* ---------- linjediagram ---------- */
+function lineChart(fig,o){
+  const W=560,H=330,m={l:52,r:78,t:28,b:34};
+  const s = svg(W,H,o.label); fig.querySelector(".svgbox").appendChild(s);
+  const X = x => m.l + (x-o.x0)/(o.x1-o.x0)*(W-m.l-m.r);
+  const Y = y => H-m.b - (y-o.y0)/(o.y1-o.y0)*(H-m.t-m.b);
+  for (let v=o.y0; v<=o.y1+1e-9; v+=o.ystep){
+    el(s,"line",{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v),class:"grid"});
+    el(s,"text",{x:m.l-6,y:Y(v)+4,"text-anchor":"end","font-size":12,class:"muted"},fmt(v));
+  }
+  el(s,"text",{x:m.l,y:14,"font-size":12,class:"muted"},o.unit);
+  o.xticks.forEach(x => el(s,"text",{x:X(x),y:H-m.b+16,"text-anchor":"middle","font-size":12,class:"muted"},x));
+  el(s,"line",{x1:m.l,x2:W-m.r,y1:Y(o.y0),y2:Y(o.y0),class:"axis"});
+  o.series.forEach(se => {
+    const pts = se.data.filter(p => p[1] != null);
+    for (let i=1;i<pts.length;i++){
+      const gap = pts[i][0]-pts[i-1][0] > 1;
+      el(s,"line",{x1:X(pts[i-1][0]),y1:Y(pts[i-1][1]),x2:X(pts[i][0]),y2:Y(pts[i][1]),stroke:css(se.color),"stroke-width":2.4,
+        "stroke-dasharray":(gap||pts[i][0]>(o.hollowFrom||9999))?"4 4":"none"});
+    }
+    pts.forEach(p => {
+      const hollow = p[0] >= (o.hollowFrom||9999);
+      el(s,"circle",{cx:X(p[0]),cy:Y(p[1]),r:3.4,fill:hollow?css("card"):css(se.color),stroke:css(se.color),"stroke-width":1.8});
+    });
+    const last = pts[pts.length-1];
+    el(s,"text",{x:X(last[0])+7,y:Y(last[1])+(se.dy||4),"font-size":12,"font-weight":600,fill:css(se.color),style:"fill:"+css(se.color)},se.name);
+  });
+  (o.marks||[]).forEach(mk => {
+    const g = el(s,"g",{});
+    el(g,"path",{d:`M${X(mk.x)} ${Y(mk.y)-6} l6 6 l-6 6 l-6 -6 z`,fill:css(mk.color)});
+    el(g,"text",{x:X(mk.x)-9,y:Y(mk.y)+(mk.dy||4),"text-anchor":"end","font-size":11.5,style:"fill:"+css(mk.color)},mk.label);
+  });
+  return s;
+}
+
+/* ---------- liggande staplar ---------- */
+function hbars(fig,o){
+  const W=560,rowH=o.rowH||30,m={l:150,r:60,t:10,b:20};
+  const H=m.t+m.b+o.rows.length*rowH;
+  const s = svg(W,H,o.label); fig.querySelector(".svgbox").appendChild(s);
+  const max=o.max, X=v=>m.l+v/max*(W-m.l-m.r);
+  o.rows.forEach((r,i)=>{
+    const y=m.t+i*rowH;
+    el(s,"text",{x:m.l-8,y:y+rowH/2+4,"text-anchor":"end","font-size":12.5},r.label);
+    el(s,"rect",{x:m.l,y:y+4,width:Math.max(1,X(r.v)-m.l),height:rowH-10,fill:css(r.color),rx:2});
+    el(s,"text",{x:X(r.v)+5,y:y+rowH/2+4,"font-size":12.5,class:"muted"},fmt(r.v));
+  });
+  el(s,"line",{x1:m.l,x2:m.l,y1:m.t,y2:H-m.b+6,class:"axis"});
+  return s;
+}
+
+/* ---------- staplad liggande (två rader) ---------- */
+function stacked(fig,o){
+  const W=560,m={l:58,r:14,t:12,b:26},rowH=64;
+  const H=m.t+m.b+o.rows.length*rowH;
+  const s = svg(W,H,o.label); fig.querySelector(".svgbox").appendChild(s);
+  const X=v=>m.l+v/o.max*(W-m.l-m.r);
+  [0,500,1000,1500,2000,2500].forEach(v=>{
+    el(s,"line",{x1:X(v),x2:X(v),y1:m.t,y2:H-m.b,class:"grid"});
+    el(s,"text",{x:X(v),y:H-8,"text-anchor":"middle","font-size":12,class:"muted"},fmt(v));
+  });
+  o.rows.forEach((r,i)=>{
+    const y=m.t+i*rowH+6; let acc=0;
+    el(s,"text",{x:m.l-8,y:y+rowH/2-2,"text-anchor":"end","font-size":13,"font-weight":600},r.label);
+    r.parts.forEach(p=>{
+      if(!p.v){return;}
+      el(s,"rect",{x:X(acc),y:y,width:Math.max(1,X(acc+p.v)-X(acc)),height:rowH-18,fill:css(p.color),stroke:css("card"),"stroke-width":1});
+      if (p.v>110) el(s,"text",{x:(X(acc)+X(acc+p.v))/2,y:y+(rowH-18)/2+4,"text-anchor":"middle","font-size":12,"font-weight":600,style:"fill:#fff"},fmt(p.v));
+      acc+=p.v;
+    });
+  });
+  return s;
+}
+
+/* ---------- grupperade staplar ---------- */
+function grouped(fig,o){
+  const W=560,H=300,m={l:52,r:14,t:28,b:46};
+  const s = svg(W,H,o.label); fig.querySelector(".svgbox").appendChild(s);
+  const Y=v=>H-m.b-v/o.max*(H-m.t-m.b);
+  for(let v=0;v<=o.max;v+=500){el(s,"line",{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v),class:"grid"});el(s,"text",{x:m.l-6,y:Y(v)+4,"text-anchor":"end","font-size":12,class:"muted"},fmt(v));}
+  el(s,"text",{x:m.l,y:14,"font-size":12,class:"muted"},"GWh");
+  const gw=(W-m.l-m.r)/o.groups.length, bw=Math.min(54,gw/o.groups[0].bars.length-10);
+  o.groups.forEach((g,gi)=>{
+    const cx=m.l+gw*gi+gw/2, n=g.bars.length;
+    g.bars.forEach((b,bi)=>{
+      const x=cx+(bi-(n-1)/2)*(bw+10)-bw/2;
+      el(s,"rect",{x:x,y:Y(b.v),width:bw,height:Y(0)-Y(b.v),fill:css(g.color),opacity:bi===0?0.55:1,rx:2});
+      el(s,"text",{x:x+bw/2,y:Y(b.v)-5,"text-anchor":"middle","font-size":12.5,"font-weight":600},fmt(b.v));
+      el(s,"text",{x:x+bw/2,y:H-m.b+15,"text-anchor":"middle","font-size":12,class:"muted"},b.label);
+    });
+    el(s,"text",{x:cx,y:H-6,"text-anchor":"middle","font-size":13,"font-weight":600},g.label);
+  });
+  return s;
+}
+
+/* ---------- staplar per år (sol/vind) ---------- */
+function yearBars(fig,o){
+  const W=560,H=330,m={l:52,r:14,t:28,b:34};
+  const s = svg(W,H,o.label); fig.querySelector(".svgbox").appendChild(s);
+  const n=o.years.length, bw=(W-m.l-m.r)/n;
+  const Y=v=>H-m.b-v/o.max*(H-m.t-m.b);
+  for(let v=0;v<=o.max;v+=25){el(s,"line",{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v),class:"grid"});el(s,"text",{x:m.l-6,y:Y(v)+4,"text-anchor":"end","font-size":12,class:"muted"},fmt(v));}
+  el(s,"text",{x:m.l,y:14,"font-size":12,class:"muted"},"GWh");
+  o.years.forEach((y,i)=>{
+    const x=m.l+i*bw+bw*0.15, w=bw*0.7;
+    const vind=o.vind[i]||0, sol=o.sol[i]||0;
+    if (o.goal[i]!=null){
+      el(s,"rect",{x:x,y:Y(o.goal[i]),width:w,height:Y(0)-Y(o.goal[i]),fill:"none",stroke:css("c-mal"),"stroke-width":2,"stroke-dasharray":"4 3"});
+      el(s,"text",{x:x+w/2,y:Y(o.goal[i])-5,"text-anchor":"middle","font-size":12,"font-weight":600,style:"fill:"+css("c-mal")},"mål "+fmt(o.goal[i]));
+    } else {
+      el(s,"rect",{x:x,y:Y(vind),width:w,height:Y(0)-Y(vind),fill:css("c-vind")});
+      if (sol) el(s,"rect",{x:x,y:Y(vind+sol),width:w,height:Y(vind)-Y(vind+sol),fill:css("c-sol")});
+      if (i>=n-4 || i===0 || true) { const tot=vind+sol; if(tot>0 && (y===2012||y===2015||y>=2021)) el(s,"text",{x:x+w/2,y:Y(tot)-5,"text-anchor":"middle","font-size":11.5},fmt(tot)); }
+    }
+    if (y%2===0 || y>=2024) el(s,"text",{x:x+w/2,y:H-m.b+15,"text-anchor":"middle","font-size":11.5,class:"muted"},y);
+  });
+  el(s,"line",{x1:m.l,x2:W-m.r,y1:Y(0),y2:Y(0),class:"axis"});
+  return s;
+}
+
+const yrs = D.years;
+const idx = y => yrs.indexOf(y);
+const pts = arr => yrs.map((y,i)=>[y,G(arr[i])]);
+
+/* A: slutanvändning */
+(function(){
+  const f=document.getElementById("fig-a");
+  const t15=D.total[idx(2015)], t23=D.total[idx(2023)];
+  const goal=G(t15)*0.85;
+  lineChart(f,{label:"Slutanvändning av energi i Lund 2009 till 2024 i GWh, totalt och per energibärare. Målet för 2030 är 2 139 GWh.",
+    x0:2009,x1:2031,y0:0,y1:3000,ystep:500,unit:"GWh",xticks:[2010,2015,2020,2024,2030],hollowFrom:2024,
+    series:[
+      {name:"Totalt",color:"c-total",data:pts(D.total),dy:-6},
+      {name:"El",color:"c-el",data:pts(D.el),dy:2},
+      {name:"Fjärrvärme",color:"c-fv",data:pts(D.fv),dy:-3},
+      {name:"Transport",color:"c-tra",data:pts(D.transport),dy:13}],
+    marks:[{x:2030,y:goal,color:"c-mal",label:"Mål 2030: "+fmt(goal),dy:-10}]});
+  legend(f,[["Totalt","c-total"],["El","c-el"],["Fjärrvärme","c-fv"],["Transporter (alla bränslen)","c-tra"],["Mål 2030","c-mal"]]);
+  caption(f,`Slutanvändningen gick från <strong>${fmt(G(t15))} GWh</strong> (2015) till <strong>${fmt(G(t23))} GWh</strong> (2023): ${fmt((t23/t15-1)*100,1)} procent. Målet om minst 15 procent lägre användning mellan 2015 och 2030 betyder cirka ${fmt(goal)} GWh, alltså ytterligare cirka ${fmt(G(t23)-goal)} GWh. El och fjärrvärme har legat ganska stilla sedan 2012. Luckor i totallinjen är år där SCB inte redovisar totalen. Ringarna för 2024 hoppar uppåt (totalt +11 procent), vilket jag inte kan förklara. Kommunens egen statusbedömning är att målet “kommer att klaras”.`);
+  table(f,["År","Totalt","El","Fjärrvärme","Transport"],yrs.map((y,i)=>[y,fmt(G(D.total[i])),fmt(G(D.el[i])),fmt(G(D.fv[i])),fmt(G(D.transport[i]))]));
+})();
+
+/* G: två mått */
+(function(){
+  const f=document.getElementById("fig-g");
+  const t15=G(D.total[idx(2015)]), t23=G(D.total[idx(2023)]);
+  grouped(f,{label:"Tillförsel enligt planen och slutanvändning enligt SCB, 2015 och 2023, i GWh.",max:3000,
+    groups:[{label:"Tillförsel (planen)",color:"c-fv",bars:[{label:"2015",v:1990},{label:"2023",v:1760}]},
+            {label:"Slutanvändning (SCB)",color:"c-el",bars:[{label:"2015",v:t15},{label:"2023",v:t23}]}]});
+  legend(f,[["Tillförsel enligt planen","c-fv"],["Slutanvändning enligt SCB","c-el"]]);
+  caption(f,`Planen skriver att <em>tillförseln</em> minskade med 12 procent (1 990 till 1 760 GWh). På ett annat ställe skriver den att den totala <em>användningen</em> minskade med 12 procent. SCB:s tabell ger ${fmt((t23/t15-1)*100,1)} procent för slutanvändningen. Planen redovisar också 2 324 GWh användning 2023, mot ${fmt(t23)} i SCB:s tabell nu (skillnad 0,6 procent, kan bero på reviderade data). Planen förklarar inte hur de två måtten hänger ihop. Målet i LundaEko gäller användning.`);
+  table(f,["Mått","2015","2023","Förändring"],[
+    ["Tillförsel (planen)","1 990","1 760","−11,6 %"],
+    ["Slutanvändning (SCB)",fmt(t15),fmt(t23),fmt((t23/t15-1)*100,1)+" %"]]);
+})();
+
+/* C: energibärare */
+(function(){
+  const f=document.getElementById("fig-c");
+  const b15=D.barer["2015"], b23=D.barer["2023"];
+  const mk=b=>[{v:G(b.el),color:"c-el"},{v:G(b.fv),color:"c-fv"},{v:G(b.fossil),color:"c-fos"},{v:G(b.fornybart),color:"c-forn"},{v:G(b.ovrigt),color:"c-ovr"}];
+  stacked(f,{label:"Slutanvändning efter energibärare 2015 och 2023 i GWh: el, fjärrvärme, fossila bränslen, förnybara bränslen och övrigt.",max:2600,
+    rows:[{label:"2015",parts:mk(b15)},{label:"2023",parts:mk(b23)}]});
+  legend(f,[["El","c-el"],["Fjärrvärme","c-fv"],["Fossila bränslen (flytande, gas)","c-fos"],["Förnybara bränslen (flytande, fasta)","c-forn"],["Övrigt eller uppgift saknas","c-ovr"]]);
+  const d=x=>G(b23[x])-G(b15[x]);
+  caption(f,`Mellan 2015 och 2023 minskade de fossila bränslena med ${fmt(-d("fossil"))} GWh. Förnybara bränslen ökade med ${fmt(d("fornybart"))}. El (${fmt(d("el"))}) och fjärrvärme (${fmt(d("fv"))}) ändrades knappt. Nästan hela minskningen i slutanvändning är alltså fossila drivmedel och bränslen. “Övrigt” är resten av totalen när sekretessbelagda poster (främst gas) inte kan räknas in. Här är el och fjärrvärme energibärare i slutanvändningen. Det är inte detsamma som planens tillförsel.`);
+  table(f,["Energibärare","2015","2023","Skillnad"],[["El","el"],["Fjärrvärme","fv"],["Fossila bränslen","fossil"],["Förnybara bränslen","fornybart"],["Övrigt / saknas","ovrigt"],["Totalt","total"]].map(r=>[r[0],fmt(G(b15[r[1]])),fmt(G(b23[r[1]])),fmt(d(r[1]))]));
+})();
+
+/* B: sektorer 2023 */
+(function(){
+  const f=document.getElementById("fig-b");
+  const S=D.sektorer2023;
+  const order=Object.keys(S);
+  hbars(f,{label:"Slutanvändning 2023 per sektor i GWh. Offentlig verksamhet är 304 GWh.",max:800,
+    rows:order.map(k=>({label:k,v:G(S[k]),color:k==="Offentlig verksamhet"?"c-off":"c-el"}))});
+  legend(f,[["Sektor","c-el"],["Offentlig verksamhet (SCB:s kategori, inte kommunens egen del)","c-off"]]);
+  const tot=Object.values(S).reduce((a,b)=>a+b,0);
+  caption(f,`Av ${fmt(G(tot))} GWh 2023 hör ${fmt(S["Offentlig verksamhet"]/tot*100,0)} procent till SCB:s kategori offentlig verksamhet. <strong>Det är inte samma sak som kommunens egen energianvändning.</strong> Kategorin torde även omfatta annat än kommunen, men det har jag inte kunnat kontrollera mot SCB:s definition. Planen redovisar ingen GWh-siffra för kommunkoncernen, bara att kommunorganisationen sedan 2020 är över 99 procent fossilbränslefri. Sektorfördelningen mellan åren varierar mycket i SCB:s serie (fjärrvärme flyttar mellan “övriga tjänster” och flerbostadshus), så jag jämför sektorerna bara för ett år.`);
+  table(f,["Sektor","GWh 2023","Andel"],order.map(k=>[k,fmt(G(S[k])),fmt(S[k]/tot*100,0)+" %"]));
+})();
+
+/* D: utsläpp */
+(function(){
+  const f=document.getElementById("fig-d");
+  const T=D.ghg_total, R=D.ghg_transport;
+  const ys=Object.keys(T).map(Number).filter(y=>y>=2010).sort((a,b)=>a-b);
+  const kt=v=>v/1000;
+  const base=kt(T[2010]), baseT=kt(R[2010]);
+  lineChart(f,{label:"Utsläpp av växthusgaser inom Lunds geografiska område 2010 till 2024 i tusen ton koldioxidekvivalenter, totalt och från transporter, med målen för 2025 och 2030.",
+    x0:2009,x1:2031,y0:0,y1:400,ystep:100,unit:"tusen ton CO₂e",xticks:[2010,2015,2020,2024,2030],hollowFrom:2024,
+    series:[{name:"Totalt",color:"c-total",data:ys.map(y=>[y,kt(T[y])]),dy:-6},
+            {name:"Transporter",color:"c-tra",data:ys.map(y=>[y,kt(R[y])]),dy:12}],
+    marks:[{x:2025,y:base*0.35,color:"c-mal",label:"−65 %: "+fmt(base*0.35),dy:-12},
+           {x:2030,y:base*0.20,color:"c-mal",label:"−80 %: "+fmt(base*0.20),dy:-12},
+           {x:2030,y:baseT*0.10,color:"c-mal",label:"−90 %: "+fmt(baseT*0.10),dy:14}]});
+  legend(f,[["Alla territoriella utsläpp","c-total"],["Transporter","c-tra"],["Mål (LundaEko)","c-mal"]]);
+  caption(f,`Från 2010 till 2023 minskade utsläppen totalt med <strong>${fmt((1-T[2023]/T[2010])*100,0)} procent</strong> (mål: 65 procent till 2025, 80 procent till 2030) och från transporter med <strong>${fmt((1-R[2023]/R[2010])*100,0)} procent</strong> (mål: 90 procent till 2030, alltså cirka ${fmt(baseT*0.10,0)} tusen ton). Planen anger −59 procent, men för en snävare avgränsning: energianvändning enligt scope 1 och 2, där el och fjärrvärme räknas efter produktionen. Planens siffra och den här går alltså inte att jämföra rakt av. Planen skriver att transporter och arbetsmaskiner är 81 procent av utsläppen från energianvändning och att 14 procent av transportutsläppen kom från genomfartstrafik på E22 (2024). Stipplade linjer är år där data saknas (2011–2014). Ringarna för 2024 hoppar uppåt (totalt +16 procent, transporter +23 procent). Jag vet inte varför.`);
+  const rows=ys.map(y=>[y,fmt(kt(T[y]),1),fmt(kt(R[y]),1)]);
+  rows.push(["Mål 2025 / 2030","120,6 / 68,9","– / 14,4"]);
+  table(f,["År","Totalt (tusen ton)","Transporter (tusen ton)"],rows);
+})();
+
+/* E: sol och vind */
+(function(){
+  const f=document.getElementById("fig-e");
+  const ys=[],vind=[],sol=[],goal=[];
+  for (let y=2012;y<=2030;y++){
+    if (y>2024 && y!==2025 && y!==2030) continue;
+    ys.push(y); const i=idx(y);
+    vind.push(i>=0?G(D.vind[i]):null); sol.push(i>=0?G(D.sol[i]):null);
+    goal.push(y===2025?100:(y===2030?150:null));
+  }
+  yearBars(f,{label:"Elproduktion från vind och sol i Lund 2012 till 2024 i GWh, med målen 100 GWh för 2025 och 150 GWh för 2030.",years:ys,vind:vind,sol:sol,goal:goal,max:160});
+  legend(f,[["Vind","c-vind"],["Sol","c-sol"],["Mål (sol och vind)","c-mal"]]);
+  caption(f,`Vindkraften har legat runt 40 GWh sedan 2017. Solelen kom upp i <strong>${fmt(G(D.sol[idx(2024)]),0)} GWh</strong> 2024 och passerade då vinden. Tillsammans blev det ${fmt(G(D.vind[idx(2024)])+G(D.sol[idx(2024)]),0)} GWh 2024 och ${fmt(G(D.vind[idx(2023)])+G(D.sol[idx(2023)]),0)} GWh 2023 (planen anger 81: sol 37 och vind 44, så SCB:s och planens solsiffra skiljer sig något). Målet är 100 GWh 2025 och 150 GWh 2030. Planen uppskattar takpotentialen för solceller till cirka 150 GWh. Biogasmålet (100 GWh 2030) syns inte här. Anläggningen vid Källby ger omkring 7 GWh i full drift. För solens del saknas uppgift före 2021 i SCB:s tabell.`);
+  table(f,["År","Vind","Sol","Summa"],ys.filter(y=>y<=2024).map((y,k)=>{const i=idx(y);return [y,fmt(G(D.vind[i]),1),D.sol[i]==null?"–":fmt(G(D.sol[i]),1),fmt(G(D.vind[i])+(G(D.sol[i])||0),1)];}));
+})();
+
+/* modal */
+(function(){
+  const ov=document.getElementById("techOverlay"), btn=document.getElementById("techBtn"), cl=document.getElementById("techClose");
+  const open=()=>{ov.classList.add("show");cl.focus();}, close=()=>{ov.classList.remove("show");btn.focus();};
+  btn.addEventListener("click",open); cl.addEventListener("click",close);
+  ov.addEventListener("click",e=>{if(e.target===ov)close();});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&ov.classList.contains("show"))close();});
+})();
+</script>
+</body>
+</html>
