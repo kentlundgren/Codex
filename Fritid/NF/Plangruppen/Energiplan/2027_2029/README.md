@@ -1,11 +1,5 @@
 # Energiplan för Lunds kommun 2027–2029
 
-- **Live:** [Yttrandet som skickades in, 2026-10-01 (pdf)](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/LNF%20Synpunkter%20p%C3%A5%20Lunds%20energiplan%2020261001.pdf)
-
-Arbetsmaterial om Lunds kommuns remissförslag till energiplan för 2027–2029, och om Lunds Naturskyddsförenings synpunkter på det. Texterna som är märkta som utkast är AI-assisterade förslag till fortsatt diskussion och är inte antagna av föreningen.
-
-Markdown-filerna är länkade till GitHubs blob-vy, där formateringen visas. Pdf-filerna länkas så att de öppnas direkt i webbläsaren.
-
 ## Det som skickades in
 
 [LNF Synpunkter på Lunds energiplan 20261001.pdf](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/LNF%20Synpunkter%20p%C3%A5%20Lunds%20energiplan%2020261001.pdf) är Lunds Naturskyddsföreningens yttrande till Lunds kommun över förslaget till energiplan 2027–2029. Det skickades in den 1 oktober 2026, är fyra sidor långt och är undertecknat av en styrelseledamot för föreningen. Det är det som gäller som föreningens svar. Allt annat i den här mappen är arbetsmaterial.
@@ -22,7 +16,7 @@ Yttrandet innehåller:
 
 ## Så kom yttrandet till
 
-Det inskickade yttrandet bygger i huvudsak på version 3 nedan, med tillägg. Stegen före inskickandet:
+Det inskickade yttrandet bygger i huvudsak på version 3 nedan, med tillägg. Utkasten är AI-assisterade förslag till fortsatt diskussion och inte antagna av föreningen. Stegen före inskickandet:
 
 1. [Synpunkter på Lunds kommuns energiplan 2027-2029_260927.docx](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/Synpunkter%20pa%CC%8A%20Lunds%20kommuns%20energiplan%202027-2029_260927.docx) är det första underlaget från 2026-09-27.
 2. [synpunkter_pa_LNFs_synpunkter.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/synpunkter_pa_LNFs_synpunkter.md) går igenom det underlaget: vad som håller, och vad som kan skrivas tydligare.
