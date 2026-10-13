@@ -10,7 +10,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 
 ## Samrådsbrevet (originalet, 8 sidor) och steg 1
 
-**Tabell 10. Samrådsbrevets delar och var de hamnat i steg 1**
+**Tabell 11. Samrådsbrevets delar och var de hamnat i steg 1**
 
 | Originalets del | I steg 1 |
 |---|---|
@@ -27,7 +27,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 
 ## Yttrandet (originalet, 7 sidor) och steg 2
 
-**Tabell 11. Yttrandets delar och var de hamnat i steg 2**
+**Tabell 12. Yttrandets delar och var de hamnat i steg 2**
 
 | Originalets del | I steg 2 |
 |---|---|
@@ -73,5 +73,5 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 4. **De fyra texttyperna** (verifierat, fråga, bedömning, förslag) i sexdelsmodellen har inte tillämpats. Det kan göras som nästa steg.
 5. **Punkter som inte fördes vidare** från samrådet till yttrandet (se Tabell 6 i [spårbarhetsdokumentet](03_Sparbarhet_samrad_till_yttrande.md)).
 6. **Aktbilaga 257.** Underlaget för steg 2 är VA SYD:s markerade kopia. Den fil som föreningen lämnade in bör användas för en slutlig jämförelse.
-7. **Uppgiften om 2 miljarder kronor.** Yttrandets bilaga 1 är nu länkad (extern källa och kopia i projektet). Jag hittade inte siffran 2 miljarder i rapporten. Rapporten anger bland annat 1,1–1,3 miljarder kronor för Sjölunda och 0,8–0,9 miljarder för Källby i VA SYD:s utredning från 2016 (nyinvestering), en WSP-uppskattning på ca 1,8 miljarder för ett utbyggt Källbyverk, och en egen bedömning på 300–400 miljoner för en utbyggnad av Källby (avsnitt 4.5, s. 5). Uppgiften förekommer i S18, i yttrandets bakgrund och i Y26. Kontrollera vilket underlag siffran kommer från innan den används igen.
+7. **Uppgiften om 2 miljarder kronor.** Yttrandets bilaga 1 är länkad (extern källa och kopia i projektet). Siffran 2 miljarder står inte i rapporten, men den går att återskapa: Lunds kostnad för Sjölundasystemen (2,4–2,7 miljarder kronor, inklusive tunnlarna) minus konsulternas 300–400 miljoner för en utbyggnad av Källby blir ca 2,0–2,3 miljarder. Mot VA SYD:s kalkyl för Källby (1,75–1,9 miljarder) är skillnaden 0,5–0,75 miljarder. Se Tabell 10 i [spårbarhetsdokumentet](03_Sparbarhet_samrad_till_yttrande.md). Kontrollera vilket underlag siffran kommer från innan den används igen.
 

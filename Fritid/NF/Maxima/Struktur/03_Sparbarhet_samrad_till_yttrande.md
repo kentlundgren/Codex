@@ -150,7 +150,61 @@ Tabellen är förifylld utifrån aktbilaga 320 och ska fyllas på av föreningen
 | Y26 | Val av plats (2 kap. 6 §) | 8 | Kostnadsjämförelsen obesvarad |
 | Y27 | Verkställighetsförordnandet ska avslås | 9 | Svar (VA SYD vidhåller) |
 
+## Vad kostar Källby och Sjölunda enligt underlagen?
+
+Yttrandet och samrådsbrevet säger att Källbyalternativet är upp till eller minst 2 miljarder kronor billigare än Sjölundaalternativet (S18, Y26). Underlagen i projektets mapp Källor visar hur den siffran kan uppstå, och varför den ändå är omstridd. Beloppen nedan är miljoner kronor (mkr) och avser Lunds kostnad i 2020 års prisnivå, om inget annat anges. VA SYD anger att kalkylerna är osäkra, från 15 procent lägre till 30 procent högre (VA SYD, 2021, s. 33).
+
+**Tabell 10. Investeringskostnader för Lund i olika underlag (mkr)**
+
+| Underlag | Alternativ | Investering för Lund |
+|---|---|---|
+| [Landelius m.fl. (2020)](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lund%202020a%2C%20fortsatt%20drift%20eller%20nedl%C3%A4ggning%2C%20K%C3%A4llby%20avloppsreningsverk.pdf), s. 5 | Utbyggt Källby, konsulternas egen bedömning | 300–400 |
+| [VA SYD (2021)](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf), Tabell 1, s. 21 (WSP:s kalkyl 2020) | Utbyggt Källby, nytt reningsverk på området | 1 750 |
+| VA SYD (2021), Tabell 4, s. 34 | System 1: lokal lösning med Källby och Södra Sandby kvar (Källby 1 812 + Södra Sandby 104) | 1 916 |
+| VA SYD (2021), Tabell 4, s. 34 | System 2: Sjölunda med Burlöv, Lomma och Malmö (varav tunneln Lund–Malmö, ÖLM, 447 och Malmö avloppstunnel, MAT, 545) | 2 670 |
+| VA SYD (2021), Tabell 4, s. 34 | System 3: Sjölunda med sex kommuner (varav ÖLM 379 och MAT 462) | 2 408 |
+| [Fördjupad studie Källby (2021-12-07)](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/F%C3%B6rdjupad%20studie%20K%C3%A4llby%20avloppsreningsverk%202021.pdf) | Uppgradering av Källby, kalkyl med driftkostnad 50 mkr per år | 1 200 |
+
+Vad tabellen visar:
+
+- **Tunneln.** Lunds andel av tunnelprojekten är 447 mkr för ÖLM och 545 mkr för MAT i System 2, och 379 respektive 462 mkr i System 3. Tillsammans är det ca 840–990 mkr av Lunds 2 408–2 670 mkr. Om andelen är proportionell mot Lunds andel av kostnaden (24,4 respektive 22,6 procent, enligt rapporten) motsvarar ÖLM ca 1,7–1,8 miljarder kronor för hela tunneln. Det är min egen uträkning och inte en uppgift i rapporten. Utan tunnlarna är Sjölundadelen för Lund ca 1 470–1 630 mkr, alltså i nivå med VA SYD:s kalkyl för ett utbyggt Källby.
+- **Skillnaden mot konsulternas kalkyl.** Lunds Sjölundakostnad inklusive tunnlar (2 408–2 670 mkr) minus konsulternas 300–400 mkr blir ca 2,0–2,3 miljarder kronor. Det är sannolikt hur ”minst 2 miljarder” kan uppstå.
+- **Skillnaden mot VA SYD:s kalkyl.** Mot Lunds kostnad för det lokala systemet (1 916 mkr) blir skillnaden 492–754 mkr. Den årliga kostnaden för Lund är 119,0 mkr i System 1, 127,4 mkr i System 2 och 122,6 mkr i System 3.
+- **Varför kalkylerna skiljer.** WSP:s granskning (WSP, 2020, s. 5) förklarar glappet mellan 400 och 1 750 mkr med anläggningsdelar för ca 1 200 mkr som inte ingår i konsulternas lösning, till exempel läkemedelsrening, membranfilter och övertäckning, och hävdar att deras lösning sannolikt inte skulle få tillstånd. Det är VA SYD:s konsult som granskar Lunds konsulter. Landelius m.fl. i sin tur ställde sig tveksamma till VA SYD:s kalkyler och saknade underlag för dem (Landelius m.fl., 2020, s. 5).
+
+### Vad VA SYD:s rapport 2021 kommer fram till
+
+Rapporten är VA SYD:s svar på Lunds kommuns utredningsdirektiv och är alltså inte en oberoende utvärdering. Slutsatserna:
+
+- **Kostnad.** Lunds VA-kostnader väntas öka med 180–189 procent 2020–2040 oavsett system, och taxan med 119–127 procent (lägst i System 1). VA SYD sammanfattar att ”det inte är kostnads- och taxenivåer som är särskiljande” för valet, utan det sammanlagda värdet och nyttan utifrån olika perspektiv (s. 6 och 36).
+- **Miljö.** Källby släpper ut i en mindre tålig recipient, Höje å (medelvattenföring 2,5 m³/s). Ett nytt tillstånd skulle sannolikt kräva ytterligare rening, till exempel av ammonium och läkemedelsrester (s. 22–23). Vid överföring minskar flödet i Höje å med drygt 30 respektive 50 procent vid medelvattenföring och extremt lågvatten (s. 23).
+- **Drift.** Lund är beroende av ett enda verk, och en tunnel med självfall kan även fungera som utjämningsvolym (s. 6).
+- **Konsulternas alternativ.** Landelius m.fl. (2020) avfärdas som inte realistiskt och redovisas inte vidare (s. 6).
+- **Tid.** Källby kan enligt en översyn drivas vidare inom nuvarande tillstånd till 2032 med investeringar om ca 50 mkr (s. 5).
+
+Landelius m.fl. kom till motsatt slutsats, att Källbyalternativet efter kompletterande utredningar framstår som i särklass mest attraktivt för Lund (Landelius m.fl., 2020, s. 6). De två underlagen skiljer sig alltså mest i vilken lösning som anses kunna få tillstånd, och i vad ett utbyggt Källby omfattar.
+
+### Hur Lunds politiska beslut har gått
+
+Enligt VA SYD:s sammanställning av beslut ([https://maxima.vasyd.se/beslut](https://maxima.vasyd.se/beslut)) har Lunds kommun gått i olika riktningar:
+
+- **2016:** inriktningsbeslut att Lunds avloppsrening ska ske vid Sjölunda.
+- **2021:** inriktningsbeslut att fortsätta planeringen av en regional lösning.
+- **31 mars 2022:** kommunfullmäktige beslutar att lämna planerna på ett gemensamt system och ge VA SYD i uppdrag att bygga ut Källby.
+- **25 oktober 2023:** kommunfullmäktige beslutar att avloppsvatten från Källby ska ingå i MAXIMA och renas på Sjölunda.
+- **Maj 2024:** kommunfullmäktige godkänner investeringsavtalet för MAXIMA.
+
+Något belopp för genomförandebeslutet 2024 (rambudgeten) hittade jag inte på VA SYD:s sida. Nyare kostnadsuppgifter än 2020–2021 års kalkyler ingår därför inte i tabellen.
+
 ## Källor
+
+Landelius, S., Ander, E. och Persson, C.G. (2020) *Fortsatt drift eller nedläggning av Källby Avloppsreningsverk*, slutrapport 2020-09-07. Extern källa: [https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lund%202020a%2C%20fortsatt%20drift%20eller%20nedl%C3%A4ggning%2C%20K%C3%A4llby%20avloppsreningsverk.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lund%202020a%2C%20fortsatt%20drift%20eller%20nedl%C3%A4ggning%2C%20K%C3%A4llby%20avloppsreningsverk.pdf). Kopia i projektet: [Maxima/Källor](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/K%C3%A4llor/Lund%202020a%2C%20fortsatt%20drift%20eller%20nedl%C3%A4ggning%2C%20K%C3%A4llby%20avloppsreningsverk.pdf) (Hämtad: 13 oktober 2026). *(Konsulternas bedömning på uppdrag av Lunds kommun: utbyggt Källby 300–400 mkr, och rekommendation att Källbyalternativet efter kompletterande utredningar framstår som i särklass mest attraktivt, s. 5–6.)*
+
+Sveriges riksdag (1998) *Miljöbalk (1998:808)*, 6 kap. 29–32 §§ och 22 kap. 3 och 10 §§. Tillgänglig på: [https://lagen.nu/1998:808#K22](https://lagen.nu/1998:808#K22) (Hämtad: 13 oktober 2026). *(Lagrummen för samrådet och för synpunkter efter kungörelsen.)*
+
+VA SYD (2021) *Lunds framtida avloppsrening. Underlag som svarar på Lunds kommuns utredningsdirektiv 2020-11-05*, slutlig handling 2021-01-18. Extern källa: [https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf). Kopia i projektet: [Maxima/Källor](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/K%C3%A4llor/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf) (Hämtad: 13 oktober 2026). *(VA SYD:s redovisning av kostnader för Lund (Tabell 1, 3 och 4), miljö- och driftsaspekter och slutsatser.)*
+
+VA SYD och Lunds kommun (2021) *Fördjupad studie Källby avloppsreningsverk*, 2021-12-07. Tillgänglig på: [https://maxima.vasyd.se/sites/default/files/media/document/2023-10/F%C3%B6rdjupad%20studie%20K%C3%A4llby%20avloppsreningsverk%202021.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/F%C3%B6rdjupad%20studie%20K%C3%A4llby%20avloppsreningsverk%202021.pdf) (Hämtad: 13 oktober 2026). *(Uppgradering av Källby: 1,2 miljarder kronor och 50 mkr per år i drift.)*
 
 VA SYD (2025a) *Bilaga M1 Samrådsredogörelse, utgåva 3.0*, 28 maj. Tillgänglig på: [https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf) (Hämtad: 13 oktober 2026). *(Sökandens redovisning av samrådet och svaret till föreningen, avsnitt 5.17.)*
 
@@ -158,11 +212,13 @@ VA SYD (2025b) *Bilaga M1.21 Samrådsmöte Naturskyddsföreningen Lund*, protoko
 
 VA SYD (2025c) *Bilaga M1.4 Yttranden från organisationer och företag, maskad rev. 2*. Tillgänglig på: [https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1.4%20Yttranden%20fr%C3%A5n%20organisationer%20och%20f%C3%B6retag%20maskad%20rev2.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1.4%20Yttranden%20fr%C3%A5n%20organisationer%20och%20f%C3%B6retag%20maskad%20rev2.pdf) (Hämtad: 13 oktober 2026). *(Samlingen av samrådsbreven, där föreningens brev ligger på PDF-sida 42–49.)*
 
-VA SYD (u.å.) *Tillstånd*. Tillgänglig på: [https://maxima.vasyd.se/tillstand](https://maxima.vasyd.se/tillstand) (Hämtad: 13 oktober 2026). *(Förteckning över ansökans bilagor, inklusive samrådsbilagorna.)*
-
-Sveriges riksdag (1998) *Miljöbalk (1998:808)*, 6 kap. 29–32 §§ och 22 kap. 3 och 10 §§. Tillgänglig på: [https://lagen.nu/1998:808#K22](https://lagen.nu/1998:808#K22) (Hämtad: 13 oktober 2026). *(Lagrummen för samrådet och för synpunkter efter kungörelsen.)*
-
 VA SYD (2026) *Bemötande av inkomna synpunkter*, mål M 3289-25, aktbilaga 320, 30 september. Ingen webbadress. *(Svaren i Tabell 7 och Tabell 9.)*
+
+VA SYD (u.å.a) *Tillstånd*. Tillgänglig på: [https://maxima.vasyd.se/tillstand](https://maxima.vasyd.se/tillstand) (Hämtad: 13 oktober 2026). *(Förteckning över ansökans bilagor, inklusive samrådsbilagorna.)*
+
+VA SYD (u.å.b) *Vägen fram till genomförandebeslut*. Tillgänglig på: [https://maxima.vasyd.se/beslut](https://maxima.vasyd.se/beslut) (Hämtad: 13 oktober 2026). *(Beslutshistoriken för MAXIMA, bland annat Lunds kommunfullmäktiges beslut 2016–2024.)*
+
+WSP (2020) *Lunds framtida avloppsreningsverk: jämförelse av kostnadskalkyler*, 2020-12-07, på uppdrag av VA SYD. Tillgänglig på: [http://maxima.vasyd.se/sites/default/files/media/document/2023-10/WSP%202020b%20j%C3%A4mf%C3%B6relse%20kostnadskalkyler.pdf](http://maxima.vasyd.se/sites/default/files/media/document/2023-10/WSP%202020b%20j%C3%A4mf%C3%B6relse%20kostnadskalkyler.pdf) (Hämtad: 13 oktober 2026). *(Förklarar skillnaden mellan 400 och 1 750 mkr, s. 5.)*
 
 Växjö tingsrätt, mark- och miljödomstolen (2026) *Justerad preliminär tidsplan i mål M 3289-25*, aktbilaga 310, inkom 2 juli, och *Underrättelse*, aktbilaga 333, 8 oktober. Ingen webbadress. *(Datum för kungörelse, svarstid och frist.)*
 

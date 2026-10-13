@@ -277,15 +277,15 @@ Samtliga nivåer är begäranden om utredning, redovisning och besked. Ingen pun
 
 Källorna är de som föreningen själv nämner i texten, i den form som de angavs. Där föreningen inte angav någon webbadress har ingen lagts till.
 
+Lunds kommun, Samhällsbyggnadsförvaltningen. *Tjänsteskrivelse inför beslut i miljönämnden*, 2025-01-22, s. 3. Ingen webbadress anges i originalet. *(Källa för PFAS-halterna vid schakt S37 i S11.)*
+
 Mark- och miljööverdomstolen (2023) *Dom 2023-05-08 i mål P 14414-21*, Motala kommun och Lalandia (fladdermöss). Tillgänglig på: [https://www.domstol.se/globalassets/filer/domstol/markochmiljooverdomstolen/avgoranden/2023/p-14414-21-dom-2023-05-08.pdf](https://www.domstol.se/globalassets/filer/domstol/markochmiljooverdomstolen/avgoranden/2023/p-14414-21-dom-2023-05-08.pdf) (Hämtad: 13 oktober 2026). *(Domen som föreningen hänvisar till i S7: planen upphävdes eftersom det inte visats att fridlysta fladdermöss inte skulle skadas.)*
 
 Mark- och miljööverdomstolen (2024) *Dom 2024-12-03 i mål M 899-23*, NCC Industry AB (Skrylle). Tillgänglig på: [https://domstol.se/globalassets/filer/domstol/markochmiljooverdomstolen/avgoranden/2024/m-899-23-dom-2024-12-03.pdf](https://domstol.se/globalassets/filer/domstol/markochmiljooverdomstolen/avgoranden/2024/m-899-23-dom-2024-12-03.pdf) (Hämtad: 13 oktober 2026). *(Domen som föreningen hänvisar till i S7 om kumulativa effekter.)*
 
 VA SYD (2024) *Bilaga M1.2 Samrådsunderlag MAXIMA, utgåva 3.0*, 1 oktober. Tillgänglig på: [https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1.2%20Samr%C3%A5dsunderlag.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1.2%20Samr%C3%A5dsunderlag.pdf) (Hämtad: 13 oktober 2026). *(Underlaget som punkterna ordnas efter.)*
 
-Källby avloppsreningsverk. *Fördjupad studie, ”Framtidens avloppsreningsverk”*, 2021-12-07. Ingen webbadress anges i originalet. *(Citeras i S21.)*
-
-Lunds kommun, Samhällsbyggnadsförvaltningen. *Tjänsteskrivelse inför beslut i miljönämnden*, 2025-01-22, s. 3. Ingen webbadress anges i originalet. *(Källa för PFAS-halterna vid schakt S37 i S11.)*
+VA SYD och Lunds kommun (2021) *Fördjupad studie Källby avloppsreningsverk*, 2021-12-07. Tillgänglig på: [https://maxima.vasyd.se/sites/default/files/media/document/2023-10/F%C3%B6rdjupad%20studie%20K%C3%A4llby%20avloppsreningsverk%202021.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/F%C3%B6rdjupad%20studie%20K%C3%A4llby%20avloppsreningsverk%202021.pdf) (Hämtad: 13 oktober 2026). *(Skriften som föreningen citerar i S21. Citatet om avloppsreningsverket som produktionsanläggning står i avsnitt 3.3, Framtidens avloppsreningsverk. Studien bedömer en uppgradering av Källby till 1,2 miljarder kronor och en årlig driftkostnad på 50 miljoner kronor.)*
 
 Övriga källor som föreningen nämner utan webbadress: miljörapporter från Källby reningsverk (S28, S35, miljörapporten 2023), Höje å vattenråds hemsida (S11), Artportalen och Projekt Skånes Flora (S14), en föreläsning av Ulla Jansson, LTH, 2024-10-16 (S33), SVT Skåne (S28) samt EU:s avloppsdirektiv 2024/3019 (S27) och naturrestaureringsförordning (S25).
 
