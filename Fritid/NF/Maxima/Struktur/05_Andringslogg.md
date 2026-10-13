@@ -57,6 +57,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 ## Tillägg 2026-10-14: steg 3 och ny numrering
 
 - **Nytt steg 3.** [Yttrande över bemötandet](03_Yttrande_over_bemotandet.md) är tillagt som en mall: ärendets ram, VA SYD:s svar punkt för punkt (Tabell 6, flyttad från spårbarhetsdokumentet) och de frågor som föreningen behöver ta ställning till. Föreningens egna ställningstaganden och förslag till text ingår inte.
+- **Utkast till yttrande, 2026-10-13.** Ett utkast av Kent Lundgren som visats för medlemmar i Plangruppen är länkat i steg 3, som Word-fil och som läsbar visning i webbläsaren. Innehållet är oförändrat.
 - **Spårbarhet** är nu steg 4 (ankaret `#steg4`, tidigare `#steg3`), och filen heter `04_Sparbarhet_samrad_till_yttrande.md`. Loggen heter fortfarande `#logg` och filen `05_Andringslogg.md`.
 - **Tabellnummer.** Tabellerna är omnumrerade i den ordning de visas: steg 3 har Tabell 5–7, spårbarheten Tabell 8–12 och loggen Tabell 13–14.
 

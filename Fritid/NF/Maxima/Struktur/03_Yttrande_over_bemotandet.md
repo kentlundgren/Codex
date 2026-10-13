@@ -2,7 +2,7 @@
 
 # Steg 3: Yttrande över VA SYD:s bemötande (mål M 3289-25), mall enligt sexdelsmodellen
 
-*Utkast 2026-10-14, Kent Lundgren. Det här är en mall och inte ett yttrande. Den innehåller det som går att hämta ur handlingarna: ärendets ram och VA SYD:s svar punkt för punkt. Föreningens ställningstaganden är lämnade öppna. Inte behandlat eller beslutat av föreningens styrelse. Se [ändringsloggen](05_Andringslogg.md).*
+*Utkast 2026-10-14, Kent Lundgren. Det här är en mall och inte ett yttrande. Den innehåller det som går att hämta ur handlingarna: ärendets ram och VA SYD:s svar punkt för punkt. Föreningens ställningstaganden är lämnade öppna i mallen. Ett separat utkast till yttrande finns också, se Del 1. Inte behandlat eller beslutat av föreningens styrelse. Se [ändringsloggen](05_Andringslogg.md).*
 
 Det tredje steget i MAXIMA är ett yttrande till domstolen över sökandens bemötande. Det bygger på [steg 2](02_Yttrande_gallande_ansokan.md): samma nummer Y1–Y27 används, så att varje punkt går att följa till VA SYD:s svar. Strukturen är [sexdelsmodellen](https://kentlundgren.github.io/Codex/Fritid/NF/NCC_stenbryttning/struktur.html). Hur steget förhåller sig till de två första visas i Tabell 8 i [spårbarhetsdokumentet](04_Sparbarhet_samrad_till_yttrande.md).
 
@@ -23,7 +23,8 @@ Underrättelsen, [aktbilaga 333](https://github.com/kentlundgren/Codex/blob/main
 | **Därefter (tidsplanen)** | Vecka 50 2026: sökanden bemöter inkomna yttranden och ger in en uppdaterad sammanställning. Vecka 51 2026: kungörelse av kallelse till huvudförhandling. Vecka 5–6 2027: huvudförhandling med syn. Vecka 15 2027: målet avgörs |
 | **Föreningens tidigare yttrande** | Aktbilaga 257, inkom 2026-06-09. Se [steg 2](02_Yttrande_gallande_ansokan.md) |
 | **Avsändare och mandat** | Lunds Naturskyddsförening. Att besluta: vem som undertecknar, och på vilket mandat |
-| **Status** | Mall. Ingen text är beslutad |
+| **Utkast** | Ett utkast till yttrande, daterat 2026-10-13 i filnamnet, har visats för medlemmar i Plangruppen. [Läs Word-filen i webbläsaren](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fkentlundgren%2FCodex%2Fmain%2FFritid%2FNF%2FMaxima%2FTesttext%2F261013_yttrande_over_VA_SYDs_bemotande_.docx) · [Word-filen på GitHub](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Testtext/261013_yttrande_over_VA_SYDs_bemotande_.docx) (laddas ned). Inte beslutat av föreningen |
+| **Status** | Mallen: ingen text är beslutad |
 
 ## Del 2. Sammanfattning
 
@@ -109,6 +110,8 @@ Underrättelsen kom som en PDF om 288 sidor: [underrättelsepaketet](https://git
 | 321, 322, 323, 325, 329, 331 | Övriga bilagor till aktbilaga 320: 01-Y-a Yttranden i Esbosamråd (133–140), 02-Y-a Spridning till danskt territorialområde (141–152), 03-Y-a Samlat underlag inkomna yttranden (153–179), 05-Y-a Beslut riksintresse energiproduktion och energidistribution Malmö hamn (180–184), A7-Y-a Komplettering sekretessbelagda uppgifter (201–204), 04-Y-a Översiktlig bygg- och rivningsplan, Sjölunda (205–211) | VA SYD, 2026-09-30 (331 inkom 2026-10-08) | 133–184, 201–211 | Inte genomgångna här |
 
 ### Källor
+
+Lundgren, K. (2026) *Yttrande över VA SYDs bemötande, version B*, utkast, filen daterad 2026-10-13. Tillgänglig på: [https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Testtext/261013_yttrande_over_VA_SYDs_bemotande_.docx](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Testtext/261013_yttrande_over_VA_SYDs_bemotande_.docx) (Word-fil, laddas ned). Läsbar i webbläsaren via [Microsofts visningstjänst](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fkentlundgren%2FCodex%2Fmain%2FFritid%2FNF%2FMaxima%2FTesttext%2F261013_yttrande_over_VA_SYDs_bemotande_.docx) (Hämtad: 14 oktober 2026). *(Utkast som visats för medlemmar i Plangruppen. Inte beslutat av föreningen. Texten i filen är daterad 2026-10-12, filnamnet och den senaste ändringen 2026-10-13.)*
 
 Lunds Naturskyddsförening (2026) *Yttrande gällande VA SYDs ansökan om miljötillstånd för MAXIMA, mål M 3289-25*, aktbilaga 257, inkom 2026-06-09. Tillgänglig i VA SYD:s markerade kopia (aktbilaga 257 i [underrättelsepaketet](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333.pdf), PDF-sida 274–280, i Bilaga A1-Y-a, aktbilaga 332) på: [https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/LNF_yttrande_MAXIMA_M3289-25_aktbilaga257_VA-SYDs-markerade-kopia.pdf](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/LNF_yttrande_MAXIMA_M3289-25_aktbilaga257_VA-SYDs-markerade-kopia.pdf) (Hämtad: 14 oktober 2026). *(Föreningens yttrande, som bemötandet svarar på.)*
 

@@ -27,7 +27,7 @@ På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima>
 | [Yttrande](https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima/Yttrande) | Föreningens yttrande i domstolen. |
 | [Underrättelse](https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima/Underr%C3%A4ttelse) | Domstolens underrättelse 2026-10-08 med bifogade handlingar. |
 | [Källor](https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima/K%C3%A4llor) | Två rapporter om Lunds framtida avloppsvattenrening (se nedan). |
-| [Testtext](https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima/Testtext) | Utkast till yttrande över VA SYD:s bemötande (Word-fil). Inte beslutat av föreningen. |
+| [Testtext](https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima/Testtext) | Utkast till yttrande över VA SYD:s bemötande, daterat 2026-10-13 (Word-fil), som visats för medlemmar i Plangruppen. [Läs i webbläsaren](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fkentlundgren%2FCodex%2Fmain%2FFritid%2FNF%2FMaxima%2FTesttext%2F261013_yttrande_over_VA_SYDs_bemotande_.docx). Inte beslutat av föreningen. |
 
 ## Filerna
 
