@@ -2,7 +2,7 @@
 
 - **Live:** [https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
 
-*Utkast 2026-10-13, Kent Lundgren. Inte behandlat eller beslutat av Lunds Naturskyddsförening. Bidrag till fortsatt diskussion.*
+*Utkast 2026-10-14, Kent Lundgren. Inte behandlat eller beslutat av Lunds Naturskyddsförening. Bidrag till fortsatt diskussion.*
 
 Den här mappen visar hur Lunds Naturskyddsförenings synpunkter under samrådet om MAXIMA (2025) och föreningens yttrande i domstolen (2026) kunde ha varit strukturerade enligt [sexdelsmodellen](https://kentlundgren.github.io/Codex/Fritid/NF/NCC_stenbryttning/struktur.html), och hur en fråga kan följas från ett steg till nästa. Syftet är att visa hur framtida synpunkter och yttranden kan struktureras så att kommunikationen blir tydlig för alla parter. MAXIMA är ett exempel på en stor tillståndsprocess. Innehållet är föreningens eget och oförändrat i sak. Det som ändrats är formen.
 
@@ -12,8 +12,9 @@ Den här mappen visar hur Lunds Naturskyddsförenings synpunkter under samrådet
 |---|---|
 | [01_Synpunkter_under_samrad.md](01_Synpunkter_under_samrad.md) | **Steg 1.** Synpunkter under samråd (2025-02-27) enligt sexdelsmodellen, S1–S35 |
 | [02_Yttrande_gallande_ansokan.md](02_Yttrande_gallande_ansokan.md) | **Steg 2.** Yttrande gällande VA SYD:s ansökan om miljötillstånd för MAXIMA, mål M 3289-25 (2026-06-09), Y1–Y27 |
-| [03_Sparbarhet_samrad_till_yttrande.md](03_Sparbarhet_samrad_till_yttrande.md) | **Spårbarhet.** Hur en fråga följs från samråd till yttrande och bemötande, och en svarstabell |
-| [04_Andringslogg.md](04_Andringslogg.md) | **Ändringslogg.** Vad som ändrats mot originalen |
+| [03_Yttrande_over_bemotandet.md](03_Yttrande_over_bemotandet.md) | **Steg 3.** Yttrande över VA SYD:s bemötande (mål M 3289-25), mall med svarstabell. Frist 2026-11-06 |
+| [04_Sparbarhet_samrad_till_yttrande.md](04_Sparbarhet_samrad_till_yttrande.md) | **Spårbarhet.** Hur en fråga följs från samråd till yttrande och bemötande |
+| [05_Andringslogg.md](05_Andringslogg.md) | **Ändringslogg.** Vad som ändrats mot originalen |
 | [index.html](index.html) | Samma innehåll som en sida med flikar (live-sidan) |
 
 ## Vad stegen heter

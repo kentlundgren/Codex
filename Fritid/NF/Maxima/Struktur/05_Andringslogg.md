@@ -1,4 +1,4 @@
-**Navigering:** [Steg 1: Synpunkter under samråd](01_Synpunkter_under_samrad.md) · [Steg 2: Yttrande gällande ansökan](02_Yttrande_gallande_ansokan.md) · [Spårbarhet](03_Sparbarhet_samrad_till_yttrande.md) · **Ändringslogg** · [Live-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
+**Navigering:** [Steg 1: Synpunkter under samråd](01_Synpunkter_under_samrad.md) · [Steg 2: Yttrande gällande ansökan](02_Yttrande_gallande_ansokan.md) · [Steg 3: Yttrande över bemötandet](03_Yttrande_over_bemotandet.md) · [Spårbarhet](04_Sparbarhet_samrad_till_yttrande.md) · **Ändringslogg** · [Live-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
 
 # Ändringslogg: vad som ändrats mellan originalen och de omstrukturerade versionerna
 
@@ -10,7 +10,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 
 ## Samrådsbrevet (originalet, 8 sidor) och steg 1
 
-**Tabell 11. Samrådsbrevets delar och var de hamnat i steg 1**
+**Tabell 12. Samrådsbrevets delar och var de hamnat i steg 1**
 
 | Originalets del | I steg 1 |
 |---|---|
@@ -27,7 +27,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 
 ## Yttrandet (originalet, 7 sidor) och steg 2
 
-**Tabell 12. Yttrandets delar och var de hamnat i steg 2**
+**Tabell 13. Yttrandets delar och var de hamnat i steg 2**
 
 | Originalets del | I steg 2 |
 |---|---|
@@ -54,6 +54,12 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 - Meningar som delats i ståndpunkt och skäl (till exempel Y27) eller förts samman från två ställen (Y26: bakgrunden och 4.7). Små förtydliganden i parentes i S15 och S23.
 - Begäran härledd av en fråga: bara S1 (”Att frågan besvaras i samrådsredogörelsen och i MKB:n”). S21, S25 och S35 har bara **Fråga**. I S26 är begäran hämtad ur originalets inledning.
 
+## Tillägg 2026-10-14: steg 3 och ny numrering
+
+- **Nytt steg 3.** [Yttrande över bemötandet](03_Yttrande_over_bemotandet.md) är tillagt som en mall: ärendets ram, VA SYD:s svar punkt för punkt (Tabell 6, flyttad från spårbarhetsdokumentet) och de frågor som föreningen behöver ta ställning till. Föreningens egna ställningstaganden och förslag till text ingår inte.
+- **Spårbarhet** är nu steg 4 (ankaret `#steg4`, tidigare `#steg3`), och filen heter `04_Sparbarhet_samrad_till_yttrande.md`. Loggen heter fortfarande `#logg` och filen `05_Andringslogg.md`.
+- **Tabellnummer.** Tabellerna är omnumrerade i den ordning de visas: steg 3 har Tabell 5 och 6, spårbarheten Tabell 7–11 och loggen Tabell 12–13.
+
 ## Det som har utelämnats
 
 - Avsändarens postadress och e-postadress (kontaktuppgifter) och namnet på undertecknaren. Roll anges i stället.
@@ -71,7 +77,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 2. **Begäran per punkt i yttrandet.** Bara Y19 har en uttrycklig begäran. Resten stödjer yrkande 1 och 2. En egen begäran per punkt (lärdom 4 i [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4)) bör formuleras av föreningen.
 3. **Prövningsfråga per punkt.** Jag har bara angett den rättsliga anknytning som originalet själv anger. Att koppla varje punkt till MKB:n, tillåtligheten eller villkoren (lärdom 6) kräver föreningens bedömning.
 4. **De fyra texttyperna** (verifierat, fråga, bedömning, förslag) i sexdelsmodellen har inte tillämpats. Det kan göras som nästa steg.
-5. **Punkter som inte fördes vidare** från samrådet till yttrandet (se Tabell 6 i [spårbarhetsdokumentet](03_Sparbarhet_samrad_till_yttrande.md)).
+5. **Punkter som inte fördes vidare** från samrådet till yttrandet (se Tabell 8 i [spårbarhetsdokumentet](04_Sparbarhet_samrad_till_yttrande.md)).
 6. **Aktbilaga 257.** Underlaget för steg 2 är VA SYD:s markerade kopia. Den fil som föreningen lämnade in bör användas för en slutlig jämförelse.
-7. **Uppgiften om 2 miljarder kronor.** Yttrandets bilaga 1 är länkad (extern källa och kopia i projektet). Siffran 2 miljarder står inte i rapporten, men den går att återskapa: Lunds kostnad för Sjölundasystemen (2,4–2,7 miljarder kronor, inklusive tunnlarna) minus konsulternas 300–400 miljoner för en utbyggnad av Källby blir ca 2,0–2,3 miljarder. Mot VA SYD:s kalkyl för Källby (1,75–1,9 miljarder) är skillnaden 0,5–0,75 miljarder. Se Tabell 10 i [spårbarhetsdokumentet](03_Sparbarhet_samrad_till_yttrande.md). Kontrollera vilket underlag siffran kommer från innan den används igen.
+7. **Uppgiften om 2 miljarder kronor.** Yttrandets bilaga 1 är länkad (extern källa och kopia i projektet). Siffran 2 miljarder står inte i rapporten, men den går att återskapa: Lunds kostnad för Sjölundasystemen (2,4–2,7 miljarder kronor, inklusive tunnlarna) minus konsulternas 300–400 miljoner för en utbyggnad av Källby blir ca 2,0–2,3 miljarder. Mot VA SYD:s kalkyl för Källby (1,75–1,9 miljarder) är skillnaden 0,5–0,75 miljarder. Se Tabell 11 i [spårbarhetsdokumentet](04_Sparbarhet_samrad_till_yttrande.md). Kontrollera vilket underlag siffran kommer från innan den används igen.
 

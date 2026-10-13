@@ -1,16 +1,16 @@
-**Navigering:** [Steg 1: Synpunkter under samråd](01_Synpunkter_under_samrad.md) · [Steg 2: Yttrande gällande ansökan](02_Yttrande_gallande_ansokan.md) · **Spårbarhet** · [Ändringslogg](04_Andringslogg.md) · [Live-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
+**Navigering:** [Steg 1: Synpunkter under samråd](01_Synpunkter_under_samrad.md) · [Steg 2: Yttrande gällande ansökan](02_Yttrande_gallande_ansokan.md) · [Steg 3: Yttrande över bemötandet](03_Yttrande_over_bemotandet.md) · **Spårbarhet** · [Ändringslogg](05_Andringslogg.md) · [Live-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
 
 # Spårbarhet från samråd till yttrande
 
 *Utkast 2026-10-13, Kent Lundgren. Inte behandlat eller beslutat av föreningens styrelse. Sidhänvisningar till VA SYD:s samrådsredogörelse följer dokumentets tryckta sidnummer, och till aktbilaga 320 dess egen paginering.*
 
-Det här dokumentet visar hur samma fråga kan följas från samrådsbrevet, via samrådsredogörelsen och yttrandet, till sökandens bemötande, och hur föreningen kunde ha gått tillväga för att inte tappa den på vägen. Det kopplar ihop [steg 1](01_Synpunkter_under_samrad.md) och [steg 2](02_Yttrande_gallande_ansokan.md).
+Det här dokumentet visar hur samma fråga kan följas från samrådsbrevet, via samrådsredogörelsen och yttrandet, till sökandens bemötande, och hur föreningen kunde ha gått tillväga för att inte tappa den på vägen. Det kopplar ihop [steg 1](01_Synpunkter_under_samrad.md), [steg 2](02_Yttrande_gallande_ansokan.md) och [steg 3](03_Yttrande_over_bemotandet.md).
 
 ## Tre steg och vad texterna kan kallas
 
 Samråd, yttrande efter kungörelse och yttrande över bemötandet är tre olika steg med olika mottagare och olika slags text. Det hjälper om de heter olika.
 
-**Tabell 5. De tre stegen i MAXIMA och vad texterna kan kallas**
+**Tabell 7. De tre stegen i MAXIMA och vad texterna kan kallas**
 
 | Steg | Namn på texten | Mottagare | Tid i MAXIMA | Lagrum |
 |---|---|---|---|---|
@@ -26,7 +26,7 @@ Skälen till namnen:
 
 ## Hur varje samrådspunkt följdes upp i yttrandet
 
-**Tabell 6. Samrådets punkter (S) och var de återfinns i yttrandet (Y)**
+**Tabell 8. Samrådets punkter (S) och var de återfinns i yttrandet (Y)**
 
 | S | Rubrik i steg 1 | Samrådsunderlagets avsnitt | I yttrandet |
 |---|---|---|---|
@@ -70,9 +70,9 @@ Av 35 samrådspunkter har 25 en motsvarighet i yttrandet. 10 fördes inte vidare
 
 ## Vad VA SYD svarade, steg för steg
 
-Tabell 7 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samrådsredogörelsen](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=41) (Bilaga M1, avsnitt 5.17, s. 40–41), kolumn 4 aktbilaga 320. Tabellen säger inget om vem som har rätt i sak.
+Tabell 9 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samrådsredogörelsen](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=41) (Bilaga M1, avsnitt 5.17, s. 40–41), kolumn 4 aktbilaga 320. Tabellen säger inget om vem som har rätt i sak.
 
-**Tabell 7. Femton frågor genom samråd, yttrande och bemötande**
+**Tabell 9. Femton frågor genom samråd, yttrande och bemötande**
 
 | Fråga | S / Y | Samrådsredogörelsen (2025) | Bemötandet (2026) |
 |---|---|---|---|
@@ -94,7 +94,7 @@ Tabell 7 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samr
 
 ## Så kunde föreningen ha gått tillväga
 
-**Tabell 8. Åtgärder i varje steg, och vad handlingarna visar**
+**Tabell 10. Åtgärder i varje steg, och vad handlingarna visar**
 
 | När | Åtgärd | Varför | Belägg |
 |---|---|---|---|
@@ -103,7 +103,7 @@ Tabell 7 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samr
 | När samrådsredogörelsen publiceras | Jämför redogörelsen med de numrerade punkterna, en för en, och gör en svarstabell (S mot VA SYD:s svar). | MKB:n ska redovisa samråden och vad som kommit fram. En punkt som saknas i redogörelsen syns då direkt. | [Bilaga M1](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=41), s. 40–41 |
 | När kungörelsen kommer (2026-04-14) | Lägg svarstiden (till 2026-06-18) i kalendern och räkna tillbaka. | Domstolen anger en sista dag. | Aktbilaga 310 |
 | I yttrandet (inkom 2026-06-09) | Numrera Y1, Y2 och så vidare, ett påstående per punkt. Ange för varje punkt vilken samrådspunkt (S) den gäller och vad VA SYD svarade i samrådsredogörelsen. Avsluta med en begäran. | Så ser domstolen att en fråga ställts tidigare, och vad som hänt med den. | Steg 2 |
-| När bemötandet kommer (2026-09-30) | Kopiera VA SYD:s numrering in i en svarstabell och markera besvarat, delvis, hänvisning eller obesvarat. | Det visar vad som ska tas upp igen. | Tabell 9 |
+| När bemötandet kommer (2026-09-30) | Kopiera VA SYD:s numrering in i en svarstabell och markera besvarat, delvis, hänvisning eller obesvarat. | Det visar vad som ska tas upp igen. | Tabell 6 i [steg 3](03_Yttrande_over_bemotandet.md) |
 | Före fristen (2026-11-06) | Skriv yttrande över bemötandet med samma Y-nummer, och reservera dig för att få yttra dig när VA SYD återkommer. | VA SYD återkommer vecka 50 2026 med sin inställning till kvartär rening. | Aktbilaga 320, s. 13, 47–48 |
 
 ### Så kan en punkt i yttrandet åberopa samrådet
@@ -116,53 +116,21 @@ Begäran i exemplet är formulerad av frågan i originalet och är ett förslag,
 
 ## Svarstabell inför yttrandet över bemötandet
 
-Tabellen är förifylld utifrån aktbilaga 320 och ska fyllas på av föreningen. ”Obesvarad i sak” betyder att VA SYD inte tar upp punktens innehåll, bara hänvisar eller svarar samlat.
-
-**Tabell 9. Svarstabell: yttrandets punkter (Y) mot VA SYD:s bemötande**
-
-| Y | Ämne | VA SYD:s nr | Status |
-|---|---|---|---|
-| Y1 | Ansökan beskriver inte Källby och Höje å | 2 | Delvis (avgränsning) |
-| Y2 | Ekonomiska fakta saknas | 2 | Ekonomi obesvarad |
-| Y3 | Alternativ 2 och 3 har inte utretts | 3a | Svar, men inte att alternativen utretts |
-| Y4 | Nollalternativet | 3b | Hänvisning |
-| Y5 | Nedläggningen av Källby är en följdverksamhet som inte tas upp | 3c | Hänvisning |
-| Y6 | Bräddning vid Källby | 3d | Obesvarad |
-| Y7 | Hur renas Lunds avloppsvatten om Källbys tillståndstak nås före tunneln? | 3e | Obesvarad |
-| Y8 | Klimatberäkningen saknar rivning | 3f | Obesvarad |
-| Y9 | Utredning av biologisk mångfald saknas | 4a | Delvis |
-| Y10 | Förekomsten av arter har inte redovisats, och artskyddet | 4b | Delvis (hänvisning) |
-| Y11 | Kumulativa effekter och EU:s restaureringsförordning | 4c | Delvis |
-| Y12 | EU-lagstiftningen kommenteras inte | 5a | Delvis |
-| Y13 | Länsstyrelsens påstående om utsläppspunkten | 5b | Lagstöd anges inte |
-| Y14 | Fel vattenförekomst och vattenförekomstens status | 5c | Obesvarad |
-| Y15 | Bästa möjliga teknik och fjärde reningssteg | 5d | Skjutet till vecka 50 2026 |
-| Y16 | Flergenerationsperspektiv och försiktighetsprincipen vid klimatanpassningen | 6a | Svar |
-| Y17 | Skyddsnivån +3,5 m är för låg | 6b och 7c | År 2150 obesvarat |
-| Y18 | Villkorsförslag 19 och 20 för klimatanpassning | 6c | Noteras |
-| Y19 | Ett centraliserat system jämfört med ett decentraliserat | 7a och 7b | Delvis |
-| Y20 | Tunnelns rörelse i höjdled vid Alnarpsströmmen | 7d | Obesvarad i sak |
-| Y21 | PFAS norr om schakt S37 | 7e | Obesvarad i sak |
-| Y22 | Bevisbördekravet (2 kap. 1 §) | 8 | Obesvarad i sak |
-| Y23 | Kunskapskravet (2 kap. 2 §) | 8 | Obesvarad i sak |
-| Y24 | Försiktighetsprincipen (2 kap. 3 §) | 8 | Obesvarad i sak |
-| Y25 | Hushållning med råvaror och energi (2 kap. 5 §) | 8 | Obesvarad i sak |
-| Y26 | Val av plats (2 kap. 6 §) | 8 | Kostnadsjämförelsen obesvarad |
-| Y27 | Verkställighetsförordnandet ska avslås | 9 | Svar (VA SYD vidhåller) |
+Svarstabellen med VA SYD:s numrering och status för varje punkt i yttrandet finns nu som Tabell 6 i [steg 3](03_Yttrande_over_bemotandet.md), där den hör hemma som underlag för själva yttrandet över bemötandet.
 
 ## Vad kostar Källby och Sjölunda enligt underlagen?
 
 Yttrandet och samrådsbrevet säger att Källbyalternativet är upp till eller minst 2 miljarder kronor billigare än Sjölundaalternativet (S18, Y26). Underlagen i projektets mapp Källor visar hur den siffran kan uppstå, och varför den ändå är omstridd. Beloppen nedan är miljoner kronor (mkr) och avser Lunds kostnad i 2020 års prisnivå, om inget annat anges. VA SYD anger att kalkylerna är osäkra, från 15 procent lägre till 30 procent högre (VA SYD, 2021, s. 33).
 
-**Tabell 10. Investeringskostnader för Lund i olika underlag (mkr)**
+**Tabell 11. Investeringskostnader för Lund i olika underlag (mkr)**
 
 | Underlag | Alternativ | Investering för Lund |
 |---|---|---|
 | [Landelius m.fl. (2020)](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lund%202020a%2C%20fortsatt%20drift%20eller%20nedl%C3%A4ggning%2C%20K%C3%A4llby%20avloppsreningsverk.pdf), s. 5 | Utbyggt Källby, konsulternas egen bedömning | 300–400 |
-| [VA SYD (2021)](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf), Tabell 1, s. 21 (WSP:s kalkyl 2020) | Utbyggt Källby, nytt reningsverk på området | 1 750 |
-| VA SYD (2021), Tabell 4, s. 34 | System 1: lokal lösning med Källby och Södra Sandby kvar (Källby 1 812 + Södra Sandby 104) | 1 916 |
-| VA SYD (2021), Tabell 4, s. 34 | System 2: Sjölunda med Burlöv, Lomma och Malmö (varav tunneln Lund–Malmö, ÖLM, 447 och Malmö avloppstunnel, MAT, 545) | 2 670 |
-| VA SYD (2021), Tabell 4, s. 34 | System 3: Sjölunda med sex kommuner (varav ÖLM 379 och MAT 462) | 2 408 |
+| [VA SYD (2021)](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf), Tabell 1, s. 21 (WSP:s kalkyl 2020) | Utbyggt Källby, nytt reningsverk på området | 1 750 |
+| VA SYD (2021), Tabell 4, s. 34 | System 1: lokal lösning med Källby och Södra Sandby kvar (Källby 1 812 + Södra Sandby 104) | 1 916 |
+| VA SYD (2021), Tabell 4, s. 34 | System 2: Sjölunda med Burlöv, Lomma och Malmö (varav tunneln Lund–Malmö, ÖLM, 447 och Malmö avloppstunnel, MAT, 545) | 2 670 |
+| VA SYD (2021), Tabell 4, s. 34 | System 3: Sjölunda med sex kommuner (varav ÖLM 379 och MAT 462) | 2 408 |
 | [Fördjupad studie Källby (2021-12-07)](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/F%C3%B6rdjupad%20studie%20K%C3%A4llby%20avloppsreningsverk%202021.pdf) | Uppgradering av Källby, kalkyl med driftkostnad 50 mkr per år | 1 200 |
 
 Vad tabellen visar:
@@ -202,7 +170,7 @@ Landelius, S., Ander, E. och Persson, C.G. (2020) *Fortsatt drift eller nedlägg
 
 Sveriges riksdag (1998) *Miljöbalk (1998:808)*, 6 kap. 29–32 §§ och 22 kap. 3 och 10 §§. Tillgänglig på: [https://lagen.nu/1998:808#K22](https://lagen.nu/1998:808#K22) (Hämtad: 13 oktober 2026). *(Lagrummen för samrådet och för synpunkter efter kungörelsen.)*
 
-VA SYD (2021) *Lunds framtida avloppsrening. Underlag som svarar på Lunds kommuns utredningsdirektiv 2020-11-05*, slutlig handling 2021-01-18. Extern källa: [https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf). Kopia i projektet: [Maxima/Källor](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/K%C3%A4llor/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf) (Hämtad: 13 oktober 2026). *(VA SYD:s redovisning av kostnader för Lund (Tabell 1, 3 och 4), miljö- och driftsaspekter och slutsatser.)*
+VA SYD (2021) *Lunds framtida avloppsrening. Underlag som svarar på Lunds kommuns utredningsdirektiv 2020-11-05*, slutlig handling 2021-01-18. Extern källa: [https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf). Kopia i projektet: [Maxima/Källor](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/K%C3%A4llor/Lunds%20framtida%20avloppsvattenrening%2C%20en%20rapport%20till%20Lunds%20kommun%202021.pdf) (Hämtad: 13 oktober 2026). *(VA SYD:s redovisning av kostnader för Lund (Tabell 1, 3 och 4), miljö- och driftsaspekter och slutsatser.)*
 
 VA SYD och Lunds kommun (2021) *Fördjupad studie Källby avloppsreningsverk*, 2021-12-07. Tillgänglig på: [https://maxima.vasyd.se/sites/default/files/media/document/2023-10/F%C3%B6rdjupad%20studie%20K%C3%A4llby%20avloppsreningsverk%202021.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2023-10/F%C3%B6rdjupad%20studie%20K%C3%A4llby%20avloppsreningsverk%202021.pdf) (Hämtad: 13 oktober 2026). *(Uppgradering av Källby: 1,2 miljarder kronor och 50 mkr per år i drift.)*
 
@@ -212,7 +180,7 @@ VA SYD (2025b) *Bilaga M1.21 Samrådsmöte Naturskyddsföreningen Lund*, protoko
 
 VA SYD (2025c) *Bilaga M1.4 Yttranden från organisationer och företag, maskad rev. 2*. Tillgänglig på: [https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1.4%20Yttranden%20fr%C3%A5n%20organisationer%20och%20f%C3%B6retag%20maskad%20rev2.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1.4%20Yttranden%20fr%C3%A5n%20organisationer%20och%20f%C3%B6retag%20maskad%20rev2.pdf) (Hämtad: 13 oktober 2026). *(Samlingen av samrådsbreven, där föreningens brev ligger på PDF-sida 42–49.)*
 
-VA SYD (2026) *Bemötande av inkomna synpunkter*, mål M 3289-25, aktbilaga 320, 30 september. Ingen webbadress. *(Svaren i Tabell 7 och Tabell 9.)*
+VA SYD (2026) *Bemötande av inkomna synpunkter*, mål M 3289-25, aktbilaga 320, 30 september. Ingen webbadress. *(Svaren i Tabell 9 och Tabell 6.)*
 
 VA SYD (u.å.a) *Tillstånd*. Tillgänglig på: [https://maxima.vasyd.se/tillstand](https://maxima.vasyd.se/tillstand) (Hämtad: 13 oktober 2026). *(Förteckning över ansökans bilagor, inklusive samrådsbilagorna.)*
 

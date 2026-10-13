@@ -20,7 +20,7 @@ På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF>
 
 - [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/) — hur man kan lägga upp synpunkter under samråd och yttranden i en tillståndsprocess.
 - [NCC:s samråd vid Södra Sandby](https://kentlundgren.github.io/Codex/Fritid/NF/NCC_stenbryttning/) — utkast till synpunkter om täkt vid Skrylle.
-- [MAXIMA: samråd och yttrande, omstrukturerade](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/) — föreningens synpunkter under samrådet 2025 och yttrande i domstolen 2026 om VA SYD:s ansökan (mål M 3289-25), uppställda enligt sexdelsmodellen, med spårbarhet från samråd till yttrande. Utkast till diskussion, inte beslutat av föreningen.
+- [MAXIMA: samråd och yttrande, omstrukturerade](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/) — föreningens synpunkter under samrådet 2025 och yttrande i domstolen 2026 om VA SYD:s ansökan (mål M 3289-25), uppställda enligt sexdelsmodellen, med en mall för steg 3 (yttrande över bemötandet) och spårbarhet från samråd till yttrande. Utkast till diskussion, inte beslutat av föreningen.
 - [Lärdomar från MAXIMA](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html) — hur synpunkter och yttranden kan struktureras i en stor tillståndsprocess, med förklaringar av kungörelse, underrättelse, svarstid och verkställighetsförordnande.
 - [Kalendern](https://kentlundgren.github.io/Codex/Fritid/NF/Kalendern/) — föreningens program i en delad digital kalender.
 - [Plangruppen](https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/) — plangruppens möteskalender.
