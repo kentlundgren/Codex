@@ -1,0 +1,34 @@
+# MAXIMA: samråd och yttrande, omstrukturerade enligt sexdelsmodellen
+
+- **Live:** [https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
+
+*Utkast 2026-10-13, Kent Lundgren. Inte behandlat eller beslutat av Lunds Naturskyddsförening. Bidrag till fortsatt diskussion.*
+
+Den här mappen visar hur Lunds Naturskyddsförenings synpunkter under samrådet om MAXIMA (2025) och föreningens yttrande i domstolen (2026) kunde ha varit strukturerade enligt [sexdelsmodellen](https://kentlundgren.github.io/Codex/Fritid/NF/NCC_stenbryttning/struktur.html), och hur en fråga kan följas från ett steg till nästa. Syftet är att visa hur framtida synpunkter och yttranden kan struktureras så att kommunikationen blir tydlig för alla parter. MAXIMA är ett exempel på en stor tillståndsprocess. Innehållet är föreningens eget och oförändrat i sak. Det som ändrats är formen.
+
+## Läs i den här ordningen
+
+| Fil | Vad den innehåller |
+|---|---|
+| [01_Synpunkter_under_samrad.md](01_Synpunkter_under_samrad.md) | **Steg 1.** Synpunkter under samråd (2025-02-27) enligt sexdelsmodellen, S1–S35 |
+| [02_Yttrande_gallande_ansokan.md](02_Yttrande_gallande_ansokan.md) | **Steg 2.** Yttrande gällande VA SYD:s ansökan om miljötillstånd för MAXIMA, mål M 3289-25 (2026-06-09), Y1–Y27 |
+| [03_Sparbarhet_samrad_till_yttrande.md](03_Sparbarhet_samrad_till_yttrande.md) | **Spårbarhet.** Hur en fråga följs från samråd till yttrande och bemötande, och en svarstabell |
+| [04_Andringslogg.md](04_Andringslogg.md) | **Ändringslogg.** Vad som ändrats mot originalen |
+| [index.html](index.html) | Samma innehåll som en sida med flikar (live-sidan) |
+
+## Vad stegen heter
+
+- **Synpunkter under samråd** (samrådssynpunkter): till sökanden före ansökan. Inga yrkanden.
+- **Yttrande gällande VA SYD:s ansökan om miljötillstånd för MAXIMA (mål M 3289-25):** till domstolen efter kungörelsen. Yrkanden förekommer.
+- **Yttrande över bemötandet:** till domstolen efter sökandens bemötande och domstolens underrättelse.
+
+## Underlag
+
+- Föreningens samrådsbrev 2025-02-27: [PDF](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Samr%C3%A5d/MAXIMA-samradssynpunkter-250220.pdf).
+- Föreningens yttrande i VA SYD:s markerade kopia (sid. 274–280 i aktbilaga 333): [PDF](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/LNF_yttrande_MAXIMA_M3289-25_aktbilaga257_VA-SYDs-markerade-kopia.pdf).
+- VA SYD:s samrådsredogörelse, samrådsunderlag och samrådsprotokoll, samt domstolens aktbilagor 257, 310, 320 och 333. Källor och länkar står i varje dokument.
+
+## Publiceringskontroll
+
+Personnamn, postadress och e-post är utelämnade. Roller används i stället. Mappen innehåller inget internt arbetsmaterial.
+
