@@ -52,6 +52,8 @@ Den här skillen är den gemensamma, uppdaterade efterföljaren till den tidigar
    - Möt avgränsningar som motparten redan har meddelat ("ingår inte i prövningen") direkt, i stället för att upprepa synpunkten.
    - Numrera synpunkterna i ett samrådsbrev så att de går att åberopa i det senare yttrandet, och läs samrådsredogörelsen (MKB:n ska enligt MB 6 kap. 35 § innehålla en redogörelse för de samråd som har skett).
    - Efter motpartens bemötande: kopiera motpartens numrering in i texten, gör en tabell över besvarat och obesvarat, och reservera dig för att få yttra dig när motparten återkommer.
+   - Skilj på orden i domstolsskedet (MB 22 kap.): kungörelse (offentligt tillkännagivande när en ansökan tagits upp till prövning, 22 kap. 3 §, kan förekomma flera gånger med olika syften), underrättelse (meddelande i målet till en viss mottagare, inte en kungörelse), svarstid (domstolens ord för tiden att lämna in), synpunkter (lagens ord för det som lämnas efter kungörelsen, 22 kap. 10 §) och yttrande (handlingen och det domstolen hämtar in), yrkande (krav på domstolens beslut, hör till den som för talan) och verkställighetsförordnande (22 kap. 28 §). Förklaringen med exempel finns i `maxima.html#begrepp`. Ge inget besked om en förenings partsställning eller om följden av ett för sent yttrande.
+   - "Komma in senast" betyder att handlingen ska ha kommit in till domstolen. Råd om sista dag: skicka i god tid, spara kvitto och ring domstolen vid osäkerhet.
    - Alternativa begäranden (till exempel villkor eller utredning vid sidan av ett yrkande om avslag) är en processfråga som kräver juridiskt stöd i det enskilda målet. Ge inte råd om det.
 
 ## Gemensam disposition, olika lagrum — grundprincipen
