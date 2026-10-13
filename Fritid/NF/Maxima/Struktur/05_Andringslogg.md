@@ -51,7 +51,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 - En sammanfattning (Del 2) i båda, skriven av originalets egna uppgifter.
 - Samrådsunderlagets avsnitt som rubriker i steg 1. Kopplingen mellan punkt och avsnitt är min sortering.
 - I steg 2: samrådspunkten (S-nummer) och VA SYD:s nummer och svar, hämtade ur aktbilaga 320, samt de hänvisningar till ansökan som VA SYD själva anger i sitt svar.
-- Meningar som delats i ståndpunkt och skäl (till exempel Y27) eller förts samman från två ställen (Y26: bakgrunden och 4.7). Små förtydliganden i parentes i S15 och S23.
+- Meningar som delats i ståndpunkt och skäl (till exempel Y27) eller förts samman från två ställen (Y26: bakgrunden och 4.7). Små förtydliganden i parentes i S15 och S23, och länkar till källorna i S21 (Fördjupad studie och VA SYD, 2021).
 - Begäran härledd av en fråga: bara S1 (”Att frågan besvaras i samrådsredogörelsen och i MKB:n”). S21, S25 och S35 har bara **Fråga**. I S26 är begäran hämtad ur originalets inledning.
 
 ## Tillägg 2026-10-14: steg 3 och ny numrering
