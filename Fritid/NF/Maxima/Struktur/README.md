@@ -26,8 +26,8 @@ Den här mappen visar hur Lunds Naturskyddsförenings synpunkter under samrådet
 ## Underlag
 
 - Föreningens samrådsbrev 2025-02-27: [PDF](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Samr%C3%A5d/MAXIMA-samradssynpunkter-250220.pdf).
-- Föreningens yttrande i VA SYD:s markerade kopia (PDF-sida 274–280 i [underrättelsepaketet](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333_7%20%282%29.pdf)): [PDF](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/LNF_yttrande_MAXIMA_M3289-25_aktbilaga257_VA-SYDs-markerade-kopia.pdf).
-- Domstolens underrättelse 2026-10-08 (aktbilaga 333) med bifogade handlingar, 288 sidor i en PDF: [underrättelsepaketet](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333_7%20%282%29.pdf). Tabell 7 i [steg 3](03_Yttrande_over_bemotandet.md) visar vilka handlingar som ligger på vilka sidor.
+- Föreningens yttrande i VA SYD:s markerade kopia (PDF-sida 274–280 i [underrättelsepaketet](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333.pdf)): [PDF](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/LNF_yttrande_MAXIMA_M3289-25_aktbilaga257_VA-SYDs-markerade-kopia.pdf).
+- Domstolens underrättelse 2026-10-08 (aktbilaga 333) med bifogade handlingar, 288 sidor i en PDF: [underrättelsepaketet](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333.pdf). Tabell 7 i [steg 3](03_Yttrande_over_bemotandet.md) visar vilka handlingar som ligger på vilka sidor.
 - VA SYD:s samrådsredogörelse, samrådsunderlag och samrådsprotokoll, samt domstolens aktbilagor 257, 310, 320 och 333. Källor och länkar står i varje dokument.
 
 ## Publiceringskontroll
