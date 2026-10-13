@@ -10,7 +10,7 @@ Det här dokumentet visar hur samma fråga kan följas från samrådsbrevet, via
 
 Samråd, yttrande efter kungörelse och yttrande över bemötandet är tre olika steg med olika mottagare och olika slags text. Det hjälper om de heter olika.
 
-**Tabell 7. De tre stegen i MAXIMA och vad texterna kan kallas**
+**Tabell 8. De tre stegen i MAXIMA och vad texterna kan kallas**
 
 | Steg | Namn på texten | Mottagare | Tid i MAXIMA | Lagrum |
 |---|---|---|---|---|
@@ -26,7 +26,7 @@ Skälen till namnen:
 
 ## Hur varje samrådspunkt följdes upp i yttrandet
 
-**Tabell 8. Samrådets punkter (S) och var de återfinns i yttrandet (Y)**
+**Tabell 9. Samrådets punkter (S) och var de återfinns i yttrandet (Y)**
 
 | S | Rubrik i steg 1 | Samrådsunderlagets avsnitt | I yttrandet |
 |---|---|---|---|
@@ -70,9 +70,9 @@ Av 35 samrådspunkter har 25 en motsvarighet i yttrandet. 10 fördes inte vidare
 
 ## Vad VA SYD svarade, steg för steg
 
-Tabell 9 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samrådsredogörelsen](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=41) (Bilaga M1, avsnitt 5.17, s. 40–41), kolumn 4 aktbilaga 320. Tabellen säger inget om vem som har rätt i sak.
+Tabell 10 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samrådsredogörelsen](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=41) (Bilaga M1, avsnitt 5.17, s. 40–41), kolumn 4 aktbilaga 320. Tabellen säger inget om vem som har rätt i sak.
 
-**Tabell 9. Femton frågor genom samråd, yttrande och bemötande**
+**Tabell 10. Femton frågor genom samråd, yttrande och bemötande**
 
 | Fråga | S / Y | Samrådsredogörelsen (2025) | Bemötandet (2026) |
 |---|---|---|---|
@@ -94,7 +94,7 @@ Tabell 9 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samr
 
 ## Så kunde föreningen ha gått tillväga
 
-**Tabell 10. Åtgärder i varje steg, och vad handlingarna visar**
+**Tabell 11. Åtgärder i varje steg, och vad handlingarna visar**
 
 | När | Åtgärd | Varför | Belägg |
 |---|---|---|---|
@@ -122,7 +122,7 @@ Svarstabellen med VA SYD:s numrering och status för varje punkt i yttrandet fin
 
 Yttrandet och samrådsbrevet säger att Källbyalternativet är upp till eller minst 2 miljarder kronor billigare än Sjölundaalternativet (S18, Y26). Underlagen i projektets mapp Källor visar hur den siffran kan uppstå, och varför den ändå är omstridd. Beloppen nedan är miljoner kronor (mkr) och avser Lunds kostnad i 2020 års prisnivå, om inget annat anges. VA SYD anger att kalkylerna är osäkra, från 15 procent lägre till 30 procent högre (VA SYD, 2021, s. 33).
 
-**Tabell 11. Investeringskostnader för Lund i olika underlag (mkr)**
+**Tabell 12. Investeringskostnader för Lund i olika underlag (mkr)**
 
 | Underlag | Alternativ | Investering för Lund |
 |---|---|---|
@@ -180,13 +180,15 @@ VA SYD (2025b) *Bilaga M1.21 Samrådsmöte Naturskyddsföreningen Lund*, protoko
 
 VA SYD (2025c) *Bilaga M1.4 Yttranden från organisationer och företag, maskad rev. 2*. Tillgänglig på: [https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1.4%20Yttranden%20fr%C3%A5n%20organisationer%20och%20f%C3%B6retag%20maskad%20rev2.pdf](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1.4%20Yttranden%20fr%C3%A5n%20organisationer%20och%20f%C3%B6retag%20maskad%20rev2.pdf) (Hämtad: 13 oktober 2026). *(Samlingen av samrådsbreven, där föreningens brev ligger på PDF-sida 42–49.)*
 
-VA SYD (2026) *Bemötande av inkomna synpunkter*, mål M 3289-25, aktbilaga 320, 30 september. Ingen webbadress. *(Svaren i Tabell 9 och Tabell 6.)*
+VA SYD (2026) *Yttrande i mål nr M 3289-25* (sökandens bemötande av inkomna yttranden), aktbilaga 320, ingivet genom ombudet Advokatfirman Delphi i Malmö AB 2026-09-30. Tillgänglig på: [https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333_7%20%282%29.pdf](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333_7%20%282%29.pdf) (PDF-sida 3–132) (Hämtad: 14 oktober 2026). *(Svaren i Tabell 10 och Tabell 6.)*
 
 VA SYD (u.å.a) *Tillstånd*. Tillgänglig på: [https://maxima.vasyd.se/tillstand](https://maxima.vasyd.se/tillstand) (Hämtad: 13 oktober 2026). *(Förteckning över ansökans bilagor, inklusive samrådsbilagorna.)*
 
 VA SYD (u.å.b) *Vägen fram till genomförandebeslut*. Tillgänglig på: [https://maxima.vasyd.se/beslut](https://maxima.vasyd.se/beslut) (Hämtad: 13 oktober 2026). *(Beslutshistoriken för MAXIMA, bland annat Lunds kommunfullmäktiges beslut 2016–2024.)*
 
-WSP (2020) *Lunds framtida avloppsreningsverk: jämförelse av kostnadskalkyler*, 2020-12-07, på uppdrag av VA SYD. Tillgänglig på: [http://maxima.vasyd.se/sites/default/files/media/document/2023-10/WSP%202020b%20j%C3%A4mf%C3%B6relse%20kostnadskalkyler.pdf](http://maxima.vasyd.se/sites/default/files/media/document/2023-10/WSP%202020b%20j%C3%A4mf%C3%B6relse%20kostnadskalkyler.pdf) (Hämtad: 13 oktober 2026). *(Förklarar skillnaden mellan 400 och 1 750 mkr, s. 5.)*
+Växjö tingsrätt, mark- och miljödomstolen (2026a) *Justerad preliminär tidsplan i mål M 3289-25*, aktbilaga 310, 2026-07-02. Tillgänglig på: [https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333_7%20%282%29.pdf](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333_7%20%282%29.pdf) (PDF-sida 2) (Hämtad: 14 oktober 2026). *(Datum för kungörelse, svarstid och frist.)*
 
-Växjö tingsrätt, mark- och miljödomstolen (2026) *Justerad preliminär tidsplan i mål M 3289-25*, aktbilaga 310, inkom 2 juli, och *Underrättelse*, aktbilaga 333, 8 oktober. Ingen webbadress. *(Datum för kungörelse, svarstid och frist.)*
+Växjö tingsrätt, mark- och miljödomstolen (2026b) *Underrättelse i mål M 3289-25*, aktbilaga 333, 2026-10-08, Dok.Id 864236. Tillgänglig på: [https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333_7%20%282%29.pdf](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333_7%20%282%29.pdf) (PDF-sida 1 av 288, resten av filen är de bifogade handlingarna) (Hämtad: 14 oktober 2026). *(Domstolens underrättelse, som ger föreningen tillfälle att yttra sig över bemötandet. Fristen är 2026-11-06 och anstånd kan inte påräknas.)*
+
+WSP (2020) *Lunds framtida avloppsreningsverk: jämförelse av kostnadskalkyler*, 2020-12-07, på uppdrag av VA SYD. Tillgänglig på: [http://maxima.vasyd.se/sites/default/files/media/document/2023-10/WSP%202020b%20j%C3%A4mf%C3%B6relse%20kostnadskalkyler.pdf](http://maxima.vasyd.se/sites/default/files/media/document/2023-10/WSP%202020b%20j%C3%A4mf%C3%B6relse%20kostnadskalkyler.pdf) (Hämtad: 13 oktober 2026). *(Förklarar skillnaden mellan 400 och 1 750 mkr, s. 5.)*
 
