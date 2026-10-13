@@ -1,6 +1,6 @@
 # PRD — Samrådsguiden, tillägg: strukturlärdomar från en stor tillståndsprocess (MAXIMA)
 
-**Status:** UTKAST v0.1, för Kent att reagera på. Inget är byggt.
+**Status:** v0.2. Byggt i version 1.18 (13 oktober 2026): `maxima.html`, fördjupning i `fordjupning.html`, tidslinje i `paverka.html`, kort i `index.html`, nytt skede i verktyget och nya regler i skillen. De öppna frågorna 1–4 i avsnitt 8 löstes enligt förslagen i texten.
 **Skapad:** 2026-10-13
 **Hör till:** [`PRD_samradsguiden.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/PRD_samradsguiden.md), [`PRD_samradsguiden_fordjupning.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/PRD_samradsguiden_fordjupning.md) och [`SPEC_samradsguiden.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/SPEC_samradsguiden.md). Detta ersätter dem inte. Det planerar ett innehållstillägg, **version 1.18**.
 

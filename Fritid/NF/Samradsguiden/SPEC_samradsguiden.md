@@ -425,3 +425,13 @@ function exporteraSomFil(text, filnamn) {
 - [ ] Nedladdad fil öppnas korrekt och innehåller rätt filnamn för samtliga sex skeden.
 - [ ] Sammanställningsvyn visar inte HTML/JS från användarens fritext som kod (testa genom att skriva `<script>alert(1)</script>` i ett fält).
 - [ ] Alla tre HTML-sidor länkar korrekt till varandra och till `../NCC_stenbryttning/struktur.html`.
+
+---
+
+## Tillägg v1.18: skedet "Yttrande över motpartens bemötande"
+
+- **Data:** ett nytt skede i `DISPOSITIONER.mb`, nyckel `yttrandeOverBemotande` (id `mb-yttrande-over-bemotande`, `status: "ejSamrad"`, förslag på mottagare `markOchMiljodomstolen`).
+- **Ny egenskap:** `delar.synpunkter.forifyll` är en textmall som `genereraMall()` i `verktyg.js` lägger i del 4 när egenskapen finns. Övriga skeden saknar egenskapen och påverkas inte.
+- **Mall:** två punktblock (Punkt 1, Punkt 2) med fälten motpartens nummer, påstående, hänvisning, prövningsfråga, ställdes i samrådet punkt nr, motpartens svar och begäran. Platshållarna är enkla ord inom klamrar (`{pastaende}`) så att den befintliga platshållarvarningen fångar dem.
+- **Verifiering:** skedet visas bara för MB. Mallen kan kopieras och laddas ner som övriga. Platshållarvarningen visas tills klamrarna är ersatta.
+

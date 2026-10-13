@@ -196,6 +196,50 @@ const DISPOSITIONER = {
         vadSomBegars: { hjalptext: DELBASHJALP.vadSomBegars + " Första skedet där ett tydligt tillstyrkande eller avstyrkande är juridiskt meningsfullt att uttala." },
         kallforteckning: { hjalptext: DELBASHJALP.kallforteckning }
       }
+    },
+
+    // Version 1.18: skedet efter sökandens bemötande. Se maxima.html och PRD_samradsguiden_maxima.md.
+    yttrandeOverBemotande: {
+      id: "mb-yttrande-over-bemotande",
+      label: "MB — Yttrande över motpartens bemötande (i ett pågående mål)",
+      lagrum: "MB",
+      status: "ejSamrad",
+      mottagareForslag: "markOchMiljodomstolen",
+      lagrumshanvisning: "Sökanden har svarat på de inkomna yttrandena, och de som har yttrat sig får yttra sig över svaret. Kontrollera fristen i domstolens underrättelse och ange målnumret.",
+      delar: {
+        arendetsRam: { hjalptext: DELBASHJALP.arendetsRam + " Ange målnummer och vilka aktbilagor (domstolens numrerade handlingar) du yttrar dig över." },
+        sammanfattning: { hjalptext: DELBASHJALP.sammanfattning + " Här kan en kort översikt över vad som besvarats och inte besvarats ingå." },
+        referat: { hjalptext: DELBASHJALP.referat, valfri: true },
+        synpunkter: {
+          hjalptext: "En numrerad punkt per påstående: platt numrering, motpartens nummer, exakt hänvisning, prövningsfråga, om frågan ställdes i samrådet, motpartens svar och din begäran. Skriv i inledningen att numreringen är din.",
+          rubrikKalla: "Dina egna numrerade punkter, med motpartens nummer angivet.",
+          forifyll: [
+            "Numreringen i det här yttrandet är vår egen. Vi ber motparten och domstolen använda den. Motpartens nummer anges för varje punkt.",
+            "",
+            "Punkt 1",
+            "Motpartens nummer: {motpartensNummer}",
+            "Påstående: {pastaende}",
+            "Hänvisning (bilaga, avsnitt, sida): {hanvisning}",
+            "Prövningsfråga (innehåll i MKB:n, tillåtlighet, villkor eller process): {provningsfraga}",
+            "Ställdes i samrådet, punkt nr: {tidigareSamrad}",
+            "Motpartens svar (besvarat, delvis, hänvisning eller obesvarat): {motpartensSvar}",
+            "Begäran (vem ska göra vad): {begaran}",
+            "",
+            "Punkt 2",
+            "Motpartens nummer: {motpartensNummer}",
+            "Påstående: {pastaende}",
+            "Hänvisning (bilaga, avsnitt, sida): {hanvisning}",
+            "Prövningsfråga (innehåll i MKB:n, tillåtlighet, villkor eller process): {provningsfraga}",
+            "Ställdes i samrådet, punkt nr: {tidigareSamrad}",
+            "Motpartens svar (besvarat, delvis, hänvisning eller obesvarat): {motpartensSvar}",
+            "Begäran (vem ska göra vad): {begaran}",
+            "",
+            "Kopiera blocket för fler punkter. Ta bort den här raden när texten är klar."
+          ].join("\n")
+        },
+        vadSomBegars: { hjalptext: DELBASHJALP.vadSomBegars + " Samla punkternas begäranden här, och ange om du reserverar dig för att få yttra dig när motparten återkommer." },
+        kallforteckning: { hjalptext: DELBASHJALP.kallforteckning + " Domstolens aktbilagor saknar webbadress. Ange målnummer, aktbilagenummer och datum." }
+      }
     }
   }
 };

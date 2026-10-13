@@ -43,6 +43,17 @@ Den här skillen är den gemensamma, uppdaterade efterföljaren till den tidigar
    - Undvik initialförkortningar som inte förklaras, och skriv ut nyckeltal så att de inte kan missförstås.
    - Om en publik webbsida behövs, gör den neutral, saklig och kort. Länka till det fullständiga samrådsunderlaget.
 
+6. Gör varje punkt spårbar (tillägg 2026-10-13, från exemplet MAXIMA, se `maxima.html` och `PRD_samradsguiden_maxima.md`)
+   - Numrera punkterna platt och i en nivå (1, 2, 3, med 3a, 3b för delpunkter) och skriv i inledningen att numreringen är avsändarens egen. Motparten numrerar annars om rubrikerna i följd, och då stämmer inte numren.
+   - Ett påstående per punkt. Låt allt som kräver svar stå i ett numrerat avsnitt, inte i inledning eller bakgrund.
+   - Avsluta varje punkt med en begäran som går att bifalla eller avslå (vem ska göra vad).
+   - Hänvisa exakt till motpartens underlag: bilaga, avsnitt, sida.
+   - Ange vilken prövningsfråga punkten gäller (innehållet i MKB:n, tillåtlighet, villkor eller process), med lagrum bara när sambandet är kontrollerat.
+   - Möt avgränsningar som motparten redan har meddelat ("ingår inte i prövningen") direkt, i stället för att upprepa synpunkten.
+   - Numrera synpunkterna i ett samrådsbrev så att de går att åberopa i det senare yttrandet, och läs samrådsredogörelsen (MKB:n ska enligt MB 6 kap. 35 § innehålla en redogörelse för de samråd som har skett).
+   - Efter motpartens bemötande: kopiera motpartens numrering in i texten, gör en tabell över besvarat och obesvarat, och reservera dig för att få yttra dig när motparten återkommer.
+   - Alternativa begäranden (till exempel villkor eller utredning vid sidan av ett yrkande om avslag) är en processfråga som kräver juridiskt stöd i det enskilda målet. Ge inte råd om det.
+
 ## Gemensam disposition, olika lagrum — grundprincipen
 
 Statsrådsberedningens generella anvisning för remissvar gäller myndighetsövergripande, och Boverket — en renodlad PBL-myndighet — tillämpar uttryckligen samma ordning som miljöbalksexempel (Boverket, 2026). Sexdelsmodellen nedan är alltså **inte lagrumsspecifik**. Det som skiljer PBL och MB åt är i stället: vilket underlag del 4 hämtar rubriker från, vad "vad som begärs" kan innehålla, mottagare, och skedesindelning — se tabellen och Samrådsstegen nedan.
@@ -64,7 +75,7 @@ Varje steg har sitt eget syfte och sin egen juridiska tyngd; tonen och kravnivå
 
 **PBL — översiktsplan** (hela kommunen, vägledande, inte bindande): (1) samråd (PBL 3 kap. 8 §, länsstyrelsen bevakar statens intressen enligt 3 kap. 10 §; vid betydande miljöpåverkan tillkommer ett avgränsningssamråd enligt MB 6 kap. 9–10 §§), (2) granskning/utställning (PBL 3 kap. 12 §, minst två månader).
 
-**MB** — bara **ett** alltid lagstadgat, ordinarie samråd: avgränsningssamrådet (MB 6 kap. 29–32 §§). De andra två är villkorade: undersökningssamråd (6 kap. 23–26 §§, bara om det är oklart om betydande miljöpåverkan föreligger) före, och kompletterande/utökat samråd (inget eget lagrum) efter, om förutsättningarna ändras väsentligt. Yttrande vid kungörelse av ansökan hos mark- och miljödomstolen är formellt inte ett samråd, men den slutliga möjligheten att uttala sig innan tillståndsfrågan avgörs.
+**MB** — bara **ett** alltid lagstadgat, ordinarie samråd: avgränsningssamrådet (MB 6 kap. 29–32 §§). De andra två är villkorade: undersökningssamråd (6 kap. 23–26 §§, bara om det är oklart om betydande miljöpåverkan föreligger) före, och kompletterande/utökat samråd (inget eget lagrum) efter, om förutsättningarna ändras väsentligt. Yttrande vid kungörelse av ansökan hos mark- och miljödomstolen är formellt inte ett samråd, men den slutliga möjligheten att uttala sig innan tillståndsfrågan avgörs. I ett pågående mål följer därefter sökandens bemötande, ett yttrande över bemötandet, sökandens uppdaterade sammanställning och huvudförhandling (ordningen enligt domstolens tidsplan i MAXIMA-målet, den kan skilja mellan mål).
 
 **Använd aldrig ordet "yrkanden" om texten avser ett samråd.** I ett samråd finns formellt inga yrkanden — samrådet är ett kunskapsutbyte inför en ansökan/plan, och det som lämnas är synpunkter och önskemål. Yrkanden hör hemma i den senare prövningen. Formulera ändå punkterna lika precist som yrkanden, eftersom samma frågor ofta återkommer i den formen senare.
 

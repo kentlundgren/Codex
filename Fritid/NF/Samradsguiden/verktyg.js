@@ -288,6 +288,11 @@ function genereraMall() {
   const falt = roll.arendetsRamFalt.map((f) => `${f}: `).join("\n");
   state.text.arendetsRam = `Mottagare: ${mottagareLabel}\n${falt}`;
 
+  // Del 4: förifyll med en punktmall om skedet har en sådan (version 1.18).
+  if (disposition.delar.synpunkter && disposition.delar.synpunkter.forifyll) {
+    state.text.synpunkter = disposition.delar.synpunkter.forifyll;
+  }
+
   // Del 5: förifyll med kompensationsmall om kompensation önskas.
   if (state.kompensation.onskas === true && state.kompensation.sparValt) {
     const spar = KOMPENSATION[state.kompensation.sparValt];

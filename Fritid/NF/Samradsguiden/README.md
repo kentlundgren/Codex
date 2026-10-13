@@ -12,6 +12,7 @@ Ett verktyg för hur privatpersoner och miljöorganisationer kan disponera och l
 - Lagtexterna: [lagtexter.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html)
 - Bygg ditt yttrande (interaktiv guide): [verktyg.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/verktyg.html)
 - NCC:s samråd i Lund, två yttranden att lära av (Lunds kommun och Lunds Naturskyddsförening): [lund-ncc.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lund-ncc.html) (fristående sida, inte i toppmenyn)
+- Struktur i en stor tillståndsprocess, lärdomar från MAXIMA: [maxima.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html) (fristående sida, inte i toppmenyn)
 
 ## Lokal sökväg
 
@@ -23,7 +24,7 @@ PRD, SPEC och samtliga sju sidor är byggda och testade lokalt (formulärflöde,
 
 Ankar-retrofit av `index.html` och `fordjupning.html` är gjord (varje H2 och `.subhead`-H3 har ett stabilt `#`-ankare). `verktyg.html` är en JS-guide där stegen har egna div-id:n och behöver inga rubrikankare.
 
-Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.17**, senast ändrad 30 september 2026.
+Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.18**, senast ändrad 13 oktober 2026.
 
 - **v1.0** — första publicerade versionen: grunddispositionen, kompensationsmodulens tre spår, det interaktiva verktyget.
 - **v1.1** — jämförelsen av de tre sätten att disponera ett yttrande; de fyra kommunexemplen.
@@ -44,6 +45,8 @@ Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en.
 - **v1.16** — ny sida *Granska planen* (`checklista.html`): sakfrågor från kapitel 9 i Naturskyddsföreningens preliminära vägledning för hållbar stadsutveckling, som kryssbar arbetschecklista. Originalet ligger kvar i `Plangruppen/Vagledning/`; en avskrift av just kapitel 9 finns i `Underlag/Vagledning_kap9_260830.md`.
 - **v1.17** — ny exempelsida *NCC:s samråd i Lund: två yttranden att lära av* (`lund-ncc.html`): en genomgång av hur Lunds kommunkontor (tjänsteskrivelse KS 2026/0700) och Lunds Naturskyddsförening (avsända samrådssynpunkter 2026-09-04) har byggt upp sina yttranden, jämförda med sexdelsmodellen och med varandra, med fyra saker att låna och en diskussion om vad en förening kan hämta från en kommun. Sidan är ett utkast till fortsatt diskussion, kommunens del bygger bara på tjänsteskrivelsen (bilagan "Förslag till yttrande" är inte granskad) och sidan ligger medvetet inte i toppmenyn. Nås via ett nytt kort i `fordjupning.html` (Så ser det ut i praktiken) och via direktlänk. Versionsnumret höjt på alla sidor.
 
+- **v1.18** — ny exempelsida *Struktur i en stor tillståndsprocess: lärdomar från MAXIMA* (`maxima.html`): VA SYDs ansökan om MAXIMA som exempel på hur synpunkter och yttranden bör struktureras för att vara lätta att följa genom en lång process. Förloppet, en förklaring av aktbilaga, hur motparten sorterade synpunkterna, en fråga följd genom fyra skeden och elva lärdomar om numrering, begäran och spårbarhet. Ny fördjupning *Så bemöter motparten: numrering och spårbarhet* i `fordjupning.html`, utökad miljöbalkstidslinje i `paverka.html` (samrådsredogörelse, sökandens bemötande, yttrande över bemötandet), nytt skede *Yttrande över motpartens bemötande* i verktyget (`data.js`, `verktyg.js`) och nya regler i skillen. Ankarlänkarna är synliga hela tiden på den nya sidan. Planen finns i `PRD_samradsguiden_maxima.md`.
+
 Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
 
 ## Innehåll
@@ -56,6 +59,8 @@ Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkt
 - `paverka.html` — strategilagret: vilken lag som styr när kommunen antar en plan respektive när ett bolag söker tillstånd, tre vertikala tidslinjer över när synpunkter kan lämnas, klagorättsregeln, miljöorganisationers talerätt, en ruta om hur Lunds kommun beskriver processen, och ett exempel på proaktivt påverkansarbete (LNF:s begäran om balanseringsprincip).
 - `checklista.html` — arbetschecklista vid granskning av planer och byggprojekt, hämtad ur kapitel 9 i Naturskyddsföreningens preliminära vägledning. Kryss sparas i webbläsaren.
 - `lund-ncc.html` — exempelsida: Lunds kommunkontors tjänsteskrivelse och Lunds Naturskyddsförenings yttrande över NCC:s samråd, analyserade mot sexdelsmodellen och mot varandra. Första sidan i en tänkt serie av exempel.
+- `maxima.html` — exempelsida: ett stort miljöbalksmål (MAXIMA) som underlag för lärdomar om numrering, begäran och spårbarhet, med en förklaring av aktbilaga och en tabell som följer fem frågor genom fyra skeden. Ligger utanför toppmenyn.
+- `PRD_samradsguiden_maxima.md` — planeringsdokument för tillägget i v1.18.
 - `fordjupning.html` — fullständigt sakinnehåll: alla dispositionsmallar, modulen om betydande miljöpåverkan, hela kompensationsmodulen, de två konkreta exemplen, källförteckning.
 - `lagtexter.html` — de tio viktigaste lagtexterna ordagrant, med källa och datum, en förklaring i klartext bakom ett klick per post, en ordlista och en bakgrundsruta om Århuskonventionen.
 - `verktyg.html` — den interaktiva guiden: fem steg som genererar en ifyllningsbar mall med sex delar, sammanställningsvy, kopiera- och nedladdningsfunktion.

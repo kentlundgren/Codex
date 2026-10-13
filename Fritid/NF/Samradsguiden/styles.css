@@ -182,3 +182,8 @@ textarea { width:100%; min-height:130px; padding:12px 14px; border:1px solid var
 .check-item span { flex:1; }
 
 @media (max-width:700px) { body { font-size:17px; } .hero__content { min-height:340px; padding:55px 0; } .cards,.definitions { grid-template-columns:1fr; } .section { padding:44px 0; } }
+
+/* Version 1.18: synliga ankarlänkar och tabellrubriker på sidor som bär body.visible-anchors */
+.visible-anchors .anchor { opacity:.75; }
+.visible-anchors .anchor:hover, .visible-anchors .anchor:focus { opacity:1; }
+caption { padding:0 0 8px; text-align:left; font:700 .95rem/1.4 Arial,sans-serif; caption-side:top; }
