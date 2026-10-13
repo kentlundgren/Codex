@@ -8,6 +8,8 @@ Så här skulle texten kunna se ut om den följt [sexdelsmodellen](https://kentl
 
 ## Del 1. Ärendets ram
 
+**Tabell 3. Ärendets ram**
+
 | | |
 |---|---|
 | **Titel** | Yttrande gällande VA SYD:s ansökan om miljötillstånd för MAXIMA, mål M 3289-25 |
@@ -358,6 +360,8 @@ Synpunkterna är ordnade som ståndpunkter (sätt 3 i sexdelsmodellen), med fort
 ## Del 5. Vad som begärs
 
 Yttrandet har tre yrkanden. De står i originalet först, här sist.
+
+**Tabell 4. Yrkandena i yttrandet**
 
 | Nr | Yrkande | Skäl |
 |---|---|---|

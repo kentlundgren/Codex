@@ -10,6 +10,8 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 
 ## Samrådsbrevet (originalet, 8 sidor) och steg 1
 
+**Tabell 10. Samrådsbrevets delar och var de hamnat i steg 1**
+
 | Originalets del | I steg 1 |
 |---|---|
 | Adressblock, datum, avsändarens postadress och e-post | Del 1. Postadress och e-post är utelämnade |
@@ -24,6 +26,8 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 | Undertecknande | Del 1 (roll i stället för namn) |
 
 ## Yttrandet (originalet, 7 sidor) och steg 2
+
+**Tabell 11. Yttrandets delar och var de hamnat i steg 2**
 
 | Originalets del | I steg 2 |
 |---|---|
@@ -47,6 +51,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 - En sammanfattning (Del 2) i båda, skriven av originalets egna uppgifter.
 - Samrådsunderlagets avsnitt som rubriker i steg 1. Kopplingen mellan punkt och avsnitt är min sortering.
 - I steg 2: samrådspunkten (S-nummer) och VA SYD:s nummer och svar, hämtade ur aktbilaga 320, samt de hänvisningar till ansökan som VA SYD själva anger i sitt svar.
+- Meningar som delats i ståndpunkt och skäl (till exempel Y27) eller förts samman från två ställen (Y26: bakgrunden och 4.7). Små förtydliganden i parentes i S15 och S23.
 - Begäran härledd av en fråga: bara S1 (”Att frågan besvaras i samrådsredogörelsen och i MKB:n”). S21, S25 och S35 har bara **Fråga**. I S26 är begäran hämtad ur originalets inledning.
 
 ## Det som har utelämnats
@@ -66,6 +71,6 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 2. **Begäran per punkt i yttrandet.** Bara Y19 har en uttrycklig begäran. Resten stödjer yrkande 1 och 2. En egen begäran per punkt (lärdom 4 i [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4)) bör formuleras av föreningen.
 3. **Prövningsfråga per punkt.** Jag har bara angett den rättsliga anknytning som originalet själv anger. Att koppla varje punkt till MKB:n, tillåtligheten eller villkoren (lärdom 6) kräver föreningens bedömning.
 4. **De fyra texttyperna** (verifierat, fråga, bedömning, förslag) i sexdelsmodellen har inte tillämpats. Det kan göras som nästa steg.
-5. **Punkter som inte fördes vidare** från samrådet till yttrandet (se Tabell 2 i [spårbarhetsdokumentet](03_Sparbarhet_samrad_till_yttrande.md)).
+5. **Punkter som inte fördes vidare** från samrådet till yttrandet (se Tabell 6 i [spårbarhetsdokumentet](03_Sparbarhet_samrad_till_yttrande.md)).
 6. **Aktbilaga 257.** Underlaget för steg 2 är VA SYD:s markerade kopia. Den fil som föreningen lämnade in bör användas för en slutlig jämförelse.
 

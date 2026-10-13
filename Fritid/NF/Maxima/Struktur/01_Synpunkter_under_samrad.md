@@ -8,11 +8,13 @@ Så här skulle texten kunna se ut om den följt [sexdelsmodellen](https://kentl
 
 ## Del 1. Ärendets ram
 
+**Tabell 1. Ärendets ram**
+
 | | |
 |---|---|
 | **Vad texten avser** | Synpunkter under samrådet om MAXIMA, VA SYD:s planerade tillståndsansökan enligt 9 och 11 kap. miljöbalken (avgränsningssamråd) |
 | **Underlaget som synpunkterna avser** | [Samrådsunderlag MAXIMA, utgåva 3.0, 2024-10-01 (Bilaga M1.2)](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1.2%20Samr%C3%A5dsunderlag.pdf) |
-| **Mottagare** | VA SYD (sökanden). Synpunkter kunde lämnas bland annat med e-post till samrad@vasyd.se ([samrådsredogörelsen](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=8), s. 7) |
+| **Mottagare** | VA SYD (sökanden). Synpunkter kunde lämnas bland annat med e-post till VA SYD:s samrådsadress ([samrådsredogörelsen](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=8), s. 7) |
 | **Sista dag** | Samrådsperioden gick ut 2025-02-28 (samrådsredogörelsen, s. 7) |
 | **Datum** | Originalet är daterat 2025-02-27 |
 | **Avsändare och mandat** | Lunds Naturskyddsförening. Originalet är undertecknat av föreningens ordförande |
@@ -253,6 +255,8 @@ Synpunkterna är ordnade efter samrådsunderlagets egna avsnitt (sätt 2 i sexde
 ## Del 5. Vad som begärs
 
 Ett samråd har formellt inga yrkanden. Begäranden nedan är därför graderade som begäran om utredning, redovisning och besked. Föreningen tar inte ställning till ansökan, som ännu inte hade lämnats in.
+
+**Tabell 2. Vad som begärs, graderat**
 
 | Nivå | Vad som begärs | Punkter |
 |---|---|---|

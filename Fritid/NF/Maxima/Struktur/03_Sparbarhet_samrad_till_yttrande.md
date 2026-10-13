@@ -10,7 +10,7 @@ Det här dokumentet visar hur samma fråga kan följas från samrådsbrevet, via
 
 Samråd, yttrande efter kungörelse och yttrande över bemötandet är tre olika steg med olika mottagare och olika slags text. Det hjälper om de heter olika.
 
-**Tabell 1. De tre stegen i MAXIMA och vad texterna kan kallas**
+**Tabell 5. De tre stegen i MAXIMA och vad texterna kan kallas**
 
 | Steg | Namn på texten | Mottagare | Tid i MAXIMA | Lagrum |
 |---|---|---|---|---|
@@ -26,7 +26,7 @@ Skälen till namnen:
 
 ## Hur varje samrådspunkt följdes upp i yttrandet
 
-**Tabell 2. Samrådets punkter (S) och var de återfinns i yttrandet (Y)**
+**Tabell 6. Samrådets punkter (S) och var de återfinns i yttrandet (Y)**
 
 | S | Rubrik i steg 1 | Samrådsunderlagets avsnitt | I yttrandet |
 |---|---|---|---|
@@ -70,9 +70,9 @@ Av 35 samrådspunkter har 25 en motsvarighet i yttrandet. 10 fördes inte vidare
 
 ## Vad VA SYD svarade, steg för steg
 
-Tabell 3 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samrådsredogörelsen](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=41) (Bilaga M1, avsnitt 5.17, s. 40–41), kolumn 4 aktbilaga 320. Tabellen säger inget om vem som har rätt i sak.
+Tabell 7 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samrådsredogörelsen](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=41) (Bilaga M1, avsnitt 5.17, s. 40–41), kolumn 4 aktbilaga 320. Tabellen säger inget om vem som har rätt i sak.
 
-**Tabell 3. Femton frågor genom samråd, yttrande och bemötande**
+**Tabell 7. Femton frågor genom samråd, yttrande och bemötande**
 
 | Fråga | S / Y | Samrådsredogörelsen (2025) | Bemötandet (2026) |
 |---|---|---|---|
@@ -94,7 +94,7 @@ Tabell 3 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samr
 
 ## Så kunde föreningen ha gått tillväga
 
-**Tabell 4. Åtgärder i varje steg, och vad handlingarna visar**
+**Tabell 8. Åtgärder i varje steg, och vad handlingarna visar**
 
 | När | Åtgärd | Varför | Belägg |
 |---|---|---|---|
@@ -103,7 +103,7 @@ Tabell 3 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samr
 | När samrådsredogörelsen publiceras | Jämför redogörelsen med de numrerade punkterna, en för en, och gör en svarstabell (S mot VA SYD:s svar). | MKB:n ska redovisa samråden och vad som kommit fram. En punkt som saknas i redogörelsen syns då direkt. | [Bilaga M1](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=41), s. 40–41 |
 | När kungörelsen kommer (2026-04-14) | Lägg svarstiden (till 2026-06-18) i kalendern och räkna tillbaka. | Domstolen anger en sista dag. | Aktbilaga 310 |
 | I yttrandet (inkom 2026-06-09) | Numrera Y1, Y2 och så vidare, ett påstående per punkt. Ange för varje punkt vilken samrådspunkt (S) den gäller och vad VA SYD svarade i samrådsredogörelsen. Avsluta med en begäran. | Så ser domstolen att en fråga ställts tidigare, och vad som hänt med den. | Steg 2 |
-| När bemötandet kommer (2026-09-30) | Kopiera VA SYD:s numrering in i en svarstabell och markera besvarat, delvis, hänvisning eller obesvarat. | Det visar vad som ska tas upp igen. | Tabell 5 |
+| När bemötandet kommer (2026-09-30) | Kopiera VA SYD:s numrering in i en svarstabell och markera besvarat, delvis, hänvisning eller obesvarat. | Det visar vad som ska tas upp igen. | Tabell 9 |
 | Före fristen (2026-11-06) | Skriv yttrande över bemötandet med samma Y-nummer, och reservera dig för att få yttra dig när VA SYD återkommer. | VA SYD återkommer vecka 50 2026 med sin inställning till kvartär rening. | Aktbilaga 320, s. 13, 47–48 |
 
 ### Så kan en punkt i yttrandet åberopa samrådet
@@ -118,7 +118,7 @@ Begäran i exemplet är formulerad av frågan i originalet och är ett förslag,
 
 Tabellen är förifylld utifrån aktbilaga 320 och ska fyllas på av föreningen. ”Obesvarad i sak” betyder att VA SYD inte tar upp punktens innehåll, bara hänvisar eller svarar samlat.
 
-**Tabell 5. Svarstabell: yttrandets punkter (Y) mot VA SYD:s bemötande**
+**Tabell 9. Svarstabell: yttrandets punkter (Y) mot VA SYD:s bemötande**
 
 | Y | Ämne | VA SYD:s nr | Status |
 |---|---|---|---|
@@ -162,7 +162,7 @@ VA SYD (u.å.) *Tillstånd*. Tillgänglig på: [https://maxima.vasyd.se/tillstan
 
 Sveriges riksdag (1998) *Miljöbalk (1998:808)*, 6 kap. 29–32 §§ och 22 kap. 3 och 10 §§. Tillgänglig på: [https://lagen.nu/1998:808#K22](https://lagen.nu/1998:808#K22) (Hämtad: 13 oktober 2026). *(Lagrummen för samrådet och för synpunkter efter kungörelsen.)*
 
-VA SYD (2026) *Bemötande av inkomna synpunkter*, mål M 3289-25, aktbilaga 320, 30 september. Ingen webbadress. *(Svaren i Tabell 3 och Tabell 5.)*
+VA SYD (2026) *Bemötande av inkomna synpunkter*, mål M 3289-25, aktbilaga 320, 30 september. Ingen webbadress. *(Svaren i Tabell 7 och Tabell 9.)*
 
 Växjö tingsrätt, mark- och miljödomstolen (2026) *Justerad preliminär tidsplan i mål M 3289-25*, aktbilaga 310, inkom 2 juli, och *Underrättelse*, aktbilaga 333, 8 oktober. Ingen webbadress. *(Datum för kungörelse, svarstid och frist.)*
 
