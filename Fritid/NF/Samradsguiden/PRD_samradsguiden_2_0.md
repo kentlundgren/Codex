@@ -1,6 +1,6 @@
 # PRD — Samrådsguiden 2.0: från samråd till slutlig dom (och vidare)
 
-**Status:** v0.1, utkast till diskussion. Ingenting är byggt. Inte genomgånget med fräscha ögon (se avsnitt 12). Juridiska uppgifter i det här dokumentet är markerade **[verifiera]** när de inte är lästa i lagtext eller avgörande.
+**Status:** v0.1, utkast till diskussion. B1–B3 beslutade 2026-10-19 (se Tabell 2), B4–B9 öppna. Ordningen i B1 är 1.19 skedeskartan, 1.20 MÖD, 1.21 efter laga kraft, 1.22 gruppmodulen (då ändras ingressen och versionen blir 2.0). Skeden som saknar fördjupning markeras "Under uppbyggnad". Ingenting är byggt. Inte genomgånget med fräscha ögon (se avsnitt 12). Juridiska uppgifter i det här dokumentet är markerade **[verifiera]** när de inte är lästa i lagtext eller avgörande.
 **Skapad:** 2026-10-19
 **Hör till:** [`PRD_samradsguiden.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/PRD_samradsguiden.md), [`PRD_samradsguiden_fordjupning.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/PRD_samradsguiden_fordjupning.md), [`PRD_samradsguiden_maxima.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/PRD_samradsguiden_maxima.md) och [`SPEC_samradsguiden.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/SPEC_samradsguiden.md). Detta ersätter dem inte.
 **Versionsnivå:** Enligt README:ns tumregel är en grundläggande omstrukturering **2.0**, ett innehållstillägg 1.x. Det här förslaget är en omstrukturering av guidens *omfång* (från samrådsskedet till hela vägen), men kan byggas i steg som var och en är 1.x. Se öppet beslut B1.
@@ -144,9 +144,9 @@ Statisk HTML, delad `styles.css`, `script.js` och `data.js`. Skedeskartans inneh
 
 | # | Beslut | Förslag |
 |---|---|---|
-| B1 | Versionsnivå: en stor 2.0-release eller fyra steg 1.19–1.22? | Steg. Skedeskartan först (1.19), sedan MÖD (1.20), efter laga kraft (1.21), gruppmodul (1.22). Kalla det 2.0 när hela vägen är ihopkopplad och ingressen ändrad. |
-| B2 | Ska guiden även riktas till sökande och kommuner? | Nej som egen sida. Ja som en återkommande ruta "Vad ni kan be sökanden göra". |
-| B3 | Heter guiden fortfarande *Samrådsguiden*? Namnet täcker inte längre allt. | Behåll namnet men ändra underrubriken (t.ex. "Från samråd till dom och uppföljning"), eftersom adresser och länkar redan finns. |
+| B1 | Versionsnivå: en stor 2.0-release eller fyra steg 1.19–1.22? | **BESLUTAT 2026-10-19: steg.** Skedeskartan först (1.19), sedan MÖD (1.20), efter laga kraft (1.21), gruppmodul (1.22). Kalla det 2.0 när hela vägen är ihopkopplad och ingressen ändrad. |
+| B2 | Ska guiden även riktas till sökande och kommuner? | **BESLUTAT 2026-10-19:** Nej som egen sida. Ja som en återkommande ruta "Vad ni kan be sökanden göra". |
+| B3 | Heter guiden fortfarande *Samrådsguiden*? Namnet täcker inte längre allt. | **BESLUTAT 2026-10-19:** Behåll namnet men ändra underrubriken (t.ex. "Från samråd till dom och uppföljning"), eftersom adresser och länkar redan finns. |
 | B4 | Hur hanteras rättsfrågor där Plangruppen inte är överens (hänsynsreglernas status, alternativa yrkanden)? | Skriv fram båda läsningarna, markera som omtvistat, ange att jurist bör frågas, och ange vad man ska fråga. Ta inte ställning. |
 | B5 | Vem ska juristgranska? | Behöver bestämmas. Alternativ: Naturskyddsföreningens jurist, en pro bono-kontakt, eller att sidorna ligger kvar som utkast. |
 | B6 | Ska skedena också bli en rad i `checklista.html`? | Nej i första steget. |
