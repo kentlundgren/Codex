@@ -52,7 +52,7 @@ Dessa är hämtade ur arbetet med MAXIMA, men formulerade utan personuppgifter o
 | 2 | En grupp med flera medlemmar producerade minst fyra utkast över e-post på en vecka, med olika form och olika bild av rättsläget. | Modul om gruppens arbetsgång |
 | 3 | Gruppen kunde inte avgöra själv om hänsynsreglerna i 2 kap. MB är "tvingande", om ett alternativt yrkande försvagar avslagsyrkandet, eller hur en EU-förordning ska läsas. | Modul "När ska man fråga en jurist, och vad", med frågelista |
 | 4 | Två föreningar yttrade sig i samma mål med delvis olika yrkanden. | Avsnitt om samordning mellan parter |
-| 5 | Det som behövs i överinstansen bör redan finnas i underinstansens akt (gruppens egen farhåga). | Avsnitt "Skriv för nästa instans" **[verifiera]**: vad gäller för nya omständigheter i MÖD? |
+| 5 | Det som behövs i överinstansen bör redan finnas i underinstansens akt (gruppens egen farhåga). Förstagranskningen stödjer andan: efter laga kraft kan bara myndigheter begära omprövning (24 kap. 11 §) och tillsynen får inte begränsa ett tillstånd med rättskraft (26 kap. 9 §). | Avsnitt "Skriv för nästa instans". Nya omständigheter i MÖD är juristfråga J2 |
 | 6 | Myndighetens yttrande är detaljerat och kan få större genomslag än föreningens. | Råd om att hänvisa till och bemöta myndighetens yttrande, inte bara upprepa eget |
 | 7 | Sökanden avgränsar ansökan och kan därmed utesluta frågor ("ingår inte i prövningen"). | Redan i maxima.html (lärdom 9). Utveckla: vad man kan göra när avgränsningen är omtvistad, och hur man hänvisar till rätt instans för det som ligger utanför |
 | 8 | Sökanden flyttar frågor till en senare anmälan eller ett separat ärende (t.ex. nedläggning av en anläggning). | Förklara vad ett anmälningsärende är, vem som beslutar, och om man har talerätt **[verifiera]** |
@@ -76,12 +76,12 @@ För varje skede samma fasta fält: *Vem beslutar. Vad du kan göra. Frist eller
 
 ### 5.2 Fördjupningar (i `fordjupning.html`)
 
-1. **Överklagande till MÖD.** Vem får överklaga (miljöorganisationers rätt enligt 16 kap. 13 § MB finns redan i guiden), frist, form, prövningstillstånd, vad MÖD prövar, om nya omständigheter får läggas fram, sista instans, rättegångskostnader. Alla punkter **[verifiera]**.
-2. **Efter laga kraft.** Villkor och slutliga villkor, uppskjutna villkor (prövotid, 22 kap. 25 § MB **[verifiera]**), utredningsvillkor, tillsyn och egenkontroll, omprövning (24 kap. MB **[verifiera]**), tillsynsanmälan, hur en förening följer upp.
+1. **Överklagande till MÖD.** Vem får överklaga (miljöorganisationers rätt enligt 16 kap. 13 § MB finns redan i guiden), frist, form, prövningstillstånd, vad MÖD prövar, om nya omständigheter får läggas fram, vidare överklagande till Högsta domstolen (kräver prövningstillstånd), rättegångskostnader. Grunden är belagd i lagtext (se `Juridisk_forstagranskning_261019.md`, Tabell 2). Kvar för jurist: J1–J4 och J7.
+2. **Efter laga kraft.** Villkor och slutliga villkor, uppskjutna villkor och provisoriska föreskrifter (22 kap. 27 § MB, belagd), delegering av villkor till tillsynsmyndigheten (22 kap. 25 §, belagd), utredningsvillkor (praxis, J5), tillsyn och egenkontroll (26 kap., belagd), omprövning (24 kap.: kan bara begäras av myndigheter, belagd), tillsynsanmälan (26 kap. 1 §, belagd), hur en förening följer upp. Konsekvens att lyfta fram: det som inte blir villkor i domen är svårt att få in senare (26 kap. 9 §).
 3. **Anmälningsärenden och följdverksamhet.** Vad som kan hamna utanför prövningen och hur det följs.
 4. **Alternativa yrkanden.** Vad ett andrahandsyrkande är, för- och nackdelar, vad en jurist bör få frågan om. Ingen rekommendation utan jurist.
 5. **Skriv för nästa instans.** Se iakttagelse 5.
-6. **Andra vägar.** Regeringens tillåtlighetsprövning (17 kap. MB), kommunens vetorätt, EU-rätt, klagomål till EU-kommissionen eller Århuskonventionens granskningskommitté. Bara som en karta, inte som råd. Allt **[verifiera]**.
+6. **Andra vägar.** Regeringens tillåtlighetsprövning gäller bara kärntekniska anläggningar, allmänna farleder och geologisk lagring av koldioxid (17 kap. 1 §), och kommunens tillstyrkansrätt bara vindkraft (16 kap. 4 §). Båda är alltså inte aktuella för t.ex. ett reningsverk och ska beskrivas så. EU-rätt, klagomål till EU-kommissionen och Århuskonventionens granskningskommitté är inte lästa och tas bara med som karta, märkt **[verifiera]**.
 
 ### 5.3 Ny modul: *Så arbetar en grupp fram ett yttrande*
 
@@ -107,18 +107,18 @@ Princip: **inget juridiskt påstående skrivs in utan att lagtexten eller avgör
 
 | Fråga | Primärkälla | Sekundärkälla / kontroll |
 |---|---|---|
-| Domstolsordning, MÖD som överinstans, prövningstillstånd, överklagandefrist | Miljöbalken 23 kap. (riksdagen.se, lagen.nu) | Domstolsverket / domstol.se om överklagande i miljömål |
+| Domstolsordning, MÖD som överinstans, prövningstillstånd, överklagandefrist | **Läst:** lag (2010:921) 1 kap. 1–2 §§, lag (1996:242) 38–41 §§, MB 23 kap. Se `Juridisk_forstagranskning_261019.md`. | Domstol.se om överklagande i miljömål. Jurist: J1, J3, J7 |
 | Vad som gäller för nya omständigheter och bevisning i MÖD | Lagen (1996:242) om domstolsärenden och miljöbalken 22–23 kap. | Rättsfall från MÖD (domstol.se), en jurist |
 | Miljöorganisations rätt att överklaga | Miljöbalken 16 kap. 13 § (finns redan i guiden) | Prövningen av *vilka* organisationer som omfattas (krav på medlemmar och verksamhetstid) |
-| Rättegångskostnader för förening | Miljöbalken 25 kap. **[verifiera kapitel]** | Jurist |
-| Villkor, prövotid, utredningsvillkor | Miljöbalken 22 kap. (bl.a. 25 §) och 16 kap. 2 § **[verifiera]** | Prejudicerande avgöranden |
-| Omprövning och ändringstillstånd | Miljöbalken 24 kap. | Naturvårdsverkets vägledning |
-| Tillsyn, egenkontroll, tillsynsanmälan | Miljöbalken 26 kap. och förordning om miljöfarlig verksamhet **[verifiera]** | Länsstyrelsens vägledning |
-| Anmälningsärenden och talerätt däri | Miljöprövningsförordningen och miljöbalken 9 kap. **[verifiera]** | Rättsfall om klagorätt i anmälningsärenden |
-| Regeringens tillåtlighetsprövning, kommunalt veto | Miljöbalken 17 kap., 16 kap. 4 § **[verifiera]** | Prop. och rättsfall |
-| Hänsynsreglernas rättsliga status (2 kap. MB) | Miljöbalken 2 kap., förarbeten (prop. 1997/98:45) | Rättsfall; **juristfråga**, se B4 |
-| Stoppregeln (2 kap. 9 §) | Miljöbalken 2 kap. 9 § | Rättsfall; juristfråga |
-| EU-rätt (försämringsförbudet, Weserdomen C-461/13, förordning 2020/741) | EUR-Lex (original) | Länsstyrelsens och Naturvårdsverkets vägledning |
+| Rättegångskostnader för förening | **Läst:** MB 25 kap. 1–2 §§ (förening enligt 16 kap. 13 § har inte rätt till ersättning och är inte skyldig att betala, i de mål 25:2 gäller) | Jurist: J4 (blandat mål, MÖD) |
+| Villkor, uppskov, utredningsvillkor | **Läst:** MB 16 kap. 2 §, 22 kap. 25 och 27 §§. Utredningsvillkor: praxis (MÖD 2004:12, 2008:22, ej lästa) | Jurist: J5 |
+| Omprövning och ändringstillstånd | **Läst:** MB 24 kap. 1, 5, 10–12 §§ (omprövning kan bara begäras av myndigheter) | Naturvårdsverkets vägledning |
+| Tillsyn, egenkontroll, tillsynsanmälan | **Läst:** MB 26 kap. 1, 2, 3, 9 §§. Förordningarna ej lästa **[verifiera]** | Länsstyrelsens vägledning |
+| Anmälningsärenden och talerätt däri | **Läst:** MB 16 kap. 13 a § (bara beslut om betydande miljöpåverkan). Miljöprövningsförordningen och 9 kap. ej lästa **[verifiera]** | Jurist: J8 |
+| Regeringens tillåtlighetsprövning, kommunalt veto | **Läst:** MB 17 kap. 1 § (kärnteknik, allmänna farleder, CO2-lagring) och 16 kap. 4 § (vindkraft). Gäller inte reningsverk | – |
+| Hänsynsreglernas rättsliga status (2 kap. MB) | **Läst:** MB 2 kap. 1, 3, 7 §§: verksamhetsutövaren ska visa att kraven iakttas, med rimlighetsreservation; 5 kap. 4–5 §§ undantas. Naturvårdsverkets vägledning (sekundär) hänvisar till MÖD 2011:26 | Jurist: J6. Kunskapsläget talar emot "inte tvingande" |
+| Stoppregeln (2 kap. 9 §) | **Läst:** MB 2 kap. 9 § | Jurist: J9 |
+| EU-rätt (försämringsförbudet, Weserdomen C-461/13, förordning 2020/741) | **Läst:** förordning 2020/741 art. 1–2 (gäller bara när vatten återanvänds för jordbruksbevattning). Weserdomen kontrollerad tidigare | Länsstyrelsens och Naturvårdsverkets vägledning |
 | Tidsplaner och förloppet i ett enskilt mål | Domstolens egen tidsplan i målet (aktbilaga) | Kan skilja mellan mål, märk det |
 
 **Arbetsordning vid bygget:** (1) läs lagtexten, (2) läs minst ett prejudicerande eller vägledande avgörande per punkt, (3) skriv med hänvisning, (4) markera det som är osäkert, (5) be en jurist granska sidan innan den tas ur utkaststatus (se B5).
@@ -148,9 +148,9 @@ Statisk HTML, delad `styles.css`, `script.js` och `data.js`. Skedeskartans inneh
 | B2 | Ska guiden även riktas till sökande och kommuner? | **BESLUTAT 2026-10-19:** Nej som egen sida. Ja som en återkommande ruta "Vad ni kan be sökanden göra". |
 | B3 | Heter guiden fortfarande *Samrådsguiden*? Namnet täcker inte längre allt. | **BESLUTAT 2026-10-19:** Behåll namnet men ändra underrubriken (t.ex. "Från samråd till dom och uppföljning"), eftersom adresser och länkar redan finns. |
 | B4 | Hur hanteras rättsfrågor där Plangruppen inte är överens (hänsynsreglernas status, alternativa yrkanden)? | Skriv fram båda läsningarna, markera som omtvistat, ange att jurist bör frågas, och ange vad man ska fråga. Ta inte ställning. |
-| B5 | Vem ska juristgranska? | Behöver bestämmas. Alternativ: Naturskyddsföreningens jurist, en pro bono-kontakt, eller att sidorna ligger kvar som utkast. |
+| B5 | Vem ska juristgranska? | **Delvis genomfört 2026-10-19:** en förstagranskning av lagtext är gjord (`Juridisk_forstagranskning_261019.md`). Kvar är tio juristfrågor (J1–J10) som kan ställas som de är. Resten av detta beslut (vem som svarar) behöver bestämmas. Alternativ: Naturskyddsföreningens jurist, en pro bono-kontakt, eller att sidorna ligger kvar som utkast. |
 | B6 | Ska skedena också bli en rad i `checklista.html`? | Nej i första steget. |
-| B7 | Ska skedeskartan täcka fler spår (t.ex. PBL-överklagande, kommunal vetorätt, regeringsprövning)? | Bara de tre befintliga spåren, med en ruta "Andra vägar" för resten. |
+| B7 | Ska skedeskartan täcka fler spår (t.ex. PBL-överklagande, regeringsprövning)? | Bara de tre befintliga spåren, med en ruta "Andra vägar". Efter förstagranskningen krymper rutan: kommunalt veto (bara vindkraft) och regeringsprövning (tre slag av verksamhet) rör inte typiska fall och nämns som undantag. |
 | B8 | Hur stor del av gruppmodulen gäller *just* en förening? | Allmän formulering. Inga namn, ingen beskrivning av någon enskild grupp. |
 | B9 | När byggs det? Yttrandefristen i MAXIMA är 6 november 2026. | Efter 6 november, så att erfarenheterna av yttrandet kan arbetas in. PRD och källplan kan göras före. |
 
