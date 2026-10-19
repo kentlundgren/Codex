@@ -61,6 +61,7 @@ Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkt
 - `lund-ncc.html` — exempelsida: Lunds kommunkontors tjänsteskrivelse och Lunds Naturskyddsförenings yttrande över NCC:s samråd, analyserade mot sexdelsmodellen och mot varandra. Första sidan i en tänkt serie av exempel.
 - `maxima.html` — exempelsida: ett stort miljöbalksmål (MAXIMA) som underlag för lärdomar om numrering, begäran och spårbarhet, med en förklaring av aktbilaga och en tabell som följer fem frågor genom fyra skeden. Ligger utanför toppmenyn.
 - `PRD_samradsguiden_maxima.md` — planeringsdokument för tillägget i v1.18.
+- `PRD_samradsguiden_2_0.md` — utkast (v0.1, ej byggt) till ett utökat omfång: hela vägen från samråd till dom, överklagande till MÖD och tiden efter laga kraft, med öppna beslut och källplan för de juridiska delarna.
 - `fordjupning.html` — fullständigt sakinnehåll: alla dispositionsmallar, modulen om betydande miljöpåverkan, hela kompensationsmodulen, de två konkreta exemplen, källförteckning.
 - `lagtexter.html` — de tio viktigaste lagtexterna ordagrant, med källa och datum, en förklaring i klartext bakom ett klick per post, en ordlista och en bakgrundsruta om Århuskonventionen.
 - `verktyg.html` — den interaktiva guiden: fem steg som genererar en ifyllningsbar mall med sex delar, sammanställningsvy, kopiera- och nedladdningsfunktion.
