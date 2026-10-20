@@ -243,7 +243,14 @@ Under gruppens rangordning finns en nästan osynlig länk, **nollställ**, i lju
    ```
 
    Databasen sparar bara kontrollsumman av koden. Själva koden syns dock i SQL Editors historik, så använd inte ett lösenord du har på andra ställen.
+
+   ![Supabase, SQL Editor, med kommandot som sätter adminkoden. Koden mellan citattecknen är maskerad](../Maxima/Supabase/Bilder/Skapa_supabase_konto_12.jpg)
+
+   *Bild 12. Kommandot som sätter adminkoden, i SQL Editor, före Run. Koden mellan citattecknen är maskerad. Fliken heter *Untitled query* och har en prick, vilket betyder osparade ändringar. Adressen slutar på ett eget id för just den här frågan (`sql/d2b545cb-…`). Källa: skärmdump, 2026-10-20.*
+
+   *Obs:* även en maskerad kod kan avslöja början och ungefärlig längd. Visa därför aldrig koden i en bild som publiceras, och byt koden (kör kommandot igen med en ny) om en bild skulle ha visat för mycket.
 4. **Använd den:** klicka på *nollställ* under gruppens rangordning, skriv koden och bekräfta. Vid fel kod väntar databasen två sekunder innan den svarar nej, för att göra gissning långsam.
+   Så går det till på sidan: (1) du klickar på *nollställ*, (2) webbläsaren frågar efter **adminkoden** i en liten ruta, (3) du skriver koden och trycker OK, (4) webbläsaren frågar "Alla röster raderas för alla besökare. Det går inte att ångra. Fortsätta?" och du bekräftar, (5) databasen jämför koden. Är den rätt raderas alla röster och sidan visar att ingen har röstat. Är den fel visas "Fel kod" efter ungefär två sekunder, och inget raderas. Avbryter du i något steg händer ingenting. Du behöver alltså **bara skriva koden, inget annat lösenord**, och inte logga in i Supabase.
 5. Har du inte satt någon kod går det inte att nollställa via sidan. Du kan alltid göra det direkt i SQL Editor: `truncate public.rangordning_roster;`.
 
 *Varför kod?* Sidan är öppen och utan inloggning. En knapp som nollställer utan kontroll hade kunnat användas av vem som helst som hittar sidan.
