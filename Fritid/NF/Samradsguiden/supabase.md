@@ -105,6 +105,16 @@ Klicka sedan på **Create new project** (grön knapp nere till höger) och vänt
 2. Öppna [supabase_setup.sql](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase_setup.sql), kopiera hela filen, klistra in och tryck **Run**.
 3. Under **Table Editor** ska två tabeller finnas: `rangordning_roster` (rösterna) och `rangordning_installning` (sista dag och stängning).
 
+Så såg det ut när det genomfördes:
+
+![Supabase, SQL Editor, med meddelandet Snippets no longer save automatically och knappen Understood](../Maxima/Supabase/Bilder/Skapa_supabase_konto_07.jpg)
+
+*Bild 7. Första gången SQL Editor öppnas visas ett meddelande om att frågor inte längre sparas automatiskt. Klicka **Understood**. Skriptet behöver inte sparas, eftersom det finns i filen `supabase_setup.sql`. Källa: skärmdump, 2026-10-20.*
+
+![Supabase, SQL Editor, med skriptets början inklistrad i ett tomt frågefönster](../Maxima/Supabase/Bilder/Skapa_supabase_konto_08.jpg)
+
+*Bild 8. Skriptet inklistrat i SQL Editor, före Run. Bara början syns, men hela filen ligger i fönstret. Källa: skärmdump, 2026-10-20.*
+
 Vad filen gör:
 
 | Del | Innehåll | Varför |
@@ -130,15 +140,41 @@ curl -s -X POST "https://PROJEKT.supabase.co/rest/v1/rpc/hamta_status" -H "apike
 
 ### Steg 4. Koppla sidan till projektet (Kent skickar värden, Claude fyller i)
 
-1. **Settings, API** i Supabase. Kopiera **Project URL** och den publika nyckeln (anon eller publishable).
-2. Skicka de två värdena, eller klistra in dem själv i `rangordning_config.js`. **Skicka inte** den hemliga nyckeln (service_role eller secret).
-3. Är fälten tomma kör sidan i **demoläge** med påhittade röster, sparade i den egna webbläsaren.
+1. Klicka på den gröna knappen **Connect** högst upp i projektet. En panel, *Connect to your project*, öppnas (Bild 6). Den är gjord för utvecklare som använder ramverk som Next.js. Vi använder inget av det, men panelen visar projektets adress och den publika nyckeln.
+
+   ![Supabase, panelen Connect to your project, med exempel för Next.js och miljövariabler som innehåller projektadressen och en nyckel som börjar med sb_publishable](../Maxima/Supabase/Bilder/Skapa_supabase_konto_06.jpg)
+
+   *Bild 6. Panelen Connect. Under "Add files", fliken `.env.local`, står projektadressen (`NEXT_PUBLIC_SUPABASE_URL`) och den publika nyckeln (`NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`). Källa: skärmdump, 2026-10-20.*
+
+2. Den **publika nyckeln** (publishable key) börjar med `sb_publishable_`. Kopiera bara texten efter likhetstecknet. Alternativt: **Project Settings** (kugghjulet), **API Keys**.
+3. **Project URL** är redan känd: `https://basgvwqqdbkwadfjzaxc.supabase.co` (steg 1f).
+4. Skicka den publika nyckeln, eller klistra in den själv i `rangordning_config.js` (fältet `anonKey`). **Skicka inte** den hemliga nyckeln (`service_role` eller `secret`).
+5. Är något av fälten tomma kör sidan i **demoläge** med påhittade röster, sparade i den egna webbläsaren.
 
 ### Steg 5. Testa
 
+**Provat 2026-10-20** (med publika nyckeln, via `curl` mot projektets API):
+
+| Prov | Förväntat | Resultat |
+|---|---|---|
+| `spara_rost` med giltig ordning och namnet "  Testperson  " | Sparas, namnet rensas från blanksteg | Sparades som "Testperson" |
+| `hamta_roster` och `hamta_status` | Visar rösten, antal 1 | Rätt |
+| Ordning med dubbletter | Nekas | Nekades ("Dubbletter i ordningen") |
+| Ordning med ogiltigt id (`<script>`) | Nekas | Nekades ("Ogiltigt fråge-id") |
+| Läsa tabellen `rangordning_roster` direkt | Nekas | Nekades (HTTP 401) |
+| Skriva i tabellen direkt | Nekas | Nekades (HTTP 401) |
+| Ändra `stangd` i inställningstabellen direkt | Nekas | Nekades (HTTP 401) |
+| `radera_min_rost` | Raden försvinner | Raderades, listan tom |
+| Sidan i webbläsare: flytta en rad | Röst sparas, gruppens ordning och Tabell 6 räknas om | Sparades, status "Sparat", gruppens ordning ändrades |
+| Sidans knapp "Ta bort min röst" | Rösten raderas | Raderades, databasen tom efteråt |
+
+Teströsterna är raderade, så databasen är tom inför start.
+
+**Så testar du själv:**
+
 1. Öppna prototypen, flytta en rad och kontrollera att **Gruppens rang** och Tabell 6 ändras direkt.
 2. Öppna sidan i ett annat webbläsarfönster eller en privat flik. Du ska se rösten från det första fönstret efter högst 15 sekunder (sidan hämtar om rösterna med den tiden).
-3. I Supabase, **Table Editor**, `rangordning_roster`, ska raderna synas.
+3. I Supabase, **Table Editor**, `rangordning_roster`, ska raderna synas. (Tabellen är låst för besökare men du ser den som ägare.)
 
 ### Steg 6. Drift, stängning och städning
 
@@ -200,7 +236,7 @@ Firebase-sidan, [databas.html](https://kentlundgren.github.io/foreningar/Bjerred
 - **Namn är personuppgifter.** Ett namn som någon skriver in visas öppet för alla besökare och lagras hos Supabase. Sidan säger det vid fältet. Rösten kan tas bort med knappen på sidan, och du kan radera enstaka rader i databasen (steg 6).
 - **Publik nyckel.** Den ligger i `rangordning_config.js` och syns för alla. Det är avsett. Den hemliga nyckeln ska aldrig läggas i en fil i repot.
 - **Rösterna är publika på sidan.** Gruppens ordning syns för alla före sista dag, även för motparten i målet. Stäng röstningen med ett kommando (steg 6) om du vill frysa den.
-- **Inte testat mot en riktig Supabase-instans.** SQL-filen och anropen är skrivna enligt Supabases dokumentation men är inte körda mot ett riktigt projekt när det här skrivs. Sidans kod är provad i demoläge. Kör steg 3 och 5 och rapportera eventuella felmeddelanden.
+- **Provat mot det riktiga projektet 2026-10-20.** SQL-skriptet kördes utan fel. Därefter provades fjorton anrop mot projektet (se steg 5): en giltig röst sparades och lästes, dubbletter och ogiltiga id nekades, direkt läsning, skrivning och ändring av tabellerna nekades, och teströsten raderades. Sidan provades också mot projektet i en webbläsare. Allt gick som avsett. Det som inte är provat är många samtidiga besökare och flera olika enheter.
 
 ## 7. Korsreferens åt andra hållet <a id="korsreferens"></a>
 

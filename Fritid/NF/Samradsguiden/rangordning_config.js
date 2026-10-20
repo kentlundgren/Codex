@@ -3,6 +3,6 @@
 // anonKey är projektets PUBLIKA nyckel (anon eller publishable). Lägg aldrig in service_role- eller secret-nyckeln här.
 window.RANGORDNING_CONFIG = {
   supabaseUrl: "https://basgvwqqdbkwadfjzaxc.supabase.co",   // projektets adress (inte hemlig)
-  anonKey: "",       // den publika nyckeln
+  anonKey: "sb_publishable_oTwUhk-svm0VXB_B2ERQ3g_yNUUYk3T",   // den PUBLIKA nyckeln (publishable), avsedd för webbsidor
   frist: "2026-11-06T23:59:59+01:00"
 };
