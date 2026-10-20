@@ -48,7 +48,7 @@
 
     <main id="innehall" class="wrap">
       <div class="tabs" role="tablist" aria-label="Byt mellan dokumenten">
-        <button type="button" role="tab" id="tab-steg1" data-panel="steg1" aria-controls="steg1" aria-selected="true">Skede 1: Synpunkter under samråd</button><button type="button" role="tab" id="tab-steg2" data-panel="steg2" aria-controls="steg2" aria-selected="false">Skede 3: Yttrande gällande ansökan</button><button type="button" role="tab" id="tab-steg3" data-panel="steg3" aria-controls="steg3" aria-selected="false">Skede 5: Yttrande över bemötandet</button><button type="button" role="tab" id="tab-steg4" data-panel="steg4" aria-controls="steg4" aria-selected="false">Spårbarhet</button><button type="button" role="tab" id="tab-logg" data-panel="logg" aria-controls="logg" aria-selected="false">Ändringslogg</button>
+        <button type="button" role="tab" id="tab-steg1" data-panel="steg1" data-url="skede1" aria-controls="steg1" aria-selected="true">Skede 1: Synpunkter under samråd</button><button type="button" role="tab" id="tab-steg2" data-panel="steg2" data-url="skede3" aria-controls="steg2" aria-selected="false">Skede 3: Yttrande gällande ansökan</button><button type="button" role="tab" id="tab-steg3" data-panel="steg3" data-url="skede5" aria-controls="steg3" aria-selected="false">Skede 5: Yttrande över bemötandet</button><button type="button" role="tab" id="tab-steg4" data-panel="steg4" data-url="sparbarhet" aria-controls="steg4" aria-selected="false">Spårbarhet</button><button type="button" role="tab" id="tab-logg" data-panel="logg" aria-controls="logg" aria-selected="false">Ändringslogg</button>
       </div>
       <section class="panel" id="steg1" role="tabpanel" aria-labelledby="tab-steg1"><span id="skede1"></span>
 <h2 id="steg1-steg-1-synpunkter-under-samrad-om-maxima-omstruk">Skede 1: Synpunkter under samråd om MAXIMA, omstrukturerade enligt sexdelsmodellen <a class="anchor" href="#steg1-steg-1-synpunkter-under-samrad-om-maxima-omstruk" aria-label="Länk till avsnittet">#</a></h2>
@@ -1620,7 +1620,7 @@
 <h3 id="logg-tillagg-2026-10-20-skeden-i-stallet-for-steg">Tillägg 2026-10-20: skeden i stället för steg <a class="anchor" href="#logg-tillagg-2026-10-20-skeden-i-stallet-for-steg" aria-label="Länk till avsnittet">#</a></h3>
 <ul>
 <li><strong>Skeden i stället för steg.</strong> De tre dokumenten hette tidigare steg 1, 2 och 3. Det blandades ihop med skedena i Tabell 3 på Samrådsguidens MAXIMA-sida, där VA SYD:s handlingar också är skeden. Från och med 2026-10-20 numreras alla handlingar i förloppet i tidsordning som skede 1–8 (se Tabell 8): föreningens egna texter är skede 1 (samrådsbrevet), skede 3 (yttrandet) och skede 5 (yttrandet över bemötandet).</li>
-<li><strong>Gamla namn och länkar.</strong> Det som hette steg 1, steg 2 och steg 3 heter nu skede 1, skede 3 och skede 5. Ankaren <code>#steg1</code>, <code>#steg2</code>, <code>#steg3</code> och <code>#steg4</code> fungerar fortfarande. Nya ankare är <code>#skede1</code>, <code>#skede3</code>, <code>#skede5</code> och <code>#sparbarhet</code>. Filnamnen är oförändrade.</li>
+<li><strong>Gamla namn och länkar.</strong> Det som hette steg 1, steg 2 och steg 3 heter nu skede 1, skede 3 och skede 5. Ankaren <code>#steg1</code>, <code>#steg2</code>, <code>#steg3</code> och <code>#steg4</code> fungerar fortfarande. Nya ankare är <code>#skede1</code>, <code>#skede3</code>, <code>#skede5</code> och <code>#sparbarhet</code>. Filnamnen är oförändrade. När man klickar på en flik visar adressfältet nu det nya namnet (<code>#skede1</code>, <code>#skede3</code>, <code>#skede5</code>, <code>#sparbarhet</code>) i stället för panelens interna id.</li>
 <li><strong>Tabell 8</strong> är omskriven från tre steg till åtta skeden (samråd, samrådsredogörelse, yttrande, bemötande, yttrande över bemötandet, sökandens uppdaterade sammanställning, huvudförhandling, dom). Skeden 6–8 följer domstolens tidsplan (aktbilaga 310) och kan ändras.</li>
 <li><strong>Förslag på upplägg i skede 5.</strong> Ett nytt avsnitt i skede 5 visar hur ett yttrande över bemötandet kan byggas: yrkanden, sammanfattning, några få huvudskäl, övriga punkter som tabell i en bilaga, och reservation. Det bygger på hur Mark- och miljööverdomstolen ordnar sina domskäl i NCC-målet och är ett bidrag till diskussion.</li>
 <li><strong>Sakinnehållet</strong> i dokumenten är oförändrat.</li>
@@ -1702,7 +1702,8 @@
         }
         tabs.forEach(function (t, i) {
           t.addEventListener("click", function () {
-            history.pushState(null, "", "#" + t.getAttribute("data-panel"));
+            // Adressfältet visar skedets namn (data-url), medan panelens id (steg1 ...) behålls så att gamla länkar fungerar.
+            history.pushState(null, "", "#" + (t.getAttribute("data-url") || t.getAttribute("data-panel")));
             show(t.getAttribute("data-panel"));
             window.scrollTo(0, document.querySelector(".tabs").offsetTop);
           });
