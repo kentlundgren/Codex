@@ -2,9 +2,11 @@
 
 *Arbetsdokument 2026-10-20. Beskriver vad som görs för att skapa och använda en Supabase-databas för den gemensamma rangordningen av frågorna i Tabell 6 ([maxima.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#tabell-6)). Jämförs med motsvarande beskrivning för Firebase: [databas.html, Bjerreds Saltsjöbad](https://kentlundgren.github.io/foreningar/BjerredsSaltsjobad/inpasseringar/databas.html). Uppgifter om Supabase är hämtade ur Supabases dokumentation och min egen kännedom och är inte kvalitetssäkrade. Kontrollera mot [supabase.com/docs](https://supabase.com/docs) innan något beslut bygger på dem, särskilt gränser och priser.*
 
-- **Prototypen:** [rangordning_prototyp.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/rangordning_prototyp.html) (länken fungerar först när filerna är pushade)
+- **Prototypen:** [rangordning_prototyp.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning_prototyp.html) (länken fungerar först när filerna är pushade)
 - **Tabeller och funktioner (SQL):** [supabase_setup.sql](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase_setup.sql)
-- **Sidans kod:** `rangordning.js`, `rangordning.css`, `rangordning_config.js` i samma mapp
+- **Allmänt om rangordningar:** [rangordning/](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/rangordning/)
+- **Sidans kod:** `rangordning/rangordning.js`, `rangordning/rangordning.css`, `rangordning/rangordning_config.js` (gemensam kod för alla rangordningar)
+- **Filstruktur:** omröstningen om MAXIMA ligger i `Maxima/`, det allmänna navet och den gemensamma koden i `rangordning/`. Prototypen låg först direkt i `Samradsguiden/`. Den gamla adressen finns kvar som en ersättningssida som skickar vidare.
 - **Korsreferens:** se [Jämförelse med Firebase](#jamforelse) och [Korsreferens åt andra hållet](#korsreferens)
 
 ---
@@ -149,7 +151,7 @@ curl -s -X POST "https://PROJEKT.supabase.co/rest/v1/rpc/hamta_status" -H "apike
 
 2. Den **publika nyckeln** (publishable key) börjar med `sb_publishable_`. Kopiera bara texten efter likhetstecknet. Alternativt: **Project Settings** (kugghjulet), **API Keys**.
 3. **Project URL** är redan känd: `https://basgvwqqdbkwadfjzaxc.supabase.co` (steg 1f).
-4. Skicka den publika nyckeln, eller klistra in den själv i `rangordning_config.js` (fältet `anonKey`). **Skicka inte** den hemliga nyckeln (`service_role` eller `secret`).
+4. Skicka den publika nyckeln, eller klistra in den själv i `rangordning/rangordning_config.js` (fältet `anonKey`). **Skicka inte** den hemliga nyckeln (`service_role` eller `secret`).
 5. Är något av fälten tomma kör sidan i **demoläge** med påhittade röster, sparade i den egna webbläsaren.
 
 ### Steg 5. Testa
@@ -171,7 +173,7 @@ curl -s -X POST "https://PROJEKT.supabase.co/rest/v1/rpc/hamta_status" -H "apike
 
 Teströsterna är raderade, så databasen är tom inför start.
 
-**Om du ser "Demoläge" och några röster som inte stämmer.** Efter att konfigurationen pushats visade den publicerade sidan en stund fortfarande *Demoläge: ingen databas är ansluten* och "Medel av 4 röster" (Bild 9). De fyra rösterna var tre påhittade demoröster plus en provröst i den egna webbläsaren, inte riktiga röster. Demoläget slås på när adress eller nyckel saknas, och det hände här eftersom webbläsaren visade en äldre kopia av `rangordning_config.js`. Lösning: ladda om med Ctrl+F5. Om det består, kontrollera att filen på Pages innehåller adressen och nyckeln: `https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/rangordning_config.js`.
+**Om du ser "Demoläge" och några röster som inte stämmer.** Efter att konfigurationen pushats visade den publicerade sidan en stund fortfarande *Demoläge: ingen databas är ansluten* och "Medel av 4 röster" (Bild 9). De fyra rösterna var tre påhittade demoröster plus en provröst i den egna webbläsaren, inte riktiga röster. Demoläget slås på när adress eller nyckel saknas, och det hände här eftersom webbläsaren visade en äldre kopia av `rangordning_config.js`. Lösning: ladda om med Ctrl+F5. Om det består, kontrollera att filen på Pages innehåller adressen och nyckeln: `https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/rangordning/rangordning_config.js`.
 
 ![Den publicerade prototypen i demoläge: banner om att ingen databas är ansluten och gruppens ordning med fyra röster](../Maxima/Supabase/Bilder/Skapa_supabase_konto_09.jpg)
 
@@ -220,16 +222,17 @@ Under gruppens rangordning finns en nästan osynlig länk, **nollställ**, i lju
 
 ### Steg 8. Flytta in i maxima.html (när prototypen är godkänd)
 
-Tabell 6 på [maxima.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#tabell-6) har idag ingen rangordning. För att flytta in funktionen behövs fyra ändringar: `data-id` och `data-titel` på tabellens rader, `<div id="rangordning"></div>` före tabellen, och tre rader i `<head>` (`rangordning.css`, `rangordning_config.js`, `rangordning.js`). Löptexten som hänvisar till "rad 1–4" avser kolumnen **Förslag** och ändras inte.
+Tabell 6 på [maxima.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#tabell-6) har idag ingen rangordning. För att flytta in funktionen behövs fyra ändringar: `data-id` och `data-titel` på tabellens rader, `<div id="rangordning"></div>` före tabellen, och tre rader i `<head>` (`rangordning/rangordning.css`, `rangordning/rangordning_config.js`, `rangordning/rangordning.js`, med relativ sökväg från maxima.html). Löptexten som hänvisar till "rad 1–4" avser kolumnen **Förslag** och ändras inte.
 
 ## 4. Så hänger sidans kod ihop <a id="kod"></a>
 
 ```
-rangordning_prototyp.html   Sidan: Tabell 6 i HTML, utan databas fungerar den som vanlig tabell
-rangordning.js              Dra och släpp, pilknappar, medelplats, markeringar, spara och hämta
-rangordning.css             Utseende
-rangordning_config.js       Projektets adress och publika nyckel
-supabase_setup.sql          Tabeller, regler och de fem funktionerna
+Maxima/rangordning_prototyp.html   Sidan för MAXIMA: Tabell 6 i HTML, utan databas fungerar den som vanlig tabell
+rangordning/index.html             Allmänt om rangordningar i Samrådsguiden, med länk till pågående omröstningar
+rangordning/rangordning.js         Dra och släpp, pilknappar, medelplats, markeringar, spara och hämta
+rangordning/rangordning.css        Utseende
+rangordning/rangordning_config.js  Projektets adress och publika nyckel
+supabase_setup.sql                 Tabeller, regler och de fem funktionerna
 ```
 
 - **Utan JavaScript eller databas** visar sidan Tabell 6 i förslagets ordning. Det motsvarar `BASE_DATA` som reserv i Firebase-lösningen.
@@ -262,13 +265,13 @@ Firebase-sidan, [databas.html](https://kentlundgren.github.io/foreningar/Bjerred
 - **Rösta flera gånger.** Den som öppnar en privat flik eller rensar webbläsardata får en ny röst. Gruppens ordning är därför ett underlag för samtal och inte ett beslut.
 - **En röst per webbläsare.** Nyckeln sparas i den webbläsare där man röstar, inte per dator eller person. Byter man namn eller flyttar om raderna ändras den befintliga rösten, det blir ingen ny. Två personer som använder samma webbläsare på samma dator delar därför en röst, och den som sparar sist skriver över den andra. Med en annan webbläsare, en annan webbläsarprofil eller en annan enhet blir det en ny röst. Detta är medvetet: utan inloggning finns inget annat sätt att veta vem som röstar. Se även [Möjliga utvidgningar](#utvidgningar).
 - **Namn är personuppgifter.** Ett namn som någon skriver in visas öppet för alla besökare och lagras hos Supabase. Sidan säger det vid fältet. Rösten kan tas bort med knappen på sidan, och du kan radera enstaka rader i databasen (steg 6).
-- **Publik nyckel.** Den ligger i `rangordning_config.js` och syns för alla. Det är avsett. Den hemliga nyckeln ska aldrig läggas i en fil i repot.
+- **Publik nyckel.** Den ligger i `rangordning/rangordning_config.js` och syns för alla. Det är avsett. Den hemliga nyckeln ska aldrig läggas i en fil i repot.
 - **Rösterna är publika på sidan.** Gruppens ordning syns för alla före sista dag, även för motparten i målet. Stäng röstningen med ett kommando (steg 6) om du vill frysa den.
 - **Provat mot det riktiga projektet 2026-10-20.** SQL-skriptet kördes utan fel. Därefter provades fjorton anrop mot projektet (se steg 5): en giltig röst sparades och lästes, dubbletter och ogiltiga id nekades, direkt läsning, skrivning och ändring av tabellerna nekades, och teströsten raderades. Sidan provades också mot projektet i en webbläsare. Allt gick som avsett. Det som inte är provat är många samtidiga besökare och flera olika enheter.
 
 ## 6b. Möjliga utvidgningar (inte gjorda) <a id="utvidgningar"></a>
 
-Prototypen är medvetet enkel. Följande går att lägga till om behovet uppstår. Inget av det är byggt, och sidan [rangordning_prototyp.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/rangordning_prototyp.html) är oförändrad.
+Prototypen är medvetet enkel. Följande går att lägga till om behovet uppstår. Inget av det är byggt, och sidan [rangordning_prototyp.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning_prototyp.html) är oförändrad.
 
 | Utvidgning | Vad det löser | Hur det kan göras | Baksida |
 |---|---|---|---|
@@ -276,6 +279,7 @@ Prototypen är medvetet enkel. Följande går att lägga till om behovet uppstå
 | **Hindra dubbla röster från samma webbläsare efter rensning** | Den som rensar webbläsardata får inte en andra röst. | Kräver att man vet vem som röstar, till exempel inloggning eller en kod per person. | Bryter mot kravet på ingen inloggning. Troligen onödigt för en liten grupp. |
 | **Personlig kod eller länk per kollega** | Exakt en röst per person. | Varje kollega får en hemlig länk eller kod, och databasen godkänner bara kända koder. | Mer administration. Passar om gruppen är liten och känd. |
 | **Visa varje persons ordning** | Att se hur var och en rangordnat, och inte bara medelvärdet. | Databasen lagrar redan varje röst, och `hamta_roster()` ger dem. Sidan behöver bara visa dem. | Påverkar integriteten. Namnen är frivilliga, och anonyma röster skulle också synas som enskilda listor. |
+| **Flera omröstningar** (till exempel om andra samråd) | Samma databas kan rymma rangordningar om fler ämnen. | Lägg till kolumnen `omrostning` (text) i `rangordning_roster`, låt funktionerna ta ett omröstnings-id och låt varje sida skicka med sitt eget. Gemensam kod finns redan i `rangordning/`, och varje omröstning är en sida i en undermapp, som `Maxima/`. | Kräver ändring av SQL-filen och en omkörning. Befintliga röster får då värdet för MAXIMA. |
 | **Direktuppdatering** | Rösterna syns direkt utan att vänta på de 15 sekunderna. | Supabase Realtime. Kräver att tabellen går att läsa av besökare, vilket i dag inte är fallet. | Sämre skydd för nycklarna. Avvaktade därför. |
 
 ## 7. Korsreferens åt andra hållet <a id="korsreferens"></a>
