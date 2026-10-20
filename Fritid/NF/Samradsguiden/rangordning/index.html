@@ -95,7 +95,7 @@
       <section class="section" id="teknik">
         <p class="eyebrow">Teknik</p>
         <h2>Hur det hänger ihop <a class="anchor" href="#teknik" aria-label="Länk till avsnittet">#</a></h2>
-        <p>Sidorna är statiska, och rösterna lagras i en liten databas hos Supabase. Sidan anropar fem funktioner i databasen och kan inte läsa eller ändra tabellerna direkt. Hur databasen sätts upp, steg för steg, och en jämförelse med Firebase finns i <a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase.md">supabase.md</a>.</p>
+        <p>Sidorna är <strong>dynamiska</strong>: det som visas ändras när någon röstar. Gruppens ordning, antalet röster och radernas plats i Tabell 6 hämtas från en liten databas hos Supabase varje gång sidan öppnas, och uppdateras var 15:e sekund. Själva sidfilerna (HTML, CSS och JavaScript) ligger oförändrade på GitHub Pages och körs i webbläsaren, som pratar med databasen. Sidan anropar fem funktioner i databasen och kan inte läsa eller ändra tabellerna direkt. Hur databasen sätts upp, steg för steg, och en jämförelse med Firebase finns i <a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase.md">supabase.md</a>.</p>
         <p>Databasen rymmer i dag en omröstning, den om MAXIMA. För fler omröstningar behöver varje röst märkas med vilken omröstning den hör till. Det är en liten ändring av databasen och beskrivs under möjliga utvidgningar i <a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase.md#utvidgningar">supabase.md</a>.</p>
         <p class="method-note">Gemensam kod för alla rangordningar ligger i den här mappen: <code>rangordning.js</code>, <code>rangordning.css</code> och <code>rangordning_config.js</code>. Varje omröstning är en egen sida i en undermapp efter ämne, till exempel <code>Maxima/</code>.</p>
       </section>
@@ -109,7 +109,7 @@
       <div class="dialog__content">
         <button class="dialog__close" type="button" aria-label="Stäng tekniköversikt">×</button>
         <p class="eyebrow">Tekniköversikt</p>
-        <h2 id="tech-title">Statiska sidor med en liten databas</h2>
+        <h2 id="tech-title">Dynamiska sidor med en liten databas</h2>
         <ul>
           <li>HTML och CSS för sidorna, JavaScript för rangordningen</li>
           <li>Supabase (databas i molnet) lagrar rösterna, via fem funktioner och utan inloggning</li>

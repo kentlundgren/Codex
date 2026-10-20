@@ -28,6 +28,7 @@ Kraven från Kent:
 ## 2. Förklaring av orden <a id="ord"></a>
 
 - **Databas.** En plats i molnet där data sparas så att alla besökare ser samma sak. En webbsida på GitHub Pages kan inte spara något själv.
+- **Statisk och dynamisk.** Ordet används om två olika saker. *Statisk hosting* betyder att filerna (HTML, CSS, JavaScript) ligger oförändrade på servern, som på GitHub Pages. En *dynamisk sida* betyder att det besökaren ser ändras, till exempel när någon röstar. De två går ihop: rangordningen är en dynamisk sida, eftersom innehållet kommer från databasen, men den ligger på statisk hosting, eftersom det är webbläsaren som hämtar och visar rösterna. Ingen egen server behövs. En sida som saknar databas kan också vara dynamisk, till exempel med JavaScript som räknar om något, men den glömmer allt när den laddas om.
 - **Supabase.** En tjänst som ger en databas av typen PostgreSQL, med ett färdigt API (ett sätt för webbsidan att prata med databasen över internet).
 - **SQL.** Språket som beskriver tabeller och regler i en databas. I det här projektet är det en enda fil som körs en gång.
 - **Tabell (i databasen).** Rader och kolumner, som ett kalkylark.
