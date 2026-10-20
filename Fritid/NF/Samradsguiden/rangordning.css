@@ -1,0 +1,42 @@
+/* Gemensam rangordning (prototyp). Färgregler: gult bara på inmatningsfält, blått för notering,
+   grönt för markering, rött/orange för varning, grått för låst. */
+.rg-kolumner { display:grid; gap:20px; grid-template-columns:1fr 1fr; margin:18px 0 8px; align-items:start; }
+.rg-ruta { padding:16px 18px 18px; border:1px solid var(--line); background:var(--white); }
+.rg-ruta--grupp { border-top:6px solid var(--moss); }
+.rg-ruta h3 { margin:0 0 6px; }
+.rg-hint, .rg-meta { margin:6px 0; color:var(--muted); font-size:.92rem; }
+.rg-status { min-height:1.4em; margin:12px 0 0; color:var(--muted); font:600 14px/1.4 Arial,sans-serif; }
+.rg-status--fel { color:#9a3b00; }
+.rg-banner { margin:0 0 14px; padding:10px 14px; border-left:5px solid #3b6ea5; background:#e8f0f8; font-size:.94rem; }
+.rg-banner--varning { border-left-color:var(--gold); background:var(--alert); }
+.rg-namnrad label { display:block; margin:10px 0 4px; font:700 14px Arial,sans-serif; }
+.rg-namnrad input { width:100%; max-width:380px; padding:10px 12px; border:1px solid #8a8f78; border-radius:2px; background:#FFF9C4; color:var(--ink); font:16px Arial,sans-serif; }
+.rg-namnrad input:disabled { background:#ececec; }
+
+.rg-lista { margin:12px 0 0; padding:0; list-style:none; }
+.rg-rad { display:flex; align-items:center; gap:8px; margin:0 0 6px; padding:6px 8px; border:1px solid var(--line); background:#fbfaf5; transition:background .3s, border-color .3s; }
+.rg-egen .rg-rad { cursor:grab; }
+.rg-grepp { color:var(--muted); font-size:1.1rem; line-height:1; user-select:none; }
+.rg-nr { flex:none; min-width:1.7em; color:var(--moss); font:700 15px Arial,sans-serif; text-align:right; }
+.rg-titel { flex:1 1 auto; font-size:.95rem; line-height:1.3; }
+.rg-medel { flex:none; color:var(--muted); font:13px Arial,sans-serif; }
+.rg-delta { flex:none; min-width:3em; color:var(--moss); font:700 13px Arial,sans-serif; text-align:right; }
+.rg-pil { flex:none; width:40px; height:40px; border:1px solid #8a8f78; border-radius:2px; color:var(--ink); background:#e1eacb; font:700 18px Arial,sans-serif; cursor:pointer; }
+.rg-pil:hover:not(:disabled) { background:#fff; }
+.rg-pil:disabled { color:#999; background:#ececec; cursor:not-allowed; }
+.rg-pil:focus-visible, .rg-namnrad input:focus-visible { outline:3px solid var(--moss); outline-offset:2px; }
+.rg-drar { opacity:.45; }
+.rg-over { border-color:var(--moss); background:#edf3e6; }
+.rg-rad--ny { border-color:var(--moss); background:#edf3e6; }
+.rg-blink { animation:rg-blink 1.4s ease-out; }
+@keyframes rg-blink { 0% { background:#b9d0a5; } 100% { background:inherit; } }
+.rg-knappar { margin-top:12px; }
+.rg-knappar .button:disabled { background:#ececec; color:#888; cursor:not-allowed; }
+
+#tabell-6 .rg-rangcell { color:var(--moss); font:700 1.1rem Arial,sans-serif; text-align:center; }
+#tabell-6 tr.rg-tabellrad--ny td { background:#edf3e6; }
+#tabell-6 tr.rg-blink td { animation:rg-blink 1.4s ease-out; }
+.rg-live { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+
+@media (max-width:820px) { .rg-kolumner { grid-template-columns:1fr; } .rg-medel { display:none; } }
+@media (prefers-reduced-motion:reduce) { .rg-blink, #tabell-6 tr.rg-blink td { animation:none; } .rg-rad { transition:none; } }
