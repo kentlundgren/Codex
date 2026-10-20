@@ -12,6 +12,10 @@ $ErrorActionPreference = 'Stop'
 $OutputEncoding = [System.Text.Encoding]::UTF8
 $blockedPath = '(?i)(^|/)(underlag_internt(/|$)|Plangruppen/Mail(/|$)|mejlforlag|.*(?:privat|private|sensitive|kanslig|känslig|utkast).*)\.(md|txt|pdf|doc|docx)$'
 $blockedMail = '(?i)(^|/)Plangruppen/Mail(/|$)'
+# Undantag 2026-10-20: Kent har medvetet beslutat att publicera de två utkasten KL_261019 och KL_261020
+# (efter privatgranskning). Filnamnen innehåller ordet "utkast" och träffas därför av $blockedPath.
+# Undantaget gäller bara .md-filer direkt i den här mappen. Alla andra kontroller gäller som förut.
+$allowedPublicDrafts = '(?i)^Fritid/NF/Maxima/Yttrande/Utkast/[^/]+\.md$'
 # Här skedde en uppdatering 2026-09-28: personliga inlägg och synpunkter från
 # enskilda medlemmar spärras för alla filtyper, inte bara dokument.
 $blockedPersonal = '(?i)(^|/)Underlag_synpunkter/|_inl(a|ä)gg\.[^/]+$'
