@@ -187,3 +187,11 @@ textarea { width:100%; min-height:130px; padding:12px 14px; border:1px solid var
 .visible-anchors .anchor { opacity:.75; }
 .visible-anchors .anchor:hover, .visible-anchors .anchor:focus { opacity:1; }
 caption { padding:0 0 8px; text-align:left; font:700 .95rem/1.4 Arial,sans-serif; caption-side:top; }
+
+/* Version 1.19: hovringstext i tabellcell. Visas vid hovring, tangentbordsfokus och tryck (tabindex), och finns alltid kvar för skärmläsare. */
+.tip { display:block; cursor:help; }
+.tip:focus { outline:2px solid var(--moss); outline-offset:2px; }
+.tip-q { display:inline-block; width:16px; height:16px; margin-right:3px; border:1px solid var(--moss); border-radius:50%; color:var(--moss); font:700 11px/14px Arial,sans-serif; text-align:center; font-style:italic; }
+.tip-text { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.tip:hover .tip-text, .tip:focus .tip-text, .tip:focus-within .tip-text { position:static; width:auto; height:auto; overflow:visible; clip:auto; white-space:normal; display:block; margin-top:8px; padding:8px 10px; border-left:3px solid #3b6ea5; background:#e8f0f8; color:var(--ink); font-size:.88rem; line-height:1.45; }
+@media print { .tip-text { position:static; width:auto; height:auto; overflow:visible; clip:auto; white-space:normal; display:block; margin-top:6px; padding:4px 8px; border-left:3px solid #3b6ea5; font-size:.85rem; } }
