@@ -252,6 +252,45 @@ Under gruppens rangordning finns en nästan osynlig länk, **nollställ**, i lju
 
 Tabell 6 på [maxima.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#tabell-6) har idag ingen rangordning. För att flytta in funktionen behövs fyra ändringar: `data-id` och `data-titel` på tabellens rader, `<div id="rangordning"></div>` före tabellen, och tre rader i `<head>` (`rangordning/rangordning.css`, `rangordning/rangordning_config.js`, `rangordning/rangordning.js`, med relativ sökväg från maxima.html). Löptexten som hänvisar till "rad 1–4" avser kolumnen **Förslag** och ändras inte.
 
+## 3b. Hitta tillbaka i Supabase och använda SQL Editor <a id="hitta-tillbaka"></a>
+
+### Vägen tillbaka till projektet
+
+Allt ligger bakom inloggningen (GitHub). Adresserna nedan fungerar bara när du är inloggad. Vägen går från det stora till det lilla: alla organisationer, en organisation, ett projekt, ett verktyg i projektet.
+
+| Nivå | Adress | Vad du ser |
+|---|---|---|
+| 1. Alla organisationer | [supabase.com/dashboard/organizations](https://supabase.com/dashboard/organizations) | En lista över dina organisationer ("Your organizations"). Här börjar du om du är osäker. |
+| 2. En organisation | [supabase.com/dashboard/org/vgxnypkoomlcwopoigwh](https://supabase.com/dashboard/org/vgxnypkoomlcwopoigwh) | Organisationen *Samradsguiden* och de projekt som ligger i den. Sista delen av adressen är organisationens id. |
+| 3. Ett projekt | [supabase.com/dashboard/project/basgvwqqdbkwadfjzaxc](https://supabase.com/dashboard/project/basgvwqqdbkwadfjzaxc) | Projektet *samradsquiden*: status ("Healthy"), projektadress, region. Här finns vänstermenyn med alla verktyg. |
+| 4. SQL Editor | [supabase.com/dashboard/project/basgvwqqdbkwadfjzaxc/sql/new](https://supabase.com/dashboard/project/basgvwqqdbkwadfjzaxc/sql/new) | En tom fråga där du skriver och kör SQL. |
+
+Du kan hoppa direkt till nivå 3 eller 4 om du har adressen som bokmärke. Det är den korta vägen. Utan bokmärke går du via nivå 1, 2 och 3 och klickar på SQL Editor (ikonen `>_`) i vänstermenyn.
+
+### Så läser du adressen
+
+Adresserna följer ett mönster:
+
+```
+https://supabase.com/dashboard/project/<projektets id>/<verktyg>
+                                       basgvwqqdbkwadfjzaxc  sql/new
+```
+
+- **Projektets id** (`basgvwqqdbkwadfjzaxc`) är samma sak som början på projektadressen: `https://basgvwqqdbkwadfjzaxc.supabase.co`. Det är alltså projektets namn i Supabases system, och det är det som skiljer ditt projekt från alla andra.
+- **Verktyget** är det som står efter id:t. `sql/new` betyder SQL Editor med en **ny, tom fråga**. Andra verktyg har andra ändelser, och de nås enklast via vänstermenyn.
+- **`sql/<långt id>`**, till exempel `sql/d2b545cb-…`, är en **redan öppnad fråga**. Varje gång du öppnar `sql/new` skapas en ny, och Supabase ger den ett eget id. Adressen i webbläsaren byter då ändelse.
+
+### Hur SQL Editor fungerar
+
+- **Vad det är.** Ett fönster där du skriver SQL-kommandon och kör dem direkt mot projektets databas. Du skriver, trycker **Run** (eller Ctrl+Enter) och ser resultatet under fönstret. Efter ett lyckat kommando som inte ger tillbaka rader står det *Success. No rows returned*.
+- **Vem som får.** Bara du, som är inloggad som ägare. Du kör som ägare, och därför kan du göra saker som besökarna på sidan inte kan: skapa och ändra tabeller, läsa alla röster, sätta adminkoden, stänga röstningen.
+- **Skriver man all SQL där?** Nej, och det är viktigt att skilja på två saker:
+  1. **Besökarna** på sidan skriver ingen SQL. Sidans JavaScript anropar bara de fem funktionerna (`hamta_roster`, `hamta_status`, `spara_rost`, `radera_min_rost`, `nollstall_roster`). Det är funktionerna, som du skrev i SQL Editor en gång, som i sin tur rör tabellerna.
+  2. **Du som ägare** använder SQL Editor för uppsättning och skötsel: skapa tabeller och funktioner (SQL-filen), sätta adminkoden, flytta sista dag, stänga eller öppna röstningen, ta bort en enstaka röst. Du kan också titta på rösterna utan SQL i **Table Editor**, som visar tabellerna som kalkylblad.
+- **Vad som sparas.** SQL Editor sparar inte automatiskt (se Bild 7). Fliken *Untitled query* med en prick betyder osparade ändringar. Stänger du fliken försvinner texten, men kommandot du redan har kört gäller i databasen. Tryck **Save** (Ctrl+S) om du vill behålla en fråga. Kör inte ett kommando två gånger i onödan: `update`-kommandon som sätter koden går att upprepa, men `delete` och `truncate` raderar varje gång.
+- **Adminkoden i SQL Editor.** Texten du skriver, inklusive koden i `convert_to('…')`, syns i fönstret och kan hamna i historiken. Radera texten ur fönstret när du har kört kommandot, och använd inte en kod som liknar ditt namn.
+- **Andra sätt.** SQL kan också köras utanför webbläsaren, med databaslösenordet och ett verktyg som `psql` eller Supabase CLI. Det behövs inte här. SQL Editor räcker.
+
 ## 4. Så hänger sidans kod ihop <a id="kod"></a>
 
 ```
