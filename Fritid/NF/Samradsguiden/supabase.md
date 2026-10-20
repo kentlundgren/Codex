@@ -2,7 +2,7 @@
 
 *Arbetsdokument 2026-10-20. Beskriver vad som görs för att skapa och använda en Supabase-databas för den gemensamma rangordningen av frågorna i Tabell 6 ([maxima.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#tabell-6)). Jämförs med motsvarande beskrivning för Firebase: [databas.html, Bjerreds Saltsjöbad](https://kentlundgren.github.io/foreningar/BjerredsSaltsjobad/inpasseringar/databas.html). Uppgifter om Supabase är hämtade ur Supabases dokumentation och min egen kännedom och är inte kvalitetssäkrade. Kontrollera mot [supabase.com/docs](https://supabase.com/docs) innan något beslut bygger på dem, särskilt gränser och priser.*
 
-- **Prototypen:** [rangordning_prototyp.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning_prototyp.html) (länken fungerar först när filerna är pushade)
+- **Prototypen:** [rangordning_prototyp.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning_prototyp.html)
 - **Tabeller och funktioner (SQL):** [supabase_setup.sql](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase_setup.sql)
 - **Allmänt om rangordningar:** [rangordning/](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/rangordning/)
 - **Sidans kod:** `rangordning/rangordning.js`, `rangordning/rangordning.css`, `rangordning/rangordning_config.js` (gemensam kod för alla rangordningar)
@@ -10,6 +10,22 @@
 - **Korsreferens:** se [Jämförelse med Firebase](#jamforelse) och [Korsreferens åt andra hållet](#korsreferens)
 
 ---
+
+## 0. Status och ändringslogg <a id="status"></a>
+
+**Status 2026-10-20 (kväll):** Supabase-projektet är skapat, SQL-skriptet är körts, och den publicerade sidan är ansluten till databasen. Vi har alltså passerat demoläget (se Bild 9 och Bild 11). Funktionen för att nollställa röster är installerad, och adminkoden sätts av Kent (steg 7).
+
+| Datum | Vad som hände |
+|---|---|
+| 2026-10-20 | Konto, organisation och projekt skapade (steg 1, bild 1–5). |
+| 2026-10-20 | SQL-skriptet körts, nyckeln hämtad och inlagd (steg 2–4, bild 6–8). Provat mot det riktiga projektet (steg 5). |
+| 2026-10-20 | Demoläget visades en stund på den publicerade sidan på grund av en äldre kopia i webbläsaren (Bild 9). Efter omladdning visades den riktiga databasen (Bild 11). |
+| 2026-10-20 | Funktionen `nollstall_roster` och kolumnen `admin_kod_hash` lades till (steg 7, bild 10). Provad med fel kod: svarar "Fel kod" efter ungefär två sekunder. |
+| 2026-10-20 | **Filerna flyttades.** Omröstningen om MAXIMA ligger nu på `Samradsguiden/Maxima/rangordning_prototyp.html`, och gemensam kod och en allmän sida om rangordningar ligger i `Samradsguiden/rangordning/`. Den gamla adressen (`Samradsguiden/rangordning_prototyp.html`) är en ersättningssida som skickar vidare. Databasen påverkades inte av flytten. |
+| 2026-10-20 | Menyvalet *Rangordningar* lades till i huvudmenyn på alla sidor, och en ruta på `maxima.html` (#skede5-rangordning) länkar till omröstningen. |
+
+---
+
 
 ## 1. Vad som byggs <a id="vad"></a>
 
@@ -180,6 +196,10 @@ Teströsterna är raderade, så databasen är tom inför start.
 
 *Bild 9. Prototypen i demoläge på den publicerade sidan, före omladdning. Källa: skärmdump, 2026-10-20.*
 
+![Den publicerade prototypen utan demoläge: ingen demobanner, och gruppens ordning visar en röst, ändrad av Kent](../Maxima/Supabase/Bilder/Skapa_supabase_konto_11.jpg)
+
+*Bild 11. Den publicerade prototypen efter att den kopplats till databasen, på den gamla adressen innan filerna flyttades. Ingen demobanner visas, namnet "Kent" syns på den egna rösten, och gruppens ordning bygger på en riktig röst ("Medel av 1 röst. Senast ändrad av Kent"). Källa: skärmdump, 2026-10-20.*
+
 **Så testar du själv:**
 
 1. Öppna prototypen, flytta en rad och kontrollera att **Gruppens rang** och Tabell 6 ändras direkt.
@@ -205,7 +225,14 @@ Efter sista dag stänger databasen skrivning av sig själv (funktionen `spara_ro
 
 Under gruppens rangordning finns en nästan osynlig länk, **nollställ**, i ljusgrått och med liten text. Den raderar alla röster för alla besökare. Av det skälet kräver den en **adminkod** som bara du känner till. Koden kontrolleras i databasen och står inte i sidans kod.
 
+**Status 2026-10-20:** funktionen och kolumnen är installerade (kördes i SQL Editor, Bild 10), och funktionen är provad med fel kod. Utan satt kod svarar den alltid "Fel kod", så ingen kan nollställa av misstag. Adminkoden sätts av Kent i punkt 3 nedan.
+
 1. **Kör SQL-filen en gång till** (den går att köra om): [supabase_setup.sql](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase_setup.sql). Då läggs funktionen `nollstall_roster` och en kolumn för kodens kontrollsumma till.
+
+   ![Supabase, SQL Editor, med funktionen nollstall_roster inklistrad: kolumnen admin_kod_hash läggs till och funktionen kontrollerar koden innan den raderar rösterna](../Maxima/Supabase/Bilder/Skapa_supabase_konto_10.jpg)
+
+   *Bild 10. SQL Editor med den nya delen inklistrad (kolumnen `admin_kod_hash` och funktionen `nollstall_roster`). Funktionen jämför en kontrollsumma av den inskrivna koden med den sparade och väntar två sekunder om den inte stämmer. Bara början av funktionen syns i bilden. Källa: skärmdump, 2026-10-20.*
+
 2. **Välj en kod** med minst tolv tecken, till exempel flera ord efter varandra. Skriv den inte i chatten och inte i någon fil i repot.
 3. **Sätt koden** i SQL Editor, med din kod i stället för `DIN-KOD-HÄR`:
 
@@ -282,6 +309,24 @@ Prototypen är medvetet enkel. Följande går att lägga till om behovet uppstå
 | **Visa varje persons ordning** | Att se hur var och en rangordnat, och inte bara medelvärdet. | Databasen lagrar redan varje röst, och `hamta_roster()` ger dem. Sidan behöver bara visa dem. | Påverkar integriteten. Namnen är frivilliga, och anonyma röster skulle också synas som enskilda listor. |
 | **Flera omröstningar** (till exempel om andra samråd) | Samma databas kan rymma rangordningar om fler ämnen. | Lägg till kolumnen `omrostning` (text) i `rangordning_roster`, låt funktionerna ta ett omröstnings-id och låt varje sida skicka med sitt eget. Gemensam kod finns redan i `rangordning/`, och varje omröstning är en sida i en undermapp, som `Maxima/`. | Kräver ändring av SQL-filen och en omkörning. Befintliga röster får då värdet för MAXIMA. |
 | **Direktuppdatering** | Rösterna syns direkt utan att vänta på de 15 sekunderna. | Supabase Realtime. Kräver att tabellen går att läsa av besökare, vilket i dag inte är fallet. | Sämre skydd för nycklarna. Avvaktade därför. |
+
+## 6c. Checklista för databasen <a id="checklista"></a>
+
+Det här är vad som bör göras eller hållas koll på medan röstningen pågår.
+
+| När | Vad | Varför |
+|---|---|---|
+| **Före start** | **Nollställ** (steg 7, eller `truncate public.rangordning_roster;`) så att provrösterna försvinner. | Teströster från provning blir annars med i gruppens ordning. |
+| **Före start** | Sätt adminkoden (steg 7) och spara den i en lösenordshanterare. | Annars går det inte att nollställa via sidan. |
+| **Före start** | Kör Supabases säkerhetskontroll: i projektet, **Advisors** (eller **Security Advisor**) i menyn. Den listar bland annat tabeller utan Row Level Security. Menynamnet kan skilja sig. | Bekräftar att inget oavsiktligt är öppet. Tabellerna ska vara låsta, och SQL-filen gör det. |
+| **Under** | Titta vid behov i **Table Editor** på `rangordning_roster` (du ser den som ägare). | Se att röster kommer in och att namnen är rimliga. |
+| **Under** | Ta bort en enstaka olämplig röst: `delete from public.rangordning_roster where namn = '…';` | Sidan är öppen, så namnfältet kan fyllas med vad som helst. |
+| **Sista dag** | Röstningen stänger sig själv 2026-11-06 23:59:59 svensk tid. Flytta dagen eller stäng tidigare med kommandona i steg 6. | Ordningen blir slutlig. |
+| **Efter sista dag** | **Exportera rösterna**: Table Editor, tabellen `rangordning_roster`, exportera som CSV, eller spara resultatet (gruppens ordning) som text eller skärmdump. Lägg inte filen med namn i det publika repot. | Gratisprojekt har enligt projektets översikt (Bild 5) inga säkerhetskopior ("No backups"). Gör därför en egen kopia. Före en nollställning gäller samma sak. |
+| **Efter** | Radera projektet när det inte behövs, eller låt det vara. Gratisprojekt kan pausas efter längre inaktivitet. Kontrollera villkoren hos Supabase. | Rösterna ligger öppet i molnet så länge projektet finns. Namn är personuppgifter. |
+| **Vid behov** | Byt projektnamnet `samradsquiden` till `samradsguiden` (Project Settings, General). | Bara en etikett. |
+| **Om fler omröstningar** | Lägg till kolumnen `omrostning` enligt [Möjliga utvidgningar](#utvidgningar). | Databasen rymmer idag en omröstning. |
+| **Alltid** | Lägg aldrig hemliga nycklar (`service_role`, `secret`) eller adminkoden i filer i repot eller i chatten. | Den publika nyckeln i konfigurationen är avsedd att vara öppen, men inget annat. |
 
 ## 7. Korsreferens åt andra hållet <a id="korsreferens"></a>
 
