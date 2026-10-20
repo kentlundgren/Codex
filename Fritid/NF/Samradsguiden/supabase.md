@@ -35,12 +35,69 @@ Kraven från Kent:
 
 ## 3. Steg för steg <a id="steg"></a>
 
-### Steg 1. Skapa konto och projekt (Kent gör)
+### Steg 1. Skapa konto, organisation och projekt (Kent gör)
 
-1. Gå till [supabase.com](https://supabase.com) och skapa ett gratis konto.
-2. Välj **New project**. Namn, till exempel `samradsguiden`. Region: en europeisk, helst nära Sverige.
-3. Välj ett databaslösenord och spara det själv, till exempel i en lösenordshanterare. Det behövs inte för sidan och ska inte delas med någon.
-4. Vänta ett par minuter tills projektet är klart.
+*Den här delen uppdateras under tiden, i takt med att stegen genomförs. Bilderna ligger i [Maxima/Supabase/Bilder](https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima/Supabase/Bilder). Supabase ändrar ibland sina menyer, så knappnamnen kan skilja sig från de här.*
+
+**1a. Gå till supabase.com och starta.** Öppna [supabase.com](https://supabase.com) och klicka på den gröna knappen **Start your project**. (Bilden är tagen efter inloggning, då det står **Dashboard** uppe till höger i stället.)
+
+![Supabases startsida på supabase.com, med den gröna knappen Start your project](../Maxima/Supabase/Bilder/Skapa_supabase_konto_01.jpg)
+
+*Bild 1. Supabases startsida. Källa: skärmdump, 2026-10-20.*
+
+**1b. Logga in via GitHub.** På inloggningssidan valdes **Continue with GitHub**, eftersom Kent redan har ett GitHub-konto. Då behövs inget nytt lösenord till Supabase, och inloggningen sker med GitHub-kontot. Godkänn att Supabase får läsa kontots grundläggande uppgifter när GitHub frågar. (E-post och lösenord fungerar också.)
+
+**1c. Skapa en organisation.** Efter inloggningen visas sidan **Your organizations** (adressen slutar på `/dashboard/organizations?method=github`). En **organisation** är bara en mapp där projekten ligger. Klicka på **New organization**.
+
+![Supabase, sidan Your organizations, med knappen New organization](../Maxima/Supabase/Bilder/Skapa_supabase_konto_02.jpg)
+
+*Bild 2. Första sidan efter inloggning med GitHub. Källa: skärmdump, 2026-10-20.*
+
+**1d. Fyll i organisationen.** Efter klicket på **New organization** visas formuläret *Create a new organization*. Kent valde:
+
+| Fält | Val | Förklaring |
+|---|---|---|
+| **Name** | `Samradsguiden` | Namnet på mappen som projekten ligger i. Går att ändra senare. |
+| **Type** | `Personal` | Ett personligt konto, inte ett företag eller en grupp. |
+| **Plan** | `Free - $0/month` | Gratisplanen. Inget betalkort behövs. |
+
+Klicka sedan på **Create organization** (grön knapp nere till höger).
+
+![Supabase, formuläret Create a new organization, ifyllt med namn Samradsguiden, typ Personal och plan Free](../Maxima/Supabase/Bilder/Skapa_supabase_konto_03.jpg)
+
+*Bild 3. Formuläret för en ny organisation, ifyllt. Källa: skärmdump, 2026-10-20.*
+
+**1e. Fyll i projektet.** Efter *Create organization* visas formuläret *Create a new project*. Valen, med skälen:
+
+| Fält | Val | Förklaring |
+|---|---|---|
+| **Organization** | `Samradsguiden` (Free) | Förifyllt. Det är organisationen från steg 1d. |
+| **GitHub (optional)** | Hoppa över | Gör att databasens uppsättning kan följa kod i GitHub. Behövs inte, eftersom hela uppsättningen är en SQL-fil som körs en gång. |
+| **Project name** | `samradsguiden` | Förslaget var *kentlundgren's Project*. Ändras till ett namn som säger vad projektet är. |
+| **Database password** | Klicka **Generate a password** och spara det i en lösenordshanterare | Lösenordet till själva databasen. Sidan använder det inte, och det delas inte med någon. Det visas ofta bara en gång. |
+| **Region** | `Europe` | Datan ligger då i Europa. |
+| **Enable Data API** | Ikryssad (behåll) | Gör att sidan kan prata med databasen över internet. Utan den fungerar inte rangordningen. |
+| **Automatically expose new tables** | **Ta bort kryssen** | Supabase rekommenderar det själva. Nya tabeller blir då inte öppna av sig själva. Rangordningens tabeller är låsta på avsikt, och SQL-filen öppnar bara de fyra funktionerna. |
+| **Enable automatic RLS** | **Kryssa i** | Gör att Row Level Security slås på för alla nya tabeller. SQL-filen gör det redan, så detta är en extra säkerhet. |
+| **Advanced configuration** | Lämna orört | Behövs inte. |
+
+Klicka sedan på **Create new project** (grön knapp nere till höger) och vänta ett par minuter tills projektet är klart.
+
+![Supabase, formuläret Create a new project, med organisation Samradsguiden, projektnamn, databaslösenord, region Europe och inställningar under Security](../Maxima/Supabase/Bilder/Skapa_supabase_konto_04.jpg)
+
+*Bild 4. Formuläret för ett nytt projekt, med Supabases förslag innan några ändringar. Källa: skärmdump, 2026-10-20.*
+
+![Supabase, formuläret för ett nytt projekt efter ändringarna: projektnamn ifyllt, databaslösenord genererat, Enable Data API ikryssad, Automatically expose new tables urkryssad och Enable automatic RLS ikryssad](../Maxima/Supabase/Bilder/Skapa_supabase_konto_04B.jpg)
+
+*Bild 4B. Samma formulär efter ändringarna: lösenord genererat, "Automatically expose new tables" urkryssad och "Enable automatic RLS" ikryssad. Källa: skärmdump, 2026-10-20.*
+
+*Notering:* i projektnamnet blev det `samradsquiden` (med q) i stället för `samradsguiden`. Namnet är bara en etikett i Supabase och påverkar inte adressen eller sidan. Det går att ändra under **Project Settings, General**.
+
+**1f. Projektet är klart.** Efter *Create new project* öppnas projektets översikt. När det står **Status: Healthy** är databasen igång. Projektets adress (**Project URL**) står under projektnamnet: `https://basgvwqqdbkwadfjzaxc.supabase.co`. Adressen är inte hemlig. Den är gjord för att ligga på webbsidor och skyddas av databasens regler. Projektet ligger i regionen *West EU (Ireland)* på gratisplanen (compute size *Nano*).
+
+![Supabase, projektets översikt för samradsquiden med Status Healthy, projektadress, region West EU (Ireland) och gratisplan](../Maxima/Supabase/Bilder/Skapa_supabase_konto_05.jpg)
+
+*Bild 5. Projektets översikt direkt efter att det skapats. Källa: skärmdump, 2026-10-20.*
 
 ### Steg 2. Skapa tabeller och regler (en gång)
 
