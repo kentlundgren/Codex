@@ -8,6 +8,8 @@ Skede 5 i MAXIMA-förloppet är ett yttrande till domstolen över sökandens bem
 
 Underrättelsen, [aktbilaga 333](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333.pdf), är ett enda blad: PDF-sida 1 i en fil om 288 sidor. Övriga 287 sidor är de handlingar som domstolen bifogade. Tabell 7 i Del 6 visar vilka aktbilagor som ligger på vilka sidor.
 
+**Rangordna frågorna.** Du och dina kollegor kan rangordna de 13 frågor som yttrandet över bemötandet kan ta upp, och se gruppens gemensamma ordning, på en egen sida: [MAXIMA: rangordna frågorna i skede 5](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning.html). Om hur rangordningar kan användas i samråd och yttranden i allmänhet, se [Rangordningar i Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/rangordning/). Omröstningen stänger efter sista dag, 6 november 2026. Den är ett underlag för samtal och inte ett beslut av någon förening.
+
 ## Ett förslag på upplägg
 
 Mark- och miljööverdomstolen ordnar sina domskäl efter fråga och inte efter parternas numrering. I domen i NCC-målet ([Svea hovrätt, Mark- och miljööverdomstolen, 2024](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/NCC_dom/Svea%20HR%20M%20899-23%20Dom%202024-12-03.pdf), mål M 899-23) har domskälen rubriker som "Miljökonsekvensbeskrivningen" och "Natura 2000-tillstånd", och domstolen kommenterar inte varje krav för sig. Det talar för att ett yttrande över bemötandet blir mer användbart om det har följande upplägg. Förslaget är ett bidrag till diskussion och inte föreningens beslut.
