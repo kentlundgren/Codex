@@ -55,7 +55,8 @@
   // ---------- Frågorna (läses ur tabellen) ----------
   var rows = Array.prototype.slice.call(tabell.querySelectorAll("tr[data-id]"));
   var items = rows.map(function (r, i) {
-    return { id: r.getAttribute("data-id"), titel: r.getAttribute("data-titel"), forslag: i, rad: r };
+    return { id: r.getAttribute("data-id"), titel: r.getAttribute("data-titel"), forslag: i, rad: r,
+      info: r.getAttribute("data-forklaring") || "", niva: r.getAttribute("data-niva") || "" };
   });
   var byId = {};
   items.forEach(function (it) { byId[it.id] = it; });
@@ -232,6 +233,23 @@
 
   function announce(msg) { live.textContent = ""; setTimeout(function () { live.textContent = msg; }, 30); }
 
+  // Fråga med märkning och hovringstext (visas vid hovring, fokus och tryck).
+  function titelEl(it, prefix) {
+    var kids = [document.createTextNode(it.titel)];
+    if (it.niva) {
+      kids.push(document.createTextNode(" "));
+      kids.push(el("span", { class: "rg-tag rg-tag--" + it.niva, text: it.niva === "huvud" ? "Huvudtext" : "Bilaga" }));
+    }
+    var attrs = { class: "rg-titel" };
+    if (it.info) {
+      var tipId = "rg-tip-" + prefix + "-" + it.id;
+      attrs.tabindex = "0";
+      attrs["aria-describedby"] = tipId;
+      kids.push(el("span", { class: "rg-tip", id: tipId, role: "note", text: it.info }));
+    }
+    return el("span", attrs, kids);
+  }
+
   function render() {
     var closed = !!status.stangd;
     var g = groupRanking();
@@ -254,7 +272,7 @@
       var li = el("li", { class: "rg-rad", draggable: closed ? "false" : "true", "data-id": id }, [
         el("span", { class: "rg-grepp", "aria-hidden": "true", text: "⠿" }),
         el("span", { class: "rg-nr", text: String(i + 1) }),
-        el("span", { class: "rg-titel", text: it.titel }),
+        titelEl(it, "egen"),
         up, down
       ]);
       ownList.appendChild(li);
@@ -271,7 +289,7 @@
       var mark = delta > 0 ? "▲ " + delta : delta < 0 ? "▼ " + (-delta) : "";
       var li = el("li", { class: "rg-rad rg-rad--grupp" + (delta ? " rg-rad--ny" : ""), "data-id": id }, [
         el("span", { class: "rg-nr", text: String(g.rank[id]) }),
-        el("span", { class: "rg-titel", text: it.titel }),
+        titelEl(it, "grupp"),
         el("span", { class: "rg-medel", text: g.n ? "medelplats " + fmtTal(g.mean[id]) : "förslaget" }),
         el("span", { class: "rg-delta", text: mark, "aria-label": delta > 0 ? "uppåt " + delta + " platser" : delta < 0 ? "nedåt " + (-delta) + " platser" : "" })
       ]);

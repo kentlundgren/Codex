@@ -46,3 +46,15 @@
 .rg-admin { padding:2px 4px; border:0; background:none; color:#b7bcae; font:11px Arial,sans-serif; cursor:pointer; }
 .rg-admin:hover, .rg-admin:focus-visible { color:var(--muted); text-decoration:underline; }
 .rg-admin:focus-visible { outline:2px solid var(--moss); outline-offset:2px; }
+
+/* Märkning och hovringstext för frågorna. Grönt = markering (huvudtext), grått = bilaga, blått = notering (hovringstexten). */
+.rg-titel { position:relative; }
+.rg-titel[tabindex]:focus-visible { outline:2px solid var(--moss); outline-offset:2px; }
+.rg-titel[tabindex] { cursor:help; }
+.rg-tag { display:inline-block; margin-left:4px; padding:1px 6px; border-radius:9px; font:700 10.5px/1.4 Arial,sans-serif; vertical-align:middle; white-space:nowrap; }
+.rg-tag--huvud { color:#264734; background:#dcebd0; border:1px solid #b9d0a5; }
+.rg-tag--bilaga { color:#5b5f56; background:#ececec; border:1px solid #d3d3d3; }
+.rg-tip { display:none; position:absolute; left:0; top:calc(100% + 6px); z-index:30; width:min(360px, 78vw); padding:9px 11px; border-left:3px solid #3b6ea5; background:#e8f0f8; color:var(--ink); box-shadow:0 4px 14px rgba(0,0,0,.18); font:400 .84rem/1.45 Georgia,serif; white-space:normal; cursor:default; }
+.rg-titel:hover .rg-tip, .rg-titel:focus .rg-tip, .rg-titel:focus-within .rg-tip { display:block; }
+#markning .rg-tag { margin-left:0; }
+@media print { .rg-tip { display:none; } }
