@@ -1,6 +1,6 @@
-**Navigering:** **Steg 1: Synpunkter under samråd** · [Steg 2: Yttrande gällande ansökan](02_Yttrande_gallande_ansokan.md) · [Steg 3: Yttrande över bemötandet](03_Yttrande_over_bemotandet.md) · [Spårbarhet](04_Sparbarhet_samrad_till_yttrande.md) · [Ändringslogg](05_Andringslogg.md) · [Live-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
+**Navigering:** **Skede 1: Synpunkter under samråd** · [Skede 3: Yttrande gällande ansökan](02_Yttrande_gallande_ansokan.md) · [Skede 5: Yttrande över bemötandet](03_Yttrande_over_bemotandet.md) · [Spårbarhet](04_Sparbarhet_samrad_till_yttrande.md) · [Ändringslogg](05_Andringslogg.md) · [Live-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
 
-# Steg 1: Synpunkter under samråd om MAXIMA, omstrukturerade enligt sexdelsmodellen
+# Skede 1: Synpunkter under samråd om MAXIMA, omstrukturerade enligt sexdelsmodellen
 
 *Utkast 2026-10-13. Omstrukturering av Lunds Naturskyddsförenings samrådssynpunkter 2025-02-27, gjord av Kent Lundgren. Innehållet är föreningens eget och är i sak oförändrat. Det som har ändrats är formen: ordning, numrering, rubriker och uppdelning i synpunkt, fråga och begäran. Inte behandlat eller beslutat av föreningens styrelse. Se [ändringsloggen](05_Andringslogg.md).*
 

@@ -1,34 +1,39 @@
-**Navigering:** [Steg 1: Synpunkter under samråd](01_Synpunkter_under_samrad.md) · [Steg 2: Yttrande gällande ansökan](02_Yttrande_gallande_ansokan.md) · [Steg 3: Yttrande över bemötandet](03_Yttrande_over_bemotandet.md) · **Spårbarhet** · [Ändringslogg](05_Andringslogg.md) · [Live-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
+**Navigering:** [Skede 1: Synpunkter under samråd](01_Synpunkter_under_samrad.md) · [Skede 3: Yttrande gällande ansökan](02_Yttrande_gallande_ansokan.md) · [Skede 5: Yttrande över bemötandet](03_Yttrande_over_bemotandet.md) · **Spårbarhet** · [Ändringslogg](05_Andringslogg.md) · [Live-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
 
 # Spårbarhet från samråd till yttrande
 
 *Utkast 2026-10-13, Kent Lundgren. Inte behandlat eller beslutat av föreningens styrelse. Sidhänvisningar till VA SYD:s samrådsredogörelse följer dokumentets tryckta sidnummer, och till aktbilaga 320 dess egen paginering.*
 
-Det här dokumentet visar hur samma fråga kan följas från samrådsbrevet, via samrådsredogörelsen och yttrandet, till sökandens bemötande, och hur föreningen kunde ha gått tillväga för att inte tappa den på vägen. Det kopplar ihop [steg 1](01_Synpunkter_under_samrad.md), [steg 2](02_Yttrande_gallande_ansokan.md) och [steg 3](03_Yttrande_over_bemotandet.md).
+Det här dokumentet visar hur samma fråga kan följas från samrådsbrevet, via samrådsredogörelsen och yttrandet, till sökandens bemötande, och hur föreningen kunde ha gått tillväga för att inte tappa den på vägen. Det kopplar ihop [skede 1](01_Synpunkter_under_samrad.md), [skede 3](02_Yttrande_gallande_ansokan.md) och [skede 5](03_Yttrande_over_bemotandet.md).
 
-## Tre steg och vad texterna kan kallas
+## Skeden i MAXIMA-förloppet och vad texterna kan kallas
 
-Samråd, yttrande efter kungörelse och yttrande över bemötandet är tre olika steg med olika mottagare och olika slags text. Det hjälper om de heter olika.
+Ordet *skede* betyder här en numrerad handling i MAXIMA-förloppet, i tidsordning och oavsett vem som skriver den. Samma nummer gäller på alla sidor (se [Tabell 3 i Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#tabell-3)). Föreningens egna texter är skede 1, 3 och 5. Skeden 6–8 följer domstolens tidsplan och kan ändras.
 
-**Tabell 8. De tre stegen i MAXIMA och vad texterna kan kallas**
+**Tabell 8. Skeden i MAXIMA-förloppet och vad texterna kan kallas**
 
-| Steg | Namn på texten | Mottagare | Tid i MAXIMA | Lagrum |
-|---|---|---|---|---|
-| 1. Samråd | *Synpunkter under samråd* (kort: samrådssynpunkter) | VA SYD, sökanden | Samrådsperioden 2024-10-01 till 2025-02-28 | Miljöbalken 6 kap. 29–32 §§ |
-| 2. Yttrande efter kungörelsen | *Yttrande gällande VA SYD:s ansökan om miljötillstånd för MAXIMA (mål M 3289-25)* | Mark- och miljödomstolen | Kungörelse 2026-04-14, svarstid till 2026-06-18 | Miljöbalken 22 kap. 3 och 10 §§ |
-| 3. Yttrande över bemötandet | *Yttrande över VA SYD:s bemötande (mål M 3289-25)* | Mark- och miljödomstolen | Underrättelse 2026-10-08, frist 2026-11-06 | Domstolens tidsplan (aktbilaga 310) |
+| Skede | Handling | Från och till | Tid i MAXIMA | Lagrum eller underlag | Dokument i den här mappen |
+|---|---|---|---|---|---|
+| 1 | Samrådsbrev, *Synpunkter under samråd* (kort: samrådssynpunkter) | LNF till VA SYD (sökanden) | Samrådsperioden 2024-10-01 till 2025-02-28. Brevet är daterat 2025-02-27 | Miljöbalken 6 kap. 29–32 §§ | [Skede 1](01_Synpunkter_under_samrad.md) |
+| 2 | Samrådsredogörelse | VA SYD, som en del av MKB:n (Bilaga M1) | 2025-05-28 | Miljöbalken 6 kap. 35 § punkt 8 | Ingen egen fil. Se VA SYD:s Bilaga M1 |
+| 3 | *Yttrande gällande VA SYD:s ansökan om miljötillstånd för MAXIMA (mål M 3289-25)* | LNF till mark- och miljödomstolen | Kungörelse 2026-04-14, svarstid till 2026-06-18. Yttrandet inkom 2026-06-09 (aktbilaga 257) | Miljöbalken 22 kap. 3 och 10 §§ | [Skede 3](02_Yttrande_gallande_ansokan.md) |
+| 4 | Bemötande av inkomna yttranden (aktbilaga 320) | VA SYD till mark- och miljödomstolen | 2026-09-30, efter domstolens föreläggande 2026-07-08 (aktbilaga 311) | Domstolens tidsplan (aktbilaga 310) | Ingen egen fil. Se VA SYD:s aktbilaga 320 |
+| 5 | *Yttrande över VA SYD:s bemötande (mål M 3289-25)* | LNF till mark- och miljödomstolen | Underrättelse 2026-10-08, frist 2026-11-06 | Domstolens tidsplan (aktbilaga 310) | [Skede 5](03_Yttrande_over_bemotandet.md) |
+| 6 | Sökandens bemötande av Vattenmyndighetens yttranden och uppdaterad sammanställning | VA SYD till mark- och miljödomstolen | Vecka 50 2026, enligt tidsplanen | Domstolens tidsplan (aktbilaga 310) | Inte skrivet ännu |
+| 7 | Huvudförhandling med syn | Mark- och miljödomstolen | Vecka 5–6 2027, enligt tidsplanen | Miljöbalken 22 kap. 17 § | Inte skrivet ännu |
+| 8 | Dom | Mark- och miljödomstolen | Vecka 15 2027, enligt tidsplanen | Miljöbalken 22 kap. 21 § | Inte skrivet ännu |
 
 Skälen till namnen:
 
 - **Samråd heter ”synpunkter” och inte ”yttrande”.** Ett samråd är ett kunskapsutbyte före en ansökan, och formellt finns inga yrkanden. Föreningen själv rubricerade sin text ”synpunkter från Lunds Naturskyddsförening”. Ordet *brev* beskriver bara formen och bör inte vara namnet.
-- **Efter kungörelsen heter texten ”yttrande” och riktas mot en konkret ansökan.** Föreningen använde själv rubriken ”Yttrande gällande VA SYDs ansökan om miljötillstånd för MAXIMA, Mål M 3289-25”. Miljöbalkens 22 kap. 10 § kallar det som lämnas ”synpunkter”, och domstolens egna handlingar säger ”yttra sig” och ”yttrande”. Det finns ingen skarp skillnad i rättsverkan, men namnen visar vilket steg man befinner sig i.
-- **Målnumret hör till steg 2 och 3.** Före ansökan finns inget mål. MAXIMA är projektet och M 3289-25 är domstolens ärende om ansökan. De är inte samma sak.
+- **Efter kungörelsen heter texten ”yttrande” och riktas mot en konkret ansökan.** Föreningen använde själv rubriken ”Yttrande gällande VA SYDs ansökan om miljötillstånd för MAXIMA, Mål M 3289-25”. Miljöbalkens 22 kap. 10 § kallar det som lämnas ”synpunkter”, och domstolens egna handlingar säger ”yttra sig” och ”yttrande”. Det finns ingen skarp skillnad i rättsverkan, men namnen visar vilket skede man befinner sig i.
+- **Målnumret hör till skede 3 och senare skeden.** Före ansökan finns inget mål. MAXIMA är projektet och M 3289-25 är domstolens ärende om ansökan. De är inte samma sak.
 
 ## Hur varje samrådspunkt följdes upp i yttrandet
 
 **Tabell 9. Samrådets punkter (S) och var de återfinns i yttrandet (Y)**
 
-| S | Rubrik i steg 1 | Samrådsunderlagets avsnitt | I yttrandet |
+| S | Rubrik i skede 1 | Samrådsunderlagets avsnitt | I yttrandet |
 |---|---|---|---|
 | S1 | Varför ska Källby läggas ner? | 7.1 Verksamhetens omfattning | Y5 |
 | S2 | Uppströmsarbetets inriktning och mål | 7.7 Följdverksamheter och uppströmsarbete | Fördes inte vidare |
@@ -94,16 +99,16 @@ Tabell 10 följer de frågor där svaren går att jämföra. Kolumn 3 avser [sam
 
 ## Så kunde föreningen ha gått tillväga
 
-**Tabell 11. Åtgärder i varje steg, och vad handlingarna visar**
+**Tabell 11. Åtgärder i varje skede, och vad handlingarna visar**
 
 | När | Åtgärd | Varför | Belägg |
 |---|---|---|---|
-| Före samrådsperiodens slut (2025-02-28) | Numrera synpunkterna S1, S2 och så vidare, ordna dem efter samrådsunderlagets avsnitt och samla begäranden i en lista. Skicka med e-post och spara kvittot. | Då går varje punkt att åberopa senare, och att följa upp. | Steg 1 |
+| Före samrådsperiodens slut (2025-02-28) | Numrera synpunkterna S1, S2 och så vidare, ordna dem efter samrådsunderlagets avsnitt och samla begäranden i en lista. Skicka med e-post och spara kvittot. | Då går varje punkt att åberopa senare, och att följa upp. | Skede 1 |
 | Vid samrådsmötet (2025-02-12) | Fråga om ordningen spelar roll, och be om protokollet. | Föreningen frågade, och fick svaret att ordningen inte behöver tänkas på. Protokollet godkändes 2025-02-28. | [Bilaga M1.21](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1.21%20Samr%C3%A5dsm%C3%B6te%20Naturskyddsf%C3%B6reningen%20Lund.pdf#page=9), s. 8 |
 | När samrådsredogörelsen publiceras | Jämför redogörelsen med de numrerade punkterna, en för en, och gör en svarstabell (S mot VA SYD:s svar). | MKB:n ska redovisa samråden och vad som kommit fram. En punkt som saknas i redogörelsen syns då direkt. | [Bilaga M1](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=41), s. 40–41 |
 | När kungörelsen kommer (2026-04-14) | Lägg svarstiden (till 2026-06-18) i kalendern och räkna tillbaka. | Domstolen anger en sista dag. | Aktbilaga 310 |
-| I yttrandet (inkom 2026-06-09) | Numrera Y1, Y2 och så vidare, ett påstående per punkt. Ange för varje punkt vilken samrådspunkt (S) den gäller och vad VA SYD svarade i samrådsredogörelsen. Avsluta med en begäran. | Så ser domstolen att en fråga ställts tidigare, och vad som hänt med den. | Steg 2 |
-| När bemötandet kommer (2026-09-30) | Kopiera VA SYD:s numrering in i en svarstabell och markera besvarat, delvis, hänvisning eller obesvarat. | Det visar vad som ska tas upp igen. | Tabell 6 i [steg 3](03_Yttrande_over_bemotandet.md) |
+| I yttrandet (inkom 2026-06-09) | Numrera Y1, Y2 och så vidare, ett påstående per punkt. Ange för varje punkt vilken samrådspunkt (S) den gäller och vad VA SYD svarade i samrådsredogörelsen. Avsluta med en begäran. | Så ser domstolen att en fråga ställts tidigare, och vad som hänt med den. | Skede 3 |
+| När bemötandet kommer (2026-09-30) | Kopiera VA SYD:s numrering in i en svarstabell och markera besvarat, delvis, hänvisning eller obesvarat. | Det visar vad som ska tas upp igen. | Tabell 6 i [skede 5](03_Yttrande_over_bemotandet.md) |
 | Före fristen (2026-11-06) | Skriv yttrande över bemötandet med samma Y-nummer, och reservera dig för att få yttra dig när VA SYD återkommer. | VA SYD återkommer vecka 50 2026 med sin inställning till kvartär rening. | Aktbilaga 320, s. 13, 47–48 |
 
 ### Så kan en punkt i yttrandet åberopa samrådet
@@ -116,7 +121,7 @@ Begäran i exemplet är formulerad av frågan i originalet och är ett förslag,
 
 ## Svarstabell inför yttrandet över bemötandet
 
-Svarstabellen med VA SYD:s numrering och status för varje punkt i yttrandet finns nu som Tabell 6 i [steg 3](03_Yttrande_over_bemotandet.md), där den hör hemma som underlag för själva yttrandet över bemötandet.
+Svarstabellen med VA SYD:s numrering och status för varje punkt i yttrandet finns nu som Tabell 6 i [skede 5](03_Yttrande_over_bemotandet.md), där den hör hemma som underlag för själva yttrandet över bemötandet.
 
 ## Vad kostar Källby och Sjölunda enligt underlagen?
 

@@ -1,12 +1,24 @@
-**Navigering:** [Steg 1: Synpunkter under samråd](01_Synpunkter_under_samrad.md) · [Steg 2: Yttrande gällande ansökan](02_Yttrande_gallande_ansokan.md) · **Steg 3: Yttrande över bemötandet** · [Spårbarhet](04_Sparbarhet_samrad_till_yttrande.md) · [Ändringslogg](05_Andringslogg.md) · [Live-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
+**Navigering:** [Skede 1: Synpunkter under samråd](01_Synpunkter_under_samrad.md) · [Skede 3: Yttrande gällande ansökan](02_Yttrande_gallande_ansokan.md) · **Skede 5: Yttrande över bemötandet** · [Spårbarhet](04_Sparbarhet_samrad_till_yttrande.md) · [Ändringslogg](05_Andringslogg.md) · [Live-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
 
-# Steg 3: Yttrande över VA SYD:s bemötande (mål M 3289-25), mall enligt sexdelsmodellen
+# Skede 5: Yttrande över VA SYD:s bemötande (mål M 3289-25), mall enligt sexdelsmodellen
 
 *Utkast 2026-10-14, Kent Lundgren. Det här är en mall och inte ett yttrande. Den innehåller det som går att hämta ur handlingarna: ärendets ram och VA SYD:s svar punkt för punkt. Föreningens ställningstaganden är lämnade öppna i mallen. Ett separat utkast till yttrande finns också, se Del 1. Inte behandlat eller beslutat av föreningens styrelse. Se [ändringsloggen](05_Andringslogg.md).*
 
-Det tredje steget i MAXIMA är ett yttrande till domstolen över sökandens bemötande. Det bygger på [steg 2](02_Yttrande_gallande_ansokan.md): samma nummer Y1–Y27 används, så att varje punkt går att följa till VA SYD:s svar. Strukturen är [sexdelsmodellen](https://kentlundgren.github.io/Codex/Fritid/NF/NCC_stenbryttning/struktur.html). Hur steget förhåller sig till de två första visas i Tabell 8 i [spårbarhetsdokumentet](04_Sparbarhet_samrad_till_yttrande.md).
+Skede 5 i MAXIMA-förloppet är ett yttrande till domstolen över sökandens bemötande. Det bygger på [skede 3](02_Yttrande_gallande_ansokan.md): samma nummer Y1–Y27 används, så att varje punkt går att följa till VA SYD:s svar. Strukturen är [sexdelsmodellen](https://kentlundgren.github.io/Codex/Fritid/NF/NCC_stenbryttning/struktur.html). Hur skedet förhåller sig till de andra skedena visas i Tabell 8 i [spårbarhetsdokumentet](04_Sparbarhet_samrad_till_yttrande.md).
 
 Underrättelsen, [aktbilaga 333](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333.pdf), är ett enda blad: PDF-sida 1 i en fil om 288 sidor. Övriga 287 sidor är de handlingar som domstolen bifogade. Tabell 7 i Del 6 visar vilka aktbilagor som ligger på vilka sidor.
+
+## Ett förslag på upplägg
+
+Mark- och miljööverdomstolen ordnar sina domskäl efter fråga och inte efter parternas numrering. I domen i NCC-målet ([Svea hovrätt, Mark- och miljööverdomstolen, 2024](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/NCC_dom/Svea%20HR%20M%20899-23%20Dom%202024-12-03.pdf), mål M 899-23) har domskälen rubriker som "Miljökonsekvensbeskrivningen" och "Natura 2000-tillstånd", och domstolen kommenterar inte varje krav för sig. Det talar för att ett yttrande över bemötandet blir mer användbart om det har följande upplägg. Förslaget är ett bidrag till diskussion och inte föreningens beslut.
+
+1. **Yrkanden.** Vidhåll de tidigare yrkandena och ange vid behov ett andrahandsyrkande.
+2. **Sammanfattning.** Några få meningar som går att citera fristående, var och en med sin hänvisning.
+3. **Några få huvudskäl under egna rubriker.** Varje huvudskäl har ett påstående, fakta med hänvisning (bilaga, avsnitt, sida), den rättsliga grunden och en begäran som går att bifalla eller avslå.
+4. **Övriga obesvarade punkter som en tabell i en bilaga**, med en begäran per rad. Då syns det vad som är obesvarat, utan att de mindre frågorna tar plats från huvudskälen. Tabellen med VA SYD:s numrering finns redan som Tabell 6.
+5. **Reservation** för att få yttra sig över sökandens kommande besked och uppdaterade sammanställning.
+
+Skälet till att inte ta med alla frågor i huvudtexten är att en motpart ofta har lättare att besvara de mindre kraven, och då kan undvika att besvara huvudkraven. Tidigare handlingar ligger redan i akten, så det som upprepas bör vara sådant som stöder argumentationen. Numrering och en begäran per punkt ([lärdom 1](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-1) och [lärdom 4](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4) i Samrådsguiden) behövs fortfarande, men för huvudskälen och för tabellens rader, inte för varje detalj.
 
 ## Del 1. Ärendets ram
 
@@ -21,7 +33,7 @@ Underrättelsen, [aktbilaga 333](https://github.com/kentlundgren/Codex/blob/main
 | **Underrättelse** | [Aktbilaga 333](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333.pdf), utfärdad av Växjö tingsrätt, mark- och miljödomstolen, 2026-10-08 (PDF-sida 1) |
 | **Sista dag** | 2026-11-06 ([aktbilaga 333](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333.pdf), i enlighet med tidsplanen i [aktbilaga 310](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Underr%C3%A4ttelse/V%C3%A4xj%C3%B6_TR_M_3289-25_Aktbil_333.pdf), PDF-sida 2). Anstånd kan inte påräknas |
 | **Därefter (tidsplanen)** | Vecka 50 2026: sökanden bemöter inkomna yttranden och ger in en uppdaterad sammanställning. Vecka 51 2026: kungörelse av kallelse till huvudförhandling. Vecka 5–6 2027: huvudförhandling med syn. Vecka 15 2027: målet avgörs |
-| **Föreningens tidigare yttrande** | Aktbilaga 257, inkom 2026-06-09. Se [steg 2](02_Yttrande_gallande_ansokan.md) |
+| **Föreningens tidigare yttrande** | Aktbilaga 257, inkom 2026-06-09. Se [skede 3](02_Yttrande_gallande_ansokan.md) |
 | **Avsändare och mandat** | Lunds Naturskyddsförening. Att besluta: vem som undertecknar, och på vilket mandat |
 | **Utkast** | Ett utkast till yttrande, daterat 2026-10-13 i filnamnet, har visats för medlemmar i Plangruppen. [Läs Word-filen i webbläsaren](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fkentlundgren%2FCodex%2Fmain%2FFritid%2FNF%2FMaxima%2FTesttext%2F261013_yttrande_over_VA_SYDs_bemotande_.docx) · [Word-filen på GitHub](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Testtext/261013_yttrande_over_VA_SYDs_bemotande_.docx) (laddas ned). Inte beslutat av föreningen |
 | **Status** | Mallen: ingen text är beslutad |
@@ -40,7 +52,7 @@ VA SYD har meddelat att de återkommer vecka 50 2026 med sin inställning till k
 
 ## Del 4. Synpunkter, punkt för punkt
 
-Använd samma nummer som i steg 2. För varje punkt behöver yttrandet tre saker: vad VA SYD svarade, vad föreningen vidhåller, och vad som är nytt sedan yttrandet. Sista kolumnen i Tabell 6 är till för föreningens ställning.
+Använd samma nummer som i skede 3. För varje punkt behöver yttrandet tre saker: vad VA SYD svarade, vad föreningen vidhåller, och vad som är nytt sedan yttrandet. Sista kolumnen i Tabell 6 är till för föreningens ställning.
 
 Tabellen är förifylld utifrån aktbilaga 320. ”Obesvarad i sak” betyder att VA SYD inte tar upp punktens innehåll, bara hänvisar eller svarar samlat.
 
@@ -78,11 +90,11 @@ Tabellen är förifylld utifrån aktbilaga 320. ”Obesvarad i sak” betyder at
 
 ## Del 5. Vad som begärs
 
-Yrkandena i yttrandet (Tabell 4 i [steg 2](02_Yttrande_gallande_ansokan.md)) gäller tills föreningen beslutar annat. Att ta ställning till:
+Yrkandena i yttrandet (Tabell 4 i [skede 3](02_Yttrande_gallande_ansokan.md)) gäller tills föreningen beslutar annat. Att ta ställning till:
 
 1. Om yrkandena vidhålls oförändrade, eller om något ska läggas till.
 2. Om föreningen vill reservera sig för att få yttra sig igen när VA SYD återkommer vecka 50 2026.
-3. Om varje punkt ska ha en egen begäran. I yttrandet i steg 2 har bara Y19 en uttrycklig begäran. Se lärdom 4 i [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4).
+3. Om varje punkt ska ha en egen begäran. I yttrandet (skede 3) har bara Y19 en uttrycklig begäran. Se lärdom 4 i [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4).
 4. Vem som undertecknar, och på vilket mandat.
 5. Att den fil som föreningen lämnade in som aktbilaga 257 jämförs med VA SYD:s markerade kopia innan något återges.
 
@@ -97,12 +109,12 @@ Underrättelsen kom som en PDF om 288 sidor: [underrättelsepaketet](https://git
 | Aktbilaga | Handling | Avsändare och datum | PDF-sida i paketet | Varför den är viktig för föreningen |
 |---|---|---|---|---|
 | 333 | Underrättelse | Växjö tingsrätt, mark- och miljödomstolen, 2026-10-08 | 1 | Ger föreningen tillfälle att yttra sig. Sista dag 2026-11-06. Anstånd kan inte påräknas |
-| 310 | Justerad preliminär tidsplan | Mark- och miljödomstolen, 2026-07-02 | 2 | Visar stegen efter bemötandet, bland annat vecka 45 (yttrande över bemötandet), vecka 50, huvudförhandling vecka 5–6 2027 |
+| 310 | Justerad preliminär tidsplan | Mark- och miljödomstolen, 2026-07-02 | 2 | Visar skedena efter bemötandet, bland annat vecka 45 (yttrande över bemötandet), vecka 50, huvudförhandling vecka 5–6 2027 |
 | 320 | Yttrande i mål nr M 3289-25, VA SYD:s bemötande | VA SYD genom Advokatfirman Delphi i Malmö AB, 2026-09-30 | 3–132 | Det som yttrandet över bemötandet ska besvara. 130 sidor. VA SYD bemöter yttrandena under var sin rubrik och följer deras numrering |
 | 327 | Bilaga A2-Y-a, Yrkanden och villkor | VA SYD, 2026-09-30 | 185–195 | Sammanställning av VA SYD:s yrkanden och villkorsförslag. Tillägg mot komplettering 2026-03-11 (aktbilaga 99) står med fetstil och borttagen text är överstruken |
 | 328 | Bilaga A5-Y-a, Uppdatering Bilaga A5 Förteckning åtaganden | VA SYD, 2026-09-30 | 196–200 | VA SYD:s åtaganden, bland annat under byggskedet |
 | 332 | Bilaga A1-Y-a, Numrerade yttranden från myndigheter med flera | VA SYD, inkom 2026-10-08 | 213–288 | Innehåller yttrandena med VA SYD:s numrering. Här finns föreningens yttrande, aktbilaga 257, som följer nedan |
-| 257 | Lunds Naturskyddsförenings yttrande (i bilaga A1-Y-a) | Föreningen, inkom 2026-06-09 | 274–280 | Föreningens eget yttrande i VA SYD:s numrerade version, se [steg 2](02_Yttrande_gallande_ansokan.md) |
+| 257 | Lunds Naturskyddsförenings yttrande (i bilaga A1-Y-a) | Föreningen, inkom 2026-06-09 | 274–280 | Föreningens eget yttrande i VA SYD:s numrerade version, se [skede 3](02_Yttrande_gallande_ansokan.md) |
 | 280 | Naturskyddsföreningen i Lomma Bjärreds yttrande (i bilaga A1-Y-a) | Naturskyddsföreningen i Lomma Bjärred, inkom 2026-06-17 | 281–288 | Åtta sidor med liknande uppbyggnad som föreningens yttrande |
 | 299 | Miljönämndens yttrande (i bilaga A1-Y-a) | Miljönämnden, Lunds kommun, 2026-06-11, inkom 2026-06-18 | 271–273 | Yttrande från Lunds kommun |
 | 304 | Länsstyrelsen Skånes yttrande (i bilaga A1-Y-a) | Länsstyrelsen Skåne, 2026-06-18 | 215–249 | Yttrande från länsstyrelsen, 35 sidor |

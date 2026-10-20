@@ -1,6 +1,6 @@
 # PRD — Samrådsguiden 2.0: från samråd till slutlig dom (och vidare)
 
-**Status:** v0.1, utkast till diskussion. B1–B3 beslutade 2026-10-19 (se Tabell 2), B4–B9 öppna. Ordningen i B1 är 1.19 skedeskartan, 1.20 MÖD, 1.21 efter laga kraft, 1.22 gruppmodulen (då ändras ingressen och versionen blir 2.0). Skeden som saknar fördjupning markeras "Under uppbyggnad". Ingenting är byggt. Inte genomgånget med fräscha ögon (se avsnitt 12). Juridiska uppgifter i det här dokumentet är markerade **[verifiera]** när de inte är lästa i lagtext eller avgörande.
+**Status:** v0.1, utkast till diskussion. B1–B3 beslutade 2026-10-19 (se Tabell 2), B4–B9 öppna. 1.19 är redan utgiven (enhetlig skedesnumrering i MAXIMA-förloppet). Ordningen i B1 är därför 1.20 skedeskartan, 1.21 MÖD, 1.22 efter laga kraft, 1.23 gruppmodulen (då ändras ingressen och versionen blir 2.0). Skeden som saknar fördjupning markeras "Under uppbyggnad". Ingenting är byggt. Inte genomgånget med fräscha ögon (se avsnitt 12). Juridiska uppgifter i det här dokumentet är markerade **[verifiera]** när de inte är lästa i lagtext eller avgörande.
 **Skapad:** 2026-10-19
 **Hör till:** [`PRD_samradsguiden.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/PRD_samradsguiden.md), [`PRD_samradsguiden_fordjupning.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/PRD_samradsguiden_fordjupning.md), [`PRD_samradsguiden_maxima.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/PRD_samradsguiden_maxima.md) och [`SPEC_samradsguiden.md`](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/SPEC_samradsguiden.md). Detta ersätter dem inte.
 **Versionsnivå:** Enligt README:ns tumregel är en grundläggande omstrukturering **2.0**, ett innehållstillägg 1.x. Det här förslaget är en omstrukturering av guidens *omfång* (från samrådsskedet till hela vägen), men kan byggas i steg som var och en är 1.x. Se öppet beslut B1.
@@ -71,6 +71,8 @@ Skedeskarta för tre spår. Förslag till skeden, som gäller i olika grad per s
 6. Dom eller beslut i första instans.
 7. Överklagande till MÖD, prövningstillstånd **[verifiera]**.
 8. Tiden efter laga kraft: villkor, prövotid, tillsyn, egenkontroll, omprövning, anmälningsärenden, ändring av tillstånd.
+
+**Obs, begreppet skede.** Sedan version 1.19 betyder "skede 1–8" på `maxima.html` och i `Maxima/Struktur/` en numrerad handling i MAXIMA-förloppet (skede 1 samrådsbrev, 5 yttrande över bemötandet). Skedeskartan här beskriver ett *allmänt* förlopp och får inte numreras på samma sätt, annars kolliderar numren. Skedena i skedeskartan benämns med namn (till exempel "Samråd", "Dom i första instans") och numreras bara om det behövs, då som "fas 1–8". Se öppet beslut B10.
 
 För varje skede samma fasta fält: *Vem beslutar. Vad du kan göra. Frist eller tidpunkt. Vad händer om du avstår. Vad du bör ha med dig. Vad du kan be sökanden eller kommunen göra. Källa.* Fälten ska vara fasta så att sidan är jämförbar mellan skeden.
 
@@ -144,7 +146,7 @@ Statisk HTML, delad `styles.css`, `script.js` och `data.js`. Skedeskartans inneh
 
 | # | Beslut | Förslag |
 |---|---|---|
-| B1 | Versionsnivå: en stor 2.0-release eller fyra steg 1.19–1.22? | **BESLUTAT 2026-10-19: steg.** Skedeskartan först (1.19), sedan MÖD (1.20), efter laga kraft (1.21), gruppmodul (1.22). Kalla det 2.0 när hela vägen är ihopkopplad och ingressen ändrad. |
+| B1 | Versionsnivå: en stor 2.0-release eller fyra steg 1.20–1.23? | **BESLUTAT 2026-10-19: steg.** Skedeskartan först (1.20), sedan MÖD (1.21), efter laga kraft (1.22), gruppmodul (1.23). Kalla det 2.0 när hela vägen är ihopkopplad och ingressen ändrad. |
 | B2 | Ska guiden även riktas till sökande och kommuner? | **BESLUTAT 2026-10-19:** Nej som egen sida. Ja som en återkommande ruta "Vad ni kan be sökanden göra". |
 | B3 | Heter guiden fortfarande *Samrådsguiden*? Namnet täcker inte längre allt. | **BESLUTAT 2026-10-19:** Behåll namnet men ändra underrubriken (t.ex. "Från samråd till dom och uppföljning"), eftersom adresser och länkar redan finns. |
 | B4 | Hur hanteras rättsfrågor där gruppen inte är överens (hänsynsreglernas status, alternativa yrkanden)? | Skriv fram båda läsningarna, markera som omtvistat, ange att jurist bör frågas, och ange vad man ska fråga. Ta inte ställning. |
@@ -153,6 +155,7 @@ Statisk HTML, delad `styles.css`, `script.js` och `data.js`. Skedeskartans inneh
 | B7 | Ska skedeskartan täcka fler spår (t.ex. PBL-överklagande, regeringsprövning)? | Bara de tre befintliga spåren, med en ruta "Andra vägar". Efter förstagranskningen krymper rutan: kommunalt veto (bara vindkraft) och regeringsprövning (tre slag av verksamhet) rör inte typiska fall och nämns som undantag. |
 | B8 | Hur stor del av gruppmodulen gäller *just* en förening? | Allmän formulering. Inga namn, ingen beskrivning av någon enskild grupp. |
 | B9 | När byggs det? Yttrandefristen i MAXIMA är 6 november 2026. | Efter 6 november, så att erfarenheterna av yttrandet kan arbetas in. PRD och källplan kan göras före. |
+| B10 | Hur numreras skedena i skedeskartan så att de inte förväxlas med "skede 1–8" i MAXIMA-förloppet (version 1.19)? | Namn i stället för nummer. Behövs nummer: "fas 1–8". Ska avgöras innan 1.20. |
 
 ## 10. SPEC-checkpoint (global regel 6)
 
