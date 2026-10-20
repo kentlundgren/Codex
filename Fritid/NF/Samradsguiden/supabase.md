@@ -260,10 +260,23 @@ Firebase-sidan, [databas.html](https://kentlundgren.github.io/foreningar/Bjerred
 
 - **Öppen sida.** Vem som helst som hittar sidan kan rösta. Skyddet är att sidan inte länkas från menyn, att en webbläsare bara kan ha en röst åt gången, att funktionen avvisar felaktig indata och att antalet röster har ett tak (500). Det är ingen skyddad omröstning, och det är medvetet.
 - **Rösta flera gånger.** Den som öppnar en privat flik eller rensar webbläsardata får en ny röst. Gruppens ordning är därför ett underlag för samtal och inte ett beslut.
+- **En röst per webbläsare.** Nyckeln sparas i den webbläsare där man röstar, inte per dator eller person. Byter man namn eller flyttar om raderna ändras den befintliga rösten, det blir ingen ny. Två personer som använder samma webbläsare på samma dator delar därför en röst, och den som sparar sist skriver över den andra. Med en annan webbläsare, en annan webbläsarprofil eller en annan enhet blir det en ny röst. Detta är medvetet: utan inloggning finns inget annat sätt att veta vem som röstar. Se även [Möjliga utvidgningar](#utvidgningar).
 - **Namn är personuppgifter.** Ett namn som någon skriver in visas öppet för alla besökare och lagras hos Supabase. Sidan säger det vid fältet. Rösten kan tas bort med knappen på sidan, och du kan radera enstaka rader i databasen (steg 6).
 - **Publik nyckel.** Den ligger i `rangordning_config.js` och syns för alla. Det är avsett. Den hemliga nyckeln ska aldrig läggas i en fil i repot.
 - **Rösterna är publika på sidan.** Gruppens ordning syns för alla före sista dag, även för motparten i målet. Stäng röstningen med ett kommando (steg 6) om du vill frysa den.
 - **Provat mot det riktiga projektet 2026-10-20.** SQL-skriptet kördes utan fel. Därefter provades fjorton anrop mot projektet (se steg 5): en giltig röst sparades och lästes, dubbletter och ogiltiga id nekades, direkt läsning, skrivning och ändring av tabellerna nekades, och teströsten raderades. Sidan provades också mot projektet i en webbläsare. Allt gick som avsett. Det som inte är provat är många samtidiga besökare och flera olika enheter.
+
+## 6b. Möjliga utvidgningar (inte gjorda) <a id="utvidgningar"></a>
+
+Prototypen är medvetet enkel. Följande går att lägga till om behovet uppstår. Inget av det är byggt, och sidan [rangordning_prototyp.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/rangordning_prototyp.html) är oförändrad.
+
+| Utvidgning | Vad det löser | Hur det kan göras | Baksida |
+|---|---|---|---|
+| **Knapp för delad dator**, till exempel "Någon annan röstar på den här datorn" | Två personer kan dela dator och webbläsare utan att skriva över varandras röst. | Sidan skapar en ny slumpad nyckel i webbläsaren och nollställer den lokala röstmarkeringen. Den tidigare rösten ligger kvar i databasen. Ingen ändring i databasen behövs. | Gör det lättare att rösta flera gånger, men det går redan med en annan webbläsare. |
+| **Hindra dubbla röster från samma webbläsare efter rensning** | Den som rensar webbläsardata får inte en andra röst. | Kräver att man vet vem som röstar, till exempel inloggning eller en kod per person. | Bryter mot kravet på ingen inloggning. Troligen onödigt för en liten grupp. |
+| **Personlig kod eller länk per kollega** | Exakt en röst per person. | Varje kollega får en hemlig länk eller kod, och databasen godkänner bara kända koder. | Mer administration. Passar om gruppen är liten och känd. |
+| **Visa varje persons ordning** | Att se hur var och en rangordnat, och inte bara medelvärdet. | Databasen lagrar redan varje röst, och `hamta_roster()` ger dem. Sidan behöver bara visa dem. | Påverkar integriteten. Namnen är frivilliga, och anonyma röster skulle också synas som enskilda listor. |
+| **Direktuppdatering** | Rösterna syns direkt utan att vänta på de 15 sekunderna. | Supabase Realtime. Kräver att tabellen går att läsa av besökare, vilket i dag inte är fallet. | Sämre skydd för nycklarna. Avvaktade därför. |
 
 ## 7. Korsreferens åt andra hållet <a id="korsreferens"></a>
 
