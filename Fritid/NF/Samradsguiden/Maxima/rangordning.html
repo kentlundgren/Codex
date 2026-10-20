@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Prototyp: läsare kan ordna om frågorna i Tabell 6 och se gruppens gemensamma rangordning direkt. Utkast, inte beslutat av någon förening.">
+    <title>MAXIMA: gemensam rangordning, prototyp — Samrådsguiden</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../rangordning/rangordning.css">
+    <script src="../rangordning/rangordning_config.js"></script>
+    <script src="../script.js" defer></script>
+    <script src="../rangordning/rangordning.js" defer></script>
+  </head>
+  <body class="visible-anchors">
+    <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+
+    <!-- Prototyp 20 oktober 2026, flyttad 20 oktober 2026 från Samradsguiden/ till Samradsguiden/Maxima/.
+         Sidan ligger medvetet inte i toppmenyn och länkas inte från maxima.html förrän Kent har provat den. Bygger på Tabell 6 i maxima.html (samma rader, fasta id f01-f13).
+         Databas: Supabase, se supabase.md och supabase_setup.sql. -->
+    <nav class="mainnav" aria-label="Samrådsguiden">
+      <div class="wrap">
+        <a href="../index.html">Översikt</a>
+        <a href="../paverka.html">Så påverkar vi</a>
+        <a href="../checklista.html">Granska planen</a>
+        <a href="../fordjupning.html">Dispositionerna</a>
+        <a href="../lagtexter.html">Lagtexterna</a>
+        <a href="../verktyg.html">Bygg ditt yttrande</a>
+        <a href="../rangordning/" aria-current="page">Rangordningar</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="wrap hero__content">
+        <p class="eyebrow">MAXIMA, skede 5 · prototyp</p>
+        <h1>MAXIMA: rangordna frågorna i skede 5</h1>
+        <p class="lead">Flytta frågorna i den ordning du tycker att de bör prioriteras. Din röst räknas in direkt i gruppens rangordning, och Tabell 6 ordnas om efter den. Du behöver inte logga in och du kan vara anonym.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="#rangordning-val">Ordna om</a>
+          <a class="button" href="#tabell-6">Se Tabell 6</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="innehall" class="wrap">
+      <section class="section" id="om-prototypen">
+        <p class="eyebrow">Om sidan</p>
+        <h2>Så fungerar det <a class="anchor" href="#om-prototypen" aria-label="Länk till avsnittet">#</a></h2>
+        <ul>
+          <li><strong>Din rangordning.</strong> Dra en rad eller använd pilknapparna. Allt du gör sparas automatiskt.</li>
+          <li><strong>Gruppens rangordning.</strong> Varje fråga får sin medelplats av alla röster, och ordnas efter den. Medelplatsen är summan av alla platser delat med antalet röster.</li>
+          <li><strong>Namn är frivilligt.</strong> Skriver du ett namn visas det öppet. Anonyma röster räknas lika mycket.</li>
+          <li><strong>Ändra dig när du vill.</strong> Din röst ersätts när du flyttar igen. Du kan också ta bort den.</li>
+          <li><strong>Ingen inloggning.</strong> Din webbläsare har en slumpad nyckel, så att bara du kan ändra din egen röst. Rensar du webbläsarens data eller byter enhet blir det en ny röst.</li>
+        </ul>
+        <p class="method-note">Det här är en omröstning om frågorna i yttrandet över bemötandet i MAXIMA. Om hur rangordningar kan användas i samråd och yttranden i allmänhet, se <a href="../rangordning/">Rangordningar i Samrådsguiden</a>. Rangordningen är ett utkast till fortsatt diskussion och är inte beslutad av någon förening. Frågorna och förslaget kommer från <a href="../maxima.html#skede5-rangordning">Tabell 6 i avsnittet om skede 5</a>. Hur databasen är uppsatt beskrivs i <a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase.md">supabase.md</a>. Röstningen stänger vid sista dag, <a href="../maxima.html#sista-dag">6 november 2026</a>.</p>
+      </section>
+
+      <section class="section" id="rangordning-val">
+        <p class="eyebrow">Din röst</p>
+        <h2>Ordna frågorna <a class="anchor" href="#rangordning-val" aria-label="Länk till avsnittet">#</a></h2>
+        <div id="rangordning"><noscript><p>Rangordningen kräver JavaScript. Tabell 6 nedan visar förslaget.</p></noscript></div>
+      </section>
+
+      <section class="section" id="tabell-6-sektion">
+        <p class="eyebrow">Tabellen</p>
+        <h2>Tabell 6 med gruppens rang <a class="anchor" href="#tabell-6-sektion" aria-label="Länk till avsnittet">#</a></h2>
+        <p>Kolumnen "Förslag" är den ursprungliga ordningen. Kolumnen "Gruppens rang" och radernas ordning följer gruppens medelplats. Texten i övriga kolumner är densamma som i <a href="../maxima.html#tabell-6">Tabell 6 på maxima.html</a>.</p>
+        <div class="table-scroll">
+          <table id="tabell-6">
+            <caption>Tabell 6. Förslag till rangordning av frågorna i yttrandet över bemötandet (utkast, inte beslutat)</caption>
+            <tr><th>Förslag</th><th>Fråga</th><th>Varför den väger tungt eller lätt</th><th>Säkerhet</th></tr>
+            <tr data-id="f01" data-titel="Tunnelns verkningar för Höje å"><td>1</td><td><strong>Tunnelns verkningar för Höje å.</strong> När tunneln tas i bruk 2035 (sid. 42) upphör flödet av renat avloppsvatten från Källby, och temperaturen i reningsverksdammarna ändras.</td><td>Det är direkta eller indirekta miljöeffekter av det som ansöks om och ska redovisas i MKB:n (miljöbalken 6 kap. 2 och 35 §§). VA SYD uppger själva att konsekvenserna för naturreservatet, fridlysta arter och kumulativa effekter "inte har beaktats" (sid. 91). Formulerad som verkningar av tunneln, inte som en begäran att nedläggningen i sig ska prövas, möter den svaret att nedläggningen är ett separat ärende (sid. 75).</td><td>Hög på lagtexten. Medel på hur MKB:n beskriver flödet.</td></tr>
+            <tr data-id="f02" data-titel="Havsnivån vid Sjölunda"><td>2</td><td><strong>Havsnivån vid Sjölunda.</strong> Skyddet dimensioneras för år 2100 (sid. 93).</td><td>Konkret och möjligt att kontrollera. Länsstyrelsens vägledning anger att kustnära reningsverk bör ta höjd för värsta scenario och räkna 100 år efter färdigställande (Länsstyrelsen Skåne, 2023, s. 17). Nivån +3,5 m och år 2100 hittas inte som krav i vägledningen. Formuleras som en begäran om motivering, inte som ett lagbrott. Hur länge bygget pågår behöver kontrolleras innan siffran används.</td><td>Medel. Vägledningen är inte bindande, men en avvikelse utan motivering är ett trovärdighetsargument.</td></tr>
+            <tr data-id="f03" data-titel="Fjärde reningssteget och utredningsvillkoret"><td>3</td><td><strong>Fjärde reningssteget (kvartär rening) och utredningsvillkoret.</strong> VA SYD överväger ett villkor om att utreda frågan och återkommer vecka 50 (sid. 13, 47–48).</td><td>Bästa möjliga teknik hör till bedömningen nu (2 kap. 3 §). Ett utredningsvillkor kan flytta frågan till efter tillståndet. Tidskritisk, eftersom VA SYD svarar efter detta yttrande. Kräver ett ställningstagande: pröva nu, eller om domstolen ändå väljer villkor, ett konkret slutligt villkor med tidsgräns.</td><td>Medel.</td></tr>
+            <tr data-id="f04" data-titel="Villkor i andra hand"><td>4</td><td><strong>Villkor i andra hand.</strong> Till exempel kvartär rening, mätning av flödet i Höje å och havsnivåskydd enligt vägledningen, utan att avslagskravet ges upp.</td><td>Domstolen beslutar om villkor oavsett yrkande, men föreningen påverkar dem bara om den yrkar något. Det som saknas i domen är svårt att få in senare (24 kap. 11 §). Hur det formuleras utan att läsas som ett medgivande är en fråga för jurist.</td><td>Medel. Processfråga, låg säkerhet utan juristbesked.</td></tr>
+            <tr data-id="f05" data-titel="Alternativet Källby och nollalternativet"><td>5</td><td><strong>Alternativet Källby och nollalternativet.</strong></td><td>VA SYD skriver att alternativet "sannolikt" skulle kräva en annan recipient (sid. 92), vilket visar att det har bedömts men inte utretts. Recipient är det vattendrag eller hav som tar emot det renade vattnet. Begäran är att VA SYD anger bilaga, avsnitt och sida. Nollalternativet ska visa utvecklingen om verksamheten inte påbörjas (6 kap. 35 § 3).</td><td>Medel.</td></tr>
+            <tr data-id="f06" data-titel="Verkställighetsförordnandet"><td>6</td><td><strong>Verkställighetsförordnandet.</strong> VA SYD anser att förordnande behövs för samtliga schakt (sid. 95).</td><td>Domstolen kan låta tillståndet tas i anspråk före laga kraft när det finns skäl (22 kap. 28 §). VA SYD redovisar inte vilka arbeten som inte kan vänta eller varför de inte kan göras inom gällande tillstånd. Se <a href="../maxima.html#verkstallighet">verkställighetsförordnande</a>.</td><td>Medel.</td></tr>
+            <tr data-id="f07" data-titel="Reservationen"><td>7</td><td><strong>Reservationen.</strong> För att få yttra sig över VA SYDs besked vecka 50 och Vattenmyndighetens yttranden.</td><td>Kostar nästan ingen läsarkraft och skyddar rätten att svara i skede 6. Ska med oavsett rang (<a href="../maxima.html#lar-10">lärdom 10</a>).</td><td>Hög som skydd, ingen sakfråga.</td></tr>
+            <tr data-id="f08" data-titel="Försämringsförbudet"><td>8</td><td><strong>Försämringsförbudet</strong> (regeln att en vattenförekomsts status inte får försämras, 5 kap. 4 §). VA SYD säger att nytt tillstånd för Källby inte är möjligt och hänvisar till Länsstyrelsen, utan lagstöd (sid. 92).</td><td>Kan förtjäna en högre plats än raden anger. Rimlighetsavvägningen i 2 kap. 7 § ändrar inte kraven i 5 kap. 4 §. Begäran är att VA SYD visar var Länsstyrelsen har uttalat sig och på vilken grund.</td><td>Medel.</td></tr>
+            <tr data-id="f09" data-titel="Tillståndstaket"><td>9</td><td><strong>Tillståndstaket</strong> (Tabell 3, första raden, punkt 3e).</td><td>Ställdes redan i samrådsbrevet (skede 1), saknas i samrådsredogörelsen och fick inget svar i bemötandet. Hör till redogörelsen för samråd i MKB:n (6 kap. 35 §). Enkel begäran, men sällan avgörande för utgången.</td><td>Medel.</td></tr>
+            <tr data-id="f10" data-titel="Bräddning"><td>10</td><td><strong>Bräddning</strong> (Tabell 3, andra raden, punkt 3d).</td><td>Bygger på mätdata, och VA SYD har påstått att bräddningen ökar utan att visa data. Föreningens uppgift stöds av miljörapporter till och med 2023. Rapporterna för 2024 och 2025 behöver kontrolleras innan frågan drivs hårt.</td><td>Medel, beroende av kontroll.</td></tr>
+            <tr data-id="f11" data-titel="Riskhantering och Alnarpsströmmen/PFAS"><td>11</td><td><strong>Riskhantering vid ett enda kustnära verk</strong> (7a–7b) och <strong>Alnarpsströmmen och PFAS</strong> (7d–7e).</td><td>VA SYD svarar att sådana risker inte prövas i en tillståndsansökan (sid. 94). MKB:n ska dock bedöma effekter till följd av yttre händelser (6 kap. 35 § 4). Begäran är en jämförelse med ett system där Källby bibehålls, respektive en hänvisning till var riskerna behandlas.</td><td>Medel.</td></tr>
+            <tr data-id="f12" data-titel="Ekonomi och elbehov"><td>12</td><td><strong>Ekonomi och elbehov</strong> (2 och 8).</td><td>Kostnader hör till rimlighetsavvägningen (2 kap. 7 §) men är sällan självständiga skäl. Uppgiften om kostnadsskillnaden måste formuleras likadant överallt och ha en källa.</td><td>Låg till medel.</td></tr>
+            <tr data-id="f13" data-titel="CO₂ vid rivning och fel vattenförekomst"><td>13</td><td><strong>CO₂ vid rivning</strong> (3f) och <strong>fel vattenförekomst</strong> (5c).</td><td>Rättelser och kompletteringar. Bra i bilagan, inte som huvudskäl.</td><td>Låg.</td></tr>
+          </table>
+        </div>
+        <p class="method-note">Sidhänvisningar till VA SYDs bemötande (aktbilaga 320) följer bemötandets egen paginering, PDF-sidan minus 2. Källorna finns under <a href="../maxima.html#kallor">Källor på maxima.html</a>. Kontrollera uppgifterna mot källan.</p>
+      </section>
+    </main>
+
+    <footer><div class="wrap">Prototyp, levande dokument under fortsatt diskussion · <a href="../maxima.html#skede5-val" style="color:#f5d77f">Skede 5 på maxima.html</a> · <a href="../index.html" style="color:#f5d77f">Översikt</a></div></footer>
+
+    <a class="repo-link" href="https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Samradsguiden">GitHub</a>
+    <button class="tech-button" type="button" aria-haspopup="dialog" aria-controls="tech-dialog" aria-expanded="false">Teknik</button>
+    <dialog id="tech-dialog" aria-labelledby="tech-title">
+      <div class="dialog__content">
+        <button class="dialog__close" type="button" aria-label="Stäng tekniköversikt">×</button>
+        <p class="eyebrow">Tekniköversikt</p>
+        <h2 id="tech-title">Dynamisk webbsida med en liten databas</h2>
+        <ul>
+          <li>HTML för innehåll och struktur, CSS för formgivning</li>
+          <li>JavaScript för rangordningen (dra och släpp, pilknappar, medelplats)</li>
+          <li>Supabase (databas i molnet) lagrar rösterna. Sidan anropar fem funktioner via ett API, utan inloggning</li>
+          <li>Sidan är dynamisk: innehållet ändras när någon röstar. Sidfilerna ligger oförändrade på GitHub Pages och hämtar rösterna från databasen</li>
+          <li>Utan inställningar körs ett demoläge i den egna webbläsaren</li>
+        </ul>
+        <pre aria-label="Förenklad filstruktur"><code>Samradsguiden/
+├── Maxima/
+│   ├── rangordning.html            (den här sidan)
+│   └── rangordning_prototyp.html   (ersättningssida, skickar vidare hit)
+├── rangordning/
+│   ├── index.html                  (allmänt om rangordningar)
+│   ├── rangordning.js              (dra och släpp, medelplats)
+│   ├── rangordning.css
+│   └── rangordning_config.js       (adress och publik nyckel)
+├── supabase_setup.sql              (tabeller och funktioner)
+├── supabase.md                     (beskrivning, jämförelse med Firebase)
+├── styles.css
+└── script.js</code></pre>
+        <p>Beskrivning steg för steg: <a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase.md">supabase.md</a>. Jämförelse med Firebase: <a href="https://kentlundgren.github.io/foreningar/BjerredsSaltsjobad/inpasseringar/databas.html">databas.html (Bjerreds Saltsjöbad)</a>.</p>
+      </div>
+    </dialog>
+  </body>
+</html>

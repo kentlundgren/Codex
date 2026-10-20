@@ -2,7 +2,7 @@
 
 *Arbetsdokument 2026-10-20. Beskriver vad som görs för att skapa och använda en Supabase-databas för den gemensamma rangordningen av frågorna i Tabell 6 ([maxima.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#tabell-6)). Jämförs med motsvarande beskrivning för Firebase: [databas.html, Bjerreds Saltsjöbad](https://kentlundgren.github.io/foreningar/BjerredsSaltsjobad/inpasseringar/databas.html). Uppgifter om Supabase är hämtade ur Supabases dokumentation och min egen kännedom och är inte kvalitetssäkrade. Kontrollera mot [supabase.com/docs](https://supabase.com/docs) innan något beslut bygger på dem, särskilt gränser och priser.*
 
-- **Prototypen:** [rangordning_prototyp.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning_prototyp.html)
+- **Prototypen:** [rangordning.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning.html)
 - **Tabeller och funktioner (SQL):** [supabase_setup.sql](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase_setup.sql)
 - **Allmänt om rangordningar:** [rangordning/](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/rangordning/)
 - **Sidans kod:** `rangordning/rangordning.js`, `rangordning/rangordning.css`, `rangordning/rangordning_config.js` (gemensam kod för alla rangordningar)
@@ -22,6 +22,7 @@
 | 2026-10-20 | Demoläget visades en stund på den publicerade sidan på grund av en äldre kopia i webbläsaren (Bild 9). Efter omladdning visades den riktiga databasen (Bild 11). |
 | 2026-10-20 | Funktionen `nollstall_roster` och kolumnen `admin_kod_hash` lades till (steg 7, bild 10). Provad med fel kod: svarar "Fel kod" efter ungefär två sekunder. |
 | 2026-10-20 | **Filerna flyttades.** Omröstningen om MAXIMA ligger nu på `Samradsguiden/Maxima/rangordning_prototyp.html`, och gemensam kod och en allmän sida om rangordningar ligger i `Samradsguiden/rangordning/`. Den gamla adressen (`Samradsguiden/rangordning_prototyp.html`) är en ersättningssida som skickar vidare. Databasen påverkades inte av flytten. |
+| 2026-10-20 | **Sidan döptes om** från `Maxima/rangordning_prototyp.html` till `Maxima/rangordning.html`, eftersom ordet "prototyp" inte hör hemma i en adress som används på riktigt. Den tidigare adressen är nu en ersättningssida som skickar vidare, och det gäller även den allra första (`Samradsguiden/rangordning_prototyp.html`). Röster och användarnas identitet påverkades inte, eftersom webbläsaren sparar nyckeln per webbplats och inte per sida. |
 | 2026-10-20 | Menyvalet *Rangordningar* lades till i huvudmenyn på alla sidor, och en ruta på `maxima.html` (#skede5-rangordning) länkar till omröstningen. |
 
 ---
@@ -301,7 +302,7 @@ https://supabase.com/dashboard/project/<projektets id>/<verktyg>
 ## 4. Så hänger sidans kod ihop <a id="kod"></a>
 
 ```
-Maxima/rangordning_prototyp.html   Sidan för MAXIMA: Tabell 6 i HTML, utan databas fungerar den som vanlig tabell
+Maxima/rangordning.html   Sidan för MAXIMA: Tabell 6 i HTML, utan databas fungerar den som vanlig tabell
 rangordning/index.html             Allmänt om rangordningar i Samrådsguiden, med länk till pågående omröstningar
 rangordning/rangordning.js         Dra och släpp, pilknappar, medelplats, markeringar, spara och hämta
 rangordning/rangordning.css        Utseende
@@ -345,7 +346,7 @@ Firebase-sidan, [databas.html](https://kentlundgren.github.io/foreningar/Bjerred
 
 ## 6b. Möjliga utvidgningar (inte gjorda) <a id="utvidgningar"></a>
 
-Prototypen är medvetet enkel. Följande går att lägga till om behovet uppstår. Inget av det är byggt, och sidan [rangordning_prototyp.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning_prototyp.html) är oförändrad.
+Prototypen är medvetet enkel. Följande går att lägga till om behovet uppstår. Inget av det är byggt, och sidan [rangordning.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning.html) är oförändrad.
 
 | Utvidgning | Vad det löser | Hur det kan göras | Baksida |
 |---|---|---|---|
