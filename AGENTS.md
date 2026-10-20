@@ -24,6 +24,10 @@
 - Personliga inlägg och synpunkter från enskilda medlemmar läggs i en mapp som heter `Underlag_synpunkter/`, eller får ett filnamn som slutar på `_inlagg`. De får aldrig committas eller pushas. Mappnamnet och filnamnet är ignorerade av Git och spärrade både vid commit och push, för alla filtyper.
 - Mappen `Fritid/NF/Plangruppen/Mail/` innehåller intern mejlväxling. Den committas bara i ett eget lokalt Git-repo utan fjärranslutning, och får aldrig pushas till GitHub. Moderrepot ignorerar mappen; commit- och push-hooks spärrar publicering.
 
+### Automatiska spärrar i Git
+
+Mappen [`.githooks/`](.githooks/) innehåller spärrar som Git kör på den här datorn före varje commit och push, oavsett verktyg. Vissa filer stoppas vid commit (`pre-commit`) och andra vid push (`pre-push` och `pre-push.ps1`). Det gäller bland annat filer och mappar med privat innehåll, och filnamn som innehåller vissa ord. `check-public-documents.ps1` kontrollerar de två publicerade huvuddokumenten. Vad som exakt stoppas står i filerna, som är originalet. Läs dem eller kör `git push --dry-run Codex main` för att se vad som skulle stoppas. Mappar som Git ignorerar står i [`.gitignore`](.gitignore).
+
 ## Löpande källhänvisningar
 
 - Varje utskriven webbadress i en källförteckning, i löpande text eller i en parentes ska vara en klickbar länk (`<a href>` i HTML, Markdown-länk i `.md`), inte ren text. Kontrollera efter bygget att inga adresser står som ren text och att varje länk svarar och leder till rätt sida.
