@@ -151,6 +151,38 @@ grant execute on function public.hamta_status()                      to anon, au
 grant execute on function public.spara_rost(uuid, text, jsonb)       to anon, authenticated;
 grant execute on function public.radera_min_rost(uuid)               to anon, authenticated;
 
+-- 6. Administratör: nollställ alla röster med en egen kod ------------------------------------
+-- Koden lagras som kontrollsumma i inställningstabellen. Du väljer koden själv (steg 7 i supabase.md)
+-- och sätter den med kommandot längst ned. Så länge ingen kod är satt går det inte att nollställa via sidan.
+alter table public.rangordning_installning add column if not exists admin_kod_hash text;
+
+create or replace function public.nollstall_roster(p_kod text)
+returns int
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_hash  text;
+  v_antal int;
+begin
+  select i.admin_kod_hash into v_hash from public.rangordning_installning i where i.id = 1;
+
+  if v_hash is null or p_kod is null
+     or encode(sha256(convert_to(p_kod, 'UTF8')), 'hex') <> v_hash then
+    perform pg_sleep(2);                         -- bromsar gissning av koden
+    raise exception 'Fel kod';
+  end if;
+
+  delete from public.rangordning_roster where true;
+  get diagnostics v_antal = row_count;
+  return v_antal;
+end;
+$$;
+
+revoke all on function public.nollstall_roster(text) from public;
+grant execute on function public.nollstall_roster(text) to anon, authenticated;
+
 -- Nyttiga kommandon senare (kör i SQL Editor när du behöver dem):
 --   Stäng röstningen nu:        update public.rangordning_installning set stangd = true  where id = 1;
 --   Öppna igen:                 update public.rangordning_installning set stangd = false where id = 1;
@@ -158,3 +190,4 @@ grant execute on function public.radera_min_rost(uuid)               to anon, au
 --   Se alla röster:             select namn, ordning, andrad from public.rangordning_roster order by andrad desc;
 --   Ta bort en enstaka röst:    delete from public.rangordning_roster where namn = 'Namn att ta bort';
 --   Töm alla röster:            truncate public.rangordning_roster;
+--   Sätt adminkod (byt texten):  update public.rangordning_installning set admin_kod_hash = encode(sha256(convert_to('DIN-KOD-HÄR','UTF8')),'hex') where id = 1;

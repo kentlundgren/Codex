@@ -40,3 +40,9 @@
 
 @media (max-width:820px) { .rg-kolumner { grid-template-columns:1fr; } .rg-medel { display:none; } }
 @media (prefers-reduced-motion:reduce) { .rg-blink, #tabell-6 tr.rg-blink td { animation:none; } .rg-rad { transition:none; } }
+
+/* Diskret administratörsknapp (nollställ). Nästan osynlig men nåbar med tangentbord. */
+.rg-adminrad { margin:14px 0 0; text-align:right; }
+.rg-admin { padding:2px 4px; border:0; background:none; color:#b7bcae; font:11px Arial,sans-serif; cursor:pointer; }
+.rg-admin:hover, .rg-admin:focus-visible { color:var(--muted); text-decoration:underline; }
+.rg-admin:focus-visible { outline:2px solid var(--moss); outline-offset:2px; }

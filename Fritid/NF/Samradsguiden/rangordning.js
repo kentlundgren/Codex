@@ -137,7 +137,8 @@
         });
       },
       spara: function (t, n, o) { return rpc("spara_rost", { p_token: t, p_namn: n || null, p_ordning: o }); },
-      radera: function (t) { return rpc("radera_min_rost", { p_token: t }); }
+      radera: function (t) { return rpc("radera_min_rost", { p_token: t }); },
+      nollstall: function (kod) { return rpc("nollstall_roster", { p_kod: kod }); }
     };
   }
 
@@ -175,7 +176,8 @@
       radera: function () {
         write(read().filter(function (v) { return v.id !== "demo-jag"; }));
         return Promise.resolve(null);
-      }
+      },
+      nollstall: function () { write([]); return Promise.resolve(0); }
     };
   }
 
@@ -205,9 +207,12 @@
     el("p", { class: "rg-hint", text: "Dra en rad, eller använd pilknapparna, för att flytta den. Det du gör räknas in i gruppens ordning direkt." }),
     nameRow, ownList, actions, statusLine
   ]);
+  // Diskret administratörsknapp: nollställer alla röster, men bara med rätt kod (kontrolleras i databasen).
+  var adminBtn = el("button", { type: "button", class: "rg-admin", "aria-label": "Administratör: nollställ alla röster", title: "Nollställ (kräver kod)", text: "nollställ" });
   var groupBox = el("div", { class: "rg-ruta rg-ruta--grupp" }, [
     el("h3", { text: "Gruppens rangordning" }),
-    groupMeta, groupList, voters
+    groupMeta, groupList, voters,
+    el("p", { class: "rg-adminrad" }, [adminBtn])
   ]);
 
   root.appendChild(banner);
@@ -402,6 +407,21 @@
       saveState = ""; load();
       announce("Din röst är borttagen.");
     }).catch(function () { saveState = "fel"; render(); });
+  });
+
+  adminBtn.addEventListener("click", function () {
+    var kod = DEMO ? "demo" : window.prompt("Administratörskod för att nollställa alla röster:");
+    if (!kod) return;
+    if (!window.confirm("Alla röster raderas för alla besökare. Det går inte att ångra. Fortsätta?")) return;
+    backend.nollstall(kod).then(function (antal) {
+      harRostat = false; myId = null;
+      store("rangordning_har_rostat", null); store("rangordning_mitt_id", null);
+      saveState = ""; prevRank = null;
+      announce("Alla röster är nollställda" + (antal ? " (" + antal + " raderade)." : "."));
+      return load();
+    }).catch(function (err) {
+      window.alert(/Fel kod/i.test(String(err && err.message)) ? "Fel kod." : "Det gick inte att nollställa just nu.");
+    });
   });
 
   var nameTimer = null;

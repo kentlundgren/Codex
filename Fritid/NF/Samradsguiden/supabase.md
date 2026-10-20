@@ -126,7 +126,8 @@ Vad filen gör:
 | `hamta_status()` | Ger sista dag, om det är stängt och antal röster | Sidan kan visa "röstningen är stängd". |
 | `spara_rost(token, namn, ordning)` | Kontrollerar indata, sparar eller ersätter rösten | Kontrollen sker i databasen, inte i webbläsaren. Bara kända fråge-id, inga dubbletter, rensat namn och en gräns på 500 röster mot översvämning. |
 | `radera_min_rost(token)` | Raderar den egna raden | Den som har skrivit sitt namn kan ta bort det igen. |
-| `revoke` och `grant` | Bara de fyra funktionerna får anropas av anonyma | Allt annat är stängt. |
+| `nollstall_roster(kod)` | Raderar alla röster, men bara med rätt adminkod (kontrollsumman ligger i inställningstabellen) | Gör att du kan nollställa från sidan utan att vem som helst kan göra det. Se steg 7. |
+| `revoke` och `grant` | Bara de fem funktionerna får anropas av anonyma | Allt annat är stängt. |
 
 **Varför funktioner i stället för att låta sidan skriva i tabellen?** Rösternas rader är offentliga i den meningen att alla ser gruppens ordning. Hade sidan fått läsa tabellen direkt hade den också fått läsa nycklarna, och då hade vem som helst kunnat ändra någon annans röst. Nu lagras bara en kontrollsumma av nyckeln, och bara den som har nyckeln kan uppdatera sin rad.
 
@@ -170,6 +171,12 @@ curl -s -X POST "https://PROJEKT.supabase.co/rest/v1/rpc/hamta_status" -H "apike
 
 Teströsterna är raderade, så databasen är tom inför start.
 
+**Om du ser "Demoläge" och några röster som inte stämmer.** Efter att konfigurationen pushats visade den publicerade sidan en stund fortfarande *Demoläge: ingen databas är ansluten* och "Medel av 4 röster" (Bild 9). De fyra rösterna var tre påhittade demoröster plus en provröst i den egna webbläsaren, inte riktiga röster. Demoläget slås på när adress eller nyckel saknas, och det hände här eftersom webbläsaren visade en äldre kopia av `rangordning_config.js`. Lösning: ladda om med Ctrl+F5. Om det består, kontrollera att filen på Pages innehåller adressen och nyckeln: `https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/rangordning_config.js`.
+
+![Den publicerade prototypen i demoläge: banner om att ingen databas är ansluten och gruppens ordning med fyra röster](../Maxima/Supabase/Bilder/Skapa_supabase_konto_09.jpg)
+
+*Bild 9. Prototypen i demoläge på den publicerade sidan, före omladdning. Källa: skärmdump, 2026-10-20.*
+
 **Så testar du själv:**
 
 1. Öppna prototypen, flytta en rad och kontrollera att **Gruppens rang** och Tabell 6 ändras direkt.
@@ -191,7 +198,27 @@ truncate public.rangordning_roster;                                       -- tö
 
 Efter sista dag stänger databasen skrivning av sig själv (funktionen `spara_rost` kontrollerar sista dag). Sidan visar då den slutliga ordningen.
 
-### Steg 7. Flytta in i maxima.html (när prototypen är godkänd)
+### Steg 7. Nollställa alla röster från sidan (administratör)
+
+Under gruppens rangordning finns en nästan osynlig länk, **nollställ**, i ljusgrått och med liten text. Den raderar alla röster för alla besökare. Av det skälet kräver den en **adminkod** som bara du känner till. Koden kontrolleras i databasen och står inte i sidans kod.
+
+1. **Kör SQL-filen en gång till** (den går att köra om): [supabase_setup.sql](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/supabase_setup.sql). Då läggs funktionen `nollstall_roster` och en kolumn för kodens kontrollsumma till.
+2. **Välj en kod** med minst tolv tecken, till exempel flera ord efter varandra. Skriv den inte i chatten och inte i någon fil i repot.
+3. **Sätt koden** i SQL Editor, med din kod i stället för `DIN-KOD-HÄR`:
+
+   ```sql
+   update public.rangordning_installning
+   set admin_kod_hash = encode(sha256(convert_to('DIN-KOD-HÄR','UTF8')),'hex')
+   where id = 1;
+   ```
+
+   Databasen sparar bara kontrollsumman av koden. Själva koden syns dock i SQL Editors historik, så använd inte ett lösenord du har på andra ställen.
+4. **Använd den:** klicka på *nollställ* under gruppens rangordning, skriv koden och bekräfta. Vid fel kod väntar databasen två sekunder innan den svarar nej, för att göra gissning långsam.
+5. Har du inte satt någon kod går det inte att nollställa via sidan. Du kan alltid göra det direkt i SQL Editor: `truncate public.rangordning_roster;`.
+
+*Varför kod?* Sidan är öppen och utan inloggning. En knapp som nollställer utan kontroll hade kunnat användas av vem som helst som hittar sidan.
+
+### Steg 8. Flytta in i maxima.html (när prototypen är godkänd)
 
 Tabell 6 på [maxima.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#tabell-6) har idag ingen rangordning. För att flytta in funktionen behövs fyra ändringar: `data-id` och `data-titel` på tabellens rader, `<div id="rangordning"></div>` före tabellen, och tre rader i `<head>` (`rangordning.css`, `rangordning_config.js`, `rangordning.js`). Löptexten som hänvisar till "rad 1–4" avser kolumnen **Förslag** och ändras inte.
 
@@ -202,7 +229,7 @@ rangordning_prototyp.html   Sidan: Tabell 6 i HTML, utan databas fungerar den so
 rangordning.js              Dra och släpp, pilknappar, medelplats, markeringar, spara och hämta
 rangordning.css             Utseende
 rangordning_config.js       Projektets adress och publika nyckel
-supabase_setup.sql          Tabeller, regler och de fyra funktionerna
+supabase_setup.sql          Tabeller, regler och de fem funktionerna
 ```
 
 - **Utan JavaScript eller databas** visar sidan Tabell 6 i förslagets ordning. Det motsvarar `BASE_DATA` som reserv i Firebase-lösningen.
