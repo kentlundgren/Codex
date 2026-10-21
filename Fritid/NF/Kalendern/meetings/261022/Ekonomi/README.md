@@ -1,6 +1,6 @@
 # Resultaträkning — Lunds Naturskyddsförening
 
-**Live:** [https://kentlundgren.github.io/Codex/Fritid/NF/Kalendern/meetings/261021/Ekonomi/](https://kentlundgren.github.io/Codex/Fritid/NF/Kalendern/meetings/261021/Ekonomi/)
+**Live:** [https://kentlundgren.github.io/Codex/Fritid/NF/Kalendern/meetings/261022/Ekonomi/](https://kentlundgren.github.io/Codex/Fritid/NF/Kalendern/meetings/261022/Ekonomi/)
 *(publiceras när sidan committats och pushats — GitHub Pages är redan aktiverat för repot)*
 
 Internt arbetsmaterial för styrelsen: en resultaträkning byggd ur föreningens huvudbok,
@@ -17,9 +17,9 @@ Repo-rot lokalt:
 
 Den här mappen lokalt:
 
-`C:\Users\kentl\OneDrive\AI\Codex\Fritid\NF\Kalendern\meetings\261021\Ekonomi`
+`C:\Users\kentl\OneDrive\AI\Codex\Fritid\NF\Kalendern\meetings\261022\Ekonomi`
 
-På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Kalendern/meetings/261021/Ekonomi>
+På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Kalendern/meetings/261022/Ekonomi>
 
 ## Innehåll
 
