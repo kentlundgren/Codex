@@ -1,6 +1,6 @@
 *Utkast KL_261021*
 
-> **Om den här texten.** Utkast av Kent Lundgren till fortsatt diskussion, inte beslutat av någon förening och inte kvalitetssäkrat. Siffror och hänvisningar är hämtade ur angivna källor och ska kontrolleras mot källan. Det här är en kortversion med bara texten. Tidigare utkast är [KL_261019](Utkast_yttrande_over_bemotandet_KL_261019_kort.md) (19 punkter) och [KL_261020](Utkast_yttrande_over_bemotandet_KL_261020_kort.md) (9 punkter i huvudtexten och 8 rader i en bilaga). Juridiska bedömningar är läsningar av lagtext och inte granskade av jurist.
+> **Om den här texten.** Utkast av Kent Lundgren till fortsatt diskussion, inte beslutat av någon förening och inte kvalitetssäkrat. Siffror och hänvisningar är hämtade ur angivna källor och ska kontrolleras mot källan. Det här är en kortversion med bara texten. Tidigare utkast är [KL_261019](Utkast_yttrande_over_bemotandet_KL_261019_kort.md) (19 punkter) och [KL_261020](Utkast_yttrande_over_bemotandet_KL_261020_kort.md) (9 punkter i huvudtexten och 8 rader i en bilaga). Juridiska bedömningar är läsningar av lagtext och inte granskade av jurist. <mark>Gulmarkerat</mark> är den text som anger skälen för yrkandena. Markeringen är bara till granskning.
 
 # Yttrande
 
@@ -13,11 +13,11 @@
 
 LNF vidhåller sina yrkanden i aktbilaga 257 (LNF:s yttrande 2026-06-09):
 
-- att ansökan om MAXIMA avslås, bland annat av de skäl som anges i punkt 1–8 nedan,
-- att domstolen underkänner miljökonsekvensbeskrivningen (MKB), eftersom den är ofullständig och felaktig, bland annat på de punkter som anges i punkt 1–6 nedan och i Bilagan,
-- att verkställighetsförordnandet avslås, se punkt 10.
+- att ansökan om MAXIMA avslås, <mark>bland annat av de skäl som anges i punkt 1–8 nedan</mark>,
+- att domstolen underkänner miljökonsekvensbeskrivningen (MKB), eftersom den är ofullständig och felaktig, <mark>bland annat på de punkter som anges i punkt 1–6 nedan och i Bilagan</mark>,
+- att verkställighetsförordnandet avslås, <mark>se punkt 10</mark>.
 
-I andra hand, om domstolen inte avslår ansökan eller underkänner MKB:n nu, yrkar LNF att VA SYD föreläggs att komplettera MKB:n med de uppgifter som anges i punkt 1–7 och i Bilagan. Varje punkt anger vilken fråga och vilket lagrum den gäller, och slutar med vad LNF begär att VA SYD redovisar.
+I andra hand, om domstolen inte avslår ansökan eller underkänner MKB:n nu, yrkar LNF att VA SYD föreläggs att komplettera MKB:n med de uppgifter som anges i <mark>punkt 1–7 och i Bilagan</mark>. <mark>Varje punkt anger vilken fråga och vilket lagrum den gäller, och slutar med vad LNF begär att VA SYD redovisar.</mark>
 
 LNF vidhåller sina avslagskrav, eftersom VA SYDs bemötande i huvudsak hänvisar till tidigare handlingar och inte ger nya uppgifter om de frågor som tas upp nedan. LNF:s tidigare yttrande kvarstår och upprepas inte här.
 
