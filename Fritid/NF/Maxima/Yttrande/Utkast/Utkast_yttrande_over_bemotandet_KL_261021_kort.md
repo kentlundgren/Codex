@@ -13,11 +13,11 @@
 
 LNF vidhåller sina yrkanden i aktbilaga 257 (LNF:s yttrande 2026-06-09):
 
-- att ansökan om MAXIMA avslås,
-- att domstolen underkänner miljökonsekvensbeskrivningen (MKB), eftersom den är ofullständig och felaktig,
-- att verkställighetsförordnandet avslås.
+- att ansökan om MAXIMA avslås, bland annat av de skäl som anges i punkt 1–8 nedan,
+- att domstolen underkänner miljökonsekvensbeskrivningen (MKB), eftersom den är ofullständig och felaktig, bland annat på de punkter som anges i punkt 1–6 nedan och i Bilagan,
+- att verkställighetsförordnandet avslås, se punkt 10.
 
-I andra hand, om domstolen inte avslår ansökan eller underkänner MKB:n nu, yrkar LNF att VA SYD föreläggs att komplettera MKB:n med de uppgifter som anges nedan. Övriga frågor som VA SYD inte har besvarat redovisas i Bilagan.
+I andra hand, om domstolen inte avslår ansökan eller underkänner MKB:n nu, yrkar LNF att VA SYD föreläggs att komplettera MKB:n med de uppgifter som anges i punkt 1–7 och i Bilagan. Varje punkt anger vilken fråga och vilket lagrum den gäller, och slutar med vad LNF begär att VA SYD redovisar.
 
 LNF vidhåller sina avslagskrav, eftersom VA SYDs bemötande i huvudsak hänvisar till tidigare handlingar och inte ger nya uppgifter om de frågor som tas upp nedan. LNF:s tidigare yttrande kvarstår och upprepas inte här.
 
