@@ -7,20 +7,76 @@
   },
   "kalla": "Huvudbok 2026-10-21 (verifikat 1–40, t.o.m. 2026-10-02)",
   "intakter": [
-    { "id": "medlemsavgifter", "namn": "Medlemsavgifter", "belopp": 66156.00 },
-    { "id": "miljoanslag", "namn": "Miljöanslag till fotoutställningen", "belopp": 54000.00, "projekt": "fotoutstallning" },
-    { "id": "ersattning-cykelkarta", "namn": "Ersättning cykelkartor", "belopp": 97000.00, "projekt": "cykelkarta" },
-    { "id": "bokforsaljning", "namn": "Bokförsäljning (“Cykelturer i Lundabygden”)", "belopp": 2000.00 }
+    {
+      "id": "medlemsavgifter",
+      "namn": "Medlemsavgifter",
+      "belopp": 66156.0
+    },
+    {
+      "id": "miljoanslag",
+      "namn": "Miljöanslag till fotoutställningen",
+      "belopp": 54000.0,
+      "projekt": "fotoutstallning"
+    },
+    {
+      "id": "ersattning-cykelkarta",
+      "namn": "Ersättning cykelkartor",
+      "belopp": 97000.0,
+      "projekt": "cykelkarta"
+    },
+    {
+      "id": "bokforsaljning",
+      "namn": "Bokförsäljning (“Cykelturer i Lundabygden”)",
+      "belopp": 2000.0
+    }
   ],
   "kostnader": [
-    { "id": "administration", "namn": "Administration", "belopp": -7915.00 },
-    { "id": "programblad", "namn": "Programblad", "belopp": -75500.00 },
-    { "id": "arrangemang", "namn": "Arrangemang", "belopp": -1208.85 },
-    { "id": "fotoutstallning", "namn": "Fotoutställning", "belopp": -54024.56, "projekt": "fotoutstallning" },
-    { "id": "cykelkarta", "namn": "Cykelkarta", "belopp": -92115.91, "projekt": "cykelkarta" }
+    {
+      "id": "administration",
+      "namn": "Administration",
+      "belopp": -7915.0
+    },
+    {
+      "id": "programblad",
+      "namn": "Programblad",
+      "belopp": -75500.0
+    },
+    {
+      "id": "arrangemang",
+      "namn": "Arrangemang",
+      "belopp": -1208.85
+    },
+    {
+      "id": "fotoutstallning",
+      "namn": "Fotoutställning",
+      "belopp": -54024.56,
+      "projekt": "fotoutstallning"
+    },
+    {
+      "id": "cykelkarta",
+      "namn": "Cykelkarta",
+      "belopp": -92115.91,
+      "projekt": "cykelkarta"
+    }
   ],
   "projekt": [
-    { "id": "fotoutstallning", "namn": "Fotoutställning" },
-    { "id": "cykelkarta", "namn": "Cykelkarta" }
-  ]
+    {
+      "id": "fotoutstallning",
+      "namn": "Fotoutställning"
+    },
+    {
+      "id": "cykelkarta",
+      "namn": "Cykelkarta"
+    }
+  ],
+  "underlag": {
+    "fil": "Huvudbok_261021.docx",
+    "etikett": "Huvudbok 2026-10-21 (Word-fil)"
+  },
+  "huvudbokSlutrad": -11268.32,
+  "avstamning": {
+    "fil": "Huvudbok_261021_avstamning.xlsx",
+    "etikett": "Excel-analys av skillnaden",
+    "analys": "Alla delsummor i huvudboken stämmer med sina rader, så skillnaden ligger i huvudbokens slutrad eller i något som inte syns i utskriften. Närmaste hypotes: slutraden saknar verifikat 38 och 39 (frimärken 242 kr och muggar 100 kr, tillsammans 342 kr; ett verifikat är underlaget för en bokföringspost). Orsaken är ännu inte klarlagd och frågan är inte besvarad av ekonomiansvarig."
+  }
 }

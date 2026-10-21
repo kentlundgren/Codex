@@ -1,4 +1,6 @@
 :root {
+  --warn: #b45309;
+  --warn-soft: #fff1e0;
   --forest: #1B4332;
   --ink: #1C1F1B;
   --muted: #5B6358;
@@ -348,4 +350,56 @@ table.data-table tr.proj-c td { background: var(--proj-c); }
 @media (max-width: 640px) {
   .tech-grid { grid-template-columns: 1fr; }
   .modal { padding: 1.4rem; }
+}
+
+/* ---------- avvikelse mot huvudbokens slutrad ---------- */
+
+.anchor.always { opacity: 1; }
+
+.diff-wrap { position: relative; display: inline-block; }
+
+.diff-flag {
+  font: inherit;
+  font-weight: 700;
+  color: var(--warn);
+  background: var(--warn-soft);
+  border: 1px solid var(--warn);
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  cursor: help;
+}
+
+.diff-tip {
+  display: none;
+  position: fixed; /* placeras med JS vid knappen, så tabellens överflöde inte klipper den */
+  z-index: 20;
+  width: min(24rem, 86vw);
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--warn);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.diff-wrap:hover .diff-tip,
+.diff-wrap:focus-within .diff-tip,
+.diff-wrap.open .diff-tip { display: block; }
+
+.diff-tip strong { display: block; color: var(--warn); margin-bottom: 0.3rem; }
+.diff-tip .diff-text { display: block; margin-bottom: 0.45rem; }
+.diff-tip ul { margin: 0 0 0.45rem; padding-left: 1.1rem; }
+.diff-tip a { color: var(--forest); }
+.diff-tip .diff-more { font-size: 0.82rem; }
+
+.source-links { padding-left: 1.2rem; font-size: 0.94rem; }
+.source-links li { margin-bottom: 0.6rem; }
+.source-links li.diff-note {
+  background: var(--warn-soft);
+  border-left: 3px solid var(--warn);
+  padding: 0.5rem 0.7rem;
 }

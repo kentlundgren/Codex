@@ -52,6 +52,52 @@ function totalRow(label, amount) {
   `;
 }
 
+function esc(text) {
+  return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+// Skillnad mellan det här beräknade resultatet (summan av huvudbokens delsummor)
+// och huvudbokens egen slutrad. null om slutraden inte angetts eller stämmer.
+function ledgerDiff(data) {
+  if (typeof data.huvudbokSlutrad !== "number") return null;
+  const calc = sum(data.intakter) + sum(data.kostnader);
+  const diff = Math.round((data.huvudbokSlutrad - calc) * 100) / 100;
+  return Math.abs(diff) < 0.005 ? null : { calc, ledger: data.huvudbokSlutrad, diff };
+}
+
+function fileLink(file, label) {
+  return file ? `<a href="${esc(file.fil)}">${esc(label || file.etikett)}</a>` : "";
+}
+
+function resultRow(data, result) {
+  const d = ledgerDiff(data);
+  if (!d) return totalRow("Resultat", result);
+  const higher = d.diff > 0 ? "högre" : "lägre";
+  const links = [
+    data.underlag && `<li>${fileLink(data.underlag)} – underlaget som siffrorna är hämtade ur</li>`,
+    data.avstamning && `<li>${fileLink(data.avstamning)} – visar var skillnaden uppstår</li>`,
+  ].filter(Boolean).join("");
+  const analys = data.avstamning && data.avstamning.analys
+    ? `<span class="diff-text">${esc(data.avstamning.analys)}</span>` : "";
+  return `
+    <tr class="row-total">
+      <td>Resultat</td>
+      <td class="amount">
+        <span class="diff-wrap">
+          <button type="button" class="diff-flag" id="diffBtn" aria-expanded="false" aria-describedby="diffTip">${formatSEK(result, { forceSign: true })} <span aria-hidden="true">ⓘ</span></button>
+          <span class="diff-tip" id="diffTip" role="tooltip">
+            <strong>Skiljer sig från huvudboken</strong>
+            <span class="diff-text">Resultatet här är summan av huvudbokens delsummor: ${formatSEK(d.calc, { forceSign: true })}. Huvudbokens egen slutrad anger ${formatSEK(d.ledger, { forceSign: true })}, alltså ${formatSEK(Math.abs(d.diff))} ${higher}.</span>
+            ${analys}
+            <ul>${links}</ul>
+            <a class="diff-more" href="#underlag">Mer under Underlag och avstämning</a>
+          </span>
+        </span>
+      </td>
+    </tr>
+  `;
+}
+
 function renderTable(data) {
   const income = sum(data.intakter);
   const cost = sum(data.kostnader);
@@ -64,7 +110,7 @@ function renderTable(data) {
     sectionRow("Kostnader"),
     ...data.kostnader.map((item) => dataRow(data, item)),
     totalRow("Summa kostnader", cost),
-    totalRow("Resultat", result),
+    resultRow(data, result),
   ];
 
   document.getElementById("tableBody").innerHTML = rows.join("");
@@ -109,6 +155,26 @@ function renderSourceNote(data) {
     `Period: ${from}–${to}. Källa: ${data.kalla}.`;
 }
 
+function renderSources(data) {
+  const box = document.getElementById("sourceLinks");
+  const items = [];
+  if (data.underlag) {
+    items.push(`<li><strong>Underlag:</strong> ${fileLink(data.underlag)}. Det är huvudboken som tabellen ovan är byggd på (laddas ned som Word-fil).</li>`);
+  }
+  const d = ledgerDiff(data);
+  if (d) {
+    const analys = data.avstamning && data.avstamning.analys ? " " + esc(data.avstamning.analys) : "";
+    items.push(`<li class="diff-note"><strong>Avvikelse:</strong> summan av huvudbokens delsummor ger ${formatSEK(d.calc, { forceSign: true })}, men huvudbokens egen slutrad anger ${formatSEK(d.ledger, { forceSign: true })} (skillnad ${formatSEK(Math.abs(d.diff))}). Tabellen visar summan av delsummorna.${analys}</li>`);
+    if (data.avstamning) {
+      items.push(`<li><strong>Analys:</strong> ${fileLink(data.avstamning)}. Excel-fil med huvudbokens rader, avstämning per kategori och ett blad som låter dig pröva vilka rader som kan förklara skillnaden.</li>`);
+    }
+  } else if (typeof data.huvudbokSlutrad === "number") {
+    items.push(`<li><strong>Avstämning:</strong> resultatet stämmer med huvudbokens egen slutrad (${formatSEK(data.huvudbokSlutrad, { forceSign: true })}).</li>`);
+  }
+  box.innerHTML = items.join("");
+  document.getElementById("underlag").hidden = items.length === 0;
+}
+
 function renderLede(data) {
   const projekt = data.projekt || [];
   document.getElementById("ledeText").textContent =
@@ -122,6 +188,26 @@ function renderAll(data) {
   renderTable(data);
   renderCommentary(data);
   renderSourceNote(data);
+  renderSources(data);
+}
+
+function placeDiffTip() {
+  const wrap = document.querySelector(".diff-wrap");
+  if (!wrap) return;
+  const btn = wrap.querySelector("#diffBtn");
+  const tip = wrap.querySelector("#diffTip");
+  const b = btn.getBoundingClientRect();
+  const width = Math.min(384, window.innerWidth * 0.86);
+  tip.style.top = `${b.bottom}px`;
+  tip.style.left = `${Math.max(8, Math.min(b.right - width, window.innerWidth - width - 8))}px`;
+}
+
+function closeDiffTip() {
+  const wrap = document.querySelector(".diff-wrap.open");
+  if (!wrap) return;
+  wrap.classList.remove("open");
+  const btn = wrap.querySelector("#diffBtn");
+  if (btn) btn.setAttribute("aria-expanded", "false");
 }
 
 async function loadPeriod(dateStr) {
@@ -168,6 +254,24 @@ async function init() {
   });
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && techModal.classList.contains("show")) closeModal();
+    if (e.key === "Escape") closeDiffTip();
+  });
+
+  document.addEventListener("mouseover", (e) => { if (e.target.closest(".diff-wrap")) placeDiffTip(); });
+  document.addEventListener("focusin", (e) => { if (e.target.closest(".diff-wrap")) placeDiffTip(); });
+  window.addEventListener("scroll", placeDiffTip, { passive: true });
+  window.addEventListener("resize", placeDiffTip);
+
+  // Förklaringen vid avvikande resultat: hover och fokus via CSS, tryck/klick här.
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest("#diffBtn");
+    if (btn) {
+      placeDiffTip();
+      const open = btn.closest(".diff-wrap").classList.toggle("open");
+      btn.setAttribute("aria-expanded", String(open));
+    } else if (!e.target.closest(".diff-tip")) {
+      closeDiffTip();
+    }
   });
 }
 
