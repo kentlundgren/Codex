@@ -22,7 +22,7 @@ Underskrift
 
 ## Så gjordes anpassningen till insändarformat
 
-*Jämförelse mellan originalet ([Balanseringsprincipen_260913.docx](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincipen_260913.docx), cirka 3 100 tecken och 455 ord) och insändaren ovan (cirka 1 600 tecken). Avsnittet hör inte till insändaren och tas bort om texten skickas.*
+*Jämförelse mellan originalet (Per Blombergs text, *Balanseringsprincipen*, 13 september; länk till den färdiga versionen kommer senare, cirka 3 100 tecken och 455 ord) och insändaren ovan (cirka 1 600 tecken). Avsnittet hör inte till insändaren och tas bort om texten skickas.*
 
 ### 1. Längden styr allt
 
