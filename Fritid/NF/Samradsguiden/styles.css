@@ -195,3 +195,30 @@ caption { padding:0 0 8px; text-align:left; font:700 .95rem/1.4 Arial,sans-serif
 .tip-text { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
 .tip:hover .tip-text, .tip:focus .tip-text, .tip:focus-within .tip-text { position:static; width:auto; height:auto; overflow:visible; clip:auto; white-space:normal; display:block; margin-top:8px; padding:8px 10px; border-left:3px solid #3b6ea5; background:#e8f0f8; color:var(--ink); font-size:.88rem; line-height:1.45; }
 @media print { .tip-text { position:static; width:auto; height:auto; overflow:visible; clip:auto; white-space:normal; display:block; margin-top:6px; padding:4px 8px; border-left:3px solid #3b6ea5; font-size:.85rem; } }
+
+/* Version 1.24: sökruta (sok.js) och innehållsträd (innehall.html) */
+.sok { max-width:750px; }
+.sok form { display:flex; flex-wrap:wrap; gap:10px; align-items:stretch; }
+.sok label { flex:1 0 100%; font:700 15px/1.3 Arial,sans-serif; }
+.sok input[type="search"] { flex:1 1 280px; min-width:0; padding:12px 14px; border:1px solid #8a8f78; border-radius:2px; background:#FFF9C4; color:var(--ink); font:18px Georgia,serif; }
+.sok input[type="search"]:focus { outline:3px solid var(--moss); outline-offset:1px; }
+.sok button { padding:12px 20px; border:0; background:var(--moss); color:#fff; font:700 15px Arial,sans-serif; cursor:pointer; }
+.sok button:hover, .sok button:focus { background:#264734; }
+.sok__status { min-height:1.4em; margin:12px 0 4px; color:var(--muted); font-size:.94rem; }
+.sok__lista { margin:0; padding:0; list-style:none; }
+.sok__lista li { padding:14px 0; border-top:1px solid var(--line); }
+.sok__titel { font-weight:700; }
+.sok__plats { color:var(--muted); font:13px Arial,sans-serif; }
+.sok__utdrag { margin:4px 0 0; color:var(--ink); font-size:.95rem; }
+.sok mark { background:#cfe6c4; color:inherit; padding:0 1px; }
+.sok__tips { max-width:750px; color:var(--muted); font-size:.92rem; }
+.trad, .trad ul { list-style:none; margin:0; padding:0; }
+.trad > li { margin:18px 0; padding:14px 18px; border:1px solid var(--line); border-left:6px solid var(--moss); background:var(--white); }
+.trad__sida { font:700 1.1rem Georgia,serif; }
+.trad__not { color:var(--muted); font:13px Arial,sans-serif; }
+.trad__text { margin:4px 0 8px; color:var(--muted); font-size:.93rem; max-width:750px; }
+.trad li li { margin:3px 0 3px 14px; font-size:.97rem; }
+.trad details { margin:0; }
+.trad summary { cursor:pointer; }
+.trad details ul { margin:3px 0 6px 18px; }
+@media print { .sok form, .sok__tips { display:none; } }

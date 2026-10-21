@@ -39,6 +39,10 @@ Kent arbetar parallellt med Claude Code och Cursor i det här projektet — ibla
 
 När uppdragets innebörd, avgränsning, källstatus eller önskat resultat är otydligt, fråga Kent innan arbetet går vidare. Målet är att ha samma bild av den faktiska situationen och av vad som ska göras.
 
+## Sökindex och innehållsträd
+
+Sökrutan (`sok.js`) och trädet i `innehall.html` bygger på `sokindex.js`, som skapas av `bygg_sokindex.py`. Kör `python bygg_sokindex.py` efter varje ändring av en sida som ingår, och efter att en sida läggs till eller tas bort (ändra då listan `SIDOR` i skriptet). Arbetsdokument, omröstningssidan `Maxima/rangordning.html` och docx-filer ska inte med i sökningen.
+
 ## Utkast och AI
 
 Skriv inte i projektets material att en text är AI-assisterad, AI-genererad eller motsvarande. När innehållet inte är beslutat, kvalitetssäkrat eller antaget ska det i stället sakligt beskrivas som ett utkast eller ett bidrag till fortsatt diskussion.

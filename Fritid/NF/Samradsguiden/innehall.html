@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sök efter ord och begrepp i Samrådsguiden, och se hur sidorna hänger ihop i ett innehållsträd.">
+    <title>Innehåll och sök — Samrådsguiden</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="sok.js" defer></script>
+  </head>
+  <body class="visible-anchors">
+    <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+
+    <nav class="mainnav" aria-label="Samrådsguiden">
+      <div class="wrap">
+        <a href="index.html">Översikt</a>
+        <a href="paverka.html">Så påverkar vi</a>
+        <a href="checklista.html">Granska planen</a>
+        <a href="fordjupning.html">Dispositionerna</a>
+        <a href="lagtexter.html">Lagtexterna</a>
+        <a href="verktyg.html">Bygg ditt yttrande</a>
+        <a href="rangordning/">Rangordningar</a>
+        <a href="innehall.html" aria-current="page">Innehåll och sök</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="wrap hero__content">
+        <p class="eyebrow">Hitta i Samrådsguiden</p>
+        <h1>Innehåll och sök</h1>
+        <p class="lead">Sök efter ett ord eller ett begrepp, eller se hur sidorna och deras avsnitt hänger ihop.</p>
+      </div>
+    </header>
+
+    <main id="innehall" class="wrap">
+
+      <section class="section" id="sok">
+        <p class="eyebrow">Sök</p>
+        <h2 id="sok-i-guiden">Sök i Samrådsguiden <a class="anchor" href="#sok-i-guiden" aria-label="Länk till avsnittet">#</a></h2>
+        <div class="sok" data-sok>
+          <form role="search" action="#sok-i-guiden">
+            <label for="sokfalt">Skriv ett ord, ett begrepp eller en term</label>
+            <input id="sokfalt" type="search" name="q" autocomplete="off" placeholder="till exempel kompensation, MKB eller klagorätt">
+            <button type="submit">Sök</button>
+          </form>
+          <p class="sok__status" data-sok-status role="status" aria-live="polite"></p>
+          <ul class="sok__lista" data-sok-resultat></ul>
+        </div>
+        <p class="sok__tips">Sökningen sker i din webbläsare, och inget om din sökning skickas någonstans. Den letar efter delar av ord, så att kompensation också hittar kompensationsåtgärder. Skriver du flera ord måste alla finnas i samma avsnitt. Träffarna länkar till rätt avsnitt, och ordet är markerat i utdraget. Sökningen omfattar sidorna i Samrådsguiden och två underlagsfiler, enligt <a href="#trad-ingar">trädet nedan</a>.</p>
+      </section>
+
+      <section class="section" id="innehallstrad">
+        <p class="eyebrow">Översikt</p>
+        <h2 id="trad-ingar">Innehållsträd <a class="anchor" href="#trad-ingar" aria-label="Länk till avsnittet">#</a></h2>
+        <p class="section-intro" id="figur-1">Figur 1. Innehållsträd för Samrådsguiden: sidorna, deras avsnitt och underlagsfilerna. Bara de viktigaste ingår. Avsnitt med underrubriker kan fällas ut.</p>
+        <!-- trad:start -->
+        <h3 class="subhead">Sidorna</h3>
+        <ul class="trad">
+          <li><a class="trad__sida" href="index.html">Samrådsguiden</a>
+            <p class="trad__text">Ett generellt verktyg för hur privatpersoner och miljöorganisationer kan disponera och lägga upp yttranden och synpunkter under ett samråd — enligt både plan- och bygglagen (PBL) och miljöbalken (MB).</p>
+            <ul>
+              <li><a href="index.html#sok-i-guiden">Sök ett ord eller begrepp</a></li>
+              <li><a href="index.html#gemensam-grundstruktur">En gemensam grundstruktur, oavsett lagrum</a></li>
+              <li><a href="index.html#pbl-och-mb">PBL och MB sida vid sida</a></li>
+              <li><a href="index.html#skeden-oversikt">Dispositionen anpassas efter var i processen samrådet befinner sig</a></li>
+              <li><a href="index.html#granska-planen">Vad ska vi fråga när planen granskas</a></li>
+              <li><a href="index.html#kompensation-intro">Kompensationsåtgärder — en möjlighet att känna till och kunna föreslå</a></li>
+              <li><a href="index.html#exempel">Genomarbetade exempel</a></li>
+              <li><a href="index.html#till-verktyget">Bygg ditt eget yttrande</a></li>
+            </ul>
+          </li>
+          <li><a class="trad__sida" href="paverka.html">Så påverkar vi</a>
+            <p class="trad__text">Lagret ovanför själva yttrandet: vilken lag som styr vilken process, och när och hur man påverkar mest verkningsfullt.</p>
+            <ul>
+              <li><a href="paverka.html#sa-paverkar-vi">Vad händer innan vi yttrar oss?</a></li>
+              <li><details><summary><a href="paverka.html#vilken-lag">Vilken lag gäller när kommunen antar en plan?</a></summary><ul>
+                <li><a href="paverka.html#kommunen-antar-en-plan">Kommunen antar en plan — översiktsplan, fördjupad översiktsplan eller detaljplan</a></li>
+                <li><a href="paverka.html#bolag-soker-tillstand">Ett bolag söker tillstånd för en verksamhet — täkt, gruva, hamn, vattenverksamhet</a></li>
+              </ul></details></li>
+              <li><a href="paverka.html#beslutsstod">Vilken lag styr vilken process — en översikt</a></li>
+              <li><a href="paverka.html#verkningsfull-synpunkt">Vad gör en synpunkt verkningsfull</a></li>
+              <li><a href="paverka.html#ratt-tid">När kan du lämna synpunkter?</a></li>
+              <li><a href="paverka.html#klagoratt">Rätten att överklaga en detaljplan kan gå förlorad</a></li>
+              <li><a href="paverka.html#taleratt">Talerätt även utan att ha varit part</a></li>
+              <li><a href="paverka.html#miljobedomning-kort">Kort: fyra begrepp</a></li>
+              <li><a href="paverka.html#proaktivt-paverkansarbete">Ett exempel: att begära en generell princip, inte bara agera i enskilda ärenden</a></li>
+              <li><a href="paverka.html#kallor">Källor för processuppgifterna</a></li>
+            </ul>
+          </li>
+          <li><a class="trad__sida" href="checklista.html">Granska planen</a>
+            <p class="trad__text">Frågor att ställa när en plan eller ett byggprojekt ska läsas igenom — innan synpunkterna skrivs in i yttrandet.</p>
+            <ul>
+              <li><a href="checklista.html#vad-sidan-ar">Vad den här sidan är</a></li>
+              <li><a href="checklista.html#jobba-effektivt">Jobba på ett effektivt sätt</a></li>
+              <li><a href="checklista.html#handlingarna">Är handlingarna kompletta och rättvisande?</a></li>
+              <li><a href="checklista.html#natur-gronomraden">Skydda natur och grönområden</a></li>
+              <li><a href="checklista.html#mangfald-vatten">Främja biologisk mångfald och skydda vatten</a></li>
+              <li><a href="checklista.html#odlingsmark">Bevara och utveckla odlingsmark</a></li>
+              <li><a href="checklista.html#stadens-struktur">Stadens struktur och omvandling</a></li>
+              <li><a href="checklista.html#trafik">Trafik</a></li>
+              <li><a href="checklista.html#social-miljo">God social miljö</a></li>
+              <li><a href="checklista.html#energi-klimat">Energi och klimat</a></li>
+              <li><a href="checklista.html#material">Hushålla med material</a></li>
+              <li><a href="checklista.html#gifter">Inte sprida gifter</a></li>
+              <li><a href="checklista.html#buller">Skona från buller</a></li>
+              <li><a href="checklista.html#kallor">Källor för sakfrågorna</a></li>
+            </ul>
+          </li>
+          <li><a class="trad__sida" href="fordjupning.html">Fördjupning</a>
+            <p class="trad__text">Den fullständiga fördjupningen: dispositionerna, betydande miljöpåverkan, kompensationsåtgärder och balanseringsprincipen — med rättsligt läge, metod och exempel för varje del.</p>
+            <ul>
+              <li><a href="fordjupning.html#tre-satt">Tre sätt att disponera synpunkterna i ett yttrande</a></li>
+              <li><a href="fordjupning.html#pbl-mb-delvis">Är PBL och MB verkligen olika dispositioner? Delvis.</a></li>
+              <li><a href="fordjupning.html#terminologi-mb">Miljöbedömning och miljökonsekvensbeskrivning — två skilda begrepp</a></li>
+              <li><details><summary><a href="fordjupning.html#dispositionsmallar">Dispositionsmallar per lagrum, plantyp och skede</a></summary><ul>
+                <li><a href="fordjupning.html#pbl-detaljplan">Plan- och bygglagen (PBL) — Detaljplan</a></li>
+                <li><a href="fordjupning.html#pbl-oversiktsplan">Plan- och bygglagen (PBL) — Översiktsplan</a></li>
+                <li><a href="fordjupning.html#mb-skeden">Miljöbalken (MB)</a></li>
+              </ul></details></li>
+              <li><a href="fordjupning.html#mottagare">Mottagare: kommun eller länsstyrelse</a></li>
+              <li><details><summary><a href="fordjupning.html#betydande-miljopaverkan">Betydande miljöpåverkan — när gränsen är omtvistad</a></summary><ul>
+                <li><a href="fordjupning.html#tre-nivaer">Tre nivåer, inte en gråzon</a></li>
+                <li><a href="fordjupning.html#kriterierna">De fyra kriteriegrupperna vid en undersökning</a></li>
+                <li><a href="fordjupning.html#argumentationsmetod">Metod: från allmän oro till en argumenterad begäran</a></li>
+                <li><a href="fordjupning.html#ncc-kontrast">Kontrasten: NCC/Skrylle</a></li>
+              </ul></details></li>
+              <li><details><summary><a href="fordjupning.html#kompensation">Kompensationsåtgärder</a></summary><ul>
+                <li><a href="fordjupning.html#tre-spar">Rättsligt läge — tre spår</a></li>
+                <li><a href="fordjupning.html#kommunexempel">Svenska kommuner som arbetar frivilligt med kompensation</a></li>
+                <li><a href="fordjupning.html#skadelindringshierarkin">Skadelindringshierarkin</a></li>
+                <li><a href="fordjupning.html#balanseringsprincipen">Balanseringsprincipen och kompensationsåtgärder — hur hänger de ihop?</a></li>
+                <li><a href="fordjupning.html#svenska-fall">Svenska exempel att lära av och hänvisa till</a></li>
+                <li><a href="fordjupning.html#internationellt">Internationell utblick</a></li>
+                <li><a href="fordjupning.html#konstruktivt-forslag">Från kritik till konstruktivt förslag</a></li>
+              </ul></details></li>
+              <li><details><summary><a href="fordjupning.html#motpartens-bemotande">Så bemöter motparten: numrering och spårbarhet</a></summary><ul>
+                <li><a href="fordjupning.html#larom-kort">Elva råd i kortform</a></li>
+                <li><a href="fordjupning.html#nytt-skede-verktyget">Ett nytt skede i verktyget</a></li>
+              </ul></details></li>
+              <li><a href="fordjupning.html#praktiken">Så ser det ut i praktiken</a></li>
+              <li><a href="fordjupning.html#kallor">Rättslig och metodisk utgångspunkt</a></li>
+            </ul>
+          </li>
+          <li><a class="trad__sida" href="lagtexter.html">Lagtexterna</a>
+            <p class="trad__text">De paragrafer i miljöbalken och plan- och bygglagen som en naturskyddsförening har mest nytta av att känna till — ordagrant, med källa och datum, och en kort förklaring i klartext av vad var och en betyder.</p>
+            <ul>
+              <li><a href="lagtexter.html#om-sidan">Vad lagen säger — inte råd i ett enskilt ärende</a></li>
+              <li><a href="lagtexter.html#tva-slags-miljobedomning">Strategisk för planer, specifik för verksamheter</a></li>
+              <li><a href="lagtexter.html#ordlista">Åtta ord som återkommer</a></li>
+              <li><a href="lagtexter.html#snabbnav">De tio posterna</a></li>
+              <li><a href="lagtexter.html#mb-1-1">1. Miljöbalken (1998:808) 1 kap. 1 § — balkens mål och tillämpning</a></li>
+              <li><a href="lagtexter.html#mb-2">2. Miljöbalken (1998:808) 2 kap. — hänsynsreglerna</a></li>
+              <li><a href="lagtexter.html#mb-2-6">3. Miljöbalken (1998:808) 2 kap. 6 § — lokaliseringsprincipen</a></li>
+              <li><a href="lagtexter.html#mb-3-6">4. Miljöbalken (1998:808) 3 kap. 6 § — riksintresse för naturvård, kulturmiljövård och friluftsliv</a></li>
+              <li><a href="lagtexter.html#mb-6-3">5. När en miljöbedömning ska göras</a></li>
+              <li><a href="lagtexter.html#mb-7-28a">6. Miljöbalken (1998:808) 7 kap. 28 a § — tillståndsplikt för Natura 2000</a></li>
+              <li><a href="lagtexter.html#mb-16-13">7. Miljöbalken (1998:808) 16 kap. 13 § — miljöorganisationers rätt att överklaga</a></li>
+              <li><a href="lagtexter.html#pbl-2-1">8. Plan- och bygglagen (2010:900) 2 kap. 1–2 §§ — allmänna och enskilda intressen</a></li>
+              <li><a href="lagtexter.html#pbl-5-18">9. Plan- och bygglagen (2010:900) 5 kap. 18 § och 11 § — granskning och samråd</a></li>
+              <li><a href="lagtexter.html#pbl-13-11">10. Plan- och bygglagen (2010:900) 13 kap. 11 § — vem får överklaga en detaljplan</a></li>
+              <li><a href="lagtexter.html#arhus">Århuskonventionen</a></li>
+              <li><a href="lagtexter.html#kallor">Så är lagtexterna kontrollerade</a></li>
+            </ul>
+          </li>
+          <li><a class="trad__sida" href="verktyg.html">Bygg ditt yttrande</a>
+            <p class="trad__text">Svara på fem korta frågor. Du får en strukturerad mall med sex delar att fylla i med egen text, och kan sedan kopiera eller ladda ner resultatet.</p>
+          </li>
+          <li><a class="trad__sida" href="rangordning/index.html">Rangordningar i Samrådsguiden</a>
+            <p class="trad__text">Ett samråd eller ett yttrande rymmer sällan allt som någon vill säga. En gemensam rangordning hjälper en grupp att se vilka frågor som bör få plats, och i vilken ordning, innan texten skrivs.</p>
+            <ul>
+              <li><a href="rangordning/index.html#varfor">Varför rangordna?</a></li>
+              <li><a href="rangordning/index.html#nar">I vilka skeden kan man rangordna?</a></li>
+              <li><a href="rangordning/index.html#sa-fungerar-det">Så fungerar en rangordning</a></li>
+              <li><a href="rangordning/index.html#pagaende">Pågående rangordningar</a></li>
+              <li><a href="rangordning/index.html#teknik">Hur det hänger ihop</a></li>
+            </ul>
+          </li>
+        </ul>
+        <h3 class="subhead">Exempel</h3>
+        <ul class="trad">
+          <li><a class="trad__sida" href="lund-ncc.html">NCC:s samråd i Lund: två yttranden att lära av</a>
+            <p class="trad__text">Hur Lunds kommunkontor och Lunds Naturskyddsförening har byggt upp sina yttranden över NCC:s samråd om täkt vid Skrylle — jämfört med Samrådsguidens sexdelsmodell, och vad en förening kan låna därifrån.</p>
+            <ul>
+              <li><a href="lund-ncc.html#vad-det-ar">Vad dokumenten är — och vad vi inte har sett</a></li>
+              <li><a href="lund-ncc.html#uppbyggnad">Kommunens tjänsteskrivelse: så är den uppbyggd</a></li>
+              <li><details><summary><a href="lund-ncc.html#jamforelse">Kommunens tjänsteskrivelse mot sexdelsmodellen</a></summary><ul>
+                <li><a href="lund-ncc.html#tre-fragor">De tre genomgående frågorna</a></li>
+              </ul></details></li>
+              <li><details><summary><a href="lund-ncc.html#att-lana">Fyra saker att låna av kommunens tjänsteskrivelse</a></summary><ul>
+                <li><a href="lund-ncc.html#tvasteg">1. Två steg: grundhållning och villkorade krav</a></li>
+                <li><a href="lund-ncc.html#begaransmonster">2. Ett begäransmönster som går att svara på</a></li>
+                <li><a href="lund-ncc.html#egna-beslut">3. Förankra hållningen i egna tidigare beslut</a></li>
+                <li><a href="lund-ncc.html#processforklaring">4. En processförklaring för läsaren utan förkunskaper</a></li>
+              </ul></details></li>
+              <li><details><summary><a href="lund-ncc.html#lnf-yttrande">LNF:s samrådssynpunkter</a></summary><ul>
+                <li><a href="lund-ncc.html#lnf-uppbyggnad">Så är yttrandet uppbyggt</a></li>
+                <li><a href="lund-ncc.html#lnf-jamforelse">LNF:s yttrande mot sexdelsmodellen</a></li>
+                <li><a href="lund-ncc.html#lnf-tre-fragor">De tre genomgående frågorna</a></li>
+              </ul></details></li>
+              <li><details><summary><a href="lund-ncc.html#sida-vid-sida">De två sida vid sida</a></summary><ul>
+                <li><a href="lund-ncc.html#overlapp">Där de pekar på samma saker</a></li>
+                <li><a href="lund-ncc.html#lana-av-varandra">Vad kan en förening ta med sig?</a></li>
+              </ul></details></li>
+              <li><details><summary><a href="lund-ncc.html#forening-och-kommun">Kan en förening hämta inspiration från en kommun?</a></summary><ul>
+                <li><a href="lund-ncc.html#ja-for">Det som går att låna</a></li>
+                <li><a href="lund-ncc.html#forsiktigt">Det som kräver försiktighet</a></li>
+              </ul></details></li>
+              <li><a href="lund-ncc.html#vidare">Läs vidare i Samrådsguiden</a></li>
+              <li><a href="lund-ncc.html#kallor">Källor</a></li>
+            </ul>
+          </li>
+          <li><a class="trad__sida" href="maxima.html">Struktur i en stor tillståndsprocess: lärdomar från MAXIMA</a>
+            <p class="trad__text">Hur synpunkter och yttranden kan byggas upp så att motparten, domstolen och avsändaren själv kan följa varje fråga genom hela processen. MAXIMA, VA SYDs regionala avloppsreningssystem, och ansökan om det i mål M 3289-25 är exemplet. Sidan handlar om uppläggets betydelse och inte om sakfrågorna.</p>
+            <ul>
+              <li><a href="maxima.html#i-korthet">Det viktigaste på en minut</a></li>
+              <li><details><summary><a href="maxima.html#vad-det-ar">Vad sidan är och vad den inte är</a></summary><ul>
+                <li><a href="maxima.html#maxima-och-malet">MAXIMA och mål M 3289-25 är inte samma sak</a></li>
+                <li><a href="maxima.html#underlag">Underlaget</a></li>
+              </ul></details></li>
+              <li><details><summary><a href="maxima.html#forlopp">Förloppet i MAXIMA</a></summary><ul>
+                <li><a href="maxima.html#skeden">Skeden i MAXIMA-förloppet</a></li>
+              </ul></details></li>
+              <li><a href="maxima.html#aktbilaga">Vad är en aktbilaga?</a></li>
+              <li><details><summary><a href="maxima.html#begrepp">Begrepp i domstolsskedet</a></summary><ul>
+                <li><a href="maxima.html#kungorelse">Kungörelse</a></li>
+                <li><a href="maxima.html#underrattelse">Underrättelse</a></li>
+                <li><a href="maxima.html#svarstid">Svarstid och frist</a></li>
+                <li><a href="maxima.html#sista-dag">Vad betyder &quot;senast den 6 november&quot;?</a></li>
+                <li><a href="maxima.html#synpunkt-yttrande">Synpunkt, yttrande och liknande ord</a></li>
+                <li><a href="maxima.html#yrkande">Yrkande</a></li>
+                <li><a href="maxima.html#verkstallighet">Verkställighetsförordnande</a></li>
+              </ul></details></li>
+              <li><a href="maxima.html#motparten">Hur motparten sorterade synpunkterna</a></li>
+              <li><a href="maxima.html#en-fraga">En fråga genom fem skeden</a></li>
+              <li><details><summary><a href="maxima.html#skede5-val">Att välja vilka frågor som ska med i yttrandet över bemötandet</a></summary><ul>
+                <li><a href="maxima.html#skede5-utmaningen">Utmaningen: mycket att säga, begränsad uppmärksamhet</a></li>
+                <li><a href="maxima.html#skede5-antal">Hur många frågor har vi, och är de fem i Tabell 3 de viktigaste?</a></li>
+                <li><a href="maxima.html#skede5-matt">Sju mått för att väga en fråga</a></li>
+                <li><a href="maxima.html#skede5-rangordning">Förslag till rangordning</a></li>
+                <li><a href="maxima.html#skede5-bort">Vad som bör bort eller mjukas upp</a></li>
+                <li><a href="maxima.html#skede5-upplagg">Hur yttrandet kan byggas</a></li>
+                <li><a href="maxima.html#skede5-tre-upplagg">Tre sätt att bygga yttrandet</a></li>
+                <li><a href="maxima.html#skede5-oppna">Val som gruppen behöver göra, och det som återstår att kontrollera</a></li>
+              </ul></details></li>
+              <li><details><summary><a href="maxima.html#larom">Elva lärdomar</a></summary><ul>
+                <li><a href="maxima.html#lar-1">1. Numrera dina egna punkter, platt och med fasta nummer</a></li>
+                <li><a href="maxima.html#lar-2">2. Ett påstående per punkt</a></li>
+                <li><a href="maxima.html#lar-3">3. Låt allt som kräver svar stå i ett numrerat avsnitt</a></li>
+                <li><a href="maxima.html#lar-4">4. Avsluta varje punkt med en begäran</a></li>
+                <li><a href="maxima.html#lar-5">5. Hänvisa exakt</a></li>
+                <li><a href="maxima.html#lar-6">6. Koppla varje punkt till prövningsfrågan</a></li>
+                <li><a href="maxima.html#lar-7">7. Räkna med att ordningen inte skyddar dig</a></li>
+                <li><a href="maxima.html#lar-8">8. Numrera samrådssynpunkterna och läs samrådsredogörelsen</a></li>
+                <li><a href="maxima.html#lar-9">9. Möt kända avgränsningar direkt</a></li>
+                <li><a href="maxima.html#lar-10">10. Följ upp svaret med en tabell över besvarat och obesvarat</a></li>
+                <li><a href="maxima.html#lar-11">11. Överväg alternativa begäranden, men fråga en jurist</a></li>
+              </ul></details></li>
+              <li><a href="maxima.html#fore-efter">En punkt före och efter</a></li>
+              <li><a href="maxima.html#ord">Ord på den här sidan</a></li>
+              <li><a href="maxima.html#vidare">Läs vidare i Samrådsguiden</a></li>
+              <li><a href="maxima.html#kallor">Källor</a></li>
+            </ul>
+          </li>
+        </ul>
+        <h3 class="subhead">Underlag</h3>
+        <ul class="trad">
+          <li><a class="trad__sida" href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md" rel="noopener">Checklista vid granskning av planer och byggprojekt</a> <span class="trad__not">(Markdown-fil på GitHub)</span>
+            <ul>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#91-jobba-på-ett-effektivt-sätt">9.1 Jobba på ett effektivt sätt</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#92-är-plan--eller-projekthandlingarna-kompletta-och-rättvisande">9.2 Är plan- eller projekthandlingarna kompletta och rättvisande?</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#93-skydda-natur-och-grönområden">9.3 Skydda natur och grönområden</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#94-främja-biologisk-mångfald-och-skydda-vatten">9.4 Främja biologisk mångfald och skydda vatten</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#95-bevara-och-utveckla-odlingsmark">9.5 Bevara och utveckla odlingsmark</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#96-stadens-struktur-och-omvandling">9.6 Stadens struktur och omvandling</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#97-trafik">9.7 Trafik</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#98-god-social-miljö">9.8 God social miljö</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#99-energi-och-klimat">9.9 Energi och klimat</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#910-hushålla-med-material">9.10 Hushålla med material</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#911-inte-sprida-gifter">9.11 Inte sprida gifter</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md#912-skona-från-buller">9.12 Skona från buller</a></li>
+            </ul>
+          </li>
+          <li><a class="trad__sida" href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md" rel="noopener">Balanseringsprincipen</a> <span class="trad__not">(Markdown-fil på GitHub)</span>
+            <ul>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md#sammanfattning">Sammanfattning</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md#vad-balanseringsprincipen-innebär">Vad balanseringsprincipen innebär</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md#rättsläget-idag">Rättsläget idag</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md#internationella-erfarenheter">Internationella erfarenheter</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md#konkreta-kompensationsåtgärder--exempel">Konkreta kompensationsåtgärder — exempel</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md#genomförande">Genomförande</a></li>
+              <li><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md#källförteckning">Källförteckning</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- trad:slut -->
+      </section>
+    </main>
+
+    <footer><div class="wrap">Levande dokument om samrådsprocessen · <span class="ver" title="Nytt i version 1.24: sökruta och innehållsträd (innehall.html), med en ny länk i toppmenyn.">Version 1.24</span> · Senast ändrad 21 oktober 2026 · <a href="index.html" style="color:#f5d77f">Översikt</a> · <a href="checklista.html" style="color:#f5d77f">Granska planen</a> · <a href="lagtexter.html" style="color:#f5d77f">Lagtexterna</a> · <a href="verktyg.html" style="color:#f5d77f">Verktyget</a></div></footer>
+
+    <a class="repo-link" href="https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Samradsguiden">GitHub</a>
+    <button class="tech-button" type="button" aria-haspopup="dialog" aria-controls="tech-dialog" aria-expanded="false">Teknik</button>
+    <dialog id="tech-dialog" aria-labelledby="tech-title">
+      <div class="dialog__content">
+        <button class="dialog__close" type="button" aria-label="Stäng tekniköversikt">×</button>
+        <p class="eyebrow">Tekniköversikt</p>
+        <h2 id="tech-title">En enkel, statisk webbsida</h2>
+        <ul>
+          <li>HTML för innehåll och struktur</li>
+          <li>CSS för formgivning och responsiv layout</li>
+          <li>JavaScript som söker i ett färdigt sökindex i läsarens webbläsare, utan server och utan externa tjänster</li>
+          <li>Ett Python-skript som bygger sökindexet och innehållsträdet ur sidornas rubriker</li>
+        </ul>
+        <pre aria-label="Förenklad filstruktur"><code>Samradsguiden/
+├── innehall.html
+├── sok.js
+├── sokindex.js         (genereras)
+├── bygg_sokindex.py    (kör efter varje ändring)
+├── index.html
+├── paverka.html
+├── checklista.html
+├── fordjupning.html
+├── lund-ncc.html
+├── maxima.html
+├── lagtexter.html
+├── verktyg.html
+├── styles.css
+├── script.js
+└── README.md</code></pre>
+      </div>
+    </dialog>
+  </body>
+</html>
