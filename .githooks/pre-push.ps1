@@ -12,10 +12,12 @@ $ErrorActionPreference = 'Stop'
 $OutputEncoding = [System.Text.Encoding]::UTF8
 $blockedPath = '(?i)(^|/)(underlag_internt(/|$)|Plangruppen/Mail(/|$)|mejlforlag|.*(?:privat|private|sensitive|kanslig|känslig|utkast).*)\.(md|txt|pdf|doc|docx)$'
 $blockedMail = '(?i)(^|/)Plangruppen/Mail(/|$)'
-# Undantag 2026-10-20: Kent har medvetet beslutat att publicera de två utkasten KL_261019 och KL_261020
-# (efter privatgranskning). Filnamnen innehåller ordet "utkast" och träffas därför av $blockedPath.
-# Undantaget gäller bara .md-filer direkt i den här mappen. Alla andra kontroller gäller som förut.
-$allowedPublicDrafts = '(?i)^Fritid/NF/Maxima/Yttrande/Utkast/[^/]+\.md$'
+# Undantag 2026-10-21: Kent har medvetet beslutat att utkast till yttranden i mappen
+# Fritid/NF/Maxima/Yttrande/Utkast/ får publiceras (efter privatgranskning). Filnamnen innehåller ordet
+# "utkast" och träffas annars av $blockedPath. Undantaget gäller bara .md- och .docx-filer direkt i den
+# här mappen och bara namnregeln i $blockedPath. Mejlmappen, personliga inlägg och innehållsreglerna
+# (rad som börjar med "privat", "konfidentiellt" m.fl.) gäller som förut även här.
+$allowedPublicDrafts = '(?i)^Fritid/NF/Maxima/Yttrande/Utkast/[^/]+\.(md|docx)$'
 # Här skedde en uppdatering 2026-09-28: personliga inlägg och synpunkter från
 # enskilda medlemmar spärras för alla filtyper, inte bara dokument.
 $blockedPersonal = '(?i)(^|/)Underlag_synpunkter/|_inl(a|ä)gg\.[^/]+$'
@@ -68,7 +70,7 @@ foreach ($update in $updates) {
           exit 1
         }
       }
-      if ($file -match $blockedPath -or $file -match $blockedMail -or $file -match $blockedPersonal -or ($isDocument -and $content -match $blockedContent) -or ($isPublicDocument -and $content -match $publicSensitiveContent)) {
+      if (($file -match $blockedPath -and $file -notmatch $allowedPublicDrafts) -or $file -match $blockedMail -or $file -match $blockedPersonal -or ($isDocument -and $content -match $blockedContent) -or ($isPublicDocument -and $content -match $publicSensitiveContent)) {
         $blocked.Add("$file ($commit)")
       }
     }
