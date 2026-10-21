@@ -371,6 +371,7 @@ table.data-table tr.proj-c td { background: var(--proj-c); }
 
 .diff-tip {
   display: none;
+  white-space: normal;
   position: fixed; /* placeras med JS vid knappen, så tabellens överflöde inte klipper den */
   z-index: 20;
   width: min(24rem, 86vw);
