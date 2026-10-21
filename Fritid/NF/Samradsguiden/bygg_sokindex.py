@@ -215,6 +215,39 @@ def esc(t):
     return html.escape(t, quote=True)
 
 
+def tal(n):
+    return f"{n:,}".replace(",", " ")
+
+
+def bygg_statistik(sidor):
+    rader = []
+    tot = {"avsnitt": 0, "ord": 0, "tecken": 0}
+    alla = set()
+    for fil, sida in sidor:
+        poster = [p for p in sida["poster"] if p["text"] or p["nivå"]]
+        text = " ".join((p["rubrik"] + " " + p["text"]) if p["nivå"] else p["text"] for p in poster)
+        ord_ = re.findall(r"\w+", text.lower())
+        alla.update(ord_)
+        n = len(poster)
+        rader.append((fil, sida, n, len(ord_), len(text)))
+        tot["avsnitt"] += n
+        tot["ord"] += len(ord_)
+        tot["tecken"] += len(text)
+    ut = ['        <div class="table-scroll"><table id="tabell-1">',
+          '          <caption><strong>Tabell 1.</strong> Vad som är indexerat, per fil. Siffrorna räknas om varje gång <code>bygg_sokindex.py</code> körs.</caption>',
+          '          <thead><tr><th scope="col">Fil</th><th scope="col">Avsnitt</th><th scope="col">Ord</th><th scope="col">Tecken (med mellanslag)</th></tr></thead>',
+          '          <tbody>']
+    for fil, sida, n, o, t in rader:
+        ut.append(f'            <tr><td><a href="{esc(sida["url"])}">{esc(fil)}</a></td><td>{tal(n)}</td><td>{tal(o)}</td><td>{tal(t)}</td></tr>')
+    ut.append(f'            <tr><th scope="row">Totalt, {len(rader)} filer</th><th>{tal(tot["avsnitt"])}</th><th>{tal(tot["ord"])}</th><th>{tal(tot["tecken"])}</th></tr>')
+    ut.append("          </tbody>")
+    ut.append("        </table></div>")
+    sammanfattning = (f'        <p>Totalt är {tal(tot["ord"])} ord och {tal(tot["tecken"])} tecken indexerade, fördelade på {tal(tot["avsnitt"])} avsnitt, och de innehåller {tal(len(alla))} olika ord (se <a href="#tabell-1">Tabell 1</a>). '
+                      f'Ord räknas som sammanhängande bokstäver och siffror, så ett tal räknas som ett ord. '
+                      f'Ett uppskattat värde i AI-tokens är inte uträknat, eftersom antalet beror på vilken modell som räknar.</p>')
+    return sammanfattning + "\n" + "\n".join(ut)
+
+
 def bygg_trad(sidor):
     grupper = {}
     for fil, sida in sidor:
@@ -273,13 +306,14 @@ def main():
     mål = ROT / "innehall.html"
     if mål.exists():
         text = mål.read_text(encoding="utf-8")
-        a, b = "<!-- trad:start -->", "<!-- trad:slut -->"
-        if a in text and b in text:
-            före, resten = text.split(a, 1)
-            _, efter = resten.split(b, 1)
-            ny = före + a + "\n" + bygg_trad(sidor) + "\n        " + b + efter
-            mål.write_text(ny, encoding="utf-8", newline="\n")
-            print("innehall.html: trädet uppdaterat")
+        for namn, innehåll in (("trad", bygg_trad(sidor)), ("stat", bygg_statistik(sidor))):
+            a, b = f"<!-- {namn}:start -->", f"<!-- {namn}:slut -->"
+            if a in text and b in text:
+                före, resten = text.split(a, 1)
+                _, efter = resten.split(b, 1)
+                text = före + a + "\n" + innehåll + "\n        " + b + efter
+        mål.write_text(text, encoding="utf-8", newline="\n")
+        print("innehall.html: träd och statistik uppdaterade")
 
 
 if __name__ == "__main__":

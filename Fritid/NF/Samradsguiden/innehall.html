@@ -295,6 +295,56 @@
         </ul>
         <!-- trad:slut -->
       </section>
+
+      <section class="section" id="sokteknik">
+        <p class="eyebrow">Tekniken bakom sökningen</p>
+        <h2 id="hur-sokningen-fungerar">Hur sökningen fungerar <a class="anchor" href="#hur-sokningen-fungerar" aria-label="Länk till avsnittet">#</a></h2>
+
+        <h3 class="subhead" id="vad-det-heter">Vad tekniken heter <a class="anchor" href="#vad-det-heter" aria-label="Länk till avsnittet">#</a></h3>
+        <p>Tekniken kallas <strong>fulltextsökning</strong> (på engelska <em>full-text search</em>): man söker i hela texten i ett dokument eller en samling dokument, inte bara i rubriker, nyckelord eller andra utvalda delar (Wikipedia, 2026a). Att förbereda texten för sökning kallas <strong>indexering</strong>, och resultatet är ett <strong>sökindex</strong>. Här körs sökningen <strong>i din webbläsare</strong> (klientsidigt), så ingen server och ingen extern tjänst behövs, och inget om vad du söker efter skickas vidare.</p>
+        <p>Ett vanligt sätt att bygga ett sökindex är ett <strong>omvänt index</strong> (<em>inverted index</em>): en förteckning som för varje ord anger var i texterna det finns, ungefär som ett register i en bok. Syftet är att göra fulltextsökning snabb, på bekostnad av mer arbete när texter läggs till (Wikipedia, 2026b). Samrådsguidens sökning är en enklare variant. Skriptet <code>bygg_sokindex.py</code> delar upp sidorna efter rubrikerna i avsnitt och sparar texten i <code>sokindex.js</code>. Vid en sökning går webbläsaren igenom avsnitten och letar efter dina ord, vilket också ger träff på delar av ord. För den textmängd som visas i <a href="#tabell-1">Tabell 1</a> räcker det.</p>
+
+        <h3 class="subhead" id="vad-ar-indexerat">Vad som är indexerat <a class="anchor" href="#vad-ar-indexerat" aria-label="Länk till avsnittet">#</a></h3>
+        <!-- stat:start -->
+        <p>Totalt är 32 596 ord och 222 690 tecken indexerade, fördelade på 229 avsnitt, och de innehåller 4 449 olika ord (se <a href="#tabell-1">Tabell 1</a>). Ord räknas som sammanhängande bokstäver och siffror, så ett tal räknas som ett ord. Ett uppskattat värde i AI-tokens är inte uträknat, eftersom antalet beror på vilken modell som räknar.</p>
+        <div class="table-scroll"><table id="tabell-1">
+          <caption><strong>Tabell 1.</strong> Vad som är indexerat, per fil. Siffrorna räknas om varje gång <code>bygg_sokindex.py</code> körs.</caption>
+          <thead><tr><th scope="col">Fil</th><th scope="col">Avsnitt</th><th scope="col">Ord</th><th scope="col">Tecken (med mellanslag)</th></tr></thead>
+          <tbody>
+            <tr><td><a href="index.html">index.html</a></td><td>15</td><td>803</td><td>5 619</td></tr>
+            <tr><td><a href="paverka.html">paverka.html</a></td><td>16</td><td>3 014</td><td>21 483</td></tr>
+            <tr><td><a href="checklista.html">checklista.html</a></td><td>15</td><td>1 801</td><td>13 366</td></tr>
+            <tr><td><a href="fordjupning.html">fordjupning.html</a></td><td>44</td><td>4 852</td><td>35 103</td></tr>
+            <tr><td><a href="lagtexter.html">lagtexter.html</a></td><td>25</td><td>5 022</td><td>33 649</td></tr>
+            <tr><td><a href="verktyg.html">verktyg.html</a></td><td>8</td><td>217</td><td>1 472</td></tr>
+            <tr><td><a href="lund-ncc.html">lund-ncc.html</a></td><td>22</td><td>3 430</td><td>24 052</td></tr>
+            <tr><td><a href="maxima.html">maxima.html</a></td><td>58</td><td>10 321</td><td>65 005</td></tr>
+            <tr><td><a href="rangordning/index.html">rangordning/index.html</a></td><td>6</td><td>617</td><td>3 719</td></tr>
+            <tr><td><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Vagledning_kap9_260830.md">Underlag/Vagledning_kap9_260830.md</a></td><td>13</td><td>1 641</td><td>12 553</td></tr>
+            <tr><td><a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/Underlag/Balanseringsprincip_260913B.md">Underlag/Balanseringsprincip_260913B.md</a></td><td>7</td><td>878</td><td>6 669</td></tr>
+            <tr><th scope="row">Totalt, 11 filer</th><th>229</th><th>32 596</th><th>222 690</th></tr>
+          </tbody>
+        </table></div>
+        <!-- stat:slut -->
+
+        <h3 class="subhead" id="nasta-steg">Nästa steg om behovet växer <a class="anchor" href="#nasta-steg" aria-label="Länk till avsnittet">#</a></h3>
+        <p>Det enkla sättet räcker så länge texten är liten och sökningen bara ska hitta ord. Två färdiga verktyg är naturliga nästa steg:</p>
+        <ul>
+          <li><strong>MiniSearch</strong> är en liten sökmotor i JavaScript som körs i minnet, i webbläsaren eller på en server. Den ger bland annat sökning på ordbörjan, sökning som tolererar stavfel, rangordning av träffar och vägning av rubriker mot löptext, så länge texten ryms i minnet (MiniSearch, u.å.). Den passar om vi vill ha bättre rangordning och stavfelstolerans men behålla ett enda index som hämtas av webbläsaren.</li>
+          <li><strong>Pagefind</strong> är ett helt statiskt sökbibliotek som ska fungera bra på stora webbplatser och använda så lite av besökarens bandbredd som möjligt, utan någon egen serverdrift. Det körs över den färdiga HTML-koden efter bygget (Pagefind, u.å.). Det passar om sajten växer så mycket att hela indexet inte längre bör hämtas på en gång.</li>
+        </ul>
+        <p>Det finns fler, till exempel Lunr, som också är en sökmotor för webbläsaren utan externa tjänster (Lunr, u.å.). Ett annat sätt att förbättra träffarna är <strong>stemming</strong>, att reducera böjda ord till en stam så att "kompensera" och "kompensation" behandlas som samma ord (Wikipedia, 2026c). Det kräver språkanpassning för svenska, och just nu klarar delordssökningen det mesta.</p>
+
+        <h3 class="subhead" id="sokteknik-kallor">Källor för det här avsnittet <a class="anchor" href="#sokteknik-kallor" aria-label="Länk till avsnittet">#</a></h3>
+        <ul>
+          <li>Lunr (u.å.) <em>Lunr: A bit like Solr, but much smaller and not as bright</em>. Tillgänglig på: <a href="https://lunrjs.com/">https://lunrjs.com/</a> (Hämtad: 21 oktober 2026). <span class="source-note">(Projektets egen startsida. Beskriver sökning i webbläsaren utan externa söktjänster.)</span></li>
+          <li>MiniSearch (u.å.) <em>MiniSearch</em>. Tillgänglig på: <a href="https://lucaong.github.io/minisearch/">https://lucaong.github.io/minisearch/</a> (Hämtad: 21 oktober 2026). <span class="source-note">(Projektets dokumentation. Källkod: <a href="https://github.com/lucaong/minisearch">https://github.com/lucaong/minisearch</a>.)</span></li>
+          <li>Pagefind (u.å.) <em>Pagefind</em>. Tillgänglig på: <a href="https://pagefind.app/">https://pagefind.app/</a> (Hämtad: 21 oktober 2026). <span class="source-note">(Projektets dokumentation, version 1.5.2 vid hämtningen.)</span></li>
+          <li>Wikipedia (2026a) <em>Full-text search</em>. Tillgänglig på: <a href="https://en.wikipedia.org/wiki/Full-text_search">https://en.wikipedia.org/wiki/Full-text_search</a> (Hämtad: 21 oktober 2026). <span class="source-note">(Uppslagsverk, engelska. Bra för att förstå begreppet, men inte en primärkälla.)</span></li>
+          <li>Wikipedia (2026b) <em>Inverted index</em>. Tillgänglig på: <a href="https://en.wikipedia.org/wiki/Inverted_index">https://en.wikipedia.org/wiki/Inverted_index</a> (Hämtad: 21 oktober 2026). <span class="source-note">(Uppslagsverk, engelska.)</span></li>
+          <li>Wikipedia (2026c) <em>Stemming</em>. Tillgänglig på: <a href="https://en.wikipedia.org/wiki/Stemming">https://en.wikipedia.org/wiki/Stemming</a> (Hämtad: 21 oktober 2026). <span class="source-note">(Uppslagsverk, engelska.)</span></li>
+        </ul>
+      </section>
     </main>
 
     <footer><div class="wrap">Levande dokument om samrådsprocessen · <span class="ver" title="Nytt i version 1.24: sökruta och innehållsträd (innehall.html), med en ny länk i toppmenyn.">Version 1.24</span> · Senast ändrad 21 oktober 2026 · <a href="index.html" style="color:#f5d77f">Översikt</a> · <a href="checklista.html" style="color:#f5d77f">Granska planen</a> · <a href="lagtexter.html" style="color:#f5d77f">Lagtexterna</a> · <a href="verktyg.html" style="color:#f5d77f">Verktyget</a></div></footer>
@@ -309,14 +359,14 @@
         <ul>
           <li>HTML för innehåll och struktur</li>
           <li>CSS för formgivning och responsiv layout</li>
-          <li>JavaScript som söker i ett färdigt sökindex i läsarens webbläsare, utan server och utan externa tjänster</li>
+          <li>Fulltextsökning i läsarens webbläsare, mot ett färdigt sökindex, utan server och utan externa tjänster. Läs mer i avsnittet "Hur sökningen fungerar" på sidan.</li>
           <li>Ett Python-skript som bygger sökindexet och innehållsträdet ur sidornas rubriker</li>
         </ul>
         <pre aria-label="Förenklad filstruktur"><code>Samradsguiden/
-├── innehall.html
-├── sok.js
-├── sokindex.js         (genereras)
-├── bygg_sokindex.py    (kör efter varje ändring)
+├── innehall.html       (sök och innehållsträd)
+├── sok.js              (sökskriptet)
+├── sokindex.js         (sökindex, genereras)
+├── bygg_sokindex.py    (bygger index och träd; kör efter varje ändring)
 ├── index.html
 ├── paverka.html
 ├── checklista.html
@@ -325,6 +375,11 @@
 ├── maxima.html
 ├── lagtexter.html
 ├── verktyg.html
+├── rangordning/
+├── Underlag/
+├── data.js
+├── verktyg.js
+├── checklista.js
 ├── styles.css
 ├── script.js
 └── README.md</code></pre>
