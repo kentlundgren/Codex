@@ -50,7 +50,7 @@ Innan ett beslut om kompensation tas måste en utredning göras av vilka värden
 
 ## Källförteckning
 
-- Blomberg, P. (2026) *Balanseringsprincipen*, utkast, Lunds Naturskyddsförening, 13 september. Tillgänglig på: [Balanseringsprincipen_260913.docx](Balanseringsprincipen_260913.docx). *(Ursprungsdokumentet — primärkälla till detta utkast.)*
+- Blomberg, P. (2026) *Balanseringsprincipen*, utkast, Lunds Naturskyddsförening, 13 september. Länk till dokumentet kommer senare. *(Ursprungsdokumentet — primärkälla till detta utkast.)*
 - Boverket (2018) *Frivillig ekologisk kompensation i planering och byggande*, PBL kunskapsbanken. Tillgänglig på: <https://www.boverket.se/sv/PBL-kunskapsbanken/teman/ekosystemtjanster/verktyg/kompensation/> (Hämtad: 20 september 2026). *(Primärkälla för Helsingborgs och Lommas arbetssätt.)*
 - Europeiska unionen (2024) *Förordning (EU) 2024/1991 om naturrestaurering*, 24 juni. Tillgänglig på: <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1991> (Hämtad: 20 september 2026). *(Kräver "no net loss" av grönyta och trädtäckning i städer till 2030 — internationell motsvarighet till balanseringsprincipen.)*
 - GOV.UK (u.å.) *Understanding biodiversity net gain*. Tillgänglig på: <https://www.gov.uk/guidance/understanding-biodiversity-net-gain> (Hämtad: 13 augusti 2026). *(Englands obligatoriska Biodiversity Net Gain sedan 2024.)*
