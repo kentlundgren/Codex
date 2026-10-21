@@ -1,24 +1,27 @@
 ---
 name: nf-resultatrakning
-description: Uppdaterar den interaktiva resultaträkningssidan för Lunds Naturskyddsförening (Fritid/NF/Kalendern/meetings/260924/Ekonomi/) med en ny period, när Kent får en uppdaterad huvudbok eller resultaträkning från ekonomiansvarig i styrelsen. Använd när Kent bifogar en ny Huvudbok-/resultaträknings-fil (docx eller liknande) för LNF och vill se den i samma sida/verktyg som tidigare perioder, eller ber om att "lägga till en ny period", "uppdatera resultaträkningen", eller "växla mellan resultaträkningar".
+description: Uppdaterar den interaktiva resultaträkningssidan för Lunds Naturskyddsförening (Fritid/NF/Kalendern/meetings/261021/Ekonomi/) med en ny period, när Kent får en uppdaterad huvudbok eller resultaträkning från ekonomiansvarig i styrelsen. Använd när Kent bifogar en ny Huvudbok-/resultaträknings-fil (docx eller liknande) för LNF och vill se den i samma sida/verktyg som tidigare perioder, eller ber om att "lägga till en ny period", "uppdatera resultaträkningen", eller "växla mellan resultaträkningar".
 ---
 
 # NF resultaträkning — lägg till en ny period
 
-En sida (`Fritid/NF/Kalendern/meetings/260924/Ekonomi/`) visar Lunds Naturskyddsförenings
+En sida (`Fritid/NF/Kalendern/meetings/261021/Ekonomi/`) visar Lunds Naturskyddsförenings
 resultaträkning som en väljarbar tidsserie: varje period är en egen liten JSON-fil, och
 sidans dropdown växlar mellan dem. Det här skillet beskriver hur en **ny period läggs
 till** utan att sidans HTML/CSS/JS behöver skrivas om.
 
-**Kanonisk plats:** all framtida data läggs i den här mappen, oavsett vilket kommande
-möte (`meetings/<datum>/`) huvudboken hör till — sidan är en enda växlingsbar
-tidsserie, inte en ny sida per möte. Om Kent uttryckligen vill ha en separat sida för
-ett specifikt möte i stället: fråga, anta inte.
+**Plats:** sidan är en enda växlingsbar tidsserie. Mappnamnet `meetings/<ååmmdd>/Ekonomi/` är datumet för den
+senaste huvudboken, så att man ser i URL:en vilken redovisning som gäller (Kents önskemål 2026-10-21). När en
+ny huvudbok kommer: flytta hela mappen till `meetings/<huvudbokens datum>/Ekonomi/`, uppdatera sökvägar
+(README, GitHub-länken i `index.html`, det här skillet) och lämna en omdirigerande `index.html` i den gamla
+mappen (se `meetings/260924/Ekonomi/index.html`) så att tidigare delade länkar fortsätter fungera.
+Nuvarande plats: `Fritid/NF/Kalendern/meetings/261021/Ekonomi/`. Om Kent vill ha en separat sida för ett
+specifikt möte i stället: fråga, anta inte.
 
 ## Filstruktur (referens)
 
 ```
-Kalendern/meetings/260924/Ekonomi/
+Kalendern/meetings/261021/Ekonomi/
   index.html         ← rörs normalt inte
   style.css           ← rörs normalt inte
   script.js            ← rörs normalt inte
@@ -94,7 +97,7 @@ Kalendern/meetings/260924/Ekonomi/
 
 5. **Verifiera lokalt.** Starta den befintliga dev-servern (`Fritid/NF/.claude/launch.json`,
    konfiguration `nf-static`) i webbläsarförhandsvisningen, öppna
-   `Kalendern/meetings/260924/Ekonomi/index.html`, och kontrollera att:
+   `Kalendern/meetings/261021/Ekonomi/index.html`, och kontrollera att:
    - båda/alla perioder syns i väljaren,
    - den nya periodens summor stämmer mot källdokumentet,
    - radmarkeringarna och kommentarslistan under tabellen visar rätt par och rätt

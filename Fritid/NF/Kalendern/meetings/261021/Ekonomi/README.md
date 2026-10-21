@@ -1,6 +1,6 @@
 # Resultaträkning — Lunds Naturskyddsförening
 
-**Live:** [https://kentlundgren.github.io/Codex/Fritid/NF/Kalendern/meetings/260924/Ekonomi/](https://kentlundgren.github.io/Codex/Fritid/NF/Kalendern/meetings/260924/Ekonomi/)
+**Live:** [https://kentlundgren.github.io/Codex/Fritid/NF/Kalendern/meetings/261021/Ekonomi/](https://kentlundgren.github.io/Codex/Fritid/NF/Kalendern/meetings/261021/Ekonomi/)
 *(publiceras när sidan committats och pushats — GitHub Pages är redan aktiverat för repot)*
 
 Internt arbetsmaterial för styrelsen: en resultaträkning byggd ur föreningens huvudbok,
@@ -17,9 +17,9 @@ Repo-rot lokalt:
 
 Den här mappen lokalt:
 
-`C:\Users\kentl\OneDrive\AI\Codex\Fritid\NF\Kalendern\meetings\260924\Ekonomi`
+`C:\Users\kentl\OneDrive\AI\Codex\Fritid\NF\Kalendern\meetings\261021\Ekonomi`
 
-På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Kalendern/meetings/260924/Ekonomi>
+På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Kalendern/meetings/261021/Ekonomi>
 
 ## Innehåll
 
@@ -29,6 +29,8 @@ På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Kalendern
   hör ihop som "projekt" med både kostnad och riktad intäkt).
 - `Huvudbok_260923.docx` — källunderlaget för perioden 2026-09-23, mottaget från
   ekonomiansvarig i styrelsen.
+- `Huvudbok_261021_avstamning.xlsx` — avstämning av huvudboken 2026-10-21 (delsummor, slutrad och
+  scenarion för skillnaden på 340 kr).
 - `Huvudbok_261021.docx` — källunderlaget för perioden 2026-10-21 (verifikat 1–40), mottaget
   från ekonomiansvarig inför styrelsemötet 2026-10-22.
 
