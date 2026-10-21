@@ -198,7 +198,16 @@ function placeDiffTip() {
   const tip = wrap.querySelector("#diffTip");
   const b = btn.getBoundingClientRect();
   const width = Math.min(384, window.innerWidth * 0.86);
-  tip.style.top = `${b.bottom}px`;
+  const below = window.innerHeight - b.bottom;
+  if (below < 300 && b.top > below) { // för lite plats under knappen: lägg rutan ovanför
+    tip.style.top = "auto";
+    tip.style.bottom = `${window.innerHeight - b.top}px`;
+    tip.style.maxHeight = `${b.top - 8}px`;
+  } else {
+    tip.style.bottom = "auto";
+    tip.style.top = `${b.bottom}px`;
+    tip.style.maxHeight = `${Math.max(120, below - 8)}px`;
+  }
   tip.style.left = `${Math.max(8, Math.min(b.right - width, window.innerWidth - width - 8))}px`;
 }
 

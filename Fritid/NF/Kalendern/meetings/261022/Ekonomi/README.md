@@ -34,6 +34,15 @@ På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Kalendern
 - `Huvudbok_261021.docx` — källunderlaget för perioden 2026-10-21 (verifikat 1–40), mottaget
   från ekonomiansvarig inför styrelsemötet 2026-10-22.
 
+## Transparens: underlag och avvikelser
+
+Varje period kan i sin `data/<datum>.json` ange `underlag` (länk till huvudboken),
+`huvudbokSlutrad` (huvudbokens egen slutrad) och vid avvikelse `avstamning` (länk till en
+Excel-analys plus en kort analystext). Sidan jämför då själv slutraden med summan av
+delsummorna: vid skillnad markeras resultatet och en förklaring med länkar visas vid hovring,
+fokus eller tryck samt under rubriken *Underlag och avstämning*. Se skillet `nf-resultatrakning`
+(steg 3a) för vad som ska läggas in varje gång.
+
 ## Så uppdateras sidan med en ny period
 
 Skillet `nf-resultatrakning` (i `Fritid/NF/.claude/skills/`) tar en ny huvudbok/

@@ -50,6 +50,12 @@ Kalendern/meetings/261022/Ekonomi/
    alla delsummor faktiskt stämde men flera andra saker — saknat verifikationsnummer,
    en felplacerad intäkt, en tom rad — behövde flaggas).
 
+   **Jämför också huvudbokens egen slutrad ("Resultat") med den omräknade summan av
+   delsummorna.** Skiljer de sig (som 2026-10-21: −11 268,32 mot −11 608,32 kr) ska
+   avvikelsen redovisas öppet på sidan (se steg 3a), inte döljas eller tyst "rättas".
+   Sidan visar alltid den omräknade summan, och huvudbokens slutrad skrivs in i
+   datafilen som `huvudbokSlutrad`.
+
 3. **Bygg den nya datafilen.** Skapa `data/<ISO-datum>.json` med samma schema som
    `data/2026-09-23.json`:
    ```json
@@ -92,6 +98,29 @@ Kalendern/meetings/261022/Ekonomi/
    - Om en intäktsrad är riktad till ett specifikt projekt, säg det i `namn` (t.ex.
      "Miljöanslag till fotoutställningen"), inte bara via färgmarkeringen — Kent bad
      uttryckligen om att kopplingen ska gå att läsa i klartext, inte bara synas i färg.
+
+3a. **Transparens: underlag och avvikelser (Kents önskemål 2026-10-21, gäller varje period).**
+   Läsaren ska enkelt kunna klicka fram underlaget och, vid avvikelse, analysen. Gör så här
+   varje gång en ny period läggs till:
+   - Kopiera källfilen (huvudboken) till mappen `Ekonomi/` och lägg i datafilen
+     `"underlag": { "fil": "Huvudbok_<ååmmdd>.docx", "etikett": "Huvudbok <datum> (Word-fil)" }`.
+     Då visas en länk till den under rubriken "Underlag och avstämning" på sidan.
+   - Lägg i datafilen `"huvudbokSlutrad": <huvudbokens egen slutrad>` (negativt vid underskott).
+   - **Om slutraden skiljer sig från summan av delsummorna** (0,005 kr marginal, räknas
+     automatiskt av `script.js`): bygg en Excel-analys i samma mapp
+     (`Huvudbok_<ååmmdd>_avstamning.xlsx`, bladen Huvudbok / Avstämning / Scenario, se
+     `Huvudbok_261021_avstamning.xlsx` som mall) och lägg i datafilen
+     `"avstamning": { "fil": "...xlsx", "etikett": "Excel-analys av skillnaden", "analys": "<kort analys: vad är avstämt, skillnadens storlek, hypoteser, att orsaken är ej klarlagd om den är det>" }`.
+     Sidan markerar då resultatet orange med ⓘ; vid hovring, fokus eller tryck visas en
+     förklaring med skillnaden, analysen och länkar till huvudboken och Excel-analysen, och
+     under tabellen visas samma sak i klartext. Inget av detta kräver ändring av
+     `index.html`/`script.js`/`style.css`.
+   - Stämmer slutraden: lägg bara `underlag` och `huvudbokSlutrad`; sidan skriver då att
+     resultatet stämmer med huvudbokens slutrad.
+   - Skriv `analys` sakligt och påstå inte orsaker som inte är bekräftade av ekonomiansvarig.
+   - **Publiceringskontroll:** huvudboken och Excel-analysen innehåller verifikationsrader
+     med fritext och publiceras via GitHub Pages när de ligger i mappen. Kontrollera dem
+     enligt `AGENTS.md` → Publiceringskontroll (personnamn m.m.) innan Kent committar.
 
 4. **Uppdatera manifestet.** Lägg till det nya datumet i `data/manifest.json` (lägg
    till, skriv inte över befintliga poster). Sidans JS sorterar själv, senaste period

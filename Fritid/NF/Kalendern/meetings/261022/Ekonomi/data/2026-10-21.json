@@ -77,6 +77,6 @@
   "avstamning": {
     "fil": "Huvudbok_261021_avstamning.xlsx",
     "etikett": "Excel-analys av skillnaden",
-    "analys": "Alla delsummor i huvudboken stämmer med sina rader, så skillnaden ligger i huvudbokens slutrad eller i något som inte syns i utskriften. Närmaste hypotes: slutraden saknar verifikat 38 och 39 (frimärken 242 kr och muggar 100 kr, tillsammans 342 kr; ett verifikat är underlaget för en bokföringspost). Orsaken är ännu inte klarlagd och frågan är inte besvarad av ekonomiansvarig."
+    "analys": "Alla delsummor i huvudboken stämmer med sina rader, så skillnaden ligger i huvudbokens slutrad eller i något som inte syns i utskriften. Närmaste hypotes: slutraden saknar verifikat 38 och 39 (frimärken 242 kr och muggar 100 kr, tillsammans 342 kr; ett verifikat är underlaget för en bokföringspost). Orsaken är ännu inte klarlagd."
   }
 }
