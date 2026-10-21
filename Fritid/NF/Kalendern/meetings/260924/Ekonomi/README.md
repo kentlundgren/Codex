@@ -29,6 +29,8 @@ På GitHub: <https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Kalendern
   hör ihop som "projekt" med både kostnad och riktad intäkt).
 - `Huvudbok_260923.docx` — källunderlaget för perioden 2026-09-23, mottaget från
   ekonomiansvarig i styrelsen.
+- `Huvudbok_261021.docx` — källunderlaget för perioden 2026-10-21 (verifikat 1–40), mottaget
+  från ekonomiansvarig inför styrelsemötet 2026-10-22.
 
 ## Så uppdateras sidan med en ny period
 
