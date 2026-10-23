@@ -48,6 +48,8 @@ summary{cursor:pointer;color:var(--link)}
 table{border-collapse:collapse;width:100%;margin:.5em 0;font:.85rem/1.35 system-ui,sans-serif}
 th,td{border-bottom:1px solid var(--line);padding:3px 6px;text-align:right}
 th:first-child,td:first-child{text-align:left}
+table.txt th,table.txt td{text-align:left;vertical-align:top}
+.tcap{font:600 .95rem/1.4 system-ui,sans-serif;margin:1.2em 0 .2em}
 .legend{display:flex;flex-wrap:wrap;gap:4px 14px;font:.85rem/1.3 system-ui,sans-serif;padding:2px 6px 6px}
 .legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--sw)}
 svg text{fill:var(--ink);font-family:system-ui,sans-serif}
@@ -76,10 +78,25 @@ svg .axis{stroke:var(--line);stroke-width:1}
 <body>
 <main>
 <h1 id="Start">Energin i Lund i siffror</h1>
-<p class="meta">Diagram till <a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat.md">Tankar kring det inskickade yttrandet</a>. Avsändare: Kent Lundgren. Utkast 2026-10-01.</p>
+<p class="meta">Diagram till <a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat.md">Tankar kring det inskickade yttrandet</a>. Avsändare: Kent Lundgren. Utkast 2026-10-01, uppdaterad 2026-10-23 mot det färdiga <a href="https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/LNF%20Synpunkter%20p%C3%A5%20Lunds%20energiplan%2020261001.pdf" target="_blank" rel="noopener">yttrandet från Lunds Naturskyddsförening (pdf, 4 sidor)</a>. Diagrammen är mina egna och är inte beslutade av föreningen.</p>
 <p class="draft">Siffrorna är hämtade ur källorna längst ned och är inte beslutade eller kvalitetssäkrade av föreningen. Kontrollera mot källan innan något återges.</p>
 
-<p class="read">Sex diagram. Tre mått hålls isär hela vägen: <strong>slutanvändning</strong> (vad som förbrukas i Lund), <strong>tillförsel</strong> (vad planen redovisar som tillfört kommunen) och <strong>utsläpp</strong>. Under varje diagram finns en tabell med samma tal.</p>
+<p class="read">Sex diagram. Tre mått hålls isär hela vägen: <strong>slutanvändning</strong> (vad som förbrukas i Lund), <strong>tillförsel</strong> (vad planen redovisar som tillfört kommunen) och <strong>utsläpp</strong>. Under varje diagram finns en tabell med samma tal. <a href="#tabell-1">Tabell 1</a> sätter yttrandets uppgifter bredvid siffrorna i diagrammen.</p>
+
+<h2 id="Yttrandet">Yttrandet mot siffrorna<a class="anchor" href="#Yttrandet" aria-label="Länk till avsnittet">#</a></h2>
+<p class="read">Yttrandet begär att planen ska visa nuläge och avstånd till varje delmål. <a href="#tabell-1">Tabell 1</a> visar vad yttrandet skriver om respektive mått och vad de sex diagrammen nedan visar. Där uppgifterna skiljer sig beror det oftast på olika avgränsning eller källa, inte på att någon har räknat fel.</p>
+<p class="tcap" id="tabell-1">Tabell 1. Yttrandets uppgifter och motsvarande siffror i diagrammen<a class="anchor" href="#tabell-1" aria-label="Länk till tabellen">#</a></p>
+<table class="txt">
+<thead><tr><th>Mått</th><th>Yttrandet (sida)</th><th>Diagrammen här</th><th>Diagram</th></tr></thead>
+<tbody>
+<tr><td>Utsläpp totalt</td><td>Minskning 59 procent till 2023 (planens siffra). Mål −65 procent 2025, −80 procent 2030 (s. 1).</td><td>−48 procent till 2023. Alla territoriella utsläpp, en bredare avgränsning än planens.</td><td><a href="#Utslapp">5</a></td></tr>
+<tr><td>Utsläpp från transporter</td><td>Planen redovisar ingen siffra. Mål −90 procent till 2030 (s. 2).</td><td>−33 procent till 2023.</td><td><a href="#Utslapp">5</a></td></tr>
+<tr><td>Energianvändning</td><td>Planen anger −12 procent för tillförseln. Mål −15 procent användning till 2030 (s. 2).</td><td>Slutanvändningen −8 procent (SCB). Tillförsel och användning är olika mått.</td><td><a href="#Anvandning">1</a>, <a href="#TvaMatt">2</a></td></tr>
+<tr><td>Sol och vind</td><td>37 + 44 = 81 GWh 2023. Mål 100 GWh 2025, 150 GWh 2030 (s. 1).</td><td>78 GWh 2023 (sol 33, vind 44) och 87 GWh 2024 enligt SCB.</td><td><a href="#SolVind">6</a></td></tr>
+<tr><td>Biogas</td><td>Planen redovisar ingen produktion. Mål 100 GWh 2030. Källby ger omkring 7 GWh i full drift (s. 2–3).</td><td>Ingen serie. Källby-siffran nämns i texten under diagram 6.</td><td><a href="#SolVind">6</a></td></tr>
+<tr><td>ESS</td><td>40 MW och upp till 270 GWh el per år (s. 3).</td><td>Inte med i diagrammen.</td><td>–</td></tr>
+<tr><td>Geotermi</td><td>250 GWh per år (s. 1).</td><td>Inte med i diagrammen. Uppgiften går att spåra till en uppsats från 2017, se <a href="https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Plangruppen/Energiplan/2027_2029/tankar_kring_inskickat.md">tankar kring yttrandet</a>.</td><td>–</td></tr>
+</tbody></table>
 
 <h2 id="Anvandning">1. Slutanvändningen har minskat med 8 procent sedan 2015<a class="anchor" href="#Anvandning" aria-label="Länk till avsnittet">#</a></h2>
 <figure id="fig-a"><div class="svgbox"></div>
@@ -117,6 +134,7 @@ svg .axis{stroke:var(--line);stroke-width:1}
 <p>Kraftringen (2019) <em>VA SYD tar över driften av biogasanläggningen på Källby avloppsreningsverk</em>. Tillgänglig på: <a href="https://www.mynewsdesk.com/se/kraftringen/pressreleases/va-syd-tar-oever-driften-av-biogasanlaeggningen-paa-kaellby-avloppsreningsverk-2954618" target="_blank" rel="noopener">https://www.mynewsdesk.com/se/kraftringen/pressreleases/va-syd-tar-oever-driften-av-biogasanlaeggningen-paa-kaellby-avloppsreningsverk-2954618</a>. Hämtad 2026-09-28. <em>(Ger omkring 7 GWh biogas per år i full drift.)</em></p>
 <p>Lunds kommun (2026a) <em>Energiplan för Lunds kommun 2027–2029. Förslag, diarienummer KS 2025/0811</em>. Tillgänglig på: <a href="https://lund.se/download/18.27a83861a04205000a14cf/1788860628694/Energiplan%20f%C3%B6r%20Lunds%20kommun%202027-2029.pdf" target="_blank" rel="noopener">https://lund.se/download/18.27a83861a04205000a14cf/1788860628694/Energiplan%20f%C3%B6r%20Lunds%20kommun%202027-2029.pdf</a>. Läst 2026-10-01. <em>(Tillförsel 1 990 och 1 760 GWh, utsläppsmål, delmål för sol, vind och biogas, uppgiften om kommunorganisationens fossilbränslefrihet.)</em></p>
 <p>Lunds kommun (2026b) <em>Mål: klimat och energi</em>. Tillgänglig på: <a href="https://lund.se/kommun-och-politik/hallbara-lund/ekologisk-hallbarhet/mal-klimat-och-energi" target="_blank" rel="noopener">https://lund.se/kommun-och-politik/hallbara-lund/ekologisk-hallbarhet/mal-klimat-och-energi</a>. Hämtad 2026-10-01. <em>(Kommunens egen statusbedömning per mål.)</em></p>
+<p>Lunds Naturskyddsförening (2026) <em>Yttrande över förslag till Energiplan för Lunds kommun 2027–2029</em>, 2026-10-01 (pdf, 4 sidor). Tillgänglig på: <a href="https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/LNF%20Synpunkter%20p%C3%A5%20Lunds%20energiplan%2020261001.pdf" target="_blank" rel="noopener">https://kentlundgren.github.io/Codex/Fritid/NF/Plangruppen/Energiplan/2027_2029/LNF%20Synpunkter%20p%C3%A5%20Lunds%20energiplan%2020261001.pdf</a>. Läst 2026-10-23. <em>(Det färdiga yttrandet som <a href="#tabell-1">Tabell 1</a> jämför med.)</em></p>
 <p>SCB (2026) <em>Kommunal och regional energistatistik, tabellerna Slutanvändning (MWh) efter förbrukarkategori och bränsletyp samt Elproduktion och bränsleanvändning</em>, Lund (1281), 2009–2024. Hämtad 2026-10-01 via SCB:s API. Tillgänglig på: <a href="https://www.scb.se/hitta-statistik/statistik-efter-amne/energi/energibalanser/kommunal-och-regional-energistatistik/" target="_blank" rel="noopener">https://www.scb.se/hitta-statistik/statistik-efter-amne/energi/energibalanser/kommunal-och-regional-energistatistik/</a>. <em>(Tidsserie för slutanvändning per sektor och bränsle, och för sol och vind. 2023 stämmer med planens sektorssiffror.)</em></p>
 </div>
 </main>
