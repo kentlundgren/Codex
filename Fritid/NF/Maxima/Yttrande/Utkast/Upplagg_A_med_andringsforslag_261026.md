@@ -28,7 +28,9 @@ LNF vidhåller sina yrkanden:
 
 - yrkandet om verkställighetsförordnande ska avslås.
 
-LNF vidhåller sina avslagskrav, eftersom inga nya fakta finns i VA SYDs bemötande, vad gäller de problem som LNF pekar på. De kommentarer som lämnas 🟩«av VA SYD» innehåller nästan bara hänvisningar till tidigare texter. LNFs tidigare yttranden kvarstår och upprepas inte här 🟩«frånsett några förtydliganden.»
+LNF vidhåller sina avslagskrav, eftersom inga nya fakta finns i VA SYDs bemötande, vad gäller de problem som LNF pekar på. De kommentarer som lämnas 🟩«av VA SYD» innehåller nästan bara hänvisningar till tidigare texter. LNFs tidigare yttranden kvarstår och upprepas inte här 🟩«frånsett några förtydliganden.» 🟧«LNF vidhåller de begäranden om redovisning som framställts i [aktbilaga 257](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/LNF_yttrande_MAXIMA_M3289-25_aktbilaga257_VA-SYDs-markerade-kopia.pdf).»
+
+> 🟧 Förslag KL: Behåll "det som saknas" i punkterna och lägg en mening i inledningen om att LNF vidhåller de begäranden om redovisning som framställts i aktbilaga 257. Då finns begäran kvar, och det går att visa vid ett eventuellt överklagande att den framställts, utan att varje punkt ser ut som en begäran om komplettering.
 
 > 🟧 Föreslår en sammanfattning i tre meningar – se KL_2610265
 
