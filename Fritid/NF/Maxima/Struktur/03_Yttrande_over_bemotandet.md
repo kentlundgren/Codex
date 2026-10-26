@@ -98,7 +98,7 @@ Yrkandena i yttrandet (Tabell 4 i [skede 3](02_Yttrande_gallande_ansokan.md)) g�
 
 1. Om yrkandena vidhålls oförändrade, eller om något ska läggas till.
 2. Om föreningen vill reservera sig för att få yttra sig igen när VA SYD återkommer vecka 50 2026.
-3. Om varje punkt ska sluta med en begäran (”LNF begär att VA SYD redovisar”) eller med det som saknas (”Det som saknas är …”). I yttrandet (skede 3) har bara Y19 en uttrycklig begäran. Det som saknas anger samma uppgift som ett skäl för avslag och lämnar föreläggandet åt domstolen, men en begäran är lättare att följa upp. Se lärdom 4 i [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4).
+3. Om varje punkt ska sluta med en begäran (”LNF begär att VA SYD redovisar”) eller med det som saknas (”Det som saknas är …”). I yttrandet (skede 3) har bara Y19 en uttrycklig begäran. Det som saknas anger samma uppgift som ett skäl för avslag och lämnar föreläggandet åt domstolen, men en begäran är lättare att följa upp. Se [Hur man uttrycker sig](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/fordjupning.html#uttryckasig) och lärdom 4 i [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4).
 4. Vem som undertecknar, och på vilket mandat. Enligt en uppgift i gruppens diskussion kan domstolen vara noga med vem som får företräda föreningen, och i NCC-målet krävdes protokollsutdrag. Det bör kontrolleras, och rätt sida ur protokollet kan i så fall bifogas som bilaga.
 5. Att den fil som föreningen lämnade in som aktbilaga 257 jämförs med VA SYD:s markerade kopia innan något återges.
 6. Om hänsynsreglerna (Y22–Y24) ska tas upp i bilagan eller lämnas utanför, se [Tabell 12](04_Sparbarhet_samrad_till_yttrande.md).
