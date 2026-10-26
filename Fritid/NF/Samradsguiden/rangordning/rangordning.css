@@ -58,3 +58,4 @@
 .rg-titel:hover .rg-tip, .rg-titel:focus .rg-tip, .rg-titel:focus-within .rg-tip { display:block; }
 #markning .rg-tag { margin-left:0; }
 @media print { .rg-tip { display:none; } }
+.rg-kort { display:block; margin-top:2px; color:var(--muted); font-size:.84rem; line-height:1.35; }
