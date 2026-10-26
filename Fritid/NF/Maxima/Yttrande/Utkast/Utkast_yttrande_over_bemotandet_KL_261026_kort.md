@@ -70,7 +70,16 @@ Följande saknas i ansökan eller har inte besvarats i bemötandet. De är skäl
 | 7a–7b | Centralisering och riskhantering | Krisrisker prövas ej (94) | en jämförelse mellan ett enda kustnära verk och ett system där Källby bibehålls (6 kap. 35 § 4: miljöeffekter till följd av yttre händelser) |
 | 7d–7e | Alnarpsströmmen, PFAS | Samlat svar (94) | uppgift om var tunnelns rörelse i höjdled vid Alnarpsströmmen och spridning av PFAS från marker norr om schakt S37 behandlas |
 | 5a | EU-förordningarna om återanvändning av vatten (2020/741) och restaurering av natur (2024/1991) | Inte nödvändigt att kommentera all lagstiftning, och förordning 2020/741 gäller bevattning som inte ingår i ansökan (91) | en redovisning av om återanvändning av renat avloppsvatten har bedömts som alternativ eller hushållningsåtgärd (2 kap. 5 §, 6 kap. 35 § 2), och av om berörda livsmiljötyper omfattas av förordning 2024/1991 om att livsmiljötyper i gott tillstånd inte får försämras avsevärt (artikel 4.11–12 och 5.9–10) och i så fall hur ansökan förhåller sig till kraven. LNF har tagit upp restaureringsförordningen i samrådssynpunkterna (s. 6) och i aktbilaga 257 (s. 3), men VA SYD svarar inte i sak |
-| 2, 8 | Ekonomi och elbehov | Hänvisning till ansökan (88–89, 94) | en redovisning av kostnaden för alternativet Källby och det totala elbehovet för pumpning (2 kap. 5 och 7 §§). LNF har anfört att kostnaden för ett utbyggt Källby var upp till 2 miljarder kronor lägre (aktbilaga 257, bilaga 1), vilket kan leda till motsvarande högre va-avgifter för Lunds invånare |
+| 2, 8 | Ekonomi och elbehov | Hänvisning till ansökan (88–89, 94) | en jämförbar kostnadsredovisning för alternativet Källby och MAXIMA (samma period, prisnivå och omfattning), och en redovisning av det totala elbehovet för pumpning (2 kap. 5 och 7 §§). Kostnadsskillnaden är osäker, se anmärkningen nedan |
+
+**Anmärkning till rad 2, 8: kostnadsskillnaden.** LNF har anfört att kostnaden för ett utbyggt Källby var upp till 2 miljarder kronor lägre (aktbilaga 257, s. 1 och 6, bilaga 1). Underlaget kan läsas på olika sätt:
+
+- Slutrapporten *Fortsatt drift eller nedläggning av Källby Avloppsreningsverk* (2020-09-07, s. 5) bedömer en utbyggnad av Källby till "i storleksordningen 300, maximalt 400, miljoner kronor", men anger att krav på läkemedelsrening kan driva kostnaden högre.
+- VA SYD (2021, *Lunds framtida avloppsrening*, tabell 3, s. 34) anger Lunds investering med Nya Sjölunda till 2 408 Mkr (system 3) och 2 670 Mkr (system 2). Jämfört med slutrapportens 300–400 Mkr blir skillnaden ca 2,0–2,4 miljarder. Det är så uppgiften "upp till 2 miljarder" kan härledas.
+- Räknar man i stället med VA SYD:s och WSP:s egen kalkyl för Källby, ca 1 750–1 800 Mkr (VA SYD, 2021, s. 20; WSP 2020 enligt slutrapporten, s. 3), blir skillnaden ca 0,6–0,9 miljarder. Mot VA SYD:s system 1, där Källby och Södra Sandby behålls (1 916 Mkr), är skillnaden ca 0,5–0,75 miljarder.
+- Siffrorna gäller prisnivå 2020–2021 och är beräkningar av olika slag. VA SYD betecknar sina underlag som preliminära och delvis grundade på schabloner (2021, s. 34). De avser inte den nuvarande ansökan.
+
+Skillnaden kan därför vara betydligt mindre än 2 miljarder, och beror på vilket underlag man jämför med. Det som saknas är en jämförbar kostnadsredovisning i den nuvarande ansökan.
 
 Lund den        november 2026
 
