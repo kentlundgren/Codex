@@ -1,6 +1,7 @@
 # MAXIMA i Samrådsguiden: omröstningen om frågorna i skede 5
 
 - **Live:** [https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/Maxima/rangordning.html)
+- **Utkasten (upplägg A, KL_261026 m.fl.):** [Fritid/NF/Maxima/Yttrande/Utkast](https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima/Yttrande/Utkast). Obs: de ligger i mappen `Maxima` direkt under `NF`, inte i den här mappen.
 
 *Utkast av Kent Lundgren, 2026-10-26. Omröstningen är ett underlag för samtal i gruppen och inte ett beslut av någon förening.*
 
