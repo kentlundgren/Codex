@@ -56,7 +56,7 @@
   var rows = Array.prototype.slice.call(tabell.querySelectorAll("tr[data-id]"));
   var items = rows.map(function (r, i) {
     return { id: r.getAttribute("data-id"), titel: r.getAttribute("data-titel"), forslag: i, rad: r,
-      info: r.getAttribute("data-forklaring") || "", kort: r.getAttribute("data-kort") || "", niva: r.getAttribute("data-niva") || "" };
+      info: r.getAttribute("data-forklaring") || "", kort: r.getAttribute("data-kort") || "", a: r.getAttribute("data-a") || "", niva: r.getAttribute("data-niva") || "" };
   });
   var byId = {};
   items.forEach(function (it) { byId[it.id] = it; });
@@ -239,6 +239,10 @@
     if (it.niva) {
       kids.push(document.createTextNode(" "));
       kids.push(el("span", { class: "rg-tag rg-tag--" + it.niva, text: it.niva === "huvud" ? "Huvudtext" : "Bilaga" }));
+    }
+    if (it.a) {
+      kids.push(document.createTextNode(" "));
+      kids.push(el("span", { class: "rg-tag " + (it.a === "ja" ? "rg-tag--a" : "rg-tag--ejA"), text: it.a === "ja" ? "I upplägg A" : "Saknas i upplägg A" }));
     }
     if (it.kort) kids.push(el("span", { class: "rg-kort", text: it.kort }));
     var attrs = { class: "rg-titel" };

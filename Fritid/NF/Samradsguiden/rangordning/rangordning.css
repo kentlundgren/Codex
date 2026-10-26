@@ -59,3 +59,5 @@
 #markning .rg-tag { margin-left:0; }
 @media print { .rg-tip { display:none; } }
 .rg-kort { display:block; margin-top:2px; color:var(--muted); font-size:.84rem; line-height:1.35; }
+.rg-tag--a { color:#1d3f66; background:#dde9f6; border:1px solid #b5cbe4; }
+.rg-tag--ejA { color:#5b5f56; background:#fff; border:1px dashed #9a9f90; }
