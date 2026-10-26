@@ -2,7 +2,7 @@
 
 # Spårbarhet från samråd till yttrande
 
-*Utkast 2026-10-13, Kent Lundgren. Inte behandlat eller beslutat av föreningens styrelse. Sidhänvisningar till VA SYD:s samrådsredogörelse följer dokumentets tryckta sidnummer, och till aktbilaga 320 dess egen paginering.*
+*Utkast 2026-10-13, Kent Lundgren. Inte behandlat eller beslutat av föreningens styrelse. Sidhänvisningar till VA SYD:s samrådsredogörelse följer dokumentets tryckta sidnummer, och till aktbilaga 320 dess egen paginering. Uppdaterat 2026-10-26 med hur punkterna i utkasten över bemötandet följer Y-numren (Tabell 12), en rad om restaureringsförordningen i Tabell 10 och en rättelse och en ny punkt i Tabell 13.*
 
 Det här dokumentet visar hur samma fråga kan följas från samrådsbrevet, via samrådsredogörelsen och yttrandet, till sökandens bemötande, och hur föreningen kunde ha gått tillväga för att inte tappa den på vägen. Det kopplar ihop [skede 1](01_Synpunkter_under_samrad.md), [skede 3](02_Yttrande_gallande_ansokan.md) och [skede 5](03_Yttrande_over_bemotandet.md).
 
@@ -77,7 +77,7 @@ Av 35 samrådspunkter har 25 en motsvarighet i yttrandet. 10 fördes inte vidare
 
 Tabell 10 följer de frågor där svaren går att jämföra. Kolumn 3 avser [samrådsredogörelsen](https://maxima.vasyd.se/sites/default/files/media/document/2025-08/Bilaga%20M1%20Samr%C3%A5dsredog%C3%B6relse%20utg%203.0.pdf#page=41) (Bilaga M1, avsnitt 5.17, s. 40–41), kolumn 4 aktbilaga 320. Tabellen säger inget om vem som har rätt i sak.
 
-**Tabell 10. Femton frågor genom samråd, yttrande och bemötande**
+**Tabell 10. Sexton frågor genom samråd, yttrande och bemötande**
 
 | Fråga | S / Y | Samrådsredogörelsen (2025) | Bemötandet (2026) |
 |---|---|---|---|
@@ -95,6 +95,7 @@ Tabell 10 följer de frågor där svaren går att jämföra. Kolumn 3 avser [sam
 | Centraliserat eller decentraliserat system | S22 / Y19 | Alternativutredningen innehåller en bedömning av risker med ett centralt verk i kustnära läge (s. 40). | Centraliseringen bedöms som lämpligast. Krisrisker prövas inte (s. 94). |
 | Läckage mot Alnarpsströmmen, stopp i tunneln | S8, S34 / Y20 | Risken för stopp bedöms som liten. Hydrogeologisk påverkan beskrivs i MKB:n och Bilaga M5 (s. 41). | Samlat svar på 7a–7e (s. 94). |
 | PFAS vid schakt S37 | S11 / Y21 | Ingen särskild punkt i svaret till föreningen. | Samlat svar på 7a–7e (s. 94). |
+| Restaureringsförordningen | S25 / Y11, Y12 | Förordningen nämns inte (en textsökning i Bilaga M1 ger inga träffar, men dokumentet bör kontrolleras). | Inte nödvändigt att kommentera all lagstiftning (s. 91). Förordning 2020/741 ingår inte i ansökan. Restaureringsförordningen besvaras inte i sak. I utkasten över bemötandet är den rad 5a i bilagan. |
 | Uppströmsarbete och rötslam | S2, S30 / – | VA SYD arbetar kontinuerligt med uppströmsarbete. Sjölunda följer Revaq (s. 41). | Fördes inte vidare i yttrandet. |
 
 ## Så kunde föreningen ha gått tillväga
@@ -109,7 +110,7 @@ Tabell 10 följer de frågor där svaren går att jämföra. Kolumn 3 avser [sam
 | När kungörelsen kommer (2026-04-14) | Lägg svarstiden (till 2026-06-18) i kalendern och räkna tillbaka. | Domstolen anger en sista dag. | Aktbilaga 310 |
 | I yttrandet (inkom 2026-06-09) | Numrera Y1, Y2 och så vidare, ett påstående per punkt. Ange för varje punkt vilken samrådspunkt (S) den gäller och vad VA SYD svarade i samrådsredogörelsen. Avsluta med en begäran. | Så ser domstolen att en fråga ställts tidigare, och vad som hänt med den. | Skede 3 |
 | När bemötandet kommer (2026-09-30) | Kopiera VA SYD:s numrering in i en svarstabell och markera besvarat, delvis, hänvisning eller obesvarat. | Det visar vad som ska tas upp igen. | Tabell 6 i [skede 5](03_Yttrande_over_bemotandet.md) |
-| Före fristen (2026-11-06) | Skriv yttrande över bemötandet med samma Y-nummer, och reservera dig för att få yttra dig när VA SYD återkommer. | VA SYD återkommer vecka 50 2026 med sin inställning till kvartär rening. | Aktbilaga 320, s. 13, 47–48 |
+| Före fristen (2026-11-06) | Skriv yttrande över bemötandet med samma Y-nummer, och reservera dig för att få yttra dig när VA SYD återkommer. Behåll Y-numren som hänvisning även om utkastet ordnas efter ämne (se Tabell 12). | VA SYD återkommer vecka 50 2026 med sin inställning till kvartär rening. | Aktbilaga 320, s. 13, 47–48 |
 
 ### Så kan en punkt i yttrandet åberopa samrådet
 
@@ -123,11 +124,49 @@ Begäran i exemplet är formulerad av frågan i originalet och är ett förslag,
 
 Svarstabellen med VA SYD:s numrering och status för varje punkt i yttrandet finns nu som Tabell 6 i [skede 5](03_Yttrande_over_bemotandet.md), där den hör hemma som underlag för själva yttrandet över bemötandet.
 
+## Från yttrandet till yttrandet över bemötandet
+
+Utkasten till yttrande över bemötandet (senast [KL_261026](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/Utkast/Utkast_yttrande_over_bemotandet_KL_261026_kort.md)) är ordnade efter ämne, med punkterna 1–11 och en bilaga, och inte efter Y1–Y27. Det gör texten lättare att läsa, men Y-numren försvinner. Tabell 12 visar var varje Y-punkt finns i KL_261026, så att ingen fråga tappas utan att det syns. Reservationen (punkt 11) har inget Y-nummer, eftersom den hör till [skede 5](03_Yttrande_over_bemotandet.md) och väntar på skede 6.
+
+**Tabell 12. Yttrandets punkter (Y) och var de finns i utkastet KL_261026**
+
+| Y | Ämne | I KL_261026 | Hur |
+|---|---|---|---|
+| Y1 | Ansökan beskriver inte Källby och Höje å | Punkt 1, 2 | Huvudtext |
+| Y2 | Ekonomiska fakta saknas | Bilaga, rad 2, 8 | Bilaga |
+| Y3 | Alternativ 2 och 3 har inte utretts | Punkt 6 | Huvudtext |
+| Y4 | Nollalternativet | Punkt 2, 6 | Huvudtext |
+| Y5 | Nedläggningen av Källby är en följdverksamhet som inte tas upp | Punkt 1, 2 (som tunnelns verkningar) | Huvudtext |
+| Y6 | Bräddning vid Källby | Bilaga, rad 3d | Bilaga |
+| Y7 | Källbys tillståndstak nås före tunneln | Bilaga, rad 3e | Bilaga |
+| Y8 | Klimatberäkningen saknar rivning | Bilaga, rad 3f | Bilaga |
+| Y9 | Utredning av biologisk mångfald saknas | Punkt 1 (fridlysta och hotade arter) | Delvis |
+| Y10 | Förekomsten av arter och artskyddet | Punkt 1 | Delvis |
+| Y11 | Kumulativa effekter och restaureringsförordningen | Punkt 1, 3, bilaga rad 5a | Huvudtext |
+| Y12 | EU-lagstiftningen kommenteras inte | Bilaga, rad 5a | Bilaga |
+| Y13 | Länsstyrelsens påstående om utsläppspunkten | Punkt 8 | Huvudtext |
+| Y14 | Fel vattenförekomst | Bilaga, rad 5c | Bilaga |
+| Y15 | Bästa möjliga teknik och fjärde reningssteg | Punkt 7, 9 | Huvudtext |
+| Y16 | Flergenerationsperspektiv och försiktighetsprincipen vid klimatanpassningen | Punkt 4, 5 | Delvis |
+| Y17 | Skyddsnivån +3,5 m är för låg | Punkt 4, 9 | Huvudtext |
+| Y18 | Villkorsförslag 19 och 20 för klimatanpassning | Punkt 9 (villkor om skydd enligt vägledningen) | Delvis |
+| Y19 | Ett centraliserat system jämfört med ett decentraliserat | Punkt 6, bilaga rad 7a–7b | Huvudtext |
+| Y20 | Tunnelns rörelse i höjdled vid Alnarpsströmmen | Bilaga, rad 7d–7e | Bilaga |
+| Y21 | PFAS norr om schakt S37 | Bilaga, rad 7d–7e | Bilaga |
+| Y22 | Bevisbördekravet (2 kap. 1 §) | Inte med | Inte med |
+| Y23 | Kunskapskravet (2 kap. 2 §) | Inte med | Inte med |
+| Y24 | Försiktighetsprincipen (2 kap. 3 §) | Inte med | Inte med |
+| Y25 | Hushållning med råvaror och energi (2 kap. 5 §) | Bilaga, rad 2, 8 (elbehov) | Bilaga |
+| Y26 | Val av plats (2 kap. 6 §) | Punkt 6, bilaga rad 2, 8 (kostnadsjämförelsen) | Huvudtext |
+| Y27 | Verkställighetsförordnandet ska avslås | Punkt 10 | Huvudtext |
+
+Av de 27 punkterna finns 11 i huvudtexten, 9 i bilagan, 4 delvis och 3 inte alls (Y22–Y24, hänsynsreglerna 2 kap. 1–3 §§). Det är ett val som gruppen bör fatta och inte en glömska: ska de tas upp i bilagan eller lämnas utanför? Kopplingen är en läsning av utkastet och inte föreningens beslut. Utkastet är inte beslutat av någon förening.
+
 ## Vad kostar Källby och Sjölunda enligt underlagen?
 
 Yttrandet och samrådsbrevet säger att Källbyalternativet är upp till eller minst 2 miljarder kronor billigare än Sjölundaalternativet (S18, Y26). Underlagen i projektets mapp Källor visar hur den siffran kan uppstå, och varför den ändå är omstridd. Beloppen nedan är miljoner kronor (mkr) och avser Lunds kostnad i 2020 års prisnivå, om inget annat anges. VA SYD anger att kalkylerna är osäkra, från 15 procent lägre till 30 procent högre (VA SYD, 2021, s. 33).
 
-**Tabell 12. Investeringskostnader för Lund i olika underlag (mkr)**
+**Tabell 13. Investeringskostnader för Lund i olika underlag (mkr)**
 
 | Underlag | Alternativ | Investering för Lund |
 |---|---|---|
@@ -141,8 +180,10 @@ Yttrandet och samrådsbrevet säger att Källbyalternativet är upp till eller m
 Vad tabellen visar:
 
 - **Tunneln.** Lunds andel av tunnelprojekten är 447 mkr för ÖLM och 545 mkr för MAT i System 2, och 379 respektive 462 mkr i System 3. Tillsammans är det ca 840–990 mkr av Lunds 2 408–2 670 mkr. Om andelen är proportionell mot Lunds andel av kostnaden (24,4 respektive 22,6 procent, enligt rapporten) motsvarar ÖLM ca 1,7–1,8 miljarder kronor för hela tunneln. Det är min egen uträkning och inte en uppgift i rapporten. Utan tunnlarna är Sjölundadelen för Lund ca 1 470–1 630 mkr, alltså i nivå med VA SYD:s kalkyl för ett utbyggt Källby.
-- **Skillnaden mot konsulternas kalkyl.** Lunds Sjölundakostnad inklusive tunnlar (2 408–2 670 mkr) minus konsulternas 300–400 mkr blir ca 2,0–2,3 miljarder kronor. Det är sannolikt hur ”minst 2 miljarder” kan uppstå.
+- **Skillnaden mot konsulternas kalkyl.** Lunds Sjölundakostnad inklusive tunnlar (2 408–2 670 mkr) minus konsulternas 300–400 mkr blir ca 2,0–2,4 miljarder kronor (2 670 minus 300 är 2 370). Det är sannolikt hur ”minst 2 miljarder” kan uppstå.
 - **Skillnaden mot VA SYD:s kalkyl.** Mot Lunds kostnad för det lokala systemet (1 916 mkr) blir skillnaden 492–754 mkr. Den årliga kostnaden för Lund är 119,0 mkr i System 1, 127,4 mkr i System 2 och 122,6 mkr i System 3.
+- **Investering är inte avgift.** Den årliga kostnaden för Lund skiljer ca 3,6–8,4 mkr per år (122,6 och 127,4 mkr mot 119,0 mkr i System 1), alltså ca 3–7 procent (VA SYD, 2021, tabell 3, s. 34, 2020 års prisnivå). En uppgift om att Sjölundasystemen ger ”upp till två miljarder högre va-avgifter” blandar ihop investeringsutgift och avgift.
+- **Så används siffrorna i utkasten.** I utkastet [KL_261026](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/Utkast/Utkast_yttrande_over_bemotandet_KL_261026_kort.md) står en anmärkning till bilagans rad 2, 8 om att kostnadsskillnaden kan vara betydligt mindre än 2 miljarder, och att det beror på vilket underlag man jämför med.
 - **Varför kalkylerna skiljer.** WSP:s granskning (WSP, 2020, s. 5) förklarar glappet mellan 400 och 1 750 mkr med anläggningsdelar för ca 1 200 mkr som inte ingår i konsulternas lösning, till exempel läkemedelsrening, membranfilter och övertäckning, och hävdar att deras lösning sannolikt inte skulle få tillstånd. Det är VA SYD:s konsult som granskar Lunds konsulter. Landelius m.fl. i sin tur ställde sig tveksamma till VA SYD:s kalkyler och saknade underlag för dem (Landelius m.fl., 2020, s. 5).
 
 ### Vad VA SYD:s rapport 2021 kommer fram till

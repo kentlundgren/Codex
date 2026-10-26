@@ -2,7 +2,7 @@
 
 # Skede 5: Yttrande över VA SYD:s bemötande (mål M 3289-25), mall enligt sexdelsmodellen
 
-*Utkast 2026-10-14, Kent Lundgren. Det här är en mall och inte ett yttrande. Den innehåller det som går att hämta ur handlingarna: ärendets ram och VA SYD:s svar punkt för punkt. Föreningens ställningstaganden är lämnade öppna i mallen. Ett separat utkast till yttrande finns också, se Del 1. Inte behandlat eller beslutat av föreningens styrelse. Se [ändringsloggen](05_Andringslogg.md).*
+*Utkast 2026-10-14, uppdaterat 2026-10-26, Kent Lundgren. Det här är en mall och inte ett yttrande. Den innehåller det som går att hämta ur handlingarna: ärendets ram och VA SYD:s svar punkt för punkt. Föreningens ställningstaganden är lämnade öppna i mallen. Ett separat utkast till yttrande finns också, se Del 1. Inte behandlat eller beslutat av föreningens styrelse. Se [ändringsloggen](05_Andringslogg.md).*
 
 Skede 5 i MAXIMA-förloppet är ett yttrande till domstolen över sökandens bemötande. Det bygger på [skede 3](02_Yttrande_gallande_ansokan.md): samma nummer Y1–Y27 används, så att varje punkt går att följa till VA SYD:s svar. Strukturen är [sexdelsmodellen](https://kentlundgren.github.io/Codex/Fritid/NF/NCC_stenbryttning/struktur.html). Hur skedet förhåller sig till de andra skedena visas i Tabell 8 i [spårbarhetsdokumentet](04_Sparbarhet_samrad_till_yttrande.md).
 
@@ -14,13 +14,15 @@ Underrättelsen, [aktbilaga 333](https://github.com/kentlundgren/Codex/blob/main
 
 Mark- och miljööverdomstolen ordnar sina domskäl efter fråga och inte efter parternas numrering. I domen i NCC-målet ([Svea hovrätt, Mark- och miljööverdomstolen, 2024](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/NCC_dom/Svea%20HR%20M%20899-23%20Dom%202024-12-03.pdf), mål M 899-23) har domskälen rubriker som "Miljökonsekvensbeskrivningen" och "Natura 2000-tillstånd", och domstolen kommenterar inte varje krav för sig. Det talar för att ett yttrande över bemötandet blir mer användbart om det har följande upplägg. Förslaget är ett bidrag till diskussion och inte föreningens beslut.
 
-1. **Yrkanden.** Vidhåll de tidigare yrkandena och ange vid behov ett andrahandsyrkande.
+1. **Yrkanden.** Vidhåll de tidigare yrkandena och ange vid behov ett andrahandsyrkande. Att ”underkänna” MKB:n är inget yrkande som domstolen kan bifalla. Lagens verktyg är föreläggande om komplettering och, vid väsentliga brister, avvisning (22 kap. 2 §), och det yrkas därför i andra hand.
 2. **Sammanfattning.** Några få meningar som går att citera fristående, var och en med sin hänvisning.
 3. **Några få huvudskäl under egna rubriker.** Varje huvudskäl har ett påstående, fakta med hänvisning (bilaga, avsnitt, sida), den rättsliga grunden och en begäran som går att bifalla eller avslå.
-4. **Övriga obesvarade punkter som en tabell i en bilaga**, med en begäran per rad. Då syns det vad som är obesvarat, utan att de mindre frågorna tar plats från huvudskälen. Tabellen med VA SYD:s numrering finns redan som Tabell 6.
+4. **Övriga obesvarade punkter som en tabell i en bilaga**, med en rad per obesvarad punkt (en begäran eller en uppgift om det som saknas, se nedan). Då syns det vad som är obesvarat, utan att de mindre frågorna tar plats från huvudskälen. Tabellen med VA SYD:s numrering finns redan som Tabell 6.
 5. **Reservation** för att få yttra sig över sökandens kommande besked och uppdaterade sammanställning.
 
 Skälet till att inte ta med alla frågor i huvudtexten är att en motpart ofta har lättare att besvara de mindre kraven, och då kan undvika att besvara huvudkraven. Tidigare handlingar ligger redan i akten, så det som upprepas bör vara sådant som stöder argumentationen. Numrering och en begäran per punkt ([lärdom 1](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-1) och [lärdom 4](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4) i Samrådsguiden) behövs fortfarande, men för huvudskälen och för tabellens rader, inte för varje detalj.
+
+**Så har upplägget prövats i utkasten.** Utkasten (senast [KL_261026](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/Utkast/Utkast_yttrande_over_bemotandet_KL_261026_kort.md)) använder upplägg C: ämnesrubriker med numrerade punkter och en bilaga. Tre saker har lagts till efter synpunkter i gruppen. *Formulering:* varje punkt slutar med ”det som saknas” i stället för ”LNF begär att VA SYD redovisar”, eftersom föreningen yrkar avslag och det är domstolens sak att förelägga om komplettering om ansökan inte avslås. Nackdelen är att en konkret begäran är lättare att följa upp ([lärdom 4](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4)). *Spårbarhet:* punkterna är ordnade efter ämne, så Y-numren visas i [Tabell 12](04_Sparbarhet_samrad_till_yttrande.md). *Form:* A, B och C jämförs i [Tabell 7 på Samrådsguidens MAXIMA-sida](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#skede5-tre-upplagg), och en text i upplägg A med ändringsförslag finns som [Markdown](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/Utkast/Upplagg_A_med_andringsforslag_261026.md) och [Word](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fkentlundgren.github.io%2FCodex%2FFritid%2FNF%2FMaxima%2FYttrande%2FUtkast%2FUpplagg_A_med_andringsforslag_261026.docx).
 
 ## Del 1. Ärendets ram
 
@@ -37,7 +39,7 @@ Skälet till att inte ta med alla frågor i huvudtexten är att en motpart ofta 
 | **Därefter (tidsplanen)** | Vecka 50 2026: sökanden bemöter inkomna yttranden och ger in en uppdaterad sammanställning. Vecka 51 2026: kungörelse av kallelse till huvudförhandling. Vecka 5–6 2027: huvudförhandling med syn. Vecka 15 2027: målet avgörs |
 | **Föreningens tidigare yttrande** | Aktbilaga 257, inkom 2026-06-09. Se [skede 3](02_Yttrande_gallande_ansokan.md) |
 | **Avsändare och mandat** | Lunds Naturskyddsförening. Att besluta: vem som undertecknar, och på vilket mandat |
-| **Utkast** | Ett utkast till yttrande, daterat 2026-10-13 i filnamnet, har visats för medlemmar i Plangruppen. [Läs Word-filen i webbläsaren](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fkentlundgren%2FCodex%2Fmain%2FFritid%2FNF%2FMaxima%2FTesttext%2F261013_yttrande_over_VA_SYDs_bemotande_.docx) · [Word-filen på GitHub](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Testtext/261013_yttrande_over_VA_SYDs_bemotande_.docx) (laddas ned). Inte beslutat av föreningen |
+| **Utkast** | Ett första utkast till yttrande, daterat 2026-10-13 i filnamnet, visades för medlemmar i Plangruppen ([läs Word-filen i webbläsaren](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fkentlundgren%2FCodex%2Fmain%2FFritid%2FNF%2FMaxima%2FTesttext%2F261013_yttrande_over_VA_SYDs_bemotande_.docx) · [Word-filen på GitHub](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Testtext/261013_yttrande_over_VA_SYDs_bemotande_.docx), laddas ned). Senare utkast av Kent Lundgren: [KL_261019](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/Utkast/Utkast_yttrande_over_bemotandet_KL_261019_kort.md), [KL_261020](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/Utkast/Utkast_yttrande_over_bemotandet_KL_261020_kort.md), [KL_261021](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/Utkast/Utkast_yttrande_over_bemotandet_KL_261021_kort.md) och [KL_261026](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/Utkast/Utkast_yttrande_over_bemotandet_KL_261026_kort.md) ([Word](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fkentlundgren.github.io%2FCodex%2FFritid%2FNF%2FMaxima%2FYttrande%2FUtkast%2FUtkast_yttrande_over_bemotandet_KL_261026_kort.docx)). De jämförs i [Tabell 5](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#tabell-5) och tre upplägg i [Tabell 7](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#tabell-7) på Samrådsguidens MAXIMA-sida. Inget är beslutat av föreningen |
 | **Status** | Mallen: ingen text är beslutad |
 
 ## Del 2. Sammanfattning
@@ -56,7 +58,7 @@ VA SYD har meddelat att de återkommer vecka 50 2026 med sin inställning till k
 
 Använd samma nummer som i skede 3. För varje punkt behöver yttrandet tre saker: vad VA SYD svarade, vad föreningen vidhåller, och vad som är nytt sedan yttrandet. Sista kolumnen i Tabell 6 är till för föreningens ställning.
 
-Tabellen är förifylld utifrån aktbilaga 320. ”Obesvarad i sak” betyder att VA SYD inte tar upp punktens innehåll, bara hänvisar eller svarar samlat.
+Tabellen är förifylld utifrån aktbilaga 320. ”Obesvarad i sak” betyder att VA SYD inte tar upp punktens innehåll, bara hänvisar eller svarar samlat. Hur punkterna hänger ihop med utkastets ämnesordning visas i [Tabell 12](04_Sparbarhet_samrad_till_yttrande.md).
 
 **Tabell 6. Svarstabell: yttrandets punkter (Y) mot VA SYD:s bemötande**
 
@@ -96,9 +98,10 @@ Yrkandena i yttrandet (Tabell 4 i [skede 3](02_Yttrande_gallande_ansokan.md)) g�
 
 1. Om yrkandena vidhålls oförändrade, eller om något ska läggas till.
 2. Om föreningen vill reservera sig för att få yttra sig igen när VA SYD återkommer vecka 50 2026.
-3. Om varje punkt ska ha en egen begäran. I yttrandet (skede 3) har bara Y19 en uttrycklig begäran. Se lärdom 4 i [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4).
-4. Vem som undertecknar, och på vilket mandat.
+3. Om varje punkt ska sluta med en begäran (”LNF begär att VA SYD redovisar”) eller med det som saknas (”Det som saknas är …”). I yttrandet (skede 3) har bara Y19 en uttrycklig begäran. Det som saknas anger samma uppgift som ett skäl för avslag och lämnar föreläggandet åt domstolen, men en begäran är lättare att följa upp. Se lärdom 4 i [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4).
+4. Vem som undertecknar, och på vilket mandat. Enligt en uppgift i gruppens diskussion kan domstolen vara noga med vem som får företräda föreningen, och i NCC-målet krävdes protokollsutdrag. Det bör kontrolleras, och rätt sida ur protokollet kan i så fall bifogas som bilaga.
 5. Att den fil som föreningen lämnade in som aktbilaga 257 jämförs med VA SYD:s markerade kopia innan något återges.
+6. Om hänsynsreglerna (Y22–Y24) ska tas upp i bilagan eller lämnas utanför, se [Tabell 12](04_Sparbarhet_samrad_till_yttrande.md).
 
 ## Del 6. Handlingar och källor
 
@@ -124,6 +127,8 @@ Underrättelsen kom som en PDF om 288 sidor: [underrättelsepaketet](https://git
 | 321, 322, 323, 325, 329, 331 | Övriga bilagor till aktbilaga 320: 01-Y-a Yttranden i Esbosamråd (133–140), 02-Y-a Spridning till danskt territorialområde (141–152), 03-Y-a Samlat underlag inkomna yttranden (153–179), 05-Y-a Beslut riksintresse energiproduktion och energidistribution Malmö hamn (180–184), A7-Y-a Komplettering sekretessbelagda uppgifter (201–204), 04-Y-a Översiktlig bygg- och rivningsplan, Sjölunda (205–211) | VA SYD, 2026-09-30 (331 inkom 2026-10-08) | 133–184, 201–211 | Inte genomgångna här |
 
 ### Källor
+
+Lundgren, K. (2026) *Utkast till yttrande över VA SYD:s bemötande, KL_261026* (med äldre versioner KL_261019–KL_261021 i samma mapp). Tillgänglig på: [https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/Utkast/Utkast_yttrande_over_bemotandet_KL_261026_kort.md](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Yttrande/Utkast/Utkast_yttrande_over_bemotandet_KL_261026_kort.md) (Hämtad: 26 oktober 2026). (Utkast till fortsatt diskussion, inte beslutat av föreningen eller granskat av jurist.)
 
 Lundgren, K. (2026) *Yttrande över VA SYDs bemötande, version B*, utkast, filen daterad 2026-10-13. Tillgänglig på: [https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Testtext/261013_yttrande_over_VA_SYDs_bemotande_.docx](https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Maxima/Testtext/261013_yttrande_over_VA_SYDs_bemotande_.docx) (Word-fil, laddas ned). Läsbar i webbläsaren via [Microsofts visningstjänst](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fkentlundgren%2FCodex%2Fmain%2FFritid%2FNF%2FMaxima%2FTesttext%2F261013_yttrande_over_VA_SYDs_bemotande_.docx) (Hämtad: 14 oktober 2026). *(Utkast som visats för medlemmar i Plangruppen. Inte beslutat av föreningen. Texten i filen är daterad 2026-10-12, filnamnet och den senaste ändringen 2026-10-13.)*
 

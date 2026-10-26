@@ -10,7 +10,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 
 ## Samrådsbrevet (originalet, 8 sidor) och skede 1
 
-**Tabell 13. Samrådsbrevets delar och var de hamnat i skede 1**
+**Tabell 14. Samrådsbrevets delar och var de hamnat i skede 1**
 
 | Originalets del | I steg 1 |
 |---|---|
@@ -27,7 +27,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 
 ## Yttrandet (originalet, 7 sidor) och skede 3
 
-**Tabell 14. Yttrandets delar och var de hamnat i skede 3**
+**Tabell 15. Yttrandets delar och var de hamnat i skede 3**
 
 | Originalets del | I steg 2 |
 |---|---|
@@ -59,7 +59,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 - **Nytt steg 3.** [Yttrande över bemötandet](03_Yttrande_over_bemotandet.md) är tillagt som en mall: ärendets ram, VA SYD:s svar punkt för punkt (Tabell 6, flyttad från spårbarhetsdokumentet) och de frågor som föreningen behöver ta ställning till. Föreningens egna ställningstaganden och förslag till text ingår inte.
 - **Utkast till yttrande, 2026-10-13.** Ett utkast av Kent Lundgren som visats för medlemmar i Plangruppen är länkat i skede 5, som Word-fil och som läsbar visning i webbläsaren. Innehållet är oförändrat.
 - **Spårbarhet** är nu steg 4 (ankaret `#steg4`, tidigare `#steg3`), och filen heter `04_Sparbarhet_samrad_till_yttrande.md`. Loggen heter fortfarande `#logg` och filen `05_Andringslogg.md`.
-- **Tabellnummer.** Tabellerna är omnumrerade i den ordning de visas: steg 3 har Tabell 5–7, spårbarheten Tabell 8–12 och loggen Tabell 13–14.
+- **Tabellnummer.** Tabellerna är omnumrerade i den ordning de visas: steg 3 har Tabell 5–7, spårbarheten Tabell 8–13 och loggen Tabell 14–15 (omnumrerade 2026-10-26).
 
 ## Tillägg 2026-10-20: skeden i stället för steg
 
@@ -81,13 +81,21 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 - ”skyddsformen” i S24 blev ”skyddsform” och ”Källby-alternativet” i S18 blev ”Källbyalternativet”, för enhetlighetens skull.
 - I S9 är meningarna omordnade så att begäran står före den mening som hänvisar till den.
 
+## Tillägg 2026-10-26: skede 5-utkasten och spårbarheten
+
+- **Ny Tabell 12** i [spårbarhetsdokumentet](04_Sparbarhet_samrad_till_yttrande.md): var yttrandets punkter (Y1–Y27) finns i utkastet KL_261026. Kostnadstabellen heter därför Tabell 13, och loggens tabeller Tabell 14 och 15.
+- **Tabell 10** har fått en rad om restaureringsförordningen (S25 / Y11, Y12) och heter nu ”Sexton frågor”. **Tabell 11**: åtgärden före fristen kompletterad med att behålla Y-numren.
+- **Tabell 13**: skillnaden mot konsulternas kalkyl rättad från ca 2,0–2,3 till ca 2,0–2,4 miljarder kronor (2 670 minus 300 är 2 370). Ny punkt om att investering inte är avgift, och en om hur siffrorna används i utkasten.
+- **Skede 5:** Tabell 5 (raden Utkast), ”Ett förslag på upplägg”, Del 4, Del 5 och Källor är uppdaterade efter utkasten KL_261019–KL_261026 och synpunkter i gruppen, bland annat valet mellan ”LNF begär” och ”Det som saknas”, att ”underkänns” inte är ett yrkande domstolen kan bifalla, och frågan om protokollsutdrag. Namn och personliga uppgifter från diskussionen är inte med.
+- Sakinnehållet i föreningens egna texter, skede 1 och 3, är oförändrat.
+
 ## Det som föreningen bör ta ställning till
 
 1. **Mandat.** Originalen anger inget styrelsebeslut. Sexdelsmodellen vill att mandatet framgår. Ange det i Del 1 i framtida texter.
-2. **Begäran per punkt i yttrandet.** Bara Y19 har en uttrycklig begäran. Resten stödjer yrkande 1 och 2. En egen begäran per punkt (lärdom 4 i [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4)) bör formuleras av föreningen.
+2. **Begäran per punkt i yttrandet.** Bara Y19 har en uttrycklig begäran. Resten stödjer yrkande 1 och 2. En egen begäran per punkt (lärdom 4 i [Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-4)) bör formuleras av föreningen. I utkasten över bemötandet har två varianter prövats, ”LNF begär” och ”Det som saknas” (se skede 5, Del 5).
 3. **Prövningsfråga per punkt.** Jag har bara angett den rättsliga anknytning som originalet själv anger. Att koppla varje punkt till MKB:n, tillåtligheten eller villkoren (lärdom 6) kräver föreningens bedömning.
 4. **De fyra texttyperna** (verifierat, fråga, bedömning, förslag) i sexdelsmodellen har inte tillämpats. Det kan göras som nästa steg.
 5. **Punkter som inte fördes vidare** från samrådet till yttrandet (se Tabell 9 i [spårbarhetsdokumentet](04_Sparbarhet_samrad_till_yttrande.md)).
 6. **Aktbilaga 257.** Underlaget för skede 3 är VA SYD:s markerade kopia. Den fil som föreningen lämnade in bör användas för en slutlig jämförelse.
-7. **Uppgiften om 2 miljarder kronor.** Yttrandets bilaga 1 är länkad (extern källa och kopia i projektet). Siffran 2 miljarder står inte i rapporten, men den går att återskapa: Lunds kostnad för Sjölundasystemen (2,4–2,7 miljarder kronor, inklusive tunnlarna) minus konsulternas 300–400 miljoner för en utbyggnad av Källby blir ca 2,0–2,3 miljarder. Mot VA SYD:s kalkyl för Källby (1,75–1,9 miljarder) är skillnaden 0,5–0,75 miljarder. Se Tabell 12 i [spårbarhetsdokumentet](04_Sparbarhet_samrad_till_yttrande.md). Kontrollera vilket underlag siffran kommer från innan den används igen.
+7. **Uppgiften om 2 miljarder kronor.** Yttrandets bilaga 1 är länkad (extern källa och kopia i projektet). Siffran 2 miljarder står inte i rapporten, men den går att återskapa: Lunds kostnad för Sjölundasystemen (2,4–2,7 miljarder kronor, inklusive tunnlarna) minus konsulternas 300–400 miljoner för en utbyggnad av Källby blir ca 2,0–2,4 miljarder. Mot VA SYD:s kalkyl för Källby (1,75–1,9 miljarder) är skillnaden 0,5–0,75 miljarder. Se Tabell 13 i [spårbarhetsdokumentet](04_Sparbarhet_samrad_till_yttrande.md). Kontrollera vilket underlag siffran kommer från innan den används igen.
 
