@@ -79,7 +79,7 @@ Följande saknas i ansökan eller har inte besvarats i bemötandet. De är skäl
 - Räknar man i stället med VA SYD:s och WSP:s egen kalkyl för Källby, ca 1 750–1 800 Mkr (VA SYD, 2021, s. 20; WSP 2020 enligt slutrapporten, s. 3), blir skillnaden ca 0,6–0,9 miljarder. Mot VA SYD:s system 1, där Källby och Södra Sandby behålls (1 916 Mkr), är skillnaden ca 0,5–0,75 miljarder.
 - Siffrorna gäller prisnivå 2020–2021 och är beräkningar av olika slag. VA SYD betecknar sina underlag som preliminära och delvis grundade på schabloner (2021, s. 34). De avser inte den nuvarande ansökan.
 
-Skillnaden kan därför vara betydligt mindre än 2 miljarder, och beror på vilket underlag man jämför med. Det som saknas är en jämförbar kostnadsredovisning i den nuvarande ansökan.
+Skillnaden kan därför vara mindre än 2 miljarder, och beror på vilket underlag man jämför med. Det som saknas är en jämförbar kostnadsredovisning i den nuvarande ansökan.
 
 Lund den        november 2026
 
