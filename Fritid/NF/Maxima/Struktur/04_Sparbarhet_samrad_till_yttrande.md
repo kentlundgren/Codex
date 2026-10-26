@@ -88,8 +88,8 @@ Tabell 10 följer de frågor där svaren går att jämföra. Kolumn 3 avser [sam
 | Kostnader och ekonomi | S18, S19 / Y2, Y26 | Kostnader nämns inte i svaret till föreningen. | Kostnadsjämförelsen bemöts inte (s. 88–89, 94). |
 | Källbys nedläggning | S1 / Y5 | ”Ingår inte i tillståndsprövningen.” Beslut tas i annan instans (s. 40–41). | Samma svar: ett politiskt beslut 2024, separat process (s. 75, 89, 91). |
 | Kvartär rening, bästa kända teknik | S31 / Y15 | ”Ingår inte i tillståndsansökan.” Verket förbereds för anslutning av ett sådant steg (s. 41). | VA SYD överväger ett utredningsvillkor och återkommer vecka 50 2026 (s. 13, 47–48, 92). |
-| Biologisk mångfald, fridlysta arter | S6, S7, S14 / Y9–Y11 | Påverkan på naturvärden redovisas i MKB:n och Bilaga M4. Naturreservat och Natura 2000 i MKB:n (s. 41). | Svar om Natura 2000 vid Lommabukten. Konsekvenser för Höjeådalen ”inte har beaktats” (s. 90–91). |
-| Bevattning med Höje ås vatten | S11 / Y12 | Ingår inte i aktuell tillståndsprövning (s. 41). | Förordning 2020/741 ingår inte i ansökan (s. 91). |
+| Biologisk mångfald, fridlysta arter | S6, S7, S14 / Y9–Y11 | Påverkan på naturvärden redovisas i MKB:n och Bilaga M4. Naturreservat och Natura 2000 i MKB:n (s. 41). | Svar om Natura 2000 vid Lommabukten. Konsekvenser för Höjeådalen ”inte har beaktats” (s. 90–91). VA SYD svarar bland annat med att fåglar tillvänjs buller och med muddringens omfattning (s. 90–91). LNF:s yttrande (aktbilaga 257) innehåller inte orden buller eller muddring enligt en textsökning, så uppgiften verkar höra till ett annat yttrande. |
+| Bevattning med Höje ås vatten | S11 / Y12 | Ingår inte i aktuell tillståndsprövning (s. 41). | Förordning 2020/741 ingår inte i ansökan (s. 91). I utkasten över bemötandet tas bevattningen upp som en följd av det minskade flödet i Höje å (punkt 1) och som en fråga om återanvändning som alternativ (rad 5a). |
 | Icke-försämringskravet | S13 / Y13, Y14 | Länsstyrelsens uppfattning: inte möjligt att få nytt tillstånd för Källby med nuvarande utsläppspunkt (s. 41). | Hänvisning (avsnitt 7.33). Lagstöd anges inte (s. 92). |
 | Klimat och havsnivå | S3–S5 / Y16, Y17 | I MKB:n redovisas påverkan från extrema havsnivåhöjningar och klimatpåverkan (s. 40). | Skydd +3,5 m för år 2100. Beräkningen mot år 2150 bemöts inte (s. 92–93). |
 | Centraliserat eller decentraliserat system | S22 / Y19 | Alternativutredningen innehåller en bedömning av risker med ett centralt verk i kustnära läge (s. 40). | Centraliseringen bedöms som lämpligast. Krisrisker prövas inte (s. 94). |
@@ -140,7 +140,7 @@ Utkasten till yttrande över bemötandet (senast [KL_261026](https://github.com/
 | Y6 | Bräddning vid Källby | Bilaga, rad 3d | Bilaga |
 | Y7 | Källbys tillståndstak nås före tunneln | Bilaga, rad 3e | Bilaga |
 | Y8 | Klimatberäkningen saknar rivning | Bilaga, rad 3f | Bilaga |
-| Y9 | Utredning av biologisk mångfald saknas | Punkt 1 (fridlysta och hotade arter) | Delvis |
+| Y9 | Utredning av biologisk mångfald saknas | Punkt 1 (fridlysta och hotade arter). Förslag: en egen bilagerad 4a om VA SYD:s svar om fåglars buller och muddring (s. 90–91) | Delvis |
 | Y10 | Förekomsten av arter och artskyddet | Punkt 1 | Delvis |
 | Y11 | Kumulativa effekter och restaureringsförordningen | Punkt 1, 3, bilaga rad 5a | Huvudtext |
 | Y12 | EU-lagstiftningen kommenteras inte | Bilaga, rad 5a | Bilaga |

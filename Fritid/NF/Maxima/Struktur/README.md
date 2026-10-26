@@ -1,6 +1,7 @@
 # MAXIMA: samråd och yttrande, omstrukturerade enligt sexdelsmodellen
 
 - **Live:** [https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
+- **Första sida för MAXIMA:** [Lärdomar från MAXIMA](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html). Det här är dokumentsidan.
 
 *Utkast 2026-10-14, uppdaterat 2026-10-26, Kent Lundgren. Inte behandlat eller beslutat av Lunds Naturskyddsförening. Bidrag till fortsatt diskussion.*
 

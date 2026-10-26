@@ -76,9 +76,11 @@ De ekonomiska konsekvenserna för lundaborna, 🟧«upp till två miljarder kron
 
 > 🟧 **Förslag KL:** Uppgiften om två miljarder behöver en källa (aktbilaga 257, bilaga 1). "Extremt" bör strykas. "Miljömässigt motiverad, tekniskt möjlig och ekonomiskt rimlig" bör knytas till rätt lagrum (2 kap. 3, 5 och 7 §§).
 
-EU-förordningen om återanvändning av vatten gäller för återanvändning av renat avloppsvatten från tätbebyggelse i enlighet med avloppsdirektivet (91/271/EEG), genom bevattning inom jordbruket. 🟧«~~Om det renade avloppsvattnet i sin helhet släpps ut i Öresund kan kraven i denna förordning inte följas.~~» LNF begär att VA SYD redovisar hur förordningens krav ska uppfyllas.
+EU-förordningen om återanvändning av vatten gäller för återanvändning av renat avloppsvatten från tätbebyggelse i enlighet med avloppsdirektivet (91/271/EEG), genom bevattning inom jordbruket. 🟧«~~Om det renade avloppsvattnet i sin helhet släpps ut i Öresund kan kraven i denna förordning inte följas.~~» LNF 🟢«begär att VA SYD redovisar» hur förordningens krav ska uppfyllas.
 
-> 🟧 **Förslag KL:** Förordning (EU) 2020/741 gäller när renat avloppsvatten återanvänds för bevattning och kräver inte att någon återanvänder. VA SYD svarar just det (bemötandet sid. 91). Skriv om som en fråga: har återanvändning bedömts som alternativ eller hushållningsåtgärd (2 kap. 5 §, 6 kap. 35 § 2)? Se bilagans rad 5a i Utkast KL_261026.
+> 🟧 **Förslag KL:** Behåll Leifs ändring till "konstaterar att VA SYD inte redovisar", som passar med "det som saknas" i Utkast KL_261026. Meningen "kan kraven inte följas" bör strykas: förordning (EU) 2020/741 gäller när renat avloppsvatten återanvänds för bevattning och kräver inte att någon återanvänder, och VA SYD svarar redan att den inte ingår i ansökan (bemötandet sid. 91). Argumentet om odlarna är däremot bra och bör stå som en följd av det minskade flödet i Höje å (punkt 1 i KL_261026) och i rad 5a: "Flera odlare nedströms Källby använder vatten från Höje å till bevattning. LNF konstaterar att VA SYD inte redovisar hur det minskade flödet påverkar bevattningen, eller om återanvändning av det renade vattnet har bedömts som alternativ (2 kap. 5 §, 6 kap. 35 § 2)." Källa till att odlarna använder vattnet behövs.
+
+> 🟢 **Synpunkt:** Ändra "LNF begär att VA SYD redovisar" till "LNF konstaterar att VA SYD inte redovisar", eftersom det inte är rätt tillfälle att be om kompletteringar. Behåll meningen "Om det renade avloppsvattnet i sin helhet släpps ut i Öresund kan kraven i denna förordning inte följas", med motiveringen att flera bönder nedströms Källby använder vatten från Höje å till sina odlingar.
 
 LNF begär att VA SYD redovisar hur riskerna med en stor central anläggning jämfört med flera mindre ska bli likvärdiga, hur man ska agera om tillståndstaket för Källby reningsverk uppnås innan Avloppstunnel Norr tas i bruk, eller hur PFAS från högre belägen mark i norr ska förhindras från att nå avloppstunneln (VA SYDs punkt 7a–7b, 3e och 7d–7e; sid. 90, 94).
 
@@ -90,7 +92,7 @@ Dessutom har VA SYD, förutom att underlåta att bemöta ett flertal påpekanden
 
 > 🟢 **Synpunkt:** Samma synpunkt: en begäran om komplettering eller korrigering är domstolens sak om ansökan inte avslås.
 
-> 🟧 **Förslag KL:** Sidhänvisning saknas. Påståendet om fåglars bullerkänslighet har inte hittats i bemötandet. Ange sida eller stryk. Övriga "felaktigheter" bör hänvisa till VA SYDs nummer och sida (se bilagan i Utkast KL_261026).
+> 🟧 **Förslag KL:** Sidhänvisning: VA SYD:s svar på LNF:s punkt 4a, sid. 90 i bemötandet (PDF-sida 92 i underrättelsepaketet), med muddringen på sid. 91. Texten säger att fåglar tillvänjs buller och beskriver muddringens omfattning. LNF:s eget yttrande (aktbilaga 257) innehåller inte orden buller eller muddring enligt en textsökning i den markerade kopian, vilket stöder att uppgiften är VA SYD:s. Kontrollera sökningen mot PDF:en. Övriga "felaktigheter" bör hänvisa till VA SYD:s nummer och sida (se bilagan i Utkast KL_261026).
 
 ## Verkställighetsförordnande
 

@@ -87,6 +87,7 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 - **Tabell 10** har fått en rad om restaureringsförordningen (S25 / Y11, Y12) och heter nu ”Sexton frågor”. **Tabell 11**: åtgärden före fristen kompletterad med att behålla Y-numren.
 - **Tabell 13**: skillnaden mot konsulternas kalkyl rättad från ca 2,0–2,3 till ca 2,0–2,4 miljarder kronor (2 670 minus 300 är 2 370). Ny punkt om att investering inte är avgift, och en om hur siffrorna används i utkasten.
 - **Skede 5:** Tabell 5 (raden Utkast), ”Ett förslag på upplägg”, Del 4, Del 5 och Källor är uppdaterade efter utkasten KL_261019–KL_261026 och synpunkter i gruppen, bland annat valet mellan ”LNF begär” och ”Det som saknas”, att ”underkänns” inte är ett yrkande domstolen kan bifalla, och frågan om protokollsutdrag. Namn och personliga uppgifter från diskussionen är inte med.
+- **Tabell 10** (bevattning och biologisk mångfald) och **Tabell 12** (Y9) kompletterade efter en synpunkt i gruppen: sidhänvisning (s. 90–91) till VA SYD:s text om fåglars buller och muddring, och att LNF:s yttrande inte nämner buller eller muddring enligt en textsökning. Bevattningen nedströms Källby har lagts till som en följd av flödet i Höje å.
 - Sakinnehållet i föreningens egna texter, skede 1 och 3, är oförändrat.
 
 ## Det som föreningen bör ta ställning till

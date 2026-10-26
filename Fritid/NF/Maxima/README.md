@@ -1,10 +1,21 @@
 # MAXIMA — handlingar och omstrukturerade texter
 
 - **Live:** [https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)
+- **Första sida för MAXIMA:** [Lärdomar från MAXIMA](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html) i Samrådsguiden, med förloppet, läget just nu i skede 5, texten i upplägg A och omröstningen.
 
 *Sammanställt av Kent Lundgren, 2026-10-14. Innehållet är inte beslutat eller antaget av Lunds Naturskyddsförening. Handlingarna är VA SYD:s och domstolens egna. Kontrollera mot källan innan något återges.*
 
 Mappen samlar handlingar som rör Lunds Naturskyddsförenings synpunkter och yttrande om MAXIMA, VA SYD:s ansökan om miljötillstånd för fortsatt och utökad verksamhet vid Sjölunda avloppsreningsverk, med bland annat avloppstunnlar. Ansökan prövas av mark- och miljödomstolen vid Växjö tingsrätt i mål M 3289-25. Mappen visar också hur föreningens texter kunde ha strukturerats, och hur en fråga kan följas från samråd till yttrande.
+
+## Vilken sida är första sidan?
+
+Det finns tre ställen med MAXIMA-material, och de har olika uppgifter:
+
+| Ställe | Uppgift |
+|---|---|
+| [maxima.html i Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html) | **Första sidan.** Förlopp, begrepp, lärdomar, läget just nu och omröstningen. |
+| [Struktur](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/) | Dokumentsidan: föreningens texter i skede 1, 3 och 5 omstrukturerade, spårbarhet och ändringslogg. Det är den publicerade sida som hör till den här mappen, därför står den som Live-länk ovan. |
+| Den här mappen | Handlingarna (PDF-filerna) och utkasten. |
 
 ## Lokalt repo
 
