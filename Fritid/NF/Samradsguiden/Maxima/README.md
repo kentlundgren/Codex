@@ -4,7 +4,16 @@
 
 *Utkast av Kent Lundgren, 2026-10-26. Omröstningen är ett underlag för samtal i gruppen och inte ett beslut av någon förening.*
 
-Den här mappen hör till Samrådsguidens MAXIMA-material. Första sidan för MAXIMA är [maxima.html](../maxima.html) ([live](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html)), och dokumenten (föreningens texter, spårbarhet och ändringslogg) finns på [Struktur](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/). Handlingarna och utkasten ligger i mappen [Maxima](https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima).
+Mappen innehåller bara omröstningen. Resten av MAXIMA-materialet finns på andra ställen:
+
+| Vad | Var |
+|---|---|
+| Första sida för MAXIMA: förlopp, begrepp, lärdomar, läget just nu | [maxima.html](../maxima.html) ([live](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html)) |
+| Dokumenten: föreningens texter, spårbarhet, ändringslogg | [Maxima/Struktur](https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima/Struktur) ([live](https://kentlundgren.github.io/Codex/Fritid/NF/Maxima/Struktur/)) |
+| Handlingarna (PDF) och utkasten, bland annat upplägg A och KL_261026 | [Maxima](https://github.com/kentlundgren/Codex/tree/main/Fritid/NF/Maxima) |
+| Omröstningen om frågorna i skede 5 | [rangordning.html](rangordning.html) (den här mappen) |
+
+Skript, form och databas finns utanför mappen, se nedan.
 
 ## Filer
 
