@@ -76,10 +76,7 @@ Följande saknas i ansökan eller har inte besvarats i bemötandet. De är skäl
 
 - Slutrapporten *Fortsatt drift eller nedläggning av Källby Avloppsreningsverk* (2020-09-07, s. 5) bedömer en utbyggnad av Källby till "i storleksordningen 300, maximalt 400, miljoner kronor", men anger att krav på läkemedelsrening kan driva kostnaden högre.
 - VA SYD (2021, *Lunds framtida avloppsrening*, tabell 3, s. 34) anger Lunds investering med Nya Sjölunda till 2 408 Mkr (system 3) och 2 670 Mkr (system 2). Jämfört med slutrapportens 300–400 Mkr blir skillnaden ca 2,0–2,4 miljarder. Det är så uppgiften "upp till 2 miljarder" kan härledas.
-- Räknar man i stället med VA SYD:s och WSP:s egen kalkyl för Källby, ca 1 750–1 800 Mkr (VA SYD, 2021, s. 20; WSP 2020 enligt slutrapporten, s. 3), blir skillnaden ca 0,6–0,9 miljarder. Mot VA SYD:s system 1, där Källby och Södra Sandby behålls (1 916 Mkr), är skillnaden ca 0,5–0,75 miljarder.
-- Siffrorna gäller prisnivå 2020–2021 och är beräkningar av olika slag. VA SYD betecknar sina underlag som preliminära och delvis grundade på schabloner (2021, s. 34). De avser inte den nuvarande ansökan.
 
-Skillnaden kan därför vara mindre än 2 miljarder, och beror på vilket underlag man jämför med. Det som saknas är en jämförbar kostnadsredovisning i den nuvarande ansökan.
 
 Lund den        november 2026
 
