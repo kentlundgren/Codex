@@ -90,9 +90,13 @@ Dessutom har VA SYD, förutom att underlåta att bemöta ett flertal påpekanden
 
 ## Verkställighetsförordnande
 
-🟩«Eftersom VA SYD inte redovisar vilka åtgärder som inte kan vänta till laga kraft (VA SYDs punkt 7.148, 7.149; sid. 94–95), har LNF inget underlag för att ändra sitt yrkande. Om VA SYD tecknar avtal om framtida arbeten under handläggningstiden sker det på egen risk.»
+🟩«Eftersom VA SYD inte redovisar vilka åtgärder som inte kan vänta till laga kraft (VA SYDs punkt 7.148, 7.149; sid. 94–95), ~~har LNF inget underlag för att ändra sitt yrkande.~~ Om VA SYD tecknar avtal om framtida arbeten under handläggningstiden sker det på egen risk.»
 
 > 🟢 Synpunkt: Motiveringen till varför vi inte går med på något verkställighetsförordnande bör behållas. Man kan inte säga ja till något man inte vet något konkret om.
+
+> 🟧 Förslag KL (ersätter stycket ovan): LNF yrkar att yrkandet om verkställighetsförordnande avslås. Ett förordnande förutsätter att det finns skäl för det (22 kap. 28 §), och VA SYD har inte visat några. Det som saknas är uppgift om vilka åtgärder som inte kan vänta till laga kraft (VA SYD:s punkt 7.148, 7.149; sid. 94–95) och varför de inte kan genomföras inom gällande tillstånd. Domstolen kan inte pröva om det finns skäl för arbeten som inte har specificerats. Om VA SYD tecknar avtal om framtida arbeten under handläggningstiden sker det på egen risk. Skulle VA SYD senare ange vilka arbeten det gäller får LNF återkomma.
+
+> 🟧 Förslag KL: Skilj på verben. "LNF yrkar" riktar sig till domstolen, "det som saknas" gäller bristen i VA SYD:s underlag, och "får återkomma" lovar inget. Då kan texten inte läsas som att LNF ändrar sig om VA SYD kompletterar. Se Samrådsguiden, Hur man uttrycker sig: [https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/fordjupning.html#uttryckasig](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/fordjupning.html#uttryckasig)
 
 🟩«LNF avstyrker verkställighetsförordnande.»
 
