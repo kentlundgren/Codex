@@ -34,6 +34,7 @@ Mappen [`.githooks/`](.githooks/) innehåller spärrar som Git kör på den här
 - Varje utskriven webbadress i en källförteckning, i löpande text eller i en parentes ska vara en klickbar länk (`<a href>` i HTML, Markdown-länk i `.md`), inte ren text. Kontrollera efter bygget att inga adresser står som ren text och att varje länk svarar och leder till rätt sida.
 - När en extern källa första gången hänvisas till i löpande text ska Harvardhänvisningen också vara en direktlänk till källan. Senare hänvisningar kan vara olänkade när det ger en lugnare läsning.
 - När en källa är det centrala dokumentet för materialet — till exempel ett samrådsunderlag, en rapport eller ett beslutsunderlag — får länken i löpande text ges en tydlig och beskrivande länktext, såsom “samrådsunderlaget”. Behåll samtidigt en formell Harvardhänvisning i anslutning till länken.
+- När en text hänvisar till annat material i Kents projekt ska länkarna komma i den här ordningen: 1) live-sidan (GitHub Pages eller motsvarande), om det finns en, 2) texten på GitHub (blob-vy för `.md`, Microsofts läsvy för `.docx`) för den som vill läsa vidare, 3) lokal sökväg bara som komplement, skriven som kod, och bara när läsaren rimligen inte kommer fram via 1 och 2, till exempel ett arbetsdokument utan live-sida. Finns ingen live-sida ska GitHub-vyn länkas och texten inte påstå att en live-sida finns. Är materialet privat (ignorerat av Git) ska ingenting länkas, och texten ska säga att det är privat. Kents lokala sökvägar hör hemma i README-avsnittet `## Repo`.
 
 ## AI-assisterade utkast
 
