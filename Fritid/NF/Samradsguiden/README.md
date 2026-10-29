@@ -24,7 +24,7 @@ PRD, SPEC och samtliga sju sidor är byggda och testade lokalt (formulärflöde,
 
 Ankar-retrofit av `index.html` och `fordjupning.html` är gjord (varje H2 och `.subhead`-H3 har ett stabilt `#`-ankare). `verktyg.html` är en JS-guide där stegen har egna div-id:n och behöver inga rubrikankare.
 
-Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.31**, senast ändrad 29 oktober 2026.
+Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.32**, senast ändrad 29 oktober 2026.
 
 - **v1.0** — första publicerade versionen: grunddispositionen, kompensationsmodulens tre spår, det interaktiva verktyget.
 - **v1.1** — jämförelsen av de tre sätten att disponera ett yttrande; de fyra kommunexemplen.
@@ -63,6 +63,7 @@ Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en.
 - **v1.29** — `fordjupning.html` har fått avsnittet *Hur man uttrycker sig i olika situationer* (`#uttryckasig`): fyra frågor innan man väljer verb, Tabell 1 (verb, mottagare och när de passar), Tabell 2 (uttryck i olika skeden) och ett exempel om verkställighetsförordnande. Avsnittet är generellt och inte särskilt för MAXIMA. Länkar finns från råd 4 i *Elva råd i kortform*, från `maxima.html` och från Struktur (Del 5 i skede 5).
 - **v1.30** — `maxima.html` länkar till den senaste versionen av yttrandet (`Maxima/Yttrande/Utkast/LNF_yttrande_over_VA_SYD_bemotande_261029_utan_namn.docx`, utan namn på de som undertecknar) i *Börja här* och som sista rad i Tabell 5, som nu visar sju sätt att räkna. Texten säger att den version som är aktuell att lämna in följer upplägg A. Länk finns också från omröstningssidan och från Struktur (skede 5).
 - **v1.31** — Tabell 7 på `maxima.html` (`#skede5-tre-upplagg`) anger att version 261029 av yttrandet är redo att lämnas in och följer upplägg A: i kolumnrubriken, i raden Form, i raden Antal begäran och i texten före och efter tabellen. Samma formulering finns i *Börja här*, Tabell 5 och Struktur (skede 5).
+- **v1.32** — Tabell 7 och punkten om upplägg C på `maxima.html` lyfter fram KL_261026 som det senaste och mest genomarbetade utkastet i upplägg C (kolumnrubrik, Form, Antal begäran, Skäl för yrkandena). KL_261021 står kvar som tidigare version.
 
 Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
 
