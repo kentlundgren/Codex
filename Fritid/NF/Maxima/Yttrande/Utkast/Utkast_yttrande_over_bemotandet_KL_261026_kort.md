@@ -11,7 +11,7 @@
 
 ## Yrkanden och sammanfattning
 
-LNF vidhåller sina yrkanden i aktbilaga 257 (LNF:s yttrande 2026-06-09):
+LNF vidhåller sina yrkanden i aktbilaga 257 (LNF:s yttrande, inkom 2026-06-09):
 
 - att ansökan om MAXIMA avslås, <mark>bland annat av de skäl som anges i punkt 1–8 nedan</mark>,
 - att domstolen underkänner miljökonsekvensbeskrivningen (MKB), eftersom den är ofullständig och felaktig, <mark>bland annat på de punkter som anges i punkt 1–6 nedan och i Bilagan</mark>,

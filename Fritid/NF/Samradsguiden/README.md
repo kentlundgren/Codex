@@ -24,7 +24,7 @@ PRD, SPEC och samtliga sju sidor är byggda och testade lokalt (formulärflöde,
 
 Ankar-retrofit av `index.html` och `fordjupning.html` är gjord (varje H2 och `.subhead`-H3 har ett stabilt `#`-ankare). `verktyg.html` är en JS-guide där stegen har egna div-id:n och behöver inga rubrikankare.
 
-Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.29**, senast ändrad 26 oktober 2026.
+Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en. **Version 1.30**, senast ändrad 29 oktober 2026.
 
 - **v1.0** — första publicerade versionen: grunddispositionen, kompensationsmodulens tre spår, det interaktiva verktyget.
 - **v1.1** — jämförelsen av de tre sätten att disponera ett yttrande; de fyra kommunexemplen.
@@ -61,6 +61,7 @@ Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en.
 - **v1.27** — `maxima.html` har fått avsnittet *Börja här* (`#start-har`) som anger att sidan är första sidan för MAXIMA och vad de tre ställena med material är (den här sidan, dokumentsidan `Maxima/Struktur/` och mappen `Maxima/` på GitHub), med länkar till det som gruppen arbetar med i skede 5. Ny README i `Maxima/` (omröstningen). Länken på framsidan säger att `maxima.html` är första sidan för MAXIMA.
 - **v1.28** — Tabell 5 på `maxima.html` (`#skede5-antal`) har fått en rad för textversionen i upplägg A med ändringsförslag (länkar till `.md` och Word), och visar nu sex sätt att räkna. `Maxima/README.md` har fått en tabell över var MAXIMA-materialet finns.
 - **v1.29** — `fordjupning.html` har fått avsnittet *Hur man uttrycker sig i olika situationer* (`#uttryckasig`): fyra frågor innan man väljer verb, Tabell 1 (verb, mottagare och när de passar), Tabell 2 (uttryck i olika skeden) och ett exempel om verkställighetsförordnande. Avsnittet är generellt och inte särskilt för MAXIMA. Länkar finns från råd 4 i *Elva råd i kortform*, från `maxima.html` och från Struktur (Del 5 i skede 5).
+- **v1.30** — `maxima.html` länkar till den senaste versionen av yttrandet (`Maxima/Yttrande/Utkast/LNF_yttrande_over_VA_SYD_bemotande_261029_utan_namn.docx`, utan namn på de som undertecknar) i *Börja här* och som sista rad i Tabell 5, som nu visar sju sätt att räkna. Texten säger att den version som är aktuell att lämna in följer upplägg A. Länk finns också från omröstningssidan och från Struktur (skede 5).
 
 Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
 

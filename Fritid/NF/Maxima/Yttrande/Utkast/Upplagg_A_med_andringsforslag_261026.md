@@ -48,7 +48,7 @@ De långsiktiga juridiska konsekvenserna blir både 🟧«~~absurda och~~» omfa
 
 VA SYD söker tillstånd för verksamheten under den tillståndstid som ansökan avser. Det är all verksamhet under denna tid och dess påverkan på omgivningen som ska redovisas och prövas. Så fort Avloppstunnel Norr tas i bruk år 2035, (VA SYDs punkt 4.257; sid. 42) kommer vattenflödena i Höje å att minska drastiskt samtidigt som vattentemperaturen i reningsverksdammarna blir lägre. Därmed uppstår den negativa påverkan på natur och miljö som LNF tidigare beskrivit. Eftersom en stor förändring i åvattnets djup och läge uppstår, är denna ändring en tillståndspliktig vattenverksamhet enligt 11 kap. miljöbalken. Därför ska denna ändring och dess konsekvenser prövas i detta mål.
 
-## Miljökonsekvensbeskrivningen är ofullständig
+## Miljökonsekvensbeskrivningen är ofullständig 🟧«och felaktig»
 
 Det beskrivna nollalternativet är 🟧«felvalt/oklart». Trovärdiga, moderna decentraliserade 🟩«placeringar av ett nytt» reningsverk har inte utretts, påverkan på biologisk mångfald, skyddad natur och miljö har inte redovisats, 🟩«liksom» 🟩«inte heller» indirekta och kumulativa effekter 🟩«samt» 🟩«eller» följdverksamheter. 🟢«~~LNF begär ny omarbetad ansökan och ny omarbetad miljökonsekvensbeskrivning.~~»
 
@@ -56,9 +56,9 @@ Det beskrivna nollalternativet är 🟧«felvalt/oklart». Trovärdiga, moderna 
 
 > 🟧 Förslag KL: I stället för ”LNF begär”, kan vi skriva ”Det som saknas” – Se KL_201026
 
-🟩«LNF vidhåller sitt underkännande av VA SYDs förslag rörande skydd mot höga havsnivåer vid Sjölunda avloppsreningsverk. LNF hänvisar till vad vi anför i vårt yttrande» 🟧«(2026-xx-xx)» 🟩«med bilagor, bl.a. bilaga 8 till yttrandet.»
+🟩«LNF vidhåller sitt underkännande av VA SYDs förslag rörande skydd mot höga havsnivåer vid Sjölunda avloppsreningsverk. LNF hänvisar till vad vi anför i vårt yttrande» 🟧«(aktbilaga 257, inkom 2026-06-09)» 🟩«med bilagor, bl.a. bilaga 8 till yttrandet.»
 
-> 🟧 Förslag KL: Fyll i datum. Aktbilaga 257 är daterad 2026-06-09
+> 🟧 Förslag KL: Hänvisningen anger aktbilaga 257 och att yttrandet inkom 2026-06-09 enligt domstolens stämpel. Versionen på hemsidan är daterad 2026-05-28. Kontrollera vilket datum som står i själva dokumentet, och skriv det i så fall också.
 
 🟩«Som anförts i LNFs yttrande hänvisar VA SYD till en vägledning från Länsstyrelsen från år 2023 om skydd mot översvämning från havet, men följer den inte. I vägledningen anges att kustnära reningsverk bör ta höjd för värsta scenario och räkna 100 år efter att anläggningen är färdigställd (LST Vägledning för skydd mot översvämning från havet anpassad till Skånes kuststäder; bl.a. sid. 17). LNF anser att man vid beräkningar avseende kustskydd i detta fall, m.h.t. angiven tänkbar tid för verkets färdigställande, bör utgå från scenarier för år 2150, inte för år 2100 som är en alldeles för näraliggande tidpunkt. LNF erinrar om att Sjölunda ARV är en samhällsviktig infrastrukturanläggning. Underlag finns eftersom SMHI har tillhandahållit scenarier för Malmö för år 2150 (referenser har lämnats tidigare i LNFs yttrande) och 2150 är också det årtal som i Länsstyrelsens vägledning används för t.ex. Trelleborg. LNF begär att utredningen om kustskydd vid Sjölundaverket görs om.»
 

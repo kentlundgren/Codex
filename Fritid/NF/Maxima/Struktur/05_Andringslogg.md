@@ -90,6 +90,10 @@ Innehållet är föreningens. Jag har ändrat form (ordning, numrering, rubriker
 - **Tabell 10** (bevattning och biologisk mångfald) och **Tabell 12** (Y9) kompletterade efter en synpunkt i gruppen: sidhänvisning (s. 90–91) till VA SYD:s text om fåglars buller och muddring, och att LNF:s yttrande inte nämner buller eller muddring enligt en textsökning. Bevattningen nedströms Källby har lagts till som en följd av flödet i Höje å.
 - Sakinnehållet i föreningens egna texter, skede 1 och 3, är oförändrat.
 
+## Tillägg 2026-10-29: senaste versionen av yttrandet
+
+- Skede 5, Tabell 5 (raden Utkast) och avsnittet *Ett förslag på upplägg* länkar till den senaste versionen av yttrandet, utan namn på de som undertecknar, och säger att den följer upplägg A.
+
 ## Det som föreningen bör ta ställning till
 
 1. **Mandat.** Originalen anger inget styrelsebeslut. Sexdelsmodellen vill att mandatet framgår. Ange det i Del 1 i framtida texter.
