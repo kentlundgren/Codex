@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"C:/Users/kentl/OneDrive/AI/Codex/Fritid/NF/.claude/hooks/publik_kontroll_hook.py\"",
+            "timeout": 10,
+            "statusMessage": "Kontrollerar publik fil..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"C:/Users/kentl/OneDrive/AI/Codex/Fritid/NF/.claude/hooks/bygg_sokindex_hook.py\"",
+            "timeout": 60,
+            "statusMessage": "Bygger om sökindexet..."
+          }
+        ]
+      }
+    ]
+  }
+}
