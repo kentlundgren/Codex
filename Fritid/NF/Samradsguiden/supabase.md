@@ -24,6 +24,7 @@
 | 2026-10-20 | **Filerna flyttades.** Omröstningen om MAXIMA ligger nu på `Samradsguiden/Maxima/rangordning_prototyp.html`, och gemensam kod och en allmän sida om rangordningar ligger i `Samradsguiden/rangordning/`. Den gamla adressen (`Samradsguiden/rangordning_prototyp.html`) är en ersättningssida som skickar vidare. Databasen påverkades inte av flytten. |
 | 2026-10-20 | **Sidan döptes om** från `Maxima/rangordning_prototyp.html` till `Maxima/rangordning.html`, eftersom ordet "prototyp" inte hör hemma i en adress som används på riktigt. Den tidigare adressen är nu en ersättningssida som skickar vidare, och det gäller även den allra första (`Samradsguiden/rangordning_prototyp.html`). Röster och användarnas identitet påverkades inte, eftersom webbläsaren sparar nyckeln per webbplats och inte per sida. |
 | 2026-10-20 | Menyvalet *Rangordningar* lades till i huvudmenyn på alla sidor, och en ruta på `maxima.html` (#skede5-rangordning) länkar till omröstningen. |
+| 2026-10-29 | Avsnitt 5 fick en hänvisning till en allmän anteckning om databaser (JSON mot databas, SQL och NoSQL, Firebase och Supabase) och två kontrollerade uppgifter om Firestore (dokumentstorlek och gratiskvot). |
 
 ---
 
@@ -333,6 +334,8 @@ Firebase-sidan, [databas.html](https://kentlundgren.github.io/foreningar/Bjerred
 | Din insats i det här fallet | Konfigurera projekt, aktivera databas, skriva regler, bjuda in användare | Skapa konto och projekt, klistra in en SQL-fil, skicka två värden |
 
 **Slutsats för den här uppgiften.** Det som tog tid i Firebase-lösningen var att hantera användare, inbjudningar och behörigheter. Här behövs inget av det. Då väger det tyngst att Supabase låter all databasuppsättning ligga i en enda SQL-fil som går att läsa, granska, spara i repot och köra om, medan Firebase-reglerna sätts i konsolen. För inloggade användare, direktuppdatering mellan många enheter eller en sida som redan ligger i ett Firebase-projekt är Firebase fortfarande ett rimligt val.
+
+**Två kontrollerade uppgifter om Firestore.** Ett dokument får vara högst 1 MiB, och den kostnadsfria nivån har 1 GiB lagring, 50 000 läsningar och 20 000 skrivningar per dag ([Usage and limits, Firestore](https://firebase.google.com/docs/firestore/quotas), hämtad 2026-10-29). Firestore är en dokumentdatabas (NoSQL), medan Supabase bygger på PostgreSQL (SQL). Skillnaden mellan JSON-fil och databas, SQL och NoSQL, och ett förslag på tabeller för gemensamma dokument med versioner finns i anteckningen [Databaser: JSON, SQL, NoSQL, Firebase och Supabase](https://github.com/kentlundgren/AI-teknik/blob/main/IT/Databaser/databaser.md) (i repot AI-teknik).
 
 ## 6. Säkerhet och integritet <a id="sakerhet"></a>
 
