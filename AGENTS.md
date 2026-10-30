@@ -41,6 +41,10 @@ Mappen [`.githooks/`](.githooks/) innehåller spärrar som Git kör på den här
 - Beskriv AI-assisterade sammanställningar och analyser som utkast eller bidrag till fortsatt diskussion när de inte har beslutats, kvalitetssäkrats eller antagits av en grupp.
 - Gör inte anspråk på att ett sådant utkast är ett fullständigt underlag, ett gemensamt ställningstagande eller att det företräder en grupp. Länka i stället till det ursprungliga, fullständiga underlaget när det finns tillgängligt.
 
+## Månadsrapport
+
+Skriver Kent nyckelordet **månadsrapport** (eventuellt med månad), eller frågar "vad har jag gjort den här månaden?": läs skillen [kent-manadsrapport](https://github.com/kentlundgren/AI-teknik/blob/main/.claude/skills/kent-manadsrapport/SKILL.md) och följ den. Den räknar projekt över alla Kents repon och kräver att du kan köra Python och Git på hans dator. Färdiga rapporter finns i [Manadsrapport/](https://github.com/kentlundgren/AI-teknik/blob/main/Manadsrapport/README.md). Lokalt ligger skillen i `C:\Users\kentl\OneDrive\AI\AI-teknik\.claude\skills\kent-manadsrapport`. Committa och pusha inte på eget initiativ.
+
 ## Samarbete
 
 Projektet kan samtidigt öppnas och ändras i Cursor av användaren. Kontrollera därför berörda filer före ändring, bevara externa ändringar och skriv aldrig över eller återställ ändringar som inte är mina utan uttryckligt klartecken.
