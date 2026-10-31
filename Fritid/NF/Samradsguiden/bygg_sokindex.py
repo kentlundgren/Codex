@@ -21,6 +21,7 @@ BLOB = "https://github.com/kentlundgren/Codex/blob/main/Fritid/NF/Samradsguiden/
 SIDOR = [
     ("index.html", "Sidorna"),
     ("paverka.html", "Sidorna"),
+    ("balanseringsprincipen.html", "Sidorna"),
     ("checklista.html", "Sidorna"),
     ("fordjupning.html", "Sidorna"),
     ("lagtexter.html", "Sidorna"),

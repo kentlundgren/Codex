@@ -7,6 +7,7 @@ Ett verktyg för hur privatpersoner och miljöorganisationer kan disponera och l
 [Öppna Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/)
 
 - Så påverkar vi: [paverka.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/paverka.html)
+- Balanseringsprincipen: [balanseringsprincipen.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/balanseringsprincipen.html)
 - Granska planen (checklista): [checklista.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/checklista.html)
 - Dispositionerna (fördjupning): [fordjupning.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/fordjupning.html)
 - Lagtexterna: [lagtexter.html](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/lagtexter.html)
@@ -65,6 +66,7 @@ Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en.
 - **v1.31** — Tabell 7 på `maxima.html` (`#skede5-tre-upplagg`) anger att version 261029 av yttrandet är redo att lämnas in och följer upplägg A: i kolumnrubriken, i raden Form, i raden Antal begäran och i texten före och efter tabellen. Samma formulering finns i *Börja här*, Tabell 5 och Struktur (skede 5).
 - **v1.32** — Tabell 7 och punkten om upplägg C på `maxima.html` lyfter fram KL_261026 som det senaste och mest genomarbetade utkastet i upplägg C (kolumnrubrik, Form, Antal begäran, Skäl för yrkandena). KL_261021 står kvar som tidigare version.
 - **v1.33** — Länkarna till den senaste versionen av yttrandet (261029, utan namn) på `maxima.html`, omröstningssidan och Struktur har fått en länk till Markdown-versionen (`Maxima/Yttrande/Utkast/LNF_yttrande_over_VA_SYD_bemotande_261029_utan_namn.md`) bredvid Word-länken.
+- **v1.34** — ny sida *Balanseringsprincipen* (`balanseringsprincipen.html`): en bild av de fyra stegen (Figur 1), föreningens textförslag till kommunen (utkast, ej antaget), Tabell 1 om sex sorters styrdokument där en sådan regel kan stå (med Uppsalas riktlinje, Helsingborgs fullmäktigebeslut och LundaEko delmål 5.1), och ett avsnitt om kostnaden med belägg från Defra (2019). Länkad från startsidan, `fordjupning.html#balanseringsprincipen` och `paverka.html#proaktivt-paverkansarbete`.
 
 Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
 
