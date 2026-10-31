@@ -67,6 +67,8 @@ Sidorna är ett levande dokument och versionsnumreras i sidfoten på var och en.
 - **v1.32** — Tabell 7 och punkten om upplägg C på `maxima.html` lyfter fram KL_261026 som det senaste och mest genomarbetade utkastet i upplägg C (kolumnrubrik, Form, Antal begäran, Skäl för yrkandena). KL_261021 står kvar som tidigare version.
 - **v1.33** — Länkarna till den senaste versionen av yttrandet (261029, utan namn) på `maxima.html`, omröstningssidan och Struktur har fått en länk till Markdown-versionen (`Maxima/Yttrande/Utkast/LNF_yttrande_over_VA_SYD_bemotande_261029_utan_namn.md`) bredvid Word-länken.
 - **v1.34** — ny sida *Balanseringsprincipen* (`balanseringsprincipen.html`): en bild av de fyra stegen (Figur 1), föreningens textförslag till kommunen (utkast, ej antaget), Tabell 1 om sex sorters styrdokument där en sådan regel kan stå (med Uppsalas riktlinje, Helsingborgs fullmäktigebeslut och LundaEko delmål 5.1), och ett avsnitt om kostnaden med belägg från Defra (2019). Länkad från startsidan, `fordjupning.html#balanseringsprincipen` och `paverka.html#proaktivt-paverkansarbete`.
+- **v1.35** — `balanseringsprincipen.html` har fått Tabell 2 (`#tabell-2`) och avsnittet *Följer Lund redan principen?* (`#lund-jamforelse`): en jämförelse av LundaEko delmål 5.1 mot principens delar.
+- **v1.36** — Tabell 2 på `balanseringsprincipen.html` anger att en ordning (minimera, negativa utsläpp, i sista hand kompensation) finns i LundaEko för klimatutsläpp (delmål 4.1) men inte för natur (delmål 5.1), och redovisar vilka sökord som gav inga träffar.
 
 Tumregel för framtida ändringar: innehållstillägg höjer siffran efter punkten (1.1 → 1.2), en grundläggande omstrukturering av hela verktyget höjer heltalet (1.x → 2.0).
 
