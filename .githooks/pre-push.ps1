@@ -17,7 +17,8 @@ $blockedMail = '(?i)(^|/)Plangruppen/Mail(/|$)'
 # "utkast" och träffas annars av $blockedPath. Undantaget gäller bara .md- och .docx-filer direkt i den
 # här mappen och bara namnregeln i $blockedPath. Mejlmappen, personliga inlägg och innehållsreglerna
 # (rad som börjar med "privat", "konfidentiellt" m.fl.) gäller som förut även här.
-$allowedPublicDrafts = '(?i)^Fritid/NF/Maxima/Yttrande/Utkast/[^/]+\.(md|docx)$'
+# Här skedde en uppdatering 2026-11-02: PDF-versioner av samma yttranden ska kunna publiceras i samma mapp.
+$allowedPublicDrafts = '(?i)^Fritid/NF/Maxima/Yttrande/Utkast/[^/]+\.(md|docx|pdf)$'
 # Här skedde en uppdatering 2026-09-28: personliga inlägg och synpunkter från
 # enskilda medlemmar spärras för alla filtyper, inte bara dokument.
 $blockedPersonal = '(?i)(^|/)Underlag_synpunkter/|_inl(a|ä)gg\.[^/]+$'
