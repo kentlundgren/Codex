@@ -12,7 +12,7 @@ fortsatt utökad verksamhet vid Sjölunda avloppsreningsverk, vattenverksamhet
 
 vid bland annat anläggande av avloppstunnlar med mera (MAXIMA)
 
-**Datum** 2026-11-<mark>02</mark>
+**Datum** 2026-11-02
 
 **Yttrande över VA SYD:s bemötande (aktbilaga 320).**
 
@@ -22,11 +22,10 @@ Lunds Naturskyddsförening (LNF) yttrar sig över VA SYDs bemötande (aktbilaga 
 
 LNF vidhåller sina yrkanden:
 
-hela ansökan om MAXIMA ska avslås,
+- hela ansökan om MAXIMA ska avslås,
+- miljökonsekvensbeskrivningen (MKB) ska underkännas som ofullständig och felaktig,
 
-miljökonsekvensbeskrivningen (MKB) ska underkännas som ofullständig och felaktig,
-
-yrkandet om verkställighetsförordnande ska avslås.
+- yrkandet om verkställighetsförordnande ska avslås.
 
 LNF vidhåller sina avslagskrav, eftersom inga nya fakta finns i VA SYDs bemötande, vad gäller de problem som LNF pekar på. De kommentarer som lämnas av VA SYD innehåller nästan bara hänvisningar till tidigare texter. LNFs tidigare yttranden kvarstår och upprepas inte här frånsett några förtydliganden.
 
@@ -40,13 +39,15 @@ VA SYD söker tillstånd för verksamheten under den tillståndstid som ansökan
 
 ## Miljökonsekvensbeskrivningen är ofullständig
 
-Det beskrivna nollalternativet är felvalt. Trovärdiga, moderna decentraliserade reningsverk har inte utretts, påverkan på biologisk mångfald, skyddad natur och miljö har inte redovisats, inte heller indirekta och kumulativa effekter eller följdverksamheter. LNF vidhåller sitt underkännande av VA SYDs förslag rörande skydd mot höga havsnivåer vid Sjölunda avloppsreningsverk. LNF hänvisar till vad vi anför i vårt yttrande (2026-06-09) med bilagor, bl.a. bilaga 8, till yttrandet.
+Det beskrivna nollalternativet är felvalt. Trovärdiga, moderna decentraliserade reningsverk har inte utretts, påverkan på biologisk mångfald, skyddad natur och miljö har inte redovisats, inte heller indirekta och kumulativa effekter eller följdverksamheter.
+
+LNF vidhåller sitt underkännande av VA SYDs förslag rörande skydd mot höga havsnivåer vid Sjölunda avloppsreningsverk. LNF hänvisar till vad vi anför i vårt yttrande (2026-06-09) med bilagor, bl.a. bilaga 8, till yttrandet.
 
 Som anförts i LNFs yttrande hänvisar VA SYD till en vägledning från Länsstyrelsen från år 2023 om skydd mot översvämning från havet, men följer den inte. I vägledningen anges att kustnära reningsverk bör ta höjd för värsta scenario och räkna 100 år efter att anläggningen är färdigställd (LST Vägledning för skydd mot översvämning från havet anpassad till Skånes kuststäder; bl.a. sid. 17). LNF anser att man vid beräkningar avseende kustskydd i detta fall, m.h.t. angiven tänkbar tid för verkets färdigställande, bör utgå från scenarier för år 2150, inte för år 2100 som är en alldeles för närliggande tidpunkt. LNF erinrar om att Sjölunda ARV är en samhällsviktig infrastrukturanläggning. Underlag finns eftersom SMHI har tillhandahållit scenarier för Malmö för år 2150 (referenser har lämnats tidigare i LNFs yttrande) och 2150 är också det årtal som i Länsstyrelsens vägledning används för t.ex. Trelleborg. LNF begär att utredningen om kustskydd vid Sjölundaverket görs om.
 
 De ekonomiska konsekvenserna för lundaborna, upp till två miljarder kronor högre investering, av den valda, centraliserade och sårbara tunnellösningen har inte redovisats. Därmed uppfylls inte miljöbalkens krav på att en åtgärd ska vara miljömässigt motiverad, tekniskt möjlig och ekonomiskt rimlig. LNF saknar den ekonomiska redovisningen av projektet.
 
-EU-förordningen om återanvändning av vatten gäller för återanvändning av renat avloppsvatten från tätbebyggelse i enlighet med avloppsdirektivet (91/271/EEG), genom bevattning inom jordbruket. Förordningens syfte är att främja cirkulär ekonomi, motverka vattenbrist och minska behovet av vatten från annat håll, t.ex. grundvatten. VA SYD har inte visat hur förordningen följs. MAXIMA avstår från möjligheten att återanvända renat avloppsvatten genom att leda bort stora mängder sötvatten till havet, vilket strider mot EU-rättens regler om resurseffektivitet och miljöbalkens hushållningsbestämmelser. Om det renade avloppsvattnet i sin helhet släpps ut i Öresund kan kraven i avloppsdirektivet inte följas. LNF saknar VA SYDs redovisning av detta.
+EU-förordningen om återanvändning av vatten gäller för återanvändning av renat avloppsvatten från tätbebyggelse i enlighet med avloppsdirektivet (91/271/EEG), genom bevattning inom jordbruket. Förordningens syfte är att främja cirkulär ekonomi, motverka vattenbrist och minska behovet av vatten från annat håll, t.ex. grundvatten. VA SYD har inte visat hur förordningen följs. MAXIMA avstår från möjligheten att återanvända renat avloppsvatten genom att leda bort stora mängder sötvatten till havet, vilket strider mot EU-rättens regler om resurseffektivitet och miljöbalkens hushållningsbestämmelser.  Om det renade avloppsvattnet i sin helhet släpps ut i Öresund kan kraven i avloppsdirektivet inte följas. LNF saknar VA SYDs redovisning av detta.
 
 LNF begär att VA SYD redovisar hur riskerna med en stor central anläggning jämfört med flera mindre ska bli likvärdiga, hur man ska agera om tillståndstaket för Källby reningsverk uppnås innan Avloppstunnel Norr tas i bruk, eller hur PFAS från högre belägen mark i norr ska förhindras från att nå avloppstunneln (VA SYDs punkt 7a–7b, 3e och 7d–7e; sid. 90, 94).
 

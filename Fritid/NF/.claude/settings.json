@@ -24,6 +24,17 @@
             "statusMessage": "Bygger om sökindexet..."
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"C:/Users/kentl/OneDrive/AI/Codex/Fritid/NF/.claude/hooks/namnlos_bash_hook.py\"",
+            "timeout": 60,
+            "statusMessage": "Kontrollerar kopior utan namn..."
+          }
+        ]
       }
     ]
   }

@@ -160,6 +160,15 @@ Fullständig genomgång med svenska fall och internationell utblick (Storbritann
 - Kontrollera varje sakpåstående i utkastet mot primärkällan innan det förs över. Ett internt utkast kan innehålla felciteringar, uppgifter utan källa och påståenden om vad motparten sagt som inte stämmer. Ett enda kontrollerbart fel används för att ifrågasätta resten av yttrandet.
 - Lägg aldrig till ett yrkande, ett ställningstagande eller en skärpning som inte finns i underlaget. Om utkastet är formulerat som krav på utredning, ska den publika versionen också vara det.
 
+## Yttrande till domstol: rubrikrad och brevhuvud
+
+- Rubrikraden anger domstol, målnummer och **sökande** ("Sökande: ..."). Skriv inte "Parter" med både sökanden och föreningen: ansökan kommer från sökanden, och ett yttrande från en förening är inte en tvist mellan två parter. Föreningen framgår av brevhuvudet och underskriften.
+- Förebild: föreningens egna yttranden i domstol har rubriken "Yttrande över ansökan från <sökande> om <vad> på <fastighet>" och en rad "Mål: M ...", utan partsrad. Se [lärdom 12 i Samrådsguiden](https://kentlundgren.github.io/Codex/Fritid/NF/Samradsguiden/maxima.html#lar-12), där källorna finns.
+- Skriv "målet gäller" på en rad utan egen radbrytning, och avstava inte för hand. Ord som hamnar först på en ny rad i Word kan få stor bokstav mitt i meningen.
+- Domstolens och myndigheters ordalydelse i målets rubrik återges exakt som i underrättelsen eller aktbilagan.
+- Filnamnet till domstolen ska inte innehålla mallens ord, till exempel "rättmall".
+- Skriv "inlämnad" och datum först när yttrandet har lämnats in. Före det är texten "slutlig text", inte "inlämnad".
+
 ## Källor och juridik
 
 - När materialet bygger på ett huvuddokument ska det markeras tydligt i källförteckningen som huvudkälla. Skriv dokumentets roll först i källnotisen, gärna med fetstil, till exempel: "Samrådsunderlaget – primärkälla till verksamhetsförslaget".
@@ -188,7 +197,7 @@ Källstöd för dispositionsmetoden:
 
 ## Integritet och publicering
 
-Läs [references/publikationskontroll.md](references/publikationskontroll.md) innan något delas, committas eller publiceras.
+Läs [references/publikationskontroll.md](references/publikationskontroll.md) innan något delas, committas eller publiceras. Ska en publik kopia av ett Word-yttrande göras: använd `scripts/skapa_namnlos_kopia.py` och kontrollera filerna med `scripts/kontrollera_namnlos.py`. Båda beskrivs i referensfilen.
 
 ## Leveranskontroll
 
@@ -198,7 +207,7 @@ Läs [references/publikationskontroll.md](references/publikationskontroll.md) in
 - Är rätt lagrum (PBL/MB) och rätt skede identifierat, och matchar mottagaren det?
 - Är samrådsfrågorna konkreta, prioriterade och möjliga att följa upp?
 - Är tonen proportionerlig för samrådsstadiet?
-- Är intern information, namn och privata anteckningar borttagna från publik version?
+- Är intern information, namn och privata anteckningar borttagna från publik version? För en publik Word-, Markdown- eller PDF-kopia av ett yttrande gäller även dokumentegenskaper och mallänk: kör `scripts/kontrollera_namnlos.py`.
 - Lämna alltid ändringar ocommittade och opushade om användaren inte uttryckligen ber om publicering — Kent committar och pushar själv via Cursor.
 
 ## Installerade kopior

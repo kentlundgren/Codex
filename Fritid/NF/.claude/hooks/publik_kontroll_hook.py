@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """PreToolUse-hook: stoppar skrivning av personuppgifter i publika filer.
 
-Gäller bara filer i Samradsguiden/ och Maxima/Struktur/ (de publicerade mapparna), inte i
+Gäller bara filer i Samradsguiden/ och Maxima/Struktur/ (de publicerade mapparna) samt filer med
+"utan_namn" i namnet i Maxima/Yttrande/ (kopior utan namn av yttranden), inte i
 Diskussion/ eller privat/. Kontrollerar den text som ska skrivas (Write: content, Edit: new_string).
+Word- och PDF-filer skrivs inte med Write eller Edit, och kontrolleras i stället av namnlos_bash_hook.py.
 Stoppar vid e-postadress, telefonnummer, personnummer och namn i den privata namnlistan.
 
 Namnlistan ligger utanför repot så att namnen aldrig hamnar på GitHub:
@@ -47,7 +49,8 @@ def main():
         return
     ti = data.get("tool_input") or {}
     sokvag = ti.get("file_path", "").replace("\\", "/")
-    if not any(p in sokvag for p in PUBLIKA) or any(p in sokvag for p in PRIVATA):
+    namnlos_kopia = "/Fritid/NF/Maxima/Yttrande/" in sokvag and "utan_namn" in Path(sokvag).name
+    if not (any(p in sokvag for p in PUBLIKA) or namnlos_kopia) or any(p in sokvag for p in PRIVATA):
         return
     text = ny_text(ti)
     fynd = []

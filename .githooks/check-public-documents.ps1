@@ -33,4 +33,25 @@ if ($findings.Count -gt 0) {
   exit 1
 }
 
+# Här skedde en uppdatering 2026-11-02: kopior utan namn av yttranden (filnamn med "utan_namn" direkt i
+# Fritid/NF/Maxima/Yttrande/Utkast/) kontrolleras också som Word-, Markdown- och PDF-filer: namn i den
+# privata namnlistan (~/.claude/nf_privata_namn.txt), författare och företag i dokumentegenskaperna,
+# mallänkar till en dators mapp samt e-post, telefon och personnummer. Samma skript som i skillen
+# samradsguiden och i Claude Code-hooken. Saknas Python eller skriptet varnas det, men det stoppar inte.
+$repoRoot = (git rev-parse --show-toplevel).Trim()
+$namnlosa = @(Get-ChildItem -LiteralPath "$repoRoot/Fritid/NF/Maxima/Yttrande/Utkast" -File -ErrorAction SilentlyContinue |
+  Where-Object { $_.Name -like '*utan_namn*' -and $_.Extension -in '.docx', '.md', '.pdf' })
+$namnkontroll = "$repoRoot/Fritid/NF/Samradsguiden/Skills/samradsguiden/scripts/kontrollera_namnlos.py"
+if ($namnlosa.Count -gt 0) {
+  if ((Get-Command python -ErrorAction SilentlyContinue) -and (Test-Path -LiteralPath $namnkontroll)) {
+    & python -X utf8 $namnkontroll @($namnlosa | ForEach-Object { $_.FullName })
+    if ($LASTEXITCODE -eq 1) {
+      Write-Host 'Kopiorna utan namn innehåller namn eller spår av avsändaren. Rätta dem, till exempel med skapa_namnlos_kopia.py, innan commit eller push.' -ForegroundColor Cyan
+      exit 1
+    }
+  } else {
+    Write-Host 'VARNING: kopiorna utan namn kunde inte kontrolleras (Python eller kontrollera_namnlos.py saknas).' -ForegroundColor Yellow
+  }
+}
+
 Write-Host 'Publiceringskontroll godkänd: inga e-postadresser, telefonnummer, personnummer eller privata markeringar hittades.' -ForegroundColor Green
